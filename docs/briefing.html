@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Briefing archivé</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead__inner">
+    <h1 class="masthead__title">Briefing du matin</h1>
+    <div class="masthead__meta">
+      <span id="date-briefing">—</span>
+      <span class="masthead__dot">·</span>
+      <span id="derniere-maj">mise à jour —</span>
+    </div>
+  </div>
+  <nav class="masthead__nav">
+    <a href="index.html">Aujourd'hui</a>
+    <a href="history.html" class="active">Archives</a>
+  </nav>
+</header>
+
+<div id="status-banner" class="status-banner" hidden></div>
+
+<main id="content" class="content">
+  <p class="loading">Chargement du briefing…</p>
+</main>
+
+<footer class="site-footer">
+  <p><a href="history.html">← Retour aux archives</a></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

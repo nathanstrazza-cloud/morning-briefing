@@ -1,0 +1,316 @@
+/* ---------------------------------------------------------------------
+   Morning Briefing — identité visuelle
+   Palette "aube" : ciel nocturne encore présent en haut de page, papier
+   frais et lisible pour le contenu. Un seul accent (ambre lever-du-jour),
+   utilisé avec parcimonie. Serif pour les titres et le long-format
+   scientifique, sans-serif pour le reste (lecture rapide le matin).
+   ------------------------------------------------------------------- */
+
+:root {
+  --dawn-navy: #202A44;
+  --dawn-navy-soft: #2E3B5C;
+  --paper: #EEEEF0;
+  --paper-raised: #F7F7F8;
+  --ink: #1B1B1F;
+  --ink-soft: #52525B;
+  --ink-faint: #86868F;
+  --accent: #C97A1E;
+  --sage: #4C6B5E;
+  --rule: #D3D3D0;
+  --rule-strong: #B5B5B0;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --measure: 68ch;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--sage); text-decoration-color: rgba(76,107,94,0.35); text-underline-offset: 3px; }
+a:hover { text-decoration-color: var(--sage); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ---------- En-tête ---------- */
+
+.masthead {
+  background: linear-gradient(180deg, var(--dawn-navy) 0%, var(--dawn-navy-soft) 100%);
+  color: #F1F1F3;
+  padding: 2.25rem 1.5rem 0;
+}
+
+.masthead__inner {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding-bottom: 1.25rem;
+}
+
+.masthead__title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  margin: 0 0 0.4rem;
+  letter-spacing: 0.01em;
+}
+
+.masthead__meta {
+  font-size: 0.92rem;
+  color: #C7CBDA;
+}
+
+.masthead__dot { margin: 0 0.5em; opacity: 0.6; }
+
+.masthead__nav {
+  max-width: 46rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.masthead__nav a {
+  display: inline-block;
+  padding: 0.85rem 0.1rem;
+  color: #C7CBDA;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-bottom: 2px solid transparent;
+}
+
+.masthead__nav a.active,
+.masthead__nav a:hover {
+  color: #FFFFFF;
+  border-bottom-color: var(--accent);
+}
+
+/* ---------- Bannière de statut (échec de mise à jour, cf. cahier §21) ---------- */
+
+.status-banner {
+  max-width: 46rem;
+  margin: 1.25rem auto 0;
+  padding: 0.85rem 1rem;
+  background: #FBF0DE;
+  border: 1px solid #E8C989;
+  color: #6B4A12;
+  border-radius: 3px;
+  font-size: 0.92rem;
+}
+
+/* ---------- Contenu ---------- */
+
+.content {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.content--narrow { max-width: 40rem; }
+
+.loading { color: var(--ink-faint); font-style: italic; }
+
+.section {
+  padding: 2.2rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.section:first-child { border-top: none; padding-top: 0.5rem; }
+
+.section-title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 0 0 1.2rem;
+  color: var(--dawn-navy);
+}
+
+.subsection-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--sage);
+  margin: 1.4rem 0 0.7rem;
+}
+
+.subsection-title:first-of-type { margin-top: 0; }
+
+/* ---------- Articles / événements ---------- */
+
+.article {
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.article:first-of-type { border-top: none; padding-top: 0; }
+
+.article__title {
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+  color: var(--ink);
+}
+
+.article__body { margin: 0 0 0.5rem; color: var(--ink-soft); max-width: var(--measure); }
+
+.article__why {
+  margin: 0 0 0.4rem;
+  font-size: 0.94rem;
+  color: var(--ink-soft);
+}
+
+.article__why strong { color: var(--ink); font-weight: 600; }
+
+.article__meta {
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  font-size: 0.76rem;
+}
+
+.tag--rapporte { color: #8A5B12; border-color: #D8B679; }
+.tag--confirme { color: var(--sage); border-color: #9CB7A9; }
+
+/* ---------- Marchés ---------- */
+
+.market-summary { margin: 0 0 1rem; max-width: var(--measure); }
+
+.market-list { list-style: none; margin: 0; padding: 0; }
+
+.market-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  border-top: 1px solid var(--rule);
+  font-size: 0.95rem;
+}
+
+.market-item:first-child { border-top: none; }
+
+.market-item__name { color: var(--ink); }
+.market-item__value { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.market-item__value.up { color: var(--sage); }
+.market-item__value.down { color: #A6402C; }
+
+.market-item__explication {
+  flex-basis: 100%;
+  font-size: 0.85rem;
+  color: var(--ink-faint);
+}
+
+/* ---------- Sport ---------- */
+
+.sport-list { list-style: none; margin: 0 0 1rem; padding: 0; }
+.sport-list li {
+  padding: 0.45rem 0;
+  border-top: 1px solid var(--rule);
+  font-size: 0.95rem;
+}
+.sport-list li:first-child { border-top: none; }
+
+/* ---------- Science : lecture longue ---------- */
+
+.science-article {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: var(--measure);
+  color: var(--ink);
+}
+
+.science-article p { margin: 0 0 1.1em; }
+.science-article h3 {
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--sage);
+  margin: 1.6em 0 0.5em;
+}
+
+/* ---------- Météo ---------- */
+
+.weather-strip {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  font-size: 1.02rem;
+}
+
+.weather-strip__temp { font-family: var(--font-serif); font-size: 2.1rem; color: var(--dawn-navy); }
+.weather-strip__desc { color: var(--ink-soft); }
+.weather-cities { margin-top: 0.9rem; font-size: 0.88rem; color: var(--ink-faint); }
+
+/* ---------- Citation ---------- */
+
+.quote {
+  position: relative;
+  padding-left: 1.6rem;
+  font-family: var(--font-serif);
+}
+
+.quote__mark {
+  position: absolute;
+  left: -0.15rem;
+  top: -0.5rem;
+  font-size: 2.6rem;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.quote__text { font-size: 1.25rem; font-style: italic; margin: 0 0 0.6rem; color: var(--ink); }
+.quote__author { font-family: var(--font-sans); font-size: 0.9rem; color: var(--ink-faint); }
+.quote__author::before { content: "— "; }
+
+/* ---------- Historique ---------- */
+
+.history-list { list-style: none; margin: 0; padding: 0; }
+.history-list li {
+  border-top: 1px solid var(--rule);
+  padding: 0.9rem 0;
+}
+.history-list li:first-child { border-top: none; }
+.history-list a { font-size: 1.02rem; text-decoration: none; }
+.history-list a:hover { text-decoration: underline; }
+
+/* ---------- Pied de page ---------- */
+
+.site-footer {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 3rem;
+  color: var(--ink-faint);
+  font-size: 0.82rem;
+  border-top: 1px solid var(--rule);
+}
+
+/* ---------- Accessibilité / responsive ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; }
+}
+
+@media (max-width: 560px) {
+  .masthead { padding-top: 1.6rem; }
+  .content { padding: 1.5rem 1.1rem 3rem; }
+  .masthead__inner, .masthead__nav, .site-footer { padding-left: 0; padding-right: 0; }
+  .weather-strip__temp { font-size: 1.7rem; }
+}

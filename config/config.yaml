@@ -1,0 +1,105 @@
+# Configuration centrale du Morning Briefing
+# Toute source ajoutée/retirée se fait ici, pas dans le code (cf. cahier §24 évolutivité).
+
+timezone: "Europe/Paris"
+
+seuils:
+  score_min_affichage: 5   # cf. cahier §13 : <5 généralement ignoré
+  score_min_marche_pct: 1.0  # variation (%) en dessous de laquelle un indice n'est pas commenté
+
+# ---------------------------------------------------------------------------
+# ACTUALITÉ — flux RSS gratuits, aucune clé nécessaire.
+# Ajouter/retirer une source ici suffit ; rss_sources.py ne connaît pas les URLs en dur.
+# ---------------------------------------------------------------------------
+rss:
+  france:
+    - name: "Le Monde"
+      url: "https://www.lemonde.fr/rss/une.xml"
+    - name: "France Info"
+      url: "https://www.francetvinfo.fr/titres.rss"
+    - name: "AFP (via Le Point)"
+      url: "https://www.lepoint.fr/24h-infos/rss.xml"
+  monde:
+    - name: "Le Monde International"
+      url: "https://www.lemonde.fr/international/rss_full.xml"
+    - name: "New York Times World"
+      url: "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
+    - name: "France 24 International"
+      url: "https://www.france24.com/fr/rss"
+  economie:
+    - name: "Le Monde Économie"
+      url: "https://www.lemonde.fr/economie/rss_full.xml"
+    - name: "Les Echos Une"
+      url: "https://services.lesechos.fr/rss/les-echos-une.xml"
+  sciences:
+    - name: "Le Monde Sciences"
+      url: "https://www.lemonde.fr/sciences/rss_full.xml"
+    - name: "CNRS Actualités"
+      url: "https://www.cnrs.fr/fr/rss.xml"
+    - name: "Nature News"
+      url: "https://www.nature.com/nature.rss"
+
+sport:
+  football:
+    - name: "L'Équipe Football"
+      url: "https://dwh.lequipe.fr/api/edito/rss?path=/Football"
+  basketball:
+    - name: "L'Équipe Basket"
+      url: "https://dwh.lequipe.fr/api/edito/rss?path=/Basket"
+    # NBA / Spurs : à remplacer par une source dédiée plus fiable (roadmap README §7)
+  natation:
+    - name: "L'Équipe Natation"
+      url: "https://dwh.lequipe.fr/api/edito/rss?path=/Natation"
+  autres:
+    - name: "L'Équipe Tous Sports"
+      url: "https://dwh.lequipe.fr/api/edito/rss?path=/Direct"
+
+  equipes_prioritaires:
+    basketball: ["San Antonio Spurs", "Spurs"]
+  ligues_suivies:
+    football: ["Ligue 1", "Ligue des champions", "Champions League", "Europa League"]
+    basketball: ["NBA", "Euroligue", "EuroLeague"]
+  sports_conditionnels: ["tennis", "handball", "volley", "cyclisme", "rugby"]
+  mot_cle_france: ["France", "Français", "Française", "Bleus", "Bleues", "tricolore"]
+
+# ---------------------------------------------------------------------------
+# MARCHÉS — Stooq (CSV public gratuit, aucune clé)
+# symboles Stooq : https://stooq.com/q/  (suffixe .us, .fr, etc.)
+# ---------------------------------------------------------------------------
+marches:
+  indices:
+    - {name: "CAC 40", symbol: "^fchi"}
+    - {name: "S&P 500", symbol: "^spx"}
+    - {name: "Nasdaq", symbol: "^ndq"}
+    - {name: "DAX", symbol: "^dax"}
+    - {name: "Euro Stoxx 50", symbol: "^stoxx50e"}
+  matieres_premieres:
+    - {name: "Pétrole (Brent)", symbol: "cb.f"}
+    - {name: "Or", symbol: "xauusd"}
+
+# ---------------------------------------------------------------------------
+# MÉTÉO — Open-Meteo (gratuit, sans clé)
+# ---------------------------------------------------------------------------
+meteo:
+  villes:
+    - {name: "Antibes", lat: 43.5808, lon: 7.1251}
+    - {name: "Cannes", lat: 43.5528, lon: 7.0174}
+    - {name: "Valbonne", lat: 43.6392, lon: 7.0122}
+    - {name: "Grasse", lat: 43.6584, lon: 6.9227}
+
+# ---------------------------------------------------------------------------
+# SOURCES "MAISON" DEMANDÉES DANS LE CAHIER (§10) — utilisées quand pertinent,
+# le système n'est PAS limité à cette liste.
+# ---------------------------------------------------------------------------
+sources_preferees:
+  - "Le Monde"
+  - "L'Équipe"
+  - "The New York Times"
+
+# ---------------------------------------------------------------------------
+# LLM — voir README §4 pour les secrets associés
+# ---------------------------------------------------------------------------
+llm:
+  provider_env_var: "LLM_PROVIDER"   # groq | gemini | anthropic
+  temperature: 0.3
+  langue: "fr"
