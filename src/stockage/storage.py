@@ -35,6 +35,62 @@ def _read_json(path: Path) -> dict | None:
         return json.load(f)
 
 
+def day_briefing_exists(date_iso: str) -> bool:
+    """True si un briefing a déjà été sauvegardé avec succès pour cette date.
+
+    Utilisé par main.py comme garde d'idempotence : évite de relancer tout le pipeline
+    (et de refaire un appel LLM) si le workflow GitHub Actions se déclenche deux fois le
+    même jour (double cron été/hiver, cf. briefing.yml) ou est retardé puis relancé.
+    """
+    return (DATA_DIR / f"{date_iso}.json").exists()
+
+
+def save_briefing(briefing: dict, date_iso: str, last_update_iso: str) -> None:
+    """Sauvegarde le briefing du jour + met à jour latest.json et index.json.
+    N'écrase JAMAIS un fichier de date existant avec un contenu vide (sécurité supplémentaire)."""
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+    enveloppe = {
+        "date": date_iso,
+        "derniere_mise_a_jour": last_update_iso,
+        "briefing": briefing,
+    }
+
+    day_path = DATA_DIR / f"{date_iso}.json"
+    _write_json(day_path, enveloppe)
+    _write_json(DATA_DIR / "latest.json", enveloppe)
+
+    _update_index(date_iso)
+    _write_status(succes=True, date_iso=date_iso, last_update_iso=last_update_iso)
+    logger.info("Briefing sauvegardé: %s", day_path)
+
+
+def _update_index(date_iso: str) -> None:
+    index_path = DATA_DIR / "index.json"
+    index = _read_json(index_path) or {"dates": []}
+    if date_iso not in index["dates"]:
+        index["dates"].append(date_iso)
+        index["dates"].sort(reverse=True)
+    _write_json(index_path, index)
+
+
+def _write_status(succes: bool, date_iso: str, last_update_iso: str, erreur: str | None = None) -> None:
+    _write_json(
+        DATA_DIR / "status.json",
+        {
+            "derniere_execution": last_update_iso,
+            "date_visee": date_iso,
+            "succes": succes,
+            "erreur": erreur,
+        },
+    )
+
+
+def record_failure(date_iso: str, last_update_iso: str, erreur: str) -> None:
+    """Cf. cahier §21 : si tout échoue, on NE TOUCHE PAS à latest.json — le dernier
+    briefing valide reste affiché. On journalise seulement l'échec dans status.json."""
+    logger.error("Échec du run pour %s: %s — dernier briefing valide conservé.", date_iso, erreur)
+    _write_status(succes=False, date_iso=date_iso, last_update_iso=last_update_iso, erreur=erreur)
 def save_briefing(briefing: dict, date_iso: str, last_update_iso: str) -> None:
     """Sauvegarde le briefing du jour + met à jour latest.json et index.json.
     N'écrase JAMAIS un fichier de date existant avec un contenu vide (sécurité supplémentaire)."""
