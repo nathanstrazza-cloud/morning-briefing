@@ -26,10 +26,19 @@ class LLMProvider:
 
 
 class GroqProvider(LLMProvider):
-    """Groq : quota gratuit généreux, très rapide. https://console.groq.com"""
+    """Groq : quota gratuit généreux, très rapide. https://console.groq.com
+
+    NB (corrigé le 2026-09-09) : `llama-3.3-70b-versatile` a été décommissionné par Groq
+    le 16 août 2026 (annonce du 17 juin 2026, cf. console.groq.com/docs/deprecations).
+    Les requêtes avec ce modèle échouent maintenant avec une erreur 404. Remplacé par
+    `openai/gpt-oss-120b`, le modèle de migration recommandé par Groq. Si ce modèle est à
+    son tour décommissionné dans le futur, vérifier console.groq.com/docs/deprecations et
+    mettre à jour la valeur par défaut ci-dessous (ou surcharger via un futur paramètre
+    d'environnement GROQ_MODEL, pas encore fait ici pour rester simple — cf. cahier §23-24
+    sur ne pas sur-construire trop tôt)."""
     name = "groq"
 
-    def __init__(self, api_key: str, model: str = "llama-3.3-70b-versatile"):
+    def __init__(self, api_key: str, model: str = "openai/gpt-oss-120b"):
         self.api_key = api_key
         self.model = model
 
