@@ -1,0 +1,2 @@
+2026-09-09 09:02:56,352 [INFO] morning_briefing: === Démarrage du run Morning Briefing pour le 2026-09-09 ===
+2026-09-09 09:02:56,352 [INFO] morning_briefing: Heure Paris actuelle (11:02) hors fenêtre 06:00-07:29 -> run ignoré (déclenchement cron été/hiver hors saison, comportement attendu).
