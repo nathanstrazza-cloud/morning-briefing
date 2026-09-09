@@ -38,16 +38,34 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
     logger.info("=== Démarrage du run Morning Briefing pour le %s ===", date_iso)
 
     # Le workflow GitHub Actions programme deux cron (été/hiver, cf. briefing.yml) car GH
-    # Actions ne gère pas le changement d'heure. Sans garde-fou, le pipeline tournerait deux
-    # fois par jour. On ignore donc silencieusement toute exécution hors de la fenêtre
-    # 06:00-07:29 Paris, sauf si une date est explicitement forcée (tests).
-    if not date_override and not (6 <= reference.hour < 8):
-        logger.info(
-            "Heure Paris actuelle (%02d:%02d) hors fenêtre 06:00-07:29 -> run ignoré "
-            "(déclenchement cron été/hiver hors saison, comportement attendu).",
-            reference.hour, reference.minute,
-        )
-        return 0
+    # Actions ne gère pas le changement d'heure : à une saison donnée, l'un des deux cron
+    # correspond à 06:30 Paris, l'autre à 07:30 (mauvaise saison). Sans garde-fou, le
+    # pipeline tournerait deux fois par jour.
+    #
+    # NB (corrigé le 2026-09-09) : une fenêtre horaire stricte (06:00-07:29) avait été
+    # utilisée initialement pour filtrer le cron "hors saison", mais GitHub Actions retarde
+    # fréquemment l'exécution des cron de plusieurs heures (limite connue du plan gratuit,
+    # cf. logs des 2026-09-08 et 2026-09-09 : déclenchements réels à 18:59, 11:02 et 11:56
+    # Paris au lieu de 06:30/07:30). Cette fenêtre trop stricte faisait que le pipeline ne
+    # tournait plus jamais. On la remplace par une garde d'IDEMPOTENCE : le premier
+    # déclenchement de la journée (quelle que soit l'heure réelle) génère le briefing ;
+    # tout déclenchement suivant pour la même date (le second cron, ou un retry) est ignoré
+    # car un fichier docs/data/briefings/{date}.json existe déjà pour aujourd'hui.
+    if not date_override:
+        if reference.hour < 6:
+            logger.info(
+                "Heure Paris actuelle (%02d:%02d) avant 06:00 -> run ignoré "
+                "(démarrage anormalement matinal, ne devrait pas arriver en usage normal).",
+                reference.hour, reference.minute,
+            )
+            return 0
+        if storage.day_briefing_exists(date_iso):
+            logger.info(
+                "Un briefing a déjà été généré avec succès aujourd'hui (%s) -> run ignoré "
+                "(second déclenchement cron été/hiver, comportement attendu).",
+                date_iso,
+            )
+            return 0
 
     try:
         config = load_config()
