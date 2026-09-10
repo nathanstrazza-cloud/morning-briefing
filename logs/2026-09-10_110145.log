@@ -1,0 +1,51 @@
+2026-09-10 09:01:45,553 [INFO] morning_briefing: === Démarrage du run Morning Briefing pour le 2026-09-10 ===
+2026-09-10 09:01:45,561 [INFO] morning_briefing: Fenêtre de recherche: 2026-09-09 05:01:45.553346+02:00 -> 2026-09-10 11:01:45.553346+02:00 (lundi=False)
+2026-09-10 09:01:45,561 [INFO] morning_briefing.collecte: Début de la collecte (depuis=2026-09-09T05:01:45.553346+02:00, lundi=False)
+2026-09-10 09:01:45,768 [INFO] morning_briefing.collecte.rss: Flux Le Monde (france): 16 articles récupérés
+2026-09-10 09:01:46,226 [INFO] morning_briefing.collecte.rss: Flux France Info (france): 32 articles récupérés
+2026-09-10 09:01:46,663 [WARNING] morning_briefing.collecte.rss: Flux RSS illisible ou vide: AFP (via Le Point) (https://www.lepoint.fr/24h-infos/rss.xml)
+2026-09-10 09:01:46,712 [INFO] morning_briefing.collecte.rss: Flux Le Monde International (monde): 20 articles récupérés
+2026-09-10 09:01:46,881 [INFO] morning_briefing.collecte.rss: Flux New York Times World (monde): 53 articles récupérés
+2026-09-10 09:01:47,000 [INFO] morning_briefing.collecte.rss: Flux France 24 International (monde): 24 articles récupérés
+2026-09-10 09:01:47,044 [INFO] morning_briefing.collecte.rss: Flux Le Monde Économie (economie): 20 articles récupérés
+2026-09-10 09:01:47,283 [WARNING] morning_briefing.collecte.rss: Flux RSS illisible ou vide: Les Echos Une (https://services.lesechos.fr/rss/les-echos-une.xml)
+2026-09-10 09:01:47,428 [INFO] morning_briefing.collecte.rss: Flux Le Monde Sciences (sciences): 20 articles récupérés
+2026-09-10 09:01:48,196 [INFO] morning_briefing.collecte.rss: Flux CNRS Actualités (sciences): 10 articles récupérés
+2026-09-10 09:01:48,337 [INFO] morning_briefing.collecte.rss: Flux Nature News (sciences): 75 articles récupérés
+2026-09-10 09:01:48,583 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Football (sport_football): 50 articles récupérés
+2026-09-10 09:01:49,625 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Basket (sport_basketball): 50 articles récupérés
+2026-09-10 09:01:49,833 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Natation (sport_natation): 50 articles récupérés
+2026-09-10 09:01:50,188 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Tous Sports (sport_autres): 0 articles récupérés
+2026-09-10 09:01:50,188 [INFO] morning_briefing.collecte.sports: Sport collecté: foot=50 basket=10 natation=2 autres(France)=0
+2026-09-10 09:01:50,874 [WARNING] morning_briefing.collecte.markets: Échec récupération cotation CAC 40 (^fchi): 404 Client Error: Not Found for url: https://stooq.com/q/l/?s=%5Efchi&f=sd2t2ohlcv&h&e=csv
+2026-09-10 09:01:51,346 [WARNING] morning_briefing.collecte.markets: Échec récupération cotation S&P 500 (^spx): 404 Client Error: Not Found for url: https://stooq.com/q/l/?s=%5Espx&f=sd2t2ohlcv&h&e=csv
+2026-09-10 09:01:51,858 [WARNING] morning_briefing.collecte.markets: Échec récupération cotation Nasdaq (^ndq): 404 Client Error: Not Found for url: https://stooq.com/q/l/?s=%5Endq&f=sd2t2ohlcv&h&e=csv
+2026-09-10 09:01:52,217 [WARNING] morning_briefing.collecte.markets: Échec récupération cotation DAX (^dax): 404 Client Error: Not Found for url: https://stooq.com/q/l/?s=%5Edax&f=sd2t2ohlcv&h&e=csv
+2026-09-10 09:01:52,576 [WARNING] morning_briefing.collecte.markets: Échec récupération cotation Euro Stoxx 50 (^stoxx50e): 404 Client Error: Not Found for url: https://stooq.com/q/l/?s=%5Estoxx50e&f=sd2t2ohlcv&h&e=csv
+2026-09-10 09:01:53,210 [WARNING] morning_briefing.collecte.markets: Échec récupération cotation Pétrole (Brent) (cb.f): 404 Client Error: Not Found for url: https://stooq.com/q/l/?s=cb.f&f=sd2t2ohlcv&h&e=csv
+2026-09-10 09:01:53,819 [WARNING] morning_briefing.collecte.markets: Échec récupération cotation Or (xauusd): 404 Client Error: Not Found for url: https://stooq.com/q/l/?s=xauusd&f=sd2t2ohlcv&h&e=csv
+2026-09-10 09:01:53,820 [INFO] morning_briefing.collecte.markets: Marchés collectés: 0 indices, 0 matières premières
+2026-09-10 09:01:54,253 [INFO] morning_briefing.collecte.weather: Météo collectée pour 4/4 villes
+2026-09-10 09:01:54,253 [INFO] morning_briefing.collecte: Collecte terminée: 148 actualités, 62 items sport, 0 indices, 4 villes météo
+2026-09-10 09:01:54,271 [INFO] morning_briefing.analyse.dedup: Déduplication: 48 items bruts -> 45 événements uniques
+2026-09-10 09:01:54,272 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 45 événements
+2026-09-10 09:01:54,272 [INFO] morning_briefing.analyse.verification: Vérification: 3/45 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-10 09:01:54,302 [INFO] morning_briefing.analyse.dedup: Déduplication: 74 items bruts -> 72 événements uniques
+2026-09-10 09:01:54,303 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 72 événements
+2026-09-10 09:01:54,303 [INFO] morning_briefing.analyse.verification: Vérification: 2/72 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-10 09:01:54,306 [INFO] morning_briefing.analyse.dedup: Déduplication: 20 items bruts -> 20 événements uniques
+2026-09-10 09:01:54,306 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 20 événements
+2026-09-10 09:01:54,307 [INFO] morning_briefing.analyse.dedup: Déduplication: 6 items bruts -> 6 événements uniques
+2026-09-10 09:01:54,307 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 6 événements
+2026-09-10 09:01:54,307 [INFO] morning_briefing.analyse.verification: Vérification: 0/6 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-10 09:01:54,320 [INFO] morning_briefing.analyse.dedup: Déduplication: 50 items bruts -> 48 événements uniques
+2026-09-10 09:01:54,321 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 48 événements
+2026-09-10 09:01:54,322 [INFO] morning_briefing.analyse.dedup: Déduplication: 10 items bruts -> 10 événements uniques
+2026-09-10 09:01:54,323 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 10 événements
+2026-09-10 09:01:54,323 [INFO] morning_briefing.analyse.dedup: Déduplication: 2 items bruts -> 2 événements uniques
+2026-09-10 09:01:54,323 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 2 événements
+2026-09-10 09:01:54,323 [INFO] morning_briefing.analyse.dedup: Déduplication: 0 items bruts -> 0 événements uniques
+2026-09-10 09:01:54,323 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 0 événements
+2026-09-10 09:01:54,700 [ERROR] morning_briefing.generation: Échec de la génération LLM (groq) -> repli sur fallback: 413 Client Error: Payload Too Large for url: https://api.groq.com/openai/v1/chat/completions
+2026-09-10 09:01:54,705 [INFO] morning_briefing.stockage: Briefing sauvegardé: /home/runner/work/morning-briefing/morning-briefing/docs/data/briefings/2026-09-10.json
+2026-09-10 09:01:54,705 [INFO] morning_briefing: === Run terminé avec succès pour le 2026-09-10 ===
