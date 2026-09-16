@@ -74,20 +74,53 @@ SCHÉMA JSON ATTENDU :
 """ + SCHEMA_ATTENDU
 
 
+# NB (corrigé le 2026-09-13) : garde-fou anti-413. Cf. rss_sources._clean_summary qui
+# nettoie déjà les résumés à la collecte -- ceci est une DEUXIÈME barrière, indépendante
+# de la source des données, pour ne plus jamais dépendre du bon comportement de chaque
+# collecteur individuel (cf. cahier §21 robustesse). Si le JSON du prompt dépasse
+# MAX_PROMPT_CHARS malgré tout, on retire les événements les moins bien scorés (les listes
+# actualite_france/monde sont déjà triées par score décroissant, cf. scoring.score_events)
+# jusqu'à repasser sous la limite, plutôt que de laisser Groq refuser toute la requête.
+MAX_PROMPT_CHARS = 45_000
+
+
 def _build_user_prompt(analysed: dict, science_topic: dict, is_monday: bool) -> str:
-    payload = {
-        "jour_lundi_couvre_weekend": is_monday,
-        "actualite_france": analysed["actualite_france"],
-        "actualite_monde": analysed["actualite_monde"],
-        "marches": analysed["marches_data"],
-        "sport": analysed["sport_events"],
-        "science_mode": science_topic["mode"],
-        "science_source": science_topic["contenu_source"],
-    }
-    return (
-        "Voici les données collectées et analysées pour le briefing de ce matin.\n\n"
-        + json.dumps(payload, ensure_ascii=False, indent=2, default=str)
-    )
+    france = list(analysed["actualite_france"])
+    monde = list(analysed["actualite_monde"])
+
+    def _payload() -> dict:
+        return {
+            "jour_lundi_couvre_weekend": is_monday,
+            "actualite_france": france,
+            "actualite_monde": monde,
+            "marches": analysed["marches_data"],
+            "sport": analysed["sport_events"],
+            "science_mode": science_topic["mode"],
+            "science_source": science_topic["contenu_source"],
+        }
+
+    serialized = json.dumps(_payload(), ensure_ascii=False, indent=2, default=str)
+
+    trimmed = False
+    while len(serialized) > MAX_PROMPT_CHARS and (france or monde):
+        # Retire l'événement le moins bien scoré parmi france/monde (listes triées
+        # décroissant -> on retire toujours en fin de liste).
+        if len(monde) >= len(france) and monde:
+            monde.pop()
+        elif france:
+            france.pop()
+        trimmed = True
+        serialized = json.dumps(_payload(), ensure_ascii=False, indent=2, default=str)
+
+    if trimmed:
+        logger.warning(
+            "Prompt LLM trop volumineux (>%d caractères) -> %d événements retirés "
+            "(les moins bien scorés) pour rester sous la limite avant l'appel Groq.",
+            MAX_PROMPT_CHARS,
+            len(analysed["actualite_france"]) + len(analysed["actualite_monde"]) - len(france) - len(monde),
+        )
+
+    return "Voici les données collectées et analysées pour le briefing de ce matin.\n\n" + serialized
 
 
 def generate(

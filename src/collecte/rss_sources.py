@@ -12,12 +12,36 @@ Chaque item retourné est un dict brut, non dédupliqué, non scoré :
 """
 from __future__ import annotations
 
+import html
 import logging
+import re
 from datetime import datetime, timezone
 
 import feedparser
 
 logger = logging.getLogger("morning_briefing.collecte.rss")
+
+# NB (corrigé le 2026-09-13) : certains flux (Nature News, NYT, CNRS...) renvoient un
+# `summary` qui contient du HTML brut (balises, entités, parfois très long). Envoyé tel
+# quel au LLM (cf. generation/briefing_generator.py), cela gonflait le payload JSON de la
+# requête Groq jusqu'à déclencher une erreur "413 Payload Too Large" (constaté les 2026-09-10
+# et 2026-09-11 : la synthèse LLM échouait systématiquement et le pipeline retombait en
+# mode fallback sans texte rédigé). On nettoie donc le résumé dès la collecte : suppression
+# des balises HTML, des entités, et troncature à une longueur raisonnable (un résumé RSS
+# n'a de toute façon pas besoin d'être plus long pour que le LLM comprenne le sujet).
+_TAG_RE = re.compile(r"<[^>]+>")
+MAX_RESUME_CHARS = 500
+
+
+def _clean_summary(raw: str) -> str:
+    if not raw:
+        return ""
+    text = _TAG_RE.sub(" ", raw)
+    text = html.unescape(text)
+    text = re.sub(r"\s+", " ", text).strip()
+    if len(text) > MAX_RESUME_CHARS:
+        text = text[:MAX_RESUME_CHARS].rsplit(" ", 1)[0] + "…"
+    return text
 
 
 def _parse_date(entry) -> datetime | None:
@@ -51,7 +75,7 @@ def fetch_feed(url: str, source_name: str, categorie: str, timeout: int = 15) ->
         items.append(
             {
                 "titre": titre,
-                "resume": getattr(entry, "summary", "").strip(),
+                "resume": _clean_summary(getattr(entry, "summary", "")),
                 "url": getattr(entry, "link", ""),
                 "source": source_name,
                 "categorie": categorie,

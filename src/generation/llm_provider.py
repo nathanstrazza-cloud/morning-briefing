@@ -33,14 +33,17 @@ class GroqProvider(LLMProvider):
     Les requêtes avec ce modèle échouent maintenant avec une erreur 404. Remplacé par
     `openai/gpt-oss-120b`, le modèle de migration recommandé par Groq. Si ce modèle est à
     son tour décommissionné dans le futur, vérifier console.groq.com/docs/deprecations et
-    mettre à jour la valeur par défaut ci-dessous (ou surcharger via un futur paramètre
-    d'environnement GROQ_MODEL, pas encore fait ici pour rester simple — cf. cahier §23-24
-    sur ne pas sur-construire trop tôt)."""
+    mettre à jour la valeur par défaut ci-dessous.
+
+    NB (2026-09-13) : la valeur par défaut peut désormais être surchargée sans toucher au
+    code via la variable d'environnement optionnelle GROQ_MODEL (GitHub Secret ou variable
+    de repo), pour pouvoir réagir à une future dépréciation sans attendre une session de
+    debug complète."""
     name = "groq"
 
-    def __init__(self, api_key: str, model: str = "openai/gpt-oss-120b"):
+    def __init__(self, api_key: str, model: str | None = None):
         self.api_key = api_key
-        self.model = model
+        self.model = model or os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
 
     def complete(self, system: str, user: str) -> str:
         resp = requests.post(

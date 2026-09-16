@@ -69,8 +69,12 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
 
     try:
         config = load_config()
-        depuis, jusqu_a, is_monday = compute_window(reference)
-        logger.info("Fenêtre de recherche: %s -> %s (lundi=%s)", depuis, jusqu_a, is_monday)
+        last_success = storage.get_last_successful_datetime()
+        depuis, jusqu_a, is_monday = compute_window(reference, last_success=last_success)
+        logger.info(
+            "Fenêtre de recherche: %s -> %s (lundi=%s, dernier_succes=%s)",
+            depuis, jusqu_a, is_monday, last_success,
+        )
 
         # 1. COLLECTE
         raw = collector.collect_all(config, depuis, is_monday)

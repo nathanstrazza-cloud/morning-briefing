@@ -63,19 +63,21 @@ sport:
   mot_cle_france: ["France", "Français", "Française", "Bleus", "Bleues", "tricolore"]
 
 # ---------------------------------------------------------------------------
-# MARCHÉS — Stooq (CSV public gratuit, aucune clé)
-# symboles Stooq : https://stooq.com/q/  (suffixe .us, .fr, etc.)
+# MARCHÉS — Yahoo Finance (endpoint "chart" public, gratuit, aucune clé)
+# symboles Yahoo Finance : cherchable sur https://finance.yahoo.com/lookup
+# (corrigé le 2026-09-13, remplace Stooq qui exige désormais une clé via CAPTCHA
+# depuis avril 2026, cf. src/collecte/markets.py pour le détail)
 # ---------------------------------------------------------------------------
 marches:
   indices:
-    - {name: "CAC 40", symbol: "^fchi"}
-    - {name: "S&P 500", symbol: "^spx"}
-    - {name: "Nasdaq", symbol: "^ndq"}
-    - {name: "DAX", symbol: "^dax"}
-    - {name: "Euro Stoxx 50", symbol: "^stoxx50e"}
+    - {name: "CAC 40", symbol: "^FCHI"}
+    - {name: "S&P 500", symbol: "^GSPC"}
+    - {name: "Nasdaq", symbol: "^IXIC"}
+    - {name: "DAX", symbol: "^GDAXI"}
+    - {name: "Euro Stoxx 50", symbol: "^STOXX50E"}
   matieres_premieres:
-    - {name: "Pétrole (Brent)", symbol: "cb.f"}
-    - {name: "Or", symbol: "xauusd"}
+    - {name: "Pétrole (Brent)", symbol: "BZ=F"}
+    - {name: "Or", symbol: "GC=F"}
 
 # ---------------------------------------------------------------------------
 # MÉTÉO — Open-Meteo (gratuit, sans clé)
