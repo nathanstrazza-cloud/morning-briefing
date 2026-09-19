@@ -1,6 +1,8 @@
 {
-  "derniere_execution": "2026-09-18T11:05:21.835753+02:00",
-  "date_visee": "2026-09-18",
+  "derniere_execution": "2026-09-19T20:44:26.942314+02:00",
+  "date_visee": "2026-09-19",
   "succes": true,
-  "erreur": null
+  "erreur": null,
+  "synthese_llm": true,
+  "erreur_llm": null
 }
