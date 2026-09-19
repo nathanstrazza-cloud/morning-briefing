@@ -1,8 +1,8 @@
 """Abstraction multi-fournisseurs LLM (cf. README §4 pour le choix et les clés).
 
-Objectif : pouvoir changer de fournisseur (Groq, Gemini, Anthropic, ...) en changeant
-uniquement la variable d'environnement LLM_PROVIDER, sans toucher au reste du pipeline.
-Chaque provider expose la même méthode `complete(system, user) -> str`.
+Objectif : pouvoir changer de fournisseur (Groq, Mistral, Cerebras, Gemini, Anthropic, ...)
+en changeant uniquement la variable d'environnement LLM_PROVIDER, sans toucher au reste du
+pipeline. Chaque provider expose la même méthode `complete(system, user) -> str`.
 
 Aucun provider n'est appelé si aucune clé n'est configurée : `get_provider()` retourne
 None dans ce cas, et l'appelant (briefing_generator.py) doit basculer en mode fallback
@@ -146,20 +146,87 @@ class AnthropicProvider(LLMProvider):
         return "".join(block["text"] for block in data["content"] if block["type"] == "text")
 
 
-# cf. cahier §19 : ordre de priorité par défaut des providers de repli -- Gemini d'abord
-# (quota gratuit généreux, cf. README §4), puis Groq, puis Anthropic en dernier (pas de
-# quota gratuit permanent, à éviter comme choix automatique).
+class MistralProvider(LLMProvider):
+    """Mistral AI (La Plateforme), plan gratuit "Experiment". https://console.mistral.ai
+
+    NB (2026-09-19, ajouté en repli de Gemini) : le plan gratuit ne demande qu'une
+    vérification par numéro de téléphone (pas de carte bancaire), avec une limite d'âge de
+    13 ans + autorisation parentale si mineur -- pas de blocage "compte Google adulte"
+    comme rencontré avec Gemini. Quota très généreux (1 milliard de tokens/mois, cf.
+    console.mistral.ai/limits). API compatible OpenAI (même forme que Groq)."""
+    name = "mistral"
+
+    def __init__(self, api_key: str, model: str | None = None):
+        self.api_key = api_key
+        self.model = model or os.environ.get("MISTRAL_MODEL", "mistral-small-latest")
+
+    def complete(self, system: str, user: str) -> str:
+        data = self._post(
+            "https://api.mistral.ai/v1/chat/completions",
+            headers={"Authorization": f"Bearer {self.api_key}"},
+            json={
+                "model": self.model,
+                "messages": [
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": user},
+                ],
+                "temperature": 0.3,
+            },
+            timeout=60,
+        )
+        return data["choices"][0]["message"]["content"]
+
+
+class CerebrasProvider(LLMProvider):
+    """Cerebras Cloud, plan gratuit "Developer". https://cloud.cerebras.ai
+
+    NB (2026-09-19, ajouté en repli de Gemini) : inscription par email, pas de carte
+    bancaire ni de vérification d'âge particulière signalée. Jusqu'à 1M tokens/jour sur
+    les modèles gratuits (llama-3.3-70b, llama3.1-8b), inférence très rapide (matériel
+    dédié Cerebras). API compatible OpenAI (même forme que Groq/Mistral)."""
+    name = "cerebras"
+
+    def __init__(self, api_key: str, model: str | None = None):
+        self.api_key = api_key
+        self.model = model or os.environ.get("CEREBRAS_MODEL", "llama-3.3-70b")
+
+    def complete(self, system: str, user: str) -> str:
+        data = self._post(
+            "https://api.cerebras.ai/v1/chat/completions",
+            headers={"Authorization": f"Bearer {self.api_key}"},
+            json={
+                "model": self.model,
+                "messages": [
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": user},
+                ],
+                "temperature": 0.3,
+            },
+            timeout=60,
+        )
+        return data["choices"][0]["message"]["content"]
+
+
+# cf. cahier §19 : ordre de priorité par défaut des providers de repli. Groq en tête (quota
+# gratuit le plus généreux et le plus rapide constaté en pratique), puis Mistral et Cerebras
+# (2026-09-19 : ajoutés comme repli de Gemini, qui bloque les comptes mineurs -- ni Mistral
+# ni Cerebras n'imposent ce type de vérification d'âge liée au compte), puis Gemini (toujours
+# utilisable si le compte le permet), Anthropic en dernier (pas de quota gratuit permanent).
 _PROVIDER_BUILDERS = {
     "groq": lambda key: GroqProvider(key),
+    "mistral": lambda key: MistralProvider(key),
+    "cerebras": lambda key: CerebrasProvider(key),
     "gemini": lambda key: GeminiProvider(key),
     "anthropic": lambda key: AnthropicProvider(key),
 }
 _ENV_KEY_BY_PROVIDER = {
     "groq": "GROQ_API_KEY",
+    "mistral": "MISTRAL_API_KEY",
+    "cerebras": "CEREBRAS_API_KEY",
     "gemini": "GEMINI_API_KEY",
     "anthropic": "ANTHROPIC_API_KEY",
 }
-_DEFAULT_FALLBACK_ORDER = ("gemini", "groq", "anthropic")
+_DEFAULT_FALLBACK_ORDER = ("groq", "mistral", "cerebras", "gemini", "anthropic")
 
 
 def _build_provider(name: str) -> LLMProvider | None:

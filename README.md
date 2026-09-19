@@ -148,28 +148,34 @@ pas de synthèse scientifique approfondie ni de rédaction fluide).
 Options gratuites (`LLM_PROVIDER` définit le provider PRÉFÉRÉ ; configurer le secret
 correspondant) :
 
-| Fournisseur | Variable secret GitHub | Gratuit ? |
-|---|---|---|
-| Groq (Llama/Gemma, très rapide) | `GROQ_API_KEY` | Oui, quota gratuit généreux |
-| Google Gemini | `GEMINI_API_KEY` | Oui, quota gratuit |
-| Anthropic (Claude) | `ANTHROPIC_API_KEY` | Payant (pas de quota gratuit permanent) |
+| Fournisseur | Variable secret GitHub | Gratuit ? | Inscription | Restriction d'âge connue |
+|---|---|---|---|---|
+| Groq (Llama/Gemma, très rapide) | `GROQ_API_KEY` | Oui, quota gratuit généreux | Email | Aucune signalée |
+| Mistral AI (La Plateforme, plan "Experiment") | `MISTRAL_API_KEY` | Oui, très généreux (1 milliard tokens/mois) | Email + vérification par SMS | 13 ans + autorisation parentale si mineur |
+| Cerebras (Llama, inférence très rapide) | `CEREBRAS_API_KEY` | Oui (jusqu'à 1M tokens/jour) | Email | Aucune signalée |
+| Google Gemini | `GEMINI_API_KEY` | Oui, quota gratuit | Compte Google | **Bloque les comptes mineurs** (restriction de compte Google, pas seulement l'API) |
+| Anthropic (Claude) | `ANTHROPIC_API_KEY` | Payant (pas de quota gratuit permanent) | Email | Aucune signalée |
 
-`LLM_PROVIDER` = `groq` | `gemini` | `anthropic` (variable d'environnement, pas un secret,
-définie dans `briefing.yml`).
+`LLM_PROVIDER` = `groq` | `mistral` | `cerebras` | `gemini` | `anthropic` (variable
+d'environnement, pas un secret, définie dans `briefing.yml`).
 
-**Recommandation V1 (objectif 0€, cf. cahier §19) : Groq ou Gemini**, pas Anthropic, sauf si
-l'utilisateur a déjà des crédits API qu'il veut utiliser.
+**Recommandation V1 (objectif 0€, cf. cahier §19) : Groq, Mistral ou Cerebras**, pas
+Anthropic, sauf si l'utilisateur a déjà des crédits API qu'il veut utiliser. Gemini reste
+disponible mais nécessite un compte Google éligible (pas de restriction d'âge) : cf. colonne
+"Restriction d'âge connue" ci-dessus.
 
-### Repli automatique entre providers (2026-09-19)
+### Repli automatique entre providers (2026-09-19, étendu le même jour)
 
-Configurer **plusieurs** secrets à la fois (ex: `GROQ_API_KEY` ET `GEMINI_API_KEY`) active un
+Configurer **plusieurs** secrets à la fois (ex: `GROQ_API_KEY` ET `MISTRAL_API_KEY`) active un
 repli automatique : `llm_provider.get_providers()` retourne la liste de tous les providers
 dont la clé est configurée, provider préféré (`LLM_PROVIDER`) en premier. Dans
 `briefing_generator.generate()`, si le provider préféré échoue deux fois (ex: Groq atteint sa
 limite de tokens/minute -> 413), le pipeline essaie automatiquement le provider suivant de la
 liste avant de renoncer à la synthèse rédigée. Coût : 0€ tant que chaque provider utilisé reste
 sur son tier gratuit (cf. cahier §19) — aucun appel supplémentaire n'est fait si le provider
-préféré réussit du premier coup.
+préféré réussit du premier coup. Ordre de repli par défaut (si plusieurs secrets sont
+configurés et que `LLM_PROVIDER` n'en privilégie pas un autre) : Groq -> Mistral -> Cerebras
+-> Gemini -> Anthropic (cf. `_DEFAULT_FALLBACK_ORDER` dans `llm_provider.py`).
 
 Aucune autre clé n'est nécessaire : RSS, Open-Meteo et Yahoo Finance sont gratuits et sans clé.
 
