@@ -16,7 +16,7 @@ import logging
 from datetime import datetime
 
 from ..analyse import verification
-from .llm_provider import LLMProvider
+from .llm_provider import LLMError, LLMProvider
 
 logger = logging.getLogger("morning_briefing.generation")
 
@@ -74,17 +74,38 @@ SCHÉMA JSON ATTENDU :
 """ + SCHEMA_ATTENDU
 
 
-# NB (corrigé le 2026-09-13) : garde-fou anti-413. Cf. rss_sources._clean_summary qui
-# nettoie déjà les résumés à la collecte -- ceci est une DEUXIÈME barrière, indépendante
-# de la source des données, pour ne plus jamais dépendre du bon comportement de chaque
-# collecteur individuel (cf. cahier §21 robustesse). Si le JSON du prompt dépasse
-# MAX_PROMPT_CHARS malgré tout, on retire les événements les moins bien scorés (les listes
-# actualite_france/monde sont déjà triées par score décroissant, cf. scoring.score_events)
-# jusqu'à repasser sous la limite, plutôt que de laisser Groq refuser toute la requête.
-MAX_PROMPT_CHARS = 45_000
+# NB (corrigé le 2026-09-13, resserré le 2026-09-19) : garde-fou anti-413. Cf.
+# rss_sources._clean_summary qui nettoie déjà les résumés à la collecte -- ceci est une
+# DEUXIÈME barrière, indépendante de la source des données (cf. cahier §21 robustesse).
+#
+# Historique : la limite de 45 000 caractères posée le 13/09 n'a PAS empêché l'erreur 413
+# de continuer à se produire (constaté dans les logs du 17/09 et vraisemblablement du 18/09,
+# sans log committé ce jour-là). Un test avec une charge utile réaliste d'une journée normale
+# (15 actus France + 15 Monde + sport + science) donne ~42-45 Ko, c'est-à-dire pile à
+# l'ancienne limite : elle ne déclenchait donc quasiment jamais le rognage. Le vrai seuil
+# accepté par Groq côté gratuit semble bien plus bas que la taille de contexte théorique du
+# modèle (128k tokens) — probablement une limite de tokens/minute par organisation propre au
+# tier gratuit (cf. Groq: "tokens per minute (TPM)" pouvant être aussi bas que quelques
+# milliers selon le modèle). On ne connaissait pas la valeur exacte car `raise_for_status()`
+# n'exposait jamais le corps de la réponse Groq (cf. llm_provider.LLMError, ajouté ce jour
+# pour que la PROCHAINE erreur, s'il y en a une, indique enfin la vraie cause dans les logs
+# et dans `_erreur_llm` au lieu de forcer une nouvelle devinette).
+#
+# En attendant d'avoir cette donnée réelle, on prend une marge large : 12 000 caractères
+# (~3000 tokens), et on sérialise en JSON compact (sans indentation) qui réduit mécaniquement
+# la taille de 20-30% par rapport à `indent=2` pour la même information, sans rien retirer.
+# Cf. cahier §1 : mieux vaut une synthèse LLM fiable sur moins d'événements qu'une absence
+# systématique de synthèse faute de budget de caractères correctement calibré.
+MAX_PROMPT_CHARS = 12_000
+
+# Cf. cahier §1/§21 : si même 12 000 caractères échouent (413/429), on retente UNE fois avec
+# un budget très restreint plutôt que d'abandonner directement sur la synthèse rédigée --
+# mieux vaut un briefing LLM sur les 5 informations les plus importantes qu'aucune synthèse
+# rédigée du tout.
+RETRY_PROMPT_CHARS = 4_000
 
 
-def _build_user_prompt(analysed: dict, science_topic: dict, is_monday: bool) -> str:
+def _build_user_prompt(analysed: dict, science_topic: dict, is_monday: bool, max_chars: int = MAX_PROMPT_CHARS) -> str:
     france = list(analysed["actualite_france"])
     monde = list(analysed["actualite_monde"])
 
@@ -99,10 +120,16 @@ def _build_user_prompt(analysed: dict, science_topic: dict, is_monday: bool) -> 
             "science_source": science_topic["contenu_source"],
         }
 
-    serialized = json.dumps(_payload(), ensure_ascii=False, indent=2, default=str)
+    # JSON compact (pas d'indentation, séparateurs sans espace) : même information, 20-30%
+    # de caractères en moins qu'avec indent=2 (cf. note ci-dessus). Le LLM n'a pas besoin
+    # d'un JSON lisible par un humain pour le comprendre.
+    def _serialize(payload: dict) -> str:
+        return json.dumps(payload, ensure_ascii=False, separators=(",", ":"), default=str)
+
+    serialized = _serialize(_payload())
 
     trimmed = False
-    while len(serialized) > MAX_PROMPT_CHARS and (france or monde):
+    while len(serialized) > max_chars and (france or monde):
         # Retire l'événement le moins bien scoré parmi france/monde (listes triées
         # décroissant -> on retire toujours en fin de liste).
         if len(monde) >= len(france) and monde:
@@ -110,13 +137,13 @@ def _build_user_prompt(analysed: dict, science_topic: dict, is_monday: bool) -> 
         elif france:
             france.pop()
         trimmed = True
-        serialized = json.dumps(_payload(), ensure_ascii=False, indent=2, default=str)
+        serialized = _serialize(_payload())
 
     if trimmed:
         logger.warning(
             "Prompt LLM trop volumineux (>%d caractères) -> %d événements retirés "
-            "(les moins bien scorés) pour rester sous la limite avant l'appel Groq.",
-            MAX_PROMPT_CHARS,
+            "(les moins bien scorés) pour rester sous la limite avant l'appel LLM.",
+            max_chars,
             len(analysed["actualite_france"]) + len(analysed["actualite_monde"]) - len(france) - len(monde),
         )
 
@@ -124,7 +151,7 @@ def _build_user_prompt(analysed: dict, science_topic: dict, is_monday: bool) -> 
 
 
 def generate(
-    provider: LLMProvider | None,
+    providers: list[LLMProvider],
     analysed: dict,
     science_topic: dict,
     weather_summary: dict | None,
@@ -134,13 +161,18 @@ def generate(
 
     `analysed` doit contenir : actualite_france, actualite_monde, marches_data, sport_events
     (toutes des listes/dicts déjà scorés+filtrés+vérifiés en amont, cf. main.py).
-    """
-    if provider is None:
-        logger.warning("Aucun LLM disponible -> génération en mode fallback (sans synthèse rédigée)")
-        return fallback_briefing(analysed, science_topic, weather_summary, is_monday)
 
-    try:
-        user_prompt = _build_user_prompt(analysed, science_topic, is_monday)
+    `providers` est une LISTE ordonnée (cf. llm_provider.get_providers()) : on essaie chaque
+    provider dans l'ordre, et pour chacun deux budgets de prompt (cf. MAX_PROMPT_CHARS /
+    RETRY_PROMPT_CHARS), avant de renoncer à la synthèse rédigée et de retomber sur
+    fallback_briefing(). Ne renonce donc que si TOUS les providers configurés ont échoué.
+    """
+    if not providers:
+        logger.warning("Aucun LLM disponible -> génération en mode fallback (sans synthèse rédigée)")
+        return fallback_briefing(analysed, science_topic, weather_summary, is_monday, erreur_llm=None)
+
+    def _try(provider: LLMProvider, max_chars: int) -> dict:
+        user_prompt = _build_user_prompt(analysed, science_topic, is_monday, max_chars=max_chars)
         raw = provider.complete(SYSTEM_PROMPT, user_prompt)
         cleaned = raw.strip()
         if cleaned.startswith("```"):
@@ -152,13 +184,43 @@ def generate(
         body["meteo"] = weather_summary
         body["_genere_par_llm"] = True
         body["_provider"] = provider.name
+        body["_erreur_llm"] = None
         return body
-    except Exception as exc:  # noqa: BLE001
-        logger.error("Échec de la génération LLM (%s) -> repli sur fallback: %s", provider.name, exc)
-        return fallback_briefing(analysed, science_topic, weather_summary, is_monday)
+
+    dernier_exc: Exception | None = None
+    dernier_provider_name: str | None = None
+    # NB (2026-09-19) : pour CHAQUE provider disponible (préféré, puis repli(s) -- cf.
+    # llm_provider.get_providers()), deux tentatives avec un budget de caractères décroissant
+    # (cf. RETRY_PROMPT_CHARS). On ne bascule au provider suivant qu'après avoir épuisé les
+    # deux tentatives du provider courant. Cf. cahier §1/§21 : mieux vaut une synthèse rédigée
+    # via un second fournisseur gratuit (ex: Gemini) qu'aucune synthèse du tout parce que le
+    # premier (ex: Groq) a atteint sa limite.
+    for provider in providers:
+        for tentative, max_chars in enumerate((MAX_PROMPT_CHARS, RETRY_PROMPT_CHARS), start=1):
+            try:
+                return _try(provider, max_chars)
+            except Exception as exc:  # noqa: BLE001
+                dernier_exc = exc
+                dernier_provider_name = provider.name
+                detail = getattr(exc, "body_excerpt", None)
+                logger.error(
+                    "Échec de la génération LLM (%s, tentative %d/2, budget=%d caractères): %s%s",
+                    provider.name, tentative, max_chars, exc,
+                    f" | corps de la réponse: {detail}" if detail else "",
+                )
+        logger.warning("Provider '%s' épuisé (2/2 tentatives échouées) -> passage au suivant s'il existe.", provider.name)
+
+    erreur_resumee = f"{dernier_provider_name}: {dernier_exc}" if dernier_exc else None
+    return fallback_briefing(analysed, science_topic, weather_summary, is_monday, erreur_llm=erreur_resumee)
 
 
-def fallback_briefing(analysed: dict, science_topic: dict, weather_summary: dict | None, is_monday: bool) -> dict:
+def fallback_briefing(
+    analysed: dict,
+    science_topic: dict,
+    weather_summary: dict | None,
+    is_monday: bool,
+    erreur_llm: str | None = None,
+) -> dict:
     """Briefing minimal sans rédaction LLM : liste factuelle brute des événements retenus.
     Toujours disponible, ne dépend d'aucune clé API (cf. cahier §21 robustesse)."""
 
@@ -204,6 +266,10 @@ def fallback_briefing(analysed: dict, science_topic: dict, weather_summary: dict
         "meta": {"resume_1_phrase": "Briefing minimal généré sans synthèse LLM."},
         "_genere_par_llm": False,
         "_provider": None,
+        # NB (2026-09-19) : cause réelle de l'échec LLM (tronquée), pour diagnostic sans
+        # devoir rouvrir les logs du run -- cf. storage.save_briefing qui la reprend aussi
+        # dans status.json.
+        "_erreur_llm": (erreur_llm[:500] if erreur_llm else None),
     }
 
 

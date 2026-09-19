@@ -2,10 +2,14 @@
 conserve l'historique, ne supprime jamais d'anciens briefings.
 
 Fichiers produits dans data/briefings/ :
-- YYYY-MM-DD.json   : le briefing complet de ce jour (permanent, jamais écrasé)
-- latest.json       : copie du dernier briefing réussi (lu par la page d'accueil)
-- index.json        : liste de toutes les dates disponibles, pour l'historique (§16)
-- status.json       : statut du dernier run (succès/échec) affiché par le frontend (§21)
+- YYYY-MM-DD.json     : le briefing complet de ce jour (permanent, jamais écrasé)
+- latest.json         : copie du dernier briefing réussi (lu par la page d'accueil)
+- index.json          : liste de toutes les dates disponibles, pour l'historique (§16)
+- status.json         : statut du dernier run (succès/échec) affiché par le frontend (§21)
+- status_history.json : historique des statuts, un par date (2026-09-19, cf. onglet "Erreurs"
+                         du site) -- status.json seul ne montre que le run le plus récent, ce
+                         qui ne permet pas de voir "y a-t-il eu des erreurs récemment ?" sans
+                         rouvrir les logs GitHub Actions un par un.
 """
 from __future__ import annotations
 
@@ -61,7 +65,20 @@ def save_briefing(briefing: dict, date_iso: str, last_update_iso: str) -> None:
     _write_json(DATA_DIR / "latest.json", enveloppe)
 
     _update_index(date_iso)
-    _write_status(succes=True, date_iso=date_iso, last_update_iso=last_update_iso)
+    # NB (corrigé le 2026-09-19) : jusqu'ici status.json indiquait toujours succes=True dès
+    # que le pipeline se terminait, même quand la synthèse LLM avait échoué et qu'on était
+    # tombé en mode fallback (cf. briefing["_genere_par_llm"]) -- l'échec LLM était alors
+    # invisible sans rouvrir les logs du run. status.json distingue maintenant les deux :
+    # le run reste "succes" (cf. cahier §21 : le fallback est un succès du point de vue
+    # robustesse, jamais un crash), mais `synthese_llm`/`erreur_llm` exposent séparément si
+    # la rédaction LLM elle-même a fonctionné.
+    _write_status(
+        succes=True,
+        date_iso=date_iso,
+        last_update_iso=last_update_iso,
+        synthese_llm=briefing.get("_genere_par_llm"),
+        erreur_llm=briefing.get("_erreur_llm"),
+    )
     logger.info("Briefing sauvegardé: %s", day_path)
 
 
@@ -74,16 +91,47 @@ def _update_index(date_iso: str) -> None:
     _write_json(index_path, index)
 
 
-def _write_status(succes: bool, date_iso: str, last_update_iso: str, erreur: str | None = None) -> None:
-    _write_json(
-        DATA_DIR / "status.json",
-        {
-            "derniere_execution": last_update_iso,
-            "date_visee": date_iso,
-            "succes": succes,
-            "erreur": erreur,
-        },
-    )
+def _write_status(
+    succes: bool,
+    date_iso: str,
+    last_update_iso: str,
+    erreur: str | None = None,
+    synthese_llm: bool | None = None,
+    erreur_llm: str | None = None,
+) -> None:
+    entry = {
+        "derniere_execution": last_update_iso,
+        "date_visee": date_iso,
+        "succes": succes,
+        "erreur": erreur,
+        # cf. save_briefing : distinct de "succes" -- un run peut réussir globalement
+        # (fallback) tout en ayant une synthèse LLM en échec.
+        "synthese_llm": synthese_llm,
+        "erreur_llm": erreur_llm,
+    }
+    _write_json(DATA_DIR / "status.json", entry)
+    _append_status_history(entry)
+
+
+# Nombre d'entrées conservées dans status_history.json -- cf. onglet "Erreurs" du site.
+# ~120 jours ouvrés = plusieurs mois d'historique, largement suffisant pour repérer une
+# panne récurrente sans faire grossir le fichier indéfiniment (cf. cahier §16 : ne pas
+# supprimer les anciens BRIEFINGS -- cette limite ne concerne que le journal de statuts,
+# pas les briefings eux-mêmes qui restent, eux, conservés indéfiniment dans YYYY-MM-DD.json).
+MAX_STATUS_HISTORY = 120
+
+
+def _append_status_history(entry: dict) -> None:
+    """Ajoute `entry` à status_history.json (une entrée par date_visee -- un rerun le même
+    jour remplace l'entrée existante plutôt que d'en ajouter une seconde, cf.
+    day_briefing_exists qui évite déjà normalement les reruns). Liste triée du plus récent
+    au plus ancien, plafonnée à MAX_STATUS_HISTORY entrées."""
+    path = DATA_DIR / "status_history.json"
+    data = _read_json(path) or {"entries": []}
+    entries = [e for e in data.get("entries", []) if e.get("date_visee") != entry["date_visee"]]
+    entries.append(entry)
+    entries.sort(key=lambda e: (e.get("date_visee") or "", e.get("derniere_execution") or ""), reverse=True)
+    _write_json(path, {"entries": entries[:MAX_STATUS_HISTORY]})
 
 
 def record_failure(date_iso: str, last_update_iso: str, erreur: str) -> None:

@@ -17,21 +17,34 @@ d'architecture et pourquoi, et les prochaines étapes concrètes.
 - Structure du pipeline complète : collecte → analyse → génération → stockage → frontend.
 - Collecte RSS (France/Monde/Sport/Sciences) : fonctionnelle, ne nécessite aucune clé.
 - Collecte météo (Open-Meteo) : fonctionnelle, aucune clé nécessaire.
-- Collecte marchés (Stooq CSV) : fonctionnelle, aucune clé nécessaire.
+- Collecte marchés (Yahoo Finance) : fonctionnelle, aucune clé nécessaire (migré de Stooq
+  début septembre 2026, Stooq étant devenu peu fiable).
 - Déduplication (similarité de titres) : fonctionnelle.
 - Scoring d'importance (heuristique mots-clés + catégorie) : fonctionnelle mais **basique**,
   à affiner (voir §7 Roadmap).
 - Vérification (fait confirmé / info rapportée / incertaine, selon nombre de sources
   indépendantes qui convergent) : fonctionnelle mais heuristique simple.
-- Stockage JSON par date + `latest.json` + `index.json` (historique) : fonctionnel.
+- Stockage JSON par date + `latest.json` + `index.json` + `status.json` + `status_history.json`
+  (historique des runs, cf. onglet Erreurs) : fonctionnel.
 - Génération du briefing final (texte, citation, synthèse scientifique) : **nécessite une clé
-  LLM** (voir §4). Le code gère plusieurs fournisseurs et un mode `--no-llm` de secours qui
-  produit un briefing minimal à partir des seules données brutes (sans synthèse rédigée), pour
-  que le pipeline ne casse jamais complètement si le LLM est indisponible.
+  LLM** (voir §4). Le code essaie plusieurs fournisseurs dans l'ordre (repli automatique si le
+  préféré échoue, cf. §4) et retombe sur un mode fallback qui produit un briefing minimal à
+  partir des seules données brutes (sans synthèse rédigée) si aucun n'est disponible ou si tous
+  échouent, pour que le pipeline ne casse jamais complètement.
 - Frontend statique (HTML/CSS/JS, aucun framework, aucune dépendance de build) : fonctionnel,
-  lit `docs/data/briefings/latest.json` et `docs/data/briefings/index.json`.
+  3 pages (Aujourd'hui / Archives / Erreurs) qui lisent `docs/data/briefings/*.json`.
 - Workflow GitHub Actions (cron 06:30 Paris, lun-ven) : présent, à activer après premier test
   manuel (`workflow_dispatch`).
+
+**Mise à jour du 2026-09-19 (diagnostic à distance d'un run réel du 18/09)** : la synthèse LLM
+échouait systématiquement en production (Groq 413 "Payload Too Large", garde-fou de taille de
+prompt du 13/09 insuffisant en pratique). Corrigé : prompt bien plus petit (JSON compact,
+12 000 caractères) + `max_actualites_par_zone` (défaut 5, cf. §1 cahier), retry automatique sur
+un budget encore plus petit, puis bascule vers un 2e fournisseur LLM si le premier échoue
+toujours (cf. §4), et enfin `_erreur_llm`/`status_history.json` pour ne plus jamais avoir à
+deviner la cause d'un échec. **Non vérifié en conditions réelles** (pas d'accès à une vraie clé
+Groq/Gemini ni au workflow GitHub Actions depuis cette session) : seulement testé en local avec
+des providers simulés. À confirmer après le prochain run réel — cf. `docs/erreurs.html`.
 
 **Pas encore fait / stub volontaire (cf. cahier des charges §26, ne pas sur-construire trop tôt) :**
 - Sources sport détaillées (Spurs NBA à date, calendrier Ligue 1 précis) : le module
@@ -59,7 +72,7 @@ morning-briefing/
 ├── src/
 │   ├── collecte/                # ÉTAPE 1 : récupère les données brutes
 │   │   ├── rss_sources.py       # actualité France/Monde/Sciences via flux RSS
-│   │   ├── markets.py           # indices/matières premières via Stooq (gratuit, sans clé)
+│   │   ├── markets.py           # indices/matières premières via Yahoo Finance (gratuit, sans clé -- migré de Stooq le 2026-09-1x)
 │   │   ├── weather.py           # météo Antibes/Cannes/Valbonne/Grasse via Open-Meteo
 │   │   ├── sports.py            # foot/basket/natation/autres via RSS
 │   │   └── collector.py         # orchestre tous les collecteurs -> items bruts
@@ -68,16 +81,17 @@ morning-briefing/
 │   │   ├── scoring.py           # score d'importance 0-10 par item
 │   │   └── verification.py      # statut : fait confirmé / rapporté / incertain
 │   ├── generation/               # ÉTAPE 3 : rédige le briefing
-│   │   ├── llm_provider.py      # abstraction multi-fournisseurs LLM (Anthropic/Groq/OpenAI-compat)
-│   │   └── briefing_generator.py# construit le prompt, appelle le LLM, valide le JSON produit
+│   │   ├── llm_provider.py      # abstraction multi-fournisseurs LLM (Groq/Gemini/Anthropic) + repli automatique (cf. §4)
+│   │   └── briefing_generator.py# construit le prompt, appelle le(s) LLM, valide le JSON produit
 │   ├── stockage/                 # ÉTAPE 4 : persistance
-│   │   └── storage.py            # écrit docs/data/briefings/YYYY-MM-DD.json, latest.json, index.json
+│   │   └── storage.py            # écrit docs/data/briefings/YYYY-MM-DD.json, latest.json, index.json, status.json, status_history.json
 │   └── main.py                   # orchestrateur : exécute le pipeline complet, logs, erreurs
 ├── logs/                         # logs d'exécution (un fichier par run)
 ├── docs/                         # site statique + données, servi tel quel par GitHub Pages
 │   ├── index.html
 │   ├── history.html
 │   ├── briefing.html             # affichage d'un briefing archivé (?date=YYYY-MM-DD)
+│   ├── erreurs.html              # journal des runs (succès/échec, synthèse LLM dispo ou non) -- cf. status_history.json
 │   ├── style.css
 │   ├── app.js
 │   └── data/briefings/           # sortie JSON (committée = historique + hébergement gratuit)
@@ -101,12 +115,16 @@ main.py
   3. analyse.dedup.deduplicate(items) -> événements uniques + sources associées
   4. analyse.scoring.score_items(events) -> chaque event a un score 0-10
   5. analyse.verification.classify(events) -> statut fait confirmé / rapporté / incertain
-  6. filtre : on ne garde que score >= seuil (config.yaml, défaut 5) sauf sections obligatoires
-     (météo, citation, science) qui ont leur propre logique
-  7. generation.briefing_generator.generate(events_filtrés, contexte) -> objet Briefing (dict)
-     - si LLM indisponible ou erreur -> generation.briefing_generator.fallback_briefing() :
+  6. filtre : on ne garde que score >= seuil (config.yaml, défaut 5), puis on plafonne à
+     max_actualites_par_zone (config.yaml, défaut 5) par zone France/Monde -- cf. cahier §1
+     "mieux vaut 5 infos réellement importantes que 20 secondaires" (demande explicite,
+     2026-09-19) ; sections météo/citation/science ont leur propre logique, pas ce plafond
+  7. generation.briefing_generator.generate(providers_LLM, events_filtrés, contexte) -> objet Briefing (dict)
+     - essaie chaque provider LLM configuré dans l'ordre (préféré puis repli(s), cf. §4) avant
+       de renoncer à la synthèse rédigée
+     - si aucun LLM disponible ou tous ont échoué -> generation.briefing_generator.fallback_briefing() :
        briefing minimal, factuel, sans synthèse rédigée, mais jamais de contenu inventé
-  8. stockage.storage.save(briefing) -> JSON du jour + mise à jour latest.json + index.json
+  8. stockage.storage.save(briefing) -> JSON du jour + latest.json + index.json + status.json + status_history.json
   9. Le frontend (statique, servi par GitHub Pages) lit ces JSON au chargement de la page.
 ```
 
@@ -115,7 +133,9 @@ main.py
 LLM échoue -> `fallback_briefing()`. Si TOUT échoue au point de ne rien avoir de fiable -> le
 script **ne touche pas** à `latest.json` (le dernier briefing valide reste affiché), et écrit
 un indicateur d'échec dans `docs/data/briefings/status.json` que le frontend peut afficher
-("Dernière mise à jour a échoué, vous consultez le dernier briefing valide").
+("Dernière mise à jour a échoué, vous consultez le dernier briefing valide"). L'onglet
+**Erreurs** (`docs/erreurs.html`) affiche l'historique complet de ces statuts
+(`status_history.json`), pas seulement le dernier run.
 
 ---
 
@@ -125,7 +145,8 @@ Le seul point qui **nécessite un choix de l'utilisateur** est le fournisseur LL
 rédaction. Sans lui, le pipeline tourne quand même (mode fallback, données brutes seulement,
 pas de synthèse scientifique approfondie ni de rédaction fluide).
 
-Options gratuites (à choisir un, configurer `LLM_PROVIDER` + secret correspondant) :
+Options gratuites (`LLM_PROVIDER` définit le provider PRÉFÉRÉ ; configurer le secret
+correspondant) :
 
 | Fournisseur | Variable secret GitHub | Gratuit ? |
 |---|---|---|
@@ -139,7 +160,18 @@ définie dans `briefing.yml`).
 **Recommandation V1 (objectif 0€, cf. cahier §19) : Groq ou Gemini**, pas Anthropic, sauf si
 l'utilisateur a déjà des crédits API qu'il veut utiliser.
 
-Aucune autre clé n'est nécessaire : RSS, Open-Meteo et Stooq sont gratuits et sans clé.
+### Repli automatique entre providers (2026-09-19)
+
+Configurer **plusieurs** secrets à la fois (ex: `GROQ_API_KEY` ET `GEMINI_API_KEY`) active un
+repli automatique : `llm_provider.get_providers()` retourne la liste de tous les providers
+dont la clé est configurée, provider préféré (`LLM_PROVIDER`) en premier. Dans
+`briefing_generator.generate()`, si le provider préféré échoue deux fois (ex: Groq atteint sa
+limite de tokens/minute -> 413), le pipeline essaie automatiquement le provider suivant de la
+liste avant de renoncer à la synthèse rédigée. Coût : 0€ tant que chaque provider utilisé reste
+sur son tier gratuit (cf. cahier §19) — aucun appel supplémentaire n'est fait si le provider
+préféré réussit du premier coup.
+
+Aucune autre clé n'est nécessaire : RSS, Open-Meteo et Yahoo Finance sont gratuits et sans clé.
 
 Pour ajouter le secret : Settings -> Secrets and variables -> Actions -> New repository secret.
 **Ne jamais committer de clé** (cf. cahier §20) — `.env` est dans `.gitignore`.

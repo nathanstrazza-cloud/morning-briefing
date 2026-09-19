@@ -92,6 +92,14 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         events_monde = verification.classify_events(events_monde)
         events_monde = scoring.filter_by_threshold(events_monde, seuil)
 
+        # cf. cahier §1 + demande explicite (2026-09-19) : 5 infos France + 5 Monde suffisent
+        # -- les listes sont déjà triées par score décroissant (cf. scoring.score_events),
+        # on garde donc les meilleures. Réduit aussi la taille du prompt LLM en amont plutôt
+        # que de compter uniquement sur le rognage de secours dans briefing_generator.py.
+        max_par_zone = config["seuils"].get("max_actualites_par_zone", 5)
+        events_france = events_france[:max_par_zone]
+        events_monde = events_monde[:max_par_zone]
+
         events_economie = dedup.deduplicate(raw["news"]["economie"])
         events_economie = scoring.score_events(events_economie)
 
@@ -125,8 +133,8 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         }
 
         # 3. GÉNÉRATION
-        provider = None if force_no_llm else llm_provider.get_provider()
-        briefing = briefing_generator.generate(provider, analysed, science_topic, weather_summary, is_monday)
+        providers = [] if force_no_llm else llm_provider.get_providers()
+        briefing = briefing_generator.generate(providers, analysed, science_topic, weather_summary, is_monday)
 
         # 4. STOCKAGE
         storage.save_briefing(briefing, date_iso, reference.isoformat())

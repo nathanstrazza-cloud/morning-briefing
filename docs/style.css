@@ -291,6 +291,41 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .history-list a { font-size: 1.02rem; text-decoration: none; }
 .history-list a:hover { text-decoration: underline; }
 
+/* ---------- Journal des erreurs (onglet "Erreurs") ---------- */
+
+.status-page-intro { color: var(--ink-faint); font-size: 0.92rem; margin: -0.6rem 0 1.6rem; }
+
+.status-history-list { list-style: none; margin: 0; padding: 0; }
+.status-item {
+  border-top: 1px solid var(--rule);
+  padding: 0.9rem 0;
+}
+.status-item:first-child { border-top: none; }
+.status-item__header { display: flex; align-items: center; gap: 0.6rem; }
+.status-item__date { font-size: 1.0rem; }
+
+.status-item__badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+.status-item__badge--ok { color: var(--sage); border-color: #9CB7A9; }
+.status-item__badge--fail { color: #A6402C; border-color: #E0A594; background: #FBEAE5; }
+
+.status-item__details { margin-top: 0.4rem; }
+.status-item__detail {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  color: var(--ink-faint);
+}
+.status-item__detail--fail { color: #A6402C; }
+.status-item__detail--warn { color: #8A5B12; }
+
 /* ---------- Pied de page ---------- */
 
 .site-footer {

@@ -271,8 +271,67 @@ async function renderHistoryPage() {
   }
 }
 
+/* Onglet "Erreurs" (cf. cahier §22 journalisation) : affiche status_history.json, une
+   entrée par run (succès global / synthèse LLM dispo ou non / détail d'erreur), pour voir
+   d'un coup d'œil s'il y a eu des problèmes récents sans devoir rouvrir les logs GitHub
+   Actions. Ne fait aucune supposition sur une entrée absente : un champ manquant est
+   simplement omis, jamais inventé (cf. cahier §11/§21). */
+function renderStatusEntry(entry) {
+  const ok = entry.succes !== false;
+  const badge = el("span", {
+    class: "status-item__badge " + (ok ? "status-item__badge--ok" : "status-item__badge--fail"),
+    text: ok ? "OK" : "Échec",
+  });
+
+  const dateLabel = entry.date_visee ? formatDateFr(entry.date_visee) : "Date inconnue";
+  const heure = entry.derniere_execution ? formatHeureFr(entry.derniere_execution) : null;
+  const header = el("div", { class: "status-item__header" }, [
+    badge,
+    el("span", { class: "status-item__date", text: dateLabel + (heure ? ` · ${heure}` : "") }),
+  ]);
+
+  const details = [];
+  if (entry.erreur) {
+    details.push(el("p", { class: "status-item__detail status-item__detail--fail", text: `Échec du run : ${entry.erreur}` }));
+  }
+  if (ok) {
+    if (entry.synthese_llm === true) {
+      details.push(el("p", { class: "status-item__detail", text: "Synthèse rédigée par IA : disponible." }));
+    } else if (entry.synthese_llm === false) {
+      const msg = entry.erreur_llm
+        ? `Synthèse rédigée par IA indisponible ce jour (repli sur les données brutes) : ${entry.erreur_llm}`
+        : "Synthèse rédigée par IA indisponible ce jour (repli sur les données brutes).";
+      details.push(el("p", { class: "status-item__detail status-item__detail--warn", text: msg }));
+    }
+  }
+
+  const children = [header];
+  if (details.length) children.push(el("div", { class: "status-item__details" }, details));
+  return el("li", { class: "status-item" }, children);
+}
+
+async function renderStatusHistoryPage() {
+  const list = document.getElementById("status-history-list");
+  try {
+    const history = await loadJson(`${DATA_BASE}/status_history.json`);
+    const entries = history.entries || [];
+    list.innerHTML = "";
+    if (!entries.length) {
+      list.appendChild(el("li", { text: "Aucune donnée de journal disponible pour le moment." }));
+      return;
+    }
+    for (const entry of entries) list.appendChild(renderStatusEntry(entry));
+  } catch (err) {
+    list.innerHTML = "";
+    list.appendChild(el("li", { text: "Impossible de charger le journal des mises à jour." }));
+    console.error(err);
+  }
+}
+
 if (document.getElementById("content") && document.getElementById("date-briefing")) {
   renderIndexPage();
+} else if (document.getElementById("status-history-list")) {
+  renderStatusHistoryPage();
 } else if (document.getElementById("history-list")) {
   renderHistoryPage();
 }

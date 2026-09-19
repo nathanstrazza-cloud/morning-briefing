@@ -6,6 +6,11 @@ timezone: "Europe/Paris"
 seuils:
   score_min_affichage: 5   # cf. cahier §13 : <5 généralement ignoré
   score_min_marche_pct: 1.0  # variation (%) en dessous de laquelle un indice n'est pas commenté
+  # NB (2026-09-19, demande explicite de l'utilisateur) : 5 informations France + 5 Monde
+  # suffisent largement -- cf. cahier §1 "mieux vaut 5 informations réellement importantes
+  # que 20 secondaires". Réduit aussi mécaniquement la taille du prompt envoyé au LLM
+  # (cf. src/generation/briefing_generator.py, garde-fou anti-413).
+  max_actualites_par_zone: 5
 
 # ---------------------------------------------------------------------------
 # ACTUALITÉ — flux RSS gratuits, aucune clé nécessaire.
