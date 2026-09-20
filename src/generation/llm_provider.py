@@ -183,12 +183,24 @@ class CerebrasProvider(LLMProvider):
     NB (2026-09-19, ajouté en repli de Gemini) : inscription par email, pas de carte
     bancaire ni de vérification d'âge particulière signalée. Jusqu'à 1M tokens/jour sur
     les modèles gratuits (llama-3.3-70b, llama3.1-8b), inférence très rapide (matériel
-    dédié Cerebras). API compatible OpenAI (même forme que Groq/Mistral)."""
+    dédié Cerebras). API compatible OpenAI (même forme que Groq/Mistral).
+
+    NB (corrigé le 2026-09-20) : "llama-3.3-70b" (valeur par défaut jusqu'ici, documentée
+    partout dans la doc publique Cerebras) échouait en conditions réelles avec une erreur
+    404 "Model does not exist or you do not have access to it" -- probablement une
+    restriction propre au compte gratuit de l'utilisateur (certains modèles Cerebras ne
+    sont pas activés par défaut sur tous les comptes développeur). Remplacé par
+    "gpt-oss-120b", également disponible gratuitement chez Cerebras et plus généralement
+    accessible sur le tier gratuit. Non vérifié en conditions réelles au moment de ce
+    correctif (accès à api.cerebras.ai impossible depuis le sandbox qui a écrit ce code) --
+    à confirmer sur le prochain run réel ; si ça échoue encore, vérifier les modèles
+    réellement activés sur https://cloud.cerebras.ai (page "Models") et les passer via la
+    variable d'environnement CEREBRAS_MODEL plutôt que de retoucher le code."""
     name = "cerebras"
 
     def __init__(self, api_key: str, model: str | None = None):
         self.api_key = api_key
-        self.model = model or os.environ.get("CEREBRAS_MODEL", "llama-3.3-70b")
+        self.model = model or os.environ.get("CEREBRAS_MODEL", "gpt-oss-120b")
 
     def complete(self, system: str, user: str) -> str:
         data = self._post(
