@@ -42,12 +42,22 @@ _HEADERS = {
 }
 
 
-def fetch_quote(name: str, symbol: str, timeout: int = 10) -> dict | None:
+def fetch_quote(
+    name: str, symbol: str, timeout: int = 10, diagnostics: list[dict] | None = None
+) -> dict | None:
     """Récupère la dernière cotation (cours actuel + clôture précédente) pour un symbole
     Yahoo Finance (ex: ^FCHI, ^GSPC, BZ=F...).
 
     Retourne None en cas d'échec (ne jamais inventer une valeur, cf. cahier §21).
-    """
+    `diagnostics`, si fourni, reçoit une entrée par symbole (cf. rss_sources.fetch_feed,
+    même logique -- cf. cahier §22 journalisation)."""
+    def _record(statut: str, detail: str | None, http_status: int | None = None) -> None:
+        if diagnostics is not None:
+            diagnostics.append({
+                "source": name, "symbol": symbol, "statut": statut,
+                "http_status": http_status, "detail": detail,
+            })
+
     try:
         resp = requests.get(
             YAHOO_CHART_URL.format(symbol=symbol),
@@ -62,6 +72,7 @@ def fetch_quote(name: str, symbol: str, timeout: int = 10) -> dict | None:
         if not result:
             erreur = (data.get("chart") or {}).get("error")
             logger.warning("Réponse Yahoo Finance sans résultat pour %s (%s): %s", name, symbol, erreur)
+            _record("erreur", f"pas de résultat: {erreur}", resp.status_code)
             return None
 
         meta = result[0].get("meta") or {}
@@ -70,12 +81,19 @@ def fetch_quote(name: str, symbol: str, timeout: int = 10) -> dict | None:
 
         if cours is None or cloture_veille in (None, 0):
             logger.warning("Données Yahoo Finance incomplètes pour %s (%s): %s", name, symbol, meta)
+            _record(
+                "erreur",
+                f"champs manquants (cours={cours!r}, cloture_veille={cloture_veille!r}, "
+                f"marketState={meta.get('marketState')!r})",
+                resp.status_code,
+            )
             return None
 
         cours_f = float(cours)
         cloture_veille_f = float(cloture_veille)
         variation_pct = ((cours_f - cloture_veille_f) / cloture_veille_f) * 100 if cloture_veille_f else None
 
+        _record("ok", None, resp.status_code)
         return {
             "name": name,
             "symbol": symbol,
@@ -88,23 +106,25 @@ def fetch_quote(name: str, symbol: str, timeout: int = 10) -> dict | None:
         # Inclut json.JSONDecodeError (sous-classe de ValueError) : cas où Yahoo renvoie
         # une page HTML de consentement/erreur au lieu du JSON attendu.
         logger.warning("Réponse Yahoo Finance illisible pour %s (%s): %s", name, symbol, exc)
+        _record("erreur", f"réponse illisible: {exc}")
         return None
     except Exception as exc:  # noqa: BLE001
         logger.warning("Échec récupération cotation %s (%s): %s", name, symbol, exc)
+        _record("erreur", str(exc))
         return None
 
 
-def fetch_all_markets(config: dict) -> dict[str, list[dict]]:
+def fetch_all_markets(config: dict, diagnostics: list[dict] | None = None) -> dict[str, list[dict]]:
     marches_config = config.get("marches", {})
     resultat: dict[str, list[dict]] = {"indices": [], "matieres_premieres": []}
 
     for entry in marches_config.get("indices", []):
-        quote = fetch_quote(entry["name"], entry["symbol"])
+        quote = fetch_quote(entry["name"], entry["symbol"], diagnostics=diagnostics)
         if quote:
             resultat["indices"].append(quote)
 
     for entry in marches_config.get("matieres_premieres", []):
-        quote = fetch_quote(entry["name"], entry["symbol"])
+        quote = fetch_quote(entry["name"], entry["symbol"], diagnostics=diagnostics)
         if quote:
             resultat["matieres_premieres"].append(quote)
 

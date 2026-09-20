@@ -307,12 +307,25 @@ function renderStatusEntry(entry) {
   // cf. storage._write_status (rss_diagnostics) : flux RSS en échec pour ce run précis
   // (source + catégorie + cause), pour repérer une source morte sans rouvrir les logs.
   if (Array.isArray(entry.sources_rss_en_erreur) && entry.sources_rss_en_erreur.length) {
-    const items = entry.sources_rss_en_erreur.map((s) =>
-      el("li", { text: `${s.source} (${s.categorie})${s.detail ? " — " + s.detail : ""}` })
+    const items = entry.sources_rss_en_erreur.map((s) => {
+      const label = s.statut === "vide" ? "0 article récupéré" : (s.detail || "erreur");
+      return el("li", { text: `${s.source} (${s.categorie}) — ${label}` });
+    });
+    details.push(
+      el("div", { class: "status-item__detail status-item__detail--warn" }, [
+        el("p", { text: "Flux RSS en échec ou vides ce jour :" }),
+        el("ul", { class: "status-item__rss-list" }, items),
+      ])
+    );
+  }
+  // cf. storage._write_status (market_diagnostics) : cotations Yahoo Finance en échec.
+  if (Array.isArray(entry.sources_marches_en_erreur) && entry.sources_marches_en_erreur.length) {
+    const items = entry.sources_marches_en_erreur.map((s) =>
+      el("li", { text: `${s.source} (${s.symbol})${s.detail ? " — " + s.detail : ""}` })
     );
     details.push(
       el("div", { class: "status-item__detail status-item__detail--warn" }, [
-        el("p", { text: "Flux RSS en échec ce jour :" }),
+        el("p", { text: "Cotations en échec ce jour :" }),
         el("ul", { class: "status-item__rss-list" }, items),
       ])
     );

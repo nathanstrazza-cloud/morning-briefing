@@ -20,10 +20,11 @@ def collect_all(config: dict, depuis: datetime, is_monday: bool) -> dict:
     # jusqu'à status.json par main.py (cf. cahier §22 journalisation). Permet de voir d'un
     # coup d'œil quels flux sont morts sans rouvrir les logs bruts.
     rss_diagnostics: list[dict] = []
+    market_diagnostics: list[dict] = []
 
     news = rss_sources.fetch_all_news(config, depuis=depuis, diagnostics=rss_diagnostics)
     sport = sports.fetch_sport(config, depuis=depuis, diagnostics=rss_diagnostics)
-    marches = markets.fetch_all_markets(config)
+    marches = markets.fetch_all_markets(config, diagnostics=market_diagnostics)
     meteo = weather.fetch_all_weather(config)
 
     total_news = sum(len(v) for v in news.values())
@@ -41,5 +42,6 @@ def collect_all(config: dict, depuis: datetime, is_monday: bool) -> dict:
         "sport": sport,      # {"football": [...], "basketball": [...], ...}
         "marches": marches,  # {"indices": [...], "matieres_premieres": [...]}
         "meteo": meteo,      # [{"ville": ..., ...}, ...]
-        "rss_diagnostics": rss_diagnostics,  # cf. ci-dessus, propagé jusqu'à status.json
+        "rss_diagnostics": rss_diagnostics,        # cf. ci-dessus, propagé jusqu'à status.json
+        "market_diagnostics": market_diagnostics,  # idem pour markets.fetch_quote
     }
