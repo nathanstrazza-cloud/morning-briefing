@@ -41,12 +41,15 @@ rss:
   economie:
     - name: "Le Monde Économie"
       url: "https://www.lemonde.fr/economie/rss_full.xml"
-    # NB (2026-09-20) : "Les Echos Une" retiré pour la même raison que Le Point ci-dessus
-    # (HTTP 403 persistant). Remplacé par deux sources économiques gratuites.
-    - name: "Capital"
-      url: "https://www.capital.fr/rss"
+    # NB (2026-09-20, 2e itération) : "Les Echos Une" retiré (HTTP 403 persistant, cf. plus
+    # haut). Première tentative de remplacement (Capital, BFM Business avec un mauvais
+    # chemin) : les deux en HTTP 404 -- mauvaises URLs, corrigées ci-dessous et à
+    # reconfirmer par un run réel (ce sandbox ne peut pas atteindre ces domaines pour
+    # tester directement, cf. rss_sources.py).
+    - name: "Le Figaro Économie"
+      url: "https://www.lefigaro.fr/rss/figaro_economie.xml"
     - name: "BFM Business"
-      url: "https://www.bfmtv.com/economie/rss/"
+      url: "https://www.bfmtv.com/rss/economie/"
   sciences:
     - name: "Le Monde Sciences"
       url: "https://www.lemonde.fr/sciences/rss_full.xml"

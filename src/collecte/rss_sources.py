@@ -18,6 +18,7 @@ import re
 from datetime import datetime, timezone
 
 import feedparser
+import requests
 
 logger = logging.getLogger("morning_briefing.collecte.rss")
 
@@ -47,9 +48,24 @@ USER_AGENT = (
     "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 )
 _REQUEST_HEADERS = {
+    "User-Agent": USER_AGENT,
     "Accept": "application/rss+xml, application/xml, text/xml, */*;q=0.8",
     "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.5",
 }
+
+# NB (corrigé le 2026-09-20) : après le fix User-Agent ci-dessus, deux flux par ailleurs
+# valides (CNRS Actualités, Nature News) échouaient encore avec "not well-formed (invalid
+# token)" dès les toutes premières lignes -- signe classique d'un caractère "&" non échappé
+# quelque part dans l'en-tête du flux (ex: "Recherche & Innovation" au lieu de "Recherche
+# &amp; Innovation"), qui casse le parseur XML strict avant même d'atteindre les articles.
+# On répare ce cas précis (le plus courant) avant de passer le contenu à feedparser, plutôt
+# que d'abandonner le flux : un "&" est remplacé par "&amp;" seulement s'il n'est pas déjà
+# le début d'une entité XML valide (&amp; &lt; &gt; &quot; &apos; ou &#123;/&#x1F;).
+_BARE_AMPERSAND_RE = re.compile(rb"&(?!amp;|lt;|gt;|quot;|apos;|#\d+;|#x[0-9A-Fa-f]+;)")
+
+
+def _sanitize_xml(raw: bytes) -> bytes:
+    return _BARE_AMPERSAND_RE.sub(b"&amp;", raw)
 
 
 def _clean_summary(raw: str) -> str:
@@ -96,13 +112,16 @@ def fetch_feed(
     `diagnostics`, si fourni, reçoit une entrée par flux (source, catégorie, statut HTTP,
     nombre d'articles, détail de l'erreur éventuelle) -- utilisé par collector.py pour
     exposer l'état de chaque source dans status.json (cf. cahier §22)."""
+    http_status: int | None = None
     try:
-        # agent= : envoie un User-Agent de navigateur standard (cf. USER_AGENT ci-dessus) --
-        # plusieurs sites (Le Point, Les Echos...) bloquaient sinon la requête avec un 403,
-        # feedparser utilisant par défaut un User-Agent facilement identifiable comme robot.
-        parsed = feedparser.parse(url, agent=USER_AGENT, request_headers=_REQUEST_HEADERS)
-        http_status = parsed.get("status")
-        if http_status and http_status >= 400:
+        # On récupère nous-mêmes les octets bruts (via `requests`, avec un User-Agent de
+        # navigateur standard -- cf. USER_AGENT -- plusieurs sites comme Le Point ou Les
+        # Echos bloquant sinon la requête avec un 403) plutôt que de laisser feedparser
+        # faire sa propre requête HTTP : ça nous donne un vrai code HTTP et surtout ça
+        # permet de nettoyer le XML (cf. _sanitize_xml) avant de le parser.
+        response = requests.get(url, headers=_REQUEST_HEADERS, timeout=timeout)
+        http_status = response.status_code
+        if http_status >= 400:
             logger.warning(
                 "Flux RSS %s (%s) a répondu HTTP %s: %s", source_name, categorie, http_status, url
             )
@@ -112,6 +131,7 @@ def fetch_feed(
                 detail=f"HTTP {http_status}",
             )
             return []
+        parsed = feedparser.parse(_sanitize_xml(response.content))
         if parsed.bozo and not parsed.entries:
             detail = str(getattr(parsed, "bozo_exception", "flux illisible ou vide"))
             logger.warning("Flux RSS illisible ou vide: %s (%s) -- %s", source_name, url, detail)
@@ -124,7 +144,7 @@ def fetch_feed(
         logger.warning("Échec de récupération du flux %s (%s): %s", source_name, url, exc)
         _record(
             diagnostics, source=source_name, categorie=categorie, url=url,
-            articles=0, statut="erreur", http_status=None, detail=str(exc),
+            articles=0, statut="erreur", http_status=http_status, detail=str(exc),
         )
         return []
 
@@ -147,7 +167,7 @@ def fetch_feed(
     _record(
         diagnostics, source=source_name, categorie=categorie, url=url,
         articles=len(items), statut="ok" if items else "vide",
-        http_status=parsed.get("status"), detail=None,
+        http_status=http_status, detail=None,
     )
     return items
 
