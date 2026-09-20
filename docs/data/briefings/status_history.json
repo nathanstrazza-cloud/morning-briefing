@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "derniere_execution": "2026-09-20T09:25:22.349275+02:00",
+      "date_visee": "2026-09-20",
+      "succes": true,
+      "erreur": null,
+      "synthese_llm": true,
+      "erreur_llm": null,
+      "sources_rss_en_erreur": [
+        {
+          "source": "AFP (via Le Point)",
+          "categorie": "france",
+          "detail": "HTTP 403"
+        },
+        {
+          "source": "Les Echos Une",
+          "categorie": "economie",
+          "detail": "HTTP 403"
+        },
+        {
+          "source": "CNRS Actualités",
+          "categorie": "sciences",
+          "detail": "<unknown>:18:82: not well-formed (invalid token)"
+        },
+        {
+          "source": "Nature News",
+          "categorie": "sciences",
+          "detail": "<unknown>:15:4: not well-formed (invalid token)"
+        }
+      ]
+    },
+    {
       "derniere_execution": "2026-09-19T20:44:26.942314+02:00",
       "date_visee": "2026-09-19",
       "succes": true,
