@@ -325,6 +325,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 .status-item__detail--fail { color: #A6402C; }
 .status-item__detail--warn { color: #8A5B12; }
+.status-item__rss-list {
+  margin: 0.2rem 0 0;
+  padding-left: 1.2rem;
+  font-size: 0.85rem;
+}
+.status-item__rss-list li { margin: 0.1rem 0; }
 
 /* ---------- Pied de page ---------- */
 

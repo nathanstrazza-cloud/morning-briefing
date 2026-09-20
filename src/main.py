@@ -67,6 +67,7 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
             )
             return 0
 
+    rss_diagnostics: list[dict] = []  # rempli par collect_all si on l'atteint (cf. except ci-dessous)
     try:
         config = load_config()
         last_success = storage.get_last_successful_datetime()
@@ -78,6 +79,7 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
 
         # 1. COLLECTE
         raw = collector.collect_all(config, depuis, is_monday)
+        rss_diagnostics = raw.get("rss_diagnostics", [])
 
         # 2. ANALYSE — actualité France/Monde
         seuil = config["seuils"]["score_min_affichage"]
@@ -137,7 +139,7 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         briefing = briefing_generator.generate(providers, analysed, science_topic, weather_summary, is_monday)
 
         # 4. STOCKAGE
-        storage.save_briefing(briefing, date_iso, reference.isoformat())
+        storage.save_briefing(briefing, date_iso, reference.isoformat(), rss_diagnostics=rss_diagnostics)
 
         logger.info("=== Run terminé avec succès pour le %s ===", date_iso)
         return 0
@@ -145,7 +147,7 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
     except Exception as exc:  # noqa: BLE001
         logger.error("Échec fatal du pipeline: %s\n%s", exc, traceback.format_exc())
         try:
-            storage.record_failure(date_iso, reference.isoformat(), str(exc))
+            storage.record_failure(date_iso, reference.isoformat(), str(exc), rss_diagnostics=rss_diagnostics)
         except Exception:  # noqa: BLE001
             logger.error("Impossible même d'écrire status.json — vérifier les permissions disque.")
         return 1

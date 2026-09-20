@@ -19,7 +19,9 @@ def _contains_any(text: str, keywords: list[str]) -> bool:
     return any(kw.lower() in text_low for kw in keywords)
 
 
-def fetch_sport(config: dict, depuis: datetime | None = None) -> dict[str, list[dict]]:
+def fetch_sport(
+    config: dict, depuis: datetime | None = None, diagnostics: list[dict] | None = None
+) -> dict[str, list[dict]]:
     sport_config = config.get("sport", {})
     equipes_prio = sport_config.get("equipes_prioritaires", {})
     sports_conditionnels = sport_config.get("sports_conditionnels", [])
@@ -31,7 +33,7 @@ def fetch_sport(config: dict, depuis: datetime | None = None) -> dict[str, list[
         sources = sport_config.get(categorie, [])
         items: list[dict] = []
         for src in sources:
-            items.extend(fetch_feed(src["url"], src["name"], f"sport_{categorie}"))
+            items.extend(fetch_feed(src["url"], src["name"], f"sport_{categorie}", diagnostics=diagnostics))
 
         if depuis is not None:
             items = [

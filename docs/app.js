@@ -304,6 +304,19 @@ function renderStatusEntry(entry) {
       details.push(el("p", { class: "status-item__detail status-item__detail--warn", text: msg }));
     }
   }
+  // cf. storage._write_status (rss_diagnostics) : flux RSS en échec pour ce run précis
+  // (source + catégorie + cause), pour repérer une source morte sans rouvrir les logs.
+  if (Array.isArray(entry.sources_rss_en_erreur) && entry.sources_rss_en_erreur.length) {
+    const items = entry.sources_rss_en_erreur.map((s) =>
+      el("li", { text: `${s.source} (${s.categorie})${s.detail ? " — " + s.detail : ""}` })
+    );
+    details.push(
+      el("div", { class: "status-item__detail status-item__detail--warn" }, [
+        el("p", { text: "Flux RSS en échec ce jour :" }),
+        el("ul", { class: "status-item__rss-list" }, items),
+      ])
+    );
+  }
 
   const children = [header];
   if (details.length) children.push(el("div", { class: "status-item__details" }, details));

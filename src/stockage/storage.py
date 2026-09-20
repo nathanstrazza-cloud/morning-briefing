@@ -49,7 +49,9 @@ def day_briefing_exists(date_iso: str) -> bool:
     return (DATA_DIR / f"{date_iso}.json").exists()
 
 
-def save_briefing(briefing: dict, date_iso: str, last_update_iso: str) -> None:
+def save_briefing(
+    briefing: dict, date_iso: str, last_update_iso: str, rss_diagnostics: list[dict] | None = None
+) -> None:
     """Sauvegarde le briefing du jour + met à jour latest.json et index.json.
     N'écrase JAMAIS un fichier de date existant avec un contenu vide (sécurité supplémentaire)."""
     DATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -78,6 +80,7 @@ def save_briefing(briefing: dict, date_iso: str, last_update_iso: str) -> None:
         last_update_iso=last_update_iso,
         synthese_llm=briefing.get("_genere_par_llm"),
         erreur_llm=briefing.get("_erreur_llm"),
+        rss_diagnostics=rss_diagnostics,
     )
     logger.info("Briefing sauvegardé: %s", day_path)
 
@@ -98,7 +101,20 @@ def _write_status(
     erreur: str | None = None,
     synthese_llm: bool | None = None,
     erreur_llm: str | None = None,
+    rss_diagnostics: list[dict] | None = None,
 ) -> None:
+    # cf. collecte/rss_sources.py + collector.py : un résumé compact suffit ici (le détail
+    # complet par flux est déjà dans les logs GitHub Actions) -- on garde surtout la liste
+    # des sources en échec, pour que l'onglet "Erreurs" du site les affiche sans qu'il soit
+    # nécessaire de rouvrir les logs bruts (cf. cahier §22).
+    sources_en_erreur = None
+    if rss_diagnostics is not None:
+        sources_en_erreur = [
+            {"source": d["source"], "categorie": d["categorie"], "detail": d.get("detail")}
+            for d in rss_diagnostics
+            if d.get("statut") == "erreur"
+        ]
+
     entry = {
         "derniere_execution": last_update_iso,
         "date_visee": date_iso,
@@ -108,6 +124,9 @@ def _write_status(
         # (fallback) tout en ayant une synthèse LLM en échec.
         "synthese_llm": synthese_llm,
         "erreur_llm": erreur_llm,
+        # cf. ci-dessus : liste des flux RSS en échec pour ce run (source, catégorie, cause).
+        # None si le pipeline n'a pas atteint l'étape de collecte (échec plus précoce).
+        "sources_rss_en_erreur": sources_en_erreur,
     }
     _write_json(DATA_DIR / "status.json", entry)
     _append_status_history(entry)
@@ -134,11 +153,16 @@ def _append_status_history(entry: dict) -> None:
     _write_json(path, {"entries": entries[:MAX_STATUS_HISTORY]})
 
 
-def record_failure(date_iso: str, last_update_iso: str, erreur: str) -> None:
+def record_failure(
+    date_iso: str, last_update_iso: str, erreur: str, rss_diagnostics: list[dict] | None = None
+) -> None:
     """Cf. cahier §21 : si tout échoue, on NE TOUCHE PAS à latest.json — le dernier
     briefing valide reste affiché. On journalise seulement l'échec dans status.json."""
     logger.error("Échec du run pour %s: %s — dernier briefing valide conservé.", date_iso, erreur)
-    _write_status(succes=False, date_iso=date_iso, last_update_iso=last_update_iso, erreur=erreur)
+    _write_status(
+        succes=False, date_iso=date_iso, last_update_iso=last_update_iso, erreur=erreur,
+        rss_diagnostics=rss_diagnostics,
+    )
 
 
 def get_last_successful_datetime() -> datetime | None:
