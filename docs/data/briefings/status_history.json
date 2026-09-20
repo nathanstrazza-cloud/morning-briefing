@@ -1,19 +1,27 @@
 {
   "entries": [
     {
-      "derniere_execution": "2026-09-20T14:45:34.247483+02:00",
+      "derniere_execution": "2026-09-20T14:53:52.795374+02:00",
       "date_visee": "2026-09-20",
       "succes": true,
       "erreur": null,
-      "synthese_llm": true,
-      "erreur_llm": null,
+      "synthese_llm": false,
+      "erreur_llm": "cerebras: 404 Not Found (provider=cerebras): {\"message\":\"Model does not exist or you do not have access to it.\",\"type\":\"not_found_error\",\"param\":\"model\",\"code\":\"model_not_found\"}",
       "sources_rss_en_erreur": [
         {
           "source": "CNRS Actualités",
           "categorie": "sciences",
-          "detail": "<unknown>:18:139: not well-formed (invalid token)"
+          "statut": "erreur",
+          "detail": "<unknown>:14:418: not well-formed (invalid token)"
+        },
+        {
+          "source": "L'Équipe Tous Sports",
+          "categorie": "sport_autres",
+          "statut": "vide",
+          "detail": null
         }
-      ]
+      ],
+      "sources_marches_en_erreur": []
     },
     {
       "derniere_execution": "2026-09-19T20:44:26.942314+02:00",
