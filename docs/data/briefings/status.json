@@ -1,6 +1,6 @@
 {
-  "derniere_execution": "2026-09-21T12:05:29.250906+02:00",
-  "date_visee": "2026-09-21",
+  "derniere_execution": "2026-09-22T11:23:47.285786+02:00",
+  "date_visee": "2026-09-22",
   "succes": true,
   "erreur": null,
   "synthese_llm": true,
@@ -10,7 +10,7 @@
       "source": "CNRS Actualités",
       "categorie": "sciences",
       "statut": "erreur",
-      "detail": "<unknown>:14:420: not well-formed (invalid token)"
+      "detail": "<unknown>:15:231: not well-formed (invalid token)"
     },
     {
       "source": "L'Équipe Tous Sports",

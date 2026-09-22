@@ -1,6 +1,29 @@
 {
   "entries": [
     {
+      "derniere_execution": "2026-09-22T11:23:47.285786+02:00",
+      "date_visee": "2026-09-22",
+      "succes": true,
+      "erreur": null,
+      "synthese_llm": true,
+      "erreur_llm": null,
+      "sources_rss_en_erreur": [
+        {
+          "source": "CNRS Actualités",
+          "categorie": "sciences",
+          "statut": "erreur",
+          "detail": "<unknown>:15:231: not well-formed (invalid token)"
+        },
+        {
+          "source": "L'Équipe Tous Sports",
+          "categorie": "sport_autres",
+          "statut": "vide",
+          "detail": null
+        }
+      ],
+      "sources_marches_en_erreur": []
+    },
+    {
       "derniere_execution": "2026-09-21T12:05:29.250906+02:00",
       "date_visee": "2026-09-21",
       "succes": true,
