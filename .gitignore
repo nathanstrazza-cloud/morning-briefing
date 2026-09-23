@@ -3,5 +3,8 @@ __pycache__/
 *.pyc
 .venv/
 venv/
-*.log
 .DS_Store
+# NB (corrigé le 22/09) : *.log était ignoré ici, ce qui empêchait silencieusement le
+# "git add docs/data/ logs/" du workflow (cf. .github/workflows/briefing.yml) de committer
+# les logs de run -- alors même que le workflow est censé le faire pour le débogage (cahier
+# §22). Les logs/*.log DOIVENT être versionnés : ne pas les réintroduire ici.

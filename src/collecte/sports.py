@@ -39,8 +39,7 @@ def fetch_sport(
             items = [
                 it
                 for it in items
-                if it["date_publication"] is None
-                or it["date_publication"].replace(tzinfo=None) >= depuis.replace(tzinfo=None)
+                if it["date_publication"] is None or it["date_publication"] >= depuis
             ]
 
         if categorie == "basketball":

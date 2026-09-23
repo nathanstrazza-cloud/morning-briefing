@@ -13,7 +13,7 @@ from difflib import SequenceMatcher
 
 logger = logging.getLogger("morning_briefing.analyse.dedup")
 
-SIMILARITY_THRESHOLD = 0.4
+SIMILARITY_THRESHOLD = 0.28
 
 STOPWORDS_FR = {
     "le", "la", "les", "un", "une", "des", "de", "du", "et", "en", "sur", "pour",

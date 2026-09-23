@@ -331,6 +331,29 @@ function renderStatusEntry(entry) {
     );
   }
 
+  // cf. storage._write_status (funnel_actualite) : nombre d'articles à chaque étape du
+  // filtrage France/Monde, pour distinguer "0 article collecté" de "des articles collectés
+  // mais tous rejetés par le seuil de score" (cf. cahier §22).
+  if (entry.funnel_actualite && typeof entry.funnel_actualite === "object") {
+    const lignes = ["france", "monde"]
+      .filter((zone) => entry.funnel_actualite[zone])
+      .map((zone) => {
+        const f = entry.funnel_actualite[zone];
+        const label = zone === "france" ? "France" : "Monde";
+        return el("li", {
+          text: `${label} : ${f.bruts} article(s) collecté(s) → ${f.evenements_uniques} événement(s) unique(s) → ${f.retenus_apres_seuil} retenu(s) après seuil de score`,
+        });
+      });
+    if (lignes.length) {
+      details.push(
+        el("div", { class: "status-item__detail" }, [
+          el("p", { text: "Entonnoir de sélection actualité :" }),
+          el("ul", { class: "status-item__rss-list" }, lignes),
+        ])
+      );
+    }
+  }
+
   const children = [header];
   if (details.length) children.push(el("div", { class: "status-item__details" }, details));
   return el("li", { class: "status-item" }, children);

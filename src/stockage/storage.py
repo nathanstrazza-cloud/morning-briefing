@@ -52,6 +52,7 @@ def day_briefing_exists(date_iso: str) -> bool:
 def save_briefing(
     briefing: dict, date_iso: str, last_update_iso: str,
     rss_diagnostics: list[dict] | None = None, market_diagnostics: list[dict] | None = None,
+    funnel_actualite: dict | None = None,
 ) -> None:
     """Sauvegarde le briefing du jour + met à jour latest.json et index.json.
     N'écrase JAMAIS un fichier de date existant avec un contenu vide (sécurité supplémentaire)."""
@@ -83,6 +84,7 @@ def save_briefing(
         erreur_llm=briefing.get("_erreur_llm"),
         rss_diagnostics=rss_diagnostics,
         market_diagnostics=market_diagnostics,
+        funnel_actualite=funnel_actualite,
     )
     logger.info("Briefing sauvegardé: %s", day_path)
 
@@ -105,6 +107,7 @@ def _write_status(
     erreur_llm: str | None = None,
     rss_diagnostics: list[dict] | None = None,
     market_diagnostics: list[dict] | None = None,
+    funnel_actualite: dict | None = None,
 ) -> None:
     # cf. collecte/rss_sources.py + collector.py : un résumé compact suffit ici (le détail
     # complet par flux est déjà dans les logs GitHub Actions) -- on garde la liste des
@@ -148,6 +151,11 @@ def _write_status(
         # statut, cause). None si le pipeline n'a pas atteint l'étape de collecte.
         "sources_rss_en_erreur": sources_en_erreur,
         "sources_marches_en_erreur": marches_en_erreur,
+        # cf. main.py : {"france": {"bruts": n, "evenements_uniques": n, "retenus_apres_seuil": n}, "monde": {...}}
+        # -- permet de distinguer "0 article collecté" (flux morts, cf. sources_rss_en_erreur)
+        # de "des articles ont été collectés mais aucun n'a dépassé le seuil de score", ce que
+        # rien ne permettait de voir jusqu'ici (cf. cahier §22).
+        "funnel_actualite": funnel_actualite,
     }
     _write_json(DATA_DIR / "status.json", entry)
     _append_status_history(entry)

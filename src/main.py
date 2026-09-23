@@ -86,15 +86,33 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         # 2. ANALYSE — actualité France/Monde
         seuil = config["seuils"]["score_min_affichage"]
 
+        # cf. docstring ci-dessus : entonnoir de filtrage tracé à chaque étape pour pouvoir
+        # diagnostiquer une section vide sans deviner (remonté jusqu'à status.json plus bas).
+        funnel_actualite = {}
+
         events_france = dedup.deduplicate(raw["news"]["france"])
+        n_france_bruts, n_france_dedup = len(raw["news"]["france"]), len(events_france)
         events_france = scoring.score_events(events_france)
         events_france = verification.classify_events(events_france)
         events_france = scoring.filter_by_threshold(events_france, seuil)
+        funnel_actualite["france"] = {
+            "bruts": n_france_bruts, "evenements_uniques": n_france_dedup,
+            "retenus_apres_seuil": len(events_france),
+        }
 
         events_monde = dedup.deduplicate(raw["news"]["monde"])
+        n_monde_bruts, n_monde_dedup = len(raw["news"]["monde"]), len(events_monde)
         events_monde = scoring.score_events(events_monde)
         events_monde = verification.classify_events(events_monde)
         events_monde = scoring.filter_by_threshold(events_monde, seuil)
+        funnel_actualite["monde"] = {
+            "bruts": n_monde_bruts, "evenements_uniques": n_monde_dedup,
+            "retenus_apres_seuil": len(events_monde),
+        }
+        logger.info(
+            "Entonnoir actualité (seuil=%d): france %s | monde %s",
+            seuil, funnel_actualite["france"], funnel_actualite["monde"],
+        )
 
         # cf. cahier §1 + demande explicite (2026-09-19) : 5 infos France + 5 Monde suffisent
         # -- les listes sont déjà triées par score décroissant (cf. scoring.score_events),
@@ -144,6 +162,7 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         storage.save_briefing(
             briefing, date_iso, reference.isoformat(),
             rss_diagnostics=rss_diagnostics, market_diagnostics=market_diagnostics,
+            funnel_actualite=funnel_actualite,
         )
 
         logger.info("=== Run terminé avec succès pour le %s ===", date_iso)
