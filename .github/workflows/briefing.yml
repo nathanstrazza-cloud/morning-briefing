@@ -2,8 +2,8 @@ name: Morning Briefing
 
 on:
   schedule:
-    - cron: "30 4 * * 1-5"   # été (mars-octobre environ)
-    - cron: "30 5 * * 1-5"   # hiver (novembre-mars environ)
+    - cron: "12 4 * * 1-5"   # été (mars-octobre environ) -> 06:12 Paris (marge avant 06:30)
+    - cron: "12 5 * * 1-5"   # hiver (novembre-mars environ) -> 06:12 Paris
   workflow_dispatch: {}
 
 permissions:
