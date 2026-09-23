@@ -1,0 +1,49 @@
+2026-09-23 09:24:06,456 [INFO] morning_briefing: === Démarrage du run Morning Briefing pour le 2026-09-23 ===
+2026-09-23 09:24:06,463 [INFO] morning_briefing: Fenêtre de recherche: 2026-09-22 05:23:47.285786+02:00 -> 2026-09-23 11:24:06.456550+02:00 (lundi=False, dernier_succes=2026-09-22 11:23:47.285786+02:00)
+2026-09-23 09:24:06,463 [INFO] morning_briefing.collecte: Début de la collecte (depuis=2026-09-22T05:23:47.285786+02:00, lundi=False)
+2026-09-23 09:24:06,523 [INFO] morning_briefing.collecte.rss: Flux Le Monde (france): 16 articles récupérés
+2026-09-23 09:24:06,779 [INFO] morning_briefing.collecte.rss: Flux France Info (france): 29 articles récupérés
+2026-09-23 09:24:07,107 [INFO] morning_briefing.collecte.rss: Flux Libération (france): 50 articles récupérés
+2026-09-23 09:24:07,429 [INFO] morning_briefing.collecte.rss: Flux 20 Minutes (france): 30 articles récupérés
+2026-09-23 09:24:07,467 [INFO] morning_briefing.collecte.rss: Flux Le Monde International (monde): 20 articles récupérés
+2026-09-23 09:24:07,603 [INFO] morning_briefing.collecte.rss: Flux New York Times World (monde): 58 articles récupérés
+2026-09-23 09:24:07,794 [INFO] morning_briefing.collecte.rss: Flux France 24 International (monde): 24 articles récupérés
+2026-09-23 09:24:07,832 [INFO] morning_briefing.collecte.rss: Flux Le Monde Économie (economie): 20 articles récupérés
+2026-09-23 09:24:08,081 [INFO] morning_briefing.collecte.rss: Flux Le Figaro Économie (economie): 20 articles récupérés
+2026-09-23 09:24:08,204 [INFO] morning_briefing.collecte.rss: Flux BFM Business (economie): 30 articles récupérés
+2026-09-23 09:24:08,242 [INFO] morning_briefing.collecte.rss: Flux Le Monde Sciences (sciences): 20 articles récupérés
+2026-09-23 09:24:08,842 [WARNING] morning_briefing.collecte.rss: Flux RSS illisible ou vide: CNRS Actualités (https://www.cnrs.fr/fr/rss.xml) -- <unknown>:15:231: not well-formed (invalid token)
+2026-09-23 09:24:08,976 [INFO] morning_briefing.collecte.rss: Flux Nature News (sciences): 75 articles récupérés
+2026-09-23 09:24:09,128 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Football (sport_football): 50 articles récupérés
+2026-09-23 09:24:09,678 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Basket (sport_basketball): 50 articles récupérés
+2026-09-23 09:24:11,147 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Natation (sport_natation): 50 articles récupérés
+2026-09-23 09:24:11,382 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Tous Sports (sport_autres): 0 articles récupérés
+2026-09-23 09:24:11,383 [INFO] morning_briefing.collecte.sports: Sport collecté: foot=50 basket=9 natation=0 autres(France)=0
+2026-09-23 09:24:11,777 [INFO] morning_briefing.collecte.markets: Marchés collectés: 5 indices, 2 matières premières
+2026-09-23 09:24:13,487 [INFO] morning_briefing.collecte.weather: Météo collectée pour 4/4 villes
+2026-09-23 09:24:13,487 [INFO] morning_briefing.collecte: Collecte terminée: 288 actualités, 59 items sport, 5 indices, 4 villes météo
+2026-09-23 09:24:13,487 [WARNING] morning_briefing.collecte: Flux RSS en échec ce run: CNRS Actualités
+2026-09-23 09:24:13,542 [INFO] morning_briefing.analyse.dedup: Déduplication: 121 items bruts -> 106 événements uniques
+2026-09-23 09:24:13,544 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 106 événements
+2026-09-23 09:24:13,544 [INFO] morning_briefing.analyse.verification: Vérification: 10/106 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-23 09:24:13,573 [INFO] morning_briefing.analyse.dedup: Déduplication: 97 items bruts -> 90 événements uniques
+2026-09-23 09:24:13,575 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 90 événements
+2026-09-23 09:24:13,575 [INFO] morning_briefing.analyse.verification: Vérification: 2/90 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-23 09:24:13,575 [INFO] morning_briefing: Entonnoir actualité (seuil=5): france {'bruts': 121, 'evenements_uniques': 106, 'retenus_apres_seuil': 69} | monde {'bruts': 97, 'evenements_uniques': 90, 'retenus_apres_seuil': 29}
+2026-09-23 09:24:13,594 [INFO] morning_briefing.analyse.dedup: Déduplication: 68 items bruts -> 56 événements uniques
+2026-09-23 09:24:13,595 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 56 événements
+2026-09-23 09:24:13,595 [INFO] morning_briefing.analyse.dedup: Déduplication: 2 items bruts -> 2 événements uniques
+2026-09-23 09:24:13,595 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 2 événements
+2026-09-23 09:24:13,595 [INFO] morning_briefing.analyse.verification: Vérification: 0/2 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-23 09:24:13,605 [INFO] morning_briefing.analyse.dedup: Déduplication: 50 items bruts -> 50 événements uniques
+2026-09-23 09:24:13,606 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 50 événements
+2026-09-23 09:24:13,606 [INFO] morning_briefing.analyse.dedup: Déduplication: 9 items bruts -> 7 événements uniques
+2026-09-23 09:24:13,606 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 7 événements
+2026-09-23 09:24:13,607 [INFO] morning_briefing.analyse.dedup: Déduplication: 0 items bruts -> 0 événements uniques
+2026-09-23 09:24:13,607 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 0 événements
+2026-09-23 09:24:13,607 [INFO] morning_briefing.analyse.dedup: Déduplication: 0 items bruts -> 0 événements uniques
+2026-09-23 09:24:13,607 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 0 événements
+2026-09-23 09:24:13,607 [INFO] morning_briefing.generation.llm: Providers LLM disponibles (ordre d'essai): groq -> mistral -> cerebras
+2026-09-23 09:24:13,608 [WARNING] morning_briefing.generation: Prompt LLM trop volumineux (>12000 caractères) -> 10 événements retirés (les moins bien scorés) pour rester sous la limite avant l'appel LLM.
+2026-09-23 09:24:20,113 [INFO] morning_briefing.stockage: Briefing sauvegardé: /home/runner/work/morning-briefing/morning-briefing/docs/data/briefings/2026-09-23.json
+2026-09-23 09:24:20,113 [INFO] morning_briefing: === Run terminé avec succès pour le 2026-09-23 ===

@@ -1,6 +1,6 @@
 {
-  "derniere_execution": "2026-09-22T11:23:47.285786+02:00",
-  "date_visee": "2026-09-22",
+  "derniere_execution": "2026-09-23T11:24:06.456550+02:00",
+  "date_visee": "2026-09-23",
   "succes": true,
   "erreur": null,
   "synthese_llm": true,
@@ -19,5 +19,17 @@
       "detail": null
     }
   ],
-  "sources_marches_en_erreur": []
+  "sources_marches_en_erreur": [],
+  "funnel_actualite": {
+    "france": {
+      "bruts": 121,
+      "evenements_uniques": 106,
+      "retenus_apres_seuil": 69
+    },
+    "monde": {
+      "bruts": 97,
+      "evenements_uniques": 90,
+      "retenus_apres_seuil": 29
+    }
+  }
 }
