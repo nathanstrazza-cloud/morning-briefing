@@ -109,13 +109,30 @@ def _build_user_prompt(analysed: dict, science_topic: dict, is_monday: bool, max
     france = list(analysed["actualite_france"])
     monde = list(analysed["actualite_monde"])
 
-    def _payload() -> dict:
+    # Allégement : le LLM n'a besoin que des NOMS de sources pour respecter le schéma de
+    # sortie ("sources": [str]) -- pas de leurs URLs, qui gonflent le payload sans utilité
+    # pour la rédaction. On garde titre/resume/categorie/statut_verification tels quels.
+    def _light_event(e: dict) -> dict:
+        light = {k: v for k, v in e.items() if k != "sources"}
+        light["sources"] = [s["nom"] if isinstance(s, dict) else s for s in e.get("sources", [])]
+        return light
+
+    france = [_light_event(e) for e in france]
+    monde = [_light_event(e) for e in monde]
+
+    # Allégement sport : le schéma de sortie n'attend qu'une liste de courtes phrases par
+    # catégorie -- le LLM n'a besoin que du titre de chaque événement, pas du dict complet
+    # (resume/sources/url/categorie/score) que produit le pipeline d'analyse.
+    def _light_sport(sport_events: dict) -> dict:
+        return {cat: [e["titre"] for e in evs] for cat, evs in sport_events.items()}
+
+    def _payload(france_l, monde_l, sport_l, marches_l) -> dict:
         return {
             "jour_lundi_couvre_weekend": is_monday,
-            "actualite_france": france,
-            "actualite_monde": monde,
-            "marches": analysed["marches_data"],
-            "sport": analysed["sport_events"],
+            "actualite_france": france_l,
+            "actualite_monde": monde_l,
+            "marches": marches_l,
+            "sport": sport_l,
             "science_mode": science_topic["mode"],
             "science_source": science_topic["contenu_source"],
         }
@@ -126,25 +143,46 @@ def _build_user_prompt(analysed: dict, science_topic: dict, is_monday: bool, max
     def _serialize(payload: dict) -> str:
         return json.dumps(payload, ensure_ascii=False, separators=(",", ":"), default=str)
 
-    serialized = _serialize(_payload())
+    sport = _light_sport(analysed["sport_events"])
+    # cf. cahier §4 : actualité = priorité maximale. En cas de dépassement du budget, on
+    # réduit d'abord le sport (moins prioritaire) avant de toucher à l'actualité, et jamais
+    # les marchés (déjà réduits aux seuls mouvements significatifs en amont, cf. main.py).
+    marches = analysed["marches_data"]
+    serialized = _serialize(_payload(france, monde, sport, marches))
 
-    trimmed = False
-    while len(serialized) > max_chars and (france or monde):
-        # Retire l'événement le moins bien scoré parmi france/monde (listes triées
-        # décroissant -> on retire toujours en fin de liste).
-        if len(monde) >= len(france) and monde:
+    trimmed_sport = False
+    while len(serialized) > max_chars and any(sport.values()):
+        # Retire un item de la catégorie sport la plus fournie, à tour de rôle.
+        cat = max(sport, key=lambda c: len(sport[c]))
+        if sport[cat]:
+            sport[cat].pop()
+        trimmed_sport = True
+        serialized = _serialize(_payload(france, monde, sport, marches))
+
+    # Plancher : ne jamais vider complètement l'actualité (priorité maximale, cf. cahier §4)
+    # -- on retire en dernier recours, mais on garde toujours au moins 2 événements par zone
+    # tant qu'il en reste, plutôt que de tout sacrifier pour gagner quelques centaines de
+    # caractères. On alterne monde/france comme avant (listes triées par score décroissant).
+    PLANCHER_ACTUALITE = 2
+    trimmed_actualite = False
+    while len(serialized) > max_chars and (
+        len(france) > PLANCHER_ACTUALITE or len(monde) > PLANCHER_ACTUALITE
+    ):
+        if len(monde) > PLANCHER_ACTUALITE and (len(monde) >= len(france) or len(france) <= PLANCHER_ACTUALITE):
             monde.pop()
-        elif france:
+        elif len(france) > PLANCHER_ACTUALITE:
             france.pop()
-        trimmed = True
-        serialized = _serialize(_payload())
+        else:
+            break
+        trimmed_actualite = True
+        serialized = _serialize(_payload(france, monde, sport, marches))
 
-    if trimmed:
+    if trimmed_sport or trimmed_actualite:
         logger.warning(
-            "Prompt LLM trop volumineux (>%d caractères) -> %d événements retirés "
-            "(les moins bien scorés) pour rester sous la limite avant l'appel LLM.",
-            max_chars,
-            len(analysed["actualite_france"]) + len(analysed["actualite_monde"]) - len(france) - len(monde),
+            "Prompt LLM trop volumineux (>%d caractères) -> sport réduit=%s, actualité réduite=%s "
+            "(retenus après réduction : france=%d, monde=%d, sport=%d au total).",
+            max_chars, trimmed_sport, trimmed_actualite, len(france), len(monde),
+            sum(len(v) for v in sport.values()),
         )
 
     return "Voici les données collectées et analysées pour le briefing de ce matin.\n\n" + serialized
