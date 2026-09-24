@@ -129,18 +129,54 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         events_sciences = scoring.score_events(events_sciences)
         events_sciences = verification.classify_events(events_sciences)
 
-        # Sport : dédup + score par catégorie, pas de seuil strict (le cahier veut peu
-        # d'items mais toujours au moins les résultats marquants, cf. §6).
+        # Sport : dédup + score par catégorie (le cahier veut peu d'items mais toujours au
+        # moins les résultats marquants, cf. §6). Le "score plancher" (4/10, cf. scoring.py)
+        # est neutre : il ne distingue pas les Spurs (priorité explicite du cahier §6) des
+        # autres clubs. On applique donc un bonus dédié avant la sélection finale, sinon un
+        # simple tri par score risquerait d'évincer les Spurs au profit d'une actu basket
+        # quelconque au même score.
+        BONUS_EQUIPE_PRIORITAIRE = 2
         sport_events = {}
         for cat, items in raw["sport"].items():
             evs = dedup.deduplicate(items)
             evs = scoring.score_events(evs)
-            sport_events[cat] = evs[:5]  # top 5 max par catégorie, évite le remplissage artificiel
+            for e in evs:
+                if e.get("equipe_prioritaire"):
+                    e["score"] = min(10, e["score"] + BONUS_EQUIPE_PRIORITAIRE)
+            evs.sort(key=lambda e: e["score"], reverse=True)
+            sport_events[cat] = evs[:5]  # plafond large par catégorie, la réduction globale suit
+
+        # Réduction globale demandée par l'utilisateur le 24/09 (remplace le seul plafond par
+        # catégorie ci-dessus, qui pouvait laisser jusqu'à 20 items au total) : on regroupe
+        # toutes les catégories, on trie par score décroissant (bonus Spurs déjà appliqué), et
+        # on ne garde que les meilleures au total, réparties ensuite par catégorie. cf. cahier
+        # §6 : pas de compte-rendu exhaustif, seulement les résultats/événements marquants.
+        max_sport_total = config["seuils"].get("max_sport_total", 4)
+        tous_sport = [
+            {**e, "_categorie": cat} for cat, evs in sport_events.items() for e in evs
+        ]
+        tous_sport.sort(key=lambda e: e["score"], reverse=True)
+        retenus = tous_sport[:max_sport_total]
+        sport_events = {cat: [] for cat in sport_events}
+        for e in retenus:
+            sport_events[e["_categorie"]].append(e)
+        logger.info(
+            "Sport réduit à %d item(s) au total (max_sport_total=%d): %s",
+            len(retenus), max_sport_total,
+            {cat: len(evs) for cat, evs in sport_events.items()},
+        )
 
         # Marchés : mouvements significatifs seulement
         seuil_marche = config["seuils"]["score_min_marche_pct"]
         mouvements = markets_collect.significant_moves(raw["marches"], seuil_marche)
         marches_data = {**raw["marches"], "mouvements_significatifs": mouvements}
+
+        # cf. bug signalé le 24/09 : les articles économie étaient collectés et scorés
+        # (ligne 125-126 ci-dessus) mais jamais transmis au LLM -> "explication" restait
+        # systématiquement null et resume_court se contentait de reformuler les chiffres bruts
+        # (aucune donnée pour justifier une cause, cf. cahier §5 "chercher pourquoi le marché a
+        # bougé"). On transmet maintenant les meilleurs articles économie au générateur.
+        actualite_economie = events_economie[:8]
 
         # Météo
         weather_summary = weather_collect.summarize_zone(raw["meteo"])
@@ -150,6 +186,7 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         analysed = {
             "actualite_france": events_france,
             "actualite_monde": events_monde,
+            "actualite_economie": actualite_economie,
             "marches_data": marches_data,
             "sport_events": sport_events,
         }

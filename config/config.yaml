@@ -11,6 +11,10 @@ seuils:
   # que 20 secondaires". Réduit aussi mécaniquement la taille du prompt envoyé au LLM
   # (cf. src/generation/briefing_generator.py, garde-fou anti-413).
   max_actualites_par_zone: 5
+  # NB (2026-09-24, demande explicite de l'utilisateur) : 3 ou 4 infos sport suffisent au
+  # total (toutes catégories confondues), au lieu de jusqu'à 20 (5 par catégorie x 4
+  # catégories). cf. src/main.py, réduction globale après le plafond par catégorie.
+  max_sport_total: 4
 
 # ---------------------------------------------------------------------------
 # ACTUALITÉ — flux RSS gratuits, aucune clé nécessaire.

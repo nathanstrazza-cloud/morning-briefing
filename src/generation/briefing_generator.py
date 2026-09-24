@@ -49,8 +49,19 @@ SYSTEM_PROMPT = """Tu es le rédacteur d'un briefing matinal personnel en franç
 RÈGLES ABSOLUES (à respecter strictement) :
 1. Utilise UNIQUEMENT les informations fournies dans les données ci-dessous. N'invente jamais
    un fait, un chiffre, une citation ou une explication que tu ne peux pas justifier avec les
-   données fournies. Si tu ne sais pas expliquer pourquoi un marché a bougé à partir des
-   données fournies, mets "explication": null plutôt que d'inventer une cause.
+   données fournies.
+1bis. Marchés (cf. cahier §5) : pour chaque mouvement dans "marches.mouvements_notables",
+   cherche une cause dans "actualite_economie_contexte" (et, si pertinent, dans
+   actualite_france/monde) : un événement, une annonce, une donnée macro, un contexte
+   géopolitique qui explique raisonnablement ce mouvement. Si tu en trouves une, résume-la
+   en une courte phrase dans "explication". Si aucune donnée fournie ne permet de justifier
+   la cause, mets "explication": null plutôt que d'inventer -- mais dans ce cas ne répète
+   PAS la variation chiffrée en guise d'explication (elle est déjà dans "variation_pct"),
+   laisse simplement null. "resume_court" doit être un ou deux phrases de CONTEXTE
+   (ce qui se passe sur les marchés et pourquoi, si connu) -- jamais une simple énumération
+   des indices et de leurs pourcentages : ces chiffres sont déjà affichés séparément par
+   indice, les répéter dans resume_court n'apporte rien (cf. cahier §5, exemple "CAC 40:
+   -2,1%" à toujours accompagner d'une explication, pas d'une redite).
 2. Style : clair, concis pour l'actualité, factuel, sans sensationnalisme, sans opinion
    politique, sans exagération, en français.
 3. Pour chaque actualité, réponds implicitement à Quoi/Où/Quand/Pourquoi important, et pour
@@ -117,6 +128,12 @@ def _build_user_prompt(analysed: dict, science_topic: dict, is_monday: bool, max
         light["sources"] = [s["nom"] if isinstance(s, dict) else s for s in e.get("sources", [])]
         return light
 
+    # cf. bug corrigé le 24/09 : les articles économie étaient collectés puis jetés avant
+    # d'atteindre le LLM (main.py) -- résultat, "explication" restait toujours null et
+    # resume_court n'avait que les chiffres bruts à reformuler (aucune cause disponible).
+    # On les transmet maintenant, allégés comme france/monde.
+    economie = [_light_event(e) for e in analysed.get("actualite_economie", [])]
+
     france = [_light_event(e) for e in france]
     monde = [_light_event(e) for e in monde]
 
@@ -126,11 +143,15 @@ def _build_user_prompt(analysed: dict, science_topic: dict, is_monday: bool, max
     def _light_sport(sport_events: dict) -> dict:
         return {cat: [e["titre"] for e in evs] for cat, evs in sport_events.items()}
 
-    def _payload(france_l, monde_l, sport_l, marches_l) -> dict:
+    def _payload(france_l, monde_l, economie_l, sport_l, marches_l) -> dict:
         return {
             "jour_lundi_couvre_weekend": is_monday,
             "actualite_france": france_l,
             "actualite_monde": monde_l,
+            # Fournie UNIQUEMENT comme contexte pour expliquer les mouvements de marchés
+            # (cf. "marches" ci-dessous) -- ne doit pas devenir une 3e liste d'actualités
+            # affichée telle quelle (cf. SYSTEM_PROMPT, règle dédiée).
+            "actualite_economie_contexte": economie_l,
             "marches": marches_l,
             "sport": sport_l,
             "science_mode": science_topic["mode"],
@@ -145,10 +166,12 @@ def _build_user_prompt(analysed: dict, science_topic: dict, is_monday: bool, max
 
     sport = _light_sport(analysed["sport_events"])
     # cf. cahier §4 : actualité = priorité maximale. En cas de dépassement du budget, on
-    # réduit d'abord le sport (moins prioritaire) avant de toucher à l'actualité, et jamais
-    # les marchés (déjà réduits aux seuls mouvements significatifs en amont, cf. main.py).
+    # réduit d'abord le sport (moins prioritaire, et déjà plafonné à 3-4 au total par
+    # main.py donc rarement nécessaire), puis le contexte économie (utile mais pas
+    # indispensable au cœur du briefing), et jamais les marchés eux-mêmes (déjà réduits aux
+    # seuls mouvements significatifs en amont).
     marches = analysed["marches_data"]
-    serialized = _serialize(_payload(france, monde, sport, marches))
+    serialized = _serialize(_payload(france, monde, economie, sport, marches))
 
     trimmed_sport = False
     while len(serialized) > max_chars and any(sport.values()):
@@ -157,7 +180,13 @@ def _build_user_prompt(analysed: dict, science_topic: dict, is_monday: bool, max
         if sport[cat]:
             sport[cat].pop()
         trimmed_sport = True
-        serialized = _serialize(_payload(france, monde, sport, marches))
+        serialized = _serialize(_payload(france, monde, economie, sport, marches))
+
+    trimmed_economie = False
+    while len(serialized) > max_chars and economie:
+        economie.pop()
+        trimmed_economie = True
+        serialized = _serialize(_payload(france, monde, economie, sport, marches))
 
     # Plancher : ne jamais vider complètement l'actualité (priorité maximale, cf. cahier §4)
     # -- on retire en dernier recours, mais on garde toujours au moins 2 événements par zone
@@ -175,14 +204,15 @@ def _build_user_prompt(analysed: dict, science_topic: dict, is_monday: bool, max
         else:
             break
         trimmed_actualite = True
-        serialized = _serialize(_payload(france, monde, sport, marches))
+        serialized = _serialize(_payload(france, monde, economie, sport, marches))
 
-    if trimmed_sport or trimmed_actualite:
+    if trimmed_sport or trimmed_economie or trimmed_actualite:
         logger.warning(
-            "Prompt LLM trop volumineux (>%d caractères) -> sport réduit=%s, actualité réduite=%s "
-            "(retenus après réduction : france=%d, monde=%d, sport=%d au total).",
-            max_chars, trimmed_sport, trimmed_actualite, len(france), len(monde),
-            sum(len(v) for v in sport.values()),
+            "Prompt LLM trop volumineux (>%d caractères) -> sport réduit=%s, économie réduite=%s, "
+            "actualité réduite=%s (retenus après réduction : france=%d, monde=%d, économie=%d, "
+            "sport=%d au total).",
+            max_chars, trimmed_sport, trimmed_economie, trimmed_actualite, len(france), len(monde),
+            len(economie), sum(len(v) for v in sport.values()),
         )
 
     return "Voici les données collectées et analysées pour le briefing de ce matin.\n\n" + serialized
