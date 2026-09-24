@@ -139,6 +139,50 @@ un indicateur d'échec dans `docs/data/briefings/status.json` que le frontend pe
 
 ---
 
+## 3bis. Déclenchement (mis à jour le 2026-09-24 — IMPORTANT, à lire avant de retoucher au cron)
+
+**Constat mesuré via l'API GitHub (runs des 22/23/24 sept.)** : le déclencheur `schedule:`
+natif de GitHub Actions arrive systématiquement avec **4 à 6h de retard** (ex. cible 06:12
+Paris -> déclenchement réel vers 11h-12h), quelle que soit la minute choisie dans le cron.
+C'est documenté par GitHub lui-même : l'événement `schedule` est "best-effort", retardé
+(voire abandonné) pendant les périodes de forte charge, sans qu'aucune minute précise ne
+soit fiable. Changer la minute du cron (essayé le 2026-09-24, `30 4/5` -> `12 4/5`) **ne
+résout pas le problème** : ce n'est pas un souci de contention, c'est une limite structurelle
+du déclencheur `schedule` lui-même.
+
+**Solution retenue** : déclencher le workflow depuis l'extérieur de GitHub Actions, via
+l'API REST, à l'heure exacte voulue. Un appel API (`workflow_dispatch`) initié par un
+service externe démarre quasi immédiatement — il n'est pas mis en file d'attente par le
+même mécanisme que `schedule`.
+
+**Mise en œuvre (à faire par l'utilisateur, pas automatisable depuis ce dépôt)** :
+
+1. Créer un compte gratuit sur un service de cron HTTP externe (ex. cron-job.org,
+   ou tout équivalent gratuit capable d'envoyer une requête POST avec headers/corps
+   personnalisés à heure fixe et fuseau Europe/Paris).
+2. Créer un Personal Access Token GitHub **dédié** (scope minimal : `actions:write` /
+   "Actions" en lecture-écriture sur ce dépôt uniquement) — ne pas réutiliser sans
+   limite le token de développement existant dans les fichiers du projet.
+3. Configurer un job HTTP quotidien (lun-ven, ~06:10 Europe/Paris) :
+   - Méthode : `POST`
+   - URL : `https://api.github.com/repos/nathanstrazza-cloud/morning-briefing/actions/workflows/briefing.yml/dispatches`
+   - Headers : `Authorization: Bearer <TOKEN>`, `Accept: application/vnd.github+json`,
+     `X-GitHub-Api-Version: 2022-11-28`
+   - Corps JSON : `{"ref": "main"}`
+4. Tester une fois manuellement (bouton "Test" du service cron, ou `curl` en local) et
+   vérifier dans l'onglet Actions du dépôt qu'un run `workflow_dispatch` démarre en
+   quelques secondes.
+5. Le `schedule:` natif restant dans `briefing.yml` (07:00 UTC) n'est qu'un **filet de
+   sécurité tardif** si le déclenchement externe tombe en panne un jour — le garde-fou
+   d'idempotence dans `src/main.py` (`storage.day_briefing_exists`) empêche toute
+   double génération, donc il est sans risque de laisser les deux actifs.
+
+Tant que l'étape utilisateur (1-4) n'est pas faite, le site continuera à se mettre à jour
+en milieu de matinée plutôt qu'à 06h30 — c'est le seul point bloquant restant pour le
+critère de réussite §25.4 du cahier des charges.
+
+---
+
 ## 4. Clé(s) API nécessaires (secrets GitHub)
 
 Le seul point qui **nécessite un choix de l'utilisateur** est le fournisseur LLM pour la
