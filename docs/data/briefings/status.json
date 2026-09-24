@@ -1,16 +1,16 @@
 {
-  "derniere_execution": "2026-09-23T11:24:06.456550+02:00",
-  "date_visee": "2026-09-23",
+  "derniere_execution": "2026-09-24T11:17:25.120370+02:00",
+  "date_visee": "2026-09-24",
   "succes": true,
   "erreur": null,
-  "synthese_llm": true,
-  "erreur_llm": null,
+  "synthese_llm": false,
+  "erreur_llm": "cerebras: 402 Payment Required (provider=cerebras): {\"message\":\"Payment required to access this resource. Visit your billing tab.\",\"type\":\"payment_required_error\",\"param\":\"quota\",\"code\":\"payment_required\"}",
   "sources_rss_en_erreur": [
     {
       "source": "CNRS Actualités",
       "categorie": "sciences",
       "statut": "erreur",
-      "detail": "<unknown>:15:231: not well-formed (invalid token)"
+      "detail": "<unknown>:14:416: not well-formed (invalid token)"
     },
     {
       "source": "L'Équipe Tous Sports",
@@ -22,14 +22,14 @@
   "sources_marches_en_erreur": [],
   "funnel_actualite": {
     "france": {
-      "bruts": 121,
-      "evenements_uniques": 106,
-      "retenus_apres_seuil": 69
+      "bruts": 123,
+      "evenements_uniques": 115,
+      "retenus_apres_seuil": 61
     },
     "monde": {
-      "bruts": 97,
-      "evenements_uniques": 90,
-      "retenus_apres_seuil": 29
+      "bruts": 90,
+      "evenements_uniques": 83,
+      "retenus_apres_seuil": 30
     }
   }
 }
