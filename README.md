@@ -276,7 +276,13 @@ qu'aucun fichier ne rentre en conflit avec cette structure, puis fusionner.
 Par ordre de priorité si on reprend ce projet :
 1. Brancher un vrai secret LLM et vérifier une génération de bout en bout sur GitHub Actions.
 2. Activer GitHub Pages et vérifier l'affichage réel (mobile + desktop).
-3. Affiner les sources sport (RSS spécifiques L'Équipe par sport, source NBA/Spurs dédiée).
+3. ~~Affiner les sources sport (RSS spécifiques L'Équipe par sport, source NBA/Spurs
+   dédiée).~~ Fait le 2026-09-25 (flux L'Équipe Tennis/Rugby/Cyclisme/Hand/Volley + ESPN
+   NBA News, cf. `config/config.yaml`) — **pas encore vérifié en conditions réelles**
+   (sandbox sans accès à ces domaines) : à confirmer via `docs/erreurs.html` /
+   `status.json` → `sources_rss_en_erreur` au prochain run réel. Si un chemin L'Équipe
+   échoue, ajuster uniquement le `path` dans `config.yaml` (ex. essayer `/Handball` au
+   lieu de `/Hand`).
 4. Affiner le scoring (actuellement heuristique par mots-clés — pourrait être amélioré par le
    LLM lui-même en lui demandant de noter chaque item avant rédaction).
 5. Ajouter des tests (pytest) sur `dedup.py`, `scoring.py`, `verification.py` — ce sont les

@@ -69,13 +69,39 @@ sport:
   basketball:
     - name: "L'Équipe Basket"
       url: "https://dwh.lequipe.fr/api/edito/rss?path=/Basket"
-    # NBA / Spurs : à remplacer par une source dédiée plus fiable (roadmap README §7)
+    # NB (2026-09-25) : ajout d'une 2e source dédiée NBA (générale, filtrée ensuite comme les
+    # autres flux basket) pour renforcer la couverture NBA/Spurs demandée au cahier §6 --
+    # flux ESPN NBA News, public et gratuit, pas de clé requise. Le bonus de score Spurs
+    # (`equipe_prioritaire`, cf. sports.py) s'applique automatiquement à ses articles aussi.
+    # PAS ENCORE testé en conditions réelles (ce sandbox n'a pas accès à espn.com) -- à
+    # confirmer via status.json/sources_rss_en_erreur au prochain run réel.
+    - name: "ESPN NBA News"
+      url: "https://www.espn.com/espn/rss/nba/news"
   natation:
     - name: "L'Équipe Natation"
       url: "https://dwh.lequipe.fr/api/edito/rss?path=/Natation"
   autres:
-    - name: "L'Équipe Tous Sports"
-      url: "https://dwh.lequipe.fr/api/edito/rss?path=/Direct"
+    # NB (2026-09-25) : "L'Équipe Tous Sports" (?path=/Direct) retiré -- confirmé "vide" à
+    # chaque run depuis son ajout (status.json/sources_rss_en_erreur, statut="vide", 0
+    # article), probablement un flux de directs commentés plutôt qu'un fil d'actualité
+    # générale. Remplacé par un flux dédié par sport suivi au cahier §6 (tennis, rugby,
+    # cyclisme, handball, volley), même pattern d'URL que Football/Basket/Natation
+    # ci-dessus (confirmés fonctionnels) -- le filtre "France uniquement" existant dans
+    # sports.py (fetch_sport) s'applique ensuite sans changement. PAS ENCORE testé en
+    # conditions réelles pour ces 5 chemins précis -- à confirmer via
+    # status.json/sources_rss_en_erreur au prochain run réel ; si un chemin échoue, il
+    # suffit de corriger son "path" ici (ex: essayer "/Handball" au lieu de "/Hand", ou
+    # "/Cyclisme-sur-route" au lieu de "/Cyclisme").
+    - name: "L'Équipe Tennis"
+      url: "https://dwh.lequipe.fr/api/edito/rss?path=/Tennis"
+    - name: "L'Équipe Rugby"
+      url: "https://dwh.lequipe.fr/api/edito/rss?path=/Rugby"
+    - name: "L'Équipe Cyclisme"
+      url: "https://dwh.lequipe.fr/api/edito/rss?path=/Cyclisme"
+    - name: "L'Équipe Hand"
+      url: "https://dwh.lequipe.fr/api/edito/rss?path=/Hand"
+    - name: "L'Équipe Volley"
+      url: "https://dwh.lequipe.fr/api/edito/rss?path=/Volley"
 
   equipes_prioritaires:
     basketball: ["San Antonio Spurs", "Spurs"]

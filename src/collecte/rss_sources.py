@@ -63,9 +63,22 @@ _REQUEST_HEADERS = {
 # le début d'une entité XML valide (&amp; &lt; &gt; &quot; &apos; ou &#123;/&#x1F;).
 _BARE_AMPERSAND_RE = re.compile(rb"&(?!amp;|lt;|gt;|quot;|apos;|#\d+;|#x[0-9A-Fa-f]+;)")
 
+# NB (corrigé le 2026-09-25) : le fix du 20/09 sur les "&" non échappés a résolu Nature News
+# mais PAS CNRS Actualités, qui échoue toujours avec "not well-formed (invalid token)" à une
+# position différente (confirmé par status.json/status_history.json sur plusieurs runs
+# consécutifs). Cause probable distincte : un caractère de contrôle bas (0x00-0x1F, hors
+# tabulation/saut de ligne/retour chariot) interdit par la norme XML 1.0, que certains CMS
+# laissent fuiter dans un résumé d'article (espace insécable mal encodé, tiret cadratin issu
+# d'un copier-coller Word, etc.). On les retire par prudence avant le parsing -- ce nettoyage
+# est sans risque pour les flux déjà valides (ces caractères n'ont de toute façon rien à faire
+# dans un résumé affiché) et ne remplace pas le fix du "&" ci-dessus, qui reste nécessaire.
+_INVALID_XML_CHARS_RE = re.compile(rb"[\x00-\x08\x0B\x0C\x0E-\x1F]")
+
 
 def _sanitize_xml(raw: bytes) -> bytes:
-    return _BARE_AMPERSAND_RE.sub(b"&amp;", raw)
+    raw = _BARE_AMPERSAND_RE.sub(b"&amp;", raw)
+    raw = _INVALID_XML_CHARS_RE.sub(b"", raw)
+    return raw
 
 
 def _clean_summary(raw: str) -> str:
