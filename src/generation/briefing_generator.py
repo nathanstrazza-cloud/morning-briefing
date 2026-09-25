@@ -255,8 +255,12 @@ def generate(
         body["_erreur_llm"] = None
         return body
 
-    dernier_exc: Exception | None = None
-    dernier_provider_name: str | None = None
+    # NB (2026-09-25) : jusqu'ici seule l'erreur du DERNIER provider tenté était gardée dans
+    # _erreur_llm -- si le repli allait jusqu'à Cerebras, l'échec (souvent différent) de Groq
+    # et Mistral avant lui restait invisible sans rouvrir les logs du run. On garde maintenant
+    # la dernière erreur de CHAQUE provider épuisé (2/2 tentatives), pour diagnostiquer toute
+    # la chaîne de repli d'un coup depuis status.json / l'onglet Erreurs.
+    erreurs_par_provider: dict[str, str] = {}
     # NB (2026-09-19) : pour CHAQUE provider disponible (préféré, puis repli(s) -- cf.
     # llm_provider.get_providers()), deux tentatives avec un budget de caractères décroissant
     # (cf. RETRY_PROMPT_CHARS). On ne bascule au provider suivant qu'après avoir épuisé les
@@ -264,12 +268,12 @@ def generate(
     # via un second fournisseur gratuit (ex: Gemini) qu'aucune synthèse du tout parce que le
     # premier (ex: Groq) a atteint sa limite.
     for provider in providers:
+        derniere_erreur_provider: str | None = None
         for tentative, max_chars in enumerate((MAX_PROMPT_CHARS, RETRY_PROMPT_CHARS), start=1):
             try:
                 return _try(provider, max_chars)
             except Exception as exc:  # noqa: BLE001
-                dernier_exc = exc
-                dernier_provider_name = provider.name
+                derniere_erreur_provider = str(exc)
                 detail = getattr(exc, "body_excerpt", None)
                 logger.error(
                     "Échec de la génération LLM (%s, tentative %d/2, budget=%d caractères): %s%s",
@@ -277,8 +281,15 @@ def generate(
                     f" | corps de la réponse: {detail}" if detail else "",
                 )
         logger.warning("Provider '%s' épuisé (2/2 tentatives échouées) -> passage au suivant s'il existe.", provider.name)
+        if derniere_erreur_provider:
+            # Tronqué par provider pour que l'ensemble de la chaîne tienne dans une seule
+            # chaîne lisible (cf. troncature globale plus généreuse dans fallback_briefing).
+            erreurs_par_provider[provider.name] = derniere_erreur_provider[:200]
 
-    erreur_resumee = f"{dernier_provider_name}: {dernier_exc}" if dernier_exc else None
+    erreur_resumee = (
+        " | ".join(f"{name}: {msg}" for name, msg in erreurs_par_provider.items())
+        if erreurs_par_provider else None
+    )
     return fallback_briefing(analysed, science_topic, weather_summary, is_monday, erreur_llm=erreur_resumee)
 
 
@@ -334,10 +345,12 @@ def fallback_briefing(
         "meta": {"resume_1_phrase": "Briefing minimal généré sans synthèse LLM."},
         "_genere_par_llm": False,
         "_provider": None,
-        # NB (2026-09-19) : cause réelle de l'échec LLM (tronquée), pour diagnostic sans
-        # devoir rouvrir les logs du run -- cf. storage.save_briefing qui la reprend aussi
-        # dans status.json.
-        "_erreur_llm": (erreur_llm[:500] if erreur_llm else None),
+        # NB (2026-09-19, chaîne complète depuis 2026-09-25) : cause réelle de l'échec LLM
+        # pour CHAQUE provider de repli tenté ("provider: message | provider: message | ..."),
+        # pour diagnostic sans devoir rouvrir les logs du run -- cf. storage.save_briefing qui
+        # la reprend aussi dans status.json. Troncature portée à 900 (au lieu de 500) car la
+        # chaîne agrège désormais plusieurs providers au lieu d'un seul message.
+        "_erreur_llm": (erreur_llm[:900] if erreur_llm else None),
     }
 
 
