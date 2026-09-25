@@ -1,0 +1,66 @@
+2026-09-25 04:10:43,068 [INFO] morning_briefing: === Démarrage du run Morning Briefing pour le 2026-09-25 ===
+2026-09-25 04:10:43,079 [INFO] morning_briefing: Fenêtre de recherche: 2026-09-24 05:17:25.120370+02:00 -> 2026-09-25 06:10:43.068667+02:00 (lundi=False, dernier_succes=2026-09-24 11:17:25.120370+02:00)
+2026-09-25 04:10:43,079 [INFO] morning_briefing.collecte: Début de la collecte (depuis=2026-09-24T05:17:25.120370+02:00, lundi=False)
+2026-09-25 04:10:43,278 [INFO] morning_briefing.collecte.rss: Flux Le Monde (france): 16 articles récupérés
+2026-09-25 04:10:43,479 [INFO] morning_briefing.collecte.rss: Flux France Info (france): 29 articles récupérés
+2026-09-25 04:10:43,750 [INFO] morning_briefing.collecte.rss: Flux Libération (france): 50 articles récupérés
+2026-09-25 04:10:44,097 [INFO] morning_briefing.collecte.rss: Flux 20 Minutes (france): 30 articles récupérés
+2026-09-25 04:10:44,163 [INFO] morning_briefing.collecte.rss: Flux Le Monde International (monde): 20 articles récupérés
+2026-09-25 04:10:44,288 [INFO] morning_briefing.collecte.rss: Flux New York Times World (monde): 57 articles récupérés
+2026-09-25 04:10:44,383 [INFO] morning_briefing.collecte.rss: Flux France 24 International (monde): 24 articles récupérés
+2026-09-25 04:10:44,449 [INFO] morning_briefing.collecte.rss: Flux Le Monde Économie (economie): 20 articles récupérés
+2026-09-25 04:10:44,659 [INFO] morning_briefing.collecte.rss: Flux Le Figaro Économie (economie): 20 articles récupérés
+2026-09-25 04:10:44,819 [INFO] morning_briefing.collecte.rss: Flux BFM Business (economie): 30 articles récupérés
+2026-09-25 04:10:44,876 [INFO] morning_briefing.collecte.rss: Flux Le Monde Sciences (sciences): 20 articles récupérés
+2026-09-25 04:10:45,587 [WARNING] morning_briefing.collecte.rss: Flux RSS illisible ou vide: CNRS Actualités (https://www.cnrs.fr/fr/rss.xml) -- <unknown>:14:418: not well-formed (invalid token)
+2026-09-25 04:10:45,740 [INFO] morning_briefing.collecte.rss: Flux Nature News (sciences): 75 articles récupérés
+2026-09-25 04:10:45,924 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Football (sport_football): 50 articles récupérés
+2026-09-25 04:10:47,020 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Basket (sport_basketball): 50 articles récupérés
+2026-09-25 04:10:47,108 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Natation (sport_natation): 50 articles récupérés
+2026-09-25 04:10:47,373 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Tous Sports (sport_autres): 0 articles récupérés
+2026-09-25 04:10:47,374 [INFO] morning_briefing.collecte.sports: Sport collecté: foot=50 basket=13 natation=2 autres(France)=0
+2026-09-25 04:10:47,850 [INFO] morning_briefing.collecte.markets: Marchés collectés: 5 indices, 2 matières premières
+2026-09-25 04:10:49,457 [INFO] morning_briefing.collecte.weather: Météo collectée pour 4/4 villes
+2026-09-25 04:10:49,457 [INFO] morning_briefing.collecte: Collecte terminée: 279 actualités, 65 items sport, 5 indices, 4 villes météo
+2026-09-25 04:10:49,457 [WARNING] morning_briefing.collecte: Flux RSS en échec ce run: CNRS Actualités
+2026-09-25 04:10:49,535 [INFO] morning_briefing.analyse.dedup: Déduplication: 121 items bruts -> 106 événements uniques
+2026-09-25 04:10:49,537 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 106 événements
+2026-09-25 04:10:49,537 [INFO] morning_briefing.analyse.verification: Vérification: 11/106 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-25 04:10:49,573 [INFO] morning_briefing.analyse.dedup: Déduplication: 87 items bruts -> 81 événements uniques
+2026-09-25 04:10:49,574 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 81 événements
+2026-09-25 04:10:49,574 [INFO] morning_briefing.analyse.verification: Vérification: 2/81 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-25 04:10:49,575 [INFO] morning_briefing: Entonnoir actualité (seuil=5): france {'bruts': 121, 'evenements_uniques': 106, 'retenus_apres_seuil': 62} | monde {'bruts': 87, 'evenements_uniques': 81, 'retenus_apres_seuil': 29}
+2026-09-25 04:10:49,599 [INFO] morning_briefing.analyse.dedup: Déduplication: 68 items bruts -> 54 événements uniques
+2026-09-25 04:10:49,600 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 54 événements
+2026-09-25 04:10:49,600 [INFO] morning_briefing.analyse.dedup: Déduplication: 3 items bruts -> 3 événements uniques
+2026-09-25 04:10:49,601 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 3 événements
+2026-09-25 04:10:49,601 [INFO] morning_briefing.analyse.verification: Vérification: 0/3 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-25 04:10:49,613 [INFO] morning_briefing.analyse.dedup: Déduplication: 50 items bruts -> 45 événements uniques
+2026-09-25 04:10:49,614 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 45 événements
+2026-09-25 04:10:49,615 [INFO] morning_briefing.analyse.dedup: Déduplication: 13 items bruts -> 13 événements uniques
+2026-09-25 04:10:49,615 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 13 événements
+2026-09-25 04:10:49,615 [INFO] morning_briefing.analyse.dedup: Déduplication: 2 items bruts -> 2 événements uniques
+2026-09-25 04:10:49,615 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 2 événements
+2026-09-25 04:10:49,615 [INFO] morning_briefing.analyse.dedup: Déduplication: 0 items bruts -> 0 événements uniques
+2026-09-25 04:10:49,615 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 0 événements
+2026-09-25 04:10:49,615 [INFO] morning_briefing: Sport réduit à 4 item(s) au total (max_sport_total=4): {'football': 3, 'basketball': 1, 'natation': 0, 'autres': 0}
+2026-09-25 04:10:49,616 [INFO] morning_briefing.generation.llm: Providers LLM disponibles (ordre d'essai): groq -> mistral -> cerebras
+2026-09-25 04:10:49,618 [WARNING] morning_briefing.generation: Prompt LLM trop volumineux (>12000 caractères) -> sport réduit=True, économie réduite=True, actualité réduite=False (retenus après réduction : france=5, monde=5, économie=2, sport=0 au total).
+2026-09-25 04:10:56,753 [ERROR] morning_briefing.generation: Échec de la génération LLM (groq, tentative 1/2, budget=12000 caractères): Unterminated string starting at: line 41 column 19 (char 3582)
+2026-09-25 04:10:56,756 [WARNING] morning_briefing.generation: Prompt LLM trop volumineux (>4000 caractères) -> sport réduit=True, économie réduite=True, actualité réduite=True (retenus après réduction : france=2, monde=2, économie=0, sport=0 au total).
+2026-09-25 04:10:56,837 [ERROR] morning_briefing.generation: Échec de la génération LLM (groq, tentative 2/2, budget=4000 caractères): 429 Too Many Requests (provider=groq): {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1vh8sjfe61sn0e59wqaes1t` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6454, Requested 2896. Please try again in 10.125s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ | corps de la réponse: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1vh8sjfe61sn0e59wqaes1t` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6454, Requested 2896. Please try again in 10.125s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+2026-09-25 04:10:56,837 [WARNING] morning_briefing.generation: Provider 'groq' épuisé (2/2 tentatives échouées) -> passage au suivant s'il existe.
+2026-09-25 04:10:56,839 [WARNING] morning_briefing.generation: Prompt LLM trop volumineux (>12000 caractères) -> sport réduit=True, économie réduite=True, actualité réduite=False (retenus après réduction : france=5, monde=5, économie=2, sport=0 au total).
+2026-09-25 04:10:57,224 [ERROR] morning_briefing.generation: Échec de la génération LLM (mistral, tentative 1/2, budget=12000 caractères): 429 Too Many Requests (provider=mistral): {"object":"error","message":"Rate limit exceeded","type":"rate_limited","param":null,"code":"1300","raw_status_code":429} | corps de la réponse: {"object":"error","message":"Rate limit exceeded","type":"rate_limited","param":null,"code":"1300","raw_status_code":429}
+2026-09-25 04:10:57,227 [WARNING] morning_briefing.generation: Prompt LLM trop volumineux (>4000 caractères) -> sport réduit=True, économie réduite=True, actualité réduite=True (retenus après réduction : france=2, monde=2, économie=0, sport=0 au total).
+2026-09-25 04:10:57,708 [ERROR] morning_briefing.generation: Échec de la génération LLM (mistral, tentative 2/2, budget=4000 caractères): 429 Too Many Requests (provider=mistral): {"object":"error","message":"Rate limit exceeded","type":"rate_limited","param":null,"code":"1300","raw_status_code":429} | corps de la réponse: {"object":"error","message":"Rate limit exceeded","type":"rate_limited","param":null,"code":"1300","raw_status_code":429}
+2026-09-25 04:10:57,708 [WARNING] morning_briefing.generation: Provider 'mistral' épuisé (2/2 tentatives échouées) -> passage au suivant s'il existe.
+2026-09-25 04:10:57,710 [WARNING] morning_briefing.generation: Prompt LLM trop volumineux (>12000 caractères) -> sport réduit=True, économie réduite=True, actualité réduite=False (retenus après réduction : france=5, monde=5, économie=2, sport=0 au total).
+2026-09-25 04:10:57,836 [ERROR] morning_briefing.generation: Échec de la génération LLM (cerebras, tentative 1/2, budget=12000 caractères): 402 Payment Required (provider=cerebras): {"message":"Payment required to access this resource. Visit your billing tab.","type":"payment_required_error","param":"quota","code":"payment_required"} | corps de la réponse: {"message":"Payment required to access this resource. Visit your billing tab.","type":"payment_required_error","param":"quota","code":"payment_required"}
+2026-09-25 04:10:57,839 [WARNING] morning_briefing.generation: Prompt LLM trop volumineux (>4000 caractères) -> sport réduit=True, économie réduite=True, actualité réduite=True (retenus après réduction : france=2, monde=2, économie=0, sport=0 au total).
+2026-09-25 04:10:57,909 [ERROR] morning_briefing.generation: Échec de la génération LLM (cerebras, tentative 2/2, budget=4000 caractères): 402 Payment Required (provider=cerebras): {"message":"Payment required to access this resource. Visit your billing tab.","type":"payment_required_error","param":"quota","code":"payment_required"} | corps de la réponse: {"message":"Payment required to access this resource. Visit your billing tab.","type":"payment_required_error","param":"quota","code":"payment_required"}
+2026-09-25 04:10:57,909 [WARNING] morning_briefing.generation: Provider 'cerebras' épuisé (2/2 tentatives échouées) -> passage au suivant s'il existe.
+2026-09-25 04:10:57,912 [INFO] morning_briefing.stockage: Briefing sauvegardé: /home/runner/work/morning-briefing/morning-briefing/docs/data/briefings/2026-09-25.json
+2026-09-25 04:10:57,912 [INFO] morning_briefing: === Run terminé avec succès pour le 2026-09-25 ===
