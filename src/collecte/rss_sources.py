@@ -66,19 +66,42 @@ _BARE_AMPERSAND_RE = re.compile(rb"&(?!amp;|lt;|gt;|quot;|apos;|#\d+;|#x[0-9A-Fa
 # NB (corrigé le 2026-09-25) : le fix du 20/09 sur les "&" non échappés a résolu Nature News
 # mais PAS CNRS Actualités, qui échoue toujours avec "not well-formed (invalid token)" à une
 # position différente (confirmé par status.json/status_history.json sur plusieurs runs
-# consécutifs). Cause probable distincte : un caractère de contrôle bas (0x00-0x1F, hors
-# tabulation/saut de ligne/retour chariot) interdit par la norme XML 1.0, que certains CMS
-# laissent fuiter dans un résumé d'article (espace insécable mal encodé, tiret cadratin issu
-# d'un copier-coller Word, etc.). On les retire par prudence avant le parsing -- ce nettoyage
-# est sans risque pour les flux déjà valides (ces caractères n'ont de toute façon rien à faire
-# dans un résumé affiché) et ne remplace pas le fix du "&" ci-dessus, qui reste nécessaire.
-_INVALID_XML_CHARS_RE = re.compile(rb"[\x00-\x08\x0B\x0C\x0E-\x1F]")
+# consécutifs) -- symptôme d'un caractère de contrôle bas (0x00-0x1F, hors tabulation/saut de
+# ligne/retour chariot) interdit par la norme XML 1.0.
+#
+# NB (corrigé le 2026-09-26) : le fix du 25/09 ci-dessus n'a PAS non plus résolu CNRS
+# Actualités (confirmé par le run du 26/09 : même erreur "not well-formed (invalid token)",
+# position encore différente -- cf. status.json). Cause probable : la regex du 25/09 ne
+# retirait que la plage C0 (0x00-0x1F), qui n'est qu'UNE des plages de caractères interdits
+# par XML 1.0. Reste notamment la plage C1 (0x80-0x9F), très plausible ici : plusieurs CMS
+# français (dont des sites institutionnels) laissent fuiter du texte encodé en Windows-1252
+# (cp1252) réinterprété comme du Latin-1/UTF-8, ce qui transforme une apostrophe/tiret
+# typographique cp1252 (0x92 ’, 0x96 –, 0x93/0x94 " ") en un octet de la plage C1 -- invalide
+# en XML 1.0 même si l'octet est individuellement un UTF-8 valide. Une regex sur les OCTETS
+# bruts (comme les deux tentatives précédentes) ne peut de toute façon pas couvrir ce cas de
+# façon fiable une fois le flux en UTF-8 multi-octets (un octet 0x80-0x9F isolé peut aussi
+# faire partie d'une séquence UTF-8 valide de plusieurs octets -- le retirer à l'aveugle
+# casserait alors un caractère accentué légitime).
+#
+# On change donc d'approche plutôt que d'empiler une 3e regex par octets : décoder le flux en
+# texte (UTF-8, en remplaçant les octets invalides plutôt que de planter -- `errors="replace"`),
+# puis ne garder QUE les caractères explicitement autorisés par la norme XML 1.0 (production
+# [2] Char de la spec : #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF]),
+# en travaillant sur les points de code Unicode réels plutôt que sur des octets. Ceci couvre
+# d'un coup la plage C0 (déjà couverte avant), la plage C1, et toute plage de caractères de
+# contrôle Unicode invalide non encore rencontrée -- sans dépendre de deviner, flux par flux,
+# quelle regex sur octets correspond au bon encodage. Ne remplace pas le fix du "&" ci-dessus
+# (un problème syntaxique XML, pas un problème de caractère interdit), qui reste nécessaire.
+_XML_INVALID_CODEPOINT_RE = re.compile(
+    "[^\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\U00010000-\U0010FFFF]"
+)
 
 
 def _sanitize_xml(raw: bytes) -> bytes:
     raw = _BARE_AMPERSAND_RE.sub(b"&amp;", raw)
-    raw = _INVALID_XML_CHARS_RE.sub(b"", raw)
-    return raw
+    text = raw.decode("utf-8", errors="replace")
+    text = _XML_INVALID_CODEPOINT_RE.sub("", text)
+    return text.encode("utf-8")
 
 
 def _clean_summary(raw: str) -> str:

@@ -17,6 +17,30 @@ import requests
 
 logger = logging.getLogger("morning_briefing.generation.llm")
 
+# NB (ajouté le 2026-09-26) : jusqu'ici aucun provider ne fixait `max_tokens` sur la requête
+# de complétion -- cf. logs du 26/09 : la 1ère tentative Groq (budget prompt=12000 caractères,
+# ~3000 tokens en entrée) a bien reçu une réponse HTTP 200, mais tronquée en plein milieu
+# ("Unterminated string starting at: line 79 column 18") : le modèle a manifestement dépassé
+# un budget de sortie implicite avant d'avoir fini le JSON (probable, vu le tier gratuit
+# "on_demand" : Groq semble réserver une sortie par défaut assez généreuse mais pas illimitée,
+# et rien ne borne explicitement combien le modèle peut écrire). Cette tentative ratée a à elle
+# seule consommé 6587 des 8000 tokens/minute autorisés (cf. message d'erreur de la 2e
+# tentative : "Limit 8000, Used 6587, Requested 3722"), condamnant d'avance la 2e tentative
+# (prompt réduit à 4000 caractères) qui a immédiatement reçu un 429.
+# Fixer explicitement `max_tokens` a un double bénéfice : (1) empêcher une réponse tronquée
+# impossible à parser en JSON (le modèle est contraint de rester dans un budget qui, combiné
+# à MAX_PROMPT_CHARS/RETRY_PROMPT_CHARS, doit lui permettre de terminer son JSON), et (2)
+# réduire le nombre de tokens "Requested" compté par le rate-limiter TPM de Groq (qui semble
+# inclure le budget de sortie demandé, pas seulement l'entrée), laissant plus de marge sous
+# la limite de 8000/minute observée pour ce modèle/tier.
+# Valeur choisie : 3500 -- avec MAX_PROMPT_CHARS=12000 (~3000 tokens d'entrée + ~600 tokens de
+# SYSTEM_PROMPT), le total (entrée + sortie demandée) reste sous 8000, avec de la marge pour
+# les tokens déjà consommés par un run précédent dans la même fenêtre d'une minute. À ajuster
+# si un futur run montre encore une troncature ("Unterminated string"/"Expecting value") malgré
+# ce plafond -- cela indiquerait qu'un sujet science "approfondi" a besoin de plus de place et
+# qu'il faudrait alors réduire MAX_PROMPT_CHARS en contrepartie plutôt que remonter ce chiffre.
+MAX_OUTPUT_TOKENS = 3500
+
 
 class LLMError(RuntimeError):
     """Erreur de génération LLM enrichie du corps de la réponse HTTP quand disponible.
@@ -32,9 +56,17 @@ class LLMError(RuntimeError):
     Cette classe capture le corps (tronqué) pour que le prochain diagnostic n'ait plus à
     deviner."""
 
-    def __init__(self, message: str, body_excerpt: str | None = None):
+    def __init__(self, message: str, body_excerpt: str | None = None, status_code: int | None = None):
         super().__init__(message)
         self.body_excerpt = body_excerpt
+        # NB (corrigé le 2026-09-26) : ajouté pour que l'appelant (briefing_generator.generate)
+        # puisse distinguer un 429 "rate limit" (cf. logs du 26/09 : Groq/Mistral tokens per
+        # minute) -- où retenter IMMÉDIATEMENT le MÊME provider avec un prompt plus petit ne
+        # sert à rien, le quota de la fenêtre en cours est déjà consommé -- d'une autre erreur
+        # (ex: JSON tronqué, 413) où réduire le budget de caractères a justement pour but
+        # d'aider. Avant ce champ, seul le message texte contenait le code, ce qui forçait un
+        # parsing fragile ("429" in str(exc)) pour la même décision.
+        self.status_code = status_code
 
 
 class LLMProvider:
@@ -52,6 +84,7 @@ class LLMProvider:
             raise LLMError(
                 f"{resp.status_code} {resp.reason} (provider={self.name}): {excerpt}",
                 body_excerpt=excerpt,
+                status_code=resp.status_code,
             )
         return resp.json()
 
@@ -87,6 +120,7 @@ class GroqProvider(LLMProvider):
                     {"role": "user", "content": user},
                 ],
                 "temperature": 0.3,
+                "max_tokens": MAX_OUTPUT_TOKENS,
             },
             timeout=60,
         )
@@ -111,7 +145,7 @@ class GeminiProvider(LLMProvider):
             json={
                 "system_instruction": {"parts": [{"text": system}]},
                 "contents": [{"parts": [{"text": user}]}],
-                "generationConfig": {"temperature": 0.3},
+                "generationConfig": {"temperature": 0.3, "maxOutputTokens": MAX_OUTPUT_TOKENS},
             },
             timeout=60,
         )
@@ -171,6 +205,7 @@ class MistralProvider(LLMProvider):
                     {"role": "user", "content": user},
                 ],
                 "temperature": 0.3,
+                "max_tokens": MAX_OUTPUT_TOKENS,
             },
             timeout=60,
         )
@@ -213,6 +248,7 @@ class CerebrasProvider(LLMProvider):
                     {"role": "user", "content": user},
                 ],
                 "temperature": 0.3,
+                "max_tokens": MAX_OUTPUT_TOKENS,
             },
             timeout=60,
         )

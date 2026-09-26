@@ -269,18 +269,33 @@ def generate(
     # premier (ex: Groq) a atteint sa limite.
     for provider in providers:
         derniere_erreur_provider: str | None = None
-        for tentative, max_chars in enumerate((MAX_PROMPT_CHARS, RETRY_PROMPT_CHARS), start=1):
+        tentatives_prevues = (MAX_PROMPT_CHARS, RETRY_PROMPT_CHARS)
+        for tentative, max_chars in enumerate(tentatives_prevues, start=1):
             try:
                 return _try(provider, max_chars)
             except Exception as exc:  # noqa: BLE001
                 derniere_erreur_provider = str(exc)
                 detail = getattr(exc, "body_excerpt", None)
                 logger.error(
-                    "Échec de la génération LLM (%s, tentative %d/2, budget=%d caractères): %s%s",
-                    provider.name, tentative, max_chars, exc,
+                    "Échec de la génération LLM (%s, tentative %d/%d, budget=%d caractères): %s%s",
+                    provider.name, tentative, len(tentatives_prevues), max_chars, exc,
                     f" | corps de la réponse: {detail}" if detail else "",
                 )
-        logger.warning("Provider '%s' épuisé (2/2 tentatives échouées) -> passage au suivant s'il existe.", provider.name)
+                # NB (corrigé le 2026-09-26) : cf. logs du 26/09 -- un 429 "rate limit"
+                # (Groq/Mistral, tokens/minute) signifie que le quota de la fenêtre en cours
+                # est épuisé ; retenter IMMÉDIATEMENT le MÊME provider avec un prompt plus
+                # petit (RETRY_PROMPT_CHARS) ne peut pas réussir -- le budget consommé ne se
+                # régénère pas en quelques millisecondes -- et a fait perdre, ce jour-là, le
+                # temps qui aurait pu servir à essayer le provider suivant plus tôt. Le
+                # prompt réduit garde tout son intérêt pour les AUTRES erreurs (413 payload
+                # trop gros, JSON tronqué/mal formé) où la taille du prompt est bien la cause.
+                if getattr(exc, "status_code", None) == 429:
+                    logger.warning(
+                        "Provider '%s' en rate limit (429) -> passage direct au provider "
+                        "suivant sans 2e tentative (cf. NB 2026-09-26).", provider.name,
+                    )
+                    break
+        logger.warning("Provider '%s' épuisé -> passage au suivant s'il existe.", provider.name)
         if derniere_erreur_provider:
             # Tronqué par provider pour que l'ensemble de la chaîne tienne dans une seule
             # chaîne lisible (cf. troncature globale plus généreuse dans fallback_briefing).
