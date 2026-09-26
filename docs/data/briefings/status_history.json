@@ -1,6 +1,53 @@
 {
   "entries": [
     {
+      "derniere_execution": "2026-09-26T16:10:32.979883+02:00",
+      "date_visee": "2026-09-26",
+      "succes": true,
+      "erreur": null,
+      "synthese_llm": false,
+      "erreur_llm": "groq: 429 Too Many Requests (provider=groq): {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1vh8sjfe61sn0e59wqaes1t` service tier `on_demand` on tokens per m | mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Rate limit exceeded\",\"type\":\"rate_limited\",\"param\":null,\"code\":\"1300\",\"raw_status_code\":429} | cerebras: 402 Payment Required (provider=cerebras): {\"message\":\"Payment required to access this resource. Visit your billing tab.\",\"type\":\"payment_required_error\",\"param\":\"quota\",\"code\":\"payment_required\"}",
+      "sources_rss_en_erreur": [
+        {
+          "source": "CNRS Actualités",
+          "categorie": "sciences",
+          "statut": "erreur",
+          "detail": "<unknown>:14:377: not well-formed (invalid token)"
+        },
+        {
+          "source": "ESPN NBA News",
+          "categorie": "sport_basketball",
+          "statut": "vide",
+          "detail": null
+        },
+        {
+          "source": "L'Équipe Hand",
+          "categorie": "sport_autres",
+          "statut": "vide",
+          "detail": null
+        },
+        {
+          "source": "L'Équipe Volley",
+          "categorie": "sport_autres",
+          "statut": "vide",
+          "detail": null
+        }
+      ],
+      "sources_marches_en_erreur": [],
+      "funnel_actualite": {
+        "france": {
+          "bruts": 120,
+          "evenements_uniques": 105,
+          "retenus_apres_seuil": 46
+        },
+        "monde": {
+          "bruts": 83,
+          "evenements_uniques": 78,
+          "retenus_apres_seuil": 21
+        }
+      }
+    },
+    {
       "derniere_execution": "2026-09-25T06:10:43.068667+02:00",
       "date_visee": "2026-09-25",
       "succes": true,
