@@ -20,7 +20,22 @@ from .llm_provider import LLMError, LLMProvider
 
 logger = logging.getLogger("morning_briefing.generation")
 
-SCHEMA_ATTENDU = """{
+# NB (2026-09-27, scission bloc/science) : jusqu'ici un SEUL appel LLM générait tout le
+# briefing (actu+marchés+sport+science+citation) en une seule réponse JSON -- cf.
+# llm_provider.py pour le diagnostic complet (limite TPM du tier gratuit Groq trop basse pour
+# tenir prompt+sortie combinés dans une seule fenêtre d'une minute, confirmée par les runs
+# réels des 26 et 27/09). Scindé en DEUX appels indépendants, chacun avec son propre schéma,
+# son propre system prompt et son propre budget de sortie :
+#   - "bloc" (SCHEMA_BLOC/SYSTEM_PROMPT_BLOC) : actualité+marchés+sport+citation+meta --
+#     sortie majoritairement composée de phrases courtes, budget réduit.
+#   - "science" (SCHEMA_SCIENCE/SYSTEM_PROMPT_SCIENCE) : uniquement l'article scientifique,
+#     de loin le plus gourmand en tokens de SORTIE (~10 min de lecture) -- budget dédié.
+# Avantage secondaire (pas seulement le quota) : un échec sur l'un des deux appels ne fait
+# plus perdre l'autre. Avant, un seul échec LLM faisait tomber TOUT le briefing en mode
+# fallback (aucune section rédigée) ; maintenant le bloc actu/marchés/sport (priorité
+# maximale, cf. cahier §4) peut rester rédigé même si l'article science échoue, et
+# inversement -- dégradation partielle plutôt que totale, cf. cahier §21.
+SCHEMA_BLOC = """{
   "actualite": {
     "france": [{"titre": str, "resume": str, "pourquoi_important": str, "consequences": str|null, "statut": str, "sources": [str]}],
     "monde": [ ... même structure ... ]
@@ -35,21 +50,25 @@ SCHEMA_ATTENDU = """{
     "natation": [str]|null,
     "autres": [str]|null
   },
+  "citation": {"texte": str, "auteur": str}|null,
+  "meta": {"resume_1_phrase": str}
+}"""
+
+SCHEMA_SCIENCE = """{
   "science": {
     "mode": "decouverte" | "approfondi",
     "titre": str,
     "contenu_markdown": str
-  },
-  "citation": {"texte": str, "auteur": str},
-  "meta": {"resume_1_phrase": str}
+  }
 }"""
 
-SYSTEM_PROMPT = """Tu es le rédacteur d'un briefing matinal personnel en français.
+SYSTEM_PROMPT_BLOC = """Tu es le rédacteur d'un briefing matinal personnel en français.
+Tu rédiges ICI uniquement la partie actualité/marchés/sport/citation (l'article scientifique
+est généré séparément par un autre appel -- ne le mentionne pas, ne le résume pas ici).
 
 RÈGLES ABSOLUES (à respecter strictement) :
 1. Utilise UNIQUEMENT les informations fournies dans les données ci-dessous. N'invente jamais
-   un fait, un chiffre, une citation ou une explication que tu ne peux pas justifier avec les
-   données fournies.
+   un fait, un chiffre, une explication que tu ne peux pas justifier avec les données fournies.
 1bis. Marchés (cf. cahier §5) : pour chaque mouvement dans "marches.mouvements_notables",
    cherche une cause dans "actualite_economie_contexte" (et, si pertinent, dans
    actualite_france/monde) : un événement, une annonce, une donnée macro, un contexte
@@ -70,19 +89,44 @@ RÈGLES ABSOLUES (à respecter strictement) :
    commence la phrase par "Selon [source], ...". Si "fait_confirme", formule-le normalement.
 5. Ne remplis pas artificiellement une section : si peu d'événements sont réellement
    importants, n'en retiens que peu.
-6. Section science : si "mode_science" fourni est "decouverte", rédige un article court sur la
-   découverte majeure fournie. Si "approfondi", rédige un article pédagogique approfondi
-   (~10 minutes de lecture) sur le sujet fourni, structuré en : introduction, pourquoi c'est
-   important, explication du phénomène, mécanismes, données scientifiques, ce qui est su, ce
-   qui reste incertain, limites/controverses, conclusion. Ton d'une bonne revue de
-   vulgarisation scientifique, précis, sans déformer les connaissances.
-7. Citation du jour : uniquement si tu es certain de l'authenticité de l'attribution. Sinon,
+6. Citation du jour : uniquement si tu es certain de l'authenticité de l'attribution. Sinon,
    renvoie "citation": null.
-8. Réponds STRICTEMENT en JSON valide conforme au schéma donné, sans texte avant/après, sans
+7. Réponds STRICTEMENT en JSON valide conforme au schéma donné, sans texte avant/après, sans
    balises markdown autour du JSON.
 
 SCHÉMA JSON ATTENDU :
-""" + SCHEMA_ATTENDU
+""" + SCHEMA_BLOC
+
+SYSTEM_PROMPT_SCIENCE = """Tu es le rédacteur de la section science/technologie d'un briefing
+matinal personnel en français. Tu rédiges UNIQUEMENT cet article (l'actualité, les marchés et
+le sport sont générés séparément par un autre appel).
+
+RÈGLES ABSOLUES (à respecter strictement) :
+1. Utilise UNIQUEMENT les informations fournies ci-dessous (titre/résumé/source du sujet).
+   N'invente jamais un fait, un chiffre ou une donnée scientifique que tu ne peux pas justifier
+   avec les données fournies ou des connaissances scientifiques largement établies et non
+   controversées sur ce sujet précis.
+2. Si "science_mode" est "decouverte", rédige un article court sur la découverte majeure
+   fournie (vérifie que son importance n'est pas exagérée). Si "approfondi", rédige un article
+   pédagogique approfondi (~10 minutes de lecture) sur le sujet fourni, structuré en :
+   introduction, pourquoi c'est important, explication du phénomène, mécanismes, données
+   scientifiques, ce qui est su, ce qui reste incertain, limites/controverses, conclusion.
+3. Ton d'une bonne revue de vulgarisation scientifique : précis, pédagogique, sans
+   sensationnalisme, sans déformer les connaissances pour simplifier.
+4. Réponds STRICTEMENT en JSON valide conforme au schéma donné, sans texte avant/après, sans
+   balises markdown autour du JSON.
+
+SCHÉMA JSON ATTENDU :
+""" + SCHEMA_SCIENCE
+
+# Budgets de sortie dédiés par appel (cf. llm_provider.MAX_OUTPUT_TOKENS pour le diagnostic
+# complet). Le bloc est majoritairement des phrases courtes -> 1800 tokens est confortable
+# pour 5 actus France + 5 Monde + marchés + 4 items sport + citation. L'article science est le
+# poste le plus gourmand en sortie (~10 min de lecture, souvent 1200-1800 mots) -> budget
+# nettement supérieur, dédié à lui seul désormais (avant : un seul budget de 3500 partagé
+# entre TOUT, cause du "Unterminated string" du 26/09 quand la science prenait toute la place).
+MAX_OUTPUT_TOKENS_BLOC = 1800
+MAX_OUTPUT_TOKENS_SCIENCE = 3000
 
 
 # NB (corrigé le 2026-09-13, resserré le 2026-09-19) : garde-fou anti-413. Cf.
@@ -116,17 +160,27 @@ MAX_PROMPT_CHARS = 12_000
 RETRY_PROMPT_CHARS = 4_000
 
 
-def _build_user_prompt(analysed: dict, science_topic: dict, is_monday: bool, max_chars: int = MAX_PROMPT_CHARS) -> str:
+def _light_event(e: dict) -> dict:
+    """Allégement commun : le LLM n'a besoin que des NOMS de sources (schéma "sources": [str]),
+    pas de leurs URLs, qui gonflent le payload sans utilité pour la rédaction."""
+    light = {k: v for k, v in e.items() if k != "sources"}
+    light["sources"] = [s["nom"] if isinstance(s, dict) else s for s in e.get("sources", [])]
+    return light
+
+
+def _serialize(payload: dict) -> str:
+    # JSON compact (pas d'indentation, séparateurs sans espace) : même information, 20-30% de
+    # caractères en moins qu'avec indent=2. Le LLM n'a pas besoin d'un JSON lisible par un
+    # humain pour le comprendre.
+    return json.dumps(payload, ensure_ascii=False, separators=(",", ":"), default=str)
+
+
+def _build_user_prompt_bloc(analysed: dict, is_monday: bool, max_chars: int = MAX_PROMPT_CHARS) -> str:
+    """Payload pour l'appel LLM "bloc" (actualité+marchés+sport). Ne contient PLUS
+    science_mode/science_source (cf. _build_user_prompt_science, appel séparé depuis le
+    2026-09-27)."""
     france = list(analysed["actualite_france"])
     monde = list(analysed["actualite_monde"])
-
-    # Allégement : le LLM n'a besoin que des NOMS de sources pour respecter le schéma de
-    # sortie ("sources": [str]) -- pas de leurs URLs, qui gonflent le payload sans utilité
-    # pour la rédaction. On garde titre/resume/categorie/statut_verification tels quels.
-    def _light_event(e: dict) -> dict:
-        light = {k: v for k, v in e.items() if k != "sources"}
-        light["sources"] = [s["nom"] if isinstance(s, dict) else s for s in e.get("sources", [])]
-        return light
 
     # cf. bug corrigé le 24/09 : les articles économie étaient collectés puis jetés avant
     # d'atteindre le LLM (main.py) -- résultat, "explication" restait toujours null et
@@ -154,15 +208,7 @@ def _build_user_prompt(analysed: dict, science_topic: dict, is_monday: bool, max
             "actualite_economie_contexte": economie_l,
             "marches": marches_l,
             "sport": sport_l,
-            "science_mode": science_topic["mode"],
-            "science_source": science_topic["contenu_source"],
         }
-
-    # JSON compact (pas d'indentation, séparateurs sans espace) : même information, 20-30%
-    # de caractères en moins qu'avec indent=2 (cf. note ci-dessus). Le LLM n'a pas besoin
-    # d'un JSON lisible par un humain pour le comprendre.
-    def _serialize(payload: dict) -> str:
-        return json.dumps(payload, ensure_ascii=False, separators=(",", ":"), default=str)
 
     sport = _light_sport(analysed["sport_events"])
     # cf. cahier §4 : actualité = priorité maximale. En cas de dépassement du budget, on
@@ -218,8 +264,87 @@ def _build_user_prompt(analysed: dict, science_topic: dict, is_monday: bool, max
     return "Voici les données collectées et analysées pour le briefing de ce matin.\n\n" + serialized
 
 
-def generate(
+def _build_user_prompt_science(science_topic: dict) -> str:
+    """Payload pour l'appel LLM "science" (séparé du bloc depuis le 2026-09-27). Toujours très
+    petit (un seul sujet : titre/résumé/url/sources) -- pas de logique de réduction nécessaire,
+    contrairement au bloc dont la taille dépend du nombre d'actualités du jour."""
+    payload = {
+        "science_mode": science_topic["mode"],
+        "science_source": science_topic["contenu_source"],
+    }
+    return (
+        "Voici le sujet scientifique sélectionné pour le briefing de ce matin.\n\n"
+        + _serialize(payload)
+    )
+
+
+def _clean_json_text(raw: str) -> str:
+    """Retire l'éventuel balisage markdown (```json ... ```) qu'un modèle ajoute parfois
+    malgré la consigne JSON strict, avant json.loads()."""
+    cleaned = raw.strip()
+    if cleaned.startswith("```"):
+        cleaned = cleaned.strip("`")
+        cleaned = cleaned.split("\n", 1)[1] if "\n" in cleaned else cleaned
+        if cleaned.lower().startswith("json"):
+            cleaned = cleaned[4:]
+    return cleaned
+
+
+def _run_chain(
     providers: list[LLMProvider],
+    system_prompt: str,
+    build_user_prompt,
+    output_tokens: int,
+    prompt_char_budgets: tuple[int, ...],
+) -> tuple[dict | None, str | None, str | None]:
+    """Essaie chaque provider de `providers` dans l'ordre ; pour chacun, jusqu'à
+    len(prompt_char_budgets) tentatives avec un budget de caractères décroissant (utile
+    seulement pour le bloc, dont la taille du prompt varie selon le nombre d'actualités --
+    pour la science, passer un tuple à un seul élément puisque le payload est déjà minimal).
+
+    Retourne (corps_json_parsé, nom_du_provider_qui_a_réussi, résumé_des_erreurs) : le 1er et
+    le 2e sont None si tous les providers ont échoué, auquel cas le 3e contient la chaîne
+    "provider: erreur | provider: erreur | ..." pour diagnostic (cf. _erreur_llm)."""
+    erreurs_par_provider: dict[str, str] = {}
+    for provider in providers:
+        derniere_erreur: str | None = None
+        for tentative, max_chars in enumerate(prompt_char_budgets, start=1):
+            try:
+                user_prompt = build_user_prompt(max_chars)
+                raw = provider.complete(system_prompt, user_prompt, max_tokens=output_tokens)
+                return json.loads(_clean_json_text(raw)), provider.name, None
+            except Exception as exc:  # noqa: BLE001
+                derniere_erreur = str(exc)
+                detail = getattr(exc, "body_excerpt", None)
+                logger.error(
+                    "Échec de la génération LLM (%s, tentative %d/%d, budget=%d caractères): %s%s",
+                    provider.name, tentative, len(prompt_char_budgets), max_chars, exc,
+                    f" | corps de la réponse: {detail}" if detail else "",
+                )
+                # cf. NB 2026-09-26 : un 429 "rate limit" signifie que le quota de la fenêtre
+                # en cours est épuisé -- retenter IMMÉDIATEMENT le MÊME provider avec un
+                # prompt plus petit ne peut pas réussir, le budget consommé ne se régénère
+                # pas en quelques millisecondes. On passe directement au provider suivant.
+                if getattr(exc, "status_code", None) == 429:
+                    logger.warning(
+                        "Provider '%s' en rate limit (429) -> passage direct au provider "
+                        "suivant sans nouvelle tentative.", provider.name,
+                    )
+                    break
+        logger.warning("Provider '%s' épuisé -> passage au suivant s'il existe.", provider.name)
+        if derniere_erreur:
+            erreurs_par_provider[provider.name] = derniere_erreur[:200]
+
+    erreur_resumee = (
+        " | ".join(f"{name}: {msg}" for name, msg in erreurs_par_provider.items())
+        if erreurs_par_provider else None
+    )
+    return None, None, erreur_resumee
+
+
+def generate(
+    providers_bloc: list[LLMProvider],
+    providers_science: list[LLMProvider],
     analysed: dict,
     science_topic: dict,
     weather_summary: dict | None,
@@ -230,82 +355,70 @@ def generate(
     `analysed` doit contenir : actualite_france, actualite_monde, marches_data, sport_events
     (toutes des listes/dicts déjà scorés+filtrés+vérifiés en amont, cf. main.py).
 
-    `providers` est une LISTE ordonnée (cf. llm_provider.get_providers()) : on essaie chaque
-    provider dans l'ordre, et pour chacun deux budgets de prompt (cf. MAX_PROMPT_CHARS /
-    RETRY_PROMPT_CHARS), avant de renoncer à la synthèse rédigée et de retomber sur
-    fallback_briefing(). Ne renonce donc que si TOUS les providers configurés ont échoué.
-    """
-    if not providers:
+    NB (2026-09-27) : DEUX appels LLM indépendants désormais (cf. NB en tête de fichier) --
+    `providers_bloc` (typiquement Groq en tête) pour actu/marchés/sport/citation, et
+    `providers_science` (typiquement Mistral en tête) pour l'article science. Chacun peut
+    entièrement réussir, échouer, ou basculer sur l'autre provider en repli, INDÉPENDAMMENT
+    de l'autre appel -- cf. llm_provider.get_providers(role=...). Le résultat final part
+    toujours d'un fallback_briefing() complet (jamais de section manquante ou plantée), puis
+    remplace section par section ce qui a effectivement été rédigé par le LLM. Ainsi, si
+    seul le bloc réussit (ou l'inverse), le briefing reste partiellement rédigé au lieu de
+    retomber intégralement en mode brut (cf. cahier §21 : dégradation partielle plutôt que
+    totale)."""
+    resultat = fallback_briefing(analysed, science_topic, weather_summary, is_monday, erreur_llm=None)
+
+    if not providers_bloc and not providers_science:
         logger.warning("Aucun LLM disponible -> génération en mode fallback (sans synthèse rédigée)")
-        return fallback_briefing(analysed, science_topic, weather_summary, is_monday, erreur_llm=None)
+        return resultat
 
-    def _try(provider: LLMProvider, max_chars: int) -> dict:
-        user_prompt = _build_user_prompt(analysed, science_topic, is_monday, max_chars=max_chars)
-        raw = provider.complete(SYSTEM_PROMPT, user_prompt)
-        cleaned = raw.strip()
-        if cleaned.startswith("```"):
-            cleaned = cleaned.strip("`")
-            cleaned = cleaned.split("\n", 1)[1] if "\n" in cleaned else cleaned
-            if cleaned.lower().startswith("json"):
-                cleaned = cleaned[4:]
-        body = json.loads(cleaned)
-        body["meteo"] = weather_summary
-        body["_genere_par_llm"] = True
-        body["_provider"] = provider.name
-        body["_erreur_llm"] = None
-        return body
-
-    # NB (2026-09-25) : jusqu'ici seule l'erreur du DERNIER provider tenté était gardée dans
-    # _erreur_llm -- si le repli allait jusqu'à Cerebras, l'échec (souvent différent) de Groq
-    # et Mistral avant lui restait invisible sans rouvrir les logs du run. On garde maintenant
-    # la dernière erreur de CHAQUE provider épuisé (2/2 tentatives), pour diagnostiquer toute
-    # la chaîne de repli d'un coup depuis status.json / l'onglet Erreurs.
-    erreurs_par_provider: dict[str, str] = {}
-    # NB (2026-09-19) : pour CHAQUE provider disponible (préféré, puis repli(s) -- cf.
-    # llm_provider.get_providers()), deux tentatives avec un budget de caractères décroissant
-    # (cf. RETRY_PROMPT_CHARS). On ne bascule au provider suivant qu'après avoir épuisé les
-    # deux tentatives du provider courant. Cf. cahier §1/§21 : mieux vaut une synthèse rédigée
-    # via un second fournisseur gratuit (ex: Gemini) qu'aucune synthèse du tout parce que le
-    # premier (ex: Groq) a atteint sa limite.
-    for provider in providers:
-        derniere_erreur_provider: str | None = None
-        tentatives_prevues = (MAX_PROMPT_CHARS, RETRY_PROMPT_CHARS)
-        for tentative, max_chars in enumerate(tentatives_prevues, start=1):
-            try:
-                return _try(provider, max_chars)
-            except Exception as exc:  # noqa: BLE001
-                derniere_erreur_provider = str(exc)
-                detail = getattr(exc, "body_excerpt", None)
-                logger.error(
-                    "Échec de la génération LLM (%s, tentative %d/%d, budget=%d caractères): %s%s",
-                    provider.name, tentative, len(tentatives_prevues), max_chars, exc,
-                    f" | corps de la réponse: {detail}" if detail else "",
-                )
-                # NB (corrigé le 2026-09-26) : cf. logs du 26/09 -- un 429 "rate limit"
-                # (Groq/Mistral, tokens/minute) signifie que le quota de la fenêtre en cours
-                # est épuisé ; retenter IMMÉDIATEMENT le MÊME provider avec un prompt plus
-                # petit (RETRY_PROMPT_CHARS) ne peut pas réussir -- le budget consommé ne se
-                # régénère pas en quelques millisecondes -- et a fait perdre, ce jour-là, le
-                # temps qui aurait pu servir à essayer le provider suivant plus tôt. Le
-                # prompt réduit garde tout son intérêt pour les AUTRES erreurs (413 payload
-                # trop gros, JSON tronqué/mal formé) où la taille du prompt est bien la cause.
-                if getattr(exc, "status_code", None) == 429:
-                    logger.warning(
-                        "Provider '%s' en rate limit (429) -> passage direct au provider "
-                        "suivant sans 2e tentative (cf. NB 2026-09-26).", provider.name,
-                    )
-                    break
-        logger.warning("Provider '%s' épuisé -> passage au suivant s'il existe.", provider.name)
-        if derniere_erreur_provider:
-            # Tronqué par provider pour que l'ensemble de la chaîne tienne dans une seule
-            # chaîne lisible (cf. troncature globale plus généreuse dans fallback_briefing).
-            erreurs_par_provider[provider.name] = derniere_erreur_provider[:200]
-
-    erreur_resumee = (
-        " | ".join(f"{name}: {msg}" for name, msg in erreurs_par_provider.items())
-        if erreurs_par_provider else None
+    bloc_body, bloc_provider, bloc_erreur = (
+        _run_chain(
+            providers_bloc,
+            SYSTEM_PROMPT_BLOC,
+            lambda mc: _build_user_prompt_bloc(analysed, is_monday, max_chars=mc),
+            MAX_OUTPUT_TOKENS_BLOC,
+            (MAX_PROMPT_CHARS, RETRY_PROMPT_CHARS),
+        )
+        if providers_bloc else (None, None, None)
     )
-    return fallback_briefing(analysed, science_topic, weather_summary, is_monday, erreur_llm=erreur_resumee)
+    if bloc_body:
+        resultat["actualite"] = bloc_body["actualite"]
+        resultat["marches"] = bloc_body["marches"]
+        resultat["sport"] = bloc_body["sport"]
+        resultat["citation"] = bloc_body.get("citation")
+        if bloc_body.get("meta"):
+            resultat["meta"] = bloc_body["meta"]
+
+    science_body, science_provider, science_erreur = (
+        _run_chain(
+            providers_science,
+            SYSTEM_PROMPT_SCIENCE,
+            lambda mc: _build_user_prompt_science(science_topic),
+            MAX_OUTPUT_TOKENS_SCIENCE,
+            (MAX_PROMPT_CHARS,),  # payload science déjà minimal, une seule tentative suffit
+        )
+        if providers_science else (None, None, None)
+    )
+    if science_body:
+        resultat["science"] = science_body["science"]
+
+    # Champs de diagnostic (cf. status.json / onglet Erreurs) : les champs historiques
+    # `_genere_par_llm`/`_provider`/`_erreur_llm` restent présents pour compatibilité avec le
+    # frontend existant (docs/app.js) -- `_genere_par_llm` passe à True dès qu'AU MOINS un des
+    # deux appels a réussi (cf. cahier §4 : le bloc actu est la priorité maximale, donc son
+    # succès seul justifie déjà de ne pas considérer le run comme un échec total). Les
+    # nouveaux champs `_bloc`/`_science` donnent le détail par appel pour un diagnostic fin.
+    resultat["_genere_par_llm"] = bool(bloc_body) or bool(science_body)
+    resultat["_provider"] = bloc_provider or science_provider
+    erreurs = []
+    if bloc_erreur:
+        erreurs.append(f"bloc[{bloc_erreur}]")
+    if science_erreur:
+        erreurs.append(f"science[{science_erreur}]")
+    resultat["_erreur_llm"] = (" | ".join(erreurs)[:900] if erreurs else None)
+    resultat["_bloc"] = {"genere_par_llm": bool(bloc_body), "provider": bloc_provider, "erreur": bloc_erreur}
+    resultat["_science"] = {"genere_par_llm": bool(science_body), "provider": science_provider, "erreur": science_erreur}
+    return resultat
 
 
 def fallback_briefing(

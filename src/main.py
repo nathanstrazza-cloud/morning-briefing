@@ -192,8 +192,16 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         }
 
         # 3. GÉNÉRATION
-        providers = [] if force_no_llm else llm_provider.get_providers()
-        briefing = briefing_generator.generate(providers, analysed, science_topic, weather_summary, is_monday)
+        # NB (2026-09-27) : deux chaînes de providers indépendantes (cf. llm_provider.py et
+        # briefing_generator.py pour le diagnostic complet -- limite TPM Groq trop basse pour
+        # un seul gros appel combiné). "bloc" (actu/marchés/sport) essaie Groq en premier,
+        # "science" (article) essaie Mistral en premier -- complémentaires, chacun capable de
+        # basculer sur l'autre en repli.
+        providers_bloc = [] if force_no_llm else llm_provider.get_providers("bloc")
+        providers_science = [] if force_no_llm else llm_provider.get_providers("science")
+        briefing = briefing_generator.generate(
+            providers_bloc, providers_science, analysed, science_topic, weather_summary, is_monday,
+        )
 
         # 4. STOCKAGE
         storage.save_briefing(

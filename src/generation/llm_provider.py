@@ -33,13 +33,32 @@ logger = logging.getLogger("morning_briefing.generation.llm")
 # réduire le nombre de tokens "Requested" compté par le rate-limiter TPM de Groq (qui semble
 # inclure le budget de sortie demandé, pas seulement l'entrée), laissant plus de marge sous
 # la limite de 8000/minute observée pour ce modèle/tier.
-# Valeur choisie : 3500 -- avec MAX_PROMPT_CHARS=12000 (~3000 tokens d'entrée + ~600 tokens de
-# SYSTEM_PROMPT), le total (entrée + sortie demandée) reste sous 8000, avec de la marge pour
-# les tokens déjà consommés par un run précédent dans la même fenêtre d'une minute. À ajuster
-# si un futur run montre encore une troncature ("Unterminated string"/"Expecting value") malgré
-# ce plafond -- cela indiquerait qu'un sujet science "approfondi" a besoin de plus de place et
-# qu'il faudrait alors réduire MAX_PROMPT_CHARS en contrepartie plutôt que remonter ce chiffre.
-MAX_OUTPUT_TOKENS = 3500
+# NB (corrigé le 2026-09-27) : confirmé par les logs réels du 26 et du 27/09 -- même avec
+# max_tokens=3500, Groq répond en 429 "tokens per minute (TPM)" dès la 1ère tentative de la
+# journée (donc PAS un effet cumulatif de plusieurs tentatives). Recherche du tier gratuit
+# Groq pour openai/gpt-oss-120b : la limite TPM publiée pour ce modèle est de l'ordre de
+# 8 000 tokens/minute seulement (contre 1M tokens/JOUR) -- un modèle 120B coûte cher à servir,
+# donc Groq alloue un TPM minuscule sur le tier gratuit même si le total journalier semble
+# généreux. Avec ~3000 tokens de prompt (system+user) + 3500 de sortie demandée, une seule
+# requête consommait déjà 90%+ de la fenêtre -- il ne restait aucune marge pour un 2e appel
+# (science) dans la même minute, ni pour un léger dépassement d'estimation.
+#
+# Solution retenue (cf. demande explicite de l'utilisateur le 27/09) : scinder l'appel LLM en
+# DEUX requêtes indépendantes plutôt que de continuer à réduire un seul gros appel :
+#   - "bloc" (actualité+marchés+sport+citation) : JSON court, sortie majoritairement des
+#     phrases courtes -> budget de sortie réduit.
+#   - "science" : article ~10 min de lecture, le plus gourmand en tokens de SORTIE -> budget
+#     dédié, séparé du bloc pour ne pas cumuler dans la même fenêtre TPM.
+# Cf. get_providers(role=...) ci-dessous : le bloc et l'article science n'utilisent pas le
+# même ordre de providers par défaut (Groq priorisé pour le bloc, Mistral pour la science) --
+# objectif : que les deux appels d'un même run se répartissent naturellement sur deux comptes
+# différents plutôt que de cumuler sur le TPM d'un seul, tout en gardant chacun capable de
+# basculer sur l'autre en repli si besoin (Mistral et Groq restent complémentaires, pas
+# seulement l'un en secours pur de l'autre).
+MAX_OUTPUT_TOKENS = 1800  # budget par défaut (bloc) ; cf. briefing_generator pour les valeurs
+# dédiées par appel (MAX_OUTPUT_TOKENS_BLOC / MAX_OUTPUT_TOKENS_SCIENCE), passées explicitement
+# à `complete(..., max_tokens=...)` -- cette constante ne sert plus que de valeur par défaut si
+# un appelant ne précise rien.
 
 
 class LLMError(RuntimeError):
@@ -72,7 +91,7 @@ class LLMError(RuntimeError):
 class LLMProvider:
     name = "base"
 
-    def complete(self, system: str, user: str) -> str:
+    def complete(self, system: str, user: str, max_tokens: int = MAX_OUTPUT_TOKENS) -> str:
         raise NotImplementedError
 
     def _post(self, url: str, **kwargs) -> dict:
@@ -109,7 +128,7 @@ class GroqProvider(LLMProvider):
         self.api_key = api_key
         self.model = model or os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
 
-    def complete(self, system: str, user: str) -> str:
+    def complete(self, system: str, user: str, max_tokens: int = MAX_OUTPUT_TOKENS) -> str:
         data = self._post(
             "https://api.groq.com/openai/v1/chat/completions",
             headers={"Authorization": f"Bearer {self.api_key}"},
@@ -120,7 +139,7 @@ class GroqProvider(LLMProvider):
                     {"role": "user", "content": user},
                 ],
                 "temperature": 0.3,
-                "max_tokens": MAX_OUTPUT_TOKENS,
+                "max_tokens": max_tokens,
             },
             timeout=60,
         )
@@ -135,7 +154,7 @@ class GeminiProvider(LLMProvider):
         self.api_key = api_key
         self.model = model
 
-    def complete(self, system: str, user: str) -> str:
+    def complete(self, system: str, user: str, max_tokens: int = MAX_OUTPUT_TOKENS) -> str:
         url = (
             f"https://generativelanguage.googleapis.com/v1beta/models/"
             f"{self.model}:generateContent?key={self.api_key}"
@@ -145,7 +164,7 @@ class GeminiProvider(LLMProvider):
             json={
                 "system_instruction": {"parts": [{"text": system}]},
                 "contents": [{"parts": [{"text": user}]}],
-                "generationConfig": {"temperature": 0.3, "maxOutputTokens": MAX_OUTPUT_TOKENS},
+                "generationConfig": {"temperature": 0.3, "maxOutputTokens": max_tokens},
             },
             timeout=60,
         )
@@ -161,7 +180,7 @@ class AnthropicProvider(LLMProvider):
         self.api_key = api_key
         self.model = model
 
-    def complete(self, system: str, user: str) -> str:
+    def complete(self, system: str, user: str, max_tokens: int = MAX_OUTPUT_TOKENS) -> str:
         data = self._post(
             "https://api.anthropic.com/v1/messages",
             headers={
@@ -171,7 +190,7 @@ class AnthropicProvider(LLMProvider):
             },
             json={
                 "model": self.model,
-                "max_tokens": 4096,
+                "max_tokens": max_tokens,
                 "system": system,
                 "messages": [{"role": "user", "content": user}],
             },
@@ -194,7 +213,7 @@ class MistralProvider(LLMProvider):
         self.api_key = api_key
         self.model = model or os.environ.get("MISTRAL_MODEL", "mistral-small-latest")
 
-    def complete(self, system: str, user: str) -> str:
+    def complete(self, system: str, user: str, max_tokens: int = MAX_OUTPUT_TOKENS) -> str:
         data = self._post(
             "https://api.mistral.ai/v1/chat/completions",
             headers={"Authorization": f"Bearer {self.api_key}"},
@@ -205,7 +224,7 @@ class MistralProvider(LLMProvider):
                     {"role": "user", "content": user},
                 ],
                 "temperature": 0.3,
-                "max_tokens": MAX_OUTPUT_TOKENS,
+                "max_tokens": max_tokens,
             },
             timeout=60,
         )
@@ -237,7 +256,7 @@ class CerebrasProvider(LLMProvider):
         self.api_key = api_key
         self.model = model or os.environ.get("CEREBRAS_MODEL", "gpt-oss-120b")
 
-    def complete(self, system: str, user: str) -> str:
+    def complete(self, system: str, user: str, max_tokens: int = MAX_OUTPUT_TOKENS) -> str:
         data = self._post(
             "https://api.cerebras.ai/v1/chat/completions",
             headers={"Authorization": f"Bearer {self.api_key}"},
@@ -248,18 +267,13 @@ class CerebrasProvider(LLMProvider):
                     {"role": "user", "content": user},
                 ],
                 "temperature": 0.3,
-                "max_tokens": MAX_OUTPUT_TOKENS,
+                "max_tokens": max_tokens,
             },
             timeout=60,
         )
         return data["choices"][0]["message"]["content"]
 
 
-# cf. cahier §19 : ordre de priorité par défaut des providers de repli. Groq en tête (quota
-# gratuit le plus généreux et le plus rapide constaté en pratique), puis Mistral et Cerebras
-# (2026-09-19 : ajoutés comme repli de Gemini, qui bloque les comptes mineurs -- ni Mistral
-# ni Cerebras n'imposent ce type de vérification d'âge liée au compte), puis Gemini (toujours
-# utilisable si le compte le permet), Anthropic en dernier (pas de quota gratuit permanent).
 _PROVIDER_BUILDERS = {
     "groq": lambda key: GroqProvider(key),
     "mistral": lambda key: MistralProvider(key),
@@ -274,7 +288,31 @@ _ENV_KEY_BY_PROVIDER = {
     "gemini": "GEMINI_API_KEY",
     "anthropic": "ANTHROPIC_API_KEY",
 }
-_DEFAULT_FALLBACK_ORDER = ("groq", "mistral", "cerebras", "gemini", "anthropic")
+
+# NB (corrigé le 2026-09-27) : DEUX ordres de repli par défaut au lieu d'un seul, un par
+# "rôle" d'appel (cf. briefing_generator, qui scinde désormais la génération en 2 requêtes
+# indépendantes -- bloc actu/marchés/sport et article science, cf. MAX_OUTPUT_TOKENS
+# ci-dessus). Objectif explicite de l'utilisateur (27/09) : que Groq et Mistral se
+# répartissent naturellement le travail au lieu que le second serve UNIQUEMENT de secours du
+# premier -- en pratique, sur un run normal, le bloc part sur Groq et la science part sur
+# Mistral EN PARALLÈLE logique (2 comptes différents, 2 fenêtres TPM différentes), donc les
+# deux appels d'un run ne se marchent plus dessus sur le même quota/minute. Chacun des deux
+# reste capable de basculer sur l'autre si son 1er choix échoue (repli croisé complet, pas un
+# simple ordre figé) : role="bloc" essaie Groq -> Mistral -> Gemini -> Anthropic ; role=
+# "science" essaie Mistral -> Groq -> Gemini -> Anthropic.
+#
+# Cerebras RETIRÉ des deux ordres par défaut (décision prise le 2026-09-27, cf. cahier §19 :
+# "aucun service payant ne doit devenir une dépendance") : 3 runs réels consécutifs (25, 26,
+# 27/09) ont tous échoué avec "402 Payment Required" sur le modèle configuré -- ce n'est donc
+# pas un aléa mais un fait confirmé : le compte Cerebras actuel n'a pas de tier gratuit
+# fonctionnel pour ce modèle. Le garder en repli automatique n'apportait aucune valeur (il
+# n'a jamais réussi une seule fois) tout en polluant `_erreur_llm` d'un message toujours
+# identique et sans intérêt diagnostique. La classe CerebrasProvider reste dans le code (rien
+# de perdu) et reste sélectionnable explicitement via LLM_PROVIDER=cerebras + CEREBRAS_API_KEY
+# si un jour un tier gratuit fonctionnel est activé sur ce compte -- il suffira alors de le
+# rajouter dans les deux tuples ci-dessous.
+_DEFAULT_FALLBACK_ORDER = ("groq", "mistral", "gemini", "anthropic")
+_SCIENCE_FALLBACK_ORDER = ("mistral", "groq", "gemini", "anthropic")
 
 
 def _build_provider(name: str) -> LLMProvider | None:
@@ -300,22 +338,29 @@ def get_provider() -> LLMProvider | None:
     return provider
 
 
-def get_providers() -> list[LLMProvider]:
+def get_providers(role: str = "bloc") -> list[LLMProvider]:
     """Retourne la liste ORDONNÉE de tous les providers utilisables (clé API disponible dans
-    les secrets GitHub) : le provider choisi via LLM_PROVIDER en premier s'il est disponible,
-    puis les autres comme repli automatique.
+    les secrets GitHub) pour le rôle d'appel donné ("bloc" ou "science", cf. NB ci-dessus).
+
+    Si LLM_PROVIDER est explicitement défini (préférence manuelle de l'utilisateur), ce
+    provider passe TOUJOURS en tête, quel que soit le rôle -- y compris s'il ne fait pas
+    partie de l'ordre par défaut de ce rôle (ex: LLM_PROVIDER=cerebras reste utilisable
+    manuellement même si Cerebras n'est plus dans les ordres par défaut).
 
     NB (2026-09-19, demande explicite) : jusqu'ici, si le provider unique (typiquement Groq)
     échouait, le pipeline tombait directement en mode fallback sans texte rédigé -- alors
-    qu'un simple deuxième secret (ex: GEMINI_API_KEY) suffirait souvent à obtenir quand même
+    qu'un simple deuxième secret (ex: MISTRAL_API_KEY) suffirait souvent à obtenir quand même
     une vraie synthèse. cf. briefing_generator.generate() qui parcourt cette liste et n'abandonne
-    la synthèse rédigée qu'après avoir épuisé TOUS les providers configurés. Ne coûte rien de
-    plus (toujours 0 quota utilisé si aucun repli n'est nécessaire) et respecte l'objectif 0€
-    (cf. cahier §19) tant que le(s) provider(s) de repli restent sur leur tier gratuit."""
+    la synthèse rédigée qu'après avoir épuisé TOUS les providers configurés pour ce rôle. Ne
+    coûte rien de plus (toujours 0 quota utilisé si aucun repli n'est nécessaire) et respecte
+    l'objectif 0€ (cf. cahier §19) tant que le(s) provider(s) de repli restent sur leur tier
+    gratuit."""
     preferred = os.environ.get("LLM_PROVIDER", "").strip().lower()
-    order = list(_DEFAULT_FALLBACK_ORDER)
-    if preferred in _PROVIDER_BUILDERS and preferred in order:
-        order.remove(preferred)
+    base_order = _SCIENCE_FALLBACK_ORDER if role == "science" else _DEFAULT_FALLBACK_ORDER
+    order = list(base_order)
+    if preferred in _PROVIDER_BUILDERS:
+        if preferred in order:
+            order.remove(preferred)
         order.insert(0, preferred)
 
     providers: list[LLMProvider] = []
@@ -326,12 +371,12 @@ def get_providers() -> list[LLMProvider]:
 
     if not providers:
         logger.warning(
-            "Aucun provider LLM disponible (aucune clé API configurée parmi %s)",
-            ", ".join(_ENV_KEY_BY_PROVIDER.values()),
+            "Aucun provider LLM disponible pour le rôle '%s' (aucune clé API configurée parmi %s)",
+            role, ", ".join(_ENV_KEY_BY_PROVIDER.values()),
         )
     elif len(providers) > 1:
         logger.info(
-            "Providers LLM disponibles (ordre d'essai): %s",
-            " -> ".join(p.name for p in providers),
+            "Providers LLM disponibles pour le rôle '%s' (ordre d'essai): %s",
+            role, " -> ".join(p.name for p in providers),
         )
     return providers

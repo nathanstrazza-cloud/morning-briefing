@@ -295,7 +295,29 @@ function renderStatusEntry(entry) {
     details.push(el("p", { class: "status-item__detail status-item__detail--fail", text: `Échec du run : ${entry.erreur}` }));
   }
   if (ok) {
-    if (entry.synthese_llm === true) {
+    // NB (2026-09-27, scission bloc/science) : depuis ce jour, deux appels LLM indépendants
+    // (cf. briefing_generator.generate()) -- llm_bloc (actu/marchés/sport) et llm_science
+    // (article). On affiche le détail par appel quand disponible (runs récents), sinon on
+    // retombe sur l'ancien résumé global synthese_llm/erreur_llm (runs antérieurs à ce jour,
+    // pour ne pas casser l'historique déjà présent dans status_history.json).
+    if (entry.llm_bloc || entry.llm_science) {
+      const renderAppel = (label, appel) => {
+        if (!appel) return null;
+        if (appel.genere_par_llm) {
+          return el("p", {
+            class: "status-item__detail",
+            text: `${label} : rédigé par IA (${appel.provider || "?"}).`,
+          });
+        }
+        const msg = appel.erreur
+          ? `${label} : IA indisponible (repli données brutes) — ${appel.erreur}`
+          : `${label} : IA indisponible (repli données brutes).`;
+        return el("p", { class: "status-item__detail status-item__detail--warn", text: msg });
+      };
+      [renderAppel("Actu/marchés/sport", entry.llm_bloc), renderAppel("Article science", entry.llm_science)]
+        .filter(Boolean)
+        .forEach((node) => details.push(node));
+    } else if (entry.synthese_llm === true) {
       details.push(el("p", { class: "status-item__detail", text: "Synthèse rédigée par IA : disponible." }));
     } else if (entry.synthese_llm === false) {
       const msg = entry.erreur_llm

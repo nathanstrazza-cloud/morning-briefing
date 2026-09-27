@@ -82,6 +82,12 @@ def save_briefing(
         last_update_iso=last_update_iso,
         synthese_llm=briefing.get("_genere_par_llm"),
         erreur_llm=briefing.get("_erreur_llm"),
+        # NB (2026-09-27, scission bloc/science) : détail par appel LLM (cf.
+        # briefing_generator.generate()) -- utile pour distinguer "le bloc actu a échoué" de
+        # "seule la science a échoué" sans rouvrir les logs, ce que le seul champ combiné
+        # erreur_llm ne permettait pas de voir aussi facilement.
+        llm_bloc=briefing.get("_bloc"),
+        llm_science=briefing.get("_science"),
         rss_diagnostics=rss_diagnostics,
         market_diagnostics=market_diagnostics,
         funnel_actualite=funnel_actualite,
@@ -105,6 +111,8 @@ def _write_status(
     erreur: str | None = None,
     synthese_llm: bool | None = None,
     erreur_llm: str | None = None,
+    llm_bloc: dict | None = None,
+    llm_science: dict | None = None,
     rss_diagnostics: list[dict] | None = None,
     market_diagnostics: list[dict] | None = None,
     funnel_actualite: dict | None = None,
@@ -147,6 +155,10 @@ def _write_status(
         # (fallback) tout en ayant une synthèse LLM en échec.
         "synthese_llm": synthese_llm,
         "erreur_llm": erreur_llm,
+        # cf. NB save_briefing ci-dessus : {"genere_par_llm": bool, "provider": str|None,
+        # "erreur": str|None} pour chacun des deux appels LLM indépendants (bloc, science).
+        "llm_bloc": llm_bloc,
+        "llm_science": llm_science,
         # cf. ci-dessus : liste des flux RSS en échec/vides pour ce run (source, catégorie,
         # statut, cause). None si le pipeline n'a pas atteint l'étape de collecte.
         "sources_rss_en_erreur": sources_en_erreur,
