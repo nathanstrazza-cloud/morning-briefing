@@ -183,6 +183,21 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
 
         science_topic = briefing_generator.select_science_topic(events_sciences)
 
+        # NB (2026-09-27, demande explicite de l'utilisateur) : nouvelle section "Anglais du
+        # jour" -- un article du New York Times (déjà collecté via le flux RSS "New York
+        # Times World", cf. config.yaml rss.monde, présent depuis le 25/09) servant de support
+        # pour apprendre l'anglais (traduction + mots importants). On sélectionne l'article
+        # directement dans raw["news"]["monde"] (AVANT dédup/scoring/plafond à 5, qui
+        # pourraient fusionner ou exclure l'item NYT au profit d'une source française
+        # équivalente) pour ne jamais dépendre du hasard du scoring de la section actualité
+        # Monde -- ces 2 usages du même flux RSS sont indépendants. On garde le TEXTE ORIGINAL
+        # ANGLAIS tel que fourni par le flux (titre+résumé RSS, jamais l'article complet
+        # payant du NYT) : c'est uniquement CE texte qui est ensuite traduit par le LLM, cf.
+        # briefing_generator.SYSTEM_PROMPT_ANGLAIS (interdiction d'inventer/compléter au-delà
+        # de ce texte, respect du droit d'auteur -- seul un court résumé RSS déjà publiquement
+        # syndiqué par le NYT lui-même est repris, jamais le texte intégral).
+        nyt_article = briefing_generator.select_nyt_article(raw["news"]["monde"])
+
         analysed = {
             "actualite_france": events_france,
             "actualite_monde": events_monde,
@@ -192,15 +207,20 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         }
 
         # 3. GÉNÉRATION
-        # NB (2026-09-27) : deux chaînes de providers indépendantes (cf. llm_provider.py et
+        # NB (2026-09-27) : trois chaînes de providers indépendantes (cf. llm_provider.py et
         # briefing_generator.py pour le diagnostic complet -- limite TPM Groq trop basse pour
         # un seul gros appel combiné). "bloc" (actu/marchés/sport) essaie Groq en premier,
         # "science" (article) essaie Mistral en premier -- complémentaires, chacun capable de
-        # basculer sur l'autre en repli.
+        # basculer sur l'autre en repli. "anglais" (traduction NYT, tout petit appel) réutilise
+        # l'ordre par défaut (Groq en tête) : sa taille est négligeable, il n'aggrave pas
+        # sensiblement la pression sur le quota Groq déjà utilisé par le bloc dans la même
+        # minute.
         providers_bloc = [] if force_no_llm else llm_provider.get_providers("bloc")
         providers_science = [] if force_no_llm else llm_provider.get_providers("science")
+        providers_anglais = [] if force_no_llm else llm_provider.get_providers("anglais")
         briefing = briefing_generator.generate(
-            providers_bloc, providers_science, analysed, science_topic, weather_summary, is_monday,
+            providers_bloc, providers_science, providers_anglais,
+            analysed, science_topic, nyt_article, weather_summary, is_monday,
         )
 
         # 4. STOCKAGE

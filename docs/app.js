@@ -201,6 +201,44 @@ function renderSectionCitation(citation) {
   return section;
 }
 
+function renderSectionAnglais(anglais) {
+  // NB (2026-09-27, demande explicite de l'utilisateur) : section "Anglais du jour" -- un
+  // court extrait du New York Times (titre+résumé RSS ORIGINAUX en anglais, jamais l'article
+  // payant complet, cf. briefing_generator.py) avec sa traduction française et son
+  // vocabulaire important. Absente (pas affichée) si aucun article NYT n'a été trouvé ce
+  // jour-là, plutôt que d'afficher une section vide (même logique que "citation").
+  if (!anglais) return null;
+  const section = el("section", { class: "section" }, [
+    el("h2", { class: "section-title", text: "Anglais du jour — New York Times" }),
+  ]);
+  section.appendChild(el("h3", { class: "subsection-title", text: anglais.titre_anglais }));
+  section.appendChild(el("p", { class: "anglais-original", text: anglais.resume_anglais || "" }));
+  if (anglais.traduction_titre || anglais.traduction_resume) {
+    section.appendChild(el("p", { class: "anglais-traduction-titre", text: anglais.traduction_titre || "" }));
+    section.appendChild(el("p", { class: "anglais-traduction", text: anglais.traduction_resume || "" }));
+  }
+  if (anglais.mots_importants && anglais.mots_importants.length) {
+    const liste = el("ul", { class: "anglais-vocab" });
+    for (const m of anglais.mots_importants) {
+      liste.appendChild(
+        el("li", { class: "anglais-vocab__item" }, [
+          el("span", { class: "anglais-vocab__mot", text: m.mot }),
+          el("span", { class: "anglais-vocab__traduction", text: ` — ${m.traduction}` }),
+          m.exemple ? el("p", { class: "anglais-vocab__exemple", text: m.exemple }) : null,
+        ].filter(Boolean))
+      );
+    }
+    section.appendChild(liste);
+  }
+  if (anglais.url) {
+    const lien = el("a", { class: "anglais-source-link", href: anglais.url, text: "Lire l'article complet sur nytimes.com" });
+    lien.target = "_blank";
+    lien.rel = "noopener noreferrer";
+    section.appendChild(lien);
+  }
+  return section;
+}
+
 async function loadJson(path) {
   const resp = await fetch(path, { cache: "no-store" });
   if (!resp.ok) throw new Error(`HTTP ${resp.status} sur ${path}`);
@@ -243,6 +281,8 @@ async function renderIndexPage() {
     content.appendChild(renderSectionMeteo(briefing.meteo));
     const quoteSection = renderSectionCitation(briefing.citation);
     if (quoteSection) content.appendChild(quoteSection);
+    const anglaisSection = renderSectionAnglais(briefing.anglais);
+    if (anglaisSection) content.appendChild(anglaisSection);
   } catch (err) {
     content.innerHTML = "";
     content.appendChild(el("p", { text: "Erreur de chargement du briefing. Réessayez plus tard." }));
@@ -314,7 +354,7 @@ function renderStatusEntry(entry) {
           : `${label} : IA indisponible (repli données brutes).`;
         return el("p", { class: "status-item__detail status-item__detail--warn", text: msg });
       };
-      [renderAppel("Actu/marchés/sport", entry.llm_bloc), renderAppel("Article science", entry.llm_science)]
+      [renderAppel("Actu/marchés/sport", entry.llm_bloc), renderAppel("Article science", entry.llm_science), renderAppel("Anglais du jour", entry.llm_anglais)]
         .filter(Boolean)
         .forEach((node) => details.push(node));
     } else if (entry.synthese_llm === true) {

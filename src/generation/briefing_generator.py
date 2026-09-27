@@ -125,6 +125,44 @@ SCHÉMA JSON ATTENDU :
 # poste le plus gourmand en sortie (~10 min de lecture, souvent 1200-1800 mots) -> budget
 # nettement supérieur, dédié à lui seul désormais (avant : un seul budget de 3500 partagé
 # entre TOUT, cause du "Unterminated string" du 26/09 quand la science prenait toute la place).
+SCHEMA_ANGLAIS = """{
+  "traduction_titre": str,
+  "traduction_resume": str,
+  "mots_importants": [{"mot": str, "traduction": str, "exemple": str}],
+  "niveau": str
+}"""
+
+SYSTEM_PROMPT_ANGLAIS = """Tu es un professeur d'anglais qui aide un francophone à apprendre
+l'anglais à partir d'un court extrait du New York Times fourni ci-dessous (titre + résumé,
+en anglais). Tu rédiges UNIQUEMENT cette section (l'actualité, les marchés, le sport et la
+science sont générés séparément par d'autres appels).
+
+RÈGLES ABSOLUES (à respecter strictement) :
+1. "traduction_titre" et "traduction_resume" : traduction française FIDÈLE du titre et du
+   résumé fournis. N'ajoute, ne déduis et n'invente AUCUN fait qui ne soit pas déjà dans le
+   texte anglais fourni -- une traduction reste une traduction, jamais un résumé enrichi ni
+   une réécriture avec des détails supplémentaires (cf. cahier §1 : ne jamais inventer un
+   fait).
+2. "mots_importants" : choisis entre 5 et 8 mots ou expressions anglaises TIRÉS de ce titre
+   et de ce résumé, utiles à apprendre (vocabulaire soutenu, faux-amis, expressions idiomatiques,
+   termes d'actualité) -- pas des mots triviaux (the, is, a...). Pour chacun : "mot" (tel qu'il
+   apparaît dans le texte), "traduction" (français), "exemple" (UNE phrase anglaise simple et
+   courte utilisant ce mot dans un sens comparable -- cette phrase d'exemple pédagogique peut
+   être une phrase originale que tu inventes pour illustrer l'usage du mot, ce n'est PAS
+   soumis à la règle 1 puisqu'elle n'affirme aucun fait sur l'actualité elle-même, seulement
+   un exemple de langue).
+3. "niveau" : estimation simple et honnête du niveau (ex. "intermédiaire", "avancé") du
+   texte fourni pour un apprenant francophone.
+4. Réponds STRICTEMENT en JSON valide conforme au schéma donné, sans texte avant/après, sans
+   balises markdown autour du JSON.
+
+SCHÉMA JSON ATTENDU :
+""" + SCHEMA_ANGLAIS
+
+# Tout petit appel (un titre + un court résumé RSS à traduire, 5-8 mots de vocabulaire) --
+# budget de sortie réduit en conséquence.
+MAX_OUTPUT_TOKENS_ANGLAIS = 900
+
 MAX_OUTPUT_TOKENS_BLOC = 1800
 MAX_OUTPUT_TOKENS_SCIENCE = 3000
 
@@ -278,6 +316,17 @@ def _build_user_prompt_science(science_topic: dict) -> str:
     )
 
 
+def _build_user_prompt_anglais(nyt_article: dict) -> str:
+    """Payload pour l'appel LLM "anglais" (nouvelle section, 2026-09-27). `nyt_article` vient
+    de select_nyt_article() -- titre+résumé ORIGINAUX en anglais tels que fournis par le flux
+    RSS NYT, jamais réécrits avant ce point."""
+    payload = {"titre_anglais": nyt_article["titre"], "resume_anglais": nyt_article["resume"]}
+    return (
+        "Voici l'extrait du New York Times à traduire et dont il faut extraire le "
+        "vocabulaire important pour ce matin.\n\n" + _serialize(payload)
+    )
+
+
 def _clean_json_text(raw: str) -> str:
     """Retire l'éventuel balisage markdown (```json ... ```) qu'un modèle ajoute parfois
     malgré la consigne JSON strict, avant json.loads()."""
@@ -345,8 +394,10 @@ def _run_chain(
 def generate(
     providers_bloc: list[LLMProvider],
     providers_science: list[LLMProvider],
+    providers_anglais: list[LLMProvider],
     analysed: dict,
     science_topic: dict,
+    nyt_article: dict | None,
     weather_summary: dict | None,
     is_monday: bool,
 ) -> dict:
@@ -355,19 +406,24 @@ def generate(
     `analysed` doit contenir : actualite_france, actualite_monde, marches_data, sport_events
     (toutes des listes/dicts déjà scorés+filtrés+vérifiés en amont, cf. main.py).
 
-    NB (2026-09-27) : DEUX appels LLM indépendants désormais (cf. NB en tête de fichier) --
-    `providers_bloc` (typiquement Groq en tête) pour actu/marchés/sport/citation, et
-    `providers_science` (typiquement Mistral en tête) pour l'article science. Chacun peut
-    entièrement réussir, échouer, ou basculer sur l'autre provider en repli, INDÉPENDAMMENT
-    de l'autre appel -- cf. llm_provider.get_providers(role=...). Le résultat final part
-    toujours d'un fallback_briefing() complet (jamais de section manquante ou plantée), puis
-    remplace section par section ce qui a effectivement été rédigé par le LLM. Ainsi, si
-    seul le bloc réussit (ou l'inverse), le briefing reste partiellement rédigé au lieu de
-    retomber intégralement en mode brut (cf. cahier §21 : dégradation partielle plutôt que
+    NB (2026-09-27) : TROIS appels LLM indépendants désormais (cf. NB en tête de fichier) --
+    `providers_bloc` (typiquement Groq en tête) pour actu/marchés/sport/citation,
+    `providers_science` (typiquement Mistral en tête) pour l'article science, et
+    `providers_anglais` (Groq en tête, appel minuscule) pour la traduction/vocabulaire NYT
+    (`nyt_article`, cf. select_nyt_article() -- peut être None si le flux NYT n'a rien produit
+    ce jour-là, auquel cas la section "anglais" du résultat reste None, cf. fallback_briefing).
+    Chacun peut entièrement réussir, échouer, ou basculer sur l'autre provider en repli,
+    INDÉPENDAMMENT des deux autres appels -- cf. llm_provider.get_providers(role=...). Le
+    résultat final part toujours d'un fallback_briefing() complet (jamais de section manquante
+    ou plantée), puis remplace section par section ce qui a effectivement été rédigé par le
+    LLM. Ainsi, si un seul des 3 appels réussit, le briefing reste partiellement rédigé au lieu
+    de retomber intégralement en mode brut (cf. cahier §21 : dégradation partielle plutôt que
     totale)."""
-    resultat = fallback_briefing(analysed, science_topic, weather_summary, is_monday, erreur_llm=None)
+    resultat = fallback_briefing(
+        analysed, science_topic, nyt_article, weather_summary, is_monday, erreur_llm=None,
+    )
 
-    if not providers_bloc and not providers_science:
+    if not providers_bloc and not providers_science and not providers_anglais:
         logger.warning("Aucun LLM disponible -> génération en mode fallback (sans synthèse rédigée)")
         return resultat
 
@@ -402,28 +458,58 @@ def generate(
     if science_body:
         resultat["science"] = science_body["science"]
 
+    # NB (2026-09-27) : appel "anglais" uniquement si un article NYT a été trouvé ce jour-là
+    # (cf. select_nyt_article -- peut être None si le flux RSS NYT est vide/en erreur). Pas de
+    # LLM à interroger sans texte source à traduire.
+    anglais_body, anglais_provider, anglais_erreur = (
+        _run_chain(
+            providers_anglais,
+            SYSTEM_PROMPT_ANGLAIS,
+            lambda mc: _build_user_prompt_anglais(nyt_article),
+            MAX_OUTPUT_TOKENS_ANGLAIS,
+            (MAX_PROMPT_CHARS,),  # payload minuscule (1 titre + 1 résumé), 1 seule tentative
+        )
+        if providers_anglais and nyt_article else (None, None, None)
+    )
+    if anglais_body:
+        resultat["anglais"] = {
+            "titre_anglais": nyt_article["titre"],
+            "resume_anglais": nyt_article["resume"],
+            "url": nyt_article["url"],
+            "source": nyt_article["source"],
+            "traduction_titre": anglais_body.get("traduction_titre"),
+            "traduction_resume": anglais_body.get("traduction_resume"),
+            "mots_importants": anglais_body.get("mots_importants", []),
+            "niveau": anglais_body.get("niveau"),
+        }
+
     # Champs de diagnostic (cf. status.json / onglet Erreurs) : les champs historiques
     # `_genere_par_llm`/`_provider`/`_erreur_llm` restent présents pour compatibilité avec le
     # frontend existant (docs/app.js) -- `_genere_par_llm` passe à True dès qu'AU MOINS un des
-    # deux appels a réussi (cf. cahier §4 : le bloc actu est la priorité maximale, donc son
+    # trois appels a réussi (cf. cahier §4 : le bloc actu est la priorité maximale, donc son
     # succès seul justifie déjà de ne pas considérer le run comme un échec total). Les
-    # nouveaux champs `_bloc`/`_science` donnent le détail par appel pour un diagnostic fin.
-    resultat["_genere_par_llm"] = bool(bloc_body) or bool(science_body)
-    resultat["_provider"] = bloc_provider or science_provider
+    # nouveaux champs `_bloc`/`_science`/`_anglais` donnent le détail par appel pour un
+    # diagnostic fin.
+    resultat["_genere_par_llm"] = bool(bloc_body) or bool(science_body) or bool(anglais_body)
+    resultat["_provider"] = bloc_provider or science_provider or anglais_provider
     erreurs = []
     if bloc_erreur:
         erreurs.append(f"bloc[{bloc_erreur}]")
     if science_erreur:
         erreurs.append(f"science[{science_erreur}]")
+    if anglais_erreur:
+        erreurs.append(f"anglais[{anglais_erreur}]")
     resultat["_erreur_llm"] = (" | ".join(erreurs)[:900] if erreurs else None)
     resultat["_bloc"] = {"genere_par_llm": bool(bloc_body), "provider": bloc_provider, "erreur": bloc_erreur}
     resultat["_science"] = {"genere_par_llm": bool(science_body), "provider": science_provider, "erreur": science_erreur}
+    resultat["_anglais"] = {"genere_par_llm": bool(anglais_body), "provider": anglais_provider, "erreur": anglais_erreur}
     return resultat
 
 
 def fallback_briefing(
     analysed: dict,
     science_topic: dict,
+    nyt_article: dict | None,
     weather_summary: dict | None,
     is_monday: bool,
     erreur_llm: str | None = None,
@@ -470,6 +556,22 @@ def fallback_briefing(
         },
         "citation": None,
         "meteo": weather_summary,
+        # NB (2026-09-27) : section "Anglais du jour" -- fallback = article NYT brut (titre +
+        # résumé en anglais, non traduit) si un article a été trouvé ce jour-là, sinon None
+        # (jamais de section vide/fabriquée -- cf. cahier §21, même logique que "citation").
+        "anglais": (
+            {
+                "titre_anglais": nyt_article["titre"],
+                "resume_anglais": nyt_article["resume"],
+                "url": nyt_article["url"],
+                "source": nyt_article["source"],
+                "traduction_titre": None,
+                "traduction_resume": "Traduction indisponible pour le moment (LLM hors service).",
+                "mots_importants": [],
+                "niveau": None,
+            }
+            if nyt_article else None
+        ),
         "meta": {"resume_1_phrase": "Briefing minimal généré sans synthèse LLM."},
         "_genere_par_llm": False,
         "_provider": None,
@@ -479,6 +581,33 @@ def fallback_briefing(
         # la reprend aussi dans status.json. Troncature portée à 900 (au lieu de 500) car la
         # chaîne agrège désormais plusieurs providers au lieu d'un seul message.
         "_erreur_llm": (erreur_llm[:900] if erreur_llm else None),
+    }
+
+
+def select_nyt_article(raw_monde_items: list[dict]) -> dict | None:
+    """Sélectionne UN article du NYT (flux 'New York Times World', cf. config.yaml
+    rss.monde -- déjà collecté quotidiennement, ajouté le 25/09 pour l'actu Monde) pour la
+    nouvelle section 'Anglais du jour' (demande explicite du 27/09). Choisi dans le flux BRUT
+    (avant dédup/scoring/plafond de la section actualité Monde) pour ne jamais dépendre du
+    hasard du scoring -- ces 2 usages du même flux RSS sont indépendants l'un de l'autre.
+
+    Heuristique de choix (V1 volontairement simple, cf. cahier §1 fiabilité > sophistication) :
+    parmi les items dont la source est le NYT, celui au résumé RSS le plus long -- un résumé
+    court/vide donne peu de matière pour un exercice de traduction + vocabulaire. Retourne
+    None si le flux n'a rien produit ce jour-là (flux vide/en erreur, cf. sources_rss_en_erreur)
+    -- dans ce cas la section "Anglais du jour" est absente plutôt que fabriquée."""
+    candidats = [
+        item for item in raw_monde_items
+        if "new york times" in item.get("source", "").lower()
+    ]
+    if not candidats:
+        return None
+    top = max(candidats, key=lambda item: len(item.get("resume", "")))
+    return {
+        "titre": top["titre"],
+        "resume": top.get("resume", ""),
+        "url": top.get("url", ""),
+        "source": top.get("source", "The New York Times"),
     }
 
 

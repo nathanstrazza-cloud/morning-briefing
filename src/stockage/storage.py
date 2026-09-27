@@ -88,6 +88,7 @@ def save_briefing(
         # erreur_llm ne permettait pas de voir aussi facilement.
         llm_bloc=briefing.get("_bloc"),
         llm_science=briefing.get("_science"),
+        llm_anglais=briefing.get("_anglais"),
         rss_diagnostics=rss_diagnostics,
         market_diagnostics=market_diagnostics,
         funnel_actualite=funnel_actualite,
@@ -113,6 +114,7 @@ def _write_status(
     erreur_llm: str | None = None,
     llm_bloc: dict | None = None,
     llm_science: dict | None = None,
+    llm_anglais: dict | None = None,
     rss_diagnostics: list[dict] | None = None,
     market_diagnostics: list[dict] | None = None,
     funnel_actualite: dict | None = None,
@@ -159,6 +161,7 @@ def _write_status(
         # "erreur": str|None} pour chacun des deux appels LLM indépendants (bloc, science).
         "llm_bloc": llm_bloc,
         "llm_science": llm_science,
+        "llm_anglais": llm_anglais,
         # cf. ci-dessus : liste des flux RSS en échec/vides pour ce run (source, catégorie,
         # statut, cause). None si le pipeline n'a pas atteint l'étape de collecte.
         "sources_rss_en_erreur": sources_en_erreur,
