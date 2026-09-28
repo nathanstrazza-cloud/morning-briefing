@@ -1,0 +1,75 @@
+2026-09-28 10:09:23,647 [INFO] morning_briefing: === Démarrage du run Morning Briefing pour le 2026-09-28 ===
+2026-09-28 10:09:23,659 [INFO] morning_briefing: Fenêtre de recherche: 2026-09-25 18:00:00+02:00 -> 2026-09-28 12:09:23.646863+02:00 (lundi=True, dernier_succes=2026-09-27 11:24:02.096043+02:00)
+2026-09-28 10:09:23,659 [INFO] morning_briefing.collecte: Début de la collecte (depuis=2026-09-25T18:00:00+02:00, lundi=True)
+2026-09-28 10:09:25,844 [INFO] morning_briefing.collecte.rss: Flux Le Monde (france): 16 articles récupérés
+2026-09-28 10:09:26,218 [INFO] morning_briefing.collecte.rss: Flux France Info (france): 29 articles récupérés
+2026-09-28 10:09:26,660 [INFO] morning_briefing.collecte.rss: Flux Libération (france): 50 articles récupérés
+2026-09-28 10:09:26,838 [INFO] morning_briefing.collecte.rss: Flux 20 Minutes (france): 30 articles récupérés
+2026-09-28 10:09:26,889 [INFO] morning_briefing.collecte.rss: Flux Le Monde International (monde): 20 articles récupérés
+2026-09-28 10:09:27,039 [INFO] morning_briefing.collecte.rss: Flux New York Times World (monde): 57 articles récupérés
+2026-09-28 10:09:27,154 [INFO] morning_briefing.collecte.rss: Flux France 24 International (monde): 24 articles récupérés
+2026-09-28 10:09:27,200 [INFO] morning_briefing.collecte.rss: Flux Le Monde Économie (economie): 20 articles récupérés
+2026-09-28 10:09:27,408 [INFO] morning_briefing.collecte.rss: Flux Le Figaro Économie (economie): 20 articles récupérés
+2026-09-28 10:09:27,646 [INFO] morning_briefing.collecte.rss: Flux BFM Business (economie): 30 articles récupérés
+2026-09-28 10:09:27,781 [INFO] morning_briefing.collecte.rss: Flux Le Monde Sciences (sciences): 20 articles récupérés
+2026-09-28 10:09:28,355 [WARNING] morning_briefing.collecte.rss: Flux RSS illisible ou vide: CNRS Actualités (https://www.cnrs.fr/fr/rss.xml) -- <unknown>:14:391: not well-formed (invalid token)
+2026-09-28 10:09:28,531 [INFO] morning_briefing.collecte.rss: Flux Nature News (sciences): 75 articles récupérés
+2026-09-28 10:09:28,785 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Football (sport_football): 50 articles récupérés
+2026-09-28 10:09:29,009 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Basket (sport_basketball): 50 articles récupérés
+2026-09-28 10:09:29,047 [INFO] morning_briefing.collecte.rss: Flux ESPN NBA News (sport_basketball): 0 articles récupérés
+2026-09-28 10:09:29,176 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Natation (sport_natation): 50 articles récupérés
+2026-09-28 10:09:29,391 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Tennis (sport_autres): 50 articles récupérés
+2026-09-28 10:09:29,503 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Rugby (sport_autres): 50 articles récupérés
+2026-09-28 10:09:30,575 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Cyclisme (sport_autres): 50 articles récupérés
+2026-09-28 10:09:30,890 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Hand (sport_autres): 0 articles récupérés
+2026-09-28 10:09:31,200 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Volley (sport_autres): 0 articles récupérés
+2026-09-28 10:09:31,202 [INFO] morning_briefing.collecte.sports: Sport collecté: foot=50 basket=26 natation=0 autres(France)=32
+2026-09-28 10:09:31,652 [INFO] morning_briefing.collecte.markets: Marchés collectés: 5 indices, 2 matières premières
+2026-09-28 10:09:33,692 [INFO] morning_briefing.collecte.weather: Météo collectée pour 4/4 villes
+2026-09-28 10:09:33,693 [INFO] morning_briefing.collecte: Collecte terminée: 279 actualités, 108 items sport, 5 indices, 4 villes météo
+2026-09-28 10:09:33,693 [WARNING] morning_briefing.collecte: Flux RSS en échec ce run: CNRS Actualités
+2026-09-28 10:09:33,767 [INFO] morning_briefing.analyse.dedup: Déduplication: 119 items bruts -> 106 événements uniques
+2026-09-28 10:09:33,769 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 106 événements
+2026-09-28 10:09:33,769 [INFO] morning_briefing.analyse.verification: Vérification: 8/106 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-28 10:09:33,798 [INFO] morning_briefing.analyse.dedup: Déduplication: 82 items bruts -> 74 événements uniques
+2026-09-28 10:09:33,800 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 74 événements
+2026-09-28 10:09:33,800 [INFO] morning_briefing.analyse.verification: Vérification: 1/74 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-28 10:09:33,800 [INFO] morning_briefing: Entonnoir actualité (seuil=5): france {'bruts': 119, 'evenements_uniques': 106, 'retenus_apres_seuil': 62} | monde {'bruts': 82, 'evenements_uniques': 74, 'retenus_apres_seuil': 22}
+2026-09-28 10:09:33,823 [INFO] morning_briefing.analyse.dedup: Déduplication: 68 items bruts -> 54 événements uniques
+2026-09-28 10:09:33,825 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 54 événements
+2026-09-28 10:09:33,825 [INFO] morning_briefing.analyse.dedup: Déduplication: 10 items bruts -> 10 événements uniques
+2026-09-28 10:09:33,826 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 10 événements
+2026-09-28 10:09:33,826 [INFO] morning_briefing.analyse.verification: Vérification: 0/10 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-28 10:09:33,837 [INFO] morning_briefing.analyse.dedup: Déduplication: 50 items bruts -> 44 événements uniques
+2026-09-28 10:09:33,837 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 44 événements
+2026-09-28 10:09:33,841 [INFO] morning_briefing.analyse.dedup: Déduplication: 26 items bruts -> 26 événements uniques
+2026-09-28 10:09:33,841 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 26 événements
+2026-09-28 10:09:33,842 [INFO] morning_briefing.analyse.dedup: Déduplication: 0 items bruts -> 0 événements uniques
+2026-09-28 10:09:33,842 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 0 événements
+2026-09-28 10:09:33,848 [INFO] morning_briefing.analyse.dedup: Déduplication: 32 items bruts -> 32 événements uniques
+2026-09-28 10:09:33,849 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 32 événements
+2026-09-28 10:09:33,849 [INFO] morning_briefing: Sport réduit à 4 item(s) au total (max_sport_total=4): {'football': 4, 'basketball': 0, 'natation': 0, 'autres': 0}
+2026-09-28 10:09:33,849 [INFO] morning_briefing.generation.llm: Providers LLM disponibles pour le rôle 'bloc' (ordre d'essai): groq -> mistral
+2026-09-28 10:09:33,849 [INFO] morning_briefing.generation.llm: Providers LLM disponibles pour le rôle 'science' (ordre d'essai): groq -> mistral
+2026-09-28 10:09:33,849 [INFO] morning_briefing.generation.llm: Providers LLM disponibles pour le rôle 'anglais' (ordre d'essai): groq -> mistral
+2026-09-28 10:09:33,851 [WARNING] morning_briefing.generation: Prompt LLM trop volumineux (>12000 caractères) -> sport réduit=True, économie réduite=True, actualité réduite=False (retenus après réduction : france=5, monde=5, économie=4, sport=0 au total).
+2026-09-28 10:09:39,073 [ERROR] morning_briefing.generation: Échec de la génération LLM (groq, tentative 1/2, budget=12000 caractères): Expecting value: line 26 column 19 (char 2233)
+2026-09-28 10:09:39,075 [WARNING] morning_briefing.generation: Prompt LLM trop volumineux (>4000 caractères) -> sport réduit=True, économie réduite=True, actualité réduite=True (retenus après réduction : france=2, monde=2, économie=0, sport=0 au total).
+2026-09-28 10:09:43,126 [ERROR] morning_briefing.generation: Échec de la génération LLM (groq, tentative 1/1, budget=12000 caractères): 429 Too Many Requests (provider=groq): {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1vh8sjfe61sn0e59wqaes1t` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7980, Requested 842. Please try again in 6.165s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ | corps de la réponse: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1vh8sjfe61sn0e59wqaes1t` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7980, Requested 842. Please try again in 6.165s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+2026-09-28 10:09:43,126 [WARNING] morning_briefing.generation: Provider 'groq' en rate limit (429) -> passage direct au provider suivant sans nouvelle tentative.
+2026-09-28 10:09:43,127 [WARNING] morning_briefing.generation: Provider 'groq' épuisé -> passage au suivant s'il existe.
+2026-09-28 10:09:43,351 [ERROR] morning_briefing.generation: Échec de la génération LLM (mistral, tentative 1/1, budget=12000 caractères): 429 Too Many Requests (provider=mistral): {"object":"error","message":"Rate limit exceeded","type":"rate_limited","param":null,"code":"1300","raw_status_code":429} | corps de la réponse: {"object":"error","message":"Rate limit exceeded","type":"rate_limited","param":null,"code":"1300","raw_status_code":429}
+2026-09-28 10:09:43,351 [WARNING] morning_briefing.generation: Provider 'mistral' en rate limit (429) -> passage direct au provider suivant sans nouvelle tentative.
+2026-09-28 10:09:43,352 [WARNING] morning_briefing.generation: Provider 'mistral' épuisé -> passage au suivant s'il existe.
+2026-09-28 10:09:43,429 [ERROR] morning_briefing.generation: Échec de la génération LLM (groq, tentative 1/1, budget=12000 caractères): 429 Too Many Requests (provider=groq): {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1vh8sjfe61sn0e59wqaes1t` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7938, Requested 933. Please try again in 6.5325s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ | corps de la réponse: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1vh8sjfe61sn0e59wqaes1t` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7938, Requested 933. Please try again in 6.5325s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+2026-09-28 10:09:43,429 [WARNING] morning_briefing.generation: Provider 'groq' en rate limit (429) -> passage direct au provider suivant sans nouvelle tentative.
+2026-09-28 10:09:43,430 [WARNING] morning_briefing.generation: Provider 'groq' épuisé -> passage au suivant s'il existe.
+2026-09-28 10:09:43,619 [ERROR] morning_briefing.generation: Échec de la génération LLM (mistral, tentative 1/1, budget=12000 caractères): 429 Too Many Requests (provider=mistral): {"object":"error","message":"Rate limit exceeded","type":"rate_limited","param":null,"code":"1300","raw_status_code":429} | corps de la réponse: {"object":"error","message":"Rate limit exceeded","type":"rate_limited","param":null,"code":"1300","raw_status_code":429}
+2026-09-28 10:09:43,619 [WARNING] morning_briefing.generation: Provider 'mistral' en rate limit (429) -> passage direct au provider suivant sans nouvelle tentative.
+2026-09-28 10:09:43,621 [WARNING] morning_briefing.generation: Provider 'mistral' épuisé -> passage au suivant s'il existe.
+2026-09-28 10:09:43,623 [INFO] morning_briefing.stockage: Briefing sauvegardé: /home/runner/work/morning-briefing/morning-briefing/docs/data/briefings/2026-09-28.json
+2026-09-28 10:09:43,623 [INFO] morning_briefing: === Run terminé avec succès pour le 2026-09-28 ===
