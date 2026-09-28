@@ -13,6 +13,8 @@ from __future__ import annotations
 
 import json
 import logging
+import os
+import time
 from datetime import datetime
 
 from ..analyse import verification
@@ -162,6 +164,24 @@ SCHÉMA JSON ATTENDU :
 # Tout petit appel (un titre + un court résumé RSS à traduire, 5-8 mots de vocabulaire) --
 # budget de sortie réduit en conséquence.
 MAX_OUTPUT_TOKENS_ANGLAIS = 900
+
+# NB (2026-09-28) : pause entre deux appels LLM consécutifs (run réel du 28/09 : le bloc passait
+# sur Groq puis science/anglais tombaient en 429 -- fenêtre TPM d'une minute encore saturée).
+# 60 s = la fenêtre de rate-limit par minute des providers gratuits. Ajustable sans code via
+# la variable d'environnement LLM_CALL_SPACING_SECONDS (mettre 0 pour les tests/le debug).
+# La pause n'a lieu qu'entre deux appels réellement lancés (pas de pause pour rien).
+def _spacing_seconds() -> int:
+    try:
+        return max(0, int(os.environ.get("LLM_CALL_SPACING_SECONDS", "60")))
+    except ValueError:
+        return 60
+
+
+def _pause_between_calls(label_suivant: str) -> None:
+    delay = _spacing_seconds()
+    if delay:
+        logger.info("Pause de %d s avant l'appel LLM '%s' (espacement anti rate-limit)", delay, label_suivant)
+        time.sleep(delay)
 
 MAX_OUTPUT_TOKENS_BLOC = 1800
 MAX_OUTPUT_TOKENS_SCIENCE = 3000
@@ -445,6 +465,9 @@ def generate(
         if bloc_body.get("meta"):
             resultat["meta"] = bloc_body["meta"]
 
+    if bloc_body is not None or bloc_erreur is not None:
+        if providers_science:
+            _pause_between_calls("science")
     science_body, science_provider, science_erreur = (
         _run_chain(
             providers_science,
@@ -461,6 +484,10 @@ def generate(
     # NB (2026-09-27) : appel "anglais" uniquement si un article NYT a été trouvé ce jour-là
     # (cf. select_nyt_article -- peut être None si le flux RSS NYT est vide/en erreur). Pas de
     # LLM à interroger sans texte source à traduire.
+    if (science_body is not None or science_erreur is not None
+            or bloc_body is not None or bloc_erreur is not None):
+        if providers_anglais and nyt_article:
+            _pause_between_calls("anglais")
     anglais_body, anglais_provider, anglais_erreur = (
         _run_chain(
             providers_anglais,

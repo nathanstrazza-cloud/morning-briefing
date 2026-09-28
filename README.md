@@ -183,6 +183,52 @@ critère de réussite §25.4 du cahier des charges.
 
 ---
 
+
+## 3ter. Dépannage du déclenchement cron-job.org (ajouté le 2026-09-28)
+
+**Symptôme** : aucun run `workflow_dispatch` à ~06h10 Paris (constaté lun. 28/09 : plus aucun
+run externe depuis ven. 25/09). Le job cron-job.org envoie un `POST` avec un jeton GitHub dans
+l'en-tête `Authorization`. Cause la plus probable : **le jeton collé dans le job a été
+révoqué/renouvelé** (l'ancien jeton "fin le 20/10" renvoie désormais 401 Bad credentials).
+
+**Correction (côté cron-job.org, non automatisable depuis ce dépôt)** :
+1. cron-job.org -> le job -> onglet *History* : lire le code HTTP de la dernière exécution
+   (401 = jeton invalide ; 403/404 = jeton sans droit `Actions: Read and write` sur ce dépôt ;
+   204 = succès, le run doit apparaître dans l'onglet Actions).
+2. Créer un jeton GitHub **dédié** (fine-grained, uniquement ce dépôt, permission
+   *Actions: Read and write*), le coller dans l'en-tête `Authorization: Bearer <jeton>`.
+3. Vérifier : fuseau du job = Europe/Paris, jours lun-ven, heure ~06:10, corps `{"ref":"main"}`,
+   en-têtes `Accept: application/vnd.github+json` et `X-GitHub-Api-Version: 2022-11-28`.
+4. Bouton *Test run* : réponse attendue **204**, puis run visible dans Actions. (L'idempotence
+   `day_briefing_exists` empêche une double génération le même jour.)
+5. Activer dans cron-job.org l'alerte e-mail en cas d'échec du job.
+**Ne jamais** committer ni coller un jeton dans un fichier du dépôt ou du projet partagé.
+
+## 3quater. Fournisseurs LLM et espacement des appels (2026-09-28)
+
+Trois appels indépendants (bloc / science / anglais), chacun avec son ordre de repli
+(`src/generation/llm_provider.py`, `_ORDER_BY_ROLE`) :
+
+| Rôle    | Ordre d'essai                              |
+|---------|--------------------------------------------|
+| bloc    | Groq -> OpenRouter -> Mistral -> NVIDIA    |
+| science | Mistral -> NVIDIA -> Groq -> OpenRouter    |
+| anglais | OpenRouter -> NVIDIA -> Groq -> Mistral    |
+
+- Nouveaux secrets GitHub (optionnels, un provider sans clé est ignoré) :
+  `OPENROUTER_API_KEY` (openrouter.ai) et `NVIDIA_API_KEY` (build.nvidia.com), sans carte bancaire.
+  Modèles par défaut : OpenRouter `openai/gpt-oss-120b:free` (+ repli `models` côté OpenRouter),
+  NVIDIA `meta/llama-3.3-70b-instruct` ; surcharge via `OPENROUTER_MODEL` / `NVIDIA_MODEL`.
+- **Pause de 60 s entre deux appels LLM** (`LLM_CALL_SPACING_SECONDS`, défaut 60, 0 = désactivé)
+  pour ne pas cumuler sur la fenêtre TPM d'une minute. Coût : ~2 min de plus par run.
+- `LLM_PROVIDER` ne réordonne plus que le rôle "bloc" (avant : il plaçait le provider en tête
+  de TOUS les rôles, ce qui annulait la répartition science/anglais).
+- **Non vérifié en conditions réelles** (pas d'accès réseau depuis le sandbox de dev) : après le
+  1er run avec les nouvelles clés, lire `llm_bloc`/`llm_science`/`llm_anglais` dans l'onglet
+  Erreurs. Les noms de modèles gratuits changent sans préavis.
+
+---
+
 ## 4. Clé(s) API nécessaires (secrets GitHub)
 
 Le seul point qui **nécessite un choix de l'utilisateur** est le fournisseur LLM pour la

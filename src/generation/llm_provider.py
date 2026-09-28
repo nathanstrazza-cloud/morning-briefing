@@ -274,10 +274,105 @@ class CerebrasProvider(LLMProvider):
         return data["choices"][0]["message"]["content"]
 
 
+class OpenRouterProvider(LLMProvider):
+    """OpenRouter (openrouter.ai), modèles ":free" -- ajouté le 2026-09-28.
+
+    Aucune carte bancaire requise ; quota gratuit partagé entre tous les modèles :free
+    (~20 requêtes/min, ~50 requêtes/jour d'après la doc publique) -- très largement suffisant
+    pour 3 appels/jour. API compatible OpenAI. Les modèles gratuits tournent sans préavis :
+    on envoie donc une liste `models` (repli côté OpenRouter) plutôt qu'un seul identifiant.
+    Surcharge possible sans toucher au code : OPENROUTER_MODEL (un identifiant) --
+    la liste de repli reste alors celle par défaut derrière lui.
+    Non vérifié en conditions réelles au moment de l'écriture (pas d'accès réseau depuis le
+    sandbox) : lire l'onglet Erreurs après le 1er run qui l'utilise."""
+    name = "openrouter"
+
+    DEFAULT_MODELS = (
+        "openai/gpt-oss-120b:free",
+        "meta-llama/llama-3.3-70b-instruct:free",
+        "google/gemma-4-31b-it:free",
+    )
+
+    def __init__(self, api_key: str, model: str | None = None):
+        self.api_key = api_key
+        preferred = model or os.environ.get("OPENROUTER_MODEL", "").strip()
+        models = list(self.DEFAULT_MODELS)
+        if preferred:
+            if preferred in models:
+                models.remove(preferred)
+            models.insert(0, preferred)
+        self.models = models
+
+    def complete(self, system: str, user: str, max_tokens: int = MAX_OUTPUT_TOKENS) -> str:
+        data = self._post(
+            "https://openrouter.ai/api/v1/chat/completions",
+            headers={
+                "Authorization": f"Bearer {self.api_key}",
+                "HTTP-Referer": "https://github.com/nathanstrazza-cloud/morning-briefing",
+                "X-Title": "Morning Briefing",
+            },
+            json={
+                "models": self.models,
+                "messages": [
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": user},
+                ],
+                "temperature": 0.3,
+                "max_tokens": max_tokens,
+            },
+            timeout=90,
+        )
+        return _extract_content(data, self.name)
+
+
+class NvidiaProvider(LLMProvider):
+    """NVIDIA NIM (build.nvidia.com) -- ajouté le 2026-09-28.
+
+    Pas de carte bancaire ; ~40 requêtes/min d'après la doc publique. API compatible OpenAI.
+    Modèle par défaut : meta/llama-3.3-70b-instruct (bon en français, JSON strict correct).
+    Surcharge possible : NVIDIA_MODEL. Non vérifié en conditions réelles (cf. OpenRouter)."""
+    name = "nvidia"
+
+    def __init__(self, api_key: str, model: str | None = None):
+        self.api_key = api_key
+        self.model = model or os.environ.get("NVIDIA_MODEL", "meta/llama-3.3-70b-instruct")
+
+    def complete(self, system: str, user: str, max_tokens: int = MAX_OUTPUT_TOKENS) -> str:
+        data = self._post(
+            "https://integrate.api.nvidia.com/v1/chat/completions",
+            headers={"Authorization": f"Bearer {self.api_key}", "Accept": "application/json"},
+            json={
+                "model": self.model,
+                "messages": [
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": user},
+                ],
+                "temperature": 0.3,
+                "max_tokens": max_tokens,
+            },
+            timeout=90,
+        )
+        return _extract_content(data, self.name)
+
+
+def _extract_content(data: dict, provider_name: str) -> str:
+    """Extrait le texte d'une réponse OpenAI-compatible ; lève LLMError si vide (ex: modèle
+    à raisonnement dont le budget max_tokens a été entièrement consommé par la réflexion)."""
+    try:
+        content = data["choices"][0]["message"].get("content")
+    except (KeyError, IndexError, TypeError, AttributeError):
+        content = None
+    if not content or not str(content).strip():
+        raise LLMError(f"Réponse vide (provider={provider_name})")
+    return content
+
+
 _PROVIDER_BUILDERS = {
     "groq": lambda key: GroqProvider(key),
     "mistral": lambda key: MistralProvider(key),
     "cerebras": lambda key: CerebrasProvider(key),
+    "openrouter": lambda key: OpenRouterProvider(key),
+    "nvidia": lambda key: NvidiaProvider(key),
     "gemini": lambda key: GeminiProvider(key),
     "anthropic": lambda key: AnthropicProvider(key),
 }
@@ -285,6 +380,8 @@ _ENV_KEY_BY_PROVIDER = {
     "groq": "GROQ_API_KEY",
     "mistral": "MISTRAL_API_KEY",
     "cerebras": "CEREBRAS_API_KEY",
+    "openrouter": "OPENROUTER_API_KEY",
+    "nvidia": "NVIDIA_API_KEY",
     "gemini": "GEMINI_API_KEY",
     "anthropic": "ANTHROPIC_API_KEY",
 }
@@ -311,8 +408,23 @@ _ENV_KEY_BY_PROVIDER = {
 # de perdu) et reste sélectionnable explicitement via LLM_PROVIDER=cerebras + CEREBRAS_API_KEY
 # si un jour un tier gratuit fonctionnel est activé sur ce compte -- il suffira alors de le
 # rajouter dans les deux tuples ci-dessous.
-_DEFAULT_FALLBACK_ORDER = ("groq", "mistral", "gemini", "anthropic")
-_SCIENCE_FALLBACK_ORDER = ("mistral", "groq", "gemini", "anthropic")
+# NB (2026-09-28) : run réel du 28/09 = bloc OK sur Groq, mais science ET anglais en 429
+# (Groq TPM saturé par le bloc, Mistral également en rate-limit). Ajout d'OpenRouter et de
+# NVIDIA NIM (clés OPENROUTER_API_KEY / NVIDIA_API_KEY, aucune carte bancaire) et ORDRE
+# DÉDIÉ PAR RÔLE pour que chacun des 3 appels démarre sur un compte/quota différent :
+#   bloc    : Groq       -> OpenRouter -> Mistral -> NVIDIA
+#   science : Mistral    -> NVIDIA     -> Groq    -> OpenRouter
+#   anglais : OpenRouter -> NVIDIA     -> Groq    -> Mistral
+# (Gemini/Anthropic en dernier recours si un jour configurés.) Un provider sans clé est
+# simplement ignoré. En complément, briefing_generator espace les appels de 60 s.
+_DEFAULT_FALLBACK_ORDER = ("groq", "openrouter", "mistral", "nvidia", "gemini", "anthropic")
+_SCIENCE_FALLBACK_ORDER = ("mistral", "nvidia", "groq", "openrouter", "gemini", "anthropic")
+_ANGLAIS_FALLBACK_ORDER = ("openrouter", "nvidia", "groq", "mistral", "gemini", "anthropic")
+_ORDER_BY_ROLE = {
+    "bloc": _DEFAULT_FALLBACK_ORDER,
+    "science": _SCIENCE_FALLBACK_ORDER,
+    "anglais": _ANGLAIS_FALLBACK_ORDER,
+}
 
 
 def _build_provider(name: str) -> LLMProvider | None:
@@ -356,12 +468,21 @@ def get_providers(role: str = "bloc") -> list[LLMProvider]:
     l'objectif 0€ (cf. cahier §19) tant que le(s) provider(s) de repli restent sur leur tier
     gratuit."""
     preferred = os.environ.get("LLM_PROVIDER", "").strip().lower()
-    base_order = _SCIENCE_FALLBACK_ORDER if role == "science" else _DEFAULT_FALLBACK_ORDER
+    base_order = _ORDER_BY_ROLE.get(role, _DEFAULT_FALLBACK_ORDER)
     order = list(base_order)
     if preferred in _PROVIDER_BUILDERS:
-        if preferred in order:
-            order.remove(preferred)
-        order.insert(0, preferred)
+        # NB (2026-09-28) : découverte en testant -- avec LLM_PROVIDER=groq (valeur du secret
+        # GitHub), l'ancien code plaçait Groq en TÊTE POUR TOUS LES RÔLES, annulant l'ordre
+        # dédié "science"/"anglais" : les 3 appels partaient sur Groq et saturaient son TPM
+        # (cause probable des 429 du 28/09). La préférence ne pilote donc plus que le rôle
+        # "bloc" ; pour les autres rôles, elle est conservée mais à sa place par défaut (ou en
+        # dernier recours si absente de l'ordre du rôle, ex: cerebras).
+        if role == "bloc":
+            if preferred in order:
+                order.remove(preferred)
+            order.insert(0, preferred)
+        elif preferred not in order:
+            order.append(preferred)
 
     providers: list[LLMProvider] = []
     for name in order:
