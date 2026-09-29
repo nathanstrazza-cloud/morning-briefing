@@ -3,20 +3,20 @@ SONDE LLM — requête à 1 token de sortie par fournisseur
 ======================================================================
 
 ### GROQ -> OK
-  HTTP 200 en 0.42 s, modèle utilisé : openai/gpt-oss-120b
+  HTTP 200 en 0.21 s, modèle utilisé : openai/gpt-oss-120b
   x-ratelimit-limit-requests: 1000
   x-ratelimit-limit-tokens: 8000
-  x-ratelimit-remaining-requests: 999
+  x-ratelimit-remaining-requests: 998
   x-ratelimit-remaining-tokens: 7927
-  x-ratelimit-reset-requests: 1m26.4s
+  x-ratelimit-reset-requests: 2m52.8s
   x-ratelimit-reset-tokens: 547ms
-  usable_test: {"usable": true, "http": 200, "finish_reason": "stop", "content_preview": "{\"ok\": true}", "usage": {"queue_time": 0.243953727, "prompt_tokens": 85, "prompt_time": 0.0038113, "completion_tokens": 23, "completion_time": 0.048663251, "total_tokens": 108, "total_time": 0.052474551, "completion_tokens_details": {"reasoning_tokens": 9}}}
+  usable_test: {"usable": true, "http": 200, "finish_reason": "stop", "content_preview": "{\"ok\": true}", "usage": {"queue_time": 0.005354603, "prompt_tokens": 85, "prompt_time": 0.004163098, "completion_tokens": 23, "completion_time": 0.048175525, "total_tokens": 108, "total_time": 0.052338623, "completion_tokens_details": {"reasoning_tokens": 9}}}
   LIMITES : Groq : requêtes par JOUR (RPD) et tokens par MINUTE (TPM) dans les en-têtes x-ratelimit-limit-requests / x-ratelimit-limit-tokens ; quotas propres à chaque modèle.
 
 ### MISTRAL -> OK
-  HTTP 200 en 0.41 s, modèle utilisé : ministral-8b-2512
+  HTTP 200 en 0.36 s, modèle utilisé : ministral-8b-2512
   x-ratelimit-limit-tokens-minute: 625000
-  x-ratelimit-remaining-tokens-minute: 624995
+  x-ratelimit-remaining-tokens-minute: 624993
   x-ratelimit-tokens-query-cost: 5
   x-ratelimit-limit-req-minute: 188
   x-ratelimit-remaining-req-minute: 187
@@ -32,20 +32,17 @@ SONDE LLM — requête à 1 token de sortie par fournisseur
   - essai magistral-small-latest: HTTP 429 {"object":"error","message":"Rate limit exceeded","type":"rate_limited","param":null,"code":"1300","raw_status_code":429}
   LIMITES : Mistral ne publie plus de chiffres fixes : 3 limites par ORGANISATION (requêtes/seconde, tokens/minute, tokens/mois) visibles SEULEMENT sur console.mistral.ai > Limits (Admin). En-têtes x-ratelimit-* parfois renvoyés (cf. ping.limit_headers).
 
-### OPENROUTER -> ÉCHEC (HTTP 404)
-  HTTP 404 en 0.09 s, modèle utilisé : None
-  ERREUR : {"error":{"message":"This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b","code":404},"user_id":"user_3JxqD0omToGNtN9egr2WJOCoRKv"}
+### OPENROUTER -> OK
+  HTTP 200 en 0.81 s, modèle utilisé : dots-studio/dots-3-note-preview:free
+  usable_test: {"usable": true, "http": 200, "finish_reason": "stop", "content_preview": "{\"ok\": true}", "usage": {"prompt_tokens": 14, "completion_tokens": 5, "total_tokens": 19, "cost": 0, "is_byok": false, "prompt_tokens_details": {"cached_tokens": 0, "cache_write_tokens": 0, "audio_tokens": 0, "video_tokens": 0}, "cost_details": {"upstream_inference_cost": 0, "upstream_inference_prompt_cost": 0, "upstream_inference_completions_cost": 0}, "completion_tokens_details": {"reasoning_tokens": 0, "image_tokens": 0, "audio_tokens": 0}}}
   key_info: {"label": "sk-or-v1-2f7...b05", "is_management_key": false, "is_provisioning_key": false, "limit": 50, "limit_reset": null, "limit_remaining": 50, "include_byok_in_limit": false, "usage": 0, "usage_daily": 0, "usage_weekly": 0, "usage_monthly": 0, "byok_usage": 0, "byok_usage_daily": 0, "byok_usage_weekly": 0, "byok_usage_monthly": 0, "is_free_tier": true, "expires_at": null, "creator_user_id": "user_3JxqD0omToGNtN9egr2WJOCoRKv", "organization_id": null, "workspace_id": "4bf347b2-68c8-5f64-89a4-de5363b85396", "allowed_data_regions": ["global"], "free_model_daily_requests": {"used": 0, "limit": 50, "remaining": 50}, "rate_limit": {"requests": -1, "interval": "10s", "note": "This field is deprecated and safe to ignore."}}
   modeles_gratuits_catalogue: ["cohere/north-mini-code:free", "dots-studio/dots-3-note-preview:free", "google/gemma-4-26b-a4b-it:free", "google/gemma-4-31b-it:free", "google/lyria-3-clip-preview", "google/lyria-3-pro-preview", "inclusionai/ling-3.0-flash-sante:free", "liquid/lfm-2.5-2.6b:free", "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free", "nvidia/nemotron-3-super-120b-a12b:free", "nvidia/nemotron-3-ultra-550b-a55b:free", "nvidia/nemotron-3.5-content-safety:free", "nvidia/nemotron-3.5-lightning:free", "openrouter/free", "poolside/laguna-s-2.1:free", "poolside/laguna-xs-2.1:free", "qwen/qwen3.8-27b:free", "stealth/space-bunny-alpha", "thinkingmachines/inkling-small:free", "thinkingmachines/inkling:free"]
-  - essai google/gemma-4-31b-it:free: HTTP 429 {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate you
-  - essai qwen/qwen3.8-27b:free: HTTP 429 {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"qwen/qwen3.8-27b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rat
-  - essai google/gemma-4-26b-a4b-it:free: HTTP 429 {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-26b-a4b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate
-  - essai openai/gpt-oss-120b:free: HTTP 404 {"error":{"message":"This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b","code":404},"user_id":"user_3JxqD0omToGNtN9egr2WJOCoRKv"}
+  - essai openrouter/free: HTTP 200 OK
   LIMITES : OpenRouter : modèles ':free' partagent un quota commun (~20 requêtes/minute ; ~50 requêtes/jour sans crédit, ~1000/jour si ≥10 $ de crédit déposés d'après la doc publique) ; le champ key_info confirme is_free_tier et le rate_limit réel du compte. Les modèles gratuits sont aussi limités en amont (429 'rate-limited upstream' = fournisseur du modèle saturé, pas votre quota).
 
 ### NVIDIA -> OK
-  HTTP 200 en 0.49 s, modèle utilisé : nvidia/nemotron-3.5-lightning-30b-a3b
-  usable_test: {"usable": true, "http": 200, "finish_reason": "stop", "content_preview": "{\"ok\": true}", "usage": {"prompt_tokens": 30, "completion_tokens": 191, "total_tokens": 221}}
+  HTTP 200 en 10.13 s, modèle utilisé : nvidia/nemotron-3.5-lightning-30b-a3b
+  usable_test: {"usable": true, "http": 200, "finish_reason": "stop", "content_preview": "{\"ok\": true}", "usage": {"prompt_tokens": 30, "completion_tokens": 274, "total_tokens": 304}}
   models_count: 81
   modeles_qui_repondent: ["nvidia/nemotron-3.5-lightning-30b-a3b", "openai/gpt-oss-20b"]
   autres_modeles_llm_candidats: ["meta/codellama-70b", "meta/llama-3.2-11b-vision-instruct", "meta/llama-3.2-90b-vision-instruct", "meta/llama-guard-4-12b", "meta/llama2-70b", "mistralai/codestral-22b-instruct-v0.1", "mistralai/mistral-7b-instruct-v0.3", "mistralai/mistral-large", "mistralai/mistral-large-2-instruct", "mistralai/mixtral-8x22b-v0.1", "nv-mistralai/mistral-nemo-12b-instruct", "nvidia/llama-3.1-nemoguard-8b-content-safety", "nvidia/llama-3.1-nemoguard-8b-topic-control", "nvidia/llama-3.1-nemotron-51b-instruct", "nvidia/llama-3.1-nemotron-70b-instruct", "nvidia/llama-3.1-nemotron-safety-guard-8b-v3", "nvidia/llama-3.1-nemotron-ultra-253b-v1", "nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1", "nvidia/llama-3.2-nv-embedqa-1b-v1", "nvidia/llama-nemotron-embed-vl-1b-v2", "nvidia/llama3-chatqa-1.5-70b", "nvidia/mistral-nemo-minitron-8b-8k-instruct", "nvidia/nemotron-3-embed-1b", "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning", "nvidia/nemotron-3-super-120b-a12b", "nvidia/nemotron-3-ultra-550b-a55b", "nvidia/nemotron-3.5-content-safety", "nvidia/nemotron-3.5-lightning-30b-a3b", "nvidia/nemotron-4-340b-instruct", "nvidia/nemotron-4-340b-reward", "nvidia/nemotron-nano-3-30b-a3b", "nvidia/nemotron-parse", "nvidia/nemotron-parse-2.0", "nvidia/nv-embedqa-mistral-7b-v2", "openai/gpt-oss-20b"]
@@ -56,4 +53,4 @@ SONDE LLM — requête à 1 token de sortie par fournisseur
   - essai nvidia/nemotron-4-340b-instruct: HTTP 404 {"status":404,"title":"Not Found","detail":"Function 'b0fcd392-e905-4ab4-8eb9-aeae95c30b37': Not found for account 'a8mLP35wkZJLJglphRtgmwSfCer_0j91RSyUuePEg6o'"}
   LIMITES : NVIDIA NIM (build.nvidia.com) : ~40 requêtes/minute d'après la doc publique, quota en 'crédits' d'essai plutôt qu'en tokens ; PAS d'en-têtes x-ratelimit fiables -> à vérifier sur le tableau de bord build.nvidia.com. Un 410 Gone = modèle retiré : choisir un autre id dans autres_modeles_llm_candidats et le passer via NVIDIA_MODEL.
 
-Résumé : 3/4 fournisseurs OK
+Résumé : 4/4 fournisseurs OK

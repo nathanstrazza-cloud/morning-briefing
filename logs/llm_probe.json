@@ -5,24 +5,24 @@
     "ping": {
       "ok": true,
       "http": 200,
-      "latency_s": 0.42,
+      "latency_s": 0.21,
       "limit_headers": {
         "x-ratelimit-limit-requests": "1000",
         "x-ratelimit-limit-tokens": "8000",
-        "x-ratelimit-remaining-requests": "999",
+        "x-ratelimit-remaining-requests": "998",
         "x-ratelimit-remaining-tokens": "7927",
-        "x-ratelimit-reset-requests": "1m26.4s",
+        "x-ratelimit-reset-requests": "2m52.8s",
         "x-ratelimit-reset-tokens": "547ms"
       },
       "model_used": "openai/gpt-oss-120b",
       "usage": {
-        "queue_time": 0.095334721,
+        "queue_time": 0.084454335,
         "prompt_tokens": 72,
-        "prompt_time": 0.003237354,
+        "prompt_time": 0.003441321,
         "completion_tokens": 1,
-        "completion_time": 0.002049392,
+        "completion_time": 0.002063487,
         "total_tokens": 73,
-        "total_time": 0.005286746
+        "total_time": 0.005504808
       },
       "content_preview": ""
     },
@@ -32,13 +32,13 @@
       "finish_reason": "stop",
       "content_preview": "{\"ok\": true}",
       "usage": {
-        "queue_time": 0.243953727,
+        "queue_time": 0.005354603,
         "prompt_tokens": 85,
-        "prompt_time": 0.0038113,
+        "prompt_time": 0.004163098,
         "completion_tokens": 23,
-        "completion_time": 0.048663251,
+        "completion_time": 0.048175525,
         "total_tokens": 108,
-        "total_time": 0.052474551,
+        "total_time": 0.052338623,
         "completion_tokens_details": {
           "reasoning_tokens": 9
         }
@@ -70,7 +70,7 @@
       "mistral-small-latest": {
         "ok": false,
         "http": 429,
-        "latency_s": 0.2,
+        "latency_s": 0.23,
         "limit_headers": {
           "x-ratelimit-limit-req-minute": "0",
           "x-ratelimit-remaining-req-minute": "0"
@@ -80,7 +80,7 @@
       "mistral-small-2603": {
         "ok": false,
         "http": 429,
-        "latency_s": 0.22,
+        "latency_s": 0.18,
         "limit_headers": {
           "x-ratelimit-limit-req-minute": "0",
           "x-ratelimit-remaining-req-minute": "0"
@@ -90,10 +90,10 @@
       "open-mistral-nemo": {
         "ok": true,
         "http": 200,
-        "latency_s": 0.41,
+        "latency_s": 0.36,
         "limit_headers": {
           "x-ratelimit-limit-tokens-minute": "625000",
-          "x-ratelimit-remaining-tokens-minute": "624995",
+          "x-ratelimit-remaining-tokens-minute": "624993",
           "x-ratelimit-tokens-query-cost": "5",
           "x-ratelimit-limit-req-minute": "188",
           "x-ratelimit-remaining-req-minute": "187"
@@ -113,10 +113,10 @@
       "ministral-8b-latest": {
         "ok": true,
         "http": 200,
-        "latency_s": 0.32,
+        "latency_s": 0.47,
         "limit_headers": {
           "x-ratelimit-limit-tokens-minute": "625000",
-          "x-ratelimit-remaining-tokens-minute": "624990",
+          "x-ratelimit-remaining-tokens-minute": "624989",
           "x-ratelimit-tokens-query-cost": "5",
           "x-ratelimit-limit-req-minute": "188",
           "x-ratelimit-remaining-req-minute": "186"
@@ -136,7 +136,7 @@
       "mistral-medium-latest": {
         "ok": false,
         "http": 429,
-        "latency_s": 0.22,
+        "latency_s": 0.18,
         "limit_headers": {
           "x-ratelimit-limit-req-minute": "0",
           "x-ratelimit-remaining-req-minute": "0"
@@ -161,10 +161,10 @@
     "ping": {
       "ok": true,
       "http": 200,
-      "latency_s": 0.41,
+      "latency_s": 0.36,
       "limit_headers": {
         "x-ratelimit-limit-tokens-minute": "625000",
-        "x-ratelimit-remaining-tokens-minute": "624995",
+        "x-ratelimit-remaining-tokens-minute": "624993",
         "x-ratelimit-tokens-query-cost": "5",
         "x-ratelimit-limit-req-minute": "188",
         "x-ratelimit-remaining-req-minute": "187"
@@ -202,6 +202,8 @@
   {
     "provider": "openrouter",
     "models_tested": [
+      "openrouter/free",
+      "nvidia/nemotron-3-super-120b-a12b:free",
       "google/gemma-4-31b-it:free",
       "qwen/qwen3.8-27b:free",
       "google/gemma-4-26b-a4b-it:free",
@@ -266,44 +268,101 @@
       "thinkingmachines/inkling:free"
     ],
     "per_model": {
-      "google/gemma-4-31b-it:free": {
-        "ok": false,
-        "http": 429,
-        "latency_s": 0.16,
+      "openrouter/free": {
+        "ok": true,
+        "http": 200,
+        "latency_s": 0.81,
         "limit_headers": {},
-        "error": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Google AI Studio\",\"is_byok\":false,\"provider_error_code\":\"429\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing\"}},\"us"
-      },
-      "qwen/qwen3.8-27b:free": {
-        "ok": false,
-        "http": 429,
-        "latency_s": 0.13,
-        "limit_headers": {},
-        "error": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"qwen/qwen3.8-27b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"ModelRun\",\"is_byok\":false,\"provider_error_code\":\"429\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing\"}},\"user_id\":\"user_"
-      },
-      "google/gemma-4-26b-a4b-it:free": {
-        "ok": false,
-        "http": 429,
-        "latency_s": 0.11,
-        "limit_headers": {},
-        "error": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-26b-a4b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Google AI Studio\",\"is_byok\":false,\"provider_error_code\":\"429\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing\"}}"
-      },
-      "openai/gpt-oss-120b:free": {
-        "ok": false,
-        "http": 404,
-        "latency_s": 0.09,
-        "limit_headers": {},
-        "error": "{\"error\":{\"message\":\"This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b\",\"code\":404},\"user_id\":\"user_3JxqD0omToGNtN9egr2WJOCoRKv\"}"
+        "model_used": "dots-studio/dots-3-note-preview:free",
+        "usage": {
+          "prompt_tokens": 14,
+          "completion_tokens": 1,
+          "total_tokens": 15,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 2,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "content_preview": ""
+      }
+    },
+    "model": "openrouter/free",
+    "usable_test": {
+      "usable": true,
+      "http": 200,
+      "finish_reason": "stop",
+      "content_preview": "{\"ok\": true}",
+      "usage": {
+        "prompt_tokens": 14,
+        "completion_tokens": 5,
+        "total_tokens": 19,
+        "cost": 0,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
       }
     },
     "ping": {
-      "ok": false,
-      "http": 404,
-      "latency_s": 0.09,
+      "ok": true,
+      "http": 200,
+      "latency_s": 0.81,
       "limit_headers": {},
-      "error": "{\"error\":{\"message\":\"This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b\",\"code\":404},\"user_id\":\"user_3JxqD0omToGNtN9egr2WJOCoRKv\"}"
+      "model_used": "dots-studio/dots-3-note-preview:free",
+      "usage": {
+        "prompt_tokens": 14,
+        "completion_tokens": 1,
+        "total_tokens": 15,
+        "cost": 0,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "content_preview": ""
     },
     "limites_lisibles": "OpenRouter : modèles ':free' partagent un quota commun (~20 requêtes/minute ; ~50 requêtes/jour sans crédit, ~1000/jour si ≥10 $ de crédit déposés d'après la doc publique) ; le champ key_info confirme is_free_tier et le rate_limit réel du compte. Les modèles gratuits sont aussi limités en amont (429 'rate-limited upstream' = fournisseur du modèle saturé, pas votre quota).",
-    "verdict": "ÉCHEC (HTTP 404)"
+    "verdict": "OK"
   },
   {
     "provider": "nvidia",
@@ -320,14 +379,14 @@
       "nvidia/nemotron-3-super-120b-a12b": {
         "ok": false,
         "http": 503,
-        "latency_s": 0.26,
+        "latency_s": 0.28,
         "limit_headers": {},
         "error": "{\"error\":{\"message\":\"Service temporarily overloaded\",\"type\":\"Service Unavailable\",\"code\":503}}"
       },
       "nvidia/nemotron-3.5-lightning-30b-a3b": {
         "ok": true,
         "http": 200,
-        "latency_s": 0.49,
+        "latency_s": 10.13,
         "limit_headers": {},
         "model_used": "nvidia/nemotron-3.5-lightning-30b-a3b",
         "usage": {
@@ -347,7 +406,7 @@
       "openai/gpt-oss-20b": {
         "ok": true,
         "http": 200,
-        "latency_s": 0.25,
+        "latency_s": 0.42,
         "limit_headers": {},
         "model_used": "openai/gpt-oss-20b",
         "usage": {
@@ -361,7 +420,7 @@
       "nvidia/nemotron-4-340b-instruct": {
         "ok": false,
         "http": 404,
-        "latency_s": 0.15,
+        "latency_s": 0.12,
         "limit_headers": {},
         "error": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'b0fcd392-e905-4ab4-8eb9-aeae95c30b37': Not found for account 'a8mLP35wkZJLJglphRtgmwSfCer_0j91RSyUuePEg6o'\"}"
       }
@@ -374,7 +433,7 @@
     "ping": {
       "ok": true,
       "http": 200,
-      "latency_s": 0.49,
+      "latency_s": 10.13,
       "limit_headers": {},
       "model_used": "nvidia/nemotron-3.5-lightning-30b-a3b",
       "usage": {
@@ -391,8 +450,8 @@
       "content_preview": "{\"ok\": true}",
       "usage": {
         "prompt_tokens": 30,
-        "completion_tokens": 191,
-        "total_tokens": 221
+        "completion_tokens": 274,
+        "total_tokens": 304
       }
     },
     "autres_modeles_llm_candidats": [
