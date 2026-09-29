@@ -5,7 +5,7 @@
     "ping": {
       "ok": true,
       "http": 200,
-      "latency_s": 0.24,
+      "latency_s": 0.42,
       "limit_headers": {
         "x-ratelimit-limit-requests": "1000",
         "x-ratelimit-limit-tokens": "8000",
@@ -16,22 +16,40 @@
       },
       "model_used": "openai/gpt-oss-120b",
       "usage": {
-        "queue_time": 0.146356835,
+        "queue_time": 0.095334721,
         "prompt_tokens": 72,
-        "prompt_time": 0.003163058,
+        "prompt_time": 0.003237354,
         "completion_tokens": 1,
-        "completion_time": 0.002063649,
+        "completion_time": 0.002049392,
         "total_tokens": 73,
-        "total_time": 0.005226707
+        "total_time": 0.005286746
       },
       "content_preview": ""
+    },
+    "usable_test": {
+      "usable": true,
+      "http": 200,
+      "finish_reason": "stop",
+      "content_preview": "{\"ok\": true}",
+      "usage": {
+        "queue_time": 0.243953727,
+        "prompt_tokens": 85,
+        "prompt_time": 0.0038113,
+        "completion_tokens": 23,
+        "completion_time": 0.048663251,
+        "total_tokens": 108,
+        "total_time": 0.052474551,
+        "completion_tokens_details": {
+          "reasoning_tokens": 9
+        }
+      }
     },
     "limites_lisibles": "Groq : requêtes par JOUR (RPD) et tokens par MINUTE (TPM) dans les en-têtes x-ratelimit-limit-requests / x-ratelimit-limit-tokens ; quotas propres à chaque modèle.",
     "verdict": "OK"
   },
   {
     "provider": "mistral",
-    "model": "mistral-small-latest",
+    "model": "open-mistral-nemo",
     "models_http": 200,
     "models_count": 46,
     "models_sample": [
@@ -48,23 +66,145 @@
       "voxtral-small-2507",
       "voxtral-small-latest"
     ],
-    "ping": {
-      "ok": false,
-      "http": 429,
-      "latency_s": 0.22,
-      "limit_headers": {
-        "x-ratelimit-limit-req-minute": "0",
-        "x-ratelimit-remaining-req-minute": "0"
+    "per_model": {
+      "mistral-small-latest": {
+        "ok": false,
+        "http": 429,
+        "latency_s": 0.2,
+        "limit_headers": {
+          "x-ratelimit-limit-req-minute": "0",
+          "x-ratelimit-remaining-req-minute": "0"
+        },
+        "error": "{\"object\":\"error\",\"message\":\"Rate limit exceeded\",\"type\":\"rate_limited\",\"param\":null,\"code\":\"1300\",\"raw_status_code\":429}"
       },
-      "error": "{\"object\":\"error\",\"message\":\"Rate limit exceeded\",\"type\":\"rate_limited\",\"param\":null,\"code\":\"1300\",\"raw_status_code\":429}"
+      "mistral-small-2603": {
+        "ok": false,
+        "http": 429,
+        "latency_s": 0.22,
+        "limit_headers": {
+          "x-ratelimit-limit-req-minute": "0",
+          "x-ratelimit-remaining-req-minute": "0"
+        },
+        "error": "{\"object\":\"error\",\"message\":\"Rate limit exceeded\",\"type\":\"rate_limited\",\"param\":null,\"code\":\"1300\",\"raw_status_code\":429}"
+      },
+      "open-mistral-nemo": {
+        "ok": true,
+        "http": 200,
+        "latency_s": 0.41,
+        "limit_headers": {
+          "x-ratelimit-limit-tokens-minute": "625000",
+          "x-ratelimit-remaining-tokens-minute": "624995",
+          "x-ratelimit-tokens-query-cost": "5",
+          "x-ratelimit-limit-req-minute": "188",
+          "x-ratelimit-remaining-req-minute": "187"
+        },
+        "model_used": "ministral-8b-2512",
+        "usage": {
+          "prompt_tokens": 4,
+          "total_tokens": 5,
+          "completion_tokens": 1,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "service_tier": "standard"
+        },
+        "content_preview": "Hello"
+      },
+      "ministral-8b-latest": {
+        "ok": true,
+        "http": 200,
+        "latency_s": 0.32,
+        "limit_headers": {
+          "x-ratelimit-limit-tokens-minute": "625000",
+          "x-ratelimit-remaining-tokens-minute": "624990",
+          "x-ratelimit-tokens-query-cost": "5",
+          "x-ratelimit-limit-req-minute": "188",
+          "x-ratelimit-remaining-req-minute": "186"
+        },
+        "model_used": "ministral-8b-latest",
+        "usage": {
+          "prompt_tokens": 4,
+          "total_tokens": 5,
+          "completion_tokens": 1,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "service_tier": "standard"
+        },
+        "content_preview": "Hello"
+      },
+      "mistral-medium-latest": {
+        "ok": false,
+        "http": 429,
+        "latency_s": 0.22,
+        "limit_headers": {
+          "x-ratelimit-limit-req-minute": "0",
+          "x-ratelimit-remaining-req-minute": "0"
+        },
+        "error": "{\"object\":\"error\",\"message\":\"Rate limit exceeded\",\"type\":\"rate_limited\",\"param\":null,\"code\":\"1300\",\"raw_status_code\":429}"
+      },
+      "magistral-small-latest": {
+        "ok": false,
+        "http": 429,
+        "latency_s": 0.2,
+        "limit_headers": {
+          "x-ratelimit-limit-req-minute": "0",
+          "x-ratelimit-remaining-req-minute": "0"
+        },
+        "error": "{\"object\":\"error\",\"message\":\"Rate limit exceeded\",\"type\":\"rate_limited\",\"param\":null,\"code\":\"1300\",\"raw_status_code\":429}"
+      }
+    },
+    "modeles_qui_repondent": [
+      "open-mistral-nemo",
+      "ministral-8b-latest"
+    ],
+    "ping": {
+      "ok": true,
+      "http": 200,
+      "latency_s": 0.41,
+      "limit_headers": {
+        "x-ratelimit-limit-tokens-minute": "625000",
+        "x-ratelimit-remaining-tokens-minute": "624995",
+        "x-ratelimit-tokens-query-cost": "5",
+        "x-ratelimit-limit-req-minute": "188",
+        "x-ratelimit-remaining-req-minute": "187"
+      },
+      "model_used": "ministral-8b-2512",
+      "usage": {
+        "prompt_tokens": 4,
+        "total_tokens": 5,
+        "completion_tokens": 1,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "service_tier": "standard"
+      },
+      "content_preview": "Hello"
+    },
+    "usable_test": {
+      "usable": true,
+      "http": 200,
+      "finish_reason": "stop",
+      "content_preview": "```json\n{\n  \"ok\": true\n}\n```",
+      "usage": {
+        "prompt_tokens": 17,
+        "total_tokens": 30,
+        "completion_tokens": 13,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "service_tier": "standard"
+      }
     },
     "limites_lisibles": "Mistral ne publie plus de chiffres fixes : 3 limites par ORGANISATION (requêtes/seconde, tokens/minute, tokens/mois) visibles SEULEMENT sur console.mistral.ai > Limits (Admin). En-têtes x-ratelimit-* parfois renvoyés (cf. ping.limit_headers).",
-    "verdict": "ÉCHEC (HTTP 429)"
+    "verdict": "OK"
   },
   {
     "provider": "openrouter",
     "models_tested": [
       "google/gemma-4-31b-it:free",
+      "qwen/qwen3.8-27b:free",
+      "google/gemma-4-26b-a4b-it:free",
       "openai/gpt-oss-120b:free"
     ],
     "key_info_http": 200,
@@ -133,10 +273,24 @@
         "limit_headers": {},
         "error": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Google AI Studio\",\"is_byok\":false,\"provider_error_code\":\"429\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing\"}},\"us"
       },
+      "qwen/qwen3.8-27b:free": {
+        "ok": false,
+        "http": 429,
+        "latency_s": 0.13,
+        "limit_headers": {},
+        "error": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"qwen/qwen3.8-27b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"ModelRun\",\"is_byok\":false,\"provider_error_code\":\"429\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing\"}},\"user_id\":\"user_"
+      },
+      "google/gemma-4-26b-a4b-it:free": {
+        "ok": false,
+        "http": 429,
+        "latency_s": 0.11,
+        "limit_headers": {},
+        "error": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-26b-a4b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Google AI Studio\",\"is_byok\":false,\"provider_error_code\":\"429\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing\"}}"
+      },
       "openai/gpt-oss-120b:free": {
         "ok": false,
         "http": 404,
-        "latency_s": 0.07,
+        "latency_s": 0.09,
         "limit_headers": {},
         "error": "{\"error\":{\"message\":\"This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b\",\"code\":404},\"user_id\":\"user_3JxqD0omToGNtN9egr2WJOCoRKv\"}"
       }
@@ -144,7 +298,7 @@
     "ping": {
       "ok": false,
       "http": 404,
-      "latency_s": 0.07,
+      "latency_s": 0.09,
       "limit_headers": {},
       "error": "{\"error\":{\"message\":\"This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b\",\"code\":404},\"user_id\":\"user_3JxqD0omToGNtN9egr2WJOCoRKv\"}"
     },
@@ -155,80 +309,91 @@
     "provider": "nvidia",
     "models_tested": [
       "nvidia/nemotron-3-super-120b-a12b",
-      "mistralai/mistral-large-2-instruct",
-      "nvidia/llama-3.1-nemotron-ultra-253b-v1",
-      "nvidia/llama-3.1-nemotron-70b-instruct",
-      "mistralai/mistral-large",
-      "nv-mistralai/mistral-nemo-12b-instruct"
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "nvidia/nemotron-nano-3-30b-a3b",
+      "openai/gpt-oss-20b",
+      "nvidia/nemotron-4-340b-instruct"
     ],
     "models_http": 200,
     "models_count": 81,
     "per_model": {
       "nvidia/nemotron-3-super-120b-a12b": {
+        "ok": false,
+        "http": 503,
+        "latency_s": 0.26,
+        "limit_headers": {},
+        "error": "{\"error\":{\"message\":\"Service temporarily overloaded\",\"type\":\"Service Unavailable\",\"code\":503}}"
+      },
+      "nvidia/nemotron-3.5-lightning-30b-a3b": {
         "ok": true,
         "http": 200,
-        "latency_s": 0.79,
+        "latency_s": 0.49,
         "limit_headers": {},
-        "model_used": "nvidia/nemotron-3-super-120b-a12b",
+        "model_used": "nvidia/nemotron-3.5-lightning-30b-a3b",
         "usage": {
           "prompt_tokens": 17,
           "completion_tokens": 1,
           "total_tokens": 18
         },
-        "content_preview": "Okay"
+        "content_preview": "Here"
       },
-      "mistralai/mistral-large-2-instruct": {
+      "nvidia/nemotron-nano-3-30b-a3b": {
         "ok": false,
         "http": 404,
         "latency_s": 0.13,
         "limit_headers": {},
-        "error": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function '7fadd4de-e22a-48e4-90e9-f02ef14a74b9': Not found for account 'a8mLP35wkZJLJglphRtgmwSfCer_0j91RSyUuePEg6o'\"}"
+        "error": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function '2b2dcd47-c858-425a-9c04-4cacf2eac993': Not found for account 'a8mLP35wkZJLJglphRtgmwSfCer_0j91RSyUuePEg6o'\"}"
       },
-      "nvidia/llama-3.1-nemotron-ultra-253b-v1": {
+      "openai/gpt-oss-20b": {
+        "ok": true,
+        "http": 200,
+        "latency_s": 0.25,
+        "limit_headers": {},
+        "model_used": "openai/gpt-oss-20b",
+        "usage": {
+          "prompt_tokens": 66,
+          "total_tokens": 67,
+          "completion_tokens": 1,
+          "prompt_tokens_details": null
+        },
+        "content_preview": ""
+      },
+      "nvidia/nemotron-4-340b-instruct": {
         "ok": false,
         "http": 404,
-        "latency_s": 0.06,
+        "latency_s": 0.15,
         "limit_headers": {},
-        "error": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function '84bf12ff-edbd-4435-baea-0fa6a7453d2e': Not found for account 'a8mLP35wkZJLJglphRtgmwSfCer_0j91RSyUuePEg6o'\"}"
-      },
-      "nvidia/llama-3.1-nemotron-70b-instruct": {
-        "ok": false,
-        "http": 404,
-        "latency_s": 0.07,
-        "limit_headers": {},
-        "error": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function '9b96341b-9791-4db9-a00d-4e43aa192a39': Not found for account 'a8mLP35wkZJLJglphRtgmwSfCer_0j91RSyUuePEg6o'\"}"
-      },
-      "mistralai/mistral-large": {
-        "ok": false,
-        "http": 404,
-        "latency_s": 0.09,
-        "limit_headers": {},
-        "error": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function '767b5b9a-3f9d-4c1d-86e8-fa861988cee7': Not found for account 'a8mLP35wkZJLJglphRtgmwSfCer_0j91RSyUuePEg6o'\"}"
-      },
-      "nv-mistralai/mistral-nemo-12b-instruct": {
-        "ok": false,
-        "http": 404,
-        "latency_s": 0.13,
-        "limit_headers": {},
-        "error": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'f8c05193-d2e2-4f0f-bb4d-7ad70070002b': Not found for account 'a8mLP35wkZJLJglphRtgmwSfCer_0j91RSyUuePEg6o'\"}"
+        "error": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'b0fcd392-e905-4ab4-8eb9-aeae95c30b37': Not found for account 'a8mLP35wkZJLJglphRtgmwSfCer_0j91RSyUuePEg6o'\"}"
       }
     },
-    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
     "modeles_qui_repondent": [
-      "nvidia/nemotron-3-super-120b-a12b"
+      "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "openai/gpt-oss-20b"
     ],
     "ping": {
       "ok": true,
       "http": 200,
-      "latency_s": 0.79,
+      "latency_s": 0.49,
       "limit_headers": {},
-      "model_used": "nvidia/nemotron-3-super-120b-a12b",
+      "model_used": "nvidia/nemotron-3.5-lightning-30b-a3b",
       "usage": {
         "prompt_tokens": 17,
         "completion_tokens": 1,
         "total_tokens": 18
       },
-      "content_preview": "Okay"
+      "content_preview": "Here"
+    },
+    "usable_test": {
+      "usable": true,
+      "http": 200,
+      "finish_reason": "stop",
+      "content_preview": "{\"ok\": true}",
+      "usage": {
+        "prompt_tokens": 30,
+        "completion_tokens": 191,
+        "total_tokens": 221
+      }
     },
     "autres_modeles_llm_candidats": [
       "meta/codellama-70b",
