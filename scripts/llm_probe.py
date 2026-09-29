@@ -34,14 +34,13 @@ PING = [{"role": "user", "content": "Hi"}]
 
 # Modèles testés par défaut (surchargeables par les variables d'environnement du pipeline,
 # cf. src/generation/llm_provider.py : GROQ_MODEL, MISTRAL_MODEL, OPENROUTER_MODEL, NVIDIA_MODEL).
-GROQ_MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
-MISTRAL_MODEL = os.environ.get("MISTRAL_MODEL", "mistral-small-latest")
+GROQ_MODEL = os.environ.get("GROQ_MODEL") or "openai/gpt-oss-120b"  # `or` : une variable vide ne doit pas écraser le défaut
+MISTRAL_MODEL = os.environ.get("MISTRAL_MODEL") or "mistral-small-latest"
 OPENROUTER_MODELS = [
     m for m in [os.environ.get("OPENROUTER_MODEL", "").strip()] if m
 ] + [
-    "openai/gpt-oss-120b:free",
-    "meta-llama/llama-3.3-70b-instruct:free",
     "google/gemma-4-31b-it:free",
+    "openai/gpt-oss-120b:free",  # retiré du gratuit au 29/09/2026 (404) : gardé pour détecter un retour
 ]
 # NVIDIA : meta/llama-3.3-70b-instruct renvoie 410 Gone (retiré le 26/08/2026). On teste
 # d'abord NVIDIA_MODEL s'il est défini, puis des candidats ; seuls ceux présents dans
@@ -49,13 +48,14 @@ OPENROUTER_MODELS = [
 NVIDIA_CANDIDATES = [
     m for m in [os.environ.get("NVIDIA_MODEL", "").strip()] if m
 ] + [
-    "openai/gpt-oss-120b",
-    "meta/llama-3.3-70b-instruct",
-    "meta/llama-3.1-70b-instruct",
-    "nvidia/llama-3.3-nemotron-super-49b-v1.5",
-    "nvidia/llama-3.3-nemotron-super-49b-v1",
-    "mistralai/mistral-small-24b-instruct",
-    "meta/llama-3.1-8b-instruct",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "mistralai/mistral-large-2-instruct",
+    "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+    "nvidia/llama-3.1-nemotron-70b-instruct",
+    "mistralai/mistral-large",
+    "nv-mistralai/mistral-nemo-12b-instruct",
+    # Retirés (410 Gone constatés le 29/09/2026) : meta/llama-3.3-70b-instruct, meta/llama-3.1-70b-instruct,
+    # openai/gpt-oss-120b.
 ]
 
 _KEY_RE = re.compile(r"(gsk_|nvapi-|sk-or-|ghp_|github_pat_)[A-Za-z0-9_\-]{8,}")
@@ -164,6 +164,15 @@ def probe_openrouter(key: str) -> dict:
             res["key_info"] = r.json().get("data", r.json()) if r.ok else (r.text or "")[:300]
         except ValueError:
             res["key_info"] = (r.text or "")[:300]
+    # Catalogue public : quels modèles sont RÉELLEMENT gratuits aujourd'hui (prix prompt+completion = 0).
+    cat = _get("https://openrouter.ai/api/v1/models")
+    if cat is not None and cat.ok:
+        try:
+            free = [m["id"] for m in cat.json().get("data", [])
+                    if str((m.get("pricing") or {}).get("prompt")) in ("0", "0.0") and str((m.get("pricing") or {}).get("completion")) in ("0", "0.0")]
+            res["modeles_gratuits_catalogue"] = sorted(free)
+        except (ValueError, KeyError):
+            pass
     # Un modèle à la fois (pas de liste `models` ici : on veut savoir lequel marche vraiment).
     res["per_model"] = {}
     for m in OPENROUTER_MODELS:
@@ -206,15 +215,15 @@ def probe_nvidia(key: str) -> dict:
         res["per_model"][m] = _chat("https://integrate.api.nvidia.com/v1/chat/completions", key, {"model": m},
                                     {"Accept": "application/json"})
         res["models_tested"].append(m)
-        if res["per_model"][m]["ok"]:
-            res["model"] = m
-            break
-        time.sleep(2)
+        if res["per_model"][m]["ok"] and "model" not in res:
+            res["model"] = m  # 1er qui répond ; on continue quand même pour lister TOUS ceux qui marchent
+        time.sleep(1.5)
+    res["modeles_qui_repondent"] = [m for m, v in res["per_model"].items() if v["ok"]]
     res["ping"] = next((v for v in res["per_model"].values() if v["ok"]), list(res["per_model"].values())[-1])
     if available:
         res["autres_modeles_llm_candidats"] = sorted(
             i for i in available if re.search(r"(llama|mistral|gpt-oss|nemotron|qwen)", i, re.I)
-        )[:25]
+        )
     res["limites_lisibles"] = (
         "NVIDIA NIM (build.nvidia.com) : ~40 requêtes/minute d'après la doc publique, quota en 'crédits' "
         "d'essai plutôt qu'en tokens ; PAS d'en-têtes x-ratelimit fiables -> à vérifier sur le tableau de "
@@ -272,7 +281,7 @@ def main() -> int:
                 print(f"  {k}: {v}")
         if res.get("detail"):
             print("  ", res["detail"])
-        for extra in ("key_info", "models_count", "autres_modeles_llm_candidats", "models_sample"):
+        for extra in ("key_info", "models_count", "modeles_qui_repondent", "modeles_gratuits_catalogue", "autres_modeles_llm_candidats", "models_sample"):
             if res.get(extra) not in (None, "", []):
                 print(f"  {extra}: {_scrub(json.dumps(res[extra], ensure_ascii=False), secrets)}")
         if res.get("per_model"):
