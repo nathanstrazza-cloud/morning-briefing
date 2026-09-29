@@ -1,0 +1,102 @@
+2026-09-29 04:10:42,231 [INFO] morning_briefing: === Démarrage du run Morning Briefing pour le 2026-09-29 ===
+2026-09-29 04:10:42,245 [INFO] morning_briefing: Fenêtre de recherche: 2026-09-28 06:09:23.646863+02:00 -> 2026-09-29 06:10:42.231703+02:00 (lundi=False, dernier_succes=2026-09-28 12:09:23.646863+02:00)
+2026-09-29 04:10:42,245 [INFO] morning_briefing.collecte: Début de la collecte (depuis=2026-09-28T06:09:23.646863+02:00, lundi=False)
+2026-09-29 04:10:42,313 [INFO] morning_briefing.collecte.rss: Flux Le Monde (france): 16 articles récupérés
+2026-09-29 04:10:42,735 [INFO] morning_briefing.collecte.rss: Flux France Info (france): 31 articles récupérés
+2026-09-29 04:10:42,978 [INFO] morning_briefing.collecte.rss: Flux Libération (france): 50 articles récupérés
+2026-09-29 04:10:43,354 [INFO] morning_briefing.collecte.rss: Flux 20 Minutes (france): 30 articles récupérés
+2026-09-29 04:10:43,405 [INFO] morning_briefing.collecte.rss: Flux Le Monde International (monde): 20 articles récupérés
+2026-09-29 04:10:43,524 [INFO] morning_briefing.collecte.rss: Flux New York Times World (monde): 57 articles récupérés
+2026-09-29 04:10:43,774 [INFO] morning_briefing.collecte.rss: Flux France 24 International (monde): 24 articles récupérés
+2026-09-29 04:10:43,820 [INFO] morning_briefing.collecte.rss: Flux Le Monde Économie (economie): 20 articles récupérés
+2026-09-29 04:10:44,088 [INFO] morning_briefing.collecte.rss: Flux Le Figaro Économie (economie): 20 articles récupérés
+2026-09-29 04:10:44,148 [INFO] morning_briefing.collecte.rss: Flux BFM Business (economie): 30 articles récupérés
+2026-09-29 04:10:44,198 [INFO] morning_briefing.collecte.rss: Flux Le Monde Sciences (sciences): 20 articles récupérés
+2026-09-29 04:10:44,902 [WARNING] morning_briefing.collecte.rss: Flux RSS illisible ou vide: CNRS Actualités (https://www.cnrs.fr/fr/rss.xml) -- <unknown>:18:83: not well-formed (invalid token)
+2026-09-29 04:10:45,115 [INFO] morning_briefing.collecte.rss: Flux Nature News (sciences): 75 articles récupérés
+2026-09-29 04:10:45,389 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Football (sport_football): 50 articles récupérés
+2026-09-29 04:10:46,414 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Basket (sport_basketball): 50 articles récupérés
+2026-09-29 04:10:46,452 [INFO] morning_briefing.collecte.rss: Flux ESPN NBA News (sport_basketball): 0 articles récupérés
+2026-09-29 04:10:46,643 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Natation (sport_natation): 50 articles récupérés
+2026-09-29 04:10:46,886 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Tennis (sport_autres): 50 articles récupérés
+2026-09-29 04:10:47,066 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Rugby (sport_autres): 50 articles récupérés
+2026-09-29 04:10:47,942 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Cyclisme (sport_autres): 50 articles récupérés
+2026-09-29 04:10:48,351 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Hand (sport_autres): 0 articles récupérés
+2026-09-29 04:10:48,642 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Volley (sport_autres): 0 articles récupérés
+2026-09-29 04:10:48,643 [INFO] morning_briefing.collecte.sports: Sport collecté: foot=50 basket=12 natation=1 autres(France)=9
+2026-09-29 04:10:49,023 [INFO] morning_briefing.collecte.markets: Marchés collectés: 5 indices, 2 matières premières
+2026-09-29 04:10:50,608 [INFO] morning_briefing.collecte.weather: Météo collectée pour 4/4 villes
+2026-09-29 04:10:50,608 [INFO] morning_briefing.collecte: Collecte terminée: 259 actualités, 72 items sport, 5 indices, 4 villes météo
+2026-09-29 04:10:50,608 [WARNING] morning_briefing.collecte: Flux RSS en échec ce run: CNRS Actualités
+2026-09-29 04:10:50,683 [INFO] morning_briefing.analyse.dedup: Déduplication: 120 items bruts -> 108 événements uniques
+2026-09-29 04:10:50,685 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 108 événements
+2026-09-29 04:10:50,685 [INFO] morning_briefing.analyse.verification: Vérification: 7/108 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-29 04:10:50,704 [INFO] morning_briefing.analyse.dedup: Déduplication: 65 items bruts -> 57 événements uniques
+2026-09-29 04:10:50,705 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 57 événements
+2026-09-29 04:10:50,705 [INFO] morning_briefing.analyse.verification: Vérification: 3/57 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-29 04:10:50,705 [INFO] morning_briefing: Entonnoir actualité (seuil=5): france {'bruts': 120, 'evenements_uniques': 108, 'retenus_apres_seuil': 65} | monde {'bruts': 65, 'evenements_uniques': 57, 'retenus_apres_seuil': 27}
+2026-09-29 04:10:50,731 [INFO] morning_briefing.analyse.dedup: Déduplication: 68 items bruts -> 60 événements uniques
+2026-09-29 04:10:50,732 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 60 événements
+2026-09-29 04:10:50,732 [INFO] morning_briefing.analyse.dedup: Déduplication: 6 items bruts -> 6 événements uniques
+2026-09-29 04:10:50,733 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 6 événements
+2026-09-29 04:10:50,733 [INFO] morning_briefing.analyse.verification: Vérification: 0/6 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-29 04:10:50,745 [INFO] morning_briefing.analyse.dedup: Déduplication: 50 items bruts -> 46 événements uniques
+2026-09-29 04:10:50,746 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 46 événements
+2026-09-29 04:10:50,747 [INFO] morning_briefing.analyse.dedup: Déduplication: 12 items bruts -> 12 événements uniques
+2026-09-29 04:10:50,747 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 12 événements
+2026-09-29 04:10:50,747 [INFO] morning_briefing.analyse.dedup: Déduplication: 1 items bruts -> 1 événements uniques
+2026-09-29 04:10:50,748 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 1 événements
+2026-09-29 04:10:50,748 [INFO] morning_briefing.analyse.dedup: Déduplication: 9 items bruts -> 9 événements uniques
+2026-09-29 04:10:50,749 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 9 événements
+2026-09-29 04:10:50,749 [INFO] morning_briefing: Sport réduit à 4 item(s) au total (max_sport_total=4): {'football': 4, 'basketball': 0, 'natation': 0, 'autres': 0}
+2026-09-29 04:10:50,749 [INFO] morning_briefing.generation.llm: Providers LLM disponibles pour le rôle 'bloc' (ordre d'essai): groq -> openrouter -> mistral -> nvidia
+2026-09-29 04:10:50,749 [INFO] morning_briefing.generation.llm: Providers LLM disponibles pour le rôle 'science' (ordre d'essai): mistral -> nvidia -> groq -> openrouter
+2026-09-29 04:10:50,749 [INFO] morning_briefing.generation.llm: Providers LLM disponibles pour le rôle 'anglais' (ordre d'essai): openrouter -> nvidia -> groq -> mistral
+2026-09-29 04:10:50,751 [WARNING] morning_briefing.generation: Prompt LLM trop volumineux (>12000 caractères) -> sport réduit=True, économie réduite=True, actualité réduite=False (retenus après réduction : france=5, monde=5, économie=3, sport=0 au total).
+2026-09-29 04:10:54,886 [ERROR] morning_briefing.generation: Échec de la génération LLM (groq, tentative 1/2, budget=12000 caractères): Expecting value: line 1 column 1 (char 0)
+2026-09-29 04:10:54,888 [WARNING] morning_briefing.generation: Prompt LLM trop volumineux (>4000 caractères) -> sport réduit=True, économie réduite=True, actualité réduite=True (retenus après réduction : france=2, monde=2, économie=0, sport=0 au total).
+2026-09-29 04:10:54,957 [ERROR] morning_briefing.generation: Échec de la génération LLM (groq, tentative 2/2, budget=4000 caractères): 429 Too Many Requests (provider=groq): {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1vh8sjfe61sn0e59wqaes1t` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5488, Requested 2777. Please try again in 1.9875s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+ | corps de la réponse: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1vh8sjfe61sn0e59wqaes1t` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5488, Requested 2777. Please try again in 1.9875s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+2026-09-29 04:10:54,957 [WARNING] morning_briefing.generation: Provider 'groq' en rate limit (429) -> passage direct au provider suivant sans nouvelle tentative.
+2026-09-29 04:10:54,959 [WARNING] morning_briefing.generation: Provider 'groq' épuisé -> passage au suivant s'il existe.
+2026-09-29 04:10:54,961 [WARNING] morning_briefing.generation: Prompt LLM trop volumineux (>12000 caractères) -> sport réduit=True, économie réduite=True, actualité réduite=False (retenus après réduction : france=5, monde=5, économie=3, sport=0 au total).
+2026-09-29 04:10:55,183 [ERROR] morning_briefing.generation: Échec de la génération LLM (openrouter, tentative 1/2, budget=12000 caractères): 429 Too Many Requests (provider=openrouter): {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Google AI Studio","is_byok":false,"provider_error_code":"429","limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to | corps de la réponse: {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Google AI Studio","is_byok":false,"provider_error_code":"429","limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to
+2026-09-29 04:10:55,183 [WARNING] morning_briefing.generation: Provider 'openrouter' en rate limit (429) -> passage direct au provider suivant sans nouvelle tentative.
+2026-09-29 04:10:55,184 [WARNING] morning_briefing.generation: Provider 'openrouter' épuisé -> passage au suivant s'il existe.
+2026-09-29 04:10:55,186 [WARNING] morning_briefing.generation: Prompt LLM trop volumineux (>12000 caractères) -> sport réduit=True, économie réduite=True, actualité réduite=False (retenus après réduction : france=5, monde=5, économie=3, sport=0 au total).
+2026-09-29 04:10:55,369 [ERROR] morning_briefing.generation: Échec de la génération LLM (mistral, tentative 1/2, budget=12000 caractères): 429 Too Many Requests (provider=mistral): {"object":"error","message":"Rate limit exceeded","type":"rate_limited","param":null,"code":"1300","raw_status_code":429} | corps de la réponse: {"object":"error","message":"Rate limit exceeded","type":"rate_limited","param":null,"code":"1300","raw_status_code":429}
+2026-09-29 04:10:55,369 [WARNING] morning_briefing.generation: Provider 'mistral' en rate limit (429) -> passage direct au provider suivant sans nouvelle tentative.
+2026-09-29 04:10:55,370 [WARNING] morning_briefing.generation: Provider 'mistral' épuisé -> passage au suivant s'il existe.
+2026-09-29 04:10:55,372 [WARNING] morning_briefing.generation: Prompt LLM trop volumineux (>12000 caractères) -> sport réduit=True, économie réduite=True, actualité réduite=False (retenus après réduction : france=5, monde=5, économie=3, sport=0 au total).
+2026-09-29 04:10:55,413 [ERROR] morning_briefing.generation: Échec de la génération LLM (nvidia, tentative 1/2, budget=12000 caractères): 410 Gone (provider=nvidia): {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+ | corps de la réponse: {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-29 04:10:55,416 [WARNING] morning_briefing.generation: Prompt LLM trop volumineux (>4000 caractères) -> sport réduit=True, économie réduite=True, actualité réduite=True (retenus après réduction : france=2, monde=2, économie=0, sport=0 au total).
+2026-09-29 04:10:55,468 [ERROR] morning_briefing.generation: Échec de la génération LLM (nvidia, tentative 2/2, budget=4000 caractères): 410 Gone (provider=nvidia): {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+ | corps de la réponse: {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-29 04:10:55,469 [WARNING] morning_briefing.generation: Provider 'nvidia' épuisé -> passage au suivant s'il existe.
+2026-09-29 04:10:55,469 [INFO] morning_briefing.generation: Pause de 60 s avant l'appel LLM 'science' (espacement anti rate-limit)
+2026-09-29 04:11:55,677 [ERROR] morning_briefing.generation: Échec de la génération LLM (mistral, tentative 1/1, budget=12000 caractères): 429 Too Many Requests (provider=mistral): {"object":"error","message":"Rate limit exceeded","type":"rate_limited","param":null,"code":"1300","raw_status_code":429} | corps de la réponse: {"object":"error","message":"Rate limit exceeded","type":"rate_limited","param":null,"code":"1300","raw_status_code":429}
+2026-09-29 04:11:55,677 [WARNING] morning_briefing.generation: Provider 'mistral' en rate limit (429) -> passage direct au provider suivant sans nouvelle tentative.
+2026-09-29 04:11:55,678 [WARNING] morning_briefing.generation: Provider 'mistral' épuisé -> passage au suivant s'il existe.
+2026-09-29 04:11:55,733 [ERROR] morning_briefing.generation: Échec de la génération LLM (nvidia, tentative 1/1, budget=12000 caractères): 410 Gone (provider=nvidia): {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+ | corps de la réponse: {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-29 04:11:55,734 [WARNING] morning_briefing.generation: Provider 'nvidia' épuisé -> passage au suivant s'il existe.
+2026-09-29 04:11:59,685 [INFO] morning_briefing.generation: Pause de 60 s avant l'appel LLM 'anglais' (espacement anti rate-limit)
+2026-09-29 04:12:59,887 [ERROR] morning_briefing.generation: Échec de la génération LLM (openrouter, tentative 1/1, budget=12000 caractères): 429 Too Many Requests (provider=openrouter): {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Google AI Studio","is_byok":false,"provider_error_code":"429","limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to | corps de la réponse: {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Google AI Studio","is_byok":false,"provider_error_code":"429","limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to
+2026-09-29 04:12:59,887 [WARNING] morning_briefing.generation: Provider 'openrouter' en rate limit (429) -> passage direct au provider suivant sans nouvelle tentative.
+2026-09-29 04:12:59,888 [WARNING] morning_briefing.generation: Provider 'openrouter' épuisé -> passage au suivant s'il existe.
+2026-09-29 04:12:59,946 [ERROR] morning_briefing.generation: Échec de la génération LLM (nvidia, tentative 1/1, budget=12000 caractères): 410 Gone (provider=nvidia): {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+ | corps de la réponse: {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-29 04:12:59,947 [WARNING] morning_briefing.generation: Provider 'nvidia' épuisé -> passage au suivant s'il existe.
+2026-09-29 04:13:02,256 [ERROR] morning_briefing.generation: Échec de la génération LLM (groq, tentative 1/1, budget=12000 caractères): Unterminated string starting at: line 32 column 21 (char 1169)
+2026-09-29 04:13:02,256 [WARNING] morning_briefing.generation: Provider 'groq' épuisé -> passage au suivant s'il existe.
+2026-09-29 04:13:02,423 [ERROR] morning_briefing.generation: Échec de la génération LLM (mistral, tentative 1/1, budget=12000 caractères): 429 Too Many Requests (provider=mistral): {"object":"error","message":"Rate limit exceeded","type":"rate_limited","param":null,"code":"1300","raw_status_code":429} | corps de la réponse: {"object":"error","message":"Rate limit exceeded","type":"rate_limited","param":null,"code":"1300","raw_status_code":429}
+2026-09-29 04:13:02,423 [WARNING] morning_briefing.generation: Provider 'mistral' en rate limit (429) -> passage direct au provider suivant sans nouvelle tentative.
+2026-09-29 04:13:02,424 [WARNING] morning_briefing.generation: Provider 'mistral' épuisé -> passage au suivant s'il existe.
+2026-09-29 04:13:02,427 [INFO] morning_briefing.stockage: Briefing sauvegardé: /home/runner/work/morning-briefing/morning-briefing/docs/data/briefings/2026-09-29.json
+2026-09-29 04:13:02,427 [INFO] morning_briefing: === Run terminé avec succès pour le 2026-09-29 ===
