@@ -40,6 +40,8 @@ OPENROUTER_MODELS = [
     m for m in [os.environ.get("OPENROUTER_MODEL", "").strip()] if m
 ] + [
     "google/gemma-4-31b-it:free",
+    "qwen/qwen3.8-27b:free",
+    "google/gemma-4-26b-a4b-it:free",
     "openai/gpt-oss-120b:free",  # retiré du gratuit au 29/09/2026 (404) : gardé pour détecter un retour
 ]
 # NVIDIA : meta/llama-3.3-70b-instruct renvoie 410 Gone (retiré le 26/08/2026). On teste
@@ -48,12 +50,14 @@ OPENROUTER_MODELS = [
 NVIDIA_CANDIDATES = [
     m for m in [os.environ.get("NVIDIA_MODEL", "").strip()] if m
 ] + [
-    "nvidia/nemotron-3-super-120b-a12b",
-    "mistralai/mistral-large-2-instruct",
-    "nvidia/llama-3.1-nemotron-ultra-253b-v1",
-    "nvidia/llama-3.1-nemotron-70b-instruct",
-    "mistralai/mistral-large",
-    "nv-mistralai/mistral-nemo-12b-instruct",
+    "nvidia/nemotron-3-super-120b-a12b",   # OK le 29/09/2026
+    "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "nvidia/nemotron-nano-3-30b-a3b",
+    "openai/gpt-oss-20b",
+    "nvidia/nemotron-4-340b-instruct",
+    # 404 "Function not found for account" le 29/09/2026 (listés au catalogue mais NON activés sur ce compte) :
+    # mistralai/mistral-large(-2-instruct), nvidia/llama-3.1-nemotron-ultra-253b-v1, nvidia/llama-3.1-nemotron-70b-instruct,
+    # nv-mistralai/mistral-nemo-12b-instruct.
     # Retirés (410 Gone constatés le 29/09/2026) : meta/llama-3.3-70b-instruct, meta/llama-3.1-70b-instruct,
     # openai/gpt-oss-120b.
 ]
@@ -111,6 +115,31 @@ def _chat(url: str, key: str, model_payload: dict, extra_headers: dict | None = 
     return res
 
 
+def _usable(url: str, key: str, model_payload: dict, extra_headers: dict | None = None) -> dict:
+    """2e test, plus réaliste : 400 tokens de sortie, réponse JSON attendue. Détecte les modèles à
+    raisonnement qui dépensent tout leur budget à réfléchir (content vide) alors que le ping à
+    1 token passe (HTTP 200). `usable` = True si le contenu est un JSON {"ok": true}."""
+    headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
+    headers.update(extra_headers or {})
+    body = {"messages": [{"role": "user", "content": 'Réponds uniquement par ce JSON exact: {"ok": true}'}],
+            "max_tokens": 400, "temperature": 0}
+    body.update(model_payload)
+    try:
+        r = requests.post(url, headers=headers, json=body, timeout=TIMEOUT)
+    except requests.RequestException as exc:
+        return {"usable": False, "error": f"{type(exc).__name__}: {exc}"}
+    if not r.ok:
+        return {"usable": False, "http": r.status_code, "error": (r.text or "")[:300]}
+    try:
+        d = r.json()
+        ch = (d.get("choices") or [{}])[0]
+        content = ((ch.get("message") or {}).get("content") or "").strip()
+        return {"usable": '"ok"' in content, "http": 200, "finish_reason": ch.get("finish_reason"),
+                "content_preview": content[:60], "usage": d.get("usage")}
+    except ValueError:
+        return {"usable": False, "http": 200, "error": "réponse non JSON"}
+
+
 def _get(url: str, key: str | None = None, timeout: int = TIMEOUT) -> requests.Response | None:
     headers = {"Authorization": f"Bearer {key}"} if key else {}
     try:
@@ -121,7 +150,10 @@ def _get(url: str, key: str | None = None, timeout: int = TIMEOUT) -> requests.R
 
 def probe_groq(key: str) -> dict:
     res = {"provider": "groq", "model": GROQ_MODEL}
-    res["ping"] = _chat("https://api.groq.com/openai/v1/chat/completions", key, {"model": GROQ_MODEL})
+    payload = {"model": GROQ_MODEL, "reasoning_effort": "low"}  # gpt-oss : limite la réflexion qui mange max_tokens
+    res["ping"] = _chat("https://api.groq.com/openai/v1/chat/completions", key, payload)
+    if res["ping"]["ok"]:
+        res["usable_test"] = _usable("https://api.groq.com/openai/v1/chat/completions", key, payload)
     # Groq renvoie dans les en-têtes : x-ratelimit-limit-requests (par JOUR), x-ratelimit-limit-tokens
     # (par MINUTE), x-ratelimit-remaining-*, x-ratelimit-reset-* (cf. console.groq.com/docs/rate-limits).
     res["limites_lisibles"] = (
@@ -145,7 +177,22 @@ def probe_mistral(key: str) -> dict:
                 pass
         else:
             res["models_error"] = (r.text or "")[:300]
-    res["ping"] = _chat("https://api.mistral.ai/v1/chat/completions", key, {"model": MISTRAL_MODEL})
+    # Plusieurs modèles : les limites Mistral sont PAR MODÈLE (en-tête x-ratelimit-limit-req-minute = 0
+    # signifie quota gratuit nul pour ce modèle/compte). On teste donc plusieurs modèles.
+    res["per_model"] = {}
+    for m in [MISTRAL_MODEL, "mistral-small-2603", "open-mistral-nemo", "ministral-8b-latest",
+              "mistral-medium-latest", "magistral-small-latest"]:
+        if m in res["per_model"]:
+            continue
+        res["per_model"][m] = _chat("https://api.mistral.ai/v1/chat/completions", key, {"model": m})
+        time.sleep(1.5)
+    res["modeles_qui_repondent"] = [m for m, v in res["per_model"].items() if v["ok"]]
+    res["ping"] = res["per_model"][MISTRAL_MODEL]
+    if res["modeles_qui_repondent"]:
+        best = res["modeles_qui_repondent"][0]
+        res["ping"] = res["per_model"][best]
+        res["model"] = best
+        res["usable_test"] = _usable("https://api.mistral.ai/v1/chat/completions", key, {"model": best})
     res["limites_lisibles"] = (
         "Mistral ne publie plus de chiffres fixes : 3 limites par ORGANISATION (requêtes/seconde, "
         "tokens/minute, tokens/mois) visibles SEULEMENT sur console.mistral.ai > Limits (Admin). "
@@ -181,8 +228,12 @@ def probe_openrouter(key: str) -> dict:
             {"HTTP-Referer": "https://github.com/nathanstrazza-cloud/morning-briefing", "X-Title": "Morning Briefing probe"},
         )
         if res["per_model"][m]["ok"]:
-            break  # un seul modèle qui répond suffit pour la sonde (économise le quota journalier)
-        time.sleep(3)
+            res["model"] = m
+            res["usable_test"] = _usable(
+                "https://openrouter.ai/api/v1/chat/completions", key, {"model": m},
+                {"HTTP-Referer": "https://github.com/nathanstrazza-cloud/morning-briefing", "X-Title": "Morning Briefing probe"})
+            break  # un seul modèle qui répond suffit (économise le quota de 50 requêtes/jour)
+        time.sleep(4)
     res["ping"] = next((v for v in res["per_model"].values() if v["ok"]), list(res["per_model"].values())[-1])
     res["limites_lisibles"] = (
         "OpenRouter : modèles ':free' partagent un quota commun (~20 requêtes/minute ; ~50 requêtes/jour "
@@ -220,6 +271,9 @@ def probe_nvidia(key: str) -> dict:
         time.sleep(1.5)
     res["modeles_qui_repondent"] = [m for m, v in res["per_model"].items() if v["ok"]]
     res["ping"] = next((v for v in res["per_model"].values() if v["ok"]), list(res["per_model"].values())[-1])
+    if res.get("model"):
+        res["usable_test"] = _usable("https://integrate.api.nvidia.com/v1/chat/completions", key,
+                                     {"model": res["model"]}, {"Accept": "application/json"})
     if available:
         res["autres_modeles_llm_candidats"] = sorted(
             i for i in available if re.search(r"(llama|mistral|gpt-oss|nemotron|qwen)", i, re.I)
@@ -281,7 +335,7 @@ def main() -> int:
                 print(f"  {k}: {v}")
         if res.get("detail"):
             print("  ", res["detail"])
-        for extra in ("key_info", "models_count", "modeles_qui_repondent", "modeles_gratuits_catalogue", "autres_modeles_llm_candidats", "models_sample"):
+        for extra in ("usable_test", "key_info", "models_count", "modeles_qui_repondent", "modeles_gratuits_catalogue", "autres_modeles_llm_candidats", "models_sample"):
             if res.get(extra) not in (None, "", []):
                 print(f"  {extra}: {_scrub(json.dumps(res[extra], ensure_ascii=False), secrets)}")
         if res.get("per_model"):
