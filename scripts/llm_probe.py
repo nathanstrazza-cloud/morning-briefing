@@ -39,6 +39,8 @@ MISTRAL_MODEL = os.environ.get("MISTRAL_MODEL") or "mistral-small-latest"
 OPENROUTER_MODELS = [
     m for m in [os.environ.get("OPENROUTER_MODEL", "").strip()] if m
 ] + [
+    "openrouter/free",  # routeur automatique OpenRouter vers un modèle gratuit disponible
+    "nvidia/nemotron-3-super-120b-a12b:free",
     "google/gemma-4-31b-it:free",
     "qwen/qwen3.8-27b:free",
     "google/gemma-4-26b-a4b-it:free",

@@ -211,7 +211,7 @@ class MistralProvider(LLMProvider):
 
     def __init__(self, api_key: str, model: str | None = None):
         self.api_key = api_key
-        self.model = model or os.environ.get("MISTRAL_MODEL", "mistral-small-latest")
+        self.model = model or os.environ.get("MISTRAL_MODEL") or "open-mistral-nemo"  # 29/09: mistral-small/medium/magistral = quota gratuit 0 req/min (429 code 1300) ; open-mistral-nemo et ministral-8b-latest répondent
 
     def complete(self, system: str, user: str, max_tokens: int = MAX_OUTPUT_TOKENS) -> str:
         data = self._post(
@@ -288,8 +288,8 @@ class OpenRouterProvider(LLMProvider):
     name = "openrouter"
 
     DEFAULT_MODELS = (
-        "openai/gpt-oss-120b:free",
-        "meta-llama/llama-3.3-70b-instruct:free",
+        "openrouter/free",  # 29/09: gpt-oss-120b:free et llama-3.3:free = 404 (plus gratuits)
+        "nvidia/nemotron-3-super-120b-a12b:free",
         "google/gemma-4-31b-it:free",
     )
 
@@ -335,7 +335,7 @@ class NvidiaProvider(LLMProvider):
 
     def __init__(self, api_key: str, model: str | None = None):
         self.api_key = api_key
-        self.model = model or os.environ.get("NVIDIA_MODEL", "meta/llama-3.3-70b-instruct")
+        self.model = model or os.environ.get("NVIDIA_MODEL") or "nvidia/nemotron-3.5-lightning-30b-a3b"  # 29/09: llama-3.3/3.1-70b et gpt-oss-120b = 410 Gone ; alternative testée OK : openai/gpt-oss-20b
 
     def complete(self, system: str, user: str, max_tokens: int = MAX_OUTPUT_TOKENS) -> str:
         data = self._post(
