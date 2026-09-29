@@ -1,0 +1,193 @@
+[
+  {
+    "provider": "groq",
+    "model": "",
+    "ping": {
+      "ok": false,
+      "http": 404,
+      "latency_s": 0.25,
+      "limit_headers": {},
+      "error": "{\"error\":{\"message\":\"The model `` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
+    },
+    "limites_lisibles": "Groq : requêtes par JOUR (RPD) et tokens par MINUTE (TPM) dans les en-têtes x-ratelimit-limit-requests / x-ratelimit-limit-tokens ; quotas propres à chaque modèle.",
+    "verdict": "ÉCHEC (HTTP 404)"
+  },
+  {
+    "provider": "mistral",
+    "model": "",
+    "models_http": 200,
+    "models_count": 46,
+    "models_sample": [
+      "magistral-medium-latest",
+      "magistral-small-latest",
+      "mistral-medium",
+      "mistral-medium-2604",
+      "mistral-medium-3",
+      "mistral-medium-3-5",
+      "mistral-medium-3.5",
+      "mistral-medium-latest",
+      "mistral-small-2603",
+      "mistral-small-latest",
+      "voxtral-small-2507",
+      "voxtral-small-latest"
+    ],
+    "ping": {
+      "ok": false,
+      "http": 400,
+      "latency_s": 0.24,
+      "limit_headers": {},
+      "error": "{\"object\":\"error\",\"message\":\"Missing model parameter.\",\"type\":\"invalid_model\",\"param\":null,\"code\":\"1500\",\"raw_status_code\":400}"
+    },
+    "limites_lisibles": "Mistral ne publie plus de chiffres fixes : 3 limites par ORGANISATION (requêtes/seconde, tokens/minute, tokens/mois) visibles SEULEMENT sur console.mistral.ai > Limits (Admin). En-têtes x-ratelimit-* parfois renvoyés (cf. ping.limit_headers).",
+    "verdict": "ÉCHEC (HTTP 400)"
+  },
+  {
+    "provider": "openrouter",
+    "models_tested": [
+      "openai/gpt-oss-120b:free",
+      "meta-llama/llama-3.3-70b-instruct:free",
+      "google/gemma-4-31b-it:free"
+    ],
+    "key_info_http": 200,
+    "key_info": {
+      "label": "sk-or-v1-2f7...b05",
+      "is_management_key": false,
+      "is_provisioning_key": false,
+      "limit": 50,
+      "limit_reset": null,
+      "limit_remaining": 50,
+      "include_byok_in_limit": false,
+      "usage": 0,
+      "usage_daily": 0,
+      "usage_weekly": 0,
+      "usage_monthly": 0,
+      "byok_usage": 0,
+      "byok_usage_daily": 0,
+      "byok_usage_weekly": 0,
+      "byok_usage_monthly": 0,
+      "is_free_tier": true,
+      "expires_at": null,
+      "creator_user_id": "user_3JxqD0omToGNtN9egr2WJOCoRKv",
+      "organization_id": null,
+      "workspace_id": "4bf347b2-68c8-5f64-89a4-de5363b85396",
+      "allowed_data_regions": [
+        "global"
+      ],
+      "free_model_daily_requests": {
+        "used": 0,
+        "limit": 50,
+        "remaining": 50
+      },
+      "rate_limit": {
+        "requests": -1,
+        "interval": "10s",
+        "note": "This field is deprecated and safe to ignore."
+      }
+    },
+    "per_model": {
+      "openai/gpt-oss-120b:free": {
+        "ok": false,
+        "http": 404,
+        "latency_s": 0.07,
+        "limit_headers": {},
+        "error": "{\"error\":{\"message\":\"This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b\",\"code\":404},\"user_id\":\"user_3JxqD0omToGNtN9egr2WJOCoRKv\"}"
+      },
+      "meta-llama/llama-3.3-70b-instruct:free": {
+        "ok": false,
+        "http": 404,
+        "latency_s": 0.07,
+        "limit_headers": {},
+        "error": "{\"error\":{\"message\":\"This model is unavailable for free. The paid version is available now - use this slug instead: meta-llama/llama-3.3-70b-instruct\",\"code\":404},\"user_id\":\"user_3JxqD0omToGNtN9egr2WJOCoRKv\"}"
+      },
+      "google/gemma-4-31b-it:free": {
+        "ok": true,
+        "http": 200,
+        "latency_s": 0.68,
+        "limit_headers": {},
+        "model_used": "google/gemma-4-31b-it:free",
+        "usage": null,
+        "content_preview": ""
+      }
+    },
+    "ping": {
+      "ok": true,
+      "http": 200,
+      "latency_s": 0.68,
+      "limit_headers": {},
+      "model_used": "google/gemma-4-31b-it:free",
+      "usage": null,
+      "content_preview": ""
+    },
+    "limites_lisibles": "OpenRouter : modèles ':free' partagent un quota commun (~20 requêtes/minute ; ~50 requêtes/jour sans crédit, ~1000/jour si ≥10 $ de crédit déposés d'après la doc publique) ; le champ key_info confirme is_free_tier et le rate_limit réel du compte. Les modèles gratuits sont aussi limités en amont (429 'rate-limited upstream' = fournisseur du modèle saturé, pas votre quota).",
+    "verdict": "OK"
+  },
+  {
+    "provider": "nvidia",
+    "models_tested": [
+      "openai/gpt-oss-120b",
+      "meta/llama-3.3-70b-instruct",
+      "meta/llama-3.1-70b-instruct"
+    ],
+    "models_http": 200,
+    "models_count": 81,
+    "per_model": {
+      "openai/gpt-oss-120b": {
+        "ok": false,
+        "http": 410,
+        "latency_s": 0.14,
+        "limit_headers": {},
+        "error": "{\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'openai/gpt-oss-120b' has reached its end of life on 2026-09-03T08:00:00Z and is no longer available.\"}\n"
+      },
+      "meta/llama-3.3-70b-instruct": {
+        "ok": false,
+        "http": 410,
+        "latency_s": 0.12,
+        "limit_headers": {},
+        "error": "{\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available.\"}\n"
+      },
+      "meta/llama-3.1-70b-instruct": {
+        "ok": false,
+        "http": 410,
+        "latency_s": 0.13,
+        "limit_headers": {},
+        "error": "{\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'meta/llama-3.1-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available.\"}\n"
+      }
+    },
+    "ping": {
+      "ok": false,
+      "http": 410,
+      "latency_s": 0.13,
+      "limit_headers": {},
+      "error": "{\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'meta/llama-3.1-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available.\"}\n"
+    },
+    "autres_modeles_llm_candidats": [
+      "meta/codellama-70b",
+      "meta/llama-3.2-11b-vision-instruct",
+      "meta/llama-3.2-90b-vision-instruct",
+      "meta/llama-guard-4-12b",
+      "meta/llama2-70b",
+      "mistralai/codestral-22b-instruct-v0.1",
+      "mistralai/mistral-7b-instruct-v0.3",
+      "mistralai/mistral-large",
+      "mistralai/mistral-large-2-instruct",
+      "mistralai/mixtral-8x22b-v0.1",
+      "nv-mistralai/mistral-nemo-12b-instruct",
+      "nvidia/llama-3.1-nemoguard-8b-content-safety",
+      "nvidia/llama-3.1-nemoguard-8b-topic-control",
+      "nvidia/llama-3.1-nemotron-51b-instruct",
+      "nvidia/llama-3.1-nemotron-70b-instruct",
+      "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+      "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+      "nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1",
+      "nvidia/llama-3.2-nv-embedqa-1b-v1",
+      "nvidia/llama-nemotron-embed-vl-1b-v2",
+      "nvidia/llama3-chatqa-1.5-70b",
+      "nvidia/mistral-nemo-minitron-8b-8k-instruct",
+      "nvidia/nemotron-3-embed-1b",
+      "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+      "nvidia/nemotron-3-super-120b-a12b"
+    ],
+    "limites_lisibles": "NVIDIA NIM (build.nvidia.com) : ~40 requêtes/minute d'après la doc publique, quota en 'crédits' d'essai plutôt qu'en tokens ; PAS d'en-têtes x-ratelimit fiables -> à vérifier sur le tableau de bord build.nvidia.com. Un 410 Gone = modèle retiré : choisir un autre id dans autres_modeles_llm_candidats et le passer via NVIDIA_MODEL.",
+    "verdict": "ÉCHEC (HTTP 410)"
+  }
+]
