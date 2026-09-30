@@ -1,0 +1,71 @@
+2026-09-30 09:56:01,757 [INFO] morning_briefing: === Démarrage du run Morning Briefing pour le 2026-09-30 ===
+2026-09-30 09:56:01,766 [INFO] morning_briefing: Fenêtre de recherche: 2026-09-29 00:10:42.231703+02:00 -> 2026-09-30 11:56:01.757242+02:00 (lundi=False, dernier_succes=2026-09-29 06:10:42.231703+02:00)
+2026-09-30 09:56:01,766 [INFO] morning_briefing.collecte: Début de la collecte (depuis=2026-09-29T00:10:42.231703+02:00, lundi=False)
+2026-09-30 09:56:02,079 [INFO] morning_briefing.collecte.rss: Flux Le Monde (france): 16 articles récupérés
+2026-09-30 09:56:02,387 [INFO] morning_briefing.collecte.rss: Flux France Info (france): 31 articles récupérés
+2026-09-30 09:56:02,629 [INFO] morning_briefing.collecte.rss: Flux Libération (france): 50 articles récupérés
+2026-09-30 09:56:02,915 [INFO] morning_briefing.collecte.rss: Flux 20 Minutes (france): 30 articles récupérés
+2026-09-30 09:56:02,968 [INFO] morning_briefing.collecte.rss: Flux Le Monde International (monde): 20 articles récupérés
+2026-09-30 09:56:03,185 [INFO] morning_briefing.collecte.rss: Flux New York Times World (monde): 54 articles récupérés
+2026-09-30 09:56:03,331 [INFO] morning_briefing.collecte.rss: Flux France 24 International (monde): 24 articles récupérés
+2026-09-30 09:56:03,382 [INFO] morning_briefing.collecte.rss: Flux Le Monde Économie (economie): 20 articles récupérés
+2026-09-30 09:56:03,761 [INFO] morning_briefing.collecte.rss: Flux Le Figaro Économie (economie): 20 articles récupérés
+2026-09-30 09:56:03,982 [INFO] morning_briefing.collecte.rss: Flux BFM Business (economie): 30 articles récupérés
+2026-09-30 09:56:04,039 [INFO] morning_briefing.collecte.rss: Flux Le Monde Sciences (sciences): 20 articles récupérés
+2026-09-30 09:56:04,865 [WARNING] morning_briefing.collecte.rss: Flux RSS illisible ou vide: CNRS Actualités (https://www.cnrs.fr/fr/rss.xml) -- <unknown>:14:414: not well-formed (invalid token)
+2026-09-30 09:56:06,220 [INFO] morning_briefing.collecte.rss: Flux Nature News (sciences): 75 articles récupérés
+2026-09-30 09:56:06,354 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Football (sport_football): 50 articles récupérés
+2026-09-30 09:56:07,380 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Basket (sport_basketball): 50 articles récupérés
+2026-09-30 09:56:07,443 [INFO] morning_briefing.collecte.rss: Flux ESPN NBA News (sport_basketball): 0 articles récupérés
+2026-09-30 09:56:07,658 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Natation (sport_natation): 50 articles récupérés
+2026-09-30 09:56:07,747 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Tennis (sport_autres): 50 articles récupérés
+2026-09-30 09:56:07,932 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Rugby (sport_autres): 50 articles récupérés
+2026-09-30 09:56:08,126 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Cyclisme (sport_autres): 50 articles récupérés
+2026-09-30 09:56:08,448 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Hand (sport_autres): 0 articles récupérés
+2026-09-30 09:56:08,790 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Volley (sport_autres): 0 articles récupérés
+2026-09-30 09:56:08,792 [INFO] morning_briefing.collecte.sports: Sport collecté: foot=50 basket=20 natation=0 autres(France)=11
+2026-09-30 09:56:09,310 [INFO] morning_briefing.collecte.markets: Marchés collectés: 5 indices, 2 matières premières
+2026-09-30 09:56:10,144 [INFO] morning_briefing.collecte.weather: Météo collectée pour 4/4 villes
+2026-09-30 09:56:10,145 [INFO] morning_briefing.collecte: Collecte terminée: 293 actualités, 81 items sport, 5 indices, 4 villes météo
+2026-09-30 09:56:10,145 [WARNING] morning_briefing.collecte: Flux RSS en échec ce run: CNRS Actualités
+2026-09-30 09:56:10,217 [INFO] morning_briefing.analyse.dedup: Déduplication: 121 items bruts -> 109 événements uniques
+2026-09-30 09:56:10,219 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 109 événements
+2026-09-30 09:56:10,219 [INFO] morning_briefing.analyse.verification: Vérification: 8/109 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-30 09:56:10,247 [INFO] morning_briefing.analyse.dedup: Déduplication: 80 items bruts -> 75 événements uniques
+2026-09-30 09:56:10,248 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 75 événements
+2026-09-30 09:56:10,248 [INFO] morning_briefing.analyse.verification: Vérification: 1/75 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-30 09:56:10,248 [INFO] morning_briefing: Entonnoir actualité (seuil=5): france {'bruts': 121, 'evenements_uniques': 109, 'retenus_apres_seuil': 58} | monde {'bruts': 80, 'evenements_uniques': 75, 'retenus_apres_seuil': 29}
+2026-09-30 09:56:10,270 [INFO] morning_briefing.analyse.dedup: Déduplication: 68 items bruts -> 53 événements uniques
+2026-09-30 09:56:10,271 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 53 événements
+2026-09-30 09:56:10,274 [INFO] morning_briefing.analyse.dedup: Déduplication: 24 items bruts -> 24 événements uniques
+2026-09-30 09:56:10,274 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 24 événements
+2026-09-30 09:56:10,274 [INFO] morning_briefing.analyse.verification: Vérification: 0/24 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-30 09:56:10,284 [INFO] morning_briefing.analyse.dedup: Déduplication: 50 items bruts -> 43 événements uniques
+2026-09-30 09:56:10,285 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 43 événements
+2026-09-30 09:56:10,287 [INFO] morning_briefing.analyse.dedup: Déduplication: 20 items bruts -> 18 événements uniques
+2026-09-30 09:56:10,288 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 18 événements
+2026-09-30 09:56:10,288 [INFO] morning_briefing.analyse.dedup: Déduplication: 0 items bruts -> 0 événements uniques
+2026-09-30 09:56:10,288 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 0 événements
+2026-09-30 09:56:10,289 [INFO] morning_briefing.analyse.dedup: Déduplication: 11 items bruts -> 11 événements uniques
+2026-09-30 09:56:10,289 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 11 événements
+2026-09-30 09:56:10,289 [INFO] morning_briefing: Sport réduit à 4 item(s) au total (max_sport_total=4): {'football': 4, 'basketball': 0, 'natation': 0, 'autres': 0}
+2026-09-30 09:56:10,290 [INFO] morning_briefing.generation.llm: Fournisseurs LLM disponibles (clé présente) : groq, mistral, cerebras, openrouter, nvidia
+2026-09-30 09:56:10,376 [INFO] morning_briefing.generation: === appel_1 : actu_france, actu_monde, marches, anglais ===
+2026-09-30 09:56:10,376 [INFO] morning_briefing.generation: Tour 1 : groq -> actu_france; mistral -> actu_monde
+2026-09-30 09:56:19,384 [INFO] morning_briefing.generation: Tour 1 : nvidia -> marches; openrouter -> anglais
+2026-09-30 09:56:38,750 [ERROR] morning_briefing.generation: Échec LLM part=marches provider=nvidia tentative=1/2 budget=12000 : Expecting value: line 3 column 24 (char 43)
+2026-09-30 09:57:03,248 [ERROR] morning_briefing.generation: Échec LLM part=marches provider=nvidia tentative=2/2 budget=4000 : Expecting value: line 2 column 22 (char 23)
+2026-09-30 09:57:03,345 [INFO] morning_briefing.generation: Tour 2 : openrouter -> marches
+2026-09-30 09:57:09,971 [ERROR] morning_briefing.generation: Échec LLM part=marches provider=openrouter tentative=1/2 budget=12000 : Réponse vide (provider=openrouter)
+2026-09-30 09:57:27,482 [ERROR] morning_briefing.generation: Échec LLM part=marches provider=openrouter tentative=2/2 budget=4000 : Réponse vide (provider=openrouter)
+2026-09-30 09:57:27,483 [INFO] morning_briefing.generation: Tour 3 : mistral -> marches
+2026-09-30 09:57:37,173 [INFO] morning_briefing.generation: Pause de 150 s avant l'appel_2 (fenêtre tokens/minute des fournisseurs)
+2026-09-30 10:00:07,173 [INFO] morning_briefing.generation: === appel_2 : science_a, sport ===
+2026-09-30 10:00:07,173 [INFO] morning_briefing.generation: Tour 1 : mistral -> science_a; openrouter -> sport
+2026-09-30 10:00:15,520 [ERROR] morning_briefing.generation: Échec LLM part=science_a provider=mistral tentative=1/1 budget=12000 : Invalid control character at: line 5 column 379 (char 530)
+2026-09-30 10:00:29,235 [INFO] morning_briefing.generation: Tour 2 : nvidia -> science_a
+2026-09-30 10:01:59,411 [ERROR] morning_briefing.generation: Échec LLM part=science_a provider=nvidia tentative=1/1 budget=12000 : HTTPSConnectionPool(host='integrate.api.nvidia.com', port=443): Read timed out. (read timeout=90)
+2026-09-30 10:01:59,412 [INFO] morning_briefing.generation: Tour 3 : groq -> science_a
+2026-09-30 10:02:00,420 [INFO] morning_briefing.generation: Parties rédigées par LLM : 6/6 (actu_france=groq, actu_monde=mistral, marches=mistral, anglais=openrouter, science_a=groq, sport=openrouter)
+2026-09-30 10:02:00,424 [INFO] morning_briefing.stockage: Briefing sauvegardé: /home/runner/work/morning-briefing/morning-briefing/docs/data/briefings/2026-09-30.json
+2026-09-30 10:02:00,424 [INFO] morning_briefing: === Run terminé avec succès pour le 2026-09-30 ===

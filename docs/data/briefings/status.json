@@ -1,14 +1,14 @@
 {
-  "derniere_execution": "2026-09-29T06:10:42.231703+02:00",
-  "date_visee": "2026-09-29",
+  "derniere_execution": "2026-09-30T11:56:01.757242+02:00",
+  "date_visee": "2026-09-30",
   "succes": true,
   "erreur": null,
   "synthese_llm": true,
-  "erreur_llm": "bloc[groq: 429 Too Many Requests (provider=groq): {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1vh8sjfe61sn0e59wqaes1t` service tier `on_demand` on tokens per m | openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry s | mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Rate limit exceeded\",\"type\":\"rate_limited\",\"param\":null,\"code\":\"1300\",\"raw_status_code\":429} | nvidia: 410 Gone (provider=nvidia): {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer ava] | anglais[openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"message\"",
+  "erreur_llm": null,
   "llm_bloc": {
-    "genere_par_llm": false,
-    "provider": null,
-    "erreur": "groq: 429 Too Many Requests (provider=groq): {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1vh8sjfe61sn0e59wqaes1t` service tier `on_demand` on tokens per m | openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry s | mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Rate limit exceeded\",\"type\":\"rate_limited\",\"param\":null,\"code\":\"1300\",\"raw_status_code\":429} | nvidia: 410 Gone (provider=nvidia): {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer ava"
+    "genere_par_llm": true,
+    "provider": "groq+mistral+openrouter",
+    "erreur": null
   },
   "llm_science": {
     "genere_par_llm": true,
@@ -16,16 +16,16 @@
     "erreur": null
   },
   "llm_anglais": {
-    "genere_par_llm": false,
-    "provider": null,
-    "erreur": "openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry s | nvidia: 410 Gone (provider=nvidia): {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer ava | groq: Unterminated string starting at: line 32 column 21 (char 1169) | mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Rate limit exceeded\",\"type\":\"rate_limited\",\"param\":null,\"code\":\"1300\",\"raw_status_code\":429}"
+    "genere_par_llm": true,
+    "provider": "openrouter",
+    "erreur": null
   },
   "sources_rss_en_erreur": [
     {
       "source": "CNRS Actualités",
       "categorie": "sciences",
       "statut": "erreur",
-      "detail": "<unknown>:18:83: not well-formed (invalid token)"
+      "detail": "<unknown>:14:414: not well-formed (invalid token)"
     },
     {
       "source": "ESPN NBA News",
@@ -49,14 +49,14 @@
   "sources_marches_en_erreur": [],
   "funnel_actualite": {
     "france": {
-      "bruts": 120,
-      "evenements_uniques": 108,
-      "retenus_apres_seuil": 65
+      "bruts": 121,
+      "evenements_uniques": 109,
+      "retenus_apres_seuil": 58
     },
     "monde": {
-      "bruts": 65,
-      "evenements_uniques": 57,
-      "retenus_apres_seuil": 27
+      "bruts": 80,
+      "evenements_uniques": 75,
+      "retenus_apres_seuil": 29
     }
   }
 }
