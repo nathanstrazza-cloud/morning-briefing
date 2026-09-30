@@ -1,5 +1,5 @@
 {
-  "derniere_execution": "2026-09-30T11:56:01.757242+02:00",
+  "derniere_execution": "2026-09-30T12:03:37.981066+02:00",
   "date_visee": "2026-09-30",
   "succes": true,
   "erreur": null,
@@ -7,7 +7,7 @@
   "erreur_llm": null,
   "llm_bloc": {
     "genere_par_llm": true,
-    "provider": "groq+mistral+openrouter",
+    "provider": "groq+mistral",
     "erreur": null
   },
   "llm_science": {
@@ -49,14 +49,14 @@
   "sources_marches_en_erreur": [],
   "funnel_actualite": {
     "france": {
-      "bruts": 121,
-      "evenements_uniques": 109,
-      "retenus_apres_seuil": 58
+      "bruts": 82,
+      "evenements_uniques": 74,
+      "retenus_apres_seuil": 39
     },
     "monde": {
-      "bruts": 80,
-      "evenements_uniques": 75,
-      "retenus_apres_seuil": 29
+      "bruts": 34,
+      "evenements_uniques": 33,
+      "retenus_apres_seuil": 17
     }
   }
 }

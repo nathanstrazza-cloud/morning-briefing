@@ -1,0 +1,84 @@
+2026-09-30 10:03:37,981 [INFO] morning_briefing: === Démarrage du run Morning Briefing pour le 2026-09-30 ===
+2026-09-30 10:03:37,999 [INFO] morning_briefing: Fenêtre de recherche: 2026-09-30 05:56:01.757242+02:00 -> 2026-09-30 12:03:37.981066+02:00 (lundi=False, dernier_succes=2026-09-30 11:56:01.757242+02:00)
+2026-09-30 10:03:37,999 [INFO] morning_briefing.collecte: Début de la collecte (depuis=2026-09-30T05:56:01.757242+02:00, lundi=False)
+2026-09-30 10:03:38,187 [INFO] morning_briefing.collecte.rss: Flux Le Monde (france): 16 articles récupérés
+2026-09-30 10:03:38,630 [INFO] morning_briefing.collecte.rss: Flux France Info (france): 30 articles récupérés
+2026-09-30 10:03:39,208 [INFO] morning_briefing.collecte.rss: Flux Libération (france): 50 articles récupérés
+2026-09-30 10:03:39,506 [INFO] morning_briefing.collecte.rss: Flux 20 Minutes (france): 30 articles récupérés
+2026-09-30 10:03:39,613 [INFO] morning_briefing.collecte.rss: Flux Le Monde International (monde): 20 articles récupérés
+2026-09-30 10:03:40,152 [INFO] morning_briefing.collecte.rss: Flux New York Times World (monde): 54 articles récupérés
+2026-09-30 10:03:40,485 [INFO] morning_briefing.collecte.rss: Flux France 24 International (monde): 24 articles récupérés
+2026-09-30 10:03:40,585 [INFO] morning_briefing.collecte.rss: Flux Le Monde Économie (economie): 20 articles récupérés
+2026-09-30 10:03:40,848 [INFO] morning_briefing.collecte.rss: Flux Le Figaro Économie (economie): 20 articles récupérés
+2026-09-30 10:03:40,970 [INFO] morning_briefing.collecte.rss: Flux BFM Business (economie): 30 articles récupérés
+2026-09-30 10:03:41,061 [INFO] morning_briefing.collecte.rss: Flux Le Monde Sciences (sciences): 20 articles récupérés
+2026-09-30 10:03:41,964 [WARNING] morning_briefing.collecte.rss: Flux RSS illisible ou vide: CNRS Actualités (https://www.cnrs.fr/fr/rss.xml) -- <unknown>:14:414: not well-formed (invalid token)
+2026-09-30 10:03:42,166 [INFO] morning_briefing.collecte.rss: Flux Nature News (sciences): 75 articles récupérés
+2026-09-30 10:03:42,490 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Football (sport_football): 50 articles récupérés
+2026-09-30 10:03:42,583 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Basket (sport_basketball): 50 articles récupérés
+2026-09-30 10:03:42,674 [INFO] morning_briefing.collecte.rss: Flux ESPN NBA News (sport_basketball): 0 articles récupérés
+2026-09-30 10:03:42,755 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Natation (sport_natation): 50 articles récupérés
+2026-09-30 10:03:43,034 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Tennis (sport_autres): 50 articles récupérés
+2026-09-30 10:03:43,113 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Rugby (sport_autres): 50 articles récupérés
+2026-09-30 10:03:43,234 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Cyclisme (sport_autres): 50 articles récupérés
+2026-09-30 10:03:43,288 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Hand (sport_autres): 0 articles récupérés
+2026-09-30 10:03:43,357 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Volley (sport_autres): 0 articles récupérés
+2026-09-30 10:03:43,358 [INFO] morning_briefing.collecte.sports: Sport collecté: foot=27 basket=4 natation=0 autres(France)=1
+2026-09-30 10:03:44,039 [INFO] morning_briefing.collecte.markets: Marchés collectés: 5 indices, 2 matières premières
+2026-09-30 10:03:46,217 [INFO] morning_briefing.collecte.weather: Météo collectée pour 4/4 villes
+2026-09-30 10:03:46,217 [INFO] morning_briefing.collecte: Collecte terminée: 171 actualités, 32 items sport, 5 indices, 4 villes météo
+2026-09-30 10:03:46,217 [WARNING] morning_briefing.collecte: Flux RSS en échec ce run: CNRS Actualités
+2026-09-30 10:03:46,251 [INFO] morning_briefing.analyse.dedup: Déduplication: 82 items bruts -> 74 événements uniques
+2026-09-30 10:03:46,253 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 74 événements
+2026-09-30 10:03:46,253 [INFO] morning_briefing.analyse.verification: Vérification: 5/74 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-30 10:03:46,259 [INFO] morning_briefing.analyse.dedup: Déduplication: 34 items bruts -> 33 événements uniques
+2026-09-30 10:03:46,259 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 33 événements
+2026-09-30 10:03:46,259 [INFO] morning_briefing.analyse.verification: Vérification: 0/33 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-30 10:03:46,260 [INFO] morning_briefing: Entonnoir actualité (seuil=5): france {'bruts': 82, 'evenements_uniques': 74, 'retenus_apres_seuil': 39} | monde {'bruts': 34, 'evenements_uniques': 33, 'retenus_apres_seuil': 17}
+2026-09-30 10:03:46,273 [INFO] morning_briefing.analyse.dedup: Déduplication: 53 items bruts -> 41 événements uniques
+2026-09-30 10:03:46,274 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 41 événements
+2026-09-30 10:03:46,274 [INFO] morning_briefing.analyse.dedup: Déduplication: 2 items bruts -> 2 événements uniques
+2026-09-30 10:03:46,274 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 2 événements
+2026-09-30 10:03:46,274 [INFO] morning_briefing.analyse.verification: Vérification: 0/2 événements classés 'fait confirmé' (>= 2 sources)
+2026-09-30 10:03:46,278 [INFO] morning_briefing.analyse.dedup: Déduplication: 27 items bruts -> 25 événements uniques
+2026-09-30 10:03:46,278 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 25 événements
+2026-09-30 10:03:46,279 [INFO] morning_briefing.analyse.dedup: Déduplication: 4 items bruts -> 4 événements uniques
+2026-09-30 10:03:46,279 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 4 événements
+2026-09-30 10:03:46,279 [INFO] morning_briefing.analyse.dedup: Déduplication: 0 items bruts -> 0 événements uniques
+2026-09-30 10:03:46,279 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 0 événements
+2026-09-30 10:03:46,279 [INFO] morning_briefing.analyse.dedup: Déduplication: 1 items bruts -> 1 événements uniques
+2026-09-30 10:03:46,279 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 1 événements
+2026-09-30 10:03:46,279 [INFO] morning_briefing: Sport réduit à 4 item(s) au total (max_sport_total=4): {'football': 4, 'basketball': 0, 'natation': 0, 'autres': 0}
+2026-09-30 10:03:46,280 [INFO] morning_briefing.generation.llm: Fournisseurs LLM disponibles (clé présente) : groq, mistral, cerebras, openrouter, nvidia
+2026-09-30 10:03:46,346 [INFO] morning_briefing.generation: === appel_1 : actu_france, actu_monde, marches, anglais ===
+2026-09-30 10:03:46,346 [INFO] morning_briefing.generation: Tour 1 : groq -> actu_france; mistral -> actu_monde
+2026-09-30 10:03:53,248 [INFO] morning_briefing.generation: Tour 1 : nvidia -> marches; openrouter -> anglais
+2026-09-30 10:05:14,885 [ERROR] morning_briefing.generation: Échec LLM part=marches provider=nvidia tentative=1/2 budget=12000 : Expecting value: line 3 column 24 (char 43)
+2026-09-30 10:05:14,885 [ERROR] morning_briefing.generation:   réponse brute (début) : 'Here\'s a thinking process:\n\n1.  **Analyze User Request:**\n   - Role: Writer of the "MARCHÉS FINANCIERS" section of a morning briefing in French.\n   - Constraints: \n     - Only use provided data.\n     - No invented facts/figures/sources.\n     - Clear, factual, no sensationalism, no political opinion,'
+2026-09-30 10:07:39,867 [ERROR] morning_briefing.generation: Échec LLM part=marches provider=nvidia tentative=2/2 budget=4000 : Expecting value: line 1 column 1 (char 0)
+2026-09-30 10:07:39,867 [ERROR] morning_briefing.generation:   réponse brute (début) : 'Here\'s a thinking process:\n\n1.  **Analyze User Request:**\n   - Role: Writer for "MARCHÉS FINANCIERS" section of a morning briefing in French.\n   - Output: ONLY this section (actuality, sport, science: other calls).\n   - Rules: Strict absolute rules.\n   - Rule 1: Only use info from provided data. Nev'
+2026-09-30 10:07:39,868 [INFO] morning_briefing.generation: Tour 2 : openrouter -> marches
+2026-09-30 10:09:18,958 [ERROR] morning_briefing.generation: Échec LLM part=marches provider=openrouter tentative=1/2 budget=12000 : Expecting value: line 1 column 1 (char 0)
+2026-09-30 10:09:18,958 [ERROR] morning_briefing.generation:   réponse brute (début) : 'The user wants me to write the "MARCHÉS FINANCIERS" section of a morning briefing in French, outputting ONLY a JSON object that matches the given schema. I must use only the provided data, respect verification status (but the data doesn\'t explicitly give verification status per event; I have to infe'
+2026-09-30 10:10:02,753 [ERROR] morning_briefing.generation: Échec LLM part=marches provider=openrouter tentative=2/2 budget=4000 : Expecting value: line 3 column 24 (char 43)
+2026-09-30 10:10:02,753 [ERROR] morning_briefing.generation:   réponse brute (début) : 'Here\'s a thinking process:\n\n1.  **Analyze User Input:**\n   - User wants me to write ONLY the "MARCHÉS FINANCIERS" section of a morning briefing in French.\n   - I must follow strict rules.\n   - Rules summary:\n     - Use ONLY provided data, no inventions.\n     - Clear, factual, no sensationalism, no p'
+2026-09-30 10:10:02,754 [INFO] morning_briefing.generation: Tour 3 : mistral -> marches
+2026-09-30 10:10:07,985 [INFO] morning_briefing.generation: Pause de 150 s avant l'appel_2 (fenêtre tokens/minute des fournisseurs)
+2026-09-30 10:12:37,985 [INFO] morning_briefing.generation: === appel_2 : science_a, science_b, sport ===
+2026-09-30 10:12:37,985 [INFO] morning_briefing.generation: Tour 1 : mistral -> science_a; groq -> science_b; openrouter -> sport
+2026-09-30 10:12:43,982 [ERROR] morning_briefing.generation: Échec LLM part=sport provider=openrouter tentative=1/2 budget=12000 : Expecting value: line 1 column 1 (char 0)
+2026-09-30 10:12:43,983 [ERROR] morning_briefing.generation:   réponse brute (début) : 'User Safety: unsafe\nSafety Categories: Violence'
+2026-09-30 10:12:48,089 [ERROR] morning_briefing.generation: Échec LLM part=sport provider=openrouter tentative=2/2 budget=4000 : Réponse vide (provider=openrouter)
+2026-09-30 10:13:03,513 [ERROR] morning_briefing.generation: Échec LLM part=science_a provider=mistral tentative=1/1 budget=12000 : Expecting ',' delimiter: line 14 column 127 (char 1764)
+2026-09-30 10:13:03,513 [ERROR] morning_briefing.generation:   réponse brute (début) : '```json\n{\n  "science": {\n    "mode": "approfondi",\n    "titre": "L’IA et les mathématiques : une relation complexe entre puissance computationnelle et fondements théoriques",\n    "contenu_markdown": "\n## Introduction\nLes mathématiques, souvent présentées comme la reine des sciences, sont aujourd’hui'
+2026-09-30 10:13:03,513 [INFO] morning_briefing.generation: Tour 2 : nvidia -> science_a, sport
+2026-09-30 10:14:04,158 [ERROR] morning_briefing.generation: Échec LLM part=science_a provider=nvidia tentative=1/1 budget=12000 : Expecting value: line 1 column 45 (char 44)
+2026-09-30 10:14:04,158 [ERROR] morning_briefing.generation:   réponse brute (début) : 'Here\'s a thinking process:\n\n1.  **Analyze User Input:**\n   - User wants me to write the "Moitié A" (first half) of a pedagogical article.\n   - The article has 10 sections, split between two writers.\n   - Moitié A covers sections 1-4: Introduction, Why important, Explanation of phenomenon, Functionin'
+2026-09-30 10:15:38,205 [ERROR] morning_briefing.generation: Échec LLM part=sport provider=nvidia tentative=1/2 budget=12000 : Expecting value: line 1 column 1 (char 0)
+2026-09-30 10:15:38,205 [ERROR] morning_briefing.generation:   réponse brute (début) : 'Here, , 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, je 1, 1, 1, 1, 1, 1, 1,j 1,  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,ers,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1'
+2026-09-30 10:16:53,537 [ERROR] morning_briefing.generation: Échec LLM part=sport provider=nvidia tentative=2/2 budget=4000 : Expecting value: line 2 column 31 (char 32)
+2026-09-30 10:16:53,537 [ERROR] morning_briefing.generation:   réponse brute (début) : "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - User provides a JSON object with sports events for a morning briefing.\n   - The JSON has a specific structure: `jour_lundi_couvre_weekend` (boolean), and `sport` with keys `football`, `basketball`, `natation`, `autres`.\n   - Under each spo"
+2026-09-30 10:16:53,537 [INFO] morning_briefing.generation: Tour 3 : groq -> science_a, sport
+2026-09-30 10:16:57,376 [INFO] morning_briefing.generation: Parties rédigées par LLM : 7/7 (actu_france=groq, actu_monde=mistral, marches=mistral, anglais=openrouter, science_a=groq, science_b=groq, sport=groq)
+2026-09-30 10:16:57,379 [INFO] morning_briefing.stockage: Briefing sauvegardé: /home/runner/work/morning-briefing/morning-briefing/docs/data/briefings/2026-09-30.json
+2026-09-30 10:16:57,379 [INFO] morning_briefing: === Run terminé avec succès pour le 2026-09-30 ===
