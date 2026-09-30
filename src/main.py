@@ -207,20 +207,12 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         }
 
         # 3. GÉNÉRATION
-        # NB (2026-09-27) : trois chaînes de providers indépendantes (cf. llm_provider.py et
-        # briefing_generator.py pour le diagnostic complet -- limite TPM Groq trop basse pour
-        # un seul gros appel combiné). "bloc" (actu/marchés/sport) essaie Groq en premier,
-        # "science" (article) essaie Mistral en premier -- complémentaires, chacun capable de
-        # basculer sur l'autre en repli. "anglais" (traduction NYT, tout petit appel) réutilise
-        # l'ordre par défaut (Groq en tête) : sa taille est négligeable, il n'aggrave pas
-        # sensiblement la pression sur le quota Groq déjà utilisé par le bloc dans la même
-        # minute.
-        providers_bloc = [] if force_no_llm else llm_provider.get_providers("bloc")
-        providers_science = [] if force_no_llm else llm_provider.get_providers("science")
-        providers_anglais = [] if force_no_llm else llm_provider.get_providers("anglais")
+        # NB (2026-09-30) : répartition en 8 parties sur 4 fournisseurs, 2 appels espacés, avec
+        # secours en chaîne -- cf. config/llm_plan.yaml, generation/llm_orchestrator.py, parts.py.
+        # `pool` = fournisseurs dont la clé API est présente (vide si force_no_llm).
+        pool = {} if force_no_llm else llm_provider.get_provider_pool()
         briefing = briefing_generator.generate(
-            providers_bloc, providers_science, providers_anglais,
-            analysed, science_topic, nyt_article, weather_summary, is_monday,
+            pool, analysed, science_topic, nyt_article, weather_summary, is_monday,
         )
 
         # 4. STOCKAGE

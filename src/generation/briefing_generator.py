@@ -412,124 +412,53 @@ def _run_chain(
 
 
 def generate(
-    providers_bloc: list[LLMProvider],
-    providers_science: list[LLMProvider],
-    providers_anglais: list[LLMProvider],
+    pool: dict[str, LLMProvider],
     analysed: dict,
     science_topic: dict,
     nyt_article: dict | None,
     weather_summary: dict | None,
     is_monday: bool,
+    plan: dict | None = None,
 ) -> dict:
     """Retourne l'objet Briefing complet (dict), prêt pour le stockage.
 
-    `analysed` doit contenir : actualite_france, actualite_monde, marches_data, sport_events
-    (toutes des listes/dicts déjà scorés+filtrés+vérifiés en amont, cf. main.py).
+    NB (2026-09-30, refonte de la répartition, décidée avec l'utilisateur) : le briefing est
+    rédigé en HUIT parties confiées à quatre fournisseurs, en DEUX appels espacés -- cf.
+    config/llm_plan.yaml (le plan), llm_orchestrator.py (moteur : parallélisme + secours en
+    chaîne) et parts.py (prompts, schémas, fusion). `pool` = {nom: provider} des fournisseurs
+    dont la clé API est disponible (llm_provider.get_provider_pool()).
 
-    NB (2026-09-27) : TROIS appels LLM indépendants désormais (cf. NB en tête de fichier) --
-    `providers_bloc` (typiquement Groq en tête) pour actu/marchés/sport/citation,
-    `providers_science` (typiquement Mistral en tête) pour l'article science, et
-    `providers_anglais` (Groq en tête, appel minuscule) pour la traduction/vocabulaire NYT
-    (`nyt_article`, cf. select_nyt_article() -- peut être None si le flux NYT n'a rien produit
-    ce jour-là, auquel cas la section "anglais" du résultat reste None, cf. fallback_briefing).
-    Chacun peut entièrement réussir, échouer, ou basculer sur l'autre provider en repli,
-    INDÉPENDAMMENT des deux autres appels -- cf. llm_provider.get_providers(role=...). Le
-    résultat final part toujours d'un fallback_briefing() complet (jamais de section manquante
-    ou plantée), puis remplace section par section ce qui a effectivement été rédigé par le
-    LLM. Ainsi, si un seul des 3 appels réussit, le briefing reste partiellement rédigé au lieu
-    de retomber intégralement en mode brut (cf. cahier §21 : dégradation partielle plutôt que
-    totale)."""
+    `analysed` doit contenir : actualite_france, actualite_monde, marches_data, sport_events
+    (déjà scorés+filtrés+vérifiés en amont, cf. main.py).
+
+    Le résultat part TOUJOURS d'un fallback_briefing() complet (jamais de section manquante),
+    puis chaque partie rédigée avec succès remplace son contenu brut -- une partie qui échoue
+    chez tous ses fournisseurs ne fait perdre que cette partie (cf. cahier §21). Les anciennes
+    fonctions _run_chain / _build_user_prompt_* ci-dessus ne sont plus utilisées par ce chemin
+    (conservées pour référence, à supprimer une fois la nouvelle répartition validée en réel).
+    """
+    from . import llm_orchestrator, parts as parts_mod  # import local : évite un import circulaire
+
     resultat = fallback_briefing(
         analysed, science_topic, nyt_article, weather_summary, is_monday, erreur_llm=None,
     )
-
-    if not providers_bloc and not providers_science and not providers_anglais:
+    if not pool:
         logger.warning("Aucun LLM disponible -> génération en mode fallback (sans synthèse rédigée)")
         return resultat
 
-    bloc_body, bloc_provider, bloc_erreur = (
-        _run_chain(
-            providers_bloc,
-            SYSTEM_PROMPT_BLOC,
-            lambda mc: _build_user_prompt_bloc(analysed, is_monday, max_chars=mc),
-            MAX_OUTPUT_TOKENS_BLOC,
-            (MAX_PROMPT_CHARS, RETRY_PROMPT_CHARS),
-        )
-        if providers_bloc else (None, None, None)
-    )
-    if bloc_body:
-        resultat["actualite"] = bloc_body["actualite"]
-        resultat["marches"] = bloc_body["marches"]
-        resultat["sport"] = bloc_body["sport"]
-        resultat["citation"] = bloc_body.get("citation")
-        if bloc_body.get("meta"):
-            resultat["meta"] = bloc_body["meta"]
+    parts = parts_mod.build_parts(analysed, science_topic, nyt_article, is_monday)
+    results = llm_orchestrator.run_plan(plan or llm_orchestrator.load_plan(), parts, pool)
+    parts_mod.merge_results(resultat, results, nyt_article)
 
-    if bloc_body is not None or bloc_erreur is not None:
-        if providers_science:
-            _pause_between_calls("science")
-    science_body, science_provider, science_erreur = (
-        _run_chain(
-            providers_science,
-            SYSTEM_PROMPT_SCIENCE,
-            lambda mc: _build_user_prompt_science(science_topic),
-            MAX_OUTPUT_TOKENS_SCIENCE,
-            (MAX_PROMPT_CHARS,),  # payload science déjà minimal, une seule tentative suffit
-        )
-        if providers_science else (None, None, None)
-    )
-    if science_body:
-        resultat["science"] = science_body["science"]
-
-    # NB (2026-09-27) : appel "anglais" uniquement si un article NYT a été trouvé ce jour-là
-    # (cf. select_nyt_article -- peut être None si le flux RSS NYT est vide/en erreur). Pas de
-    # LLM à interroger sans texte source à traduire.
-    if (science_body is not None or science_erreur is not None
-            or bloc_body is not None or bloc_erreur is not None):
-        if providers_anglais and nyt_article:
-            _pause_between_calls("anglais")
-    anglais_body, anglais_provider, anglais_erreur = (
-        _run_chain(
-            providers_anglais,
-            SYSTEM_PROMPT_ANGLAIS,
-            lambda mc: _build_user_prompt_anglais(nyt_article),
-            MAX_OUTPUT_TOKENS_ANGLAIS,
-            (MAX_PROMPT_CHARS,),  # payload minuscule (1 titre + 1 résumé), 1 seule tentative
-        )
-        if providers_anglais and nyt_article else (None, None, None)
-    )
-    if anglais_body:
-        resultat["anglais"] = {
-            "titre_anglais": nyt_article["titre"],
-            "resume_anglais": nyt_article["resume"],
-            "url": nyt_article["url"],
-            "source": nyt_article["source"],
-            "traduction_titre": anglais_body.get("traduction_titre"),
-            "traduction_resume": anglais_body.get("traduction_resume"),
-            "mots_importants": anglais_body.get("mots_importants", []),
-            "niveau": anglais_body.get("niveau"),
-        }
-
-    # Champs de diagnostic (cf. status.json / onglet Erreurs) : les champs historiques
-    # `_genere_par_llm`/`_provider`/`_erreur_llm` restent présents pour compatibilité avec le
-    # frontend existant (docs/app.js) -- `_genere_par_llm` passe à True dès qu'AU MOINS un des
-    # trois appels a réussi (cf. cahier §4 : le bloc actu est la priorité maximale, donc son
-    # succès seul justifie déjà de ne pas considérer le run comme un échec total). Les
-    # nouveaux champs `_bloc`/`_science`/`_anglais` donnent le détail par appel pour un
-    # diagnostic fin.
-    resultat["_genere_par_llm"] = bool(bloc_body) or bool(science_body) or bool(anglais_body)
-    resultat["_provider"] = bloc_provider or science_provider or anglais_provider
-    erreurs = []
-    if bloc_erreur:
-        erreurs.append(f"bloc[{bloc_erreur}]")
-    if science_erreur:
-        erreurs.append(f"science[{science_erreur}]")
-    if anglais_erreur:
-        erreurs.append(f"anglais[{anglais_erreur}]")
+    diag = parts_mod.diagnostics(results)
+    resultat.update(diag)
+    ok = [r for r in results.values() if r.ok]
+    resultat["_genere_par_llm"] = bool(ok)
+    resultat["_provider"] = "+".join(sorted({r.provider for r in ok})) or None
+    erreurs = [f"{r.name}[{r.error}]" for r in results.values() if r.error]
     resultat["_erreur_llm"] = (" | ".join(erreurs)[:900] if erreurs else None)
-    resultat["_bloc"] = {"genere_par_llm": bool(bloc_body), "provider": bloc_provider, "erreur": bloc_erreur}
-    resultat["_science"] = {"genere_par_llm": bool(science_body), "provider": science_provider, "erreur": science_erreur}
-    resultat["_anglais"] = {"genere_par_llm": bool(anglais_body), "provider": anglais_provider, "erreur": anglais_erreur}
+    logger.info("Parties rédigées par LLM : %d/%d (%s)", len(ok), len(results),
+                ", ".join(f"{r.name}={r.provider or 'ECHEC'}" for r in results.values()))
     return resultat
 
 

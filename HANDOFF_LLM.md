@@ -24,9 +24,33 @@ Document pour une autre IA / une future session. Lire aussi `README.md` et `src/
 - Prompt « bloc » > 12000 car. chaque jour → le sport est coupé en premier (Spurs/foot absents).
 - Un 429 ne doit pas être retenté dans la même minute sur le même fournisseur.
 
-## Reste à faire (ordre suggéré)
-1. (FAIT 30/09) Modèle Mistral choisi : ministral-14b-2512. Ne pas se fier au tableau de la console seul : l'en-tête x-ratelimit-limit-req-minute de la sonde fait foi.
-2. Mettre `reasoning_effort` bas côté Groq dans le pipeline ; vérifier le parseur JSON (balises ```).
-3. Relancer un run réel (supprimer `docs/data/briefings/YYYY-MM-DD.json`) et lire `llm_bloc/llm_science/llm_anglais` dans l'onglet Erreurs.
-4. Architecture en 2 vagues (cf. mémoire du projet) quand 3 fournisseurs tiennent.
+## Nouvelle architecture de génération (codée le 30/09/2026, testée avec de faux fournisseurs, PAS encore en réel)
+Décidée avec l'utilisateur : critères = qualité de rédaction + volume de chaque partie. 8 parties, 4 fournisseurs, 2 appels.
+
+| Appel | Étape | Partie (principal) | Secours dans l'ordre |
+|---|---|---|---|
+| 1 (T+0) | actualité | actu_france + citation (groq), actu_monde (mistral) | nvidia, openrouter, puis dernier recours |
+| 1 | marchés/anglais (APRÈS l'étape actualité) | marches (nvidia), anglais (openrouter) | l'autre du couple, puis dernier recours |
+| 2 (+150 s après la fin de l'appel 1) | science/sport | science_a (mistral), science_b (groq), sport (openrouter) | nvidia = secours de la science (sport seulement s'il est libre) |
+
+Règles voulues par l'utilisateur : si un fournisseur d'actualité échoue, le secours (nvidia pour la France, openrouter pour le monde)
+passe AVANT de traiter marchés/anglais ; en appel 2, le fournisseur inutilisé (nvidia) est le secours de la science.
+Science = 2 moitiés du même article : A = sections 1-4 (intro, importance, phénomène, mécanismes), B = sections 5-10 (données,
+connu, incertain, limites, conclusion, sources). En mode « découverte » : un seul appel (science_a), pas de science_b.
+Si A échoue partout, on garde le contenu brut (jamais B seule) ; si B échoue, A est publiée avec une mention explicite.
+
+Fichiers : `config/llm_plan.yaml` (le plan : modifier ici pour réassigner, sans code), `src/generation/llm_orchestrator.py`
+(moteur générique : parallélisme entre fournisseurs, secours en chaîne, 429 non retenté, JSON tolérant),
+`src/generation/parts.py` (prompts/schémas/fusion des 8 parties), `briefing_generator.generate(pool, ...)`,
+`llm_provider.get_provider_pool()`, tests : `python -m unittest discover -s tests -v` (21 tests, sans réseau).
+Diagnostic : `_parts` (détail par partie) + `_bloc/_science/_anglais` (compatibilité onglet Erreurs). `resume_1_phrase` est
+maintenant construit à partir des titres publiés (plus de LLM). Anciennes fonctions (`_run_chain`, `get_providers(role)`,
+`_build_user_prompt_*`) conservées mais inutilisées : à supprimer après validation en réel.
+
+## Reste à faire
+1. **Valider en réel** : un vrai run (supprimer docs/data/briefings/AAAA-MM-JJ.json du jour puis lancer le workflow « Morning Briefing »),
+   lire `_parts` dans le JSON / l'onglet Erreurs. Le run dure ~6 min (pause de 150 s entre les 2 appels ; `LLM_WAVE_GAP_SECONDS=0` pour tester vite).
+2. Vérifier la qualité : citation (Groq), moitiés de science cohérentes entre elles, JSON de ministral-14b.
+3. Si un fournisseur est trop faible sur sa partie, changer l'ordre dans config/llm_plan.yaml (aucun code).
+4. Supprimer le code mort (cf. ci-dessus) et le secret LLM_PROVIDER devenu inutile.
 5. Sécurité : les 2 jetons GitHub sont en clair dans les fichiers du projet Claude → les révoquer une fois fini.

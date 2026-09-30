@@ -126,7 +126,7 @@ class GroqProvider(LLMProvider):
 
     def __init__(self, api_key: str, model: str | None = None):
         self.api_key = api_key
-        self.model = model or os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
+        self.model = model or os.environ.get("GROQ_MODEL") or "openai/gpt-oss-120b"
 
     def complete(self, system: str, user: str, max_tokens: int = MAX_OUTPUT_TOKENS) -> str:
         data = self._post(
@@ -140,10 +140,13 @@ class GroqProvider(LLMProvider):
                 ],
                 "temperature": 0.3,
                 "max_tokens": max_tokens,
+                # gpt-oss est un modèle à raisonnement : sans ceci la réflexion consomme le budget
+                # de sortie ET la limite de 8 000 tokens/minute (réponse vide ou tronquée).
+                **({"reasoning_effort": "low"} if "gpt-oss" in self.model else {}),
             },
             timeout=60,
         )
-        return data["choices"][0]["message"]["content"]
+        return _extract_content(data, self.name)
 
 
 class GeminiProvider(LLMProvider):
@@ -448,6 +451,20 @@ def get_provider() -> LLMProvider | None:
     if provider is None:
         logger.warning("Clé API manquante pour le provider préféré '%s'", provider_name)
     return provider
+
+
+def get_provider_pool() -> dict[str, LLMProvider]:
+    """{nom: provider} de TOUS les fournisseurs dont la clé API est disponible. C'est
+    config/llm_plan.yaml (pas ce module) qui décide qui fait quoi et dans quel ordre le secours
+    intervient ; un fournisseur absent du pool est simplement sauté par l'orchestrateur.
+    (get_providers(role) ci-dessous = ancien mécanisme par rôle, plus utilisé par main.py.)"""
+    pool: dict[str, LLMProvider] = {}
+    for name in _PROVIDER_BUILDERS:
+        provider = _build_provider(name)
+        if provider:
+            pool[name] = provider
+    logger.info("Fournisseurs LLM disponibles (clé présente) : %s", ", ".join(pool) or "aucun")
+    return pool
 
 
 def get_providers(role: str = "bloc") -> list[LLMProvider]:

@@ -1,0 +1,35 @@
+# Plan de répartition des appels LLM (lu par src/generation/llm_orchestrator.py).
+# Décidé avec l'utilisateur le 30/09/2026. Modifier ce fichier suffit pour réassigner des rôles :
+# aucun changement de code nécessaire.
+#
+# Fonctionnement :
+#  - Un "appel" (wave) = un groupe d'étapes (stages) exécutées l'une après l'autre.
+#  - Dans une étape, chaque partie est envoyée en PARALLÈLE à son 1er fournisseur (le "principal").
+#  - Si une partie échoue, elle passe au fournisseur SUIVANT de sa liste (le "secours"), et ainsi de suite.
+#    Un fournisseur qui a plusieurs parties à traiter les traite l'une après l'autre, dans l'ordre
+#    où elles sont écrites ci-dessous (donc : écrire d'abord la partie la plus prioritaire).
+#  - Une étape ne démarre que quand la précédente est terminée : c'est ce qui garantit que NVIDIA et
+#    OpenRouter font d'abord le secours de l'actualité AVANT de traiter marchés/anglais.
+#  - Entre deux appels, pause de `wave_gap_seconds` (fenêtre TPM de Groq = 1 minute).
+#  - Fournisseur sans clé API = ignoré. Un 429 n'est jamais retenté sur le même fournisseur.
+wave_gap_seconds: 150   # surcharge possible : variable d'environnement LLM_WAVE_GAP_SECONDS (0 pour les tests)
+
+waves:
+  - name: appel_1
+    stages:
+      - name: actualite
+        parts:
+          actu_france: [groq, nvidia, openrouter, mistral]      # + citation du jour
+          actu_monde:  [mistral, openrouter, nvidia, groq]
+      - name: marches_anglais
+        parts:
+          marches: [nvidia, openrouter, mistral, groq]
+          anglais: [openrouter, nvidia, groq, mistral]
+
+  - name: appel_2
+    stages:
+      - name: science_sport
+        parts:                      # ordre = priorité dans la file d'un même fournisseur (science avant sport)
+          science_a: [mistral, nvidia, groq, openrouter]        # 1re moitié de l'article
+          science_b: [groq, nvidia, mistral, openrouter]        # 2e moitié (absente si science en mode "découverte")
+          sport:     [openrouter, nvidia, groq, mistral]        # NVIDIA reprend le sport seulement s'il n'a pas servi la science
