@@ -10,6 +10,8 @@ Le moteur qui exécute tout cela est llm_orchestrator.py ; les règles éditoria
 """
 from __future__ import annotations
 
+import difflib
+
 from .llm_orchestrator import Part, PartResult
 
 # --- budgets ---------------------------------------------------------------------------------
@@ -21,7 +23,7 @@ RETRY_CHARS = 4_000
 PLANCHER_ACTUALITE = 2          # on ne réduit jamais une zone sous 2 événements (cahier §4)
 
 TOKENS_ACTU = 1500
-TOKENS_MARCHES = 900
+TOKENS_MARCHES = 1200
 TOKENS_SPORT = 900
 TOKENS_ANGLAIS = 900
 TOKENS_SCIENCE_MOITIE = 2200    # ~1 000 mots par moitié ; le raisonnement de Groq est réglé "low"
@@ -76,7 +78,7 @@ SYSTEM_MARCHES = f"""Tu es le rédacteur de la section MARCHÉS FINANCIERS d'un 
 français. Tu rédiges UNIQUEMENT cette section (actualité, sport, science : autres appels).
 
 {_REGLES_COMMUNES}
-6. Pour chaque mouvement de \"marches.mouvements_significatifs\", cherche une cause dans
+6. Pour chaque mouvement de \"donnees_marches.mouvements_significatifs\", cherche une cause dans
    \"actualite_economie_contexte\" (et, si pertinent, dans \"titres_france\"/\"titres_monde\") : événement,
    annonce, donnée macro, contexte géopolitique qui l'explique raisonnablement. Si tu en trouves
    une, résume-la en une courte phrase dans \"explication\". Sinon \"explication\": null -- ne
@@ -210,7 +212,7 @@ def _marches_prompt(analysed: dict, is_monday: bool, max_chars: int) -> str:
     def ser() -> str:
         return bg._serialize({
             "jour_lundi_couvre_weekend": is_monday,
-            "marches": analysed["marches_data"],
+            "donnees_marches": analysed["marches_data"],
             "actualite_economie_contexte": eco,
             "titres_france": tf, "titres_monde": tm,
         })
@@ -291,6 +293,22 @@ def build_parts(analysed: dict, science_topic: dict, nyt_article: dict | None, i
 NOTE_SUITE_ABSENTE = "*La suite de l'article n'a pas pu être générée ce matin.*"
 
 
+def _normalise_marches(m: dict, brut: dict | None) -> dict:
+    """Le site lit `mouvements_notables`. Un modèle peut recopier la clé d'entrée
+    `mouvements_significatifs` (constaté le 30/09 avec ministral) : on la remappe, et si la liste est
+    absente on garde les mouvements bruts (sans explication) plutôt que de les perdre."""
+    m = dict(m)
+    if "mouvements_notables" not in m:
+        m["mouvements_notables"] = m.pop("mouvements_significatifs", None) or list((brut or {}).get("mouvements_notables", []))
+    m.pop("mouvements_significatifs", None)
+    m["mouvements_notables"] = [
+        {"nom": x.get("nom"), "variation_pct": x.get("variation_pct"), "explication": x.get("explication")}
+        for x in m["mouvements_notables"] if isinstance(x, dict)
+    ]
+    m.setdefault("resume_court", "")
+    return m
+
+
 def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: dict | None) -> None:
     """Remplace, partie par partie, le contenu brut du briefing de repli par ce que les LLM ont
     rédigé. Une partie en échec garde son contenu brut (cf. cahier §21). Modifie `resultat`."""
@@ -301,7 +319,7 @@ def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: d
     if "actu_monde" in r and r["actu_monde"].ok:
         resultat["actualite"]["monde"] = r["actu_monde"].body["actualite_monde"]
     if "marches" in r and r["marches"].ok:
-        resultat["marches"] = r["marches"].body["marches"]
+        resultat["marches"] = _normalise_marches(r["marches"].body["marches"], resultat.get("marches"))
     if "sport" in r and r["sport"].ok:
         resultat["sport"] = r["sport"].body["sport"]
 
@@ -334,8 +352,11 @@ def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: d
         lst = resultat["actualite"].get(zone) or []
         if lst and lst[0].get("titre"):
             titres.append(str(lst[0]["titre"]).rstrip(" ."))
+    if len(titres) == 2 and difflib.SequenceMatcher(None, titres[0].lower(), titres[1].lower()).ratio() > 0.6:
+        titres = titres[:1]        # même événement en tête des deux zones : une seule mention
     if titres and any(k in r and r[k].ok for k in ("actu_france", "actu_monde")):
-        resultat["meta"] = {"resume_1_phrase": "À la une : " + " ; ".join(titres) + "."}
+        phrase = "À la une : " + " ; ".join(t.replace("EN DIRECT, ", "") for t in titres)
+        resultat["meta"] = {"resume_1_phrase": (phrase[:217] + "…") if len(phrase) > 220 else phrase + "."}
 
 
 def diagnostics(results: dict[str, PartResult]) -> dict:

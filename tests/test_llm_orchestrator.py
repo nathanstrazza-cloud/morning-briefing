@@ -152,7 +152,33 @@ TOPIC_DECOUV = {"mode": "decouverte", "contenu_source": {"titre": "Découverte",
 NYT = {"titre": "T", "resume": "R", "url": "u", "source": "NYT"}
 
 
+class TestJsonTolerant(unittest.TestCase):
+    def test_retour_a_la_ligne_brut_dans_une_chaine(self):
+        self.assertEqual(orch.parse_json_text('{"a": "ligne1\nligne2"}')["a"], "ligne1\nligne2")
+
+    def test_nombre_precede_d_un_plus_et_nan(self):
+        self.assertEqual(orch.parse_json_text('{"v": +1.2, "w": [+3, NaN]}'), {"v": 1.2, "w": [3, None]})
+
+    def test_le_plus_dans_un_texte_n_est_pas_modifie(self):
+        self.assertEqual(orch.parse_json_text('{"t": "+5 % en séance"}')["t"], "+5 % en séance")
+
+
 class TestParts(unittest.TestCase):
+    def test_marches_cle_recopiee_est_remappee_pour_le_site(self):
+        base = self._base()
+        parts_mod.merge_results(base, self._res(marches={"marches": {"resume_court": "x", "mouvements_significatifs": [
+            {"nom": "CAC 40", "symbol": "^FCHI", "variation_pct": -1.0, "explication": None}]}}), NYT)
+        self.assertEqual(base["marches"]["mouvements_notables"], [{"nom": "CAC 40", "variation_pct": -1.0, "explication": None}])
+        self.assertNotIn("mouvements_significatifs", base["marches"])
+
+    def test_resume_1_phrase_dedoublonne_et_plafonne(self):
+        base = self._base()
+        parts_mod.merge_results(base, self._res(
+            actu_france={"actualite_france": [{"titre": "EN DIRECT, guerre en Ukraine : frappes massives"}]},
+            actu_monde={"actualite_monde": [{"titre": "Guerre en Ukraine : frappes massives"}]}), NYT)
+        self.assertEqual(base["meta"]["resume_1_phrase"].count("Ukraine"), 1)
+        self.assertLessEqual(len(base["meta"]["resume_1_phrase"]), 221)
+
     def test_science_b_absente_en_mode_decouverte(self):
         self.assertIn("science_b", parts_mod.build_parts(ANALYSED, TOPIC_APPROF, NYT, False))
         self.assertNotIn("science_b", parts_mod.build_parts(ANALYSED, TOPIC_DECOUV, NYT, False))
@@ -203,11 +229,11 @@ class TestParts(unittest.TestCase):
     def test_merge_actu_et_citation_et_resume(self):
         base = self._base()
         parts_mod.merge_results(base, self._res(
-            actu_france={"actualite_france": [{"titre": "Titre France."}], "citation": {"texte": "t", "auteur": "a"}},
-            actu_monde={"actualite_monde": [{"titre": "Titre Monde"}]}), NYT)
-        self.assertEqual(base["actualite"]["france"][0]["titre"], "Titre France.")
+            actu_france={"actualite_france": [{"titre": "Réforme des retraites adoptée."}], "citation": {"texte": "t", "auteur": "a"}},
+            actu_monde={"actualite_monde": [{"titre": "Séisme au Japon"}]}), NYT)
+        self.assertEqual(base["actualite"]["france"][0]["titre"], "Réforme des retraites adoptée.")
         self.assertEqual(base["citation"]["auteur"], "a")
-        self.assertEqual(base["meta"]["resume_1_phrase"], "À la une : Titre France ; Titre Monde.")
+        self.assertEqual(base["meta"]["resume_1_phrase"], "À la une : Réforme des retraites adoptée ; Séisme au Japon.")
 
     def test_une_partie_en_echec_garde_son_contenu_brut(self):
         base = self._base()

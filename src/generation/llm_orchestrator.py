@@ -20,6 +20,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import re
 import time
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
@@ -69,12 +70,22 @@ def parse_json_text(raw: str) -> dict:
         text = text.split("\n", 1)[1] if "\n" in text else text
         if text.lower().startswith("json"):
             text = text[4:]
+    def _load(t: str):
+        # strict=False : accepte les retours à la ligne/tabulations BRUTS dans les chaînes (constaté
+        # le 30/09 avec ministral : « Invalid control character » sur le texte de l'article).
+        try:
+            return json.loads(t, strict=False)
+        except json.JSONDecodeError:
+            # Réparations sûres : nombres précédés de « + » (+1.2), NaN/Infinity -> null.
+            fixed = re.sub(r'(?<=[:\[,])(\s*)\+(?=\d)', r'\1', t)
+            fixed = re.sub(r'(?<=[:\[,])(\s*)(?:NaN|-?Infinity)\b', r'\1null', fixed)
+            return json.loads(fixed, strict=False)
     try:
-        return json.loads(text)
+        return _load(text)
     except json.JSONDecodeError:
         start, end = text.find("{"), text.rfind("}")
         if start != -1 and end > start:
-            return json.loads(text[start:end + 1])
+            return _load(text[start:end + 1])
         raise
 
 
@@ -82,6 +93,7 @@ def _attempt(provider, part: Part) -> tuple[dict | None, str | None]:
     """Un fournisseur, une partie. Retourne (body, None) ou (None, message_d_erreur)."""
     last_error = None
     for i, max_chars in enumerate(part.prompt_char_budgets, start=1):
+        raw = ""
         try:
             raw = provider.complete(part.system_prompt, part.build_prompt(max_chars), max_tokens=part.max_tokens)
             body = parse_json_text(raw)
@@ -97,6 +109,8 @@ def _attempt(provider, part: Part) -> tuple[dict | None, str | None]:
             logger.error("Échec LLM part=%s provider=%s tentative=%d/%d budget=%d : %s%s",
                          part.name, provider.name, i, len(part.prompt_char_budgets), max_chars, exc,
                          f" | corps: {detail}" if detail else "")
+            if raw and isinstance(exc, (ValueError,)):   # JSON invalide : garde un extrait pour comprendre
+                logger.error("  réponse brute (début) : %r", raw[:300])
             # Un 429 = quota de la fenêtre épuisé : réessayer tout de suite avec un prompt plus
             # petit ne peut pas réussir. On passe directement au fournisseur suivant.
             if getattr(exc, "status_code", None) == 429:

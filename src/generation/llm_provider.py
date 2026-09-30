@@ -353,7 +353,7 @@ class NvidiaProvider(LLMProvider):
                 "temperature": 0.3,
                 "max_tokens": max_tokens,
             },
-            timeout=90,
+            timeout=150,
         )
         return _extract_content(data, self.name)
 
