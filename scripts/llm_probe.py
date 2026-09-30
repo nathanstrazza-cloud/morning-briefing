@@ -182,7 +182,7 @@ def probe_mistral(key: str) -> dict:
     # Plusieurs modèles : les limites Mistral sont PAR MODÈLE (en-tête x-ratelimit-limit-req-minute = 0
     # signifie quota gratuit nul pour ce modèle/compte). On teste donc plusieurs modèles.
     res["per_model"] = {}
-    for m in [MISTRAL_MODEL, "mistral-small-2603", "open-mistral-nemo", "ministral-8b-latest",
+    for m in [MISTRAL_MODEL, "mistral-large-2512", "ministral-14b-2512", "ministral-8b-2512", "mistral-small-2603", "open-mistral-nemo", "ministral-8b-latest",
               "mistral-medium-latest", "magistral-small-latest"]:
         if m in res["per_model"]:
             continue
