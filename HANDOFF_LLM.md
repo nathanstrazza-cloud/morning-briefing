@@ -15,8 +15,8 @@ Document pour une autre IA / une future session. Lire aussi `README.md` et `src/
 |---|---|---|
 | Groq | openai/gpt-oss-120b | 1000 requêtes/jour, 8000 tokens/MINUTE (le vrai goulot) |
 | Mistral | **ministral-14b-2512 (choisi)**, ministral-8b-2512, open-mistral-nemo | 14b : 30 req/min, 937 500 tokens/min ; 8b/nemo : 188 req/min, 625 000 tokens/min ; mois : console.mistral.ai/limits. mistral-small/medium/magistral = 429 (0 req/min réel malgré 20 000 tokens/min affichés au tableau) ; mistral-large-2512 = 403 (palier d'abonnement) |
-| OpenRouter | openrouter/free | 50 requêtes/jour (modèles gratuits, `is_free_tier`) ; 429 « rate-limited upstream » possible sur un modèle précis |
-| NVIDIA | nemotron-3.5-lightning-30b-a3b, openai/gpt-oss-20b | ~40 req/min (doc publique), pas d'en-têtes ; 410 = modèle retiré, 404 = pas activé sur le compte, 503 = surcharge passagère |
+| OpenRouter | google/gemma-4-31b-it:free (défaut) ; `openrouter/free` = routeur automatique NON FIABLE (a renvoyé un modèle de modération et des raisonnements) | 50 requêtes/jour (modèles gratuits, `is_free_tier`) ; 429 « rate-limited upstream » possible sur un modèle précis |
+| NVIDIA | **openai/gpt-oss-20b (défaut depuis le 30/09)** ; nemotron-3.5-lightning répond à 1 token mais écrit son raisonnement au lieu du JSON | ~40 req/min (doc publique), pas d'en-têtes ; 410 = modèle retiré, 404 = pas activé sur le compte, 503 = surcharge passagère |
 
 ## Pièges connus
 - Mistral (ministral / nemo) renvoie le JSON entouré de ```json … ``` : vérifier que le parseur du pipeline retire les balises.
@@ -47,10 +47,19 @@ Diagnostic : `_parts` (détail par partie) + `_bloc/_science/_anglais` (compatib
 maintenant construit à partir des titres publiés (plus de LLM). Anciennes fonctions (`_run_chain`, `get_providers(role)`,
 `_build_user_prompt_*`) conservées mais inutilisées : à supprimer après validation en réel.
 
+## Leçons du vrai run du 30/09 (2 runs) — déjà corrigées dans le code
+- Un test « 1 token » NE SUFFIT PAS : il faut un vrai run. Le run a révélé : NVIDIA nemotron-3.5-lightning et OpenRouter `openrouter/free`
+  écrivent leur raisonnement (« Here's a thinking process… ») ou une sortie de modération au lieu du JSON ; Mistral casse le JSON dès qu'un long
+  article markdown est dedans (guillemets, retours ligne).
+- Corrections : (1) la science est demandée en TEXTE markdown (ligne `TITRE: …` puis sections), plus en JSON ; (2) `parse_json_text` tolère
+  retours ligne bruts, `+1.2`, NaN ; (3) une réponse qui commence par du raisonnement est rejetée (`looks_like_leak`) ; (4) on ne réessaie avec
+  un prompt plus petit que sur 400/413/422 — sinon on passe directement au fournisseur suivant (avant : run de 14 min) ; (5) clé `marches`
+  normalisée pour le site (`mouvements_notables`) ; (6) résumé « à la une » dédoublonné ; (7) NVIDIA timeout 150 s ; (8) modèles NVIDIA/OpenRouter nommés.
+- Résultat du run 2 (avant ces corrections) : 7/7 parties rédigées, mais via beaucoup de secours ; durée ~14 min.
+
 ## Reste à faire
-1. **Valider en réel** : un vrai run (supprimer docs/data/briefings/AAAA-MM-JJ.json du jour puis lancer le workflow « Morning Briefing »),
-   lire `_parts` dans le JSON / l'onglet Erreurs. Le run dure ~6 min (pause de 150 s entre les 2 appels ; `LLM_WAVE_GAP_SECONDS=0` pour tester vite).
-2. Vérifier la qualité : citation (Groq), moitiés de science cohérentes entre elles, JSON de ministral-14b.
-3. Si un fournisseur est trop faible sur sa partie, changer l'ordre dans config/llm_plan.yaml (aucun code).
-4. Supprimer le code mort (cf. ci-dessus) et le secret LLM_PROVIDER devenu inutile.
+1. Vérifier le run suivant (`_parts` dans le JSON du jour, journal `logs/`) : viser 0 secours inutile et ~7-8 min.
+2. Contrôler la qualité éditoriale : citation (souvent `null` : normal si non certaine), cohérence des 2 moitiés de science.
+3. Si un fournisseur reste faible sur sa partie, changer l'ordre dans config/llm_plan.yaml (aucun code).
+4. Supprimer le code mort (`_run_chain`, `get_providers(role)`, `_build_user_prompt_*`) et le secret LLM_PROVIDER devenu inutile.
 5. Sécurité : les 2 jetons GitHub sont en clair dans les fichiers du projet Claude → les révoquer une fois fini.

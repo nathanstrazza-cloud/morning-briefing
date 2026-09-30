@@ -11,8 +11,9 @@ Le moteur qui exécute tout cela est llm_orchestrator.py ; les règles éditoria
 from __future__ import annotations
 
 import difflib
+import re
 
-from .llm_orchestrator import Part, PartResult
+from .llm_orchestrator import Part, PartResult, looks_like_leak
 
 # --- budgets ---------------------------------------------------------------------------------
 # Groq (gpt-oss-120b) est limité à 8 000 tokens/minute : prompt + sortie doivent tenir dans cette
@@ -155,10 +156,10 @@ Tu écris UNIQUEMENT les sections 1 à 4, chacune avec un titre markdown de nive
 autre rédacteur écrit les sections 5 à 10 en parallèle : ne les écris pas, ne conclus pas, ne
 résume pas l'article, et termine ta moitié sur les mécanismes (sans phrase de conclusion).
 {_TON_SCIENCE}
-Réponds STRICTEMENT en JSON valide, sans texte avant/après, sans balises markdown autour du JSON.
-
-SCHÉMA JSON ATTENDU :
-{{\"science\": {{\"mode\": \"approfondi\", \"titre\": str, \"contenu_markdown\": str}}}}"""
+FORMAT DE SORTIE : du texte markdown SIMPLE (pas de JSON, pas de bloc de code, aucune phrase
+d'introduction ni de commentaire sur ta réponse). La PREMIÈRE ligne est exactement :
+TITRE: <titre de l'article>
+puis une ligne vide, puis les sections."""
 
 SYSTEM_SCIENCE_B = f"""Tu es le rédacteur de la section science d'un briefing matinal en français. Tu écris
 la MOITIÉ B d'un article pédagogique approfondi (~5 minutes de lecture pour cette moitié).
@@ -171,19 +172,54 @@ mécanismes) : ne les répète pas, n'écris pas d'introduction générale, supp
 vient de lire. Commence directement par la section 5. Sois particulièrement rigoureux sur la
 frontière entre ce qui est établi, ce qui est incertain et ce qui est débattu.
 {_TON_SCIENCE}
-Réponds STRICTEMENT en JSON valide, sans texte avant/après, sans balises markdown autour du JSON.
-
-SCHÉMA JSON ATTENDU :
-{{\"contenu_markdown\": str}}"""
+FORMAT DE SORTIE : du texte markdown SIMPLE (pas de JSON, pas de bloc de code, aucune phrase
+d'introduction ni de commentaire). Ne mets PAS de ligne TITRE. Commence directement par « ## 5. »."""
 
 SYSTEM_SCIENCE_DECOUVERTE = f"""Tu es le rédacteur de la section science d'un briefing matinal en français.
 Rédige un article COURT sur la découverte majeure fournie : ce qui a été trouvé, par qui, pourquoi
 c'est important, ce qui reste incertain. Vérifie que l'importance n'est pas exagérée.
 {_TON_SCIENCE}
-Réponds STRICTEMENT en JSON valide, sans texte avant/après, sans balises markdown autour du JSON.
+FORMAT DE SORTIE : du texte markdown SIMPLE (pas de JSON, pas de bloc de code, aucune phrase
+d'introduction ni de commentaire). La PREMIÈRE ligne est exactement :
+TITRE: <titre de l'article>
+puis une ligne vide, puis l'article."""
 
-SCHÉMA JSON ATTENDU :
-{{\"science\": {{\"mode\": \"decouverte\", \"titre\": str, \"contenu_markdown\": str}}}}"""
+
+# --- lecture des réponses TEXTE (science) -----------------------------------------------------
+# Pourquoi du texte et pas du JSON : un long article markdown dans une chaîne JSON casse sans cesse
+# (guillemets « " » non échappés, retours à la ligne : constaté avec ministral le 30/09).
+def _strip_fence(t: str) -> str:
+    t = t.strip()
+    m = re.match(r"^```[a-zA-Z]*\n(.*)\n```$", t, re.S)
+    return m.group(1).strip() if m else t
+
+
+def _texte_science(raw: str, avec_titre: bool, min_mots: int) -> tuple[str | None, str]:
+    t = _strip_fence(raw or "")
+    if looks_like_leak(t):
+        raise ValueError("réponse de raisonnement / hors sujet (pas un article)")
+    titre = None
+    if avec_titre:
+        m = re.match(r"\s*(?:#+\s*)?\**TITRE\**\s*:\s*(.+)", t, re.I)
+        if not m:
+            raise ValueError("ligne « TITRE: » manquante")
+        titre = m.group(1).strip().strip('*"«» ').strip()
+        t = t[m.end():].strip()
+    if len(t.split()) < min_mots:
+        raise ValueError(f"article trop court ({len(t.split())} mots, minimum {min_mots})")
+    return titre, t
+
+
+def parse_science_a(mode: str, min_mots: int):
+    def _p(raw: str) -> dict:
+        titre, texte = _texte_science(raw, True, min_mots)
+        return {"science": {"mode": mode, "titre": titre, "contenu_markdown": texte}}
+    return _p
+
+
+def parse_science_b(raw: str) -> dict:
+    _, texte = _texte_science(raw, False, 250)
+    return {"contenu_markdown": texte}
 
 
 # --- construction des prompts utilisateur ---------------------------------------------------
@@ -277,12 +313,12 @@ def build_parts(analysed: dict, science_topic: dict, nyt_article: dict | None, i
             TOKENS_ANGLAIS, ("traduction_titre", "traduction_resume", "mots_importants"))
     if science_topic["mode"] == "approfondi":
         parts["science_a"] = Part("science_a", SYSTEM_SCIENCE_A, lambda mc: _science_prompt(science_topic, "A"),
-                                  TOKENS_SCIENCE_MOITIE, ("science",))
+                                  TOKENS_SCIENCE_MOITIE, ("science",), parser=parse_science_a("approfondi", 300))
         parts["science_b"] = Part("science_b", SYSTEM_SCIENCE_B, lambda mc: _science_prompt(science_topic, "B"),
-                                  TOKENS_SCIENCE_MOITIE, ("contenu_markdown",))
+                                  TOKENS_SCIENCE_MOITIE, ("contenu_markdown",), parser=parse_science_b)
     else:
         parts["science_a"] = Part("science_a", SYSTEM_SCIENCE_DECOUVERTE, lambda mc: _science_prompt(science_topic, None),
-                                  TOKENS_SCIENCE_COMPLET, ("science",))
+                                  TOKENS_SCIENCE_COMPLET, ("science",), parser=parse_science_a("decouverte", 80))
     parts["sport"] = Part(
         "sport", SYSTEM_SPORT, lambda mc: _sport_prompt(analysed, is_monday, mc),
         TOKENS_SPORT, ("sport",), budgets)

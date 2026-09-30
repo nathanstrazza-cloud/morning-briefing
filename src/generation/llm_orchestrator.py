@@ -43,6 +43,7 @@ class Part:
     max_tokens: int
     required_keys: tuple[str, ...] = ()     # clés JSON obligatoires (sinon : échec -> secours)
     prompt_char_budgets: tuple[int, ...] = (12_000,)   # tentatives à budget décroissant (même fournisseur)
+    parser: Callable[[str], dict] | None = None        # None = JSON ; sinon parse une réponse TEXTE (ex. article markdown)
 
 
 @dataclass
@@ -89,6 +90,15 @@ def parse_json_text(raw: str) -> dict:
         raise
 
 
+LEAK_PREFIXES = ("here's a thinking process", "here is a thinking process", "thinking process",
+                 "the user wants", "user safety", "okay, let's", "let me think")
+
+
+def looks_like_leak(text: str) -> bool:
+    """Réponse qui commence par du raisonnement / une sortie de modèle de modération : inutilisable."""
+    return text.lstrip().lower().startswith(LEAK_PREFIXES)
+
+
 def _attempt(provider, part: Part) -> tuple[dict | None, str | None]:
     """Un fournisseur, une partie. Retourne (body, None) ou (None, message_d_erreur)."""
     last_error = None
@@ -96,7 +106,7 @@ def _attempt(provider, part: Part) -> tuple[dict | None, str | None]:
         raw = ""
         try:
             raw = provider.complete(part.system_prompt, part.build_prompt(max_chars), max_tokens=part.max_tokens)
-            body = parse_json_text(raw)
+            body = part.parser(raw) if part.parser else parse_json_text(raw)
             if not isinstance(body, dict):
                 raise ValueError("la réponse JSON n'est pas un objet")
             missing = [k for k in part.required_keys if k not in body]
@@ -114,6 +124,12 @@ def _attempt(provider, part: Part) -> tuple[dict | None, str | None]:
             # Un 429 = quota de la fenêtre épuisé : réessayer tout de suite avec un prompt plus
             # petit ne peut pas réussir. On passe directement au fournisseur suivant.
             if getattr(exc, "status_code", None) == 429:
+                break
+            # Un prompt plus petit n'aide QUE si le prompt était trop gros (400/413/422). Pour un JSON
+            # invalide, un raisonnement écrit dans la réponse, un timeout ou un 5xx, réessayer sur le
+            # même fournisseur ne fait que perdre 1 à 2 minutes (constaté le 30/09 : run de 14 min) :
+            # on passe directement au fournisseur suivant.
+            if getattr(exc, "status_code", None) not in (400, 413, 422):
                 break
     return None, last_error
 

@@ -291,9 +291,12 @@ class OpenRouterProvider(LLMProvider):
     name = "openrouter"
 
     DEFAULT_MODELS = (
-        "openrouter/free",  # 29/09: gpt-oss-120b:free et llama-3.3:free = 404 (plus gratuits)
-        "nvidia/nemotron-3-super-120b-a12b:free",
+        # 30/09 (run réel): "openrouter/free" est un routeur AUTOMATIQUE qui a choisi un modèle de
+        # modération (« User Safety: unsafe ») puis des modèles qui écrivent leur raisonnement dans la
+        # réponse -> JSON invalide. On nomme donc des modèles instruct sans raisonnement visible.
         "google/gemma-4-31b-it:free",
+        "google/gemma-4-26b-a4b-it:free",
+        "qwen/qwen3.8-27b:free",
     )
 
     def __init__(self, api_key: str, model: str | None = None):
@@ -338,7 +341,7 @@ class NvidiaProvider(LLMProvider):
 
     def __init__(self, api_key: str, model: str | None = None):
         self.api_key = api_key
-        self.model = model or os.environ.get("NVIDIA_MODEL") or "nvidia/nemotron-3.5-lightning-30b-a3b"  # 29/09: llama-3.3/3.1-70b et gpt-oss-120b = 410 Gone ; alternative testée OK : openai/gpt-oss-20b
+        self.model = model or os.environ.get("NVIDIA_MODEL") or "openai/gpt-oss-20b"  # 30/09 (run réel): nemotron-3.5-lightning écrit son raisonnement en anglais au lieu du JSON (+ boucle "1, 1, 1") -> inutilisable ; llama-3.3/3.1-70b et gpt-oss-120b = 410 Gone
 
     def complete(self, system: str, user: str, max_tokens: int = MAX_OUTPUT_TOKENS) -> str:
         data = self._post(

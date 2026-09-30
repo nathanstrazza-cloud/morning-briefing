@@ -18,12 +18,15 @@ PLAN = orch.load_plan()
 
 class FakeProvider:
     """`fail` = ensemble de parties en échec ; `fail_429` = échec avec code 429 ; `raw` = réponse brute imposée."""
-    def __init__(self, name, calls, fail=(), fail_429=(), raw=None):
+    def __init__(self, name, calls, fail=(), fail_429=(), fail_400=(), raw=None):
         self.name, self.calls, self.fail, self.fail_429, self.raw = name, calls, set(fail), set(fail_429), raw or {}
+        self.fail_400 = set(fail_400)
 
     def complete(self, system, user, max_tokens=0):
         part = system.replace("SYS_", "")
         self.calls.append((self.name, part, len(user)))
+        if part in self.fail_400:
+            raise LLMError("400 prompt trop gros", status_code=400)
         if part in self.fail_429:
             raise LLMError("429 rate limit", status_code=429)
         if part in self.fail:
@@ -106,11 +109,16 @@ class TestSecours(unittest.TestCase):
         self.assertEqual(len([c for c in self.calls if c[0] == "nvidia"]), 1)   # pas de 2e tentative à budget réduit
         self.assertEqual(res["marches"].provider, "openrouter")
 
-    def test_erreur_autre_que_429_reessaie_avec_prompt_plus_petit(self):
-        pool = self.pool(nvidia={"fail": ["marches"]})
+    def test_prompt_trop_gros_400_reessaie_avec_prompt_plus_petit(self):
+        pool = self.pool(nvidia={"fail_400": ["marches"]})
         orch.run_plan(PLAN, simple_parts(["marches"]), pool, sleep=lambda s: None)
-        tailles = [n for p, part, n in self.calls if p == "nvidia"]
-        self.assertEqual(tailles, [100, 10])
+        self.assertEqual([n for p, part, n in self.calls if p == "nvidia"], [100, 10])
+
+    def test_erreur_500_ou_json_invalide_passe_direct_au_fournisseur_suivant(self):
+        pool = self.pool(nvidia={"fail": ["marches"]})
+        res = orch.run_plan(PLAN, simple_parts(["marches"]), pool, sleep=lambda s: None)
+        self.assertEqual(len([c for c in self.calls if c[0] == "nvidia"]), 1)   # pas de perte de temps
+        self.assertEqual(res["marches"].provider, "openrouter")
 
     def test_json_avec_balises_ou_texte_autour_est_accepte(self):
         raw = {"marches": '```json\n{"k": 1}\n```'}
@@ -150,6 +158,45 @@ ANALYSED = {
 TOPIC_APPROF = {"mode": "approfondi", "contenu_source": {"titre": "Sommeil", "url": "https://x"}}
 TOPIC_DECOUV = {"mode": "decouverte", "contenu_source": {"titre": "Découverte", "url": "https://x"}}
 NYT = {"titre": "T", "resume": "R", "url": "u", "source": "NYT"}
+
+
+class TestScienceTexte(unittest.TestCase):
+    ARTICLE = "TITRE: Le sommeil\n\n## 1. Introduction\n" + "mot " * 320
+
+    def test_moitie_a_titre_et_texte(self):
+        b = parts_mod.parse_science_a("approfondi", 300)(self.ARTICLE)["science"]
+        self.assertEqual(b["titre"], "Le sommeil")
+        self.assertTrue(b["contenu_markdown"].startswith("## 1. Introduction"))
+
+    def test_bloc_de_code_et_titre_en_gras_acceptes(self):
+        b = parts_mod.parse_science_a("approfondi", 300)("```markdown\n**TITRE:** « Le sommeil »\n" + "mot " * 320 + "\n```")["science"]
+        self.assertEqual(b["titre"], "Le sommeil")
+
+    def test_raisonnement_ou_moderation_rejete(self):
+        for bad in ("Here's a thinking process:\n1. Analyze", "User Safety: unsafe\nSafety Categories: Violence", "The user wants me to write"):
+            with self.assertRaises(ValueError):
+                parts_mod.parse_science_a("approfondi", 10)("TITRE: x\n" + bad if False else bad)
+
+    def test_titre_manquant_ou_article_trop_court_rejete(self):
+        with self.assertRaises(ValueError):
+            parts_mod.parse_science_a("approfondi", 300)("## 1. Intro\n" + "mot " * 400)
+        with self.assertRaises(ValueError):
+            parts_mod.parse_science_a("approfondi", 300)("TITRE: x\n\ncourt")
+
+    def test_moitie_b_sans_titre(self):
+        self.assertIn("contenu_markdown", parts_mod.parse_science_b("## 5. Données\n" + "mot " * 260))
+
+    def test_le_texte_avec_guillemets_et_retours_ligne_ne_pose_plus_de_probleme(self):
+        art = 'TITRE: X\n\n## 1\nIl a dit "bonjour"\navec des « guillemets » et\ndes retours.\n' + "mot " * 320
+        self.assertIn('"bonjour"', parts_mod.parse_science_a("approfondi", 300)(art)["science"]["contenu_markdown"])
+
+    def test_orchestrateur_utilise_le_parser_texte(self):
+        calls = []
+        part = Part("science_a", "SYS_science_a", lambda mc: "x", 100, ("science",), (100,),
+                    parser=parts_mod.parse_science_a("approfondi", 300))
+        prov = FakeProvider("mistral", calls, raw={"science_a": self.ARTICLE})
+        res = orch.run_stage({"science_a": part}, {"science_a": ["mistral"]}, {"mistral": prov})
+        self.assertTrue(res["science_a"].ok)
 
 
 class TestJsonTolerant(unittest.TestCase):
