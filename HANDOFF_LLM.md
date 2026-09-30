@@ -57,9 +57,16 @@ maintenant construit à partir des titres publiés (plus de LLM). Anciennes fonc
   normalisée pour le site (`mouvements_notables`) ; (6) résumé « à la une » dédoublonné ; (7) NVIDIA timeout 150 s ; (8) modèles NVIDIA/OpenRouter nommés.
 - Résultat du run 2 (avant ces corrections) : 7/7 parties rédigées, mais via beaucoup de secours ; durée ~14 min.
 
+## Résultat du run de validation (30/09, 3e run, code corrigé) : 7/7 parties rédigées en ~5 min
+actu_france=groq, actu_monde=mistral, science_a=mistral, science_b=groq (article de 1 841 mots, sections 1 à 10 cohérentes),
+marches=mistral (après échecs NVIDIA « réponse vide » + OpenRouter 429), anglais=nvidia, sport=nvidia (secours d'OpenRouter en 429).
+Points encore faibles : (1) OpenRouter : « temporarily rate-limited upstream » (pool partagé Google AI Studio) sur les modèles gratuits
+-> ne pas compter dessus (le secours fonctionne) ; (2) NVIDIA gpt-oss-20b renvoyait parfois une réponse vide (le raisonnement mange
+max_tokens) -> max_tokens doublé pour gpt-oss (à confirmer au prochain run) ; (3) citation = null (normal si non certaine) ;
+(4) les titres de la moitié A de science sont en gras (`## **1. …**`), ceux de la B non : cosmétique, à harmoniser côté prompt si gênant.
+
 ## Reste à faire
-1. Vérifier le run suivant (`_parts` dans le JSON du jour, journal `logs/`) : viser 0 secours inutile et ~7-8 min.
-2. Contrôler la qualité éditoriale : citation (souvent `null` : normal si non certaine), cohérence des 2 moitiés de science.
-3. Si un fournisseur reste faible sur sa partie, changer l'ordre dans config/llm_plan.yaml (aucun code).
-4. Supprimer le code mort (`_run_chain`, `get_providers(role)`, `_build_user_prompt_*`) et le secret LLM_PROVIDER devenu inutile.
-5. Sécurité : les 2 jetons GitHub sont en clair dans les fichiers du projet Claude → les révoquer une fois fini.
+1. Vérifier le prochain run planifié (`_parts` dans le JSON du jour + journal `logs/`).
+2. Si OpenRouter continue d'échouer en 429, le remplacer par un autre rôle/fournisseur dans config/llm_plan.yaml (aucun code).
+3. Supprimer le code mort (`_run_chain`, `get_providers(role)`, `_build_user_prompt_*`) et le secret LLM_PROVIDER devenu inutile.
+4. Sécurité : les 2 jetons GitHub sont en clair dans les fichiers du projet Claude → les révoquer une fois fini.

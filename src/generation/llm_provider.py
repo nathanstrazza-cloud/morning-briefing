@@ -354,7 +354,7 @@ class NvidiaProvider(LLMProvider):
                     {"role": "user", "content": user},
                 ],
                 "temperature": 0.3,
-                "max_tokens": max_tokens,
+                "max_tokens": max_tokens * 2 if "gpt-oss" in self.model else max_tokens,  # 30/09: gpt-oss-20b renvoyait « Réponse vide » (raisonnement = budget)
             },
             timeout=150,
         )
