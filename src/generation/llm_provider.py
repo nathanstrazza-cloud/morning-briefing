@@ -211,7 +211,7 @@ class MistralProvider(LLMProvider):
 
     def __init__(self, api_key: str, model: str | None = None):
         self.api_key = api_key
-        self.model = model or os.environ.get("MISTRAL_MODEL") or "open-mistral-nemo"  # 29/09: mistral-small/medium/magistral = quota gratuit 0 req/min (429 code 1300) ; open-mistral-nemo et ministral-8b-latest répondent
+        self.model = model or os.environ.get("MISTRAL_MODEL") or "ministral-14b-2512"  # 30/09: choisi d'après tableau de limites + sonde (14B, 937 500 tokens/min, 30 req/min). small/medium/magistral = 0 req/min (429 code 1300) ; large = 403 tier ; repli : ministral-8b-2512 / open-mistral-nemo
 
     def complete(self, system: str, user: str, max_tokens: int = MAX_OUTPUT_TOKENS) -> str:
         data = self._post(

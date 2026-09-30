@@ -14,18 +14,18 @@ Document pour une autre IA / une future session. Lire aussi `README.md` et `src/
 | Fournisseur | Modèle OK | Limites relevées |
 |---|---|---|
 | Groq | openai/gpt-oss-120b | 1000 requêtes/jour, 8000 tokens/MINUTE (le vrai goulot) |
-| Mistral | open-mistral-nemo, ministral-8b-latest | 188 req/min, 625 000 tokens/min ; mois : voir console.mistral.ai/limits. mistral-small/medium/magistral = 429 (quota nul) |
+| Mistral | **ministral-14b-2512 (choisi)**, ministral-8b-2512, open-mistral-nemo | 14b : 30 req/min, 937 500 tokens/min ; 8b/nemo : 188 req/min, 625 000 tokens/min ; mois : console.mistral.ai/limits. mistral-small/medium/magistral = 429 (0 req/min réel malgré 20 000 tokens/min affichés au tableau) ; mistral-large-2512 = 403 (palier d'abonnement) |
 | OpenRouter | openrouter/free | 50 requêtes/jour (modèles gratuits, `is_free_tier`) ; 429 « rate-limited upstream » possible sur un modèle précis |
 | NVIDIA | nemotron-3.5-lightning-30b-a3b, openai/gpt-oss-20b | ~40 req/min (doc publique), pas d'en-têtes ; 410 = modèle retiré, 404 = pas activé sur le compte, 503 = surcharge passagère |
 
 ## Pièges connus
-- Mistral `open-mistral-nemo` renvoie le JSON entouré de ```json … ``` : vérifier que le parseur du pipeline retire les balises.
+- Mistral (ministral / nemo) renvoie le JSON entouré de ```json … ``` : vérifier que le parseur du pipeline retire les balises.
 - Groq gpt-oss : le raisonnement consomme `max_tokens` (réponse vide/tronquée) → passer `reasoning_effort` bas (la sonde le fait, pas encore le pipeline).
 - Prompt « bloc » > 12000 car. chaque jour → le sport est coupé en premier (Spurs/foot absents).
 - Un 429 ne doit pas être retenté dans la même minute sur le même fournisseur.
 
 ## Reste à faire (ordre suggéré)
-1. Choisir le meilleur modèle Mistral autorisé (l'utilisateur a un tableau des limites par modèle : à comparer avec la sonde, viser justesse vs quota).
+1. (FAIT 30/09) Modèle Mistral choisi : ministral-14b-2512. Ne pas se fier au tableau de la console seul : l'en-tête x-ratelimit-limit-req-minute de la sonde fait foi.
 2. Mettre `reasoning_effort` bas côté Groq dans le pipeline ; vérifier le parseur JSON (balises ```).
 3. Relancer un run réel (supprimer `docs/data/briefings/YYYY-MM-DD.json`) et lire `llm_bloc/llm_science/llm_anglais` dans l'onglet Erreurs.
 4. Architecture en 2 vagues (cf. mémoire du projet) quand 3 fournisseurs tiennent.
