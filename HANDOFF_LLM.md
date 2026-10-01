@@ -70,3 +70,7 @@ max_tokens) -> max_tokens doublé pour gpt-oss (à confirmer au prochain run) ; 
 2. Si OpenRouter continue d'échouer en 429, le remplacer par un autre rôle/fournisseur dans config/llm_plan.yaml (aucun code).
 3. Supprimer le code mort (`_run_chain`, `get_providers(role)`, `_build_user_prompt_*`) et le secret LLM_PROVIDER devenu inutile.
 4. Sécurité : les 2 jetons GitHub sont en clair dans les fichiers du projet Claude → les révoquer une fois fini.
+
+
+## Analyse du run du 01/10/2026
+Voir `ANALYSE_RUN_2026-10-01.md` : erreurs de contenu restantes (science inventée, variations de marché, doublons, sport, citation…), causes et correctifs priorisés.
