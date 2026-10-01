@@ -74,3 +74,7 @@ max_tokens) -> max_tokens doublé pour gpt-oss (à confirmer au prochain run) ; 
 
 ## Analyse du run du 01/10/2026
 Voir `ANALYSE_RUN_2026-10-01.md` : erreurs de contenu restantes (science inventée, variations de marché, doublons, sport, citation…), causes et correctifs priorisés.
+
+
+## Organisation main / dev
+Voir `DEV_WORKFLOW.md` : développement sur la branche `dev`, tests via le workflow manuel `Dev Test` (artefact, sans toucher à la production).

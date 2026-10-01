@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 from datetime import datetime
 from pathlib import Path
 
@@ -23,7 +24,35 @@ logger = logging.getLogger("morning_briefing.stockage")
 # Les données vivent sous docs/ pour que GitHub Pages (mode "Deploy from branch -> /docs")
 # puisse servir le frontend ET les données JSON ensemble, gratuitement, sans workflow de
 # déploiement supplémentaire (cf. README §6).
-DATA_DIR = Path(__file__).resolve().parent.parent.parent / "docs" / "data" / "briefings"
+ROOT = Path(__file__).resolve().parent.parent.parent
+PROD_DATA_DIR = ROOT / "docs" / "data" / "briefings"
+
+
+def resolve_data_dir(env: dict | None = None) -> Path:
+    """Dossier de sortie des briefings.
+
+    - Production (aucune variable) : `docs/data/briefings` -- comportement historique inchangé.
+    - `BRIEFING_OUTPUT_DIR` défini : ce dossier (relatif = depuis la racine du dépôt), ex.
+      `test-output` pour le workflow dev-test.yml (cf. cahier "Organisation main/dev", §6.A).
+    - Garde-fou : avec TEST_MODE=true, écrire dans le dossier de production est REFUSÉ
+      (un test ne doit jamais pouvoir modifier les données publiées).
+    """
+    env = os.environ if env is None else env
+    raw = (env.get("BRIEFING_OUTPUT_DIR") or "").strip()
+    path = PROD_DATA_DIR
+    if raw:
+        p = Path(raw)
+        path = p if p.is_absolute() else ROOT / p
+    test_mode = (env.get("TEST_MODE") or "").strip().lower() in {"1", "true", "yes", "on"}
+    if test_mode and path.resolve() == PROD_DATA_DIR.resolve():
+        raise RuntimeError(
+            "TEST_MODE=true mais le dossier de sortie est celui de la production "
+            f"({PROD_DATA_DIR}). Définir BRIEFING_OUTPUT_DIR (ex. test-output)."
+        )
+    return path
+
+
+DATA_DIR = resolve_data_dir()
 
 
 def _write_json(path: Path, data: dict) -> None:
@@ -63,6 +92,9 @@ def save_briefing(
         "derniere_mise_a_jour": last_update_iso,
         "briefing": briefing,
     }
+    if os.environ.get("TEST_MODE", "").strip().lower() in {"1", "true", "yes", "on"}:
+        # Marqueur explicite : un briefing d'essai ne doit jamais être pris pour un vrai.
+        enveloppe["test_mode"] = True
 
     day_path = DATA_DIR / f"{date_iso}.json"
     _write_json(day_path, enveloppe)

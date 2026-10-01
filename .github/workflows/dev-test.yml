@@ -1,0 +1,135 @@
+name: Dev Test
+
+# Workflow de TEST, MANUEL UNIQUEMENT : Actions > "Dev Test" > Run workflow.
+# Cahier des charges : "Organisation main - dev et système de test" (voir DEV_WORKFLOW.md).
+#
+# Ce qu'il fait : récupère le code de la branche `dev` (ou de la branche choisie dans
+# l'input `ref`), récupère EN LECTURE SEULE les données de `main` (historique, latest.json...),
+# exécute le bot en TEST_MODE, écrit tout dans `test-output/` et publie ce dossier comme
+# ARTEFACT téléchargeable (+ un petit site d'aperçu `preview-site/`).
+#
+# Ce qu'il ne fait JAMAIS : commit, push, modification de main, publication GitHub Pages.
+# Garanties techniques : `permissions: contents: read` (le jeton ne peut pas écrire),
+# aucune étape git commit/push, et le code refuse TEST_MODE sans dossier de sortie dédié.
+#
+# ATTENTION quotas : utilise les MÊMES clés API que la production (Groq, Mistral, NVIDIA,
+# OpenRouter). Ne pas lancer de tests complets inutilement ; éviter 05h45-06h45 (Paris) en
+# semaine (le bot de production tourne à ~06h10) -- une étape ci-dessous bloque ce créneau
+# sauf si `force_near_prod` est coché. Pour tester la mécanique SANS consommer de quota :
+# cocher `no_llm`.
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Branche/commit à tester (par défaut : dev)"
+        required: false
+        default: "dev"
+        type: string
+      no_llm:
+        description: "Sans appel LLM (aucun quota consommé, briefing en mode repli)"
+        required: false
+        default: false
+        type: boolean
+      force_near_prod:
+        description: "Autoriser le lancement entre 05h45 et 06h45 (Paris, lun-ven)"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+# Groupe PROPRE : n'interagit pas avec le groupe `morning-briefing` de la production.
+# Un test ne bloque pas la production, la production ne bloque pas un test, et deux tests
+# ne tournent pas en même temps (le second attend ; un 3e remplace le 2e en attente).
+concurrency:
+  group: dev-test
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Garde-fou créneau de production (06h10 Paris)
+        env:
+          FORCE: ${{ inputs.force_near_prod }}
+        run: |
+          now=$(TZ=Europe/Paris date +%H%M); dow=$(TZ=Europe/Paris date +%u)
+          echo "Heure Paris: $now (jour $dow)"
+          if [ "$dow" -le 5 ] && [ "$now" -ge 0545 ] && [ "$now" -le 0645 ] && [ "$FORCE" != "true" ]; then
+            echo "::error::Créneau du bot de production (05h45-06h45 Paris). Relancer plus tard, ou cocher force_near_prod."
+            exit 1
+          fi
+
+      - name: Checkout du code à tester (dev)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref }}
+
+      - name: Checkout des données de main (lecture seule)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: _main_data
+          sparse-checkout: docs/data/briefings
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Tests unitaires (sans réseau, sans API)
+        run: python -m unittest discover -s tests -v
+
+      - name: Contexte = copie des données de main dans test-output
+        run: |
+          mkdir -p test-output
+          cp -r _main_data/docs/data/briefings/. test-output/
+          echo "Fichiers de contexte copiés depuis main :"; ls test-output | head -50
+
+      - name: Exécution du bot en mode test
+        env:
+          TEST_MODE: "true"
+          BRIEFING_OUTPUT_DIR: test-output
+          BRIEFING_LOGS_DIR: test-output/logs
+          NO_LLM: ${{ inputs.no_llm }}
+          LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ "$NO_LLM" = "true" ]; then python -m src.main --no-llm; else python -m src.main; fi
+
+      - name: Site d'aperçu (frontend de la branche testée + données de test)
+        if: always()
+        run: |
+          mkdir -p preview-site
+          cp -r docs/. preview-site/
+          rm -rf preview-site/data/briefings
+          mkdir -p preview-site/data
+          cp -r test-output preview-site/data/briefings
+          {
+            echo "### Dev Test"
+            echo "- Code testé : \`${{ inputs.ref }}\` ($(git rev-parse --short HEAD))"
+            echo "- Sans LLM : ${{ inputs.no_llm }}"
+            echo "- Télécharger l'artefact, le décompresser, puis : \`cd preview-site && python3 -m http.server\` et ouvrir http://localhost:8000"
+            echo "- JSON du test : \`test-output/latest.json\` ; logs : \`test-output/logs/\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Publication de l'artefact (AUCUN commit, AUCUN push)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dev-test-${{ github.run_number }}
+          path: |
+            test-output
+            preview-site
+          retention-days: 14
+          if-no-files-found: warn

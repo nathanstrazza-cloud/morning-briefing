@@ -22,7 +22,7 @@ from .analyse import dedup, scoring, verification
 from .collecte import collector, markets as markets_collect, weather as weather_collect
 from .generation import briefing_generator, llm_provider
 from .stockage import storage
-from .utils import compute_window, load_config, paris_now, setup_logging
+from .utils import compute_window, is_test_mode, load_config, paris_now, setup_logging
 
 
 def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
@@ -51,7 +51,14 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
     # déclenchement de la journée (quelle que soit l'heure réelle) génère le briefing ;
     # tout déclenchement suivant pour la même date (le second cron, ou un retry) est ignoré
     # car un fichier docs/data/briefings/{date}.json existe déjà pour aujourd'hui.
-    if not date_override:
+    # TEST_MODE=true (workflow dev-test.yml, cf. cahier "Organisation main/dev" §6.B) : les
+    # deux garde-fous ci-dessous sont ignorés pour pouvoir régénérer le briefing du jour à
+    # volonté. Sans danger : storage refuse d'écrire en production quand TEST_MODE=true
+    # (cf. storage.resolve_data_dir). En production TEST_MODE n'est pas défini -> inchangé.
+    if is_test_mode():
+        logger.info("TEST_MODE actif : garde-fous d'idempotence/horaire ignorés, sortie -> %s",
+                    storage.DATA_DIR)
+    elif not date_override:
         if reference.hour < 6:
             logger.info(
                 "Heure Paris actuelle (%02d:%02d) avant 06:00 -> run ignoré "

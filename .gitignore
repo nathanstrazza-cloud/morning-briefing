@@ -8,3 +8,7 @@ venv/
 # "git add docs/data/ logs/" du workflow (cf. .github/workflows/briefing.yml) de committer
 # les logs de run -- alors même que le workflow est censé le faire pour le débogage (cahier
 # §22). Les logs/*.log DOIVENT être versionnés : ne pas les réintroduire ici.
+
+# Sorties du workflow dev-test (artefact uniquement, ne jamais committer)
+test-output/
+preview-site/

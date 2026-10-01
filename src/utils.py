@@ -12,7 +12,30 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / "config" / "config.yaml"
-LOGS_DIR = ROOT / "logs"
+
+
+def is_test_mode() -> bool:
+    """True si TEST_MODE=true (cf. cahier "Organisation main/dev", §6.B).
+
+    Mode test = le garde-fou d'idempotence (day_briefing_exists) et le garde-fou horaire
+    sont ignorés, et la sortie doit aller dans BRIEFING_OUTPUT_DIR (jamais en production,
+    cf. stockage.storage.resolve_data_dir qui refuse l'inverse). Défaut : False (production).
+    """
+    return os.environ.get("TEST_MODE", "").strip().lower() in {"1", "true", "yes", "on"}
+
+
+def resolve_logs_dir(env: dict | None = None) -> Path:
+    """Dossier des logs de run : `BRIEFING_LOGS_DIR` s'il est défini (relatif = depuis la
+    racine du dépôt), sinon `logs/` (production, inchangé)."""
+    env = os.environ if env is None else env
+    raw = (env.get("BRIEFING_LOGS_DIR") or "").strip()
+    if not raw:
+        return ROOT / "logs"
+    p = Path(raw)
+    return p if p.is_absolute() else ROOT / p
+
+
+LOGS_DIR = resolve_logs_dir()
 # NB (nettoyé le 2026-09-13) : un ancien DATA_DIR = ROOT / "data" / "briefings" existait ici,
 # jamais utilisé et incohérent avec le vrai chemin de stockage (docs/data/briefings, défini
 # dans stockage/storage.py pour être servi par GitHub Pages). Supprimé pour éviter toute
