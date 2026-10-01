@@ -1,6 +1,68 @@
 {
   "entries": [
     {
+      "derniere_execution": "2026-10-01T06:10:41.723539+02:00",
+      "date_visee": "2026-10-01",
+      "succes": true,
+      "erreur": null,
+      "synthese_llm": true,
+      "erreur_llm": null,
+      "llm_bloc": {
+        "genere_par_llm": true,
+        "provider": "groq+mistral+nvidia",
+        "erreur": null
+      },
+      "llm_science": {
+        "genere_par_llm": true,
+        "provider": "groq+mistral",
+        "erreur": null
+      },
+      "llm_anglais": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null
+      },
+      "sources_rss_en_erreur": [
+        {
+          "source": "CNRS Actualités",
+          "categorie": "sciences",
+          "statut": "erreur",
+          "detail": "<unknown>:14:379: not well-formed (invalid token)"
+        },
+        {
+          "source": "ESPN NBA News",
+          "categorie": "sport_basketball",
+          "statut": "vide",
+          "detail": null
+        },
+        {
+          "source": "L'Équipe Hand",
+          "categorie": "sport_autres",
+          "statut": "vide",
+          "detail": null
+        },
+        {
+          "source": "L'Équipe Volley",
+          "categorie": "sport_autres",
+          "statut": "vide",
+          "detail": null
+        }
+      ],
+      "sources_marches_en_erreur": [],
+      "funnel_actualite": {
+        "france": {
+          "bruts": 119,
+          "evenements_uniques": 110,
+          "retenus_apres_seuil": 62
+        },
+        "monde": {
+          "bruts": 70,
+          "evenements_uniques": 68,
+          "retenus_apres_seuil": 34
+        }
+      }
+    },
+    {
       "derniere_execution": "2026-09-30T16:27:42.319155+02:00",
       "date_visee": "2026-09-30",
       "succes": true,
