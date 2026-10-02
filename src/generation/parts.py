@@ -11,9 +11,13 @@ Le moteur qui exécute tout cela est llm_orchestrator.py ; les règles éditoria
 from __future__ import annotations
 
 import difflib
+import logging
 import re
 
 from .llm_orchestrator import Part, PartResult, looks_like_leak
+from .science_guard import guard_science_article
+
+logger = logging.getLogger("morning_briefing.generation")
 
 # --- budgets ---------------------------------------------------------------------------------
 # Groq (gpt-oss-120b) est limité à 8 000 tokens/minute : prompt + sortie doivent tenir dans cette
@@ -134,18 +138,23 @@ SCHÉMA JSON ATTENDU :
 }}"""
 
 _TON_SCIENCE = """Ton d'une bonne revue de vulgarisation scientifique : précis, pédagogique,
-compréhensible, sans sensationnalisme, sans déformer les connaissances pour simplifier. N'invente
-aucune donnée chiffrée, aucune étude, aucun nom de chercheur : utilise les données fournies et des
-connaissances scientifiques largement établies et non controversées sur ce sujet précis ; si un
-point est incertain, dis-le."""
+compréhensible, sans sensationnalisme, sans déformer les connaissances pour simplifier.
+RÈGLES ANTI-INVENTION (strictes, un contrôle automatique supprime les phrases fautives) :
+- Tu disposes UNIQUEMENT du titre et du résumé d'un article (champ science_source). Tout nombre,
+  pourcentage, date, nom de chercheur, d'institution, d'étude ou de revue doit figurer dans ce champ ;
+  sinon NE L'ÉCRIS PAS (pas de « environ », pas d'ordre de grandeur de mémoire).
+- Tu peux expliquer les mécanismes par des connaissances scientifiques de manuel, sans chiffre.
+- Si la source ne donne pas de résultats chiffrés, la section « Données et résultats » dit simplement
+  que le résumé disponible n'en précise pas, et renvoie à l'article source.
+- N'écris aucune phrase de transition interne (« fin de la moitié A », « la suite abordera »).
+- Titres de section : « ## Titre » sans numéro ni gras. Si un point est incertain, dis-le."""
 
 _PLAN_ARTICLE = """PLAN DE L'ARTICLE (10 sections, écrit en DEUX moitiés par deux rédacteurs différents) :
   Moitié A : 1. Introduction  2. Pourquoi le sujet est important  3. Explication du phénomène
              4. Fonctionnement / mécanismes
   Moitié B : 5. Données et résultats scientifiques  6. Ce que les scientifiques savent
              7. Ce qui reste incertain  8. Limites et controverses éventuelles  9. Conclusion
-             10. Sources (uniquement celles fournies dans les données ; sinon écris que les sources
-             détaillées sont à consulter dans la source indiquée)"""
+             10. Sources (NE PAS l'écrire : la section Sources est ajoutée automatiquement par le programme)"""
 
 SYSTEM_SCIENCE_A = f"""Tu es le rédacteur de la section science d'un briefing matinal en français. Tu écris
 la MOITIÉ A d'un article pédagogique approfondi (~5 minutes de lecture pour cette moitié).
@@ -345,7 +354,8 @@ def _normalise_marches(m: dict, brut: dict | None) -> dict:
     return m
 
 
-def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: dict | None) -> None:
+def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: dict | None,
+                  science_source: dict | None = None) -> None:
     """Remplace, partie par partie, le contenu brut du briefing de repli par ce que les LLM ont
     rédigé. Une partie en échec garde son contenu brut (cf. cahier §21). Modifie `resultat`."""
     r = results
@@ -378,6 +388,12 @@ def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: d
                 contenu += "\n\n" + str(r["science_b"].body["contenu_markdown"]).strip()
             else:
                 contenu += "\n\n" + NOTE_SUITE_ABSENTE
+        if science_source is not None:
+            contenu, retirees = guard_science_article(contenu, science_source)
+            sci["phrases_retirees_garde_fou"] = len(retirees)
+            if retirees:
+                logger.warning("Garde-fou science : %d phrase(s) retirée(s) (chiffres absents de la source) : %s",
+                               len(retirees), " | ".join(x[:80] for x in retirees[:8]))
         sci["contenu_markdown"] = contenu
         resultat["science"] = sci
 
