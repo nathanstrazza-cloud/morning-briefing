@@ -1,0 +1,65 @@
+2026-10-02 04:10:42,626 [INFO] morning_briefing: === Démarrage du run Morning Briefing pour le 2026-10-02 ===
+2026-10-02 04:10:42,637 [INFO] morning_briefing: Fenêtre de recherche: 2026-10-01 00:10:41.723539+02:00 -> 2026-10-02 06:10:42.626419+02:00 (lundi=False, dernier_succes=2026-10-01 06:10:41.723539+02:00)
+2026-10-02 04:10:42,637 [INFO] morning_briefing.collecte: Début de la collecte (depuis=2026-10-01T00:10:41.723539+02:00, lundi=False)
+2026-10-02 04:10:42,848 [INFO] morning_briefing.collecte.rss: Flux Le Monde (france): 16 articles récupérés
+2026-10-02 04:10:43,342 [INFO] morning_briefing.collecte.rss: Flux France Info (france): 30 articles récupérés
+2026-10-02 04:10:43,936 [INFO] morning_briefing.collecte.rss: Flux Libération (france): 50 articles récupérés
+2026-10-02 04:10:44,327 [INFO] morning_briefing.collecte.rss: Flux 20 Minutes (france): 30 articles récupérés
+2026-10-02 04:10:44,437 [INFO] morning_briefing.collecte.rss: Flux Le Monde International (monde): 20 articles récupérés
+2026-10-02 04:10:44,705 [INFO] morning_briefing.collecte.rss: Flux New York Times World (monde): 56 articles récupérés
+2026-10-02 04:10:45,045 [INFO] morning_briefing.collecte.rss: Flux France 24 International (monde): 24 articles récupérés
+2026-10-02 04:10:45,171 [INFO] morning_briefing.collecte.rss: Flux Le Monde Économie (economie): 20 articles récupérés
+2026-10-02 04:10:45,510 [INFO] morning_briefing.collecte.rss: Flux Le Figaro Économie (economie): 20 articles récupérés
+2026-10-02 04:10:45,684 [INFO] morning_briefing.collecte.rss: Flux BFM Business (economie): 30 articles récupérés
+2026-10-02 04:10:45,916 [INFO] morning_briefing.collecte.rss: Flux Le Monde Sciences (sciences): 20 articles récupérés
+2026-10-02 04:10:47,019 [WARNING] morning_briefing.collecte.rss: Flux RSS illisible ou vide: CNRS Actualités (https://www.cnrs.fr/fr/rss.xml) -- <unknown>:14:449: not well-formed (invalid token)
+2026-10-02 04:10:48,585 [INFO] morning_briefing.collecte.rss: Flux Nature News (sciences): 75 articles récupérés
+2026-10-02 04:10:49,017 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Football (sport_football): 50 articles récupérés
+2026-10-02 04:10:50,265 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Basket (sport_basketball): 50 articles récupérés
+2026-10-02 04:10:50,428 [INFO] morning_briefing.collecte.rss: Flux ESPN NBA News (sport_basketball): 0 articles récupérés
+2026-10-02 04:10:50,679 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Natation (sport_natation): 50 articles récupérés
+2026-10-02 04:10:50,924 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Tennis (sport_autres): 50 articles récupérés
+2026-10-02 04:10:51,183 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Rugby (sport_autres): 50 articles récupérés
+2026-10-02 04:10:52,149 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Cyclisme (sport_autres): 50 articles récupérés
+2026-10-02 04:10:52,541 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Hand (sport_autres): 0 articles récupérés
+2026-10-02 04:10:52,915 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Volley (sport_autres): 0 articles récupérés
+2026-10-02 04:10:52,917 [INFO] morning_briefing.collecte.sports: Sport collecté: foot=50 basket=10 natation=0 autres(France)=14
+2026-10-02 04:10:53,932 [INFO] morning_briefing.collecte.markets: Marchés collectés: 5 indices, 2 matières premières
+2026-10-02 04:10:56,800 [INFO] morning_briefing.collecte.weather: Météo collectée pour 4/4 villes
+2026-10-02 04:10:56,800 [INFO] morning_briefing.collecte: Collecte terminée: 286 actualités, 74 items sport, 5 indices, 4 villes météo
+2026-10-02 04:10:56,800 [WARNING] morning_briefing.collecte: Flux RSS en échec ce run: CNRS Actualités
+2026-10-02 04:10:56,878 [INFO] morning_briefing.analyse.dedup: Déduplication: 120 items bruts -> 108 événements uniques
+2026-10-02 04:10:56,880 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 108 événements
+2026-10-02 04:10:56,880 [INFO] morning_briefing.analyse.verification: Vérification: 10/108 événements classés 'fait confirmé' (>= 2 sources)
+2026-10-02 04:10:56,913 [INFO] morning_briefing.analyse.dedup: Déduplication: 86 items bruts -> 83 événements uniques
+2026-10-02 04:10:56,914 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 83 événements
+2026-10-02 04:10:56,914 [INFO] morning_briefing.analyse.verification: Vérification: 0/83 événements classés 'fait confirmé' (>= 2 sources)
+2026-10-02 04:10:56,914 [INFO] morning_briefing: Entonnoir actualité (seuil=5): france {'bruts': 120, 'evenements_uniques': 108, 'retenus_apres_seuil': 64} | monde {'bruts': 86, 'evenements_uniques': 83, 'retenus_apres_seuil': 28}
+2026-10-02 04:10:56,941 [INFO] morning_briefing.analyse.dedup: Déduplication: 69 items bruts -> 62 événements uniques
+2026-10-02 04:10:56,942 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 62 événements
+2026-10-02 04:10:56,943 [INFO] morning_briefing.analyse.dedup: Déduplication: 11 items bruts -> 11 événements uniques
+2026-10-02 04:10:56,943 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 11 événements
+2026-10-02 04:10:56,943 [INFO] morning_briefing.analyse.verification: Vérification: 0/11 événements classés 'fait confirmé' (>= 2 sources)
+2026-10-02 04:10:56,953 [INFO] morning_briefing.analyse.dedup: Déduplication: 50 items bruts -> 42 événements uniques
+2026-10-02 04:10:56,954 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 42 événements
+2026-10-02 04:10:56,955 [INFO] morning_briefing.analyse.dedup: Déduplication: 10 items bruts -> 9 événements uniques
+2026-10-02 04:10:56,955 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 9 événements
+2026-10-02 04:10:56,955 [INFO] morning_briefing.analyse.dedup: Déduplication: 0 items bruts -> 0 événements uniques
+2026-10-02 04:10:56,955 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 0 événements
+2026-10-02 04:10:56,956 [INFO] morning_briefing.analyse.dedup: Déduplication: 14 items bruts -> 14 événements uniques
+2026-10-02 04:10:56,957 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 14 événements
+2026-10-02 04:10:56,957 [INFO] morning_briefing: Sport réduit à 4 item(s) au total (max_sport_total=4): {'football': 4, 'basketball': 0, 'natation': 0, 'autres': 0}
+2026-10-02 04:10:56,957 [INFO] morning_briefing.generation.llm: Fournisseurs LLM disponibles (clé présente) : groq, mistral, cerebras, openrouter, nvidia
+2026-10-02 04:10:56,976 [INFO] morning_briefing.generation: === appel_1 : actu_france, actu_monde, marches, anglais ===
+2026-10-02 04:10:56,976 [INFO] morning_briefing.generation: Tour 1 : groq -> actu_france; mistral -> actu_monde
+2026-10-02 04:11:10,978 [INFO] morning_briefing.generation: Tour 1 : nvidia -> marches; openrouter -> anglais
+2026-10-02 04:11:11,399 [ERROR] morning_briefing.generation: Échec LLM part=anglais provider=openrouter tentative=1/1 budget=12000 : 429 Too Many Requests (provider=openrouter): {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Google AI Studio","is_byok":false,"provider_error_code":"429","limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to | corps: {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Google AI Studio","is_byok":false,"provider_error_code":"429","limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to
+2026-10-02 04:11:36,885 [INFO] morning_briefing.generation: Tour 2 : nvidia -> anglais
+2026-10-02 04:11:47,022 [INFO] morning_briefing.generation: Pause de 150 s avant l'appel_2 (fenêtre tokens/minute des fournisseurs)
+2026-10-02 04:14:17,022 [INFO] morning_briefing.generation: === appel_2 : science_a, science_b, sport ===
+2026-10-02 04:14:17,023 [INFO] morning_briefing.generation: Tour 1 : mistral -> science_a; groq -> science_b; openrouter -> sport
+2026-10-02 04:14:17,372 [ERROR] morning_briefing.generation: Échec LLM part=sport provider=openrouter tentative=1/2 budget=12000 : 429 Too Many Requests (provider=openrouter): {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Google AI Studio","is_byok":false,"provider_error_code":"429","limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to | corps: {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Google AI Studio","is_byok":false,"provider_error_code":"429","limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to
+2026-10-02 04:14:35,428 [INFO] morning_briefing.generation: Tour 2 : nvidia -> sport
+2026-10-02 04:14:42,439 [INFO] morning_briefing.generation: Parties rédigées par LLM : 7/7 (actu_france=groq, actu_monde=mistral, marches=nvidia, anglais=nvidia, science_a=mistral, science_b=groq, sport=nvidia)
+2026-10-02 04:14:42,443 [INFO] morning_briefing.stockage: Briefing sauvegardé: /home/runner/work/morning-briefing/morning-briefing/docs/data/briefings/2026-10-02.json
+2026-10-02 04:14:42,443 [INFO] morning_briefing: === Run terminé avec succès pour le 2026-10-02 ===

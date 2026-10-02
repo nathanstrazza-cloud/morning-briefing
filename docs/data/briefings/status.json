@@ -1,6 +1,6 @@
 {
-  "derniere_execution": "2026-10-01T06:10:41.723539+02:00",
-  "date_visee": "2026-10-01",
+  "derniere_execution": "2026-10-02T06:10:42.626419+02:00",
+  "date_visee": "2026-10-02",
   "succes": true,
   "erreur": null,
   "synthese_llm": true,
@@ -25,7 +25,7 @@
       "source": "CNRS Actualités",
       "categorie": "sciences",
       "statut": "erreur",
-      "detail": "<unknown>:14:379: not well-formed (invalid token)"
+      "detail": "<unknown>:14:449: not well-formed (invalid token)"
     },
     {
       "source": "ESPN NBA News",
@@ -49,14 +49,14 @@
   "sources_marches_en_erreur": [],
   "funnel_actualite": {
     "france": {
-      "bruts": 119,
-      "evenements_uniques": 110,
-      "retenus_apres_seuil": 62
+      "bruts": 120,
+      "evenements_uniques": 108,
+      "retenus_apres_seuil": 64
     },
     "monde": {
-      "bruts": 70,
-      "evenements_uniques": 68,
-      "retenus_apres_seuil": 34
+      "bruts": 86,
+      "evenements_uniques": 83,
+      "retenus_apres_seuil": 28
     }
   }
 }
