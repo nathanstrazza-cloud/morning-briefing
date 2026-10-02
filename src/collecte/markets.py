@@ -42,6 +42,65 @@ _HEADERS = {
 }
 
 
+def compute_session_change(result: dict) -> dict | None:
+    """Calcule la variation d'UNE séance à partir de la réponse Yahoo « chart ».
+
+    Correctif du 02/10/2026 : l'ancien code utilisait `meta.previousClose or
+    meta.chartPreviousClose`. Avec `range=5d`, `chartPreviousClose` est la clôture
+    d'AVANT le début de la plage (~5 séances plus tôt) : la variation affichée était
+    donc hebdomadaire (CAC -3,0 % au lieu d'environ -1 %), et le LLM l'expliquait
+    avec l'actualité du jour. On utilise désormais le tableau des clôtures journalières.
+
+    Règle : on compare le cours courant (`regularMarketPrice`) à la clôture de la séance
+    PRÉCÉDENTE. Si la dernière barre journalière est celle de la séance du cours courant
+    (cas général), la référence est l'avant-dernière clôture ; sinon (barre du jour pas
+    encore créée) c'est la dernière clôture.
+
+    Retourne None si les données sont insuffisantes (jamais de valeur inventée).
+    """
+    from datetime import datetime, timezone
+    from zoneinfo import ZoneInfo
+
+    meta = result.get("meta") or {}
+    cours = meta.get("regularMarketPrice")
+    timestamps = result.get("timestamp") or []
+    quotes = ((result.get("indicators") or {}).get("quote") or [{}])[0]
+    closes = quotes.get("close") or []
+    if cours is None or len(timestamps) != len(closes):
+        return None
+
+    try:
+        tz = ZoneInfo(meta.get("exchangeTimezoneName") or "UTC")
+    except Exception:  # noqa: BLE001
+        tz = timezone.utc
+    barres = [
+        (datetime.fromtimestamp(t, tz).date(), float(c))
+        for t, c in zip(timestamps, closes)
+        if c is not None
+    ]
+    if not barres:
+        return None
+
+    rmt = meta.get("regularMarketTime")
+    date_cours = datetime.fromtimestamp(rmt, tz).date() if rmt else barres[-1][0]
+    if barres[-1][0] == date_cours:
+        if len(barres) < 2:
+            return None
+        ref_date, reference = barres[-2]
+    else:
+        ref_date, reference = barres[-1]
+    if not reference:
+        return None
+    cours_f = float(cours)
+    return {
+        "cours": cours_f,
+        "cloture_veille": reference,
+        "date_reference": ref_date.isoformat(),
+        "date_cours": date_cours.isoformat(),
+        "variation_pct": round((cours_f - reference) / reference * 100, 2),
+    }
+
+
 def fetch_quote(
     name: str, symbol: str, timeout: int = 10, diagnostics: list[dict] | None = None
 ) -> dict | None:
@@ -76,30 +135,33 @@ def fetch_quote(
             return None
 
         meta = result[0].get("meta") or {}
-        cours = meta.get("regularMarketPrice")
-        cloture_veille = meta.get("previousClose") or meta.get("chartPreviousClose")
+        change = compute_session_change(result[0])
 
-        if cours is None or cloture_veille in (None, 0):
+        if change is None:
             logger.warning("Données Yahoo Finance incomplètes pour %s (%s): %s", name, symbol, meta)
             _record(
                 "erreur",
-                f"champs manquants (cours={cours!r}, cloture_veille={cloture_veille!r}, "
+                f"champs manquants/insuffisants (cours={meta.get('regularMarketPrice')!r}, "
                 f"marketState={meta.get('marketState')!r})",
                 resp.status_code,
             )
             return None
 
-        cours_f = float(cours)
-        cloture_veille_f = float(cloture_veille)
-        variation_pct = ((cours_f - cloture_veille_f) / cloture_veille_f) * 100 if cloture_veille_f else None
-
+        # Journalisation de contrôle (cahier §22) : permet de vérifier a posteriori la base
+        # de calcul (hypothèse du 01/10 : ancienne base = 5 séances).
+        logger.info(
+            "Marché %s: cours=%s ref=%s (%s) var=%s%% | meta.chartPreviousClose=%s previousClose=%s",
+            name, change["cours"], change["cloture_veille"], change["date_reference"],
+            change["variation_pct"], meta.get("chartPreviousClose"), meta.get("previousClose"),
+        )
         _record("ok", None, resp.status_code)
         return {
             "name": name,
             "symbol": symbol,
-            "cours": cours_f,
-            "cloture_veille": cloture_veille_f,
-            "variation_pct": round(variation_pct, 2) if variation_pct is not None else None,
+            "cours": change["cours"],
+            "cloture_veille": change["cloture_veille"],
+            "date_reference": change["date_reference"],
+            "variation_pct": change["variation_pct"],
             "devise": meta.get("currency"),
         }
     except (ValueError, KeyError, TypeError) as exc:
