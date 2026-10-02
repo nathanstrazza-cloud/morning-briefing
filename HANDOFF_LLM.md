@@ -1,3 +1,5 @@
+> **Reprise du travail : lire d'abord `SUIVI_CORRECTIFS.md` (état des correctifs de contenu sur `dev`).**
+
 # HANDOFF — fournisseurs LLM (état au 29/09/2026 soir)
 
 Document pour une autre IA / une future session. Lire aussi `README.md` et `src/generation/llm_provider.py`.
