@@ -9,16 +9,23 @@ import json
 import sys
 
 
+LIMITE = 3500   # GitHub tronque les annotations vers 4 000 caractères : on découpe en morceaux numérotés
+
+
 def emit(titre: str, lignes: list[str]) -> None:
-    msg = "\n".join(lignes)[:60000].replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
-    print(f"::notice title={titre}::{msg}")
+    texte = "\n".join(lignes)
+    morceaux = [texte[i:i + LIMITE] for i in range(0, len(texte), LIMITE)] or [""]
+    for n, m in enumerate(morceaux[:6], 1):
+        suffixe = f"-{n}" if len(morceaux) > 1 else ""
+        msg = m.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+        print(f"::notice title={titre}{suffixe}::{msg}")
 
 
 def main(out: str) -> None:
     logs = sorted(glob.glob(f"{out}/logs/*.log"))
     texte = open(logs[-1], encoding="utf-8").read().splitlines() if logs else []
     emit("1-log-marches", [l for l in texte if "Marché " in l or "marches" in l.lower()][:20] or ["(aucune ligne marché)"])
-    emit("2-log-garde-fous", [l for l in texte if "Garde-fou" in l or "inter-zones" in l or "Parties rédigées" in l
+    emit("2-log-garde-fous", [l for l in texte if "Garde-fou" in l or "inter-zones" in l or "Sport" in l or "Parties rédigées" in l
                               or "ERROR" in l or "Entonnoir" in l][:40] or ["(rien)"])
     try:
         b = json.load(open(f"{out}/latest.json", encoding="utf-8"))["briefing"]
@@ -26,13 +33,13 @@ def main(out: str) -> None:
         emit("3-briefing", [f"latest.json illisible: {exc}"])
         return
     act = b.get("actualite") or {}
+    emit("3a-sport-citation", ["SPORT: " + json.dumps(b.get("sport"), ensure_ascii=False),
+                               "CITATION: " + json.dumps(b.get("citation"), ensure_ascii=False)])
     lignes = ["MARCHES: " + json.dumps(b.get("marches"), ensure_ascii=False)]
     for z in ("france", "monde"):
         for e in act.get(z) or []:
             lignes.append(f"ACTU {z} [{e.get('statut')}] {e.get('titre')}\n   resume={e.get('resume')}\n   pourquoi={e.get('pourquoi_important')}\n   conseq={e.get('consequences')}")
-    lignes.append("SPORT: " + json.dumps(b.get("sport"), ensure_ascii=False))
-    lignes.append("CITATION: " + json.dumps(b.get("citation"), ensure_ascii=False))
-    emit("3-briefing", lignes)
+    emit("3b-actu", lignes)
     s = b.get("science") or {}
     emit("4-science", [f"titre={s.get('titre')} retirees={s.get('phrases_retirees_garde_fou')}",
                        (s.get("contenu_markdown") or "")[:30000]])
