@@ -79,10 +79,10 @@ jobs:
         with:
           python-version: "3.12"
 
-      - run: pip install -r requirements.txt
+      - run: pip install -r requirements.txt pytest
 
       - name: Tests unitaires (sans réseau, sans API)
-        run: python -m unittest discover -s tests -v
+        run: python -m pytest -q tests
 
       - name: Contexte = copie des données de main dans test-output
         run: |
@@ -106,6 +106,10 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           if [ "$NO_LLM" = "true" ]; then python -m src.main --no-llm; else python -m src.main; fi
+
+      - name: Résumé du test en annotations (lisible via l'API GitHub)
+        if: always()
+        run: python scripts/test_summary.py test-output || true
 
       - name: Site d'aperçu (frontend de la branche testée + données de test)
         if: always()
