@@ -448,7 +448,7 @@ def generate(
 
     parts = parts_mod.build_parts(analysed, science_topic, nyt_article, is_monday)
     results = llm_orchestrator.run_plan(plan or llm_orchestrator.load_plan(), parts, pool)
-    parts_mod.merge_results(resultat, results, nyt_article)
+    parts_mod.merge_results(resultat, results, nyt_article, science_source=science_topic["contenu_source"], analysed=analysed)
 
     diag = parts_mod.diagnostics(results)
     resultat.update(diag)

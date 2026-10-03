@@ -11,9 +11,15 @@ Le moteur qui exécute tout cela est llm_orchestrator.py ; les règles éditoria
 from __future__ import annotations
 
 import difflib
+import logging
 import re
 
 from .llm_orchestrator import Part, PartResult, looks_like_leak
+from .citations import pick_citation
+from .actu_guard import guard_events, guard_marches
+from .science_guard import guard_science_article
+
+logger = logging.getLogger("morning_briefing.generation")
 
 # --- budgets ---------------------------------------------------------------------------------
 # Groq (gpt-oss-120b) est limité à 8 000 tokens/minute : prompt + sortie doivent tenir dans cette
@@ -41,25 +47,28 @@ _REGLES_COMMUNES = """RÈGLES ABSOLUES (à respecter strictement) :
    certaines.
 4. Ne remplis pas artificiellement : peu d'événements réellement importants = peu d'éléments.
 5. Réponds STRICTEMENT en JSON valide conforme au schéma donné, sans texte avant/après, sans
-   balises markdown autour du JSON."""
+   balises markdown autour du JSON.
+6bis. FAITS DU TEXTE UNIQUEMENT : \"resume\" ne contient que des faits présents dans le titre/résumé
+   fourni. N'ajoute ni date, ni chiffre, ni fonction (« ancien », « actuel »), ni « première fois »,
+   ni « les autorités n'ont pas commenté », ni contexte tiré de ta mémoire. Un contrôle automatique
+   supprime toute phrase contenant un élément absent des données. \"pourquoi_important\" : une phrase
+   fondée sur les données, sinon null. \"consequences\" : null sauf si les données en parlent."""
 
 _SCHEMA_EVENT = ('{\"titre\": str, \"resume\": str, \"pourquoi_important\": str, '
                  '\"consequences\": str|null, \"statut\": str, \"sources\": [str]}')
 
 SYSTEM_ACTU_FRANCE = f"""Tu es le rédacteur d'un briefing matinal personnel en français. Tu rédiges ICI
 uniquement l'actualité FRANCE (le monde, les marchés, le sport et la science sont générés
-séparément par d'autres appels : ne les mentionne pas) et la citation du jour.
+séparément par d'autres appels : ne les mentionne pas).
 
 {_REGLES_COMMUNES}
 6. Pour chaque actualité, réponds implicitement à Quoi / Où / Quand / Pourquoi c'est important ;
    pour les sujets complexes, ajoute les conséquences possibles (\"consequences\") ou null.
-7. Citation du jour : uniquement si tu es CERTAIN de l'authenticité de l'attribution (auteur ET
-   contenu). Sinon \"citation\": null. Aucune citation d'attribution douteuse.
+7. N'écris AUCUNE citation : elle est ajoutée automatiquement par le programme.
 
 SCHÉMA JSON ATTENDU :
 {{
-  \"actualite_france\": [{_SCHEMA_EVENT}],
-  \"citation\": {{\"texte\": str, \"auteur\": str}}|null
+  \"actualite_france\": [{_SCHEMA_EVENT}]
 }}"""
 
 SYSTEM_ACTU_MONDE = f"""Tu es le rédacteur d'un briefing matinal personnel en français. Tu rédiges ICI
@@ -134,18 +143,23 @@ SCHÉMA JSON ATTENDU :
 }}"""
 
 _TON_SCIENCE = """Ton d'une bonne revue de vulgarisation scientifique : précis, pédagogique,
-compréhensible, sans sensationnalisme, sans déformer les connaissances pour simplifier. N'invente
-aucune donnée chiffrée, aucune étude, aucun nom de chercheur : utilise les données fournies et des
-connaissances scientifiques largement établies et non controversées sur ce sujet précis ; si un
-point est incertain, dis-le."""
+compréhensible, sans sensationnalisme, sans déformer les connaissances pour simplifier.
+RÈGLES ANTI-INVENTION (strictes, un contrôle automatique supprime les phrases fautives) :
+- Tu disposes UNIQUEMENT du titre et du résumé d'un article (champ science_source). Tout nombre,
+  pourcentage, date, nom de chercheur, d'institution, d'étude ou de revue doit figurer dans ce champ ;
+  sinon NE L'ÉCRIS PAS (pas de « environ », pas d'ordre de grandeur de mémoire).
+- Tu peux expliquer les mécanismes par des connaissances scientifiques de manuel, sans chiffre.
+- Si la source ne donne pas de résultats chiffrés, la section « Données et résultats » dit simplement
+  que le résumé disponible n'en précise pas, et renvoie à l'article source.
+- N'écris aucune phrase de transition interne (« fin de la moitié A », « la suite abordera »).
+- Titres de section : « ## Titre » sans numéro ni gras. Si un point est incertain, dis-le."""
 
 _PLAN_ARTICLE = """PLAN DE L'ARTICLE (10 sections, écrit en DEUX moitiés par deux rédacteurs différents) :
   Moitié A : 1. Introduction  2. Pourquoi le sujet est important  3. Explication du phénomène
              4. Fonctionnement / mécanismes
   Moitié B : 5. Données et résultats scientifiques  6. Ce que les scientifiques savent
              7. Ce qui reste incertain  8. Limites et controverses éventuelles  9. Conclusion
-             10. Sources (uniquement celles fournies dans les données ; sinon écris que les sources
-             détaillées sont à consulter dans la source indiquée)"""
+             10. Sources (NE PAS l'écrire : la section Sources est ajoutée automatiquement par le programme)"""
 
 SYSTEM_SCIENCE_A = f"""Tu es le rédacteur de la section science d'un briefing matinal en français. Tu écris
 la MOITIÉ A d'un article pédagogique approfondi (~5 minutes de lecture pour cette moitié).
@@ -345,17 +359,35 @@ def _normalise_marches(m: dict, brut: dict | None) -> dict:
     return m
 
 
-def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: dict | None) -> None:
+def _garde_actu(events: list[dict], analysed: dict | None, cle: str) -> list[dict]:
+    """Applique actu_guard aux événements rédigés (sans `analysed`, on ne touche à rien)."""
+    if not analysed or not isinstance(events, list):
+        return events
+    gardes, retirees = guard_events(events, analysed.get(cle) or [])
+    if retirees:
+        logger.warning("Garde-fou actualité (%s) : %d phrase(s) retirée(s) : %s", cle, len(retirees),
+                       " | ".join(x[:80] for x in retirees[:8]))
+    return gardes
+
+
+def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: dict | None,
+                  science_source: dict | None = None, analysed: dict | None = None) -> None:
     """Remplace, partie par partie, le contenu brut du briefing de repli par ce que les LLM ont
     rédigé. Une partie en échec garde son contenu brut (cf. cahier §21). Modifie `resultat`."""
     r = results
+    # Citation : banque vérifiée, tirage par date (le LLM n'intervient plus, cf. citations.py).
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    resultat["citation"] = pick_citation(datetime.now(ZoneInfo("Europe/Paris")).date())
     if "actu_france" in r and r["actu_france"].ok:
-        resultat["actualite"]["france"] = r["actu_france"].body["actualite_france"]
-        resultat["citation"] = r["actu_france"].body.get("citation")
+        resultat["actualite"]["france"] = _garde_actu(
+            r["actu_france"].body["actualite_france"], analysed, "actualite_france")
     if "actu_monde" in r and r["actu_monde"].ok:
-        resultat["actualite"]["monde"] = r["actu_monde"].body["actualite_monde"]
+        resultat["actualite"]["monde"] = _garde_actu(
+            r["actu_monde"].body["actualite_monde"], analysed, "actualite_monde")
     if "marches" in r and r["marches"].ok:
-        resultat["marches"] = _normalise_marches(r["marches"].body["marches"], resultat.get("marches"))
+        resultat["marches"] = guard_marches(
+            _normalise_marches(r["marches"].body["marches"], resultat.get("marches")), analysed)
     if "sport" in r and r["sport"].ok:
         resultat["sport"] = r["sport"].body["sport"]
 
@@ -378,6 +410,12 @@ def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: d
                 contenu += "\n\n" + str(r["science_b"].body["contenu_markdown"]).strip()
             else:
                 contenu += "\n\n" + NOTE_SUITE_ABSENTE
+        if science_source is not None:
+            contenu, retirees = guard_science_article(contenu, science_source)
+            sci["phrases_retirees_garde_fou"] = len(retirees)
+            if retirees:
+                logger.warning("Garde-fou science : %d phrase(s) retirée(s) (chiffres absents de la source) : %s",
+                               len(retirees), " | ".join(x[:80] for x in retirees[:8]))
         sci["contenu_markdown"] = contenu
         resultat["science"] = sci
 

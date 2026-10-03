@@ -18,7 +18,7 @@ from datetime import datetime
 
 import pytz
 
-from .analyse import dedup, scoring, verification
+from .analyse import dedup, scoring, sport_scoring, verification
 from .collecte import collector, markets as markets_collect, weather as weather_collect
 from .generation import briefing_generator, llm_provider
 from .stockage import storage
@@ -98,6 +98,9 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         funnel_actualite = {}
 
         events_france = dedup.deduplicate(raw["news"]["france"])
+        events_monde = dedup.deduplicate(raw["news"]["monde"])
+        # Dédup inter-zones (03/10/2026) : un même événement ne doit pas figurer en France ET en Monde.
+        events_france, events_monde = dedup.merge_zones(events_france, events_monde)
         n_france_bruts, n_france_dedup = len(raw["news"]["france"]), len(events_france)
         events_france = scoring.score_events(events_france)
         events_france = verification.classify_events(events_france)
@@ -107,7 +110,6 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
             "retenus_apres_seuil": len(events_france),
         }
 
-        events_monde = dedup.deduplicate(raw["news"]["monde"])
         n_monde_bruts, n_monde_dedup = len(raw["news"]["monde"]), len(events_monde)
         events_monde = scoring.score_events(events_monde)
         events_monde = verification.classify_events(events_monde)
@@ -142,36 +144,11 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         # autres clubs. On applique donc un bonus dédié avant la sélection finale, sinon un
         # simple tri par score risquerait d'évincer les Spurs au profit d'une actu basket
         # quelconque au même score.
-        BONUS_EQUIPE_PRIORITAIRE = 2
-        sport_events = {}
-        for cat, items in raw["sport"].items():
-            evs = dedup.deduplicate(items)
-            evs = scoring.score_events(evs)
-            for e in evs:
-                if e.get("equipe_prioritaire"):
-                    e["score"] = min(10, e["score"] + BONUS_EQUIPE_PRIORITAIRE)
-            evs.sort(key=lambda e: e["score"], reverse=True)
-            sport_events[cat] = evs[:5]  # plafond large par catégorie, la réduction globale suit
-
-        # Réduction globale demandée par l'utilisateur le 24/09 (remplace le seul plafond par
-        # catégorie ci-dessus, qui pouvait laisser jusqu'à 20 items au total) : on regroupe
-        # toutes les catégories, on trie par score décroissant (bonus Spurs déjà appliqué), et
-        # on ne garde que les meilleures au total, réparties ensuite par catégorie. cf. cahier
-        # §6 : pas de compte-rendu exhaustif, seulement les résultats/événements marquants.
+        # Sélection sport dédiée (03/10/2026, cf. src/analyse/sport_scoring.py) : périmètre du cahier §6,
+        # bonus Spurs calculé sur le texte, au moins un item par catégorie pertinente, plafond global.
+        sport_dedup = {cat: dedup.deduplicate(items) for cat, items in raw["sport"].items()}
         max_sport_total = config["seuils"].get("max_sport_total", 4)
-        tous_sport = [
-            {**e, "_categorie": cat} for cat, evs in sport_events.items() for e in evs
-        ]
-        tous_sport.sort(key=lambda e: e["score"], reverse=True)
-        retenus = tous_sport[:max_sport_total]
-        sport_events = {cat: [] for cat in sport_events}
-        for e in retenus:
-            sport_events[e["_categorie"]].append(e)
-        logger.info(
-            "Sport réduit à %d item(s) au total (max_sport_total=%d): %s",
-            len(retenus), max_sport_total,
-            {cat: len(evs) for cat, evs in sport_events.items()},
-        )
+        sport_events = sport_scoring.select_sport(sport_dedup, max_sport_total, config)
 
         # Marchés : mouvements significatifs seulement
         seuil_marche = config["seuils"]["score_min_marche_pct"]

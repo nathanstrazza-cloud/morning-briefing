@@ -195,7 +195,7 @@ function renderSectionCitation(citation) {
     el("div", { class: "quote" }, [
       el("span", { class: "quote__mark", text: "“" }),
       el("p", { class: "quote__text", text: citation.texte }),
-      el("p", { class: "quote__author", text: citation.auteur }),
+      el("p", { class: "quote__author", text: citation.source ? `${citation.auteur} — ${citation.source}${citation.annee ? " (" + citation.annee + ")" : ""}` : citation.auteur }),
     ])
   );
   return section;
