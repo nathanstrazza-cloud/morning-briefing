@@ -14,18 +14,32 @@ Powell/Pike en double France/Monde. Contexte d'organisation : `DEV_WORKFLOW.md` 
   ou PR faite par l'utilisateur dans l'interface GitHub), seulement après un Dev Test satisfaisant et l'accord de l'utilisateur.
 - Priorité du projet : fiabilité > tout. En cas de doute, ne pas afficher plutôt qu'inventer.
 
-## État des 9 points
+## État des 9 points (mis à jour le 03/10/2026 en fin de session)
 | # | Point | État | Où |
 |---|-------|------|----|
-| 1 | Science : chiffres/sources inventés | **FAIT sur dev, non testé en réel** | `src/generation/science_guard.py`, prompts `_TON_SCIENCE`/`_PLAN_ARTICLE` (parts.py), branché dans `merge_results(..., science_source=...)`, tests `tests/test_science_guard.py` |
-| 2 | Marchés : variation sur 5 jours | **FAIT sur dev, non testé en réel** | `compute_session_change()` dans `src/collecte/markets.py` (close[-1] vs close[-2]), tests `tests/test_markets.py` |
-| 3 | Actu : ajouts non sourcés (« ancien président », « tensions syndicales »…) | À FAIRE | prompts `_REGLES_COMMUNES`/actu dans parts.py : « faits du texte uniquement », `pourquoi_important`/`consequences` préfixés « Hypothèse : » ou null ; vérificateur léger (nombres, années, « ancien/actuel », « première fois ») |
-| 4 | Doublons France/Monde | À FAIRE | `src/main.py` (dédup appelée par zone, ~l.100-154) → dédup globale inter-zones puis affectation par contenu |
-| 5 | Sport hors sujet, basket absent | À FAIRE | `src/analyse/scoring.py` + `main.py` (`max_sport_total=4`) → scoring sport dédié, quota par catégorie. Décision de l'utilisateur (01/10) : si rien d'intéressant, le briefing le DIT et indique le prochain match intéressant à venir |
-| 6 | Citation toujours `null` | À FAIRE | banque JSON de citations vérifiées (texte, auteur, source, année), tirage déterministe par date, sans LLM |
-| 7 | Anglais du jour (niveau, « centrist ») | À FAIRE | prompt `anglais` : cibler B2/C1, exclure mots courants |
+| 1 | Science : chiffres/sources inventés | FAIT sur dev, **validé en réel** (Dev Test 03/10 : 2 phrases retirées, Sources par le code, titres propres) | `src/generation/science_guard.py`, tests `test_science_guard.py` |
+| 2 | Marchés : variation sur 5 jours | FAIT sur dev, **validé en réel** (CAC +0,79 % ; l'ancienne base `chartPreviousClose` aurait donné ≈ −2 %) | `compute_session_change()` dans `src/collecte/markets.py` |
+| 2b | Marchés : explication inventée (« dépenses de défense russe » → Nasdaq) | FAIT sur dev, à revalider | `guard_marches()` dans `src/generation/actu_guard.py` : explication gardée seulement si ≥ 50 % de ses mots sont dans les articles économie ; variations imposées par les données ; sinon « Aucune cause fiable… » |
+| 3 | Actu : ajouts non sourcés | FAIT sur dev (partiel) | `guard_events()` (actu_guard.py) : phrases à nombre/marqueur (« ancien », « première fois »…) absent de la source retirées ; `consequences` et `pourquoi_important` non étayés préfixés « Hypothèse : » ; statut imposé par le code. Limite : heuristique lexicale, ne détecte pas tout |
+| 4 | Doublons France/Monde | FAIT sur dev, **validé en réel** (6 événements fusionnés) | `merge_zones()` dans `src/analyse/dedup.py`, appelée dans `main.py` |
+| 5 | Sport hors sujet, basket absent | FAIT sur dev, **pas encore vu en réel** (le run du 03/10 12:19 ne contenait pas ce commit) | `src/analyse/sport_scoring.py` (périmètre §6, quota par catégorie, Spurs, foot féminin écarté via `sport.inclure_feminin` absent = false). NB : bug découvert : `dedup` ne recopiait pas `equipe_prioritaire`, le bonus Spurs ne s'appliquait jamais |
+| 6 | Citation toujours `null` | FAIT sur dev, à voir en réel | `config/citations.json` (22 citations avec œuvre+année) + `src/generation/citations.py` ; le LLM n'écrit plus de citation |
+| 7 | Anglais du jour (niveau, « centrist ») | À FAIRE | prompt `anglais` dans parts.py : cibler B2/C1, exclure mots courants |
 | 8 | Météo (code instantané, évolution jour) | À FAIRE | `src/collecte/weather.py` : `daily.weather_code` + `hourly`, codes WMO manquants |
-| 9 | Divers (`resume_1_phrase` tronqué, CNRS, ESPN) | À FAIRE | `merge_results` (couper à la phrase entière) ; reste = bruit |
+| 9 | Divers (`resume_1_phrase` tronqué, CNRS, ESPN) | À FAIRE | `merge_results` (couper à la phrase entière) |
+
+## Autres constats du Dev Test du 03/10 (non traités)
+- La zone France contient encore de l'international (ex. budget militaire russe, Corée du Nord) : les flux « Le Monde — Une » / Libération sont classés `france` par flux, pas par contenu. Les « pourquoi important » forcent un lien avec la France (maintenant marqués « Hypothèse »). Piste : affectation par contenu, ou prompt « pourquoi important » sans obligation de lien France.
+- OpenRouter renvoie « Réponse vide » / 429 sur `gemma-4-31b-it:free` à chaque run (le secours NVIDIA fonctionne, ~30 s perdues).
+- Le nom du fournisseur d'une partie apparaît masqué (`actu_france=***`) dans les logs GitHub : sans conséquence.
+- Faux positifs du garde-fou science : voulu (fiabilité d'abord) ; la fourchette de phrases retirées est loggée en WARNING.
+
+## Comment lire un Dev Test depuis un environnement sans accès à blob.core.windows.net
+Les logs et l'artefact d'un run sont inaccessibles dans certains sandbox (hôte bloqué). Le workflow Dev Test publie donc un
+résumé en **annotations** (`scripts/test_summary.py`) : `GET /repos/{o}/{r}/check-runs/{job_id}/annotations` (titres `1-log-marches`,
+`2-log-garde-fous`, `3-briefing`, `4-science`). Déclencher : `POST /repos/{o}/{r}/actions/workflows/372349191/dispatches`
+avec `{"ref":"dev","inputs":{"ref":"dev","no_llm":"false"}}` (le jeton a le droit Actions). Le workflow lance maintenant `pytest`
+(les tests plain-function de `tests/` ne tournaient pas sous `unittest discover`).
 
 ## Détails utiles sur les deux correctifs faits
 - **Marchés** : la cause (hypothèse du 01/10) est confirmée par la lecture du code : `chartPreviousClose` de l'endpoint Yahoo
@@ -42,5 +56,7 @@ Powell/Pike en double France/Monde. Contexte d'organisation : `DEV_WORKFLOW.md` 
   pédagogique/général. Piste (point 1e de l'analyse) : liste de sujets curés + sources primaires (Nature, CNRS, Inserm).
 
 ## Prochaine étape recommandée
-1) Lancer **Dev Test** une fois et contrôler : variation marchés (log), science (phrases retirées, Sources). 2) Si OK, fusionner
-sur `main` après accord de l'utilisateur. 3) Enchaîner sur les points 3, 4, 5, 6 dans cet ordre.
+1) Lire le Dev Test lancé sur le commit « citation du jour » (sport, citation, marchés, actu) ; corriger ce qui reste.
+2) Si le contenu est satisfaisant : fusion `dev` → `main` **avec l'accord de l'utilisateur** (la production tourne à 06h10 en semaine).
+   Avant la fusion, vérifier que `main` n'a pas de nouveaux commits « Briefing du… » en conflit (ils ne touchent que `docs/data` et `logs`).
+3) Puis points 7, 8, 9, et l'affectation France/Monde par contenu.
