@@ -15,7 +15,7 @@ import logging
 import re
 
 from .llm_orchestrator import Part, PartResult, looks_like_leak
-from .actu_guard import guard_events
+from .actu_guard import guard_events, guard_marches
 from .science_guard import guard_science_article
 
 logger = logging.getLogger("morning_briefing.generation")
@@ -384,7 +384,8 @@ def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: d
         resultat["actualite"]["monde"] = _garde_actu(
             r["actu_monde"].body["actualite_monde"], analysed, "actualite_monde")
     if "marches" in r and r["marches"].ok:
-        resultat["marches"] = _normalise_marches(r["marches"].body["marches"], resultat.get("marches"))
+        resultat["marches"] = guard_marches(
+            _normalise_marches(r["marches"].body["marches"], resultat.get("marches")), analysed)
     if "sport" in r and r["sport"].ok:
         resultat["sport"] = r["sport"].body["sport"]
 

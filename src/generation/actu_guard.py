@@ -78,7 +78,58 @@ def guard_events(llm_events: list[dict], source_events: list[dict]) -> tuple[lis
             ev[champ] = nouveau
         if not ev.get("resume") and src is not None and src.get("resume"):
             ev["resume"] = src["resume"]
+        # « Pourquoi c'est important » est de l'analyse : étayé par la source -> tel quel ; sinon marqué comme hypothèse.
+        pi = ev.get("pourquoi_important")
+        if pi and not re.match(r"\s*hypoth[èe]se", pi, re.I) and overlap_ratio(pi, source_text) < 0.5:
+            ev["pourquoi_important"] = "Hypothèse : " + pi[0].lower() + pi[1:]
         if ev.get("consequences") and not re.match(r"\s*hypoth[èe]se", ev["consequences"], re.I):
             ev["consequences"] = "Hypothèse : " + ev["consequences"][0].lower() + ev["consequences"][1:]
         result.append(ev)
     return result, all_removed
+
+
+# --- Marchés (03/10/2026) -----------------------------------------------------------------
+# Constat du Dev Test du 03/10 : le LLM expliquait la hausse du Nasdaq/DAX par « l'augmentation des
+# dépenses de défense russe », cause sans rapport avec les articles économiques fournis. Règle :
+# une explication n'est conservée que si l'essentiel de ses mots se retrouve dans ces articles ;
+# les variations affichées viennent TOUJOURS des données chiffrées, jamais du LLM.
+_STOP = {"dans", "avec", "pour", "cette", "ainsi", "leur", "leurs", "plus", "sont", "être", "elle", "elles",
+         "après", "avant", "entre", "selon", "depuis", "comme", "aussi", "mais", "dont", "tout", "tous"}
+EXPLICATION_MIN_OVERLAP = 0.5
+RESUME_MARCHES_SANS_CAUSE = "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin."
+
+
+def _mots(texte: str) -> set[str]:
+    return {m for m in re.findall(r"[a-zàâäéèêëïîôöùûüç0-9]+", (texte or "").lower()) if len(m) > 3 and m not in _STOP}
+
+
+def overlap_ratio(texte: str, source_text: str) -> float:
+    mots = _mots(texte)
+    return (len(mots & _mots(source_text)) / len(mots)) if mots else 0.0
+
+
+def guard_marches(m: dict, analysed: dict | None) -> dict:
+    """`m` : dict marchés normalisé (resume_court, mouvements_notables). Retourne une copie corrigée."""
+    if not analysed:
+        return m
+    out = dict(m)
+    data = analysed.get("marches_data") or {}
+    quotes = {q["name"].lower(): q for q in (data.get("indices") or []) + (data.get("matieres_premieres") or [])
+              if q.get("name") and q.get("variation_pct") is not None}
+    eco_text = " ".join(f"{e.get('titre', '')} {e.get('resume', '')}" for e in analysed.get("actualite_economie") or [])
+    mouvements, gardees = [], 0
+    for x in out.get("mouvements_notables") or []:
+        q = quotes.get(str(x.get("nom", "")).lower())
+        if q is None:
+            continue                                   # mouvement inconnu des données chiffrées : écarté
+        expl = x.get("explication")
+        if expl and overlap_ratio(expl, eco_text) < EXPLICATION_MIN_OVERLAP:
+            expl = None
+        gardees += 1 if expl else 0
+        mouvements.append({"nom": q["name"], "variation_pct": q["variation_pct"], "explication": expl})
+    out["mouvements_notables"] = mouvements
+    resume, _ = clean_text(out.get("resume_court"), eco_text, source_numbers(eco_text))
+    if mouvements and gardees == 0:
+        resume = RESUME_MARCHES_SANS_CAUSE
+    out["resume_court"] = resume or ""
+    return out

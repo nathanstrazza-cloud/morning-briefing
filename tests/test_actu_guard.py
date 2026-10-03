@@ -53,3 +53,36 @@ def test_merge_zones_sans_doublon_ne_change_rien():
     fr, mo = [_e("Budget 2027 présenté", ["Le Monde"])], [_e("Séisme au Japon", ["NYT"])]
     f, m = merge_zones(fr, mo)
     assert len(f) == 1 and len(m) == 1
+
+
+from src.generation.actu_guard import guard_marches, RESUME_MARCHES_SANS_CAUSE
+
+
+def _analysed():
+    return {"marches_data": {"indices": [{"name": "Nasdaq", "variation_pct": 1.19}, {"name": "CAC 40", "variation_pct": -1.4}],
+                             "matieres_premieres": []},
+            "actualite_economie": [{"titre": "Wall Street gagne du terrain après des résultats d'entreprises solides",
+                                    "resume": "Les résultats trimestriels des géants de la tech soutiennent le Nasdaq."}]}
+
+
+def test_marches_explication_hors_sujet_supprimee_variation_imposee_par_le_code():
+    m = {"resume_court": "Hausse grâce aux dépenses de défense russe.",
+         "mouvements_notables": [{"nom": "Nasdaq", "variation_pct": 9.9, "explication": "augmentation des dépenses de défense russe"},
+                                 {"nom": "Inconnu", "variation_pct": 3.0, "explication": None}]}
+    out = guard_marches(m, _analysed())
+    assert out["mouvements_notables"] == [{"nom": "Nasdaq", "variation_pct": 1.19, "explication": None}]
+    assert out["resume_court"] == RESUME_MARCHES_SANS_CAUSE
+
+
+def test_marches_explication_etayee_conservee():
+    m = {"resume_court": "Résultats solides de la tech.",
+         "mouvements_notables": [{"nom": "nasdaq", "variation_pct": 1.19,
+                                  "explication": "résultats trimestriels solides des géants de la tech"}]}
+    out = guard_marches(m, _analysed())
+    assert out["mouvements_notables"][0]["explication"] and out["resume_court"] == "Résultats solides de la tech."
+
+
+def test_pourquoi_important_non_etaye_marque_hypothese():
+    src = [dict(SRC[0])]
+    out, _ = guard_events([_ev(pourquoi_important="Cela pourrait influencer la coopération judiciaire française.")], src)
+    assert out[0]["pourquoi_important"].startswith("Hypothèse : ")
