@@ -134,7 +134,8 @@ def _fetch_scoreboard(sport: str, slug: str, debut: datetime, fin: datetime, tim
         return data
     events, jour = [], debut
     echecs = 0
-    while jour.date() <= fin.date() and len(events) < MAX_EVENEMENTS_SCAN:
+    plafond = MAX_EVENEMENTS_SCAN if sport == "soccer" else 10_000   # basket : il faut tout parcourir pour trouver les Spurs
+    while jour.date() <= fin.date() and len(events) < plafond:
         d = _get(sport, slug, f"{jour:%Y%m%d}", timeout)
         if d is None:
             echecs += 1
