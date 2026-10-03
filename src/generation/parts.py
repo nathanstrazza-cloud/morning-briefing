@@ -15,6 +15,7 @@ import logging
 import re
 
 from .llm_orchestrator import Part, PartResult, looks_like_leak
+from .actu_guard import guard_events
 from .science_guard import guard_science_article
 
 logger = logging.getLogger("morning_briefing.generation")
@@ -45,7 +46,12 @@ _REGLES_COMMUNES = """RÈGLES ABSOLUES (à respecter strictement) :
    certaines.
 4. Ne remplis pas artificiellement : peu d'événements réellement importants = peu d'éléments.
 5. Réponds STRICTEMENT en JSON valide conforme au schéma donné, sans texte avant/après, sans
-   balises markdown autour du JSON."""
+   balises markdown autour du JSON.
+6bis. FAITS DU TEXTE UNIQUEMENT : \"resume\" ne contient que des faits présents dans le titre/résumé
+   fourni. N'ajoute ni date, ni chiffre, ni fonction (« ancien », « actuel »), ni « première fois »,
+   ni « les autorités n'ont pas commenté », ni contexte tiré de ta mémoire. Un contrôle automatique
+   supprime toute phrase contenant un élément absent des données. \"pourquoi_important\" : une phrase
+   fondée sur les données, sinon null. \"consequences\" : null sauf si les données en parlent."""
 
 _SCHEMA_EVENT = ('{\"titre\": str, \"resume\": str, \"pourquoi_important\": str, '
                  '\"consequences\": str|null, \"statut\": str, \"sources\": [str]}')
@@ -354,16 +360,29 @@ def _normalise_marches(m: dict, brut: dict | None) -> dict:
     return m
 
 
+def _garde_actu(events: list[dict], analysed: dict | None, cle: str) -> list[dict]:
+    """Applique actu_guard aux événements rédigés (sans `analysed`, on ne touche à rien)."""
+    if not analysed or not isinstance(events, list):
+        return events
+    gardes, retirees = guard_events(events, analysed.get(cle) or [])
+    if retirees:
+        logger.warning("Garde-fou actualité (%s) : %d phrase(s) retirée(s) : %s", cle, len(retirees),
+                       " | ".join(x[:80] for x in retirees[:8]))
+    return gardes
+
+
 def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: dict | None,
-                  science_source: dict | None = None) -> None:
+                  science_source: dict | None = None, analysed: dict | None = None) -> None:
     """Remplace, partie par partie, le contenu brut du briefing de repli par ce que les LLM ont
     rédigé. Une partie en échec garde son contenu brut (cf. cahier §21). Modifie `resultat`."""
     r = results
     if "actu_france" in r and r["actu_france"].ok:
-        resultat["actualite"]["france"] = r["actu_france"].body["actualite_france"]
+        resultat["actualite"]["france"] = _garde_actu(
+            r["actu_france"].body["actualite_france"], analysed, "actualite_france")
         resultat["citation"] = r["actu_france"].body.get("citation")
     if "actu_monde" in r and r["actu_monde"].ok:
-        resultat["actualite"]["monde"] = r["actu_monde"].body["actualite_monde"]
+        resultat["actualite"]["monde"] = _garde_actu(
+            r["actu_monde"].body["actualite_monde"], analysed, "actualite_monde")
     if "marches" in r and r["marches"].ok:
         resultat["marches"] = _normalise_marches(r["marches"].body["marches"], resultat.get("marches"))
     if "sport" in r and r["sport"].ok:

@@ -89,3 +89,38 @@ def deduplicate(items: list[dict]) -> list[dict]:
 
     logger.info("Déduplication: %d items bruts -> %d événements uniques", len(items), len(events))
     return events
+
+
+def merge_zones(events_france: list[dict], events_monde: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Déduplication INTER-zones (correctif du 03/10/2026, point 4 de l'analyse du 01/10).
+
+    Avant : `deduplicate` était appelé séparément pour France et Monde, donc un même événement
+    (Powell/Fed, Hegseth, Christa Pike...) apparaissait dans les deux zones, parfois avec deux
+    statuts différents (fait confirmé côté Monde, information rapportée côté France).
+
+    Règle : un événement présent dans les deux flux est international (le flux « monde » l'a
+    couvert) -> il est conservé dans MONDE avec l'union des sources (donc le bon nombre de
+    sources pour la vérification) et retiré de FRANCE. Les événements propres à chaque zone
+    ne bougent pas. Fonction pure : ne modifie pas les listes passées en entrée.
+    """
+    monde = [dict(e, sources=list(e["sources"])) for e in events_monde]
+    france: list[dict] = []
+    fusionnes = 0
+    for ef in events_france:
+        cible = next((em for em in monde if _similarity(ef["titre"], em["titre"]) >= SIMILARITY_THRESHOLD), None)
+        if cible is None:
+            france.append(ef)
+            continue
+        fusionnes += 1
+        deja = {x["nom"] for x in cible["sources"]}
+        for src in ef["sources"]:
+            if src["nom"] not in deja:
+                cible["sources"].append(src)
+                deja.add(src["nom"])
+        cible["nb_sources"] = len(cible["sources"])
+        if not cible.get("resume") and ef.get("resume"):
+            cible["resume"] = ef["resume"]
+        dates = [d for d in (cible.get("date_publication"), ef.get("date_publication")) if d]
+        cible["date_publication"] = min(dates) if dates else None
+    logger.info("Déduplication inter-zones: %d événement(s) France fusionné(s) dans Monde", fusionnes)
+    return france, monde

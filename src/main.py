@@ -98,6 +98,9 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         funnel_actualite = {}
 
         events_france = dedup.deduplicate(raw["news"]["france"])
+        events_monde = dedup.deduplicate(raw["news"]["monde"])
+        # Dédup inter-zones (03/10/2026) : un même événement ne doit pas figurer en France ET en Monde.
+        events_france, events_monde = dedup.merge_zones(events_france, events_monde)
         n_france_bruts, n_france_dedup = len(raw["news"]["france"]), len(events_france)
         events_france = scoring.score_events(events_france)
         events_france = verification.classify_events(events_france)
@@ -107,7 +110,6 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
             "retenus_apres_seuil": len(events_france),
         }
 
-        events_monde = dedup.deduplicate(raw["news"]["monde"])
         n_monde_bruts, n_monde_dedup = len(raw["news"]["monde"]), len(events_monde)
         events_monde = scoring.score_events(events_monde)
         events_monde = verification.classify_events(events_monde)
