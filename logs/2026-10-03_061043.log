@@ -1,0 +1,65 @@
+2026-10-03 04:10:43,779 [INFO] morning_briefing: === Démarrage du run Morning Briefing pour le 2026-10-03 ===
+2026-10-03 04:10:43,792 [INFO] morning_briefing: Fenêtre de recherche: 2026-10-02 00:10:42.626419+02:00 -> 2026-10-03 06:10:43.778808+02:00 (lundi=False, dernier_succes=2026-10-02 06:10:42.626419+02:00)
+2026-10-03 04:10:43,792 [INFO] morning_briefing.collecte: Début de la collecte (depuis=2026-10-02T00:10:42.626419+02:00, lundi=False)
+2026-10-03 04:10:44,040 [INFO] morning_briefing.collecte.rss: Flux Le Monde (france): 16 articles récupérés
+2026-10-03 04:10:44,406 [INFO] morning_briefing.collecte.rss: Flux France Info (france): 32 articles récupérés
+2026-10-03 04:10:44,802 [INFO] morning_briefing.collecte.rss: Flux Libération (france): 50 articles récupérés
+2026-10-03 04:10:45,075 [INFO] morning_briefing.collecte.rss: Flux 20 Minutes (france): 30 articles récupérés
+2026-10-03 04:10:45,281 [INFO] morning_briefing.collecte.rss: Flux Le Monde International (monde): 20 articles récupérés
+2026-10-03 04:10:45,485 [INFO] morning_briefing.collecte.rss: Flux New York Times World (monde): 57 articles récupérés
+2026-10-03 04:10:45,710 [INFO] morning_briefing.collecte.rss: Flux France 24 International (monde): 24 articles récupérés
+2026-10-03 04:10:46,190 [INFO] morning_briefing.collecte.rss: Flux Le Monde Économie (economie): 20 articles récupérés
+2026-10-03 04:10:46,740 [INFO] morning_briefing.collecte.rss: Flux Le Figaro Économie (economie): 20 articles récupérés
+2026-10-03 04:10:46,972 [INFO] morning_briefing.collecte.rss: Flux BFM Business (economie): 30 articles récupérés
+2026-10-03 04:10:47,190 [INFO] morning_briefing.collecte.rss: Flux Le Monde Sciences (sciences): 20 articles récupérés
+2026-10-03 04:10:48,031 [WARNING] morning_briefing.collecte.rss: Flux RSS illisible ou vide: CNRS Actualités (https://www.cnrs.fr/fr/rss.xml) -- <unknown>:18:55: not well-formed (invalid token)
+2026-10-03 04:10:48,214 [INFO] morning_briefing.collecte.rss: Flux Nature News (sciences): 75 articles récupérés
+2026-10-03 04:10:48,427 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Football (sport_football): 50 articles récupérés
+2026-10-03 04:10:49,633 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Basket (sport_basketball): 50 articles récupérés
+2026-10-03 04:10:49,716 [INFO] morning_briefing.collecte.rss: Flux ESPN NBA News (sport_basketball): 0 articles récupérés
+2026-10-03 04:10:50,732 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Natation (sport_natation): 50 articles récupérés
+2026-10-03 04:10:51,755 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Tennis (sport_autres): 50 articles récupérés
+2026-10-03 04:10:51,996 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Rugby (sport_autres): 50 articles récupérés
+2026-10-03 04:10:53,365 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Cyclisme (sport_autres): 50 articles récupérés
+2026-10-03 04:10:53,730 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Hand (sport_autres): 0 articles récupérés
+2026-10-03 04:10:54,126 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Volley (sport_autres): 0 articles récupérés
+2026-10-03 04:10:54,128 [INFO] morning_briefing.collecte.sports: Sport collecté: foot=50 basket=13 natation=5 autres(France)=13
+2026-10-03 04:10:55,037 [INFO] morning_briefing.collecte.markets: Marchés collectés: 5 indices, 2 matières premières
+2026-10-03 04:10:57,728 [INFO] morning_briefing.collecte.weather: Météo collectée pour 4/4 villes
+2026-10-03 04:10:57,728 [INFO] morning_briefing.collecte: Collecte terminée: 283 actualités, 81 items sport, 5 indices, 4 villes météo
+2026-10-03 04:10:57,728 [WARNING] morning_briefing.collecte: Flux RSS en échec ce run: CNRS Actualités
+2026-10-03 04:10:57,804 [INFO] morning_briefing.analyse.dedup: Déduplication: 125 items bruts -> 111 événements uniques
+2026-10-03 04:10:57,807 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 111 événements
+2026-10-03 04:10:57,807 [INFO] morning_briefing.analyse.verification: Vérification: 11/111 événements classés 'fait confirmé' (>= 2 sources)
+2026-10-03 04:10:57,836 [INFO] morning_briefing.analyse.dedup: Déduplication: 78 items bruts -> 77 événements uniques
+2026-10-03 04:10:57,838 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 77 événements
+2026-10-03 04:10:57,838 [INFO] morning_briefing.analyse.verification: Vérification: 0/77 événements classés 'fait confirmé' (>= 2 sources)
+2026-10-03 04:10:57,838 [INFO] morning_briefing: Entonnoir actualité (seuil=5): france {'bruts': 125, 'evenements_uniques': 111, 'retenus_apres_seuil': 52} | monde {'bruts': 78, 'evenements_uniques': 77, 'retenus_apres_seuil': 27}
+2026-10-03 04:10:57,859 [INFO] morning_briefing.analyse.dedup: Déduplication: 67 items bruts -> 53 événements uniques
+2026-10-03 04:10:57,860 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 53 événements
+2026-10-03 04:10:57,861 [INFO] morning_briefing.analyse.dedup: Déduplication: 13 items bruts -> 13 événements uniques
+2026-10-03 04:10:57,862 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 13 événements
+2026-10-03 04:10:57,862 [INFO] morning_briefing.analyse.verification: Vérification: 0/13 événements classés 'fait confirmé' (>= 2 sources)
+2026-10-03 04:10:57,871 [INFO] morning_briefing.analyse.dedup: Déduplication: 50 items bruts -> 43 événements uniques
+2026-10-03 04:10:57,872 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 43 événements
+2026-10-03 04:10:57,873 [INFO] morning_briefing.analyse.dedup: Déduplication: 13 items bruts -> 13 événements uniques
+2026-10-03 04:10:57,873 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 13 événements
+2026-10-03 04:10:57,874 [INFO] morning_briefing.analyse.dedup: Déduplication: 5 items bruts -> 5 événements uniques
+2026-10-03 04:10:57,874 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 5 événements
+2026-10-03 04:10:57,875 [INFO] morning_briefing.analyse.dedup: Déduplication: 13 items bruts -> 13 événements uniques
+2026-10-03 04:10:57,875 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 13 événements
+2026-10-03 04:10:57,876 [INFO] morning_briefing: Sport réduit à 4 item(s) au total (max_sport_total=4): {'football': 3, 'basketball': 1, 'natation': 0, 'autres': 0}
+2026-10-03 04:10:57,876 [INFO] morning_briefing.generation.llm: Fournisseurs LLM disponibles (clé présente) : groq, mistral, cerebras, openrouter, nvidia
+2026-10-03 04:10:57,920 [INFO] morning_briefing.generation: === appel_1 : actu_france, actu_monde, marches, anglais ===
+2026-10-03 04:10:57,921 [INFO] morning_briefing.generation: Tour 1 : groq -> actu_france; mistral -> actu_monde
+2026-10-03 04:11:08,013 [INFO] morning_briefing.generation: Tour 1 : nvidia -> marches; openrouter -> anglais
+2026-10-03 04:11:17,066 [ERROR] morning_briefing.generation: Échec LLM part=anglais provider=openrouter tentative=1/1 budget=12000 : Réponse vide (provider=openrouter)
+2026-10-03 04:12:38,590 [INFO] morning_briefing.generation: Tour 2 : nvidia -> anglais
+2026-10-03 04:14:03,085 [INFO] morning_briefing.generation: Pause de 150 s avant l'appel_2 (fenêtre tokens/minute des fournisseurs)
+2026-10-03 04:16:33,085 [INFO] morning_briefing.generation: === appel_2 : science_a, science_b, sport ===
+2026-10-03 04:16:33,086 [INFO] morning_briefing.generation: Tour 1 : mistral -> science_a; groq -> science_b; openrouter -> sport
+2026-10-03 04:16:41,610 [ERROR] morning_briefing.generation: Échec LLM part=sport provider=openrouter tentative=1/2 budget=12000 : Réponse vide (provider=openrouter)
+2026-10-03 04:16:58,268 [INFO] morning_briefing.generation: Tour 2 : nvidia -> sport
+2026-10-03 04:17:41,893 [INFO] morning_briefing.generation: Parties rédigées par LLM : 7/7 (actu_france=groq, actu_monde=mistral, marches=nvidia, anglais=nvidia, science_a=mistral, science_b=groq, sport=nvidia)
+2026-10-03 04:17:41,896 [INFO] morning_briefing.stockage: Briefing sauvegardé: /home/runner/work/morning-briefing/morning-briefing/docs/data/briefings/2026-10-03.json
+2026-10-03 04:17:41,896 [INFO] morning_briefing: === Run terminé avec succès pour le 2026-10-03 ===
