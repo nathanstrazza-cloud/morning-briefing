@@ -1,4 +1,6 @@
-# Suivi des correctifs de contenu (branche `dev`) — À LIRE EN PREMIER pour reprendre le travail
+# Suivi des correctifs de contenu — À LIRE EN PREMIER pour reprendre le travail
+
+> **03/10/2026 : tous les correctifs ci-dessous marqués « FAIT » ont été fusionnés dans `main` (commit 7c471ae, accord de l'utilisateur) ; `dev` a été réaligné dessus. Le premier run de production avec ce code est celui du lundi 05/10 à 06h10 : le vérifier (contenu du briefing + logs `Garde-fou`, `Marché`, `Sport:`) et corriger sur `dev` si besoin. En cas de régression grave : `git revert -m 1 7c471ae` sur `main`.**
 
 Source des défauts : `ANALYSE_RUN_2026-10-01.md` (9 points). Le run du 02/10/2026 06:10 les a **reproduits à
 l'identique** (techniquement 7/7 parties LLM OK ; le contenu est le problème) : CAC −3,0 % (variation sur 5 jours),
