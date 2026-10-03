@@ -64,3 +64,33 @@ def test_annoter_sport_ne_touche_pas_aux_listes_redigees():
     assert out["rien_a_signaler"] == ["basketball"]
     assert out["prochains_matchs"] == {"basketball": {"affiche": "Spurs – X"}}
     assert c.annoter_sport(None, prochains) is None
+
+
+def test_repli_jour_par_jour_quand_la_plage_est_refusee(monkeypatch):
+    class R:
+        def __init__(self, code, js=None):
+            self.status_code, self._j, self.text = code, js, "bad"
+
+        def json(self):
+            return self._j
+
+    def fake_get(url, params, timeout, headers):
+        if "-" in params["dates"]:
+            return R(400)
+        if params["dates"] == "20261007":
+            return R(200, {"events": [ev("2026-10-07T19:00Z", "A", "B")]})
+        return R(200, {"events": []})
+
+    monkeypatch.setattr(c.requests, "get", fake_get)
+    d = c._fetch_scoreboard("soccer", "fra.1", datetime(2026, 10, 3, tzinfo=timezone.utc),
+                            datetime(2026, 10, 17, tzinfo=timezone.utc))
+    assert len(d["events"]) == 1
+
+
+def test_source_indisponible_retourne_none(monkeypatch):
+    class R:
+        status_code, text = 500, "err"
+
+    monkeypatch.setattr(c.requests, "get", lambda *a, **k: R())
+    assert c._fetch_scoreboard("soccer", "x", datetime(2026, 10, 3, tzinfo=timezone.utc),
+                               datetime(2026, 10, 17, tzinfo=timezone.utc)) is None

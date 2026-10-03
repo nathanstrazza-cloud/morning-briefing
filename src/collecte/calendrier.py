@@ -108,16 +108,42 @@ def formater(match: dict | None) -> dict | None:
             "date_iso": match["date_utc"].isoformat(), "date_texte": date_en_francais(match["date_utc"])}
 
 
-def _fetch_scoreboard(sport: str, slug: str, debut: datetime, fin: datetime, timeout: int = 10) -> dict | None:
-    params = {"dates": f"{debut:%Y%m%d}-{fin:%Y%m%d}", "limit": 200}
+HEADERS = {"User-Agent": "Mozilla/5.0 (morning-briefing)"}
+MAX_EVENEMENTS_SCAN = 12   # le repli jour par jour s'arrête dès que ce nombre de matchs est réuni
+
+
+def _get(sport: str, slug: str, dates: str, timeout: int) -> dict | None:
     try:
-        r = requests.get(ESPN_URL.format(sport=sport, slug=slug), params=params, timeout=timeout,
-                         headers={"User-Agent": "Mozilla/5.0 (morning-briefing)"})
-        r.raise_for_status()
+        r = requests.get(ESPN_URL.format(sport=sport, slug=slug), params={"dates": dates}, timeout=timeout,
+                         headers=HEADERS)
+        if r.status_code >= 400:
+            logger.warning("Calendrier: HTTP %s pour %s/%s dates=%s : %s", r.status_code, sport, slug, dates,
+                           r.text[:150].replace("\n", " "))
+            return None
         return r.json()
     except Exception as exc:  # noqa: BLE001
-        logger.warning("Calendrier: échec %s/%s : %s", sport, slug, exc)
+        logger.warning("Calendrier: échec %s/%s dates=%s : %s", sport, slug, dates, exc)
         return None
+
+
+def _fetch_scoreboard(sport: str, slug: str, debut: datetime, fin: datetime, timeout: int = 10) -> dict | None:
+    """1) une requête pour toute la plage (AAAAMMJJ-AAAAMMJJ) ; 2) si elle échoue, repli jour par jour
+    (une date unique est le format le plus répandu). Retourne {"events": [...]} ou None."""
+    data = _get(sport, slug, f"{debut:%Y%m%d}-{fin:%Y%m%d}", timeout)
+    if data is not None:
+        return data
+    events, jour = [], debut
+    echecs = 0
+    while jour.date() <= fin.date() and len(events) < MAX_EVENEMENTS_SCAN:
+        d = _get(sport, slug, f"{jour:%Y%m%d}", timeout)
+        if d is None:
+            echecs += 1
+            if echecs >= 3 and not events:       # source manifestement indisponible : on arrête
+                return None
+        else:
+            events += d.get("events") or []
+        jour += timedelta(days=1)
+    return {"events": events} if events or echecs < 3 else None
 
 
 def fetch_prochains_matchs(config: dict, maintenant: datetime | None = None, fetch=_fetch_scoreboard) -> dict:
