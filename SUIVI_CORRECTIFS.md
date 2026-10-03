@@ -19,11 +19,11 @@ Powell/Pike en double France/Monde. Contexte d'organisation : `DEV_WORKFLOW.md` 
 |---|-------|------|----|
 | 1 | Science : chiffres/sources inventés | FAIT sur dev, **validé en réel** (Dev Test 03/10 : 2 phrases retirées, Sources par le code, titres propres) | `src/generation/science_guard.py`, tests `test_science_guard.py` |
 | 2 | Marchés : variation sur 5 jours | FAIT sur dev, **validé en réel** (CAC +0,79 % ; l'ancienne base `chartPreviousClose` aurait donné ≈ −2 %) | `compute_session_change()` dans `src/collecte/markets.py` |
-| 2b | Marchés : explication inventée (« dépenses de défense russe » → Nasdaq) | FAIT sur dev, à revalider | `guard_marches()` dans `src/generation/actu_guard.py` : explication gardée seulement si ≥ 50 % de ses mots sont dans les articles économie ; variations imposées par les données ; sinon « Aucune cause fiable… » |
+| 2b | Marchés : explication inventée (« dépenses de défense russe » → Nasdaq) | FAIT sur dev, **validé en réel** (4e run : explications null + phrase « Aucune cause fiable… ») | `guard_marches()` dans `src/generation/actu_guard.py` : explication gardée seulement si ≥ 50 % de ses mots sont dans les articles économie ; variations imposées par les données ; sinon « Aucune cause fiable… » |
 | 3 | Actu : ajouts non sourcés | FAIT sur dev (partiel) | `guard_events()` (actu_guard.py) : phrases à nombre/marqueur (« ancien », « première fois »…) absent de la source retirées ; `consequences` et `pourquoi_important` non étayés préfixés « Hypothèse : » ; statut imposé par le code. Limite : heuristique lexicale, ne détecte pas tout |
 | 4 | Doublons France/Monde | FAIT sur dev, **validé en réel** (6 événements fusionnés) | `merge_zones()` dans `src/analyse/dedup.py`, appelée dans `main.py` |
-| 5 | Sport hors sujet, basket absent | FAIT sur dev, **pas encore vu en réel** (le run du 03/10 12:19 ne contenait pas ce commit) | `src/analyse/sport_scoring.py` (périmètre §6, quota par catégorie, Spurs, foot féminin écarté via `sport.inclure_feminin` absent = false). NB : bug découvert : `dedup` ne recopiait pas `equipe_prioritaire`, le bonus Spurs ne s'appliquait jamais |
-| 6 | Citation toujours `null` | FAIT sur dev, à voir en réel | `config/citations.json` (22 citations avec œuvre+année) + `src/generation/citations.py` ; le LLM n'écrit plus de citation |
+| 5 | Sport hors sujet, basket absent | FAIT sur dev, **vu en réel** (Dev Test 03/10 : 4 retenus = 2 foot Bleus/Italie, 1 basket, 1 autre ; foot féminin écarté). WNBA écartée ensuite (commit suivant), à revérifier | `src/analyse/sport_scoring.py` (périmètre §6, quota par catégorie, Spurs, foot féminin écarté via `sport.inclure_feminin` absent = false). NB : bug découvert : `dedup` ne recopiait pas `equipe_prioritaire`, le bonus Spurs ne s'appliquait jamais |
+| 6 | Citation toujours `null` | FAIT sur dev, **vu en réel** (Pascal, Pensées 1670) | `config/citations.json` (22 citations avec œuvre+année) + `src/generation/citations.py` ; le LLM n'écrit plus de citation |
 | 7 | Anglais du jour (niveau, « centrist ») | À FAIRE | prompt `anglais` dans parts.py : cibler B2/C1, exclure mots courants |
 | 8 | Météo (code instantané, évolution jour) | À FAIRE | `src/collecte/weather.py` : `daily.weather_code` + `hourly`, codes WMO manquants |
 | 9 | Divers (`resume_1_phrase` tronqué, CNRS, ESPN) | À FAIRE | `merge_results` (couper à la phrase entière) |
@@ -60,3 +60,8 @@ avec `{"ref":"dev","inputs":{"ref":"dev","no_llm":"false"}}` (le jeton a le droi
 2) Si le contenu est satisfaisant : fusion `dev` → `main` **avec l'accord de l'utilisateur** (la production tourne à 06h10 en semaine).
    Avant la fusion, vérifier que `main` n'a pas de nouveaux commits « Briefing du… » en conflit (ils ne touchent que `docs/data` et `logs`).
 3) Puis points 7, 8, 9, et l'affectation France/Monde par contenu.
+
+## Écart connu à traiter si l'utilisateur le souhaite
+- Décision de l'utilisateur du 01/10 NON implémentée : quand le sport n'a rien d'intéressant, le briefing doit le dire et indiquer le prochain match intéressant (nécessite une source de calendrier ; aujourd'hui les listes vides s'affichent simplement sans mention).
+- Marchés : quand aucune cause fiable n'est trouvée, le site affiche « Aucune cause fiable n'a pu être établie… » (volontaire, cahier §5 : ne pas inventer). Pour avoir plus d'explications il faudrait enrichir le contexte économie (plus de flux/articles), pas assouplir le garde-fou.
+- Quotas LLM : le Dev Test consomme les mêmes clés que la prod. 4 runs complets ont été faits le 03/10 (samedi) ; ne pas en relancer inutilement.

@@ -69,6 +69,8 @@ def score_sport_event(event: dict, categorie: str, config: dict | None = None) -
         if not _has(texte, _FOOT_PERIMETRE + _RESULTAT + _EVENEMENT):
             score -= 1
     elif categorie == "basketball":
+        if not inclure_feminin and _has(texte, ["wnba", "valkyries", "féminin", "féminine", "liberty", "sparks"]):
+            score -= 4          # WNBA/basket féminin : hors périmètre du cahier §6 (NBA, Spurs, Euroligue)
         if _has(texte, _BASKET_PRIO + prio):
             score += 4
         if _has(texte, _BASKET_PERIMETRE):

@@ -38,3 +38,7 @@ def test_selection_garantit_basket_malgre_foot_abondant():
 def test_rien_de_pertinent_donne_listes_vides():
     out = select_sport({"football": [ev("Chanson sur Zidane YouTube")], "basketball": [], "natation": [], "autres": []}, 4, CFG)
     assert all(not v for v in out.values())
+
+
+def test_wnba_hors_perimetre():
+    assert score_sport_event(ev("Les Golden State Valkyries se qualifient pour les demi-finales de la WNBA"), "basketball", CFG) < 5
