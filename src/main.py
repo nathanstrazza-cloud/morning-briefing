@@ -18,7 +18,7 @@ from datetime import datetime
 
 import pytz
 
-from .analyse import dedup, scoring, sport_scoring, verification
+from .analyse import dedup, scoring, sport_scoring, verification, zones
 from .collecte import collector, markets as markets_collect, weather as weather_collect
 from .generation import briefing_generator, llm_provider
 from .stockage import storage
@@ -97,11 +97,14 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         # diagnostiquer une section vide sans deviner (remonté jusqu'à status.json plus bas).
         funnel_actualite = {}
 
-        events_france = dedup.deduplicate(raw["news"]["france"])
-        events_monde = dedup.deduplicate(raw["news"]["monde"])
+        # Affectation France/Monde par CONTENU (03/10/2026, src/analyse/zones.py) : le flux d'origine
+        # ne décide plus seul. `raw` n'est pas modifié (l'anglais du jour lit raw["news"]["monde"]).
+        news_france, news_monde, _zones_stats = zones.assigner_zones(raw["news"]["france"], raw["news"]["monde"])
+        events_france = dedup.deduplicate(news_france)
+        events_monde = dedup.deduplicate(news_monde)
         # Dédup inter-zones (03/10/2026) : un même événement ne doit pas figurer en France ET en Monde.
         events_france, events_monde = dedup.merge_zones(events_france, events_monde)
-        n_france_bruts, n_france_dedup = len(raw["news"]["france"]), len(events_france)
+        n_france_bruts, n_france_dedup = len(news_france), len(events_france)
         events_france = scoring.score_events(events_france)
         events_france = verification.classify_events(events_france)
         events_france = scoring.filter_by_threshold(events_france, seuil)
@@ -110,7 +113,7 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
             "retenus_apres_seuil": len(events_france),
         }
 
-        n_monde_bruts, n_monde_dedup = len(raw["news"]["monde"]), len(events_monde)
+        n_monde_bruts, n_monde_dedup = len(news_monde), len(events_monde)
         events_monde = scoring.score_events(events_monde)
         events_monde = verification.classify_events(events_monde)
         events_monde = scoring.filter_by_threshold(events_monde, seuil)

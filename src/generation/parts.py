@@ -80,6 +80,9 @@ internationales). La France, les marchés, le sport et la science sont généré
 6. Pour chaque actualité, réponds implicitement à Quoi / Où / Quand / Pourquoi c'est important ;
    pour les sujets complexes, ajoute les conséquences possibles (\"consequences\") ou null.
 
+7. \"pourquoi_important\" n'a AUCUNE obligation de lien avec la France : n'invente pas d'angle
+   français ; si les données ne donnent pas l'enjeu, mets null.
+
 SCHÉMA JSON ATTENDU :
 {{
   \"actualite_monde\": [{_SCHEMA_EVENT}]
