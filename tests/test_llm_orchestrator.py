@@ -279,7 +279,9 @@ class TestParts(unittest.TestCase):
             actu_france={"actualite_france": [{"titre": "Réforme des retraites adoptée."}], "citation": {"texte": "t", "auteur": "a"}},
             actu_monde={"actualite_monde": [{"titre": "Séisme au Japon"}]}), NYT)
         self.assertEqual(base["actualite"]["france"][0]["titre"], "Réforme des retraites adoptée.")
-        self.assertEqual(base["citation"]["auteur"], "a")
+        # Depuis le 03/10/2026 la citation vient de la banque vérifiée (citations.py), plus du LLM.
+        self.assertTrue(base["citation"]["auteur"] and base["citation"]["source"])
+        self.assertNotEqual(base["citation"]["auteur"], "a")
         self.assertEqual(base["meta"]["resume_1_phrase"], "À la une : Réforme des retraites adoptée ; Séisme au Japon.")
 
     def test_une_partie_en_echec_garde_son_contenu_brut(self):

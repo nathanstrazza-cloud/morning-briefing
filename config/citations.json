@@ -1,0 +1,166 @@
+{
+ "_doc": "Banque de citations VÉRIFIÉES (cahier §9 : authenticité d'abord). Chaque entrée a une œuvre source et une année. 'traduction' = texte original non français : la formulation exacte peut varier selon la traduction. Tirage déterministe par date (src/generation/citations.py), sans LLM. Pour ajouter une citation : ne l'ajouter QUE si l'œuvre et le passage sont vérifiables ; sinon ne pas l'ajouter.",
+ "citations": [
+  {
+   "texte": "Je pense, donc je suis.",
+   "auteur": "René Descartes",
+   "source": "Discours de la méthode (4e partie)",
+   "annee": 1637,
+   "type": "original"
+  },
+  {
+   "texte": "L'homme est condamné à être libre.",
+   "auteur": "Jean-Paul Sartre",
+   "source": "L'existentialisme est un humanisme",
+   "annee": 1946,
+   "type": "original"
+  },
+  {
+   "texte": "On ne naît pas femme : on le devient.",
+   "auteur": "Simone de Beauvoir",
+   "source": "Le Deuxième Sexe",
+   "annee": 1949,
+   "type": "original"
+  },
+  {
+   "texte": "Il faut imaginer Sisyphe heureux.",
+   "auteur": "Albert Camus",
+   "source": "Le Mythe de Sisyphe",
+   "annee": 1942,
+   "type": "original"
+  },
+  {
+   "texte": "Au milieu de l'hiver, j'apprenais enfin qu'il y avait en moi un invincible été.",
+   "auteur": "Albert Camus",
+   "source": "« Retour à Tipasa », dans L'Été",
+   "annee": 1954,
+   "type": "original"
+  },
+  {
+   "texte": "Le cœur a ses raisons que la raison ne connaît point.",
+   "auteur": "Blaise Pascal",
+   "source": "Pensées",
+   "annee": 1670,
+   "type": "original"
+  },
+  {
+   "texte": "Que sais-je ?",
+   "auteur": "Michel de Montaigne",
+   "source": "Essais, livre II, chapitre 12",
+   "annee": 1580,
+   "type": "original"
+  },
+  {
+   "texte": "La plus grande chose du monde, c'est de savoir être à soi.",
+   "auteur": "Michel de Montaigne",
+   "source": "Essais, livre I, chapitre 39",
+   "annee": 1580,
+   "type": "original"
+  },
+  {
+   "texte": "Patience et longueur de temps font plus que force ni que rage.",
+   "auteur": "Jean de La Fontaine",
+   "source": "Fables, « Le Lion et le Rat »",
+   "annee": 1668,
+   "type": "original"
+  },
+  {
+   "texte": "Hâtez-vous lentement, et sans perdre courage, vingt fois sur le métier remettez votre ouvrage.",
+   "auteur": "Nicolas Boileau",
+   "source": "L'Art poétique, chant I",
+   "annee": 1674,
+   "type": "original"
+  },
+  {
+   "texte": "Ce qui se conçoit bien s'énonce clairement, et les mots pour le dire arrivent aisément.",
+   "auteur": "Nicolas Boileau",
+   "source": "L'Art poétique, chant I",
+   "annee": 1674,
+   "type": "original"
+  },
+  {
+   "texte": "L'homme est né libre, et partout il est dans les fers.",
+   "auteur": "Jean-Jacques Rousseau",
+   "source": "Du contrat social, livre I, chapitre 1",
+   "annee": 1762,
+   "type": "original"
+  },
+  {
+   "texte": "Pour qu'on ne puisse abuser du pouvoir, il faut que, par la disposition des choses, le pouvoir arrête le pouvoir.",
+   "auteur": "Montesquieu",
+   "source": "De l'esprit des lois, livre XI, chapitre 4",
+   "annee": 1748,
+   "type": "original"
+  },
+  {
+   "texte": "Dans les champs de l'observation, le hasard ne favorise que les esprits préparés.",
+   "auteur": "Louis Pasteur",
+   "source": "Discours d'inauguration de la faculté des sciences de Lille, 7 décembre 1854",
+   "annee": 1854,
+   "type": "original"
+  },
+  {
+   "texte": "Douter de tout ou tout croire, ce sont deux solutions également commodes, qui l'une et l'autre nous dispensent de réfléchir.",
+   "auteur": "Henri Poincaré",
+   "source": "La Science et l'Hypothèse",
+   "annee": 1902,
+   "type": "original"
+  },
+  {
+   "texte": "Rien n'est donné. Tout est construit.",
+   "auteur": "Gaston Bachelard",
+   "source": "La Formation de l'esprit scientifique",
+   "annee": 1938,
+   "type": "original"
+  },
+  {
+   "texte": "Le vent se lève !... Il faut tenter de vivre !",
+   "auteur": "Paul Valéry",
+   "source": "Le Cimetière marin",
+   "annee": 1920,
+   "type": "original"
+  },
+  {
+   "texte": "L'essentiel est invisible pour les yeux.",
+   "auteur": "Antoine de Saint-Exupéry",
+   "source": "Le Petit Prince, chapitre XXI",
+   "annee": 1943,
+   "type": "original"
+  },
+  {
+   "texte": "Pour ce qui est de l'avenir, il ne s'agit pas de le prévoir, mais de le rendre possible.",
+   "auteur": "Antoine de Saint-Exupéry",
+   "source": "Citadelle",
+   "annee": 1948,
+   "type": "original"
+  },
+  {
+   "texte": "Sapere aude ! Aie le courage de te servir de ton propre entendement.",
+   "auteur": "Emmanuel Kant",
+   "source": "Qu'est-ce que les Lumières ?",
+   "annee": 1784,
+   "type": "traduction"
+  },
+  {
+   "texte": "Il n'y a pas de vent favorable pour celui qui ne sait pas dans quel port il va.",
+   "auteur": "Sénèque",
+   "source": "Lettres à Lucilius, 71",
+   "annee": 65,
+   "type": "traduction"
+  },
+  {
+   "texte": "Ce n'est pas parce que les choses sont difficiles que nous n'osons pas ; c'est parce que nous n'osons pas qu'elles sont difficiles.",
+   "auteur": "Sénèque",
+   "source": "Lettres à Lucilius, 104",
+   "annee": 65,
+   "type": "traduction"
+  },
+  {
+   "texte": "Ce qui ne me tue pas me rend plus fort.",
+   "auteur": "Friedrich Nietzsche",
+   "source": "Crépuscule des idoles, « Maximes et pointes », 8",
+   "annee": 1888,
+   "type": "traduction"
+  }
+ ]
+}

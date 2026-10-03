@@ -15,6 +15,7 @@ import logging
 import re
 
 from .llm_orchestrator import Part, PartResult, looks_like_leak
+from .citations import pick_citation
 from .actu_guard import guard_events, guard_marches
 from .science_guard import guard_science_article
 
@@ -58,18 +59,16 @@ _SCHEMA_EVENT = ('{\"titre\": str, \"resume\": str, \"pourquoi_important\": str,
 
 SYSTEM_ACTU_FRANCE = f"""Tu es le rédacteur d'un briefing matinal personnel en français. Tu rédiges ICI
 uniquement l'actualité FRANCE (le monde, les marchés, le sport et la science sont générés
-séparément par d'autres appels : ne les mentionne pas) et la citation du jour.
+séparément par d'autres appels : ne les mentionne pas).
 
 {_REGLES_COMMUNES}
 6. Pour chaque actualité, réponds implicitement à Quoi / Où / Quand / Pourquoi c'est important ;
    pour les sujets complexes, ajoute les conséquences possibles (\"consequences\") ou null.
-7. Citation du jour : uniquement si tu es CERTAIN de l'authenticité de l'attribution (auteur ET
-   contenu). Sinon \"citation\": null. Aucune citation d'attribution douteuse.
+7. N'écris AUCUNE citation : elle est ajoutée automatiquement par le programme.
 
 SCHÉMA JSON ATTENDU :
 {{
-  \"actualite_france\": [{_SCHEMA_EVENT}],
-  \"citation\": {{\"texte\": str, \"auteur\": str}}|null
+  \"actualite_france\": [{_SCHEMA_EVENT}]
 }}"""
 
 SYSTEM_ACTU_MONDE = f"""Tu es le rédacteur d'un briefing matinal personnel en français. Tu rédiges ICI
@@ -376,10 +375,13 @@ def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: d
     """Remplace, partie par partie, le contenu brut du briefing de repli par ce que les LLM ont
     rédigé. Une partie en échec garde son contenu brut (cf. cahier §21). Modifie `resultat`."""
     r = results
+    # Citation : banque vérifiée, tirage par date (le LLM n'intervient plus, cf. citations.py).
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    resultat["citation"] = pick_citation(datetime.now(ZoneInfo("Europe/Paris")).date())
     if "actu_france" in r and r["actu_france"].ok:
         resultat["actualite"]["france"] = _garde_actu(
             r["actu_france"].body["actualite_france"], analysed, "actualite_france")
-        resultat["citation"] = r["actu_france"].body.get("citation")
     if "actu_monde" in r and r["actu_monde"].ok:
         resultat["actualite"]["monde"] = _garde_actu(
             r["actu_monde"].body["actualite_monde"], analysed, "actualite_monde")
