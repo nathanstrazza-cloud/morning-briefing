@@ -265,6 +265,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .weather-period__temp { font-family: var(--font-serif); font-size: 1.15rem; color: var(--dawn-navy); }
 .weather-period__desc { font-size: 0.88rem; color: var(--ink-soft); }
 .weather-period__rain { font-size: 0.8rem; color: var(--ink-faint); }
+.sport-rien { color: var(--ink-soft); margin: 0.2rem 0; }
+.sport-prochain { color: var(--ink); font-weight: 600; margin: 0.2rem 0 0.8rem; }
 .weather-cities { margin-top: 0.9rem; font-size: 0.88rem; color: var(--ink-faint); }
 
 /* ---------- Citation ---------- */

@@ -137,6 +137,10 @@ function renderSectionSport(sport) {
   if (!sport) return section;
 
   const labels = { football: "Football", basketball: "Basketball", natation: "Natation", autres: "Autres sports" };
+  // `rien_a_signaler` / `prochains_matchs` sont calculés par le code (src/collecte/calendrier.py) ;
+  // absents des anciens briefings -> comportement historique.
+  const rien = new Set(sport.rien_a_signaler || []);
+  const prochains = sport.prochains_matchs || {};
   let any = false;
   for (const key of ["football", "basketball", "natation", "autres"]) {
     const items = sport[key];
@@ -146,6 +150,14 @@ function renderSectionSport(sport) {
       const list = el("ul", { class: "sport-list" });
       for (const line of items) list.appendChild(el("li", { text: line }));
       section.appendChild(list);
+    } else if (rien.has(key)) {
+      any = true;
+      section.appendChild(el("h3", { class: "subsection-title", text: labels[key] }));
+      section.appendChild(el("p", { class: "sport-rien", text: "Rien d'intéressant à signaler." }));
+      const m = prochains[key];
+      if (m && m.affiche) {
+        section.appendChild(el("p", { class: "sport-prochain", text: `Prochain match à suivre : ${m.affiche} (${m.competition}), ${m.date_texte}.` }));
+      }
     }
   }
   if (!any) section.appendChild(el("p", { class: "loading", text: "Rien de notable aujourd'hui." }));

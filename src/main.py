@@ -19,7 +19,7 @@ from datetime import datetime
 import pytz
 
 from .analyse import dedup, scoring, sport_scoring, verification, zones
-from .collecte import collector, markets as markets_collect, weather as weather_collect
+from .collecte import calendrier, collector, markets as markets_collect, weather as weather_collect
 from .generation import briefing_generator, llm_provider
 from .stockage import storage
 from .utils import compute_window, is_test_mode, load_config, paris_now, setup_logging
@@ -201,6 +201,14 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         briefing = briefing_generator.generate(
             pool, analysed, science_topic, nyt_article, weather_summary, is_monday,
         )
+
+        # Sport : si football/basketball n'ont rien de notable, le dire et indiquer le prochain match
+        # intéressant (calendrier ESPN ; 03/10/2026). Déterministe, aucun LLM ; échec réseau = pas de match.
+        try:
+            briefing["sport"] = calendrier.annoter_sport(
+                briefing.get("sport"), calendrier.fetch_prochains_matchs(config))
+        except Exception as exc:  # noqa: BLE001
+            logger.warning("Calendrier sportif ignoré (%s) : le briefing est publié sans prochain match.", exc)
 
         # 4. STOCKAGE
         storage.save_briefing(

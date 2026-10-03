@@ -112,6 +112,31 @@ sport:
   mot_cle_france: ["France", "Français", "Française", "Bleus", "Bleues", "tricolore"]
 
 # ---------------------------------------------------------------------------
+# CALENDRIER SPORT (03/10/2026) — « prochain match intéressant » affiché quand le football ou le
+# basketball n'ont rien de notable (décision utilisateur du 01/10). API publique ESPN (gratuite, sans
+# clé) : https://site.api.espn.com/apis/site/v2/sports/<sport>/<slug>/scoreboard?dates=AAAAMMJJ-AAAAMMJJ
+# PAS ENCORE vérifié en réel (aucun accès réseau depuis le sandbox de développement) : en cas d'échec
+# ou de réponse vide, le briefing dit simplement « rien d'intéressant » SANS prochain match (jamais
+# inventé). Corriger les `slug` ici si un Dev Test montre « calendrier: 0 match ».
+# ---------------------------------------------------------------------------
+calendrier:
+  fenetre_jours: 14
+  football:
+    - {slug: "fra.1", sport: "soccer", label: "Ligue 1", rang_base: 5}
+    - {slug: "uefa.champions", sport: "soccer", label: "Ligue des champions", rang_base: 3}
+    - {slug: "uefa.europa", sport: "soccer", label: "Europa League", rang_base: 4}
+    - {slug: "fifa.friendly", sport: "soccer", label: "Match amical", rang_base: 9}
+    - {slug: "uefa.nations", sport: "soccer", label: "Ligue des nations", rang_base: 9}
+    - {slug: "fifa.worldq.uefa", sport: "soccer", label: "Qualifications Coupe du monde", rang_base: 9}
+  # Mot pour désigner l'équipe de France (les matchs de la sélection passent avant tout).
+  equipe_nationale: "France"
+  # Clubs français « phares » : un match qui en oppose deux est l'affiche par excellence.
+  clubs_phares: ["Paris Saint-Germain", "Marseille", "Lyon", "Monaco", "Lille", "Nice", "Lens"]
+  basketball:
+    - {slug: "nba", sport: "basketball", label: "NBA"}
+  equipe_basketball: "Spurs"
+
+# ---------------------------------------------------------------------------
 # MARCHÉS — Yahoo Finance (endpoint "chart" public, gratuit, aucune clé)
 # symboles Yahoo Finance : cherchable sur https://finance.yahoo.com/lookup
 # (corrigé le 2026-09-13, remplace Stooq qui exige désormais une clé via CAPTCHA

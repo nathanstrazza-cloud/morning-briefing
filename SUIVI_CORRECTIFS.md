@@ -7,6 +7,8 @@ l'identique** (techniquement 7/7 parties LLM OK ; le contenu est le problème) :
 science avec chiffres/sources inventés, sport hors périmètre (foot féminin), basket vide, citation `null`,
 Powell/Pike en double France/Monde. Contexte d'organisation : `DEV_WORKFLOW.md` (main = prod, dev = essais).
 
+> **03/10/2026 (soir) — 4 correctifs codés sur `dev` (PAS fusionnés dans `main`)** : anglais du jour, météo, affectation France/Monde par contenu, mention « rien d'intéressant » + prochain match au sport. 95 tests OK, rien vérifié en réel à ce stade (voir tableau et « À vérifier au prochain Dev Test »).
+
 ## Règles de travail (ne pas les enfreindre)
 - On développe UNIQUEMENT sur `dev`. Jamais de commit de `docs/data/` ni `logs/` sur `dev`. Ne pas lancer `LLM probe` depuis `dev`.
 - Test sans quota : `pip install -r requirements.txt pytest && python3 -m pytest -q tests` (tout est simulé, aucun réseau).
@@ -26,9 +28,11 @@ Powell/Pike en double France/Monde. Contexte d'organisation : `DEV_WORKFLOW.md` 
 | 4 | Doublons France/Monde | FAIT sur dev, **validé en réel** (6 événements fusionnés) | `merge_zones()` dans `src/analyse/dedup.py`, appelée dans `main.py` |
 | 5 | Sport hors sujet, basket absent | FAIT sur dev, **vu en réel** (Dev Test 03/10 : 4 retenus = 2 foot Bleus/Italie, 1 basket, 1 autre ; foot féminin écarté). WNBA écartée ensuite (commit suivant), à revérifier | `src/analyse/sport_scoring.py` (périmètre §6, quota par catégorie, Spurs, foot féminin écarté via `sport.inclure_feminin` absent = false). NB : bug découvert : `dedup` ne recopiait pas `equipe_prioritaire`, le bonus Spurs ne s'appliquait jamais |
 | 6 | Citation toujours `null` | FAIT sur dev, **vu en réel** (Pascal, Pensées 1670) | `config/citations.json` (22 citations avec œuvre+année) + `src/generation/citations.py` ; le LLM n'écrit plus de citation |
-| 7 | Anglais du jour (niveau, « centrist ») | À FAIRE | prompt `anglais` dans parts.py : cibler B2/C1, exclure mots courants |
-| 8 | Météo (code instantané, évolution jour) | À FAIRE | `src/collecte/weather.py` : `daily.weather_code` + `hourly`, codes WMO manquants |
+| 7 | Anglais du jour (niveau, « centrist ») | FAIT sur dev (tests OK, **non vérifié en réel**) | `src/generation/anglais_guard.py` (filtre mots faciles/absents du texte/doublons, glossaire de traductions imposées, score de sélection B2/C1) ; prompt `SYSTEM_ANGLAIS` (parts.py) ; `select_nyt_article` choisit par vocabulaire soutenu ; tests `test_anglais_guard.py` |
+| 8 | Météo (code instantané, évolution jour) | FAIT sur dev (tests OK, **non vérifié en réel**) | `src/collecte/weather.py` réécrit : prévisions horaires, périodes matin/après-midi/soir, description de la zone sur les 4 villes, alertes (rafales ≥ 60, pluie ≥ 20 mm, chaleur ≥ 35, gel), codes WMO ajoutés, code pluie sans pluie mesurée → « couvert » ; `resume` construit par le code ; frontend `renderSectionMeteo` ; tests `test_weather.py` |
 | 9 | Divers (`resume_1_phrase` tronqué, CNRS, ESPN) | À FAIRE | `merge_results` (couper à la phrase entière) |
+| 10 | Affectation France/Monde par contenu | FAIT sur dev (tests OK, **non vérifié en réel**) | `src/analyse/zones.py` (`assigner_zones`, appelée dans `main.py` AVANT la dédup) : marqueurs France vs étranger (titre ×2, résumé ×1), réaffectation si écart ≥ 2, sinon zone du flux ; NYT reste en Monde ; `raw` non modifié. Prompt Monde : plus de lien France obligatoire dans `pourquoi_important` ; tests `test_zones.py` |
+| 11 | Sport : « rien d'intéressant » + prochain match | FAIT sur dev (tests OK, **source ESPN non vérifiée en réel**) | `src/collecte/calendrier.py` (API publique ESPN scoreboard, config `calendrier:` dans config.yaml), appelée dans `main.py` après la génération ; ajoute `sport.rien_a_signaler` et `sport.prochains_matchs` ; frontend `renderSectionSport` ; tests `test_calendrier.py` |
 
 ## Autres constats du Dev Test du 03/10 (non traités)
 - La zone France contient encore de l'international (ex. budget militaire russe, Corée du Nord) : les flux « Le Monde — Une » / Libération sont classés `france` par flux, pas par contenu. Les « pourquoi important » forcent un lien avec la France (maintenant marqués « Hypothèse »). Piste : affectation par contenu, ou prompt « pourquoi important » sans obligation de lien France.
@@ -61,9 +65,16 @@ avec `{"ref":"dev","inputs":{"ref":"dev","no_llm":"false"}}` (le jeton a le droi
 1) Lire le Dev Test lancé sur le commit « citation du jour » (sport, citation, marchés, actu) ; corriger ce qui reste.
 2) Si le contenu est satisfaisant : fusion `dev` → `main` **avec l'accord de l'utilisateur** (la production tourne à 06h10 en semaine).
    Avant la fusion, vérifier que `main` n'a pas de nouveaux commits « Briefing du… » en conflit (ils ne touchent que `docs/data` et `logs`).
-3) Puis points 7, 8, 9, et l'affectation France/Monde par contenu.
+3) Restent : point 9 (divers), puis fusion `dev` → `main` des points 7, 8, 10, 11 après vérification (accord de l'utilisateur).
 
-## Écart connu à traiter si l'utilisateur le souhaite
-- Décision de l'utilisateur du 01/10 NON implémentée : quand le sport n'a rien d'intéressant, le briefing doit le dire et indiquer le prochain match intéressant (nécessite une source de calendrier ; aujourd'hui les listes vides s'affichent simplement sans mention).
+## À vérifier au prochain Dev Test (points non validés en réel)
+1. **Calendrier ESPN** : chercher dans les annotations les lignes `Calendrier football <slug>: N match(s)` ; si 0 partout, les `slug` de `config/config.yaml` (section `calendrier:`) ou le format du paramètre `dates=` sont à corriger. En cas d'échec le site dit seulement « Rien d'intéressant à signaler » (jamais de match inventé).
+2. **Météo** : annotation `3c-meteo-anglais` → `periodes` (3 entrées), `resume` cohérent, plus de « bruine forte » sans pluie.
+3. **Zones** : lignes `Zone par contenu: france -> monde | titre` ; vérifier qu'aucune réaffectation n'est absurde, ajuster `MARQUEURS_*` dans zones.py (faux positifs possibles sur les villes, ex. « Nice », « Rome »).
+4. **Anglais** (nécessite un Dev Test AVEC LLM) : ligne `Anglais : N mots reçus -> M retenus`, vérifier que « centrist » → « centriste » et que les mots faciles ont disparu. Si M = 0 trop souvent, assouplir `MOTS_FACILES`.
+- Un Dev Test `no_llm=true` suffit pour 1, 2 et 3 (aucun quota LLM consommé) ; seul le point 4 demande un run complet.
+
+## Écart connu (résolu le 03/10 soir, voir point 11)
+- Décision de l'utilisateur du 01/10 : quand le sport n'a rien d'intéressant, le briefing le dit et indique le prochain match intéressant → codé (point 11).
 - Marchés : quand aucune cause fiable n'est trouvée, le site affiche « Aucune cause fiable n'a pu être établie… » (volontaire, cahier §5 : ne pas inventer). Pour avoir plus d'explications il faudrait enrichir le contexte économie (plus de flux/articles), pas assouplir le garde-fou.
 - Quotas LLM : le Dev Test consomme les mêmes clés que la prod. 4 runs complets ont été faits le 03/10 (samedi) ; ne pas en relancer inutilement.

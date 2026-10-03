@@ -26,7 +26,8 @@ def main(out: str) -> None:
     texte = open(logs[-1], encoding="utf-8").read().splitlines() if logs else []
     emit("1-log-marches", [l for l in texte if "Marché " in l or "marches" in l.lower()][:20] or ["(aucune ligne marché)"])
     emit("2-log-garde-fous", [l for l in texte if "Garde-fou" in l or "inter-zones" in l or "Sport" in l or "Parties rédigées" in l
-                              or "ERROR" in l or "Entonnoir" in l][:40] or ["(rien)"])
+                              or "ERROR" in l or "Entonnoir" in l or "Zone par contenu" in l or "Affectation France" in l
+                              or "Calendrier" in l or "Anglais :" in l or "Météo" in l][:60] or ["(rien)"])
     try:
         b = json.load(open(f"{out}/latest.json", encoding="utf-8"))["briefing"]
     except Exception as exc:  # noqa: BLE001
@@ -40,6 +41,8 @@ def main(out: str) -> None:
         for e in act.get(z) or []:
             lignes.append(f"ACTU {z} [{e.get('statut')}] {e.get('titre')}\n   resume={e.get('resume')}\n   pourquoi={e.get('pourquoi_important')}\n   conseq={e.get('consequences')}")
     emit("3b-actu", lignes)
+    emit("3c-meteo-anglais", ["METEO: " + json.dumps(b.get("meteo"), ensure_ascii=False)[:2500],
+                              "ANGLAIS: " + json.dumps(b.get("anglais"), ensure_ascii=False)[:2500]])
     s = b.get("science") or {}
     emit("4-science", [f"titre={s.get('titre')} retirees={s.get('phrases_retirees_garde_fou')}",
                        (s.get("contenu_markdown") or "")[:30000]])
