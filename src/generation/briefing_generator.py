@@ -19,6 +19,7 @@ from datetime import datetime
 
 from ..analyse import verification
 from .llm_provider import LLMError, LLMProvider
+from .anglais_guard import score_apprentissage
 
 logger = logging.getLogger("morning_briefing.generation")
 
@@ -558,7 +559,8 @@ def select_nyt_article(raw_monde_items: list[dict]) -> dict | None:
     ]
     if not candidats:
         return None
-    top = max(candidats, key=lambda item: len(item.get("resume", "")))
+    top = max(candidats, key=lambda item: (score_apprentissage(item.get("titre", ""), item.get("resume", "")),
+                                           len(item.get("resume", ""))))
     return {
         "titre": top["titre"],
         "resume": top.get("resume", ""),

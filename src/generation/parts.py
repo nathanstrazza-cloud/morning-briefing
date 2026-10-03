@@ -18,6 +18,7 @@ from .llm_orchestrator import Part, PartResult, looks_like_leak
 from .citations import pick_citation
 from .actu_guard import guard_events, guard_marches
 from .science_guard import guard_science_article
+from .anglais_guard import filtrer_mots
 
 logger = logging.getLogger("morning_briefing.generation")
 
@@ -118,19 +119,27 @@ SCHÉMA JSON ATTENDU :
   \"sport\": {{\"football\": [str], \"basketball\": [str], \"natation\": [str]|null, \"autres\": [str]|null}}
 }}"""
 
-SYSTEM_ANGLAIS = f"""Tu es un professeur d'anglais qui aide un francophone à apprendre l'anglais à
-partir d'un court extrait du New York Times fourni ci-dessous (titre + résumé, en anglais). Tu
-rédiges UNIQUEMENT cette section.
+SYSTEM_ANGLAIS = f"""Tu es un professeur d'anglais qui aide un francophone de bon niveau (visé : B2 vers C1) à
+progresser à partir d'un court extrait du New York Times fourni ci-dessous (titre + résumé, en
+anglais). Tu rédiges UNIQUEMENT cette section.
 
 RÈGLES ABSOLUES (à respecter strictement) :
-1. \"traduction_titre\" et \"traduction_resume\" : traduction française FIDÈLE. N'ajoute, ne déduis et
-   n'invente AUCUN fait absent du texte anglais fourni.
-2. \"mots_importants\" : 5 à 8 mots ou expressions anglaises TIRÉS du titre ou du résumé, utiles à
-   apprendre (vocabulaire soutenu, faux-amis, expressions, termes d'actualité), pas de mots
-   triviaux. Pour chacun : \"mot\" (tel qu'il apparaît), \"traduction\" (français), \"exemple\" (UNE
-   phrase anglaise simple et courte ; cette phrase peut être inventée : c'est un exemple de
-   langue, pas un fait d'actualité).
-3. \"niveau\" : estimation honnête (ex. \"intermédiaire\", \"avancé\") pour un apprenant francophone.
+1. \"traduction_titre\" et \"traduction_resume\" : traduction française FIDÈLE et naturelle. N'ajoute,
+   ne déduis et n'invente AUCUN fait absent du texte anglais fourni. Attention aux faux amis et aux
+   termes politiques : \"centrist\" = \"centriste\" (jamais \"centré\"), \"to resume\" = \"reprendre\",
+   \"eventually\" = \"finalement\", \"actually\" = \"en réalité\", \"to attend\" = \"assister à\".
+2. \"mots_importants\" : 4 à 8 mots ou expressions anglaises COPIÉS tels quels du titre ou du résumé
+   (jamais un mot absent du texte). Choisis du vocabulaire de niveau B2/C1 : verbes à particule,
+   collocations, termes politiques/économiques précis, mots à faux ami. EXCLUS les mots que tout
+   apprenant connaît (president, prime minister, government, lawyer, politician, election, police,
+   court, war, company, market, country, leader, etc.). Si le texte offre moins de 4 mots
+   intéressants, n'en donne que 2 ou 3 : mieux vaut peu de mots utiles que des mots triviaux.
+   Pour chacun : \"mot\" (tel qu'il apparaît), \"traduction\" (sens exact DANS CE CONTEXTE, en
+   français, avec la nature du mot si utile), \"exemple\" (UNE phrase anglaise naturelle de niveau
+   B2, différente de la phrase du texte, qui montre l'usage typique du mot ; cette phrase peut être
+   inventée : c'est un exemple de langue, pas un fait d'actualité, et elle ne doit citer aucune
+   personne réelle).
+3. \"niveau\" : le niveau CECRL du texte pour un apprenant francophone, parmi \"B1\", \"B2\", \"C1\", \"C2\".
 4. Réponds STRICTEMENT en JSON valide conforme au schéma donné, sans texte avant/après, sans
    balises markdown autour du JSON.
 
@@ -397,8 +406,12 @@ def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: d
             "titre_anglais": nyt_article["titre"], "resume_anglais": nyt_article["resume"],
             "url": nyt_article["url"], "source": nyt_article["source"],
             "traduction_titre": b.get("traduction_titre"), "traduction_resume": b.get("traduction_resume"),
-            "mots_importants": b.get("mots_importants", []), "niveau": b.get("niveau"),
+            "niveau": b.get("niveau"),
         }
+        # Contrôles déterministes : mots triviaux/absents du texte retirés, traductions à piège corrigées.
+        mots, stats = filtrer_mots(b.get("mots_importants", []), nyt_article["titre"], nyt_article["resume"])
+        resultat["anglais"]["mots_importants"] = mots
+        logger.info("Anglais : %d mots reçus -> %d retenus (%s)", stats["recus"], len(mots), stats)
 
     # Science : la moitié A est INDISPENSABLE (titre + introduction) ; sans elle on garde le repli,
     # jamais une moitié B orpheline. Sans la moitié B, on publie A avec une mention explicite.
