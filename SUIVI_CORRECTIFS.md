@@ -7,7 +7,9 @@ l'identique** (techniquement 7/7 parties LLM OK ; le contenu est le problème) :
 science avec chiffres/sources inventés, sport hors périmètre (foot féminin), basket vide, citation `null`,
 Powell/Pike en double France/Monde. Contexte d'organisation : `DEV_WORKFLOW.md` (main = prod, dev = essais).
 
-> **03/10/2026 (soir) — 4 correctifs codés sur `dev` (PAS fusionnés dans `main`)** : anglais du jour, météo, affectation France/Monde par contenu, mention « rien d'intéressant » + prochain match au sport. 97 tests OK ; météo, zones et calendrier validés en réel par un Dev Test sans LLM ; l'anglais du jour reste à valider par un Dev Test AVEC LLM (un seul run suffit).
+> **04/10/2026 : ces 4 correctifs (points 7, 8, 10, 11) sont FUSIONNÉS dans `main` (commit efc17b9, accord de l'utilisateur) ; premier run de production avec ce code = lundi 05/10 à 06h10. À vérifier ensuite sur le briefing publié et les logs (`Anglais :`, `Zone par contenu`, `Calendrier`, `Météo`) ; corriger sur `dev`. Régression grave : `git revert -m 1 efc17b9` sur `main`. L'anglais du jour n'a JAMAIS tourné avec un vrai LLM avant cette fusion.**
+>
+> (Historique) 03/10/2026 (soir) — 4 correctifs codés sur `dev` : anglais du jour, météo, affectation France/Monde par contenu, mention « rien d'intéressant » + prochain match au sport. 97 tests OK ; météo, zones et calendrier validés en réel par un Dev Test sans LLM ; l'anglais du jour reste à valider par un Dev Test AVEC LLM (un seul run suffit).
 
 ## Règles de travail (ne pas les enfreindre)
 - On développe UNIQUEMENT sur `dev`. Jamais de commit de `docs/data/` ni `logs/` sur `dev`. Ne pas lancer `LLM probe` depuis `dev`.
