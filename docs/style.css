@@ -257,6 +257,16 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 
 .weather-strip__temp { font-family: var(--font-serif); font-size: 2.1rem; color: var(--dawn-navy); }
 .weather-strip__desc { color: var(--ink-soft); }
+.weather-summary { margin-top: 0.8rem; color: var(--ink); }
+.weather-alert { margin-top: 0.4rem; color: #9a3412; font-weight: 600; }
+.weather-periods { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; margin-top: 0.9rem; }
+.weather-period { border: 1px solid var(--rule, #ddd); border-radius: 6px; padding: 0.55rem 0.7rem; }
+.weather-period__label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-faint); }
+.weather-period__temp { font-family: var(--font-serif); font-size: 1.15rem; color: var(--dawn-navy); }
+.weather-period__desc { font-size: 0.88rem; color: var(--ink-soft); }
+.weather-period__rain { font-size: 0.8rem; color: var(--ink-faint); }
+.sport-rien { color: var(--ink-soft); margin: 0.2rem 0; }
+.sport-prochain { color: var(--ink); font-weight: 600; margin: 0.2rem 0 0.8rem; }
 .weather-cities { margin-top: 0.9rem; font-size: 0.88rem; color: var(--ink-faint); }
 
 /* ---------- Citation ---------- */

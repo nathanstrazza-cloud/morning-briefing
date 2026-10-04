@@ -137,6 +137,10 @@ function renderSectionSport(sport) {
   if (!sport) return section;
 
   const labels = { football: "Football", basketball: "Basketball", natation: "Natation", autres: "Autres sports" };
+  // `rien_a_signaler` / `prochains_matchs` sont calculés par le code (src/collecte/calendrier.py) ;
+  // absents des anciens briefings -> comportement historique.
+  const rien = new Set(sport.rien_a_signaler || []);
+  const prochains = sport.prochains_matchs || {};
   let any = false;
   for (const key of ["football", "basketball", "natation", "autres"]) {
     const items = sport[key];
@@ -146,6 +150,14 @@ function renderSectionSport(sport) {
       const list = el("ul", { class: "sport-list" });
       for (const line of items) list.appendChild(el("li", { text: line }));
       section.appendChild(list);
+    } else if (rien.has(key)) {
+      any = true;
+      section.appendChild(el("h3", { class: "subsection-title", text: labels[key] }));
+      section.appendChild(el("p", { class: "sport-rien", text: "Rien d'intéressant à signaler." }));
+      const m = prochains[key];
+      if (m && m.affiche) {
+        section.appendChild(el("p", { class: "sport-prochain", text: `Prochain match à suivre : ${m.affiche} (${m.competition}), ${m.date_texte}.` }));
+      }
     }
   }
   if (!any) section.appendChild(el("p", { class: "loading", text: "Rien de notable aujourd'hui." }));
@@ -181,8 +193,39 @@ function renderSectionMeteo(meteo) {
   }
   section.appendChild(strip);
 
+  // Résumé de la journée construit par le code (jamais par le LLM).
+  if (meteo.resume) {
+    section.appendChild(el("p", { class: "weather-summary", text: meteo.resume }));
+  }
+  (meteo.alertes || []).forEach((a) => {
+    section.appendChild(el("p", { class: "weather-alert", text: `⚠ ${a}` }));
+  });
+
+  // Évolution dans la journée : matin / après-midi / soir.
+  if (meteo.periodes && meteo.periodes.length) {
+    const grid = el("div", { class: "weather-periods" });
+    meteo.periodes.forEach((p) => {
+      const t = p.temperature_min != null && p.temperature_max != null
+        ? `${Math.round(p.temperature_min)}° – ${Math.round(p.temperature_max)}°` : "—";
+      const rain = p.probabilite_pluie_pct != null ? `Pluie ${p.probabilite_pluie_pct}%` : "";
+      grid.appendChild(el("div", { class: "weather-period" }, [
+        el("div", { class: "weather-period__label", text: p.label }),
+        el("div", { class: "weather-period__temp", text: t }),
+        el("div", { class: "weather-period__desc", text: p.description || "" }),
+        el("div", { class: "weather-period__rain", text: rain }),
+      ]));
+    });
+    section.appendChild(grid);
+  }
+
   if (meteo.villes_detail && meteo.villes_detail.length) {
-    const detail = meteo.villes_detail.map((v) => `${v.ville}: ${v.temperature_actuelle != null ? Math.round(v.temperature_actuelle) + "°" : "—"}`).join(" · ");
+    const detail = meteo.villes_detail.map((v) => {
+      const mn = v.temperature_min != null ? Math.round(v.temperature_min) : null;
+      const mx = v.temperature_max != null ? Math.round(v.temperature_max) : null;
+      const t = mn != null && mx != null ? `${mn}°–${mx}°`
+        : (v.temperature_actuelle != null ? Math.round(v.temperature_actuelle) + "°" : "—");
+      return `${v.ville}: ${t}`;
+    }).join(" · ");
     section.appendChild(el("p", { class: "weather-cities", text: detail }));
   }
   return section;
