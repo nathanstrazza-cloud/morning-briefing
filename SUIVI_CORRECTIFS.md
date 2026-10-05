@@ -36,6 +36,23 @@ Powell/Pike en double France/Monde. Contexte d'organisation : `DEV_WORKFLOW.md` 
 | 10 | Affectation France/Monde par contenu | FAIT sur dev, **validé en réel** (Dev Test sans LLM : 21 items France → Monde, 3 Monde → France, réaffectations plausibles ; à relire à l'œil au prochain run) | `src/analyse/zones.py` (`assigner_zones`, appelée dans `main.py` AVANT la dédup) : marqueurs France vs étranger (titre ×2, résumé ×1), réaffectation si écart ≥ 2, sinon zone du flux ; NYT reste en Monde ; `raw` non modifié. Prompt Monde : plus de lien France obligatoire dans `pourquoi_important` ; tests `test_zones.py` |
 | 11 | Sport : « rien d'intéressant » + prochain match | FAIT sur dev, **validé en réel** (Dev Test sans LLM du 03/10 : prochain football = Lens – Lyon, prochain basket = Spurs – Atlanta Hawks ; la plage `dates=A-B` d'ESPN renvoie HTTP 400, le code retombe sur une requête par jour qui fonctionne) | `src/collecte/calendrier.py` (API publique ESPN scoreboard, config `calendrier:` dans config.yaml), appelée dans `main.py` après la génération ; ajoute `sport.rien_a_signaler` et `sport.prochains_matchs` ; frontend `renderSectionSport` ; tests `test_calendrier.py` |
 
+## Session du 05/10/2026 — correctifs de SÉLECTION sur `dev` (sans LLM, tests sans réseau uniquement)
+Point de départ : `dev` réaligné sur `main` (84f1dc0, fast-forward). Rapport source : `ANALYSE_RUN_2026-10-05.md`
+(numéros #5, #6, #7 ci-dessous = numéros de ce rapport). **Rien n'est validé en réel** : aucun Dev Test lancé, aucun LLM appelé.
+
+| # rapport | Point | État | Où |
+|---|---|---|---|
+| 5 | Scoring à sous-chaînes (« mort » = 9 pour un décès d'écrivain) | FAIT sur dev, tests OK, non validé en réel | `src/analyse/scoring.py` réécrit : mots ENTIERS (regex), thèmes majeurs/importants, MALUS (tribune, interview, fait divers, culture, tribune collective « par 500 anciens… »), expressions figurées neutralisées (« guerre ouverte »), +1 si le titre annonce un résultat, départage par nb de sources puis fraîcheur. `tests/test_scoring.py` |
+| 6 | Brésil = avant-scrutin au lieu des résultats ; 5 emplacements pris par un seul sujet | FAIT sur dev, tests OK | bonus « résultat » (ci-dessus) + `src/analyse/diversite.py::selectionner_diversifie` : au plus 2 événements par entité/sujet et par zone, complément si la zone est trop courte. Branché dans `src/main.py` à la place de `[:max_par_zone]` |
+| 7 | Doublon Christa Pike, classé France | FAIT sur dev, tests OK | `diversite.py::fusionner_par_entites` (>= 2 entités RARES communes, entité > 3 titres = banale) ; `zones.py` : comparaison SANS ACCENTS (« Etats-Unis » ne matchait pas « états-unis »), marqueurs États US / Ebola-RDC / Lettonie / Lula-Bolsonaro. `tests/test_diversite.py` |
+
+Limites connues / à regarder au prochain Dev Test : (a) seuil des malus et des listes de mots calibrés à la main sur UN run — vérifier que les actus
+internationales importantes ne sont pas écartées (log « Entonnoir actualité », titres retenus) ; (b) une nécrologie de personnalité culturelle
+tombe à ~3-4/10 (volontaire, modifiable dans `MALUS_CULTURE`) ; (c) la diversité utilise des noms propres de TITRES : un titre sans nom propre n'est pas
+limité ; (d) les points 8 (sport/NBA), 9-10-12 du rapport (OpenRouter vide, calendrier 400, horodatage) et les points de FIABILITÉ (#1 nom propre inventé, #2 explication de marché,
+#3 science en mode découverte, #4 « Hypothèse : ») NE SONT PAS TRAITÉS : l'utilisateur a demandé de faire la sélection d'abord.
+Règle : ne pas lancer de LLM ni de Dev Test sans demande de l'utilisateur.
+
 ## Autres constats du Dev Test du 03/10 (non traités)
 - La zone France contient encore de l'international (ex. budget militaire russe, Corée du Nord) : les flux « Le Monde — Une » / Libération sont classés `france` par flux, pas par contenu. Les « pourquoi important » forcent un lien avec la France (maintenant marqués « Hypothèse »). Piste : affectation par contenu, ou prompt « pourquoi important » sans obligation de lien France.
 - OpenRouter renvoie « Réponse vide » / 429 sur `gemma-4-31b-it:free` à chaque run (le secours NVIDIA fonctionne, ~30 s perdues).

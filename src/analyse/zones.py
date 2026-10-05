@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import logging
 import re
+import unicodedata
 
 logger = logging.getLogger("morning_briefing.analyse.zones")
 
@@ -50,13 +51,23 @@ MARQUEURS_MONDE = [
     "colombie", "australie", "indonésie", "philippines", "vietnam", "thaïlande", "birmanie",
     "onu", "otan", "oms", "fmi", "g7", "g20", "brics", "conseil de sécurité", "cpi", "zelensky",
     "netanyahou", "kim jong", "erdogan", "modi", "starmer", "merz", "meloni",
+    # États américains / institutions US (05/10 : l'exécution de Christa Pike, Tennessee, restait classée France)
+    "tennessee", "texas", "floride", "californie", "new york", "cnn", "pentagone", "congrès américain",
+    "cour suprême des états-unis", "sénat américain", "gouverneur du", "midterms", "lula", "bolsonaro",
+    "ebola", "rdc", "kinshasa", "lettonie",
 ]
 
 
+def _sans_accents(txt: str) -> str:
+    """Minuscules sans accents : « Etats-Unis » (sans accent, fréquent dans les flux) = « États-Unis »."""
+    return unicodedata.normalize("NFKD", txt or "").encode("ascii", "ignore").decode("ascii").lower()
+
+
 def _compile(mots: list[str]) -> re.Pattern:
-    # frontières de mots tolérant les accents/apostrophes (\b suffit pour des lettres latines accentuées en re.UNICODE)
-    return re.compile(r"(?<![\w-])(?:" + "|".join(re.escape(m) for m in sorted(mots, key=len, reverse=True)) + r")(?![\w-])",
-                      re.IGNORECASE | re.UNICODE)
+    # Marqueurs ET textes comparés SANS ACCENTS (05/10/2026 : « Aux Etats-Unis » ne matchait pas « états-unis »).
+    # frontières de mots tolérant les apostrophes / traits d'union.
+    return re.compile(r"(?<![\w-])(?:" + "|".join(re.escape(_sans_accents(m)) for m in sorted(mots, key=len, reverse=True)) + r")(?![\w-])",
+                      re.UNICODE)
 
 
 _RE_FR = _compile(MARQUEURS_FRANCE)
@@ -64,8 +75,8 @@ _RE_MONDE = _compile(MARQUEURS_MONDE)
 
 
 def _score(regex: re.Pattern, titre: str, resume: str) -> int:
-    t = {m.lower() for m in regex.findall(titre or "")}
-    r = {m.lower() for m in regex.findall(resume or "")} - t
+    t = set(regex.findall(_sans_accents(titre)))
+    r = set(regex.findall(_sans_accents(resume))) - t
     return POIDS_TITRE * len(t) + POIDS_RESUME * len(r)
 
 
@@ -103,3 +114,8 @@ def assigner_zones(items_france: list[dict], items_monde: list[dict]) -> tuple[l
             (france if zone == "france" else monde).append(it)
     logger.info("Affectation France/Monde par contenu: %s", stats)
     return france, monde, stats
+
+
+def marqueurs_monde(texte: str) -> list[str]:
+    """Marqueurs « étranger » trouvés dans `texte` (utilisé par diversite.py pour repérer les sujets)."""
+    return sorted(set(_RE_MONDE.findall(_sans_accents(texte))))

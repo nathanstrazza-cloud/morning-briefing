@@ -18,7 +18,7 @@ from datetime import datetime
 
 import pytz
 
-from .analyse import dedup, scoring, sport_scoring, verification, zones
+from .analyse import dedup, diversite, scoring, sport_scoring, verification, zones
 from .collecte import calendrier, collector, markets as markets_collect, weather as weather_collect
 from .generation import briefing_generator, llm_provider
 from .stockage import storage
@@ -104,6 +104,9 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         events_monde = dedup.deduplicate(news_monde)
         # Dédup inter-zones (03/10/2026) : un même événement ne doit pas figurer en France ET en Monde.
         events_france, events_monde = dedup.merge_zones(events_france, events_monde)
+        # Fusion par entités rares partagées (05/10/2026) : « Christa Pike » présenté sous 2 titres = 1 événement.
+        events_france = diversite.fusionner_par_entites(events_france)
+        events_monde = diversite.fusionner_par_entites(events_monde)
         n_france_bruts, n_france_dedup = len(news_france), len(events_france)
         events_france = scoring.score_events(events_france)
         events_france = verification.classify_events(events_france)
@@ -131,8 +134,9 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         # on garde donc les meilleures. Réduit aussi la taille du prompt LLM en amont plutôt
         # que de compter uniquement sur le rognage de secours dans briefing_generator.py.
         max_par_zone = config["seuils"].get("max_actualites_par_zone", 5)
-        events_france = events_france[:max_par_zone]
-        events_monde = events_monde[:max_par_zone]
+        # Sélection diversifiée (05/10/2026) : au plus 2 événements par sujet/entité (ex. Brésil) dans chaque zone.
+        events_france = diversite.selectionner_diversifie(events_france, max_par_zone)
+        events_monde = diversite.selectionner_diversifie(events_monde, max_par_zone)
 
         events_economie = dedup.deduplicate(raw["news"]["economie"])
         events_economie = scoring.score_events(events_economie)
