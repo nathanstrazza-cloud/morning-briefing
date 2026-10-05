@@ -14,6 +14,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import re
 import time
 from datetime import datetime
 
@@ -569,32 +570,73 @@ def select_nyt_article(raw_monde_items: list[dict]) -> dict | None:
     }
 
 
+# --- Mode science (05/10/2026, point 3 de ANALYSE_RUN_2026-10-05.md) ------------------------------
+# Constat : le mode « découverte » s'est déclenché sur un simple résumé RSS du Monde (« Et si la Floride arrêtait de
+# vacciner… », sujet de politique de santé, aucune étude identifiée, aucun chiffre) ; l'article écrit était pauvre et
+# se contredisait. Un mode « découverte » exige désormais : (1) un vocabulaire de RECHERCHE (étude, chercheurs,
+# essai, revue, télescope…), (2) pas de vocabulaire politique/société, (3) un résumé substantiel, (4) deux sources
+# indépendantes OU une source primaire (organisme de recherche / revue). Sinon : mode « approfondi », où l'article
+# pédagogique est de toute façon contrôlé par science_guard.
+SOURCES_PRIMAIRES_SCIENCE = ("cnrs", "nature", "inserm", "nasa", "esa", "cea", "pasteur", "lancet", "nejm",
+                             "pnas", "arxiv", "cern", "cnes", "inria", "ifremer", "noaa")
+# Noms EXACTS (mot entier) : « Le Monde Sciences » (journal généraliste) n'est PAS une source primaire.
+_RE_PRIMAIRE = re.compile(r"(?<![\w])(?:" + "|".join(SOURCES_PRIMAIRES_SCIENCE) + r"|science)(?![\w])", re.I)
+_RE_RECHERCHE = re.compile(
+    r"\b(étude|études|chercheurs?|chercheuses?|scientifiques?|découverte|découvert|publi[ée]e? dans|revue|essai clinique|"
+    r"expérience|télescope|satellite|sonde|mission spatiale|exoplanète|génome|protéine|neurones?|cellules?|fossile|"
+    r"laboratoire|simulation|modélisation|molécule|particule|espèce|mutation|algorithme|modèle d'ia|supraconduct\w+)\b",
+    re.I)
+_RE_POLITIQUE = re.compile(
+    r"\b(gouvernement|ministre|président|présidentielle|élection|élections|budget|parlement|sénat|assemblée|"
+    r"loi|trump|macron|polémique|grève|manifestation|procès|tribunal|politique de santé|arrêter de vacciner)\b", re.I)
+RESUME_MIN_DECOUVERTE = 200
+
+
+def decouverte_qualifiee(event: dict) -> tuple[bool, str]:
+    """(qualifiée ?, raison du refus) — fonction pure, sans réseau ni LLM."""
+    texte = f"{event.get('titre', '')} {event.get('resume', '')}"
+    if not _RE_RECHERCHE.search(texte):
+        return False, "aucun vocabulaire de recherche (étude, chercheurs…)"
+    if _RE_POLITIQUE.search(f"{event.get('titre', '')}"):
+        return False, "sujet de politique/société dans le titre"
+    if len(str(event.get("resume", "") or "")) < RESUME_MIN_DECOUVERTE:
+        return False, f"résumé trop court (< {RESUME_MIN_DECOUVERTE} caractères)"
+    noms = [str(x.get("nom", "")).lower() for x in event.get("sources", [])]
+    primaire = any(_RE_PRIMAIRE.search(n) and "monde" not in n for n in noms)
+    if event.get("nb_sources", 1) < 2 and not primaire:
+        return False, "une seule source non primaire"
+    return True, ""
+
+
+def _sujet(top: dict, mode: str) -> dict:
+    return {
+        "mode": mode,
+        "contenu_source": {
+            "titre": top["titre"],
+            "resume": top.get("resume", ""),
+            "url": top.get("url_principale", ""),
+            "sources": [s["nom"] for s in top.get("sources", [])],
+        },
+    }
+
+
 def select_science_topic(analysed_sciences: list[dict]) -> dict:
-    """Choisit le mode science (§7) : découverte majeure si un événement scoré haut existe
-    dans la catégorie sciences, sinon mode approfondi avec le meilleur candidat disponible."""
-    if analysed_sciences and analysed_sciences[0]["score"] >= 8:
-        top = analysed_sciences[0]
-        return {
-            "mode": "decouverte",
-            "contenu_source": {
-                "titre": top["titre"],
-                "resume": top.get("resume", ""),
-                "url": top.get("url_principale", ""),
-                "sources": [s["nom"] for s in top.get("sources", [])],
-            },
-        }
+    """Choisit le mode science (§7) : « découverte » seulement si un événement QUALIFIÉ existe
+    (cf. `decouverte_qualifiee`), sinon mode « approfondi » avec le meilleur candidat de recherche
+    (vocabulaire scientifique, hors politique/société), à défaut le premier disponible."""
+    for e in analysed_sciences or []:
+        ok, raison = decouverte_qualifiee(e)
+        if ok:
+            logger.info("Science: mode découverte retenu — %s", str(e.get("titre", ""))[:90])
+            return _sujet(e, "decouverte")
+        logger.info("Science: découverte refusée (%s) — %s", raison, str(e.get("titre", ""))[:90])
 
     if analysed_sciences:
-        top = analysed_sciences[0]
-        return {
-            "mode": "approfondi",
-            "contenu_source": {
-                "titre": top["titre"],
-                "resume": top.get("resume", ""),
-                "url": top.get("url_principale", ""),
-                "sources": [s["nom"] for s in top.get("sources", [])],
-            },
-        }
+        recherche = [e for e in analysed_sciences
+                     if _RE_RECHERCHE.search(f"{e.get('titre', '')} {e.get('resume', '')}")
+                     and not _RE_POLITIQUE.search(str(e.get("titre", "")))]
+        top = max(recherche, key=lambda e: len(str(e.get("resume", "")))) if recherche else analysed_sciences[0]
+        return _sujet(top, "approfondi")
 
     return {
         "mode": "approfondi",

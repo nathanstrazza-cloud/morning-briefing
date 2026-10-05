@@ -51,8 +51,10 @@ _REGLES_COMMUNES = """RÈGLES ABSOLUES (à respecter strictement) :
    balises markdown autour du JSON.
 6bis. FAITS DU TEXTE UNIQUEMENT : \"resume\" ne contient que des faits présents dans le titre/résumé
    fourni. N'ajoute ni date, ni chiffre, ni fonction (« ancien », « actuel »), ni « première fois »,
-   ni « les autorités n'ont pas commenté », ni contexte tiré de ta mémoire. Un contrôle automatique
-   supprime toute phrase contenant un élément absent des données. \"pourquoi_important\" : une phrase
+   ni « les autorités n'ont pas commenté », ni contexte tiré de ta mémoire. N'écris AUCUN nom propre
+   (personne, institution, lieu) qui ne figure pas mot pour mot dans le titre/résumé fourni : ne
+   « complète » jamais un nom de mémoire (ex. n'écris pas un autre prénom/dirigeant que celui du texte).
+   Un contrôle automatique supprime toute phrase contenant un élément absent des données. \"pourquoi_important\" : une phrase
    fondée sur les données, sinon null. \"consequences\" : null sauf si les données en parlent."""
 
 _SCHEMA_EVENT = ('{\"titre\": str, \"resume\": str, \"pourquoi_important\": str, '

@@ -82,7 +82,67 @@ def test_marches_explication_etayee_conservee():
     assert out["mouvements_notables"][0]["explication"] and out["resume_court"] == "Résultats solides de la tech."
 
 
-def test_pourquoi_important_non_etaye_marque_hypothese():
+def test_pourquoi_important_non_etaye_est_supprime_pas_prefixe():
+    # 05/10/2026 : plus de « Hypothèse : » creux sur tous les items ; non étayé -> null
     src = [dict(SRC[0])]
-    out, _ = guard_events([_ev(pourquoi_important="Cela pourrait influencer la coopération judiciaire française.")], src)
-    assert out[0]["pourquoi_important"].startswith("Hypothèse : ")
+    out, rem = guard_events([_ev(pourquoi_important="Cela pourrait influencer la coopération judiciaire française.")], src)
+    assert out[0]["pourquoi_important"] is None and any("pourquoi_important" in r for r in rem)
+
+
+def test_pourquoi_important_etaye_conserve_sans_prefixe():
+    src = [dict(SRC[0])]
+    out, _ = guard_events([_ev(pourquoi_important="Trump critique le président de la Fed, Jerome Powell.")], src)
+    assert out[0]["pourquoi_important"] == "Trump critique le président de la Fed, Jerome Powell."
+
+
+def test_pourquoi_important_formule_creuse_supprimee():
+    src = [dict(SRC[0])]
+    out, _ = guard_events([_ev(pourquoi_important="Cette affaire met en lumière la Fed, Trump et le président Powell.")], src)
+    assert out[0]["pourquoi_important"] is None
+
+
+def test_nom_propre_invente_retire_la_phrase():
+    # Cas réel du 05/10 : « Olaf Scholz » écrit alors que la source parle de Merz
+    src = [{"titre": "Ukraine : visite de Merz à Kiev", "resume": "Le chancelier allemand Friedrich Merz est arrivé à Kiev.",
+            "statut_verification": "fait_confirme"}]
+    ev = _ev(titre="Ukraine : visite de Merz à Kiev",
+             resume="Le chancelier allemand Olaf Scholz est arrivé à Kiev. La visite a eu lieu lundi.")
+    out, rem = guard_events([ev], src)
+    assert "Scholz" not in out[0]["resume"] and "lundi" in out[0]["resume"]
+    assert any("Scholz" in r for r in rem)
+
+
+def test_nom_propre_present_dans_la_source_conserve_meme_sans_accent():
+    src = [{"titre": "Brésil : Lula devant", "resume": "Flavio Bolsonaro frôle la victoire à São Paulo.",
+            "statut_verification": "fait_confirme"}]
+    ev = _ev(titre="Brésil : Lula devant", resume="Le vote a vu Flavio Bolsonaro frôler la victoire à Sao Paulo.")
+    out, rem = guard_events([ev], src)
+    assert not rem and out[0]["resume"].startswith("Le vote")
+
+
+def test_nom_propre_au_debut_de_phrase_non_controle():
+    out, rem = guard_events([_ev(resume="Mardi, la Fed a parlé. Powell a répondu.")], SRC)
+    assert not rem
+
+
+def test_marches_article_sans_lien_avec_la_bourse_ne_peut_pas_expliquer():
+    # Cas réel du 05/10 : DAX/Euro Stoxx « expliqués » par le budget 2027 (article France sans mention de marché)
+    an = {"marches_data": {"indices": [{"name": "DAX", "variation_pct": 1.17}, {"name": "Euro Stoxx 50", "variation_pct": 1.02}],
+                           "matieres_premieres": []},
+          "actualite_economie": [{"titre": "Le budget 2027 prévoit des garanties pour les réacteurs nucléaires",
+                                  "resume": "Le projet de loi de finances prévoit des garanties de l'État pour les réacteurs nucléaires."}]}
+    m = {"resume_court": "Hausse portée par le budget.",
+         "mouvements_notables": [{"nom": "DAX", "explication": "Le budget 2027 prévoit des garanties pour les réacteurs nucléaires"},
+                                 {"nom": "Euro Stoxx 50", "explication": "Le budget 2027 prévoit des garanties pour les réacteurs nucléaires"}]}
+    out = guard_marches(m, an)
+    assert all(x["explication"] is None for x in out["mouvements_notables"])
+    assert out["resume_court"] == RESUME_MARCHES_SANS_CAUSE
+
+
+def test_marches_explication_conservee_si_un_article_parle_de_ce_marche():
+    an = {"marches_data": {"indices": [{"name": "DAX", "variation_pct": 1.17}], "matieres_premieres": []},
+          "actualite_economie": [{"titre": "Le DAX bondit après l'accord commercial entre Berlin et Washington",
+                                  "resume": "Les investisseurs saluent l'accord commercial conclu entre Berlin et Washington."}]}
+    m = {"resume_court": "", "mouvements_notables": [{"nom": "DAX", "explication": "accord commercial entre Berlin et Washington salué par les investisseurs"}]}
+    out = guard_marches(m, an)
+    assert out["mouvements_notables"][0]["explication"]

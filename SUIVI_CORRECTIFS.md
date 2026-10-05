@@ -53,6 +53,17 @@ limité ; (d) les points 8 (sport/NBA), 9-10-12 du rapport (OpenRouter vide, cal
 #3 science en mode découverte, #4 « Hypothèse : ») NE SONT PAS TRAITÉS : l'utilisateur a demandé de faire la sélection d'abord.
 Règle : ne pas lancer de LLM ni de Dev Test sans demande de l'utilisateur.
 
+### Session du 05/10/2026 (suite) — correctifs de FIABILITÉ sur `dev` (sans LLM, tests hors réseau, **non validés en réel**)
+| # rapport | Point | État | Où |
+|---|---|---|---|
+| 1 | Nom propre inventé (« Olaf Scholz » au lieu de Merz) | FAIT sur dev, tests OK | `src/generation/actu_guard.py::unsupported_names` : tout mot capitalisé HORS début de phrase doit figurer dans titre+résumé source (sans accents/casse), sinon la phrase est retirée (`clean_text`). Liste `_NOMS_TOLERES` pour les mots génériques (France, Europe, gouvernement…). Règle ajoutée aussi au prompt (`parts.py`, 6bis). |
+| 2 | Explication de marché sans lien (budget nucléaire → DAX/Euro Stoxx) | FAIT sur dev, tests OK | `actu_guard.py::explication_etayee` : l'explication doit être étayée par UN article économique qui (a) mentionne ce marché (alias `_ALIAS_MARCHE`) ou la Bourse (`_GENERIQUE_MARCHE`) et (b) recouvre >= 50 % de ses mots. Remplace l'ancien recouvrement sur le lot global. |
+| 3 | Science « découverte » sur un simple résumé RSS (Floride/vaccination) | FAIT sur dev, tests OK | `briefing_generator.py::decouverte_qualifiee` + `select_science_topic` : vocabulaire de recherche, pas de politique dans le titre, résumé >= 200 car., >= 2 sources OU source primaire (CNRS, Nature… ; « Le Monde Sciences » n'en est pas une). Sinon mode « approfondi » (candidat de recherche non politique). |
+| 4 | « Hypothèse : » sur tous les `pourquoi_important` | FAIT sur dev, tests OK | `actu_guard.py::guard_events` : étayé (recouvrement >= 40 %, `PI_MIN_OVERLAP`) -> conservé tel quel ; sinon ou formule creuse (`_CREUX`) -> `null` (le site n'affiche rien). Les `consequences` gardent le préfixe « Hypothèse : » (cahier §14). |
+
+Limites : (a) le contrôle des noms propres est lexical (pas de vérification sémantique) et peut retirer une phrase légitime qui reformule un nom d'une autre façon — vérifier les phrases retirées dans le log (« phrases retirées ») au prochain Dev Test ; (b) en mode « approfondi » l'article reste fondé sur UN titre+résumé RSS (pas de liste de sujets pédagogiques tournante : non implémenté) ; (c) `pourquoi_important` sera souvent `null` : c'est voulu ;
+(d) les points 8-12 du rapport (sport/NBA, OpenRouter vide, calendrier ESPN 400, horodatage, `resume_1_phrase` tronqué) restent À FAIRE.
+
 ## Autres constats du Dev Test du 03/10 (non traités)
 - La zone France contient encore de l'international (ex. budget militaire russe, Corée du Nord) : les flux « Le Monde — Une » / Libération sont classés `france` par flux, pas par contenu. Les « pourquoi important » forcent un lien avec la France (maintenant marqués « Hypothèse »). Piste : affectation par contenu, ou prompt « pourquoi important » sans obligation de lien France.
 - OpenRouter renvoie « Réponse vide » / 429 sur `gemma-4-31b-it:free` à chaque run (le secours NVIDIA fonctionne, ~30 s perdues).
