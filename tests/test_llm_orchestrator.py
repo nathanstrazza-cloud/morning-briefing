@@ -153,7 +153,7 @@ ANALYSED = {
     "actualite_france": [{"titre": "F1", "resume": "r", "statut_verification": "fait_confirme", "sources": [{"nom": "Le Monde"}]}],
     "actualite_monde": [{"titre": "M1", "resume": "r", "statut_verification": "fait_confirme", "sources": [{"nom": "AFP"}]}],
     "actualite_economie": [], "marches_data": {"mouvements_significatifs": []},
-    "sport_events": {"football": [{"titre": "PSG gagne"}], "basketball": []},
+    "sport_events": {"football": [{"titre": "PSG gagne"}], "tennis": [{"titre": "Alcaraz gagne"}]},
 }
 TOPIC_APPROF = {"mode": "approfondi", "contenu_source": {"titre": "Sommeil", "url": "https://x"}}
 TOPIC_DECOUV = {"mode": "decouverte", "contenu_source": {"titre": "Découverte", "url": "https://x"}}

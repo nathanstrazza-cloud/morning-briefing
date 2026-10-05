@@ -110,3 +110,28 @@ avec `{"ref":"dev","inputs":{"ref":"dev","no_llm":"false"}}` (le jeton a le droi
 - Décision de l'utilisateur du 01/10 : quand le sport n'a rien d'intéressant, le briefing le dit et indique le prochain match intéressant → codé (point 11).
 - Marchés : quand aucune cause fiable n'est trouvée, le site affiche « Aucune cause fiable n'a pu être établie… » (volontaire, cahier §5 : ne pas inventer). Pour avoir plus d'explications il faudrait enrichir le contexte économie (plus de flux/articles), pas assouplir le garde-fou.
 - Quotas LLM : le Dev Test consomme les mêmes clés que la prod. 4 runs complets ont été faits le 03/10 (samedi) ; ne pas en relancer inutilement.
+
+## Session du 05/10/2026 (suite 4) — Sport généraliste, indépendant de l'utilisateur (branche `dev` uniquement)
+
+**Demande** : les articles sport ne doivent plus dépendre de l'utilisateur ; le site cherche des informations sur TOUT type de sport.
+`main` n'est PAS modifiée (fusion seulement avec l'accord de l'utilisateur). Aucun LLM ni Dev Test lancé : 128 tests OK, rien validé en réel.
+
+**Ce qui a changé**
+- `config/config.yaml` : section `sport:` = liste plate `sources` (`{name, url, sport?}`) + `max_par_sport: 2`. Plus de `equipes_prioritaires`, `ligues_suivies`, `sports_conditionnels`, `mot_cle_france`. 14 flux : L'Équipe (11 sports), ESPN NBA, ESPN Top Headlines, BBC Sport. **Flux NON VÉRIFIÉS** (jamais testés, pas de réseau dans le sandbox) : L'Équipe Athlétisme/Formule 1/Golf, ESPN Top Headlines, BBC Sport -> lire `sources_rss_en_erreur` au prochain run ; corriger l'URL ou retirer le flux, sans toucher au code.
+- `src/collecte/sports.py` : renvoie une LISTE d'items, chacun avec `sport` (indice du flux, sinon détecté par mots-clés). Plus de filtre « France », plus de drapeau `equipe_prioritaire`.
+- `src/analyse/sport_scoring.py` : `detecter_sport()`, `score_sport_event()` (importance indépendante du sport/équipe/pays : grande compétition, résultat, finale, record, blessure/transfert ; malus anecdote/people/interview), `select_sport()` (tri par score, puis nb de sources, puis fraîcheur ; max `max_par_sport` par sport ; max `seuils.max_sport_total` au total, 4 par défaut). Plus de malus féminin, plus de bonus Spurs.
+- `src/main.py` : dédup PAR sport, puis `select_sport`. `analysed["sport_events"]` reste un dict `{sport: [événements]}` (clés libres).
+- `src/generation/sport_format.py` (nouveau) : format de sortie `sport = {"items": [{"sport", "texte"}]}`, repli sans LLM, normalisation tolérante de la réponse LLM (accepte l'ancien format, borne au nombre d'événements retenus).
+- `src/generation/parts.py` : `SYSTEM_SPORT` généraliste (traduit les titres anglais, n'ajoute rien, `items: []` si rien).
+- `src/collecte/calendrier.py` : « prochaines affiches » neutres (clubs phares européens, franchises NBA phares ; `equipe_nationale` vide par défaut = aucune préférence). Affichées seulement si AUCUN item sport n'est retenu : `sport.rien_a_signaler` (bool) et `sport.prochains_matchs` (liste, chaque entrée avec `sport`).
+- `docs/app.js` : rendu par sport depuis `items` ; les anciens briefings (football/basketball/natation/autres, `prochains_matchs` en objet) restent lisibles.
+- Tests : `tests/test_sport_scoring.py` et `tests/test_calendrier.py` réécrits ; `tests/test_llm_orchestrator.py` ajusté.
+
+**À vérifier au prochain Dev Test (avec LLM)**
+1. Les 14 flux répondent (annotations du résumé, `sources_rss_en_erreur`) ; combien d'articles par sport.
+2. Les sports retenus sont variés (pas 4 items de football), les titres anglais sont bien traduits en français, aucun fait ajouté.
+3. Détection du sport par mots-clés : surveiller les « autres » (mots-clés dans `SPORTS` de `sport_scoring.py`) et les faux positifs (ex. « hand » ou « ski » dans un autre mot).
+4. Si rien n'est retenu : phrase « Rien d'intéressant » + affiches (le calendrier ESPN renvoyait HTTP 400 sur la plage de dates le 05/10 : le repli jour par jour existe, à confirmer).
+
+**Limites connues** : le plafond global reste 4 items (décision du 24/09) ; l'importance est heuristique (mots-clés), pas sémantique ; les mots-clés sont en français + un peu d'anglais.
+**Retour arrière** : `git revert` du commit de cette session sur `dev` (main inchangée).

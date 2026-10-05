@@ -136,31 +136,39 @@ function renderSectionSport(sport) {
   const section = el("section", { class: "section" }, [el("h2", { class: "section-title", text: "Sport" })]);
   if (!sport) return section;
 
-  const labels = { football: "Football", basketball: "Basketball", natation: "Natation", autres: "Autres sports" };
-  // `rien_a_signaler` / `prochains_matchs` sont calculés par le code (src/collecte/calendrier.py) ;
-  // absents des anciens briefings -> comportement historique.
-  const rien = new Set(sport.rien_a_signaler || []);
-  const prochains = sport.prochains_matchs || {};
-  let any = false;
-  for (const key of ["football", "basketball", "natation", "autres"]) {
-    const items = sport[key];
-    if (items && items.length) {
-      any = true;
-      section.appendChild(el("h3", { class: "subsection-title", text: labels[key] }));
-      const list = el("ul", { class: "sport-list" });
-      for (const line of items) list.appendChild(el("li", { text: line }));
-      section.appendChild(list);
-    } else if (rien.has(key)) {
-      any = true;
-      section.appendChild(el("h3", { class: "subsection-title", text: labels[key] }));
-      section.appendChild(el("p", { class: "sport-rien", text: "Rien d'intéressant à signaler." }));
-      const m = prochains[key];
+  const cap = (t) => (t ? t.charAt(0).toUpperCase() + t.slice(1) : t);
+  // Format actuel (05/10/2026) : sport.items = [{sport, texte}], tous sports confondus. Les anciens briefings
+  // (football/basketball/natation/autres) sont convertis pour rester lisibles.
+  let items = Array.isArray(sport.items) ? sport.items.slice() : [];
+  if (!Array.isArray(sport.items)) {
+    for (const key of ["football", "basketball", "natation", "autres"]) {
+      for (const line of sport[key] || []) items.push({ sport: key === "autres" ? "autres sports" : key, texte: line });
+    }
+  }
+  const groupes = new Map();
+  for (const it of items) {
+    if (!it || !it.texte) continue;
+    const k = it.sport || "autres sports";
+    if (!groupes.has(k)) groupes.set(k, []);
+    groupes.get(k).push(it.texte);
+  }
+  for (const [nom, lignes] of groupes) {
+    section.appendChild(el("h3", { class: "subsection-title", text: cap(nom) }));
+    const list = el("ul", { class: "sport-list" });
+    for (const line of lignes) list.appendChild(el("li", { text: line }));
+    section.appendChild(list);
+  }
+  if (groupes.size === 0) {
+    section.appendChild(el("p", { class: "sport-rien", text: "Rien d'intéressant à signaler aujourd'hui." }));
+    // `prochains_matchs` : liste (nouveau format) ou objet {football, basketball} (ancien format).
+    const pm = sport.prochains_matchs || [];
+    const prochains = Array.isArray(pm) ? pm : Object.entries(pm).filter(([, m]) => m).map(([c, m]) => ({ ...m, sport: c }));
+    for (const m of prochains) {
       if (m && m.affiche) {
-        section.appendChild(el("p", { class: "sport-prochain", text: `Prochain match à suivre : ${m.affiche} (${m.competition}), ${m.date_texte}.` }));
+        section.appendChild(el("p", { class: "sport-prochain", text: `Prochaine affiche (${m.sport || "sport"}) : ${m.affiche} (${m.competition}), ${m.date_texte}.` }));
       }
     }
   }
-  if (!any) section.appendChild(el("p", { class: "loading", text: "Rien de notable aujourd'hui." }));
   return section;
 }
 

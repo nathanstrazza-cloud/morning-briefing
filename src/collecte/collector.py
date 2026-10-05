@@ -28,7 +28,7 @@ def collect_all(config: dict, depuis: datetime, is_monday: bool) -> dict:
     meteo = weather.fetch_all_weather(config)
 
     total_news = sum(len(v) for v in news.values())
-    total_sport = sum(len(v) for v in sport.values())
+    total_sport = len(sport)
     sources_en_erreur = [d["source"] for d in rss_diagnostics if d["statut"] == "erreur"]
     logger.info(
         "Collecte terminée: %d actualités, %d items sport, %d indices, %d villes météo",
@@ -39,7 +39,7 @@ def collect_all(config: dict, depuis: datetime, is_monday: bool) -> dict:
 
     return {
         "news": news,        # {"france": [...], "monde": [...], "economie": [...], "sciences": [...]}
-        "sport": sport,      # {"football": [...], "basketball": [...], ...}
+        "sport": sport,      # liste d'items bruts, chacun avec un champ "sport"
         "marches": marches,  # {"indices": [...], "matieres_premieres": [...]}
         "meteo": meteo,      # [{"ville": ..., ...}, ...]
         "rss_diagnostics": rss_diagnostics,        # cf. ci-dessus, propagé jusqu'à status.json

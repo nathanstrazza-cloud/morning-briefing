@@ -1,7 +1,8 @@
-"""Calendrier sportif : « prochain match intéressant » (décision de l'utilisateur du 01/10/2026).
+"""Calendrier sportif : « prochaines affiches » (décision de l'utilisateur du 01/10/2026, rendu NEUTRE le 05/10).
 
-Quand le football ou le basketball n'ont rien de notable, le briefing le dit et indique le prochain
-match à suivre. Source : API publique ESPN (gratuite, sans clé). Toute la logique (analyse de la
+Quand aucune actualité sportive n'est retenue, le briefing le dit et indique les prochaines grandes affiches
+(football et basketball ; aucune équipe ni pays privilégié : classement par compétition et par clubs phares
+listés en config). Source : API publique ESPN (gratuite, sans clé). Toute la logique (analyse de la
 réponse, choix du match, formatage de la date) est dans des fonctions pures testées sans réseau ;
 seul `_fetch_scoreboard` fait de l'I/O. En cas d'échec -> aucune donnée, JAMAIS un match inventé.
 """
@@ -73,11 +74,12 @@ def _contient(equipes: list[str], mot: str) -> bool:
 
 
 def rang_football(match: dict, cfg: dict) -> int:
-    """Plus petit = plus intéressant. 0 équipe de France ; 1 affiche entre deux clubs phares ;
-    sinon rang de la compétition, amélioré d'un cran si un club phare joue."""
+    """Plus petit = plus intéressant, sans préférence nationale : 1 affiche entre deux clubs phares ;
+    sinon rang de la compétition, amélioré d'un cran si un club phare joue. Si `equipe_nationale` est
+    renseigné en config (facultatif, vide par défaut), ses matchs passent en tête."""
     equipes = match["equipes"]
-    nationale = cfg.get("equipe_nationale", "France").lower()
-    if any(e.strip().lower() == nationale for e in equipes):  # sélection A uniquement (pas « France U21 »)
+    nationale = str(cfg.get("equipe_nationale") or "").lower()
+    if nationale and any(e.strip().lower() == nationale for e in equipes):
         return 0
     phares = cfg.get("clubs_phares") or []
     nb = sum(1 for e in equipes if any(p.lower() in e.lower() for p in phares))
@@ -95,9 +97,13 @@ def choisir_prochain_football(matchs: list[dict], cfg: dict, maintenant: datetim
 
 
 def choisir_prochain_basketball(matchs: list[dict], cfg: dict, maintenant: datetime) -> dict | None:
-    mot = cfg.get("equipe_basketball", "Spurs")
-    futurs = [m for m in matchs if m["date_utc"] > maintenant and _contient(m["equipes"], mot)]
-    return min(futurs, key=lambda m: m["date_utc"]) if futurs else None
+    """Affiche entre franchises phares (`franchises_phares`) en priorité, sinon le prochain match. Aucune équipe imposée."""
+    futurs = [m for m in matchs if m["date_utc"] > maintenant]
+    if not futurs:
+        return None
+    phares = cfg.get("franchises_phares") or []
+    nb = lambda m: sum(1 for e in m["equipes"] if any(p.lower() in e.lower() for p in phares))  # noqa: E731
+    return min(futurs, key=lambda m: (-nb(m), m["date_utc"]))
 
 
 def formater(match: dict | None) -> dict | None:
@@ -134,7 +140,7 @@ def _fetch_scoreboard(sport: str, slug: str, debut: datetime, fin: datetime, tim
         return data
     events, jour = [], debut
     echecs = 0
-    plafond = MAX_EVENEMENTS_SCAN if sport == "soccer" else 10_000   # basket : il faut tout parcourir pour trouver les Spurs
+    plafond = MAX_EVENEMENTS_SCAN if sport == "soccer" else 10_000   # basket : on parcourt toute la fenêtre pour repérer les affiches
     while jour.date() <= fin.date() and len(events) < plafond:
         d = _get(sport, slug, f"{jour:%Y%m%d}", timeout)
         if d is None:
@@ -174,11 +180,11 @@ def fetch_prochains_matchs(config: dict, maintenant: datetime | None = None, fet
 
 
 def annoter_sport(sport: dict | None, prochains: dict) -> dict | None:
-    """Ajoute à la section sport `rien_a_signaler` (football/basketball sans contenu) et, pour ceux-là,
-    `prochains_matchs`. Ne touche jamais aux listes déjà rédigées. Fonction pure."""
+    """Section sport sans élément retenu : `rien_a_signaler` = True et `prochains_matchs` = liste des
+    prochaines affiches trouvées (football, basketball). Ne touche jamais aux items rédigés. Fonction pure."""
     if sport is None:
         return None
-    rien = [c for c in ("football", "basketball") if not sport.get(c)]
-    sport["rien_a_signaler"] = rien
-    sport["prochains_matchs"] = {c: prochains.get(c) for c in rien}
+    vide = not (sport.get("items") or [])
+    sport["rien_a_signaler"] = vide
+    sport["prochains_matchs"] = ([dict(m, sport=c) for c, m in prochains.items() if m] if vide else [])
     return sport
