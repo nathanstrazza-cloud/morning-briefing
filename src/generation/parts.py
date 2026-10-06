@@ -19,6 +19,7 @@ from .citations import pick_citation
 from .actu_guard import guard_events, guard_marches
 from .science_guard import guard_science_article
 from .anglais_guard import filtrer_mots
+from . import sport_format
 
 logger = logging.getLogger("morning_briefing.generation")
 
@@ -111,17 +112,19 @@ SCHÉMA JSON ATTENDU :
 }}"""
 
 SYSTEM_SPORT = f"""Tu es le rédacteur de la section SPORT d'un briefing matinal en français. Tu rédiges
-UNIQUEMENT cette section (actualité, marchés, science : autres appels).
+UNIQUEMENT cette section (actualité, marchés, science : autres appels). Elle couvre TOUS les sports,
+sans préférence pour un sport, une équipe ou un pays : tu traites seulement ce qui figure dans les données.
 
 {_REGLES_COMMUNES}
-6. Une courte phrase factuelle par élément (résultat, classement significatif, blessure,
-   transfert). Basket : niveau de détail supérieur pour les San Antonio Spurs si des données sont
-   fournies. Ne fais pas de compte rendu exhaustif.
-7. \"natation\" et \"autres\" : null s'il n'y a rien dans les données.
+6. Une courte phrase factuelle par élément fourni (résultat, classement significatif, blessure,
+   transfert, record). Les titres peuvent être en anglais : traduis-les, sans rien ajouter. Ne fais pas
+   de compte rendu exhaustif et ne regroupe pas des éléments sans rapport.
+7. \"sport\" = nom du sport en français, en minuscules (ex. \"football\", \"tennis\"), repris des données.
+8. Si les données ne contiennent aucun élément : \"items\": [].
 
 SCHÉMA JSON ATTENDU :
 {{
-  \"sport\": {{\"football\": [str], \"basketball\": [str], \"natation\": [str]|null, \"autres\": [str]|null}}
+  \"sport\": {{\"items\": [{{\"sport\": str, \"texte\": str}}]}}
 }}"""
 
 SYSTEM_ANGLAIS = f"""Tu es un professeur d'anglais qui aide un francophone de bon niveau (visé : B2 vers C1) à
@@ -403,7 +406,7 @@ def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: d
         resultat["marches"] = guard_marches(
             _normalise_marches(r["marches"].body["marches"], resultat.get("marches")), analysed)
     if "sport" in r and r["sport"].ok:
-        resultat["sport"] = r["sport"].body["sport"]
+        resultat["sport"] = sport_format.normaliser(r["sport"].body.get("sport"), analysed["sport_events"])
 
     if "anglais" in r and r["anglais"].ok and nyt_article:
         b = r["anglais"].body

@@ -145,15 +145,13 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         events_sciences = scoring.score_events(events_sciences)
         events_sciences = verification.classify_events(events_sciences)
 
-        # Sport : dédup + score par catégorie (le cahier veut peu d'items mais toujours au
-        # moins les résultats marquants, cf. §6). Le "score plancher" (4/10, cf. scoring.py)
-        # est neutre : il ne distingue pas les Spurs (priorité explicite du cahier §6) des
-        # autres clubs. On applique donc un bonus dédié avant la sélection finale, sinon un
-        # simple tri par score risquerait d'évincer les Spurs au profit d'une actu basket
-        # quelconque au même score.
-        # Sélection sport dédiée (03/10/2026, cf. src/analyse/sport_scoring.py) : périmètre du cahier §6,
-        # bonus Spurs calculé sur le texte, au moins un item par catégorie pertinente, plafond global.
-        sport_dedup = {cat: dedup.deduplicate(items) for cat, items in raw["sport"].items()}
+        # Sport généraliste (05/10/2026, cf. src/analyse/sport_scoring.py) : tous les sports, aucune préférence
+        # utilisateur. Dédup PAR sport (évite de fusionner deux sports sur des mots communs), puis sélection
+        # par importance avec diversité entre sports et plafond global.
+        par_sport: dict[str, list[dict]] = {}
+        for it in raw["sport"]:
+            par_sport.setdefault(it["sport"], []).append(it)
+        sport_dedup = {sp: [dict(e, sport=sp) for e in dedup.deduplicate(items)] for sp, items in par_sport.items()}
         max_sport_total = config["seuils"].get("max_sport_total", 4)
         sport_events = sport_scoring.select_sport(sport_dedup, max_sport_total, config)
 
@@ -206,8 +204,8 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
             pool, analysed, science_topic, nyt_article, weather_summary, is_monday,
         )
 
-        # Sport : si football/basketball n'ont rien de notable, le dire et indiquer le prochain match
-        # intéressant (calendrier ESPN ; 03/10/2026). Déterministe, aucun LLM ; échec réseau = pas de match.
+        # Sport : si rien de notable n'est retenu, le dire et indiquer les prochaines affiches (calendrier
+        # ESPN ; 03/10/2026, rendu neutre le 05/10). Déterministe, aucun LLM ; échec réseau = pas de match.
         try:
             briefing["sport"] = calendrier.annoter_sport(
                 briefing.get("sport"), calendrier.fetch_prochains_matchs(config))

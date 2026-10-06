@@ -21,6 +21,7 @@ from datetime import datetime
 from ..analyse import verification
 from .llm_provider import LLMError, LLMProvider
 from .anglais_guard import score_apprentissage
+from . import sport_format
 
 logger = logging.getLogger("morning_briefing.generation")
 
@@ -48,12 +49,7 @@ SCHEMA_BLOC = """{
     "resume_court": str,
     "mouvements_notables": [{"nom": str, "variation_pct": float, "explication": str|null}]
   },
-  "sport": {
-    "football": [str],
-    "basketball": [str],
-    "natation": [str]|null,
-    "autres": [str]|null
-  },
+  "sport": {"items": [{"sport": str, "texte": str}]},
   "citation": {"texte": str, "auteur": str}|null,
   "meta": {"resume_1_phrase": str}
 }"""
@@ -498,12 +494,7 @@ def fallback_briefing(
                 for q in analysed["marches_data"].get("mouvements_significatifs", [])
             ],
         },
-        "sport": {
-            "football": [e["titre"] for e in analysed["sport_events"].get("football", [])],
-            "basketball": [e["titre"] for e in analysed["sport_events"].get("basketball", [])],
-            "natation": [e["titre"] for e in analysed["sport_events"].get("natation", [])] or None,
-            "autres": [e["titre"] for e in analysed["sport_events"].get("autres", [])] or None,
-        },
+        "sport": sport_format.depuis_evenements(analysed["sport_events"]),
         "science": {
             "mode": science_topic["mode"],
             "titre": science_topic["contenu_source"].get("titre", "Sujet scientifique"),
