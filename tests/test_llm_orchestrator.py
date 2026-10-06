@@ -56,19 +56,19 @@ class TestSecours(unittest.TestCase):
         res = orch.run_plan(PLAN, simple_parts(["actu_france", "actu_monde", "marches", "anglais", "science_a", "science_b", "sport"]),
                             self.pool(), sleep=lambda s: None)
         got = {n: r.provider for n, r in res.items()}
-        self.assertEqual(got, {"actu_france": "groq", "actu_monde": "mistral", "marches": "nvidia", "anglais": "openrouter",
-                               "science_a": "mistral", "science_b": "groq", "sport": "openrouter"})
+        self.assertEqual(got, {"actu_france": "groq", "actu_monde": "mistral", "marches": "nvidia", "anglais": "nvidia",
+                               "science_a": "mistral", "science_b": "groq", "sport": "nvidia"})   # OpenRouter = dernier secours (06/10)
         self.assertEqual(len(self.calls), 7)      # aucun appel inutile
 
     def test_les_deux_actu_echouent_les_deux_autres_font_le_secours_AVANT_leur_partie(self):
         pool = self.pool(groq={"fail": ["actu_france"]}, mistral={"fail": ["actu_monde"]})
         res = orch.run_plan(PLAN, simple_parts(["actu_france", "actu_monde", "marches", "anglais"]), pool, sleep=lambda s: None)
         self.assertEqual(res["actu_france"].provider, "nvidia")
-        self.assertEqual(res["actu_monde"].provider, "openrouter")
+        self.assertEqual(res["actu_monde"].provider, "nvidia")      # 06/10 : OpenRouter n'est plus en 2e position
         order = [(p, part) for p, part, _ in self.calls]
-        # secours de l'actualité (nvidia/openrouter) strictement avant marchés/anglais
+        # secours de l'actualité (nvidia) strictement avant marchés/anglais, traités ensuite par le même fournisseur
         self.assertLess(order.index(("nvidia", "actu_france")), order.index(("nvidia", "marches")))
-        self.assertLess(order.index(("openrouter", "actu_monde")), order.index(("openrouter", "anglais")))
+        self.assertLess(order.index(("nvidia", "actu_monde")), order.index(("nvidia", "anglais")))
         self.assertTrue(res["marches"].ok and res["anglais"].ok)
 
     def test_un_seul_fournisseur_actu_en_panne(self):
@@ -77,24 +77,23 @@ class TestSecours(unittest.TestCase):
         self.assertEqual((res["actu_france"].provider, res["actu_monde"].provider), ("nvidia", "mistral"))
 
     def test_science_secours_par_le_fournisseur_inutilise_puis_sport(self):
-        # science_b (groq) et sport (openrouter) échouent : nvidia sert science_b d'abord, puis sport
-        pool = self.pool(groq={"fail": ["science_b"]}, openrouter={"fail": ["sport"]})
+        # science_b (groq) et sport (nvidia) échouent : science_b -> nvidia (2e de sa chaîne), sport -> groq (2e de la sienne)
+        pool = self.pool(groq={"fail": ["science_b"]}, nvidia={"fail": ["sport"]})
         res = orch.run_plan(PLAN, simple_parts(["science_a", "science_b", "sport"]), pool, sleep=lambda s: None)
-        self.assertEqual((res["science_b"].provider, res["sport"].provider), ("nvidia", "nvidia"))
-        nv = [part for p, part, _ in self.calls if p == "nvidia"]
-        self.assertEqual(nv, ["science_b", "sport"])            # science prioritaire
+        self.assertEqual((res["science_b"].provider, res["sport"].provider), ("nvidia", "groq"))
 
     def test_science_a_et_b_en_panne_nvidia_les_reprend_dans_l_ordre(self):
         pool = self.pool(mistral={"fail": ["science_a"]}, groq={"fail": ["science_b"]})
         res = orch.run_plan(PLAN, simple_parts(["science_a", "science_b", "sport"]), pool, sleep=lambda s: None)
-        self.assertEqual([part for p, part, _ in self.calls if p == "nvidia"], ["science_a", "science_b"])
-        self.assertEqual(res["sport"].provider, "openrouter")   # sport non affecté
+        # nvidia traite d'abord son sport (1er tour), puis reprend la science dans l'ordre
+        self.assertEqual([part for p, part, _ in self.calls if p == "nvidia"], ["sport", "science_a", "science_b"])
+        self.assertEqual(res["sport"].provider, "nvidia")       # sport non affecté
 
     def test_fournisseur_sans_cle_est_saute(self):
         pool = self.pool()
         del pool["nvidia"]
         res = orch.run_plan(PLAN, simple_parts(["marches"]), pool, sleep=lambda s: None)
-        self.assertEqual(res["marches"].provider, "openrouter")  # chaîne : nvidia (absent) -> openrouter
+        self.assertEqual(res["marches"].provider, "groq")  # chaîne : nvidia (absent) -> groq
 
     def test_echec_partout_donne_body_none_et_details(self):
         pool = self.pool(**{n: {"fail": ["marches"]} for n in ("groq", "mistral", "nvidia", "openrouter")})
@@ -107,7 +106,7 @@ class TestSecours(unittest.TestCase):
         pool = self.pool(nvidia={"fail_429": ["marches"]})
         res = orch.run_plan(PLAN, simple_parts(["marches"]), pool, sleep=lambda s: None)
         self.assertEqual(len([c for c in self.calls if c[0] == "nvidia"]), 1)   # pas de 2e tentative à budget réduit
-        self.assertEqual(res["marches"].provider, "openrouter")
+        self.assertEqual(res["marches"].provider, "groq")
 
     def test_prompt_trop_gros_400_reessaie_avec_prompt_plus_petit(self):
         pool = self.pool(nvidia={"fail_400": ["marches"]})
@@ -118,7 +117,7 @@ class TestSecours(unittest.TestCase):
         pool = self.pool(nvidia={"fail": ["marches"]})
         res = orch.run_plan(PLAN, simple_parts(["marches"]), pool, sleep=lambda s: None)
         self.assertEqual(len([c for c in self.calls if c[0] == "nvidia"]), 1)   # pas de perte de temps
-        self.assertEqual(res["marches"].provider, "openrouter")
+        self.assertEqual(res["marches"].provider, "groq")
 
     def test_json_avec_balises_ou_texte_autour_est_accepte(self):
         raw = {"marches": '```json\n{"k": 1}\n```'}
@@ -293,3 +292,12 @@ class TestParts(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestOpenRouterDernierSecours(unittest.TestCase):
+    def test_openrouter_est_le_dernier_de_chaque_chaine_du_plan(self):
+        for wave in PLAN["waves"]:
+            for stage in wave["stages"]:
+                for part, chain in stage["parts"].items():
+                    self.assertEqual(chain[-1], "openrouter", part)
+                    self.assertEqual(chain.count("openrouter"), 1, part)

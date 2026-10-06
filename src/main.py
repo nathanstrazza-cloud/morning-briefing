@@ -215,8 +215,10 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
             logger.warning("Calendrier sportif ignoré (%s) : le briefing est publié sans prochain match.", exc)
 
         # 4. STOCKAGE
+        # 06/10/2026 (point 9) : `derniere_mise_a_jour` = heure de PUBLICATION (fin du run, Paris) ; l'heure de DÉBUT
+        # (`reference`) est conservée dans `debut_run` et sert de borne à la fenêtre de collecte du lendemain.
         storage.save_briefing(
-            briefing, date_iso, reference.isoformat(),
+            briefing, date_iso, paris_now().isoformat(), run_start_iso=reference.isoformat(),
             rss_diagnostics=rss_diagnostics, market_diagnostics=market_diagnostics,
             funnel_actualite=funnel_actualite,
         )

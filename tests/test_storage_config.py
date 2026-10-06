@@ -94,3 +94,18 @@ class SaveInTestOutputTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def test_derniere_mise_a_jour_est_la_fin_du_run_et_la_fenetre_part_du_debut(tmp_path, monkeypatch):
+    """06/10/2026 : on affiche l'heure de publication, mais la collecte suivante repart du DÉBUT du run précédent."""
+    import json
+    from datetime import datetime
+    from src.stockage import storage
+    monkeypatch.setattr(storage, "DATA_DIR", tmp_path)
+    storage.save_briefing({"actualite": {}}, "2026-10-06", "2026-10-06T06:16:08+02:00", run_start_iso="2026-10-06T06:10:43+02:00")
+    env = json.loads((tmp_path / "latest.json").read_text(encoding="utf-8"))
+    assert env["derniere_mise_a_jour"] == "2026-10-06T06:16:08+02:00" and env["debut_run"] == "2026-10-06T06:10:43+02:00"
+    assert storage.get_last_successful_datetime() == datetime.fromisoformat("2026-10-06T06:10:43+02:00")
+    env.pop("debut_run")                                   # ancien briefing sans debut_run : repli
+    (tmp_path / "latest.json").write_text(json.dumps(env), encoding="utf-8")
+    assert storage.get_last_successful_datetime() == datetime.fromisoformat("2026-10-06T06:16:08+02:00")

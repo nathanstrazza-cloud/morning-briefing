@@ -423,9 +423,9 @@ _ENV_KEY_BY_PROVIDER = {
 #   anglais : OpenRouter -> NVIDIA     -> Groq    -> Mistral
 # (Gemini/Anthropic en dernier recours si un jour configurés.) Un provider sans clé est
 # simplement ignoré. En complément, briefing_generator espace les appels de 60 s.
-_DEFAULT_FALLBACK_ORDER = ("groq", "openrouter", "mistral", "nvidia", "gemini", "anthropic")
+_DEFAULT_FALLBACK_ORDER = ("groq", "mistral", "nvidia", "openrouter", "gemini", "anthropic")
 _SCIENCE_FALLBACK_ORDER = ("mistral", "nvidia", "groq", "openrouter", "gemini", "anthropic")
-_ANGLAIS_FALLBACK_ORDER = ("openrouter", "nvidia", "groq", "mistral", "gemini", "anthropic")
+_ANGLAIS_FALLBACK_ORDER = ("nvidia", "groq", "mistral", "openrouter", "gemini", "anthropic")
 _ORDER_BY_ROLE = {
     "bloc": _DEFAULT_FALLBACK_ORDER,
     "science": _SCIENCE_FALLBACK_ORDER,
