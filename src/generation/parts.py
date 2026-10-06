@@ -454,8 +454,19 @@ def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: d
     if len(titres) == 2 and difflib.SequenceMatcher(None, titres[0].lower(), titres[1].lower()).ratio() > 0.6:
         titres = titres[:1]        # même événement en tête des deux zones : une seule mention
     if titres and any(k in r and r[k].ok for k in ("actu_france", "actu_monde")):
-        phrase = "À la une : " + " ; ".join(t.replace("EN DIRECT, ", "") for t in titres)
-        resultat["meta"] = {"resume_1_phrase": (phrase[:217] + "…") if len(phrase) > 220 else phrase + "."}
+        resultat["meta"] = {"resume_1_phrase": construire_resume_1_phrase(titres)}
+
+
+def construire_resume_1_phrase(titres: list[str], limite: int = 220) -> str:
+    """« À la une : … » (06/10/2026, point 10) : jamais coupé en plein mot. Si deux titres dépassent la limite, on ne
+    garde que le premier ; s'il dépasse encore, coupe à la dernière espace + « … » (au lieu de couper à 217 caractères)."""
+    nettoyes = [t.replace("EN DIRECT, ", "").strip(" .") for t in titres if t]
+    for candidats in (nettoyes, nettoyes[:1]):
+        phrase = "À la une : " + " ; ".join(candidats)
+        if len(phrase) <= limite:
+            return phrase + "."
+    coupe = phrase[: limite - 1].rsplit(" ", 1)[0].rstrip(" ,;:–-")
+    return coupe + "…"
 
 
 def diagnostics(results: dict[str, PartResult]) -> dict:

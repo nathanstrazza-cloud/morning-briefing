@@ -162,3 +162,17 @@ def test_consequence_generique_kharkiv_supprimee():
              consequences="Hypothèse : une escalade des violences pourrait prolonger le conflit et aggraver la crise humanitaire dans la région.")
     out, rem = guard_events([ev], src)
     assert out[0]["consequences"] is None and any("consequences" in r for r in rem)
+
+
+def test_resume_1_phrase_jamais_coupe_en_plein_mot():
+    from src.generation.parts import construire_resume_1_phrase
+    court = construire_resume_1_phrase(["Titre un", "Titre deux"])
+    assert court == "À la une : Titre un ; Titre deux."
+    long1 = ("Le Parti québécois promet un référendum sur l'indépendance si les électeurs lui donnent la majorité absolue "
+             "lors du scrutin général prévu à l'automne prochain dans toute la province")
+    t2 = "Le Nobel de médecine récompense trois chercheurs pour leurs travaux sur le cerveau et la lumière"
+    p = construire_resume_1_phrase([long1.strip(), t2])       # deux titres dépassent 220 caractères : on garde le premier seul
+    assert "Nobel" not in p and len(p) <= 221
+    énorme = "mot " * 80
+    p = construire_resume_1_phrase([énorme])
+    assert p.endswith("…") and len(p) <= 221 and not p[:-1].endswith("mo")
