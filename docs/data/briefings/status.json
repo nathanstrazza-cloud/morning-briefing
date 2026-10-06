@@ -1,6 +1,6 @@
 {
-  "derniere_execution": "2026-10-05T06:10:43.581156+02:00",
-  "date_visee": "2026-10-05",
+  "derniere_execution": "2026-10-06T06:10:43.627572+02:00",
+  "date_visee": "2026-10-06",
   "succes": true,
   "erreur": null,
   "synthese_llm": true,
@@ -12,7 +12,7 @@
   },
   "llm_science": {
     "genere_par_llm": true,
-    "provider": "mistral",
+    "provider": "groq+mistral",
     "erreur": null
   },
   "llm_anglais": {
@@ -25,7 +25,7 @@
       "source": "CNRS Actualités",
       "categorie": "sciences",
       "statut": "erreur",
-      "detail": "<unknown>:18:83: not well-formed (invalid token)"
+      "detail": "<unknown>:14:379: not well-formed (invalid token)"
     },
     {
       "source": "ESPN NBA News",
@@ -49,14 +49,14 @@
   "sources_marches_en_erreur": [],
   "funnel_actualite": {
     "france": {
-      "bruts": 89,
-      "evenements_uniques": 76,
+      "bruts": 106,
+      "evenements_uniques": 87,
       "retenus_apres_seuil": 41
     },
     "monde": {
-      "bruts": 125,
-      "evenements_uniques": 105,
-      "retenus_apres_seuil": 42
+      "bruts": 103,
+      "evenements_uniques": 87,
+      "retenus_apres_seuil": 36
     }
   }
 }
