@@ -29,9 +29,9 @@ def test_nombre_invente_retire_et_resume_source_en_repli():
     assert out[0]["resume"] == SRC[0]["resume"]
 
 
-def test_consequences_prefixees_hypothese_et_statut_impose_par_le_code():
-    out, _ = guard_events([_ev(consequences="Les marchés pourraient réagir.")], SRC)
-    assert out[0]["consequences"].startswith("Hypothèse : ")
+def test_consequences_non_etayees_supprimees_sans_prefixe_et_statut_impose_par_le_code():
+    out, rem = guard_events([_ev(consequences="Les marchés pourraient réagir.")], SRC)
+    assert out[0]["consequences"] is None and any("consequences" in r for r in rem)
     assert out[0]["statut"] == "fait_confirme"
 
 
@@ -146,3 +146,19 @@ def test_marches_explication_conservee_si_un_article_parle_de_ce_marche():
     m = {"resume_court": "", "mouvements_notables": [{"nom": "DAX", "explication": "accord commercial entre Berlin et Washington salué par les investisseurs"}]}
     out = guard_marches(m, an)
     assert out["mouvements_notables"][0]["explication"]
+
+
+def test_consequence_etayee_conservee_sans_prefixe_hypothese():
+    src = [dict(SRC[0], resume="Le président américain a critiqué Jerome Powell jeudi et pourrait le remplacer à la tête de la Fed.")]
+    out, rem = guard_events([_ev(consequences="Hypothèse : le président américain pourrait remplacer Powell à la tête de la Fed.")], src)
+    assert out[0]["consequences"] and not out[0]["consequences"].lower().startswith("hypoth")
+    assert out[0]["consequences"][0].isupper() and not rem
+
+
+def test_consequence_generique_kharkiv_supprimee():
+    src = [{"titre": "Six morts dans une attaque russe à Kharkiv", "resume": "Trois bombes planantes ont frappé le quartier de Slobidsky, six morts et 59 blessés.",
+            "statut_verification": "fait_confirme"}]
+    ev = _ev(titre="Six morts dans une attaque russe à Kharkiv", resume="Trois bombes planantes ont frappé Slobidsky.",
+             consequences="Hypothèse : une escalade des violences pourrait prolonger le conflit et aggraver la crise humanitaire dans la région.")
+    out, rem = guard_events([ev], src)
+    assert out[0]["consequences"] is None and any("consequences" in r for r in rem)

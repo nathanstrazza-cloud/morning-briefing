@@ -156,3 +156,10 @@ Problème : Nobel de médecine couvert par 4 articles FR/EN non regroupés -> «
 - À VÉRIFIER au prochain Dev Test avec LLM : log « Fusion sciences », mode retenu (découverte/approfondi), « Garde-fou science : N phrase(s) retirée(s) », lisibilité de l'article.
 
 ### Parties suivantes (ordre convenu) : B `consequences`, C sport (après le run du 07/10), D calendrier/OpenRouter/horodatage, E divers.
+
+### Partie B — CONSÉQUENCES (FAIT sur `dev`, sans LLM, non validé en réel)
+Problème : `consequences` recevait TOUJOURS le préfixe « Hypothèse : » (même une généralité sans lien avec la source, ex. Kharkiv « une escalade pourrait prolonger le conflit »).
+- `src/generation/actu_guard.py::guard_events` : même règle que `pourquoi_important` — conséquence conservée seulement si elle n'est pas creuse (`_est_creux`) et recoupe la source (`overlap_ratio >= PI_MIN_OVERLAP`) ; sinon `null` (log « [consequences non étayées] »). Tout ancien préfixe « Hypothèse : » est retiré des données.
+- `docs/app.js` : libellé « Conséquences possibles (hypothèse). » (le caractère d'hypothèse, cahier §14, est porté par l'interface) ; l'affichage retire aussi l'ancien préfixe des briefings déjà publiés.
+- Tests : `tests/test_actu_guard.py` (3 tests ajoutés/adaptés), 141 tests OK.
+- EFFET ATTENDU : `consequences` sera souvent `null` (voulu : « null sauf si les données en parlent »). `pourquoi_important` : toujours à arbitrer avec l'utilisateur (8/9 vides le 06/10).

@@ -71,7 +71,7 @@ function renderArticle(item) {
     children.push(el("p", { class: "article__why", html: `<strong>Pourquoi c'est important.</strong> ${escapeHtml(item.pourquoi_important)}` }));
   }
   if (item.consequences) {
-    children.push(el("p", { class: "article__why", html: `<strong>Conséquences possibles.</strong> ${escapeHtml(item.consequences)}` }));
+    children.push(el("p", { class: "article__why", html: `<strong>Conséquences possibles (hypothèse).</strong> ${escapeHtml(String(item.consequences).replace(/^\s*hypoth[èe]se\s*:\s*/i, ""))}` }));
   }
   children.push(meta);
 
