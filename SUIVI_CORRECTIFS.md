@@ -135,3 +135,10 @@ avec `{"ref":"dev","inputs":{"ref":"dev","no_llm":"false"}}` (le jeton a le droi
 
 **Limites connues** : le plafond global reste 4 items (décision du 24/09) ; l'importance est heuristique (mots-clés), pas sémantique ; les mots-clés sont en français + un peu d'anglais.
 **Retour arrière** : `git revert` du commit de cette session sur `dev` (main inchangée).
+
+### Fusion du 06/10/2026 (dev → main)
+- Le run de production du 06/10 à 06h10 a validé les correctifs sélection + fiabilité (demande de l'utilisateur).
+- `dev` (commit 8cfa890, sport généraliste : tous les sports, plus de préférences Spurs / équipe de France, format `sport.items`, calendrier neutre) fusionné dans `main` par merge `--no-ff` ; 128 tests OK (`pip install -r requirements.txt pytest`, puis `python -m pytest -q tests`).
+- Rien du volet sport n'a encore été vu en run réel : à contrôler au prochain run de 06h10 (flux sport non vérifiés : L'Équipe Athlétisme/Formule 1/Golf, ESPN Top Headlines, BBC Sport ; variété des sports ; titres anglais traduits ; mention « Rien d'intéressant »).
+- Retour arrière : `git revert -m 1 <commit de fusion>` sur `main`.
+- `dev` réaligné sur `main` après cette fusion.
