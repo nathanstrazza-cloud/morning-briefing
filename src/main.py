@@ -18,7 +18,7 @@ from datetime import datetime
 
 import pytz
 
-from .analyse import dedup, diversite, scoring, sport_scoring, verification, zones
+from .analyse import dedup, diversite, science_events, scoring, sport_scoring, verification, zones
 from .collecte import calendrier, collector, markets as markets_collect, weather as weather_collect
 from .generation import briefing_generator, llm_provider
 from .stockage import storage
@@ -142,6 +142,8 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         events_economie = scoring.score_events(events_economie)
 
         events_sciences = dedup.deduplicate(raw["news"]["sciences"])
+        # 06/10/2026 : regroupe aussi les articles FR/EN d'un même événement (ex. Nobel) AVANT scoring/vérification
+        events_sciences = science_events.fusionner_evenements_science(events_sciences)
         events_sciences = scoring.score_events(events_sciences)
         events_sciences = verification.classify_events(events_sciences)
 

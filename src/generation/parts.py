@@ -162,12 +162,16 @@ SCHÉMA JSON ATTENDU :
 _TON_SCIENCE = """Ton d'une bonne revue de vulgarisation scientifique : précis, pédagogique,
 compréhensible, sans sensationnalisme, sans déformer les connaissances pour simplifier.
 RÈGLES ANTI-INVENTION (strictes, un contrôle automatique supprime les phrases fautives) :
-- Tu disposes UNIQUEMENT du titre et du résumé d'un article (champ science_source). Tout nombre,
-  pourcentage, date, nom de chercheur, d'institution, d'étude ou de revue doit figurer dans ce champ ;
-  sinon NE L'ÉCRIS PAS (pas de « environ », pas d'ordre de grandeur de mémoire).
-- Tu peux expliquer les mécanismes par des connaissances scientifiques de manuel, sans chiffre.
-- Si la source ne donne pas de résultats chiffrés, la section « Données et résultats » dit simplement
-  que le résumé disponible n'en précise pas, et renvoie à l'article source.
+- Tu disposes UNIQUEMENT des titres et résumés fournis (champ science_source, dont « textes_sources » qui
+  réunit plusieurs articles sur le même sujet). Tout nombre, pourcentage, date, nom de chercheur,
+  d'institution, d'étude ou de revue doit y figurer ; sinon NE L'ÉCRIS PAS (pas de « environ »).
+- N'écris AUCUN nom de protéine, gène, molécule, sigle, appareil ou méthode qui ne figure pas dans ces
+  textes : décris le principe en mots simples (« une protéine sensible à la lumière »), jamais avec un nom
+  technique de mémoire. Les phrases contenant un tel terme sont supprimées.
+- Tu peux expliquer les mécanismes GÉNÉRAUX par des connaissances de manuel, sans chiffre. Évite les
+  affirmations absolues non sourcées (« sans risque », « non invasif », « toujours », « jamais »).
+- Si la source ne donne pas de résultats chiffrés, écris seulement que les données chiffrées détaillées sont
+  à consulter dans les articles sources. Ne parle JAMAIS du « résumé », de « l'extrait » ni de ce que tu as reçu.
 - N'écris aucune phrase de transition interne (« fin de la moitié A », « la suite abordera »).
 - Titres de section : « ## Titre » sans numéro ni gras. Si un point est incertain, dis-le."""
 
