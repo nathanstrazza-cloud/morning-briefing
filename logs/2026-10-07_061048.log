@@ -1,0 +1,166 @@
+2026-10-07 04:10:48,462 [INFO] morning_briefing: === Démarrage du run Morning Briefing pour le 2026-10-07 ===
+2026-10-07 04:10:48,474 [INFO] morning_briefing: Fenêtre de recherche: 2026-10-06 00:10:43.627572+02:00 -> 2026-10-07 06:10:48.462220+02:00 (lundi=False, dernier_succes=2026-10-06 06:10:43.627572+02:00)
+2026-10-07 04:10:48,474 [INFO] morning_briefing.collecte: Début de la collecte (depuis=2026-10-06T00:10:43.627572+02:00, lundi=False)
+2026-10-07 04:10:48,620 [INFO] morning_briefing.collecte.rss: Flux Le Monde (france): 16 articles récupérés
+2026-10-07 04:10:49,625 [INFO] morning_briefing.collecte.rss: Flux France Info (france): 33 articles récupérés
+2026-10-07 04:10:50,537 [INFO] morning_briefing.collecte.rss: Flux Libération (france): 50 articles récupérés
+2026-10-07 04:10:50,876 [INFO] morning_briefing.collecte.rss: Flux 20 Minutes (france): 30 articles récupérés
+2026-10-07 04:10:50,914 [INFO] morning_briefing.collecte.rss: Flux Le Monde International (monde): 20 articles récupérés
+2026-10-07 04:10:51,096 [INFO] morning_briefing.collecte.rss: Flux New York Times World (monde): 55 articles récupérés
+2026-10-07 04:10:53,740 [INFO] morning_briefing.collecte.rss: Flux France 24 International (monde): 24 articles récupérés
+2026-10-07 04:10:53,784 [INFO] morning_briefing.collecte.rss: Flux Le Monde Économie (economie): 20 articles récupérés
+2026-10-07 04:10:53,884 [INFO] morning_briefing.collecte.rss: Flux Le Figaro Économie (economie): 20 articles récupérés
+2026-10-07 04:10:53,962 [INFO] morning_briefing.collecte.rss: Flux BFM Business (economie): 30 articles récupérés
+2026-10-07 04:10:54,137 [INFO] morning_briefing.collecte.rss: Flux Le Monde Sciences (sciences): 20 articles récupérés
+2026-10-07 04:10:54,998 [WARNING] morning_briefing.collecte.rss: Flux RSS illisible ou vide: CNRS Actualités (https://www.cnrs.fr/fr/rss.xml) -- <unknown>:14:414: not well-formed (invalid token)
+2026-10-07 04:10:55,410 [INFO] morning_briefing.collecte.rss: Flux Nature News (sciences): 75 articles récupérés
+2026-10-07 04:10:55,507 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Football (sport): 50 articles récupérés
+2026-10-07 04:10:55,753 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Basket (sport): 50 articles récupérés
+2026-10-07 04:10:56,026 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Tennis (sport): 50 articles récupérés
+2026-10-07 04:10:56,285 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Rugby (sport): 50 articles récupérés
+2026-10-07 04:10:56,604 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Cyclisme (sport): 50 articles récupérés
+2026-10-07 04:10:56,902 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Hand (sport): 0 articles récupérés
+2026-10-07 04:10:57,337 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Volley (sport): 0 articles récupérés
+2026-10-07 04:10:57,563 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Natation (sport): 50 articles récupérés
+2026-10-07 04:10:58,623 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Athlétisme (sport): 50 articles récupérés
+2026-10-07 04:10:58,841 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Formule 1 (sport): 50 articles récupérés
+2026-10-07 04:10:59,868 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Golf (sport): 50 articles récupérés
+2026-10-07 04:10:59,931 [INFO] morning_briefing.collecte.rss: Flux ESPN NBA News (sport): 0 articles récupérés
+2026-10-07 04:10:59,954 [INFO] morning_briefing.collecte.rss: Flux ESPN Top Headlines (sport): 0 articles récupérés
+2026-10-07 04:11:00,268 [INFO] morning_briefing.collecte.rss: Flux BBC Sport (sport): 68 articles récupérés
+2026-10-07 04:11:00,270 [INFO] morning_briefing.collecte.sports: Sport collecté: 140 items {'football': 57, 'basketball': 12, 'tennis': 12, 'rugby': 15, 'cyclisme': 13, 'athlétisme': 2, 'autres': 22, 'golf': 3, 'formule 1': 1, 'football américain': 1, 'jeux olympiques': 1, 'boxe et combat': 1}
+2026-10-07 04:11:00,414 [INFO] morning_briefing.collecte.markets: Marché CAC 40: cours=7865.07 ref=7834.10009765625 (2026-10-05) var=0.4% | meta.chartPreviousClose=7964.51 previousClose=None
+2026-10-07 04:11:00,668 [INFO] morning_briefing.collecte.markets: Marché S&P 500: cours=7818.93 ref=7773.9501953125 (2026-10-05) var=0.58% | meta.chartPreviousClose=7670.84 previousClose=None
+2026-10-07 04:11:00,792 [INFO] morning_briefing.collecte.markets: Marché Nasdaq: cours=27599.887 ref=27477.310546875 (2026-10-05) var=0.45% | meta.chartPreviousClose=26797.54 previousClose=None
+2026-10-07 04:11:00,906 [INFO] morning_briefing.collecte.markets: Marché DAX: cours=25449.19 ref=25254.2109375 (2026-10-05) var=0.77% | meta.chartPreviousClose=25399.21 previousClose=None
+2026-10-07 04:11:01,175 [INFO] morning_briefing.collecte.markets: Marché Euro Stoxx 50: cours=6272.23 ref=6242.14013671875 (2026-10-05) var=0.48% | meta.chartPreviousClose=6269.02 previousClose=None
+2026-10-07 04:11:01,288 [INFO] morning_briefing.collecte.markets: Marché Pétrole (Brent): cours=101.58 ref=100.58000183105469 (2026-10-06) var=0.99% | meta.chartPreviousClose=102.25 previousClose=None
+2026-10-07 04:11:01,553 [INFO] morning_briefing.collecte.markets: Marché Or: cours=4170.0 ref=4187.10009765625 (2026-10-06) var=-0.41% | meta.chartPreviousClose=4162.3 previousClose=None
+2026-10-07 04:11:01,554 [INFO] morning_briefing.collecte.markets: Marchés collectés: 5 indices, 2 matières premières
+2026-10-07 04:11:03,986 [INFO] morning_briefing.collecte.weather: Météo collectée pour 4/4 villes
+2026-10-07 04:11:03,986 [INFO] morning_briefing.collecte: Collecte terminée: 302 actualités, 140 items sport, 5 indices, 4 villes météo
+2026-10-07 04:11:03,986 [WARNING] morning_briefing.collecte: Flux RSS en échec ce run: CNRS Actualités
+2026-10-07 04:11:03,986 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Au Mali, la junte regagne du terrain en reprenant Kidal, fief des rebelles touareg
+2026-10-07 04:11:03,986 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Allemagne : l’affaire August Hanning, l’ancien chef des services secrets soupçonné d’espio
+2026-10-07 04:11:03,986 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | A Pékin, l’heure de vérité pour le commissaire européen au commerce pour contrer l’envolée
+2026-10-07 04:11:03,987 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Christa Pike, dont la mise à mort avait échoué aux Etats-Unis, a repris connaissance et pa
+2026-10-07 04:11:03,987 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | EN DIRECT, guerre en Ukraine : une attaque de drones ukrainiens déclenche un vaste incendi
+2026-10-07 04:11:03,987 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | En Australie, la justice s’oppose à l’extension d’une mine de charbon
+2026-10-07 04:11:03,987 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Alerte près d’une base militaire en Angleterre : un septième suspect arrêté pour des soupç
+2026-10-07 04:11:03,988 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | "Ils déblaient à la main" : trois ans après le début de la guerre à Gaza, les Palestiniens
+2026-10-07 04:11:03,988 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Christa Pike, condamnée à mort aux Etats-Unis, a repris connaissance et parle, annoncent s
+2026-10-07 04:11:03,988 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | "Son côté imprévisible me rend nerveux" : ces républicains qui, pris à la gorge par l'infl
+2026-10-07 04:11:03,988 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Le ministre des Affaires étrangères Jean-Noël Barrot se rend en Israël mercredi pour les c
+2026-10-07 04:11:03,989 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Un septième suspect arrêté après l'incident sur une base militaire utilisée par l'armée am
+2026-10-07 04:11:03,989 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | "L'arme identifie la cible en une fraction de seconde" : comment les nouvelles mitrailleus
+2026-10-07 04:11:03,989 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Israël en alerte face à "tout scénario" d'attaque du Hamas, à la veille des commémorations
+2026-10-07 04:11:03,990 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Trois ans après, le 7 Octobre hante la campagne législative israélienne
+2026-10-07 04:11:03,990 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Affaire Epstein : le régulateur britannique des marchés enquête après le suicide d’un lanc
+2026-10-07 04:11:03,990 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Le 7 Octobre, un jour de massacres sans fin, par Etgar Keret
+2026-10-07 04:11:03,990 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Au Yémen, nouvelle escalade entre les forces gouvernementales, leur allié saoudien et les 
+2026-10-07 04:11:03,991 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Mistral lance un nouveau modèle d’IA pour rivaliser avec les géants américains et chinois
+2026-10-07 04:11:03,991 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | A 39 ans, l’éternel Novak Djokovic gagne à Pékin son 102e titre et talonne Roger Federer
+2026-10-07 04:11:03,992 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | En Allemagne, l’AfD accède à la présidence d’un Parlement régional, une première depuis 19
+2026-10-07 04:11:03,992 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | En Thaïlande, le gouvernement subventionne le quotidien pour pallier la flambée des prix
+2026-10-07 04:11:03,992 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | En Inde, le grand retour du mouvement des «cafards» : «C’est la crédibilité des élections 
+2026-10-07 04:11:03,992 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Les Etats-Unis pressent la Russie d’être transparente sur un soupçon de peste
+2026-10-07 04:11:03,992 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Etats-Unis : Christa Pike a repris connaissance après avoir survécu à deux injections léta
+2026-10-07 04:11:03,993 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Etats-Unis : Accusé d’avoir détourné 194 millions de dollars, un ex-agent de la CIA plaide
+2026-10-07 04:11:03,993 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Guerre en Ukraine : Kiev bombarde Moscou, fustige la Corée du Sud et étend sa protection c
+2026-10-07 04:11:03,993 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Etats-Unis : Le spot publicitaire d’un candidat républicain fait scandale en Californie
+2026-10-07 04:11:03,993 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Espagne : Le mandat d’arrêt de l’indépendantisme catalan Carles Puigdemont annulé, il peut
+2026-10-07 04:11:03,995 [INFO] morning_briefing.analyse.zones: Zone par contenu: monde -> france | Blocage des lycées en France : l'armée en renfort ?
+2026-10-07 04:11:03,995 [INFO] morning_briefing.analyse.zones: Zone par contenu: monde -> france | Manifestation des lycéens : les messages derrière leurs pancartes
+2026-10-07 04:11:03,995 [INFO] morning_briefing.analyse.zones: Zone par contenu: monde -> france | Santé: les diverses pollutions de l'alimentation en France
+2026-10-07 04:11:03,995 [INFO] morning_briefing.analyse.zones: Zone par contenu: monde -> france | Les blocus lycéens en France instrumentalisés par des comptes d'extrême droite étrangers
+2026-10-07 04:11:03,996 [INFO] morning_briefing.analyse.zones: Zone par contenu: monde -> france | 🔴 Colère lycéenne en direct : 450 000 manifestants en France selon les organisateurs, 256 
+2026-10-07 04:11:03,996 [INFO] morning_briefing.analyse.zones: Affectation France/Monde par contenu: {'vers_monde': 29, 'vers_france': 5}
+2026-10-07 04:11:04,032 [INFO] morning_briefing.analyse.dedup: Déduplication: 101 items bruts -> 87 événements uniques
+2026-10-07 04:11:04,066 [INFO] morning_briefing.analyse.dedup: Déduplication: 109 items bruts -> 95 événements uniques
+2026-10-07 04:11:04,131 [INFO] morning_briefing.analyse.dedup: Déduplication inter-zones: 8 événement(s) France fusionné(s) dans Monde
+2026-10-07 04:11:04,133 [INFO] morning_briefing.analyse.diversite: Fusion par entités: 0 événement(s) fusionné(s)
+2026-10-07 04:11:04,134 [INFO] morning_briefing.analyse.diversite: Fusion par entités: « Au Mali, l’armée signe une rare victoire après la prise de la ville st » -> « Au Mali, l’armée signe une rare victoire après la prise de la ville st »
+2026-10-07 04:11:04,134 [INFO] morning_briefing.analyse.diversite: Fusion par entités: « Spain Cancels Arrest Warrant for Carles Puigdemont, Catalan Separatist » -> « Espagne : Le mandat d’arrêt de l’indépendantisme catalan Carles Puigde »
+2026-10-07 04:11:04,134 [INFO] morning_briefing.analyse.diversite: Fusion par entités: « People of All Ages Join French Student Protests, as Movement Broadens » -> « People of All Ages Join French Student Protests, as Movement Broadens »
+2026-10-07 04:11:04,134 [INFO] morning_briefing.analyse.diversite: Fusion par entités: « OpenAI Says It Changed Systems After Australia Hacking » -> « ‘A new kind of cyber incident’: OpenAI apologizes for the Australia Me »
+2026-10-07 04:11:04,135 [INFO] morning_briefing.analyse.diversite: Fusion par entités: 4 événement(s) fusionné(s)
+2026-10-07 04:11:04,146 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 79 événements
+2026-10-07 04:11:04,146 [INFO] morning_briefing.analyse.verification: Vérification: 8/79 événements classés 'fait confirmé' (>= 2 sources)
+2026-10-07 04:11:04,158 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 91 événements
+2026-10-07 04:11:04,158 [INFO] morning_briefing.analyse.verification: Vérification: 17/91 événements classés 'fait confirmé' (>= 2 sources)
+2026-10-07 04:11:04,158 [INFO] morning_briefing: Entonnoir actualité (seuil=5): france {'bruts': 101, 'evenements_uniques': 79, 'retenus_apres_seuil': 37} | monde {'bruts': 109, 'evenements_uniques': 91, 'retenus_apres_seuil': 44}
+2026-10-07 04:11:04,158 [INFO] morning_briefing.analyse.diversite: Sélection diversifiée: 5 retenu(s) sur 37 (limite 2 par entité)
+2026-10-07 04:11:04,158 [INFO] morning_briefing.analyse.diversite: Sélection diversifiée: 5 retenu(s) sur 44 (limite 2 par entité)
+2026-10-07 04:11:04,176 [INFO] morning_briefing.analyse.dedup: Déduplication: 68 items bruts -> 56 événements uniques
+2026-10-07 04:11:04,186 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 56 événements
+2026-10-07 04:11:04,188 [INFO] morning_briefing.analyse.dedup: Déduplication: 24 items bruts -> 24 événements uniques
+2026-10-07 04:11:04,191 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 24 événements
+2026-10-07 04:11:04,191 [INFO] morning_briefing.analyse.verification: Vérification: 0/24 événements classés 'fait confirmé' (>= 2 sources)
+2026-10-07 04:11:04,201 [INFO] morning_briefing.analyse.dedup: Déduplication: 57 items bruts -> 49 événements uniques
+2026-10-07 04:11:04,201 [INFO] morning_briefing.analyse.dedup: Déduplication: 12 items bruts -> 12 événements uniques
+2026-10-07 04:11:04,202 [INFO] morning_briefing.analyse.dedup: Déduplication: 12 items bruts -> 11 événements uniques
+2026-10-07 04:11:04,203 [INFO] morning_briefing.analyse.dedup: Déduplication: 15 items bruts -> 15 événements uniques
+2026-10-07 04:11:04,203 [INFO] morning_briefing.analyse.dedup: Déduplication: 13 items bruts -> 12 événements uniques
+2026-10-07 04:11:04,203 [INFO] morning_briefing.analyse.dedup: Déduplication: 2 items bruts -> 2 événements uniques
+2026-10-07 04:11:04,205 [INFO] morning_briefing.analyse.dedup: Déduplication: 22 items bruts -> 22 événements uniques
+2026-10-07 04:11:04,205 [INFO] morning_briefing.analyse.dedup: Déduplication: 3 items bruts -> 2 événements uniques
+2026-10-07 04:11:04,205 [INFO] morning_briefing.analyse.dedup: Déduplication: 1 items bruts -> 1 événements uniques
+2026-10-07 04:11:04,205 [INFO] morning_briefing.analyse.dedup: Déduplication: 1 items bruts -> 1 événements uniques
+2026-10-07 04:11:04,205 [INFO] morning_briefing.analyse.dedup: Déduplication: 1 items bruts -> 1 événements uniques
+2026-10-07 04:11:04,205 [INFO] morning_briefing.analyse.dedup: Déduplication: 1 items bruts -> 1 événements uniques
+2026-10-07 04:11:04,209 [INFO] morning_briefing.analyse.sport_scoring: Sport: 4 retenu(s) {'football': 2, 'basketball': 1, 'cyclisme': 1} (seuil=5, max 2/sport)
+2026-10-07 04:11:04,209 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Circular DNA exposes a weakness in cancer cells
+2026-10-07 04:11:04,209 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Nobel de physique 2026 : un pionnier d’une nouvelle astronomie récompensé pour sa quête de
+2026-10-07 04:11:04,209 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Un voilier robotisé bioinspiré qui tombe du ciel
+2026-10-07 04:11:04,210 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Le prix Nobel de physique 2026 est décerné au Belge Francis Halzen pour ses travaux sur le
+2026-10-07 04:11:04,210 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — L’exécution ratée de Christa Pike : que sait-on sur le pentobarbital utilisé en injection 
+2026-10-07 04:11:04,210 [INFO] morning_briefing.generation: Science: découverte refusée (une seule source non primaire) — « Ici, j’ai trouvé de la reconnaissance et un bon salaire » : pour les jeunes chercheurs s
+2026-10-07 04:11:04,210 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Author Correction: Anodic Pd membrane H<sub>2</sub> extraction enhances thermochemical deh
+2026-10-07 04:11:04,210 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Maintaining global science collaboration during conflict requires fairer rules
+2026-10-07 04:11:04,210 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — The Solar System could die one billion times earlier than thought
+2026-10-07 04:11:04,210 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — The Great Barrier Reef requires special attention in the developing super El Niño
+2026-10-07 04:11:04,210 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Scientists take a radiometer for a spin in a hot-air balloon
+2026-10-07 04:11:04,210 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Preprints must not leak sensitive research information
+2026-10-07 04:11:04,210 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Unprecedented hole opened up in Antarctic winter sea ice
+2026-10-07 04:11:04,210 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — AI could undermine scientific independence in subtle ways
+2026-10-07 04:11:04,210 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Astronomy’s ‘adrenaline junkies’: Nobel prize captures the thrill of neutrino physics
+2026-10-07 04:11:04,210 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Rising numbers of Asian and African PhD students choose to study in China
+2026-10-07 04:11:04,210 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — How digital breakdowns affect supply chains — and endanger the global economy
+2026-10-07 04:11:04,211 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Strong evidence that ‘baryon junctions’ give proton its identity
+2026-10-07 04:11:04,211 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Why smart glasses are about to create a major privacy crisis
+2026-10-07 04:11:04,211 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Cells, who needs them? Biochemists turn to proteins in a tube
+2026-10-07 04:11:04,211 [INFO] morning_briefing.generation: Science: découverte refusée (résumé trop court (< 200 caractères)) — Flu season could kick off ‘incredibly’ early — what scientists are watching
+2026-10-07 04:11:04,211 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Nobel physics prize awarded for detection of cosmic neutrinos
+2026-10-07 04:11:04,211 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Brain organoids grafted into cortex-free mice will advance human brain research
+2026-10-07 04:11:04,211 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — How to mobilize the agile science needed in a crisis
+2026-10-07 04:11:04,212 [INFO] morning_briefing.generation.llm: Fournisseurs LLM disponibles (clé présente) : groq, mistral, cerebras, openrouter, nvidia
+2026-10-07 04:11:04,235 [INFO] morning_briefing.generation: === appel_1 : actu_france, actu_monde, marches, anglais ===
+2026-10-07 04:11:04,235 [INFO] morning_briefing.generation: Tour 1 : groq -> actu_france; mistral -> actu_monde
+2026-10-07 04:11:13,686 [INFO] morning_briefing.generation: Tour 1 : nvidia -> marches; openrouter -> anglais
+2026-10-07 04:11:14,108 [ERROR] morning_briefing.generation: Échec LLM part=anglais provider=openrouter tentative=1/1 budget=12000 : 429 Too Many Requests (provider=openrouter): {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Google AI Studio","is_byok":false,"provider_error_code":"429","limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to | corps: {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Google AI Studio","is_byok":false,"provider_error_code":"429","limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to
+2026-10-07 04:11:27,537 [INFO] morning_briefing.generation: Tour 2 : nvidia -> anglais
+2026-10-07 04:12:03,280 [INFO] morning_briefing.generation: Pause de 150 s avant l'appel_2 (fenêtre tokens/minute des fournisseurs)
+2026-10-07 04:14:33,280 [INFO] morning_briefing.generation: === appel_2 : science_a, science_b, sport ===
+2026-10-07 04:14:33,281 [INFO] morning_briefing.generation: Tour 1 : mistral -> science_a; groq -> science_b; openrouter -> sport
+2026-10-07 04:14:33,675 [ERROR] morning_briefing.generation: Échec LLM part=sport provider=openrouter tentative=1/2 budget=12000 : 429 Too Many Requests (provider=openrouter): {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Google AI Studio","is_byok":false,"provider_error_code":"429","limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to | corps: {"error":{"message":"Provider returned error","code":429,"metadata":{"raw":"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations","provider_name":"Google AI Studio","is_byok":false,"provider_error_code":"429","limit_source":"upstream_provider_shared_pool","remedy_hint":"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to
+2026-10-07 04:14:58,847 [INFO] morning_briefing.generation: Tour 2 : nvidia -> sport
+2026-10-07 04:15:56,019 [WARNING] morning_briefing.generation: Garde-fou actualité (actualite_monde) : 3 phrase(s) retirée(s) : [pourquoi_important non étayé] L'attaque illustre l'escalade des frappes ukraini | [pourquoi_important non étayé] Les élections pourraient redéfinir la politique d | [pourquoi_important non étayé] La reprise de Kidal renforce la position militair
+2026-10-07 04:15:56,019 [INFO] morning_briefing.generation: Anglais : 6 mots reçus -> 6 retenus ({'recus': 6, 'faciles': 0, 'absents_source': 0, 'sans_traduction': 0, 'doublons': 0, 'glossaire': 0})
+2026-10-07 04:15:56,021 [INFO] morning_briefing.generation: Parties rédigées par LLM : 7/7 (actu_france=groq, actu_monde=mistral, marches=nvidia, anglais=nvidia, science_a=mistral, science_b=groq, sport=nvidia)
+2026-10-07 04:15:56,310 [WARNING] morning_briefing.collecte.calendrier: Calendrier: HTTP 400 pour soccer/fra.1 dates=20261007-20261021 : {"code":400,"message":"Failed to get events endpoint."}
+2026-10-07 04:15:57,859 [INFO] morning_briefing.collecte.calendrier: Calendrier football fra.1: 13 match(s) à venir
+2026-10-07 04:15:58,020 [WARNING] morning_briefing.collecte.calendrier: Calendrier: HTTP 400 pour soccer/uefa.champions dates=20261007-20261021 : {"code":400,"message":"Failed to get events endpoint."}
+2026-10-07 04:15:58,600 [INFO] morning_briefing.collecte.calendrier: Calendrier football uefa.champions: 18 match(s) à venir
+2026-10-07 04:15:58,713 [WARNING] morning_briefing.collecte.calendrier: Calendrier: HTTP 400 pour soccer/uefa.europa dates=20261007-20261021 : {"code":400,"message":"Failed to get events endpoint."}
+2026-10-07 04:15:59,724 [INFO] morning_briefing.collecte.calendrier: Calendrier football uefa.europa: 18 match(s) à venir
+2026-10-07 04:15:59,828 [WARNING] morning_briefing.collecte.calendrier: Calendrier: HTTP 400 pour soccer/fifa.friendly dates=20261007-20261021 : {"code":400,"message":"Failed to get events endpoint."}
+2026-10-07 04:16:01,515 [INFO] morning_briefing.collecte.calendrier: Calendrier football fifa.friendly: 0 match(s) à venir
+2026-10-07 04:16:01,626 [WARNING] morning_briefing.collecte.calendrier: Calendrier: HTTP 400 pour soccer/uefa.nations dates=20261007-20261021 : {"code":400,"message":"Failed to get events endpoint."}
+2026-10-07 04:16:03,181 [INFO] morning_briefing.collecte.calendrier: Calendrier football uefa.nations: 0 match(s) à venir
+2026-10-07 04:16:03,330 [WARNING] morning_briefing.collecte.calendrier: Calendrier: HTTP 400 pour soccer/fifa.worldq.uefa dates=20261007-20261021 : {"code":400,"message":"Failed to get events endpoint."}
+2026-10-07 04:16:05,067 [INFO] morning_briefing.collecte.calendrier: Calendrier football fifa.worldq.uefa: 0 match(s) à venir
+2026-10-07 04:16:05,160 [WARNING] morning_briefing.collecte.calendrier: Calendrier: HTTP 400 pour basketball/nba dates=20261007-20261021 : {"code":400,"message":"Failed to get events endpoint."}
+2026-10-07 04:16:06,701 [INFO] morning_briefing.collecte.calendrier: Calendrier basketball nba: 69 match(s) à venir
+2026-10-07 04:16:06,702 [INFO] morning_briefing.collecte.calendrier: Calendrier: prochain football=Manchester City – PSG | prochain basketball=Los Angeles Lakers – Golden State Warriors
+2026-10-07 04:16:06,706 [INFO] morning_briefing.stockage: Briefing sauvegardé: /home/runner/work/morning-briefing/morning-briefing/docs/data/briefings/2026-10-07.json
+2026-10-07 04:16:06,706 [INFO] morning_briefing: === Run terminé avec succès pour le 2026-10-07 ===
