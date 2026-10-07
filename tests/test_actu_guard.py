@@ -29,9 +29,9 @@ def test_nombre_invente_retire_et_resume_source_en_repli():
     assert out[0]["resume"] == SRC[0]["resume"]
 
 
-def test_consequences_prefixees_hypothese_et_statut_impose_par_le_code():
-    out, _ = guard_events([_ev(consequences="Les marchés pourraient réagir.")], SRC)
-    assert out[0]["consequences"].startswith("Hypothèse : ")
+def test_consequences_non_etayees_supprimees_sans_prefixe_et_statut_impose_par_le_code():
+    out, rem = guard_events([_ev(consequences="Les marchés pourraient réagir.")], SRC)
+    assert out[0]["consequences"] is None and any("consequences" in r for r in rem)
     assert out[0]["statut"] == "fait_confirme"
 
 
@@ -146,3 +146,33 @@ def test_marches_explication_conservee_si_un_article_parle_de_ce_marche():
     m = {"resume_court": "", "mouvements_notables": [{"nom": "DAX", "explication": "accord commercial entre Berlin et Washington salué par les investisseurs"}]}
     out = guard_marches(m, an)
     assert out["mouvements_notables"][0]["explication"]
+
+
+def test_consequence_etayee_conservee_sans_prefixe_hypothese():
+    src = [dict(SRC[0], resume="Le président américain a critiqué Jerome Powell jeudi et pourrait le remplacer à la tête de la Fed.")]
+    out, rem = guard_events([_ev(consequences="Hypothèse : le président américain pourrait remplacer Powell à la tête de la Fed.")], src)
+    assert out[0]["consequences"] and not out[0]["consequences"].lower().startswith("hypoth")
+    assert out[0]["consequences"][0].isupper() and not rem
+
+
+def test_consequence_generique_kharkiv_supprimee():
+    src = [{"titre": "Six morts dans une attaque russe à Kharkiv", "resume": "Trois bombes planantes ont frappé le quartier de Slobidsky, six morts et 59 blessés.",
+            "statut_verification": "fait_confirme"}]
+    ev = _ev(titre="Six morts dans une attaque russe à Kharkiv", resume="Trois bombes planantes ont frappé Slobidsky.",
+             consequences="Hypothèse : une escalade des violences pourrait prolonger le conflit et aggraver la crise humanitaire dans la région.")
+    out, rem = guard_events([ev], src)
+    assert out[0]["consequences"] is None and any("consequences" in r for r in rem)
+
+
+def test_resume_1_phrase_jamais_coupe_en_plein_mot():
+    from src.generation.parts import construire_resume_1_phrase
+    court = construire_resume_1_phrase(["Titre un", "Titre deux"])
+    assert court == "À la une : Titre un ; Titre deux."
+    long1 = ("Le Parti québécois promet un référendum sur l'indépendance si les électeurs lui donnent la majorité absolue "
+             "lors du scrutin général prévu à l'automne prochain dans toute la province")
+    t2 = "Le Nobel de médecine récompense trois chercheurs pour leurs travaux sur le cerveau et la lumière"
+    p = construire_resume_1_phrase([long1.strip(), t2])       # deux titres dépassent 220 caractères : on garde le premier seul
+    assert "Nobel" not in p and len(p) <= 221
+    énorme = "mot " * 80
+    p = construire_resume_1_phrase([énorme])
+    assert p.endswith("…") and len(p) <= 221 and not p[:-1].endswith("mo")

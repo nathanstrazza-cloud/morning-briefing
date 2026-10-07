@@ -98,3 +98,23 @@ def test_source_indisponible_retourne_none(monkeypatch):
     monkeypatch.setattr(c.requests, "get", lambda *a, **k: R())
     assert c._fetch_scoreboard("soccer", "x", datetime(2026, 10, 3, tzinfo=timezone.utc),
                                datetime(2026, 10, 17, tzinfo=timezone.utc)) is None
+
+
+def test_plage_refusee_une_fois_puis_directement_jour_par_jour(monkeypatch):
+    """06/10/2026 : après un 400 sur la plage, les compétitions suivantes ne retentent pas la plage."""
+    from datetime import datetime, timezone
+    from src.collecte import calendrier as cal
+    appels = []
+
+    def faux_get(sport, slug, dates, timeout):
+        appels.append((slug, dates))
+        return None if "-" in dates else {"events": [{"id": dates}]}
+
+    monkeypatch.setattr(cal, "_get", faux_get)
+    monkeypatch.setitem(cal._state, "plage_refusee", False)
+    d0 = datetime(2026, 10, 6, tzinfo=timezone.utc)
+    d1 = datetime(2026, 10, 8, tzinfo=timezone.utc)
+    r1 = cal._fetch_scoreboard("basketball", "nba", d0, d1)
+    r2 = cal._fetch_scoreboard("soccer", "fra.1", d0, d1)
+    assert len(r1["events"]) == 3 and len(r2["events"]) == 3
+    assert sum(1 for _, d in appels if "-" in d) == 1          # une seule tentative de plage dans tout le run

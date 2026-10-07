@@ -2,6 +2,8 @@
 # Décidé avec l'utilisateur le 30/09/2026. Modifier ce fichier suffit pour réassigner des rôles :
 # aucun changement de code nécessaire.
 #
+# 06/10/2026 : OpenRouter est en DERNIER secours partout (429 amont au 1er essai à chaque run du 06/10 : anglais et sport).
+#
 # Fonctionnement :
 #  - Un "appel" (wave) = un groupe d'étapes (stages) exécutées l'une après l'autre.
 #  - Dans une étape, chaque partie est envoyée en PARALLÈLE à son 1er fournisseur (le "principal").
@@ -19,12 +21,12 @@ waves:
     stages:
       - name: actualite
         parts:
-          actu_france: [groq, nvidia, openrouter, mistral]      # + citation du jour
-          actu_monde:  [mistral, openrouter, nvidia, groq]
+          actu_france: [groq, nvidia, mistral, openrouter]      # + citation du jour
+          actu_monde:  [mistral, nvidia, groq, openrouter]
       - name: marches_anglais
         parts:
-          marches: [nvidia, openrouter, mistral, groq]
-          anglais: [openrouter, nvidia, groq, mistral]
+          marches: [nvidia, groq, mistral, openrouter]
+          anglais: [nvidia, groq, mistral, openrouter]
 
   - name: appel_2
     stages:
@@ -32,4 +34,4 @@ waves:
         parts:                      # ordre = priorité dans la file d'un même fournisseur (science avant sport)
           science_a: [mistral, nvidia, groq, openrouter]        # 1re moitié de l'article
           science_b: [groq, nvidia, mistral, openrouter]        # 2e moitié (absente si science en mode "découverte")
-          sport:     [openrouter, nvidia, groq, mistral]        # NVIDIA reprend le sport seulement s'il n'a pas servi la science
+          sport:     [nvidia, groq, mistral, openrouter]        # NVIDIA est libre pendant la science (Mistral + Groq) ; OpenRouter = dernier secours

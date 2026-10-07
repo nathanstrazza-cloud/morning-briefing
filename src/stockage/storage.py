@@ -81,7 +81,7 @@ def day_briefing_exists(date_iso: str) -> bool:
 def save_briefing(
     briefing: dict, date_iso: str, last_update_iso: str,
     rss_diagnostics: list[dict] | None = None, market_diagnostics: list[dict] | None = None,
-    funnel_actualite: dict | None = None,
+    funnel_actualite: dict | None = None, run_start_iso: str | None = None,
 ) -> None:
     """Sauvegarde le briefing du jour + met à jour latest.json et index.json.
     N'écrase JAMAIS un fichier de date existant avec un contenu vide (sécurité supplémentaire)."""
@@ -92,6 +92,8 @@ def save_briefing(
         "derniere_mise_a_jour": last_update_iso,
         "briefing": briefing,
     }
+    if run_start_iso:
+        enveloppe["debut_run"] = run_start_iso     # borne de la fenêtre de collecte du run suivant
     if os.environ.get("TEST_MODE", "").strip().lower() in {"1", "true", "yes", "on"}:
         # Marqueur explicite : un briefing d'essai ne doit jamais être pris pour un vrai.
         enveloppe["test_mode"] = True
@@ -252,7 +254,9 @@ def get_last_successful_datetime() -> datetime | None:
         latest = _read_json(DATA_DIR / "latest.json")
         if not latest or "derniere_mise_a_jour" not in latest:
             return None
-        return datetime.fromisoformat(latest["derniere_mise_a_jour"])
+        # `debut_run` (06/10/2026) : la fenêtre du run suivant démarre au DÉBUT du précédent, pour ne perdre aucun
+        # article publié pendant ses ~6 minutes d'exécution ; anciens briefings : repli sur derniere_mise_a_jour.
+        return datetime.fromisoformat(latest.get("debut_run") or latest["derniere_mise_a_jour"])
     except Exception as exc:  # noqa: BLE001
         logger.warning("Impossible de lire la date du dernier briefing réussi: %s", exc)
         return None

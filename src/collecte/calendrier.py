@@ -132,12 +132,22 @@ def _get(sport: str, slug: str, dates: str, timeout: int) -> dict | None:
         return None
 
 
+# 06/10/2026 (point 8 de ANALYSE_RUN_2026-10-06.md) : l'API ESPN répond HTTP 400 à la requête « plage de dates »
+# (AAAAMMJJ-AAAAMMJJ) pour TOUTES les compétitions, à chaque run (7 erreurs + ~15 s perdues). Dès qu'une compétition
+# a prouvé que la plage est refusée, les suivantes vont directement au jour par jour. Si ESPN réactive un jour la
+# plage, il suffit de relancer le processus (le drapeau est propre à un run).
+_state = {"plage_refusee": False}
+
+
 def _fetch_scoreboard(sport: str, slug: str, debut: datetime, fin: datetime, timeout: int = 10) -> dict | None:
-    """1) une requête pour toute la plage (AAAAMMJJ-AAAAMMJJ) ; 2) si elle échoue, repli jour par jour
-    (une date unique est le format le plus répandu). Retourne {"events": [...]} ou None."""
-    data = _get(sport, slug, f"{debut:%Y%m%d}-{fin:%Y%m%d}", timeout)
-    if data is not None:
-        return data
+    """1) une requête pour toute la plage (sauf si déjà refusée dans ce run) ; 2) sinon jour par jour (une date
+    unique est le format le plus répandu). Retourne {"events": [...]} ou None."""
+    if not _state["plage_refusee"]:
+        data = _get(sport, slug, f"{debut:%Y%m%d}-{fin:%Y%m%d}", timeout)
+        if data is not None:
+            return data
+        _state["plage_refusee"] = True
+        logger.info("Calendrier: la plage de dates est refusée par ESPN -> requêtes jour par jour pour la suite du run")
     events, jour = [], debut
     echecs = 0
     plafond = MAX_EVENEMENTS_SCAN if sport == "soccer" else 10_000   # basket : on parcourt toute la fenêtre pour repérer les affiches

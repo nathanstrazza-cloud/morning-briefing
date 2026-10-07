@@ -142,3 +142,36 @@ avec `{"ref":"dev","inputs":{"ref":"dev","no_llm":"false"}}` (le jeton a le droi
 - Rien du volet sport n'a encore été vu en run réel : à contrôler au prochain run de 06h10 (flux sport non vérifiés : L'Équipe Athlétisme/Formule 1/Golf, ESPN Top Headlines, BBC Sport ; variété des sports ; titres anglais traduits ; mention « Rien d'intéressant »).
 - Retour arrière : `git revert -m 1 <commit de fusion>` sur `main`.
 - `dev` réaligné sur `main` après cette fusion.
+
+## Session du 06/10/2026 — correctifs par PARTIE (réf. ANALYSE_RUN_2026-10-06.md)
+
+### Partie A — SCIENCE (FAIT sur `dev`, sans LLM, non validé en réel)
+Problème : Nobel de médecine couvert par 4 articles FR/EN non regroupés -> « une seule source non primaire » -> mode approfondi sur UN résumé RSS -> LLM complète avec des noms techniques inventés (ArchT, ChR2, AAV), fuites « le résumé indique… », « : » orphelin, section Données vide.
+- `src/analyse/science_events.py` (NOUVEAU) : `fusionner_evenements_science` regroupe les articles qui partagent >= 3 racines RARES (5 premières lettres, sans accents : « neurones »/« neurons » -> « neuro »), FR comme EN. Garde `textes_sources` (titre+résumé de chaque source) et le résumé le plus long. Branché dans `main.py` juste après `dedup.deduplicate(sciences)`.
+- `briefing_generator.py` : `decouverte_qualifiee` additionne les résumés de toutes les sources fusionnées (seuil 200 car.) ; `_sujet` transmet au rédacteur `textes_sources` (4 max, 700 car. chacun) et `liens_sources`.
+- `science_guard.py` : (1) `remove_meta_leaks` retire les phrases sur « le résumé / l'extrait », les absolus non sourcés (« non invasif », « sans risque ») et les amorces vides (« Par exemple. ») ; (2) `remove_unsupported_terms` retire les phrases avec identifiants mixtes (ChR2, ArchT), sigles hors liste tolérée (AAV ; ADN/IRM/… tolérés) ou « Prénom Nom » absents de TOUTES les sources ; (3) `fix_orphan_colons` ; (4) `ensure_sections_not_empty` (Données vide -> phrase standard, autre section vide supprimée) ; (5) section Sources = un lien par source ; nombres autorisés = ceux de toutes les sources.
+- `parts.py` : prompts anti-invention durcis (plus de nom de protéine/sigle/méthode de mémoire, interdiction de parler du « résumé »).
+- Tests : `tests/test_science_events.py` (4), `tests/test_science_guard.py` (+7) ; 139 tests OK. Rejeu du garde-fou sur le vrai article du 06/10 : fuites, ChR2, ArchT, AAV retirés, « : » corrigé.
+- LIMITES : le code ne peut pas détecter une affirmation fausse écrite en mots courants (« la lumière est non invasive » n'est attrapée que par mots-clés) ni un terme technique en minuscules (« tyrosine hydroxylase »). Le mode « approfondi » reste fondé sur des résumés RSS : seule une liste de sujets pédagogiques avec sources (non implémentée) résoudrait le fond. Seuil de fusion (3 racines rares) à surveiller : trop bas = fusions abusives, trop haut = doublons (voir log « Fusion sciences »).
+- À VÉRIFIER au prochain Dev Test avec LLM : log « Fusion sciences », mode retenu (découverte/approfondi), « Garde-fou science : N phrase(s) retirée(s) », lisibilité de l'article.
+
+### Parties suivantes (ordre convenu) : B `consequences`, C sport (après le run du 07/10), D calendrier/OpenRouter/horodatage, E divers.
+
+### Partie B — CONSÉQUENCES (FAIT sur `dev`, sans LLM, non validé en réel)
+Problème : `consequences` recevait TOUJOURS le préfixe « Hypothèse : » (même une généralité sans lien avec la source, ex. Kharkiv « une escalade pourrait prolonger le conflit »).
+- `src/generation/actu_guard.py::guard_events` : même règle que `pourquoi_important` — conséquence conservée seulement si elle n'est pas creuse (`_est_creux`) et recoupe la source (`overlap_ratio >= PI_MIN_OVERLAP`) ; sinon `null` (log « [consequences non étayées] »). Tout ancien préfixe « Hypothèse : » est retiré des données.
+- `docs/app.js` : libellé « Conséquences possibles (hypothèse). » (le caractère d'hypothèse, cahier §14, est porté par l'interface) ; l'affichage retire aussi l'ancien préfixe des briefings déjà publiés.
+- Tests : `tests/test_actu_guard.py` (3 tests ajoutés/adaptés), 141 tests OK.
+- EFFET ATTENDU : `consequences` sera souvent `null` (voulu : « null sauf si les données en parlent »). `pourquoi_important` : toujours à arbitrer avec l'utilisateur (8/9 vides le 06/10).
+
+### Partie D — CALENDRIER / OPENROUTER / HORODATAGE (FAIT sur `dev`, non validé en réel)
+- **Calendrier ESPN** (`src/collecte/calendrier.py`) : la requête « plage de dates » renvoie HTTP 400 pour toutes les compétitions. Un drapeau `_state["plage_refusee"]` (propre au run) fait passer directement au jour par jour dès le 1er refus (1 seul 400 par run au lieu de 7). Test : `tests/test_calendrier.py`.
+- **OpenRouter** : déclassé en DERNIER secours dans toutes les chaînes de `config/llm_plan.yaml` (et dans les ordres par défaut de `llm_provider.py`), car 429 amont au 1er essai (anglais, sport) à chaque run. Nouveau plan : anglais/marchés sur NVIDIA (traités l'un après l'autre), sport sur NVIDIA en appel 2 (libre pendant la science Mistral+Groq), secours actu France/Monde : NVIDIA. Tests de secours adaptés + `TestOpenRouterDernierSecours`. Conséquence à surveiller : NVIDIA porte plus d'appels (marchés + anglais, puis sport) ; si NVIDIA sature, repasser un autre fournisseur en tête dans le YAML (aucun code à changer).
+- **Horodatage** : `derniere_mise_a_jour` = heure de PUBLICATION (fin du run, `paris_now()` à la sauvegarde) ; nouveau champ `debut_run` = début du run, lu par `get_last_successful_datetime` comme borne de la fenêtre de collecte suivante (repli sur `derniere_mise_a_jour` pour les anciens briefings). Le message de commit du workflow utilise `TZ=Europe/Paris` (il affichait l'UTC). Test : `tests/test_storage_config.py`.
+- 144 tests attendus OK (`python -m pytest -q tests`).
+
+### Partie E — DIVERS (FAIT sur `dev`, non validé en réel)
+- `parts.py::construire_resume_1_phrase` : « À la une : … » n'est plus coupé en plein mot (2 titres trop longs -> on garde le premier ; sinon coupe à la dernière espace + « … »).
+- `anglais_guard.py::MOTS_FACILES` : + documents, action, goalkeeper, team, season, player, game… (vocabulaire B2 type ineligible/governance/paperwork conservé).
+- Base de comparaison de l'or : NON-PROBLÈME. Indices = séance de lundi vs vendredi ; or (cotation quasi continue) = séance du mardi déjà ouverte vs lundi ; chaque série compare bien « dernière séance » à « séance précédente » (cf. `markets.py`, correctif du 02/10). Rien à changer.
+- Flux CNRS (XML invalide) et ESPN NBA (0 article) : décision reportée au résultat du Dev Test (le log des flux dira s'ils sont morts ou intermittents) ; ne pas les supprimer sans preuve.

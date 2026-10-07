@@ -40,6 +40,11 @@ MOTS_FACILES = {
     "billion", "percent", "week", "weekend", "monday", "tuesday", "wednesday", "thursday",
     "friday", "saturday", "sunday", "united states", "china", "russia", "europe", "israel",
     "ukraine", "trump", "biden",
+    # ajouts du 06/10/2026 (« documents », « action », « goalkeeper » retenus à tort le 06/10) : sport et mots courants
+    "document", "documents", "action", "actions", "goalkeeper", "player", "players", "team", "teams", "game",
+    "games", "match", "season", "coach", "fan", "fans", "show", "shows", "stadium", "tournament", "champion",
+    "story", "stories", "issue", "issues", "problem", "problems", "result", "results", "question", "questions",
+    "player", "student", "students", "school", "schools", "public", "member", "members", "nation", "national",
 }
 
 # Traductions imposées (clé en minuscules, forme telle qu'elle apparaît ou sa racine).

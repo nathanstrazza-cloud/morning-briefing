@@ -590,7 +590,11 @@ def decouverte_qualifiee(event: dict) -> tuple[bool, str]:
         return False, "aucun vocabulaire de recherche (étude, chercheurs…)"
     if _RE_POLITIQUE.search(f"{event.get('titre', '')}"):
         return False, "sujet de politique/société dans le titre"
-    if len(str(event.get("resume", "") or "")) < RESUME_MIN_DECOUVERTE:
+    # 06/10/2026 : pour un événement fusionné (plusieurs sources FR/EN), on compte la matière RÉELLEMENT disponible =
+    # somme des résumés distincts de toutes les sources, pas seulement celui d'un article.
+    resumes = {str(t.get("resume", "") or "").strip() for t in (event.get("textes_sources") or [])}
+    resumes.add(str(event.get("resume", "") or "").strip())
+    if sum(len(r) for r in resumes) < RESUME_MIN_DECOUVERTE:
         return False, f"résumé trop court (< {RESUME_MIN_DECOUVERTE} caractères)"
     noms = [str(x.get("nom", "")).lower() for x in event.get("sources", [])]
     primaire = any(_RE_PRIMAIRE.search(n) and "monde" not in n for n in noms)
@@ -607,6 +611,15 @@ def _sujet(top: dict, mode: str) -> dict:
             "resume": top.get("resume", ""),
             "url": top.get("url_principale", ""),
             "sources": [s["nom"] for s in top.get("sources", [])],
+            "liens_sources": [{"nom": s["nom"], "url": s.get("url", "")} for s in top.get("sources", [])][:6],
+            # 06/10/2026 : plusieurs sources d'un même événement (fusion FR/EN) = plusieurs résumés réels à donner au
+            # rédacteur (au lieu d'un seul), plafonnés pour rester dans le budget du prompt.
+            "textes_sources": [
+                {"source": t.get("source", ""), "titre": str(t.get("titre", ""))[:200],
+                 "resume": str(t.get("resume", ""))[:700]}
+                for t in (top.get("textes_sources") or [])[:4]
+                if t.get("resume") or t.get("titre")
+            ],
         },
     }
 

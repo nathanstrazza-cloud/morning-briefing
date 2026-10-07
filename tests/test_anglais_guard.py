@@ -35,3 +35,11 @@ def test_selection_prefere_le_vocabulaire_soutenu():
     ]
     assert select_nyt_article(items)["titre"] == TITRE
     assert score_apprentissage(TITRE, RESUME) > score_apprentissage("Man buys a car", "He went to the shop.")
+
+
+def test_mots_courants_du_06_10_exclus_mais_vocabulaire_b2_conserve():
+    from src.generation.anglais_guard import MOTS_FACILES
+    for mot in ("documents", "action", "goalkeeper", "team", "season"):
+        assert mot in MOTS_FACILES
+    for mot in ("ineligible", "governance", "paperwork", "crackdown"):
+        assert mot not in MOTS_FACILES

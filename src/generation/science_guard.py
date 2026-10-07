@@ -106,19 +106,153 @@ def remove_unsupported_numbers(text: str, allowed: set[str]) -> tuple[str, list[
 
 
 def build_sources_section(contenu_source: dict) -> str:
-    nom = ", ".join(contenu_source.get("sources") or []) or "source indiquée"
-    url = contenu_source.get("url") or ""
-    lignes = ["## Sources", f"- Article source : {contenu_source.get('titre', '')} ({nom})" + (f" — {url}" if url else "")]
-    lignes.append("- Les chiffres et affirmations de cet article se limitent à ceux de cette source ; "
-                  "les détails de l'étude sont à consulter sur le lien ci-dessus.")
+    liens = [l for l in (contenu_source.get("liens_sources") or []) if l.get("nom")]
+    lignes = ["## Sources"]
+    if liens:
+        for l in liens:
+            lignes.append(f"- {l['nom']}" + (f" — {l['url']}" if l.get("url") else ""))
+    else:
+        nom = ", ".join(contenu_source.get("sources") or []) or "source indiquée"
+        url = contenu_source.get("url") or ""
+        lignes.append(f"- Article source : {contenu_source.get('titre', '')} ({nom})" + (f" — {url}" if url else ""))
+    lignes.append("- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; "
+                  "les détails de l'étude sont à consulter sur les liens ci-dessus.")
     return "\n".join(lignes)
+
+
+# --- 06/10/2026 (ANALYSE_RUN_2026-10-06.md, point 1) -------------------------------------------------
+# Constat : l'article du Nobel contenait (a) des identifiants techniques absents de la source (ArchT, ChR2, AAV),
+# (b) des phrases qui parlent du « résumé » (fuite interne), (c) un « : » orphelin après suppression de puces,
+# (d) une section « Données » vide ou ne parlant que du résumé. Fonctions pures, sans réseau.
+_META_RE = re.compile(r"\b(le|ce|du|au|dans le|dans ce|ce que dit le) r[ée]sum[ée]\b|\br[ée]sum[ée] (disponible|fourni|indique|ne pr[ée]cise)|"
+                      r"\bnous ne disposons (pas|que)\b|\bsource fournie\b|\bl'extrait (fourni|disponible)\b", re.I)
+_ID_MIXTE = re.compile(r"\b(?=[A-Za-z0-9-]*\d)(?=[A-Za-z0-9-]*[A-Za-z])[A-Za-z][A-Za-z0-9-]{2,}\b|\b[a-z]{1,3}[A-Z][A-Za-z0-9]*\b|\b[A-Z][a-z]+[A-Z][A-Za-z0-9]*\b")
+_ACRONYME = re.compile(r"\b[A-Z]{3,6}\b")
+# Sigles de culture générale tolérés même absents de la source (manuel) ; tout autre sigle doit figurer dans la source.
+_SIGLES_TOLERES = {"ADN", "ARN", "ATP", "IRM", "EEG", "ECG", "GPS", "USA", "ONU", "OMS", "UE", "CNRS", "NASA", "ESA", "CERN",
+                   "LED", "LASER", "VIH", "SIDA", "COVID", "CO2", "NASA", "INSERM", "AVC", "TDAH", "PIB", "GIEC", "OTAN"}
+_NOM_MOT = re.compile(r"[A-ZÀ-ÖØ-Þ][a-zà-öø-ÿ'’-]{2,}")
+_FALLBACK_DONNEES = ("Les données chiffrées détaillées ne sont pas reprises ici : elles sont à consulter "
+                     "dans l'article source indiqué ci-dessous.")
+
+
+def _fold(txt: str) -> str:
+    import unicodedata
+    return unicodedata.normalize("NFKD", txt or "").encode("ascii", "ignore").decode("ascii").lower()
+
+
+def source_full_text(contenu_source: dict) -> str:
+    """Titre + résumé + tous les textes des sources fusionnées : l'ensemble de ce que le rédacteur a réellement reçu."""
+    parts = [contenu_source.get("titre", ""), contenu_source.get("resume", "")]
+    for t in contenu_source.get("textes_sources") or []:
+        parts += [t.get("titre", ""), t.get("resume", "")]
+    return " ".join(str(p) for p in parts if p)
+
+
+def _map_sentences(text: str, keep) -> tuple[str, list[str]]:
+    """Applique `keep(phrase) -> bool` à chaque phrase des lignes de texte (titres inchangés). Retourne (texte, retirées)."""
+    removed: list[str] = []
+    out: list[str] = []
+    for line in text.splitlines():
+        if not line.strip() or _HEADING_RE.match(line.strip()):
+            out.append(line)
+            continue
+        prefix = re.match(r"^\s*([-*•]|\d+[.)])?\s*", line).group(0)
+        body = line[len(prefix):]
+        kept = []
+        for sent in _SENT_SPLIT.split(body):
+            if keep(sent):
+                kept.append(sent)
+            else:
+                removed.append(sent.strip())
+        if kept:
+            out.append(prefix + " ".join(kept))
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(out)).strip(), removed
+
+
+_ABSOLU_RE = re.compile(r"\bnon[- ]invasi\w+|\bsans (aucun |le moindre )?(risque|effet secondaire|danger)s?\b|"
+                        r"\b(100 ?%|totalement|parfaitement) (sûr|sans danger|inoffensif)\b", re.I)
+_STUB_RE = re.compile(r"^\W*(par exemple|notamment|comme suit|en voici|voici)\W*$", re.I)
+
+
+def remove_meta_leaks(text: str) -> tuple[str, list[str]]:
+    """Retire les phrases qui parlent du « résumé » / de la source fournie (fuite de la mécanique interne), les
+    affirmations absolues non sourcées (« non invasif », « sans risque ») et les amorces vides (« Par exemple. »)."""
+    return _map_sentences(text, lambda sent: not (_META_RE.search(sent) or _ABSOLU_RE.search(sent) or _STUB_RE.match(sent.strip())))
+
+
+def unsupported_terms(sentence: str, source_text: str) -> list[str]:
+    """Identifiants techniques (ChR2, ArchT, Cas9…), sigles hors liste tolérée et « Prénom Nom » absents de la source."""
+    src = _fold(source_text)
+    src_tokens = set(re.findall(r"[a-z0-9]+", src))
+    bad: list[str] = []
+    for m in _ID_MIXTE.finditer(sentence):
+        mot = m.group()
+        if _fold(mot) not in src and _fold(mot).strip("-") not in src_tokens and mot.upper() not in _SIGLES_TOLERES:
+            bad.append(mot)
+    for m in _ACRONYME.finditer(sentence):
+        mot = m.group()
+        if mot not in _SIGLES_TOLERES and _fold(mot) not in src_tokens:
+            bad.append(mot)
+    mots = list(re.finditer(r"[A-ZÀ-ÖØ-Þ][a-zà-öø-ÿ'’-]{2,}(?![\w])|\S+", sentence))
+    for i in range(1, len(mots) - 1):          # le 1er mot de la phrase ne prouve rien (majuscule de début)
+        a, b = mots[i].group(), mots[i + 1].group()
+        if _NOM_MOT.fullmatch(a) and _NOM_MOT.fullmatch(b):
+            if not (_fold(a).strip("'’-") in src_tokens and _fold(b).strip("'’-") in src_tokens):
+                bad.append(f"{a} {b}")
+    return bad
+
+
+def remove_unsupported_terms(text: str, source_text: str) -> tuple[str, list[str]]:
+    return _map_sentences(text, lambda sent: not unsupported_terms(sent, source_text))
+
+
+def fix_orphan_colons(text: str) -> str:
+    """« …comme des « interrupteurs » : » suivi d'un paragraphe (puces retirées) -> le « : » devient « . »."""
+    lignes = text.splitlines()
+    for i, l in enumerate(lignes):
+        if l.rstrip().endswith(":") and not _HEADING_RE.match(l.strip()):
+            suivante = next((x for x in lignes[i + 1:] if x.strip()), "")
+            if not suivante or _HEADING_RE.match(suivante.strip()) or not re.match(r"^\s*([-*•]|\d+[.)])\s", suivante):
+                lignes[i] = l.rstrip()[:-1].rstrip() + "."
+    return "\n".join(lignes)
+
+
+def ensure_sections_not_empty(text: str) -> str:
+    """Section « Données » vidée -> phrase standard ; toute autre section vide -> supprimée (jamais un titre sans texte)."""
+    lignes = text.splitlines()
+    out: list[str] = []
+    i = 0
+    while i < len(lignes):
+        l = lignes[i]
+        m = _HEADING_RE.match(l.strip())
+        if m:
+            j = i + 1
+            corps = []
+            while j < len(lignes) and not _HEADING_RE.match(lignes[j].strip()):
+                corps.append(lignes[j])
+                j += 1
+            if not any(c.strip() for c in corps):
+                if re.search(r"donn[ée]es", m.group(2), re.I):
+                    out += [l, "", _FALLBACK_DONNEES, ""]
+                i = j
+                continue
+        out.append(l)
+        i += 1
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(out)).strip()
 
 
 def guard_science_article(contenu: str, contenu_source: dict) -> tuple[str, list[str]]:
     """Pipeline complet. `contenu` = moitiés A+B concaténées. Retourne (texte final, phrases retirées)."""
-    allowed = source_numbers(contenu_source.get("titre", ""), contenu_source.get("resume", ""))
+    full = source_full_text(contenu_source)
+    allowed = source_numbers(full)
     t = strip_markers(contenu)
     t = normalize_headings(t)
     t = remove_llm_sources(t)
-    t, removed = remove_unsupported_numbers(t, allowed)
+    t, r_meta = remove_meta_leaks(t)
+    t, r_num = remove_unsupported_numbers(t, allowed)
+    t, r_terms = remove_unsupported_terms(t, full)
+    t = fix_orphan_colons(t)
+    t = ensure_sections_not_empty(t)
+    removed = ([f"[fuite interne] {x}" for x in r_meta] + r_num + [f"[terme non sourcé] {x}" for x in r_terms])
     return (t + "\n\n" + build_sources_section(contenu_source)).strip(), removed

@@ -136,8 +136,19 @@ def guard_events(llm_events: list[dict], source_events: list[dict]) -> tuple[lis
         if pi and (_est_creux(pi) or overlap_ratio(pi, source_text) < PI_MIN_OVERLAP):
             all_removed.append(f"[pourquoi_important non étayé] {pi}")
             ev["pourquoi_important"] = None
-        if ev.get("consequences") and not re.match(r"\s*hypoth[èe]se", ev["consequences"], re.I):
-            ev["consequences"] = "Hypothèse : " + ev["consequences"][0].lower() + ev["consequences"][1:]
+        # Conséquences (06/10/2026, point 2 de ANALYSE_RUN_2026-10-06.md) : même règle que pourquoi_important. Le
+        # préfixe « Hypothèse : » apposé à TOUT texte (même une généralité « une escalade pourrait prolonger le
+        # conflit ») donnait une fausse impression d'analyse. Désormais : conséquence étayée par la source -> gardée ;
+        # sinon null. Le caractère d'hypothèse (cahier §14) est porté par l'interface (« Conséquences possibles
+        # (hypothèse) »), pas par un préfixe dans les données ; un éventuel ancien préfixe est retiré.
+        cq = ev.get("consequences")
+        if cq:
+            cq = re.sub(r"^\s*hypoth[èe]se\s*:\s*", "", cq, flags=re.I)
+            cq = cq[:1].upper() + cq[1:]
+            if _est_creux(cq) or overlap_ratio(cq, source_text) < PI_MIN_OVERLAP:
+                all_removed.append(f"[consequences non étayées] {cq}")
+                cq = None
+            ev["consequences"] = cq
         result.append(ev)
     return result, all_removed
 
