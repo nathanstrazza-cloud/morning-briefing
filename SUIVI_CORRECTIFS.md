@@ -175,3 +175,9 @@ Problème : `consequences` recevait TOUJOURS le préfixe « Hypothèse : » (mê
 - `anglais_guard.py::MOTS_FACILES` : + documents, action, goalkeeper, team, season, player, game… (vocabulaire B2 type ineligible/governance/paperwork conservé).
 - Base de comparaison de l'or : NON-PROBLÈME. Indices = séance de lundi vs vendredi ; or (cotation quasi continue) = séance du mardi déjà ouverte vs lundi ; chaque série compare bien « dernière séance » à « séance précédente » (cf. `markets.py`, correctif du 02/10). Rien à changer.
 - Flux CNRS (XML invalide) et ESPN NBA (0 article) : décision reportée au résultat du Dev Test (le log des flux dira s'ils sont morts ou intermittents) ; ne pas les supprimer sans preuve.
+
+### Fusion du 07/10/2026 (dev -> main) — parties A à E
+- Fusionné sur demande de l'utilisateur (« tous nos correctifs d'hier et d'aujourd'hui seront testés dans le run réel de demain matin ») : science (fusion FR/EN, garde-fou termes non sourcés), conséquences, calendrier ESPN par jour, OpenRouter en dernier secours, horodatage fin de run + `debut_run`, commit en heure de Paris, résumé 1 phrase, mots faciles anglais. 146 tests OK avant push.
+- DÉFAUTS CONNUS NON CORRIGÉS (voir `ANALYSE_DEV_TEST_2026-10-06.md`) : (3) résumé sans rapport avec le titre (cause non établie), (1) sport (titre anglais non traduit, anecdotes, élément perdu), (2) anglais (mots simples), « groq » masqué dans les logs ; CNRS/ESPN NBA à décider.
+- Au prochain run de 06h10 vérifier : `derniere_mise_a_jour` (fin de run) et `debut_run` dans latest.json ; message de commit en heure de Paris ; log « Fusion sciences » + mode science + « Garde-fou science » ; un seul HTTP 400 ESPN ; anglais/marchés/sport sur NVIDIA sans 429 OpenRouter ; cohérence titre/résumé de chaque actu.
+- Retour arrière : `git revert -m 1 <commit de fusion>` sur `main`.
