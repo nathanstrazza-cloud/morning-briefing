@@ -195,3 +195,10 @@ Voir ANALYSE_RUN_2026-10-08.md point 1. Changements :
 - Risque connu : le vocabulaire bilingue laisse passer des articles de revue obscurs ; surveiller le choix en mode découverte.
 - Reporté sur instruction de l'utilisateur : actualité (il donnera d'abord des instructions), anglais et météo (instructions à venir).
   Flux sport vides : pas un défaut en soi (période creuse).
+
+### Fusion du 10/10/2026
+Correctifs science (e67ce4b + a69bd43) fusionnés dans `main` par merge `--no-ff`, à la demande de l'utilisateur après un Dev Test jugé
+satisfaisant pour la science. 153 tests OK. Premier run réel : lundi 12/10/2026 à 06h10 (pas de run le week-end) : vérifier le mode
+science choisi, `matiere_source`, `textes_sources_audit` et les phrases « affirmation d'étude non sourcée » retirées.
+Retour arrière : `git revert -m 1 <commit de fusion>`. En attente d'instructions de l'utilisateur : actualité (avant de commencer),
+anglais, météo.
