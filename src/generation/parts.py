@@ -69,6 +69,8 @@ séparément par d'autres appels : ne les mentionne pas).
 6. Pour chaque actualité, réponds implicitement à Quoi / Où / Quand / Pourquoi c'est important ;
    pour les sujets complexes, ajoute les conséquences possibles (\"consequences\") ou null.
 7. N'écris AUCUNE citation : elle est ajoutée automatiquement par le programme.
+8. UN élément par événement fourni, dans le même ordre : le tri par importance a DÉJÀ été fait par le
+   programme (la règle 4 ne t'autorise pas à retirer ni à fusionner des événements fournis).
 
 SCHÉMA JSON ATTENDU :
 {{
@@ -85,6 +87,8 @@ internationales). La France, les marchés, le sport et la science sont généré
 
 7. \"pourquoi_important\" n'a AUCUNE obligation de lien avec la France : n'invente pas d'angle
    français ; si les données ne donnent pas l'enjeu, mets null.
+8. UN élément par événement fourni, dans le même ordre : le tri par importance a DÉJÀ été fait par le
+   programme (la règle 4 ne t'autorise pas à retirer ni à fusionner des événements fournis).
 
 SCHÉMA JSON ATTENDU :
 {{
@@ -388,7 +392,11 @@ def _garde_actu(events: list[dict], analysed: dict | None, cle: str) -> list[dic
     """Applique actu_guard aux événements rédigés (sans `analysed`, on ne touche à rien)."""
     if not analysed or not isinstance(events, list):
         return events
-    gardes, retirees = guard_events(events, analysed.get(cle) or [])
+    fournis = analysed.get(cle) or []
+    if len(events) < len(fournis):
+        logger.warning("Actualité (%s) : le LLM a rendu %d événement(s) sur %d fournis (consigne : un par événement)",
+                       cle, len(events), len(fournis))
+    gardes, retirees = guard_events(events, fournis)
     if retirees:
         logger.warning("Garde-fou actualité (%s) : %d phrase(s) retirée(s) : %s", cle, len(retirees),
                        " | ".join(x[:80] for x in retirees[:8]))

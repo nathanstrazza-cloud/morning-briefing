@@ -135,8 +135,11 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         # que de compter uniquement sur le rognage de secours dans briefing_generator.py.
         max_par_zone = config["seuils"].get("max_actualites_par_zone", 5)
         # Sélection diversifiée (05/10/2026) : au plus 2 événements par sujet/entité (ex. Brésil) dans chaque zone.
-        events_france = diversite.selectionner_diversifie(events_france, max_par_zone)
-        events_monde = diversite.selectionner_diversifie(events_monde, max_par_zone)
+        # Plafonds PAR ZONE (10/10/2026) : le Monde n'est plus limité à la valeur commune.
+        max_france = config["seuils"].get("max_actualites_france", max_par_zone)
+        max_monde = config["seuils"].get("max_actualites_monde", max_par_zone)
+        events_france = diversite.selectionner_diversifie(events_france, max_france)
+        events_monde = diversite.selectionner_diversifie(events_monde, max_monde)
 
         events_economie = dedup.deduplicate(raw["news"]["economie"])
         events_economie = scoring.score_events(events_economie)

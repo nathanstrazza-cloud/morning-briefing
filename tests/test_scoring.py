@@ -49,3 +49,36 @@ def test_tri_departage_par_sources_puis_fraicheur():
     out = score_events([vieux, recent, multi])
     assert [e["titre"] for e in out][0].startswith("Guerre en Ukraine")      # plus de sources
     assert out[1] is recent and out[2] is vieux                              # à égalité : le plus récent d'abord
+
+
+# --- 10/10/2026 : listes, pages explicatives, entretiens (ANALYSE_RUN_2026-10-08.md, point 2) ---------------
+def test_liste_de_candidats_nest_pas_un_evenement():
+    assert score_event(ev("Qui sont les candidats déclarés à l'élection présidentielle de 2027 ?")) < 5
+
+
+def test_entretien_culturel_avec_mot_guerre_penalise():
+    assert score_event(ev("De quoi la vague de films sur la Seconde Guerre mondiale est-elle le nom ?")) < 5
+
+
+def test_marqueur_entretien_dans_le_resume_suffit():
+    seul = score_event(ev("Gouvernement : le ministre fait le point sur le budget"))
+    avec = score_event(ev("Gouvernement : le ministre fait le point sur le budget", "Entretien exclusif avec le ministre"))
+    assert avec < seul
+
+
+def test_explicateur_repris_par_deux_medias_reste_visible():
+    t = "Quatre questions sur les soupçons de peste en Russie"
+    assert score_event(ev(t, n=1)) < 5
+    assert score_event(ev(t, n=2)) >= 5     # deux médias = vrai sujet derrière la page
+
+
+def test_fait_majeur_non_penalise():
+    assert score_event(ev("Guerre en Ukraine : au moins 28 morts dans une frappe russe sur Prylouky")) >= 9
+
+
+def test_residence_presidentielle_nest_pas_une_election():
+    assert score_event(ev("Trump veut faire d'un de ses golfs une résidence présidentielle officielle")) < 9
+
+
+def test_pluriel_culture_penalise():
+    assert score_event(ev("Les films et séries à voir ce week-end")) < 5

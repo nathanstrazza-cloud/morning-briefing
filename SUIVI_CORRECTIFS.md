@@ -202,3 +202,27 @@ satisfaisant pour la science. 153 tests OK. Premier run réel : lundi 12/10/2026
 science choisi, `matiere_source`, `textes_sources_audit` et les phrases « affirmation d'étude non sourcée » retirées.
 Retour arrière : `git revert -m 1 <commit de fusion>`. En attente d'instructions de l'utilisateur : actualité (avant de commencer),
 anglais, météo.
+
+## 10/10/2026 — Actualité, partie 1 : listes/entretiens pénalisés + plafond Monde levé (sur `dev`, NON fusionné, non validé en réel)
+Réf. ANALYSE_RUN_2026-10-08.md point 2. Demande de l'utilisateur : « pénaliser listes et entretiens, lever le plafond Monde ».
+**Diagnostic du « 3 Monde »** (log du 08/10) : le code retenait bien 5 événements Monde (« Sélection diversifiée : 5 retenu(s) sur 37 »)
+mais le briefing n'en affichait que 3 -> c'est le LLM (Mistral, `actu_monde`) qui en a écarté 2 : la règle commune n°4 du prompt
+(« ne remplis pas artificiellement ») l'y autorisait. Aucune coupe à 3 dans le code ni dans le frontend.
+**Changements**
+- `src/analyse/scoring.py` : (1) MALUS LISTE/EXPLICATEUR -5 (-3 si >= 2 sources) pour « Qui sont… », « N questions sur… », « Ce qu'il faut
+  savoir », « De quoi… est-il le nom », « la liste de… », palmarès… ; -2 de plus si le titre est une question (« …? ») ;
+  (2) ENTRETIEN : marqueurs forts (entretien, interview, propos recueillis, « se confie ») comptés aussi dans le RÉSUMÉ (1 suffit),
+  titre commençant par une citation = propos rapporté (-3) ; (3) pluriels de la culture (films, séries, livres…) ; (4) plafond de malus
+  -5 -> -6 (`MALUS_MAX`) ; (5) « résidence/garde présidentielle » ne compte plus comme élection ; (6) « peste », « choléra », « épidémique »
+  ajoutés aux thèmes majeurs (sinon l'explicateur « Quatre questions sur… peste en Russie » devenait invisible).
+  Cas réels : candidats 2027 = 3, films/Seconde Guerre = 3, « 4 questions sur la peste » = 7 si 2 médias / 4 si un seul, frappe russe = 9.
+- `config/config.yaml` : `max_actualites_france: 5`, `max_actualites_monde: 8` (repli sur `max_actualites_par_zone` si absentes) ; `src/main.py`
+  les lit séparément. Le vrai filtre reste le seuil de score (5) + la diversité (2 événements max par sujet).
+- `src/generation/parts.py` : règle 8 dans les prompts France et Monde (« UN élément par événement fourni, dans le même ordre ») ;
+  `_garde_actu` journalise « le LLM a rendu N événement(s) sur M fournis » si le LLM en retire.
+- Tests : `tests/test_scoring.py` (+7), `tests/test_plafond_monde.py` (4) ; 164 tests OK (`pip install -r requirements.txt pytest` puis `python -m pytest -q tests`).
+**À vérifier au prochain Dev Test (avec LLM)** : log « Entonnoir actualité » (Monde retenus <= 8), « Sélection diversifiée », absence de l'avertissement
+« le LLM a rendu… », disparition des listes/entretiens, présence des faits (peste, 7-Octobre, migrants, journalistes). Risque : 8 Monde = plus de
+place pour des items faibles si le seuil est trop bas -> si besoin, remonter `score_min_affichage` ou baisser `max_actualites_monde` (config seule).
+**Reste de l'actualité (instructions de l'utilisateur à venir)** : faire remonter les faits ; choix éditorial ; fusion qui garde le titre le plus long
+(`diversite._fusionner`, peut retenir un titre d'explicateur plutôt que celui du fait).
