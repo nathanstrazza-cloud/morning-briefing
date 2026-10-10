@@ -202,3 +202,48 @@ satisfaisant pour la science. 153 tests OK. Premier run réel : lundi 12/10/2026
 science choisi, `matiere_source`, `textes_sources_audit` et les phrases « affirmation d'étude non sourcée » retirées.
 Retour arrière : `git revert -m 1 <commit de fusion>`. En attente d'instructions de l'utilisateur : actualité (avant de commencer),
 anglais, météo.
+
+## 10/10/2026 — Actualité, partie 1 : listes/entretiens pénalisés + plafond Monde levé (sur `dev`, NON fusionné, non validé en réel)
+Réf. ANALYSE_RUN_2026-10-08.md point 2. Demande de l'utilisateur : « pénaliser listes et entretiens, lever le plafond Monde ».
+**Diagnostic du « 3 Monde »** (log du 08/10) : le code retenait bien 5 événements Monde (« Sélection diversifiée : 5 retenu(s) sur 37 »)
+mais le briefing n'en affichait que 3 -> c'est le LLM (Mistral, `actu_monde`) qui en a écarté 2 : la règle commune n°4 du prompt
+(« ne remplis pas artificiellement ») l'y autorisait. Aucune coupe à 3 dans le code ni dans le frontend.
+**Changements**
+- `src/analyse/scoring.py` : (1) MALUS LISTE/EXPLICATEUR -5 (-3 si >= 2 sources) pour « Qui sont… », « N questions sur… », « Ce qu'il faut
+  savoir », « De quoi… est-il le nom », « la liste de… », palmarès… ; -2 de plus si le titre est une question (« …? ») ;
+  (2) ENTRETIEN : marqueurs forts (entretien, interview, propos recueillis, « se confie ») comptés aussi dans le RÉSUMÉ (1 suffit),
+  titre commençant par une citation = propos rapporté (-3) ; (3) pluriels de la culture (films, séries, livres…) ; (4) plafond de malus
+  -5 -> -6 (`MALUS_MAX`) ; (5) « résidence/garde présidentielle » ne compte plus comme élection ; (6) « peste », « choléra », « épidémique »
+  ajoutés aux thèmes majeurs (sinon l'explicateur « Quatre questions sur… peste en Russie » devenait invisible).
+  Cas réels : candidats 2027 = 3, films/Seconde Guerre = 3, « 4 questions sur la peste » = 7 si 2 médias / 4 si un seul, frappe russe = 9.
+- `config/config.yaml` : `max_actualites_france: 5`, `max_actualites_monde: 8` (repli sur `max_actualites_par_zone` si absentes) ; `src/main.py`
+  les lit séparément. Le vrai filtre reste le seuil de score (5) + la diversité (2 événements max par sujet).
+- `src/generation/parts.py` : règle 8 dans les prompts France et Monde (« UN élément par événement fourni, dans le même ordre ») ;
+  `_garde_actu` journalise « le LLM a rendu N événement(s) sur M fournis » si le LLM en retire.
+- Tests : `tests/test_scoring.py` (+7), `tests/test_plafond_monde.py` (4) ; 164 tests OK (`pip install -r requirements.txt pytest` puis `python -m pytest -q tests`).
+**À vérifier au prochain Dev Test (avec LLM)** : log « Entonnoir actualité » (Monde retenus <= 8), « Sélection diversifiée », absence de l'avertissement
+« le LLM a rendu… », disparition des listes/entretiens, présence des faits (peste, 7-Octobre, migrants, journalistes). Risque : 8 Monde = plus de
+place pour des items faibles si le seuil est trop bas -> si besoin, remonter `score_min_affichage` ou baisser `max_actualites_monde` (config seule).
+**Reste de l'actualité (instructions de l'utilisateur à venir)** : faire remonter les faits ; choix éditorial ; fusion qui garde le titre le plus long
+(`diversite._fusionner`, peut retenir un titre d'explicateur plutôt que celui du fait).
+
+## 10/10/2026 — Météo : cohérence probabilité / mm / ciel (sur `dev`, NON fusionné, non validé en réel)
+Réf. ANALYSE_RUN_2026-10-08.md point 3 (« ciel dégagé » avec 88-93 % de pluie ; Antibes 10 mm alors que les périodes donnaient 0-0,1 mm). Demande : « corrige la météo », sans Dev Test.
+`src/collecte/weather.py` :
+- `rain_probability()` : probabilité d'une plage = MAXIMUM horaire seulement si la pluie est étayée (cumul >= 0,2 mm, `PLUIE_ETAYEE_MM`, ou code de précipitations effectif) ; sinon MÉDIANE (un pic isolé n'est plus affiché).
+- `window_rain()` : cumul et probabilité de la JOURNÉE sur la fenêtre affichée 6h-24h (`FENETRE_AFFICHEE`, mêmes heures que Matin/Après-midi/Soir) ; remplace `precipitation_sum` et `precipitation_probability_max` quotidiens (nuit déjà passée incluse). Repli sur les valeurs quotidiennes si pas d'horaire.
+- `build_alerts(daily, pluie_fenetre_mm)` : « Pluie abondante » (>= 20 mm) calculée sur ce même cumul.
+- Zone : inchangée (max des villes), mais chaque ville est maintenant cohérente.
+- Tests : `tests/test_weather.py` (+5) ; 169 tests OK. Aucun changement de frontend ni de format JSON.
+À vérifier au prochain run : probabilité faible quand le ciel est dégagé et 0 mm ; `precipitation_mm` des villes = somme des 3 périodes. Anglais : instructions de l'utilisateur toujours attendues.
+
+## 10/10/2026 — Anglais du jour refondu (sur `dev`, NON fusionné, non validé en réel)
+Demande de l'utilisateur : le texte NYT (titre + résumé RSS) était trop court, trop simple, avec des mots traduits transparents, et reprenait souvent une actualité déjà dans la section Actualité. Nouveau format voulu : texte d'une dizaine de lignes (actualité OU littérature célèbre) avec seulement la traduction des mots difficiles en ligne : « I like apples and I like mot_compliqué (= traduction) blabla ».
+**Réalisé** : passages littéraires du DOMAINE PUBLIC, sans LLM.
+- `config/anglais_textes.json` : 9 passages (Dickens ×2, Austen, Melville, Carroll, Conan Doyle, Brontë, Fitzgerald, Poe), 70-170 mots, 8-12 `mots` chacun (`en` exact dans le texte, `fr` = traduction contextuelle), mots NON transparents choisis à la main. Textes ET traductions écrits de mémoire (pas d'accès à Gutenberg depuis le sandbox) : **à relire contre Project Gutenberg**.
+- `src/generation/anglais_litteraire.py` : `passage_du_jour(date)` (tirage déterministe par date, comme `citations.py`), `build_segments()` -> JSON `anglais = {mode:"litterature", oeuvre, auteur, annee, segments:[{t,g}], texte_glose}`.
+- `src/main.py` : `nyt_article = None` (plus d'appel LLM « anglais » : économie de quota NVIDIA) et `briefing["anglais"] = passage_du_jour(...)` après la génération. `select_nyt_article`, `anglais_guard.py` et le prompt `SYSTEM_ANGLAIS` restent dans le code, INUTILISÉS (suppression possible plus tard).
+- `docs/app.js` / `docs/style.css` : rendu des segments (glose « (= …) » en couleur d'accent) ; les anciens briefings (format NYT) s'affichent toujours.
+- Tests : `tests/test_anglais_litteraire.py` (5, dont : chaque glose trouvée dans le texte, texte intact) ; 174 tests OK.
+**Non fait volontairement** : le mode « actualité ». Un flux RSS ne donne que 2 lignes, le texte complet d'un article (NYT, Le Monde…) est protégé, et un texte écrit par un LLM contredirait la règle « aucun fait inventé ». Piste si l'utilisateur y tient : Wikinews (licence CC BY, textes complets en anglais, API gratuite), à tester en réel ; il resterait le recoupement avec la section Actualité à éviter.
+**Pour agrandir la banque** : ajouter un objet dans `config/anglais_textes.json` (domaine public, mots difficiles) ; le test vérifie automatiquement la cohérence.

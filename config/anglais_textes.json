@@ -1,0 +1,437 @@
+{
+ "_note": "Passages littéraires du DOMAINE PUBLIC (auteurs morts depuis plus de 70 ans), écrits de mémoire : à relire contre Project Gutenberg. `mots` = glose en ligne « mot (= traduction) », mots NON transparents choisis à la main ; chaque `en` doit figurer tel quel dans `texte` (test).",
+ "passages": [
+  {
+   "oeuvre": "A Tale of Two Cities",
+   "auteur": "Charles Dickens",
+   "annee": 1859,
+   "texte": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.",
+   "mots": [
+    {
+     "en": "foolishness",
+     "fr": "la sottise"
+    },
+    {
+     "en": "direct",
+     "fr": "tout droit"
+    },
+    {
+     "en": "in short",
+     "fr": "bref"
+    },
+    {
+     "en": "so far like",
+     "fr": "si semblable à"
+    },
+    {
+     "en": "noisiest",
+     "fr": "les plus bruyants"
+    },
+    {
+     "en": "insisted on",
+     "fr": "exigeaient que"
+    },
+    {
+     "en": "received",
+     "fr": "accueillie, admise"
+    },
+    {
+     "en": "for good or for evil",
+     "fr": "pour le meilleur ou pour le pire"
+    }
+   ]
+  },
+  {
+   "oeuvre": "Pride and Prejudice",
+   "auteur": "Jane Austen",
+   "annee": 1813,
+   "texte": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife. However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered the rightful property of some one or other of their daughters. \"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last?\" Mr. Bennet replied that he had not. \"But it is,\" returned she; \"for Mrs. Long has just been here, and she told me all about it.\" Mr. Bennet made no answer.",
+   "mots": [
+    {
+     "en": "universally acknowledged",
+     "fr": "reconnue de tous"
+    },
+    {
+     "en": "in want of",
+     "fr": "qui a besoin de"
+    },
+    {
+     "en": "However little known",
+     "fr": "Si peu connus soient"
+    },
+    {
+     "en": "neighbourhood",
+     "fr": "le voisinage"
+    },
+    {
+     "en": "well fixed",
+     "fr": "solidement ancrée"
+    },
+    {
+     "en": "rightful property",
+     "fr": "propriété légitime"
+    },
+    {
+     "en": "let at last",
+     "fr": "enfin louée"
+    },
+    {
+     "en": "returned she",
+     "fr": "répliqua-t-elle"
+    },
+    {
+     "en": "made no answer",
+     "fr": "ne répondit rien"
+    }
+   ]
+  },
+  {
+   "oeuvre": "Moby-Dick",
+   "auteur": "Herman Melville",
+   "annee": 1851,
+   "texte": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation. Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off—then, I account it high time to get to sea as soon as I can.",
+   "mots": [
+    {
+     "en": "purse",
+     "fr": "la bourse, le porte-monnaie"
+    },
+    {
+     "en": "on shore",
+     "fr": "à terre"
+    },
+    {
+     "en": "spleen",
+     "fr": "la mauvaise humeur, le spleen"
+    },
+    {
+     "en": "grim",
+     "fr": "sombre, renfrogné"
+    },
+    {
+     "en": "drizzly",
+     "fr": "bruineux"
+    },
+    {
+     "en": "coffin warehouses",
+     "fr": "entrepôts de cercueils"
+    },
+    {
+     "en": "bringing up the rear",
+     "fr": "fermer la marche"
+    },
+    {
+     "en": "hypos",
+     "fr": "idées noires"
+    },
+    {
+     "en": "upper hand",
+     "fr": "le dessus"
+    },
+    {
+     "en": "knocking people's hats off",
+     "fr": "faire voler le chapeau des passants"
+    },
+    {
+     "en": "account it high time",
+     "fr": "juge qu'il est grand temps"
+    }
+   ]
+  },
+  {
+   "oeuvre": "Alice's Adventures in Wonderland",
+   "auteur": "Lewis Carroll",
+   "annee": 1865,
+   "texte": "Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, \"and what is the use of a book,\" thought Alice \"without pictures or conversations?\" So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid), whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her.",
+   "mots": [
+    {
+     "en": "bank",
+     "fr": "la berge"
+    },
+    {
+     "en": "peeped into",
+     "fr": "jeté un coup d'œil dans"
+    },
+    {
+     "en": "what is the use of",
+     "fr": "à quoi bon"
+    },
+    {
+     "en": "stupid",
+     "fr": "hébétée"
+    },
+    {
+     "en": "daisy-chain",
+     "fr": "collier de pâquerettes"
+    },
+    {
+     "en": "worth the trouble",
+     "fr": "valoir la peine"
+    },
+    {
+     "en": "picking",
+     "fr": "cueillir"
+    },
+    {
+     "en": "close by",
+     "fr": "tout près de"
+    }
+   ]
+  },
+  {
+   "oeuvre": "A Scandal in Bohemia",
+   "auteur": "Arthur Conan Doyle",
+   "annee": 1891,
+   "texte": "To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer.",
+   "mots": [
+    {
+     "en": "seldom",
+     "fr": "rarement"
+    },
+    {
+     "en": "eclipses",
+     "fr": "éclipse"
+    },
+    {
+     "en": "predominates",
+     "fr": "domine"
+    },
+    {
+     "en": "akin to",
+     "fr": "apparenté à"
+    },
+    {
+     "en": "abhorrent",
+     "fr": "odieuses"
+    },
+    {
+     "en": "I take it",
+     "fr": "je suppose"
+    },
+    {
+     "en": "false position",
+     "fr": "position déplacée"
+    },
+    {
+     "en": "save with",
+     "fr": "sauf avec"
+    },
+    {
+     "en": "gibe",
+     "fr": "la raillerie"
+    },
+    {
+     "en": "sneer",
+     "fr": "le ricanement"
+    }
+   ]
+  },
+  {
+   "oeuvre": "Jane Eyre",
+   "auteur": "Charlotte Brontë",
+   "annee": 1847,
+   "texte": "There was no possibility of taking a walk that day. We had been wandering, indeed, in the leafless shrubbery an hour in the morning; but since dinner (Mrs. Reed, when there was no company, dined early) the cold winter wind had brought with it clouds so sombre, and a rain so penetrating, that further out-door exercise was now out of the question. I was glad of it: I never liked long walks, especially on chilly afternoons: dreadful to me was the coming home in the raw twilight, with nipped fingers and toes, and a heart saddened by the chidings of Bessie, the nurse, and humbled by the consciousness of my physical inferiority to Eliza, John, and Georgiana Reed.",
+   "mots": [
+    {
+     "en": "wandering",
+     "fr": "errer"
+    },
+    {
+     "en": "leafless",
+     "fr": "dépouillé de ses feuilles"
+    },
+    {
+     "en": "shrubbery",
+     "fr": "bosquet d'arbustes"
+    },
+    {
+     "en": "out of the question",
+     "fr": "hors de question"
+    },
+    {
+     "en": "chilly",
+     "fr": "frisquets"
+    },
+    {
+     "en": "dreadful",
+     "fr": "pénible, affreux"
+    },
+    {
+     "en": "raw",
+     "fr": "humide et glacial"
+    },
+    {
+     "en": "twilight",
+     "fr": "le crépuscule"
+    },
+    {
+     "en": "nipped",
+     "fr": "gelés"
+    },
+    {
+     "en": "chidings",
+     "fr": "les réprimandes"
+    },
+    {
+     "en": "humbled",
+     "fr": "humiliée"
+    }
+   ]
+  },
+  {
+   "oeuvre": "The Great Gatsby",
+   "auteur": "F. Scott Fitzgerald",
+   "annee": 1925,
+   "texte": "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. \"Whenever you feel like criticizing anyone,\" he told me, \"just remember that all the people in this world haven't had the advantages that you've had.\" He didn't say any more, but we've always been unusually communicative in a reserved way, and I understood that he meant a great deal more than that. In consequence, I'm inclined to reserve all judgments, a habit that has opened up many curious natures to me and also made me the victim of not a few veteran bores.",
+   "mots": [
+    {
+     "en": "turning over in my mind",
+     "fr": "ruminer"
+    },
+    {
+     "en": "Whenever",
+     "fr": "chaque fois que"
+    },
+    {
+     "en": "advantages",
+     "fr": "privilèges"
+    },
+    {
+     "en": "a great deal more",
+     "fr": "bien davantage"
+    },
+    {
+     "en": "In consequence",
+     "fr": "par conséquent"
+    },
+    {
+     "en": "inclined",
+     "fr": "enclin"
+    },
+    {
+     "en": "reserve all judgments",
+     "fr": "suspendre tout jugement"
+    },
+    {
+     "en": "not a few",
+     "fr": "pas mal de"
+    },
+    {
+     "en": "veteran bores",
+     "fr": "vieux raseurs"
+    }
+   ]
+  },
+  {
+   "oeuvre": "The Fall of the House of Usher",
+   "auteur": "Edgar Allan Poe",
+   "annee": 1839,
+   "texte": "During the whole of a dull, dark, and soundless day in the autumn of the year, when the clouds hung oppressively low in the heavens, I had been passing alone, on horseback, through a singularly dreary tract of country; and at length found myself, as the shades of the evening drew on, within view of the melancholy House of Usher. I know not how it was—but, with the first glimpse of the building, a sense of insufferable gloom pervaded my spirit.",
+   "mots": [
+    {
+     "en": "dull",
+     "fr": "terne"
+    },
+    {
+     "en": "soundless",
+     "fr": "sans un bruit"
+    },
+    {
+     "en": "oppressively",
+     "fr": "de façon oppressante"
+    },
+    {
+     "en": "on horseback",
+     "fr": "à cheval"
+    },
+    {
+     "en": "singularly",
+     "fr": "singulièrement"
+    },
+    {
+     "en": "dreary",
+     "fr": "désolée"
+    },
+    {
+     "en": "tract",
+     "fr": "l'étendue"
+    },
+    {
+     "en": "at length",
+     "fr": "enfin"
+    },
+    {
+     "en": "the shades of the evening drew on",
+     "fr": "le crépuscule approchait"
+    },
+    {
+     "en": "glimpse",
+     "fr": "l'aperçu"
+    },
+    {
+     "en": "gloom",
+     "fr": "la tristesse sombre"
+    },
+    {
+     "en": "pervaded",
+     "fr": "envahissait"
+    }
+   ]
+  },
+  {
+   "oeuvre": "A Christmas Carol",
+   "auteur": "Charles Dickens",
+   "annee": 1843,
+   "texte": "Marley was dead: to begin with. There is no doubt whatever about that. The register of his burial was signed by the clergyman, the clerk, the undertaker, and the chief mourner. Scrooge signed it: and Scrooge's name was good upon 'Change, for anything he chose to put his hand to. Old Marley was as dead as a door-nail. Mind! I don't mean to say that I know, of my own knowledge, what there is particularly dead about a door-nail. I might have been inclined, myself, to regard a coffin-nail as the deadest piece of ironmongery in the trade. But the wisdom of our ancestors is in the simile; and my unhallowed hands shall not disturb it, or the Country's done for.",
+   "mots": [
+    {
+     "en": "to begin with",
+     "fr": "pour commencer"
+    },
+    {
+     "en": "burial",
+     "fr": "l'enterrement"
+    },
+    {
+     "en": "clergyman",
+     "fr": "le pasteur"
+    },
+    {
+     "en": "undertaker",
+     "fr": "le croque-mort"
+    },
+    {
+     "en": "chief mourner",
+     "fr": "le principal parent en deuil"
+    },
+    {
+     "en": "'Change",
+     "fr": "la Bourse"
+    },
+    {
+     "en": "put his hand to",
+     "fr": "apposer sa signature à"
+    },
+    {
+     "en": "as dead as a door-nail",
+     "fr": "bel et bien mort"
+    },
+    {
+     "en": "ironmongery",
+     "fr": "la quincaillerie"
+    },
+    {
+     "en": "simile",
+     "fr": "la comparaison"
+    },
+    {
+     "en": "unhallowed",
+     "fr": "profanes"
+    },
+    {
+     "en": "done for",
+     "fr": "fichu"
+    }
+   ]
+  }
+ ]
+}

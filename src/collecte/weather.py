@@ -10,10 +10,20 @@ Correctifs du 03/10/2026 (point 8 de ANALYSE_RUN_2026-10-01.md) :
 - un code « pluie/bruine » avec un cumul horaire quasi nul est ramené à « couvert » ;
 - alertes déterministes (rafales, cumul de pluie, orage, chaleur, gel), jamais inventées.
 Toute la logique de calcul est dans des fonctions pures testables sans réseau.
+
+Correctifs du 10/10/2026 (point 3 de ANALYSE_RUN_2026-10-08.md) : « ciel dégagé » s'affichait avec 88-93 % de pluie
+(maximum des probabilités horaires = un pic isolé) et Antibes affichait 10 mm (pluie tombée la NUIT, avant 6h) alors
+que les périodes affichées donnaient 0-0,1 mm. Maintenant :
+- la probabilité d'une période n'est le MAXIMUM horaire que si la pluie est étayée (cumul >= 0,2 mm ou code de
+  précipitations effectif sur la période) ; sinon c'est la MÉDIANE des probabilités horaires ;
+- la probabilité et le cumul de la JOURNÉE sont calculés sur la fenêtre affichée (6h-24h, mêmes heures que les
+  périodes) avec la même règle : plus de somme/maximum quotidien incluant la nuit déjà passée ;
+- l'alerte « pluie abondante » porte sur ce même cumul.
 """
 from __future__ import annotations
 
 import logging
+import statistics
 from collections import Counter
 
 import requests
@@ -45,6 +55,10 @@ THUNDER_CODES = {95, 96, 99}
 MIN_HOURLY_PRECIP_MM = 0.2
 # Cumul d'une période (mm) à partir duquel on retient le pire code de précipitations plutôt que le plus fréquent.
 PERIOD_PRECIP_MM = 1.0
+
+# Cumul (mm) à partir duquel une pluie est « étayée » pour afficher la probabilité maximale (sinon : médiane).
+PLUIE_ETAYEE_MM = 0.2
+FENETRE_AFFICHEE = (6, 24)   # heures couvertes par les périodes Matin / Après-midi / Soir
 
 PERIODES = [("Matin", 6, 12), ("Après-midi", 12, 18), ("Soir", 18, 24)]
 
@@ -92,6 +106,17 @@ def dominant_code(codes: list[int], precip_total_mm: float) -> int | None:
     return Counter(codes).most_common(1)[0][0]
 
 
+def rain_probability(probs: list[float], codes_eff: list, precip_total_mm: float) -> int | None:
+    """Probabilité de pluie à AFFICHER pour une plage horaire, cohérente avec les mm et le ciel.
+    Pluie étayée (cumul >= PLUIE_ETAYEE_MM ou code de précipitations effectif) -> maximum horaire ;
+    sinon -> médiane (un pic isolé de probabilité sans eau prévue ne doit pas apparaître comme « 93 % »)."""
+    probs = [p for p in probs if _num(p) is not None]
+    if not probs:
+        return None
+    etayee = precip_total_mm >= PLUIE_ETAYEE_MM or any(c in SEVERITY for c in codes_eff if c is not None)
+    return round(max(probs)) if etayee else round(statistics.median(probs))
+
+
 def build_periods(hourly: dict) -> list[dict]:
     """Découpe les prévisions horaires en matin / après-midi / soir. Liste vide si pas de données."""
     times = hourly.get("time") or []
@@ -117,7 +142,7 @@ def build_periods(hourly: dict) -> list[dict]:
             "label": label,
             "temperature_min": round(min(t), 1) if t else None,
             "temperature_max": round(max(t), 1) if t else None,
-            "probabilite_pluie_pct": round(max(p)) if p else None,
+            "probabilite_pluie_pct": rain_probability(p, eff, sum(pr)),
             "precipitation_mm": round(sum(pr), 1) if pr else None,
             "vent_max_kmh": round(max(w)) if w else None,
             "weather_code": code,
@@ -126,8 +151,24 @@ def build_periods(hourly: dict) -> list[dict]:
     return out
 
 
-def build_alerts(daily: dict) -> list[str]:
-    """Alertes déterministes à partir des valeurs mesurées/prévues du jour."""
+def window_rain(hourly: dict) -> tuple[float | None, int | None]:
+    """(cumul mm, probabilité à afficher) sur la fenêtre affichée 6h-24h. (None, None) sans horaire exploitable."""
+    h0, h1 = FENETRE_AFFICHEE
+    times = hourly.get("time") or []
+    precs, probs, codes = (hourly.get(k) or [] for k in ("precipitation", "precipitation_probability", "weather_code"))
+    idx = [i for i, t in enumerate(times) if (h := _hour(t)) is not None and h0 <= h < h1]
+    pr = [precs[i] for i in idx if i < len(precs) and _num(precs[i]) is not None]
+    if not pr:
+        return None, None
+    pb = [probs[i] for i in idx if i < len(probs)]
+    eff = [effective_code(codes[i], precs[i] if i < len(precs) else None) for i in idx if i < len(codes)]
+    total = sum(pr)
+    return round(total, 1), rain_probability(pb, eff, total)
+
+
+def build_alerts(daily: dict, pluie_fenetre_mm: float | None = None) -> list[str]:
+    """Alertes déterministes à partir des valeurs mesurées/prévues du jour.
+    `pluie_fenetre_mm` : cumul sur la fenêtre affichée (6h-24h) ; à défaut, somme quotidienne (nuit incluse)."""
     alertes = []
 
     def first(key):
@@ -137,6 +178,8 @@ def build_alerts(daily: dict) -> list[str]:
         first("temperature_2m_max"), first("temperature_2m_min")
     if rafales is not None and rafales >= SEUIL_RAFALES_KMH:
         alertes.append(f"Rafales jusqu'à {round(rafales)} km/h")
+    if pluie_fenetre_mm is not None:
+        pluie = pluie_fenetre_mm
     if pluie is not None and pluie >= SEUIL_PLUIE_JOUR_MM:
         alertes.append(f"Pluie abondante ({round(pluie)} mm sur la journée)")
     if tmax is not None and tmax >= SEUIL_CHALEUR_C:
@@ -170,20 +213,21 @@ def parse_city(name: str, data: dict) -> dict:
     if code_jour is None:  # pas d'horaire : repli sur le code quotidien (pire cas de la journée)
         code_jour = effective_code(d0("weather_code"), d0("precipitation_sum"))
 
+    mm_fenetre, prob_fenetre = window_rain(hourly)
     return {
         "ville": name,
         "temperature_actuelle": current.get("temperature_2m"),
         "temperature_max": d0("temperature_2m_max"),
         "temperature_min": d0("temperature_2m_min"),
-        "precipitation_mm": d0("precipitation_sum"),
-        "probabilite_pluie_pct": d0("precipitation_probability_max"),
+        "precipitation_mm": mm_fenetre if mm_fenetre is not None else d0("precipitation_sum"),
+        "probabilite_pluie_pct": prob_fenetre if prob_fenetre is not None else d0("precipitation_probability_max"),
         "vent_kmh": current.get("wind_speed_10m"),
         "vent_max_kmh": d0("wind_speed_10m_max"),
         "rafales_max_kmh": d0("wind_gusts_10m_max"),
         "weather_code": code_jour,
         "description": describe(code_jour) if code_jour is not None else "conditions variables",
         "periodes": periodes,
-        "alertes": build_alerts(daily),
+        "alertes": build_alerts(daily, mm_fenetre),
     }
 
 

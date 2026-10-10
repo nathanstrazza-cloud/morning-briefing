@@ -10,7 +10,12 @@ seuils:
   # suffisent largement -- cf. cahier §1 "mieux vaut 5 informations réellement importantes
   # que 20 secondaires". Réduit aussi mécaniquement la taille du prompt envoyé au LLM
   # (cf. src/generation/briefing_generator.py, garde-fou anti-413).
-  max_actualites_par_zone: 5
+  max_actualites_par_zone: 5   # valeur par défaut, utilisée si la clé propre à la zone est absente
+  # NB (2026-10-10, demande de l'utilisateur) : plafond Monde levé (8). Le Monde a plus de matière que la France
+  # (zones.py y reclasse ~20 items par jour) ; le vrai filtre reste le seuil de score (score_min_affichage) et la
+  # diversité (2 événements max par sujet). France inchangée.
+  max_actualites_france: 5
+  max_actualites_monde: 8
   # NB (2026-09-24, demande explicite de l'utilisateur) : 3 ou 4 infos sport suffisent au
   # total (toutes catégories confondues), au lieu de jusqu'à 20 (5 par catégorie x 4
   # catégories). cf. src/main.py, réduction globale après le plafond par catégorie.

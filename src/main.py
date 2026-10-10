@@ -14,13 +14,13 @@ from __future__ import annotations
 import argparse
 import sys
 import traceback
-from datetime import datetime
+from datetime import date, datetime
 
 import pytz
 
 from .analyse import dedup, diversite, science_events, scoring, sport_scoring, verification, zones
 from .collecte import calendrier, collector, markets as markets_collect, weather as weather_collect
-from .generation import briefing_generator, llm_provider
+from .generation import anglais_litteraire, briefing_generator, llm_provider
 from .stockage import storage
 from .utils import compute_window, is_test_mode, load_config, paris_now, setup_logging
 
@@ -135,8 +135,11 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         # que de compter uniquement sur le rognage de secours dans briefing_generator.py.
         max_par_zone = config["seuils"].get("max_actualites_par_zone", 5)
         # Sélection diversifiée (05/10/2026) : au plus 2 événements par sujet/entité (ex. Brésil) dans chaque zone.
-        events_france = diversite.selectionner_diversifie(events_france, max_par_zone)
-        events_monde = diversite.selectionner_diversifie(events_monde, max_par_zone)
+        # Plafonds PAR ZONE (10/10/2026) : le Monde n'est plus limité à la valeur commune.
+        max_france = config["seuils"].get("max_actualites_france", max_par_zone)
+        max_monde = config["seuils"].get("max_actualites_monde", max_par_zone)
+        events_france = diversite.selectionner_diversifie(events_france, max_france)
+        events_monde = diversite.selectionner_diversifie(events_monde, max_monde)
 
         events_economie = dedup.deduplicate(raw["news"]["economie"])
         events_economie = scoring.score_events(events_economie)
@@ -187,7 +190,10 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         # briefing_generator.SYSTEM_PROMPT_ANGLAIS (interdiction d'inventer/compléter au-delà
         # de ce texte, respect du droit d'auteur -- seul un court résumé RSS déjà publiquement
         # syndiqué par le NYT lui-même est repris, jamais le texte intégral).
-        nyt_article = briefing_generator.select_nyt_article(raw["news"]["monde"])
+        # 10/10/2026 : l'Anglais du jour n'utilise PLUS le NYT (texte trop court/simple, doublon avec l'Actualité) :
+        # passage littéraire du domaine public + traductions en ligne, tiré dans config/anglais_textes.json, sans LLM
+        # (cf. generation/anglais_litteraire.py). `nyt_article=None` => aucune partie LLM « anglais ».
+        nyt_article = None
 
         analysed = {
             "actualite_france": events_france,
@@ -205,6 +211,12 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         briefing = briefing_generator.generate(
             pool, analysed, science_topic, nyt_article, weather_summary, is_monday,
         )
+
+        try:
+            briefing["anglais"] = anglais_litteraire.passage_du_jour(date.fromisoformat(date_iso))
+        except Exception as exc:  # noqa: BLE001
+            logger.warning("Anglais du jour ignoré (%s) : section absente.", exc)
+            briefing["anglais"] = None
 
         # Sport : si rien de notable n'est retenu, le dire et indiquer les prochaines affiches (calendrier
         # ESPN ; 03/10/2026, rendu neutre le 05/10). Déterministe, aucun LLM ; échec réseau = pas de match.
