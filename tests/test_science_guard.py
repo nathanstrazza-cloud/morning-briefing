@@ -107,3 +107,27 @@ def test_pipeline_complet_sur_texte_type_du_06_10():
     assert "Le principe." in out or "Le principe" in out
     assert "## Sources\n- Nature — https://n.org/a\n- Le Monde" in out
     assert len(rem) == 3
+
+
+# --- 08/10/2026 : affirmations d'étude non sourcées -----------------------------------------------------------------
+from src.generation.science_guard import remove_unsourced_study_claims
+
+
+def test_affirmation_securite_absente_de_la_source_retiree():
+    src = "Un traitement optogénétique redonne une vision partielle à des patients aveugles."
+    txt = "Le traitement redonne une vision partielle. Aucun effet indésirable grave n'a été observé. Les améliorations sont maintenues pendant plusieurs mois."
+    out, retirees = remove_unsourced_study_claims(txt, src)
+    assert "effet indésirable" not in out and "plusieurs mois" not in out and "vision partielle" in out
+    assert len(retirees) == 2
+
+
+def test_phrase_prudente_conservee():
+    src = "Un traitement redonne une vision partielle."
+    out, retirees = remove_unsourced_study_claims("La sécurité à long terme reste à démontrer.", src)
+    assert retirees == [] and "reste à démontrer" in out
+
+
+def test_theme_present_dans_la_source_non_touche():
+    src = "L'essai clinique a suivi des patients et signale peu d'effets indésirables."
+    out, retirees = remove_unsourced_study_claims("Peu d'effets indésirables ont été signalés chez les patients.", src)
+    assert retirees == []

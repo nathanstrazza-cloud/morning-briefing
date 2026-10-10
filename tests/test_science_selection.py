@@ -56,3 +56,33 @@ def test_approfondi_prefere_un_candidat_de_recherche_non_politique():
 
 def test_aucun_candidat():
     assert select_science_topic([])["contenu_source"]["sources"] == []
+
+
+# --- 08/10/2026 : vocabulaire bilingue, Nobel, matière fine, choix du meilleur candidat ---------------------------
+from src.generation.briefing_generator import matiere_fine
+
+
+def test_article_nature_anglais_qualifie_apres_correctif():
+    e = ev("Ancient microbes reveal how enzymes evolved",
+           "Researchers sequenced the genome of a fossil microbe and show how a key enzyme changed over two billion years, "
+           "according to a study published this week.", sources=("Nature News",))
+    assert decouverte_qualifiee(e) == (True, "")
+
+
+def test_nobel_resume_court_accepte():
+    e = ev("Le prix Nobel de chimie 2026 décerné à Henri Kagan et Kenso Soai", "Le prix a été attribué pour des travaux sur la chiralité des molécules organiques.", sources=("Le Monde Sciences",))
+    assert decouverte_qualifiee(e) == (True, "")
+
+
+def test_nobel_prefere_a_un_article_ordinaire():
+    ordinaire = ev("Des chercheurs découvrent un fossile inédit", "Une étude décrit un fossile exceptionnel " * 8, sources=("Nature News",))
+    nobel = ev("Nobel de physique 2026 : trois chercheurs récompensés", "Les chercheurs récompensés pour leurs travaux sur les particules.",
+               sources=("Le Monde Sciences",))
+    assert select_science_topic([ordinaire, nobel])["contenu_source"]["titre"].startswith("Nobel")
+
+
+def test_matiere_fine_detectee_et_marquee():
+    e = ev("Des chercheurs redonnent la vue", "Une étude montre un traitement. " * 3)
+    sujet = select_science_topic([e])
+    assert sujet["mode"] == "approfondi" and sujet["contenu_source"]["matiere"] == "fine"
+    assert matiere_fine({"resume": "x" * 900}) is False
