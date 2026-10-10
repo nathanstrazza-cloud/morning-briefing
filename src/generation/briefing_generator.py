@@ -575,12 +575,20 @@ _RE_PRIMAIRE = re.compile(r"(?<![\w])(?:" + "|".join(SOURCES_PRIMAIRES_SCIENCE) 
 _RE_RECHERCHE = re.compile(
     r"\b(étude|études|chercheurs?|chercheuses?|scientifiques?|découverte|découvert|publi[ée]e? dans|revue|essai clinique|"
     r"expérience|télescope|satellite|sonde|mission spatiale|exoplanète|génome|protéine|neurones?|cellules?|fossile|"
-    r"laboratoire|simulation|modélisation|molécule|particule|espèce|mutation|algorithme|modèle d'ia|supraconduct\w+)\b",
+    r"laboratoire|simulation|modélisation|molécule|particule|espèce|mutation|algorithme|modèle d'ia|supraconduct\w+|"
+    # 08/10/2026 : vocabulaire ANGLAIS (les ~50 articles de Nature News étaient tous refusés faute de mots français)
+    r"nobel|study|studies|researchers?|scientists?|discovery|discovered|clinical trial|trial|experiment|telescope|"
+    r"satellite|probe|exoplanet|genome|genes?|proteins?|neurons?|cells?|fossils?|laborator(?:y|ies)|simulation|"
+    r"molecules?|particles?|species|mutation|algorithm|superconduct\w+|physicists?|astronomers?|chemists?|"
+    r"biologists?|neuroscientists?|therapy|vaccine|quantum|spacecraft|asteroid|galax\w+|microbes?|enzymes?)\b",
     re.I)
 _RE_POLITIQUE = re.compile(
     r"\b(gouvernement|ministre|président|présidentielle|élection|élections|budget|parlement|sénat|assemblée|"
     r"loi|trump|macron|polémique|grève|manifestation|procès|tribunal|politique de santé|arrêter de vacciner)\b", re.I)
 RESUME_MIN_DECOUVERTE = 200
+RESUME_MIN_PRIMAIRE = 100
+RESUME_MIN_NOBEL = 60
+MATIERE_FINE_CARACTERES = 500
 
 
 def decouverte_qualifiee(event: dict) -> tuple[bool, str]:
@@ -594,16 +602,34 @@ def decouverte_qualifiee(event: dict) -> tuple[bool, str]:
     # somme des résumés distincts de toutes les sources, pas seulement celui d'un article.
     resumes = {str(t.get("resume", "") or "").strip() for t in (event.get("textes_sources") or [])}
     resumes.add(str(event.get("resume", "") or "").strip())
-    if sum(len(r) for r in resumes) < RESUME_MIN_DECOUVERTE:
-        return False, f"résumé trop court (< {RESUME_MIN_DECOUVERTE} caractères)"
     noms = [str(x.get("nom", "")).lower() for x in event.get("sources", [])]
     primaire = any(_RE_PRIMAIRE.search(n) and "monde" not in n for n in noms)
-    if event.get("nb_sources", 1) < 2 and not primaire:
+    # 08/10/2026 : un prix Nobel est un événement majeur même avec un résumé court (le Nobel de chimie 2026 avait
+    # été refusé pour « résumé trop court ») ; une source primaire tolère un résumé plus court.
+    nobel = bool(re.search(r"\bnobel\b", texte, re.I))
+    minimum = RESUME_MIN_NOBEL if nobel else (RESUME_MIN_PRIMAIRE if primaire else RESUME_MIN_DECOUVERTE)
+    if sum(len(r) for r in resumes) < minimum:
+        return False, f"résumé trop court (< {minimum} caractères)"
+    if event.get("nb_sources", 1) < 2 and not primaire and not nobel:
         return False, "une seule source non primaire"
     return True, ""
 
 
+def matiere_fine(contenu_source: dict) -> bool:
+    """Vrai si le rédacteur n'a reçu presque rien (un seul résumé court, source non primaire) : tout détail
+    d'étude au-delà de ce texte serait de l'invention (cas du 08/10 : article de 1300 mots sur 1 résumé RSS)."""
+    textes = {str(t.get("resume", "") or "").strip() for t in (contenu_source.get("textes_sources") or [])}
+    textes.add(str(contenu_source.get("resume", "") or "").strip())
+    return sum(len(t) for t in textes) < MATIERE_FINE_CARACTERES
+
+
 def _sujet(top: dict, mode: str) -> dict:
+    sujet = _sujet_brut(top, mode)
+    sujet["contenu_source"]["matiere"] = "fine" if matiere_fine(sujet["contenu_source"]) else "suffisante"
+    return sujet
+
+
+def _sujet_brut(top: dict, mode: str) -> dict:
     return {
         "mode": mode,
         "contenu_source": {
@@ -628,12 +654,23 @@ def select_science_topic(analysed_sciences: list[dict]) -> dict:
     """Choisit le mode science (§7) : « découverte » seulement si un événement QUALIFIÉ existe
     (cf. `decouverte_qualifiee`), sinon mode « approfondi » avec le meilleur candidat de recherche
     (vocabulaire scientifique, hors politique/société), à défaut le premier disponible."""
-    for e in analysed_sciences or []:
+    qualifies = []
+    for i, e in enumerate(analysed_sciences or []):
         ok, raison = decouverte_qualifiee(e)
         if ok:
-            logger.info("Science: mode découverte retenu — %s", str(e.get("titre", ""))[:90])
-            return _sujet(e, "decouverte")
-        logger.info("Science: découverte refusée (%s) — %s", raison, str(e.get("titre", ""))[:90])
+            qualifies.append((i, e))
+        else:
+            logger.info("Science: découverte refusée (%s) — %s", raison, str(e.get("titre", ""))[:90])
+    if qualifies:
+        # 08/10/2026 : avec le vocabulaire bilingue, beaucoup d'articles de revue passent ; on préfère un prix Nobel,
+        # puis un événement couvert par plusieurs sources, puis l'ordre de score d'origine.
+        def cle(ie):
+            i, e = ie
+            nobel = bool(re.search(r"\bnobel\b", f"{e.get('titre', '')} {e.get('resume', '')}", re.I))
+            return (not nobel, -int(e.get("nb_sources", 1) or 1), i)
+        _, e = min(qualifies, key=cle)
+        logger.info("Science: mode découverte retenu — %s", str(e.get("titre", ""))[:90])
+        return _sujet(e, "decouverte")
 
     if analysed_sciences:
         recherche = [e for e in analysed_sciences

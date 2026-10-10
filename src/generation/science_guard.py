@@ -242,6 +242,35 @@ def ensure_sections_not_empty(text: str) -> str:
     return re.sub(r"\n{3,}", "\n\n", "\n".join(out)).strip()
 
 
+# --- 08/10/2026 (ANALYSE_RUN_2026-10-08.md, point 1) -----------------------------------------------------------
+# Constat : à partir d'UN résumé RSS, le rédacteur a écrit « aucun effet indésirable grave », « maintenues plusieurs
+# mois », « dix patients dans trois pays »… Les nombres et les noms propres étaient contrôlés, pas ces AFFIRMATIONS
+# sur l'étude. Règle : une phrase qui AFFIRME un résultat d'essai (sécurité, durée de suivi, participants, phase,
+# placebo…) est retirée si le thème n'apparaît nulle part dans les textes sources. Les phrases prudentes (« reste à
+# démontrer », « pourrait ») ne sont pas touchées : elles n'affirment rien.
+_THEMES_ETUDE = {
+    "sécurité/effets": re.compile(r"effets? (indésirables?|secondaires?)|toxicit|tol[ée]rance|sécurité|innocuit", re.I),
+    "durée/suivi": re.compile(r"\bsuivi\b|durabl|maintenu|persist|à long terme|pendant (plusieurs|des) (mois|années|ans)", re.I),
+    "participants": re.compile(r"\b(participants?|volontaires|patients?|sujets)\b", re.I),
+    "essai": re.compile(r"essai (clinique|randomis|de phase)|randomis|placebo|double aveugle|phase (I|II|III|1|2|3)\b", re.I),
+    "pays/centres": re.compile(r"\b(centres?|hôpitaux|hopitaux|sites?) (en|aux|au|dans)\b|\b(en|aux|au) (France|États-Unis|Royaume-Uni)\b.*\b(et|,)\b", re.I),
+}
+_PRUDENT_RE = re.compile(r"pas encore|reste à|restent? à|n'est pas|ne sont pas|ne (permet|permettent) pas|incertain|aucune donnée|"
+                         r"non (démontr|établi|confirm)|à confirmer|à vérifier|pourrai(t|ent)|pourrait|peut-être|\bsi\b|"
+                         r"question|inconnu|manque|limit", re.I)
+
+
+def remove_unsourced_study_claims(text: str, source_text: str) -> tuple[str, list[str]]:
+    src = source_text or ""
+    absents = {nom: rx for nom, rx in _THEMES_ETUDE.items() if not rx.search(src)}
+
+    def keep(sent: str) -> bool:
+        if _PRUDENT_RE.search(sent):
+            return True
+        return not any(rx.search(sent) for rx in absents.values())
+    return _map_sentences(text, keep)
+
+
 def guard_science_article(contenu: str, contenu_source: dict) -> tuple[str, list[str]]:
     """Pipeline complet. `contenu` = moitiés A+B concaténées. Retourne (texte final, phrases retirées)."""
     full = source_full_text(contenu_source)
@@ -252,7 +281,9 @@ def guard_science_article(contenu: str, contenu_source: dict) -> tuple[str, list
     t, r_meta = remove_meta_leaks(t)
     t, r_num = remove_unsupported_numbers(t, allowed)
     t, r_terms = remove_unsupported_terms(t, full)
+    t, r_claims = remove_unsourced_study_claims(t, full)
     t = fix_orphan_colons(t)
     t = ensure_sections_not_empty(t)
-    removed = ([f"[fuite interne] {x}" for x in r_meta] + r_num + [f"[terme non sourcé] {x}" for x in r_terms])
+    removed = ([f"[fuite interne] {x}" for x in r_meta] + r_num + [f"[terme non sourcé] {x}" for x in r_terms]
+               + [f"[affirmation d'étude non sourcée] {x}" for x in r_claims])
     return (t + "\n\n" + build_sources_section(contenu_source)).strip(), removed

@@ -181,3 +181,17 @@ Problème : `consequences` recevait TOUJOURS le préfixe « Hypothèse : » (mê
 - DÉFAUTS CONNUS NON CORRIGÉS (voir `ANALYSE_DEV_TEST_2026-10-06.md`) : (3) résumé sans rapport avec le titre (cause non établie), (1) sport (titre anglais non traduit, anecdotes, élément perdu), (2) anglais (mots simples), « groq » masqué dans les logs ; CNRS/ESPN NBA à décider.
 - Au prochain run de 06h10 vérifier : `derniere_mise_a_jour` (fin de run) et `debut_run` dans latest.json ; message de commit en heure de Paris ; log « Fusion sciences » + mode science + « Garde-fou science » ; un seul HTTP 400 ESPN ; anglais/marchés/sport sur NVIDIA sans 429 OpenRouter ; cohérence titre/résumé de chaque actu.
 - Retour arrière : `git revert -m 1 <commit de fusion>` sur `main`.
+
+## 08/10/2026 — Correctifs science sur `dev` (commit e67ce4b, NON fusionné dans main, non testé en réel)
+Voir ANALYSE_RUN_2026-10-08.md point 1. Changements :
+- `_RE_RECHERCHE` bilingue (Nature News en anglais n'était jamais qualifié) ; Nobel accepté avec résumé court (≥ 60 car.) ;
+  source primaire ≥ 100 car. ; sinon 200 car. Parmi les candidats qualifiés : Nobel d'abord, puis événement multi-sources.
+- `matiere_fine()` : < 500 caractères de matière réelle → `contenu_source.matiere = "fine"` et consigne au rédacteur de ne pas
+  remplir les sections Données/Résultats.
+- `science_guard.remove_unsourced_study_claims()` : retire les phrases affirmant sécurité/effets indésirables, durée de suivi,
+  participants, essai, pays/centres si le thème est absent des sources (phrases prudentes conservées).
+- JSON : `science.matiere_source` et `science.textes_sources_audit` (ce que le rédacteur a reçu, pour relire l'article).
+- 153 tests passent. À valider par un Dev Test manuel (Actions → Dev Test) avant Pull Request.
+- Risque connu : le vocabulaire bilingue laisse passer des articles de revue obscurs ; surveiller le choix en mode découverte.
+- Reporté sur instruction de l'utilisateur : actualité (il donnera d'abord des instructions), anglais et météo (instructions à venir).
+  Flux sport vides : pas un défaut en soi (période creuse).

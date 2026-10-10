@@ -170,6 +170,10 @@ RÈGLES ANTI-INVENTION (strictes, un contrôle automatique supprime les phrases 
   technique de mémoire. Les phrases contenant un tel terme sont supprimées.
 - Tu peux expliquer les mécanismes GÉNÉRAUX par des connaissances de manuel, sans chiffre. Évite les
   affirmations absolues non sourcées (« sans risque », « non invasif », « toujours », « jamais »).
+- N'affirme AUCUN résultat d'essai (effets indésirables, sécurité, durée de suivi, nombre ou profil des participants,
+  pays, phase de l'essai) qui ne figure pas dans science_source : écris à la place que ces détails sont à consulter dans
+  les sources. Si science_source.matiere vaut « fine », limite-toi à expliquer le principe général et à rapporter les
+  quelques faits fournis ; ne remplis pas les sections Données/Résultats.
 - Si la source ne donne pas de résultats chiffrés, écris seulement que les données chiffrées détaillées sont
   à consulter dans les articles sources. Ne parle JAMAIS du « résumé », de « l'extrait » ni de ce que tu as reçu.
 - N'écris aucune phrase de transition interne (« fin de la moitié A », « la suite abordera »).
@@ -442,6 +446,14 @@ def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: d
                 logger.warning("Garde-fou science : %d phrase(s) retirée(s) (chiffres absents de la source) : %s",
                                len(retirees), " | ".join(x[:80] for x in retirees[:8]))
         sci["contenu_markdown"] = contenu
+        if science_source is not None:
+            # audit : ce que le rédacteur a RÉELLEMENT reçu (résumés RSS publics), pour relire l'article contre sa source
+            sci["matiere_source"] = science_source.get("matiere", "")
+            sci["textes_sources_audit"] = [
+                {"source": t.get("source", ""), "titre": t.get("titre", ""), "resume": t.get("resume", "")}
+                for t in (science_source.get("textes_sources") or [])[:4]
+            ] or [{"source": ", ".join(science_source.get("sources") or []), "titre": science_source.get("titre", ""),
+                   "resume": str(science_source.get("resume", ""))[:700]}]
         resultat["science"] = sci
 
     # Phrase de synthèse : construite à partir des titres réellement publiés, sans appel LLM
