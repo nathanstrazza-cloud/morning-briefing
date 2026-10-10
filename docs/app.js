@@ -259,6 +259,21 @@ function renderSectionAnglais(anglais) {
   // vocabulaire important. Absente (pas affichée) si aucun article NYT n'a été trouvé ce
   // jour-là, plutôt que d'afficher une section vide (même logique que "citation").
   if (!anglais) return null;
+  // Format du 10/10/2026 : passage littéraire avec traductions EN LIGNE (segments {t, g}).
+  if (Array.isArray(anglais.segments)) {
+    const sec = el("section", { class: "section section--anglais" }, [
+      el("h2", { class: "section-title", text: "Anglais du jour" }),
+    ]);
+    const origine = [anglais.oeuvre, anglais.auteur, anglais.annee].filter(Boolean).join(" — ");
+    sec.appendChild(el("p", { class: "anglais-origine", text: origine }));
+    const p = el("p", { class: "anglais-passage" });
+    for (const seg of anglais.segments) {
+      p.appendChild(document.createTextNode(seg.t));
+      if (seg.g) p.appendChild(el("span", { class: "anglais-gloss", text: ` (= ${seg.g})` }));
+    }
+    sec.appendChild(p);
+    return sec;
+  }
   const section = el("section", { class: "section" }, [
     el("h2", { class: "section-title", text: "Anglais du jour — New York Times" }),
   ]);

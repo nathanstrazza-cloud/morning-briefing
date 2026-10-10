@@ -377,3 +377,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .masthead__inner, .masthead__nav, .site-footer { padding-left: 0; padding-right: 0; }
   .weather-strip__temp { font-size: 1.7rem; }
 }
+
+/* Anglais du jour — passage littéraire avec traductions en ligne (2026-10-10) */
+.anglais-origine { font-style: italic; color: var(--ink-faint); margin: 0 0 0.6rem; }
+.anglais-passage { font-family: var(--font-serif); line-height: 1.7; margin: 0 0 1rem; }
+.anglais-gloss { font-family: var(--font-sans, inherit); font-size: 0.88em; color: var(--accent); }

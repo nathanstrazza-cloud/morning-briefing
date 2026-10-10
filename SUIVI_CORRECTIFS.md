@@ -236,3 +236,14 @@ Réf. ANALYSE_RUN_2026-10-08.md point 3 (« ciel dégagé » avec 88-93 % de plu
 - Zone : inchangée (max des villes), mais chaque ville est maintenant cohérente.
 - Tests : `tests/test_weather.py` (+5) ; 169 tests OK. Aucun changement de frontend ni de format JSON.
 À vérifier au prochain run : probabilité faible quand le ciel est dégagé et 0 mm ; `precipitation_mm` des villes = somme des 3 périodes. Anglais : instructions de l'utilisateur toujours attendues.
+
+## 10/10/2026 — Anglais du jour refondu (sur `dev`, NON fusionné, non validé en réel)
+Demande de l'utilisateur : le texte NYT (titre + résumé RSS) était trop court, trop simple, avec des mots traduits transparents, et reprenait souvent une actualité déjà dans la section Actualité. Nouveau format voulu : texte d'une dizaine de lignes (actualité OU littérature célèbre) avec seulement la traduction des mots difficiles en ligne : « I like apples and I like mot_compliqué (= traduction) blabla ».
+**Réalisé** : passages littéraires du DOMAINE PUBLIC, sans LLM.
+- `config/anglais_textes.json` : 9 passages (Dickens ×2, Austen, Melville, Carroll, Conan Doyle, Brontë, Fitzgerald, Poe), 70-170 mots, 8-12 `mots` chacun (`en` exact dans le texte, `fr` = traduction contextuelle), mots NON transparents choisis à la main. Textes ET traductions écrits de mémoire (pas d'accès à Gutenberg depuis le sandbox) : **à relire contre Project Gutenberg**.
+- `src/generation/anglais_litteraire.py` : `passage_du_jour(date)` (tirage déterministe par date, comme `citations.py`), `build_segments()` -> JSON `anglais = {mode:"litterature", oeuvre, auteur, annee, segments:[{t,g}], texte_glose}`.
+- `src/main.py` : `nyt_article = None` (plus d'appel LLM « anglais » : économie de quota NVIDIA) et `briefing["anglais"] = passage_du_jour(...)` après la génération. `select_nyt_article`, `anglais_guard.py` et le prompt `SYSTEM_ANGLAIS` restent dans le code, INUTILISÉS (suppression possible plus tard).
+- `docs/app.js` / `docs/style.css` : rendu des segments (glose « (= …) » en couleur d'accent) ; les anciens briefings (format NYT) s'affichent toujours.
+- Tests : `tests/test_anglais_litteraire.py` (5, dont : chaque glose trouvée dans le texte, texte intact) ; 174 tests OK.
+**Non fait volontairement** : le mode « actualité ». Un flux RSS ne donne que 2 lignes, le texte complet d'un article (NYT, Le Monde…) est protégé, et un texte écrit par un LLM contredirait la règle « aucun fait inventé ». Piste si l'utilisateur y tient : Wikinews (licence CC BY, textes complets en anglais, API gratuite), à tester en réel ; il resterait le recoupement avec la section Actualité à éviter.
+**Pour agrandir la banque** : ajouter un objet dans `config/anglais_textes.json` (domaine public, mots difficiles) ; le test vérifie automatiquement la cohérence.
