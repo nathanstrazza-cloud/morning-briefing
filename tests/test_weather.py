@@ -61,3 +61,48 @@ def test_no_data_returns_none_and_missing_hourly_falls_back():
     p["daily"]["precipitation_sum"] = [0.0]
     r = w.parse_city("Valbonne", p)
     assert r["periodes"] == [] and r["description"] == "couvert"  # repli code quotidien, 0 mm -> couvert
+
+
+# --- 10/10/2026 : cohérence probabilité / mm / ciel (ANALYSE_RUN_2026-10-08.md, point 3) ---------------
+def test_pic_de_probabilite_sans_eau_nest_pas_affiche_comme_93_pct():
+    # Cas réel du 08/10 : ciel dégagé, 0-0,1 mm, mais un pic horaire à 93 %.
+    probs = [5] * 24
+    probs[9] = 93
+    r = w.parse_city("Antibes", _payload([0] * 24, [0.0] * 24, probs=probs))
+    matin = next(p for p in r["periodes"] if p["label"] == "Matin")
+    assert matin["probabilite_pluie_pct"] <= 10
+    assert r["probabilite_pluie_pct"] <= 10
+
+
+def test_pluie_etayee_garde_la_probabilite_maximale():
+    codes = [1] * 18 + [63] * 6
+    precs = [0.0] * 18 + [2.0] * 6
+    probs = [10] * 18 + [30, 60, 90, 80, 70, 60]
+    r = w.parse_city("Cannes", _payload(codes, precs, probs=probs))
+    soir = next(p for p in r["periodes"] if p["label"] == "Soir")
+    assert soir["probabilite_pluie_pct"] == 90
+    assert r["probabilite_pluie_pct"] == 90
+
+
+def test_pluie_de_nuit_exclue_du_cumul_et_des_alertes():
+    # 25 mm tombés entre 0h et 5h (avant la fenêtre affichée 6h-24h) : ni cumul du jour, ni alerte « pluie abondante ».
+    precs = [5.0] * 5 + [0.0] * 19
+    daily = {"temperature_2m_max": [21], "temperature_2m_min": [14], "precipitation_probability_max": [95],
+             "wind_speed_10m_max": [18], "wind_gusts_10m_max": [30], "precipitation_sum": [25.0], "weather_code": [63]}
+    r = w.parse_city("Antibes", _payload([0] * 24, precs, daily=daily))
+    assert r["precipitation_mm"] == 0.0
+    assert r["alertes"] == []
+
+
+def test_alerte_pluie_sur_la_fenetre_affichee():
+    precs = [0.0] * 6 + [2.0] * 12 + [0.0] * 6      # 24 mm entre 6h et 18h
+    r = w.parse_city("Grasse", _payload([63] * 24, precs))
+    assert r["precipitation_mm"] == 24.0
+    assert any("Pluie abondante" in a for a in r["alertes"])
+
+
+def test_sans_horaire_repli_sur_les_valeurs_quotidiennes():
+    d = {"temperature_2m_max": [21], "temperature_2m_min": [14], "precipitation_probability_max": [40],
+         "wind_speed_10m_max": [18], "wind_gusts_10m_max": [30], "precipitation_sum": [3.0], "weather_code": [61]}
+    r = w.parse_city("Valbonne", {"current": {}, "daily": d, "hourly": {}})
+    assert r["probabilite_pluie_pct"] == 40 and r["precipitation_mm"] == 3.0

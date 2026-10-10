@@ -226,3 +226,13 @@ mais le briefing n'en affichait que 3 -> c'est le LLM (Mistral, `actu_monde`) qu
 place pour des items faibles si le seuil est trop bas -> si besoin, remonter `score_min_affichage` ou baisser `max_actualites_monde` (config seule).
 **Reste de l'actualité (instructions de l'utilisateur à venir)** : faire remonter les faits ; choix éditorial ; fusion qui garde le titre le plus long
 (`diversite._fusionner`, peut retenir un titre d'explicateur plutôt que celui du fait).
+
+## 10/10/2026 — Météo : cohérence probabilité / mm / ciel (sur `dev`, NON fusionné, non validé en réel)
+Réf. ANALYSE_RUN_2026-10-08.md point 3 (« ciel dégagé » avec 88-93 % de pluie ; Antibes 10 mm alors que les périodes donnaient 0-0,1 mm). Demande : « corrige la météo », sans Dev Test.
+`src/collecte/weather.py` :
+- `rain_probability()` : probabilité d'une plage = MAXIMUM horaire seulement si la pluie est étayée (cumul >= 0,2 mm, `PLUIE_ETAYEE_MM`, ou code de précipitations effectif) ; sinon MÉDIANE (un pic isolé n'est plus affiché).
+- `window_rain()` : cumul et probabilité de la JOURNÉE sur la fenêtre affichée 6h-24h (`FENETRE_AFFICHEE`, mêmes heures que Matin/Après-midi/Soir) ; remplace `precipitation_sum` et `precipitation_probability_max` quotidiens (nuit déjà passée incluse). Repli sur les valeurs quotidiennes si pas d'horaire.
+- `build_alerts(daily, pluie_fenetre_mm)` : « Pluie abondante » (>= 20 mm) calculée sur ce même cumul.
+- Zone : inchangée (max des villes), mais chaque ville est maintenant cohérente.
+- Tests : `tests/test_weather.py` (+5) ; 169 tests OK. Aucun changement de frontend ni de format JSON.
+À vérifier au prochain run : probabilité faible quand le ciel est dégagé et 0 mm ; `precipitation_mm` des villes = somme des 3 périodes. Anglais : instructions de l'utilisateur toujours attendues.
