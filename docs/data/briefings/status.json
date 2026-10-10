@@ -1,6 +1,6 @@
 {
-  "derniere_execution": "2026-10-09T06:15:15.142400+02:00",
-  "date_visee": "2026-10-09",
+  "derniere_execution": "2026-10-10T06:14:55.143068+02:00",
+  "date_visee": "2026-10-10",
   "succes": true,
   "erreur": null,
   "synthese_llm": true,
@@ -25,7 +25,7 @@
       "source": "CNRS Actualités",
       "categorie": "sciences",
       "statut": "erreur",
-      "detail": "<unknown>:14:414: not well-formed (invalid token)"
+      "detail": "<unknown>:15:231: not well-formed (invalid token)"
     },
     {
       "source": "L'Équipe Hand",
@@ -55,14 +55,14 @@
   "sources_marches_en_erreur": [],
   "funnel_actualite": {
     "france": {
-      "bruts": 92,
-      "evenements_uniques": 79,
-      "retenus_apres_seuil": 38
+      "bruts": 85,
+      "evenements_uniques": 68,
+      "retenus_apres_seuil": 27
     },
     "monde": {
-      "bruts": 111,
-      "evenements_uniques": 89,
-      "retenus_apres_seuil": 34
+      "bruts": 116,
+      "evenements_uniques": 85,
+      "retenus_apres_seuil": 40
     }
   }
 }
