@@ -280,3 +280,11 @@ Défauts : `ANALYSE_RUN_2026-10-11.md` §2.2 (sport) et §2.3 (zones/EN DIRECT).
 - Tests : `tests/test_titres_sport_zones.py` (194 tests OK, sans réseau). Non validé en réel avant Dev Test.
 - Limites : un article de sport sans mot-clé fort dans le titre reste en actualité ; l'écart d'importance entre Ligue 1 et Premier League reste neutre
   (décision du 05/10 : aucune préférence d'équipe ou de pays).
+
+## Fusion du 11/10/2026 (dev -> main, commit de fusion 7cee422)
+Contenu : science (sujet pédagogique Wikipédia, mode indisponible), titres propres, zones Moyen-Orient, sport issu des flux actualité,
+anglais non traduit écarté, directs de match -> sport, titres interrogatifs pénalisés au sport. 196 tests OK.
+Dev Test réels (runs 38155667033 et suivant) : science OK (6/6 parties, sujet « ordinateur quantique »), Riyad classé Monde, plus aucun « EN DIRECT »,
+sport entièrement en français. Premier run de production avec ce code : lundi 12/10 à 06h10 (fenêtre « lundi » = depuis vendredi 18h, cron-job.org lun-ven).
+À contrôler lundi : log `lundi=True` ; `science.sujet_id`/`origine` ; ligne « Sport issu des flux d'actualité » ; sport en français ; aucune section vide.
+Retour arrière : `git revert -m 1 7cee422`. Restent : Mistral rend 5 événements Monde sur 8, CNRS en erreur, jeton GitHub à régénérer avant le 25/10.
