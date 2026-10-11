@@ -115,8 +115,12 @@ def build_sources_section(contenu_source: dict) -> str:
         nom = ", ".join(contenu_source.get("sources") or []) or "source indiquée"
         url = contenu_source.get("url") or ""
         lignes.append(f"- Article source : {contenu_source.get('titre', '')} ({nom})" + (f" — {url}" if url else ""))
-    lignes.append("- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; "
-                  "les détails de l'étude sont à consulter sur les liens ci-dessus.")
+    if contenu_source.get("origine") == "encyclopedie":
+        lignes.append("- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; "
+                      "à recouper avec les publications scientifiques pour aller plus loin.")
+    else:
+        lignes.append("- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; "
+                      "les détails de l'étude sont à consulter sur les liens ci-dessus.")
     return "\n".join(lignes)
 
 

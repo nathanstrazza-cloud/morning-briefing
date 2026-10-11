@@ -24,7 +24,8 @@ SPORTS = {
     "tennis": ["tennis", "atp", "wta", "roland-garros", "wimbledon", "us open", "open d'australie", "grand chelem",
                "coupe davis", "masters 1000"],
     "rugby": ["rugby", "top 14", "six nations", "xv de france", "pro d2", "coupe du monde de rugby"],
-    "cyclisme": ["cyclisme", "tour de france", "giro", "vuelta", "paris-roubaix", "cycliste", "peloton"],
+    "cyclisme": ["cyclisme", "tour de france", "tour de lombardie", "tour d'espagne", "giro", "vuelta", "paris-roubaix",
+                 "liège-bastogne", "milan-sanremo", "cycliste", "peloton"],
     "natation": ["natation", "nageur", "nageuse", "bassin", "mondiaux de natation"],
     "athlétisme": ["athlétisme", "athletics", "marathon", "100 m", "diamond league", "perche", "saut en"],
     "handball": ["handball", "hand ", "lidl starligue"],
@@ -94,6 +95,8 @@ def score_sport_event(event: dict, categorie: str | None = None, config: dict | 
     if _has(texte, _ANECDOTE):
         score -= 3
     score += min(2, max(0, event.get("nb_sources", 1) - 1))
+    if str(event.get("titre", "")).rstrip().endswith("?"):
+        score -= 2          # titre interrogatif = analyse/explicateur, pas un résultat (11/10 : « Comment… a-t-il pu perdre ? »)
     return max(0, min(10, score))
 
 
