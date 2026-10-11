@@ -1,6 +1,6 @@
 {
-  "derniere_execution": "2026-10-10T06:14:55.143068+02:00",
-  "date_visee": "2026-10-10",
+  "derniere_execution": "2026-10-11T06:14:19.975500+02:00",
+  "date_visee": "2026-10-11",
   "succes": true,
   "erreur": null,
   "synthese_llm": true,
@@ -16,8 +16,8 @@
     "erreur": null
   },
   "llm_anglais": {
-    "genere_par_llm": true,
-    "provider": "nvidia",
+    "genere_par_llm": false,
+    "provider": null,
     "erreur": null
   },
   "sources_rss_en_erreur": [
@@ -55,14 +55,14 @@
   "sources_marches_en_erreur": [],
   "funnel_actualite": {
     "france": {
-      "bruts": 85,
-      "evenements_uniques": 68,
-      "retenus_apres_seuil": 27
+      "bruts": 92,
+      "evenements_uniques": 74,
+      "retenus_apres_seuil": 23
     },
     "monde": {
-      "bruts": 116,
-      "evenements_uniques": 85,
-      "retenus_apres_seuil": 40
+      "bruts": 87,
+      "evenements_uniques": 71,
+      "retenus_apres_seuil": 38
     }
   }
 }

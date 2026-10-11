@@ -1,0 +1,516 @@
+{
+  "date": "2026-10-11",
+  "derniere_mise_a_jour": "2026-10-11T06:14:19.975500+02:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "EN DIRECT Guerre au Moyen-Orient : L’Arabie saoudite accuse les Houthis d'un « crime de guerre » à l’aéroport de Riyad…",
+          "resume": "Tous les vols en provenance et à destination de la capitale saoudienne ont été déroutés après une frappe de missile lancé par les Houthis, samedi 10 octobre. Début octobre, l’Arabie saoudite et le gouvernement yéménite ont lancé une offensive de grande envergure contre le groupe rebelle.",
+          "pourquoi_important": "L’attaque a entraîné le déroutement de tous les vols à destination et en provenance de Riyad, perturbant le trafic aérien de la capitale saoudienne.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Libération",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : « Ils me font rire »… Lalanne et Dieudonné lancent leur campagne à Valenciennes",
+          "resume": "Francis Lalanne et Dieudonné ont lancé leur campagne « bicéphale » pour l’élection présidentielle de 2027 lors d’un meeting en petit comité à Valenciennes, dans le Nord",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Tour de Lombardie : Fabuleux Paul Seixas ! Le Français s’impose en patron et remporte son premier Monument",
+          "resume": "La star montante du cyclisme français s'est envolée dans le Civiglio à 18 kilomètres de l'arrivée pour décrocher la plus belle victoire de sa jeune carrière à Côme, samedi.",
+          "pourquoi_important": "Le cycliste français remporte son premier monument en s’imposant au Tour de Lombardie, marquant une étape majeure de sa carrière.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération",
+            "20 Minutes",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Autoroute A69 : une dernière manifestation des opposants avant la mise en service début novembre",
+          "resume": "Soutenue par ​La Voie​ est libre, Les Soulèvements de la Terre et Extinction Rebellion, la marche contre cette autoroute reliant Castres à Toulouse a réuni samedi entre 1 100 et 1 500 personnes dans le calme.",
+          "pourquoi_important": "La manifestation rassemble entre 1 100 et 1 500 personnes pour protester contre la mise en service de l’autoroute A69 reliant Castres à Toulouse.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Mobilisation lycéenne : quand les images «améliorées» par l’IA génèrent des fausses pistes",
+          "resume": "Dans le cadre du mouvement lycéen, de nombreux internautes utilisent des outils d’intelligence artificielle pour «rendre plus nettes» des photographies ou vidéos floues. Avec des résultats toujours très peu fiables.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Ukraine : des frappes russes font au moins 15 morts à Zaporijia et provoquent des coupures de courant massives à Kyiv",
+          "resume": "Cinq bombes aériennes guidées ont été lâchées sur des quartiers résidentiels de Zaporijia, selon la police nationale ukrainienne. Des coupures de courant massives ont également été signalées à Kyiv.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "EN DIRECT, guerre en Ukraine : Donald Trump affirme que Vladimir Poutine « aimerait voir un règlement » avec Kiev",
+          "resume": "Donald Trump déclare que la Russie souhaiterait conclure un accord avec l'Ukraine, mais que Volodymyr Zelensky ne serait pas favorable à une telle solution.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Après le séisme de magnitude 7,7 au Panama, l’heure du déblaiement et la crainte de nouvelles secousses",
+          "resume": "Plus d’une centaine de répliques ont été enregistrées depuis le tremblement de terre de vendredi. Les autorités panaméennes font état d’une trentaine de blessés légers et évaluent les dégâts.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Palestine : Mahmoud Abbas reporte la présidentielle et les législatives à septembre 2027",
+          "resume": "Mahmoud Abbas a annoncé le report des élections législatives prévues le 28 novembre et de la présidentielle initialement prévue début 2027 au 11 septembre 2027.",
+          "pourquoi_important": "Ce report prolonge l'incertitude politique en Palestine et pourrait affecter la légitimité de l'Autorité palestinienne.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France 24 International",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "La Prix Nobel de la paix 2026, Navanethem Pillay, juge « inacceptables » les sanctions américaines contre la CPI",
+          "resume": "Navanethem Pillay, lauréate du Prix Nobel de la paix 2026, critique les sanctions américaines contre des juges de la Cour pénale internationale (CPI), qualifiées de « jamais vues ».",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "New York Times World"
+          ]
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
+      "mouvements_notables": [
+        {
+          "nom": "DAX",
+          "variation_pct": 1.13,
+          "explication": null
+        },
+        {
+          "nom": "Or",
+          "variation_pct": 1.43,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "tennis",
+          "texte": "Retour réussi au Masters 1000 de Shanghai pour Valentin Vacherot, tenant du titre et vainqueur de Sebastian Baez au 2e tour"
+        },
+        {
+          "sport": "football",
+          "texte": "Tottenham arrache le nul à Manchester United et quitte la dernière place de Premier League"
+        },
+        {
+          "sport": "football",
+          "texte": "Brilliant Guimaraes goal helps Arsenal fight back to beat Leeds"
+        },
+        {
+          "sport": "basketball",
+          "texte": "Gabby Williams, Janelle Salaün et Aminata Gueye : record de Françaises en finales WNBA"
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": []
+    },
+    "science": {
+      "mode": "approfondi",
+      "titre": "Quand la biologie devient un outil de contrôle social : la critique de Jérémie Naudé",
+      "contenu_markdown": "## Introduction\nLa biologie, et plus particulièrement la neuroscience, est souvent présentée comme une science neutre et objective, capable d’éclairer les mécanismes du vivant. Pourtant, le neuroscientifique Jérémie Naudé alerte dans son ouvrage *Neuro arnaque* contre une tendance croissante : l’utilisation détournée de ces connaissances pour justifier des discours politiques ou sociaux qui réduisent la complexité humaine à des déterminismes biologiques. Son analyse révèle comment certains discours, sous couvert de scientificité, cherchent à discipliner le vivant en effaçant ses dimensions culturelles, sociales et politiques.\n\n## Pourquoi ce sujet est important\nL’enjeu n’est pas seulement scientifique, mais aussi éthique et politique. Quand des concepts biologiques sont mobilisés pour expliquer des comportements humains – comme les inégalités, les différences cognitives ou les choix individuels –, ils peuvent servir à légitimer des hiérarchies ou à limiter les débats démocratiques. Jérémie Naudé souligne que cette instrumentalisation de la biologie risque de figer les représentations sociales en les présentant comme des vérités naturelles, au détriment des approches pluridisciplinaires qui prennent en compte l’environnement, l’éducation ou les structures de pouvoir.\n\nCette critique s’inscrit dans un contexte où les neurosciences, en particulier, sont souvent médiatisées de manière simplifiée, voire sélective. Des termes comme « plasticité cérébrale » ou « déterminisme génétique » sont parfois détournés pour justifier des positions idéologiques, comme si la biologie pouvait à elle seule expliquer des phénomènes profondément ancrés dans des contextes historiques et sociaux.\n\n## Explication du phénomène\nLe phénomène décrit par Naudé repose sur une confusion entre deux usages possibles de la biologie :\n1. **Un outil de description** : la science cherche à comprendre comment fonctionnent les organismes vivants, les mécanismes cérébraux, ou les interactions entre gènes et environnement. Ces connaissances peuvent aider à soigner des maladies, à améliorer les conditions de vie, ou à mieux cerner les capacités humaines.\n2. **Un outil de disciplinarisation** : certains discours utilisent ces mêmes connaissances pour imposer une vision restrictive de ce qui est « naturel » ou « normal ». Par exemple, affirmer qu’une différence cognitive est « innée » peut servir à justifier des inégalités d’accès à l’éducation ou à des postes de responsabilité, comme si la biologie scellait des destins.\n\nNaudé montre que cette seconde utilisation est souvent le fait de courants politiques ou idéologiques qui cherchent à réduire les débats sociaux à des questions de « nature humaine », excluant ainsi toute réflexion sur les causes sociales ou culturelles. Le risque ? Faire croire que les problèmes de société (comme les écarts de réussite scolaire ou les stéréotypes de genre) relèvent uniquement de la biologie, et non des choix collectifs ou des politiques publiques.\n\n## Fonctionnement / mécanismes\nLe mécanisme de cette instrumentalisation repose sur plusieurs éléments clés :\n\n- **La sélectivité des connaissances** : les neurosciences, comme toute science, produisent des résultats complexes et souvent nuancés. Pourtant, certains discours retiennent uniquement les éléments qui confortent une vision préétablie (par exemple, l’idée que certaines capacités seraient « génétiquement programmées »), tout en ignorant les facteurs environnementaux ou éducatifs. Cette sélection biaisée donne l’illusion d’une vérité scientifique incontestable.\n\n- **L’autorité supposée de la science** : la biologie, et surtout la neuroscience, bénéficient d’un prestige particulier dans le débat public. En s’appuyant sur des études ou des concepts scientifiques, même mal interprétés, certains discours gagnent en crédibilité aux yeux du grand public. Naudé rappelle que la science ne peut pas trancher des questions éthiques ou politiques : elle décrit, elle n’impose pas de normes.\n\n- **La naturalisation des inégalités** : en attribuant des différences (intelligences, comportements, réussites) à des causes biologiques, ces discours transforment des problèmes sociaux en fatalités. Par exemple, évoquer des « prédispositions cérébrales » pour expliquer des écarts de salaire peut servir à justifier le statu quo, comme si les structures économiques n’avaient aucun rôle à jouer.\n\n- Pourtant, en réduisant ces phénomènes à des mécanismes cérébraux ou génétiques, on évite d’aborder leurs causes sociales – et donc de les remettre en question.\n\nCe processus ne relève pas d’une « mauvaise science », mais d’une **stratégie rhétorique** : utiliser le langage de la biologie pour donner une apparence de neutralité à des arguments qui, en réalité, servent des intérêts précis (maintenir des hiérarchies, limiter les droits individuels, ou discréditer les approches sociales). Naudé insiste sur le fait que cette démarche n’est pas anodine : elle participe à une tentative de contrôle des corps et des esprits en les présentant comme soumis à des lois immuables.\n\n## Données et résultats scientifiques\n\nLes travaux cités dans le livre « Neuro arnaque » se fondent principalement sur une analyse critique de la littérature existante en neurosciences et en sciences sociales. Les données évoquées concernent plutôt des études de cas et des revues de discours où des concepts neurobiologiques sont mobilisés à des fins idéologiques. Les résultats détaillés, notamment les mesures quantitatives, sont consignés dans les ouvrages et articles de référence mentionnés dans les sources ; ils ne sont pas reproduits ici.\n\n## Ce que les scientifiques savent\n\n- La communauté neuroscientifique reconnaît que les fonctions cérébrales sont influencées par des facteurs biologiques, environnementaux, sociaux et culturels.  \n- De nombreuses recherches montrent que les expériences vécues, les interactions sociales et les contextes culturels modèlent le développement et le fonctionnement du cerveau.  \n- Les spécialistes soulignent que la réduction de phénomènes complexes à des explications purement biologiques (réductionnisme) peut masquer l’influence des dimensions sociales et politiques.  \n- Les critiques de l’auteur s’appuient sur le consensus scientifique selon lequel la biologie ne peut pas, à elle seule, expliquer des comportements humains qui sont profondément ancrés dans des structures sociales.\n\n## Ce qui reste incertain\n\n- La portée exacte de l’influence des discours politiques sur les processus neurobiologiques n’est pas encore quantifiée ; il manque des études empiriques qui mesureraient directement cet effet.  \n- La frontière entre l’usage légitime de connaissances neuroscientifiques pour éclairer les politiques publiques (par exemple en santé mentale) et leur instrumentalisation à des fins idéologiques demeure floue et dépend du contexte.  \n- La manière dont les publics perçoivent et intègrent les arguments neuro‑scientifiques dans leurs opinions politiques n’est pas encore pleinement comprise ; des recherches en psychologie sociale pourraient éclairer ce point.\n\n## Limites et controverses éventuelles\n\n- Certains chercheurs estiment que le livre exagère le rôle des discours réactionnaires en les présentant comme une « discipline » du vivant, alors que d’autres voient dans ces critiques une mise en garde nécessaire contre le détournement de la science.  \n- La critique du réductionnisme peut être perçue comme une opposition à l’avancée de la biologie, alors que la plupart des neuroscientifiques prônent une approche intégrative.  \n- Le manque de données empiriques directes sur l’impact des discours politiques sur le cerveau rend difficile la validation ou la réfutation des arguments avancés, ce qui alimente le débat entre partisans d’une lecture socioculturelle du cerveau et défenseurs d’une approche plus biomédicale.  \n\n## Conclusion\n\nLes analyses présentées dans « Neuro arnaque » mettent en lumière un risque réel : l’usage détourné de concepts neuroscientifiques pour soutenir des positions politiques qui négligent les dimensions sociales, culturelles et politiques des phénomènes humains. La communauté scientifique s’accorde sur la nécessité d’une approche multidisciplinaire qui intègre les connaissances biologiques avec les contextes sociaux. Toutefois, l’absence d’études empiriques précises sur l’influence directe des discours politiques sur le cerveau laisse plusieurs questions ouvertes. Une recherche future, combinant neurosciences, psychologie sociale et sciences politiques, serait indispensable pour clarifier ces interactions et éviter que la biologie ne soit instrumentalisée à des fins idéologiques.\n\n## Sources\n- Le Monde Sciences — https://www.lemonde.fr/sciences/article/2026/10/10/jeremie-naude-neuroscientifique-certains-discours-ne-tentent-pas-de-decrire-le-vivant-mais-cherchent-a-le-discipliner_6791013_1650684.html\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.",
+      "phrases_retirees_garde_fou": 2,
+      "matiere_source": "fine",
+      "textes_sources_audit": [
+        {
+          "source": "Le Monde Sciences",
+          "titre": "Jérémie Naudé, neuroscientifique : « Certains discours ne tentent pas de décrire le vivant, mais cherchent à le discipliner »",
+          "resume": "Dans son livre « Neuro arnaque », le chercheur dénonce les nouveaux atours de discours réactionnaires visant à dévoyer la biologie pour gommer la dimension sociale, culturelle et proprement politique de certains phénomènes."
+        }
+      ]
+    },
+    "citation": {
+      "texte": "Dans les champs de l'observation, le hasard ne favorise que les esprits préparés.",
+      "auteur": "Louis Pasteur",
+      "source": "Discours d'inauguration de la faculté des sciences de Lille, 7 décembre 1854",
+      "annee": 1854
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 16.5,
+          "temperature_max": 23.7,
+          "temperature_min": 16.0,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 5.1,
+          "vent_max_kmh": 11.0,
+          "rafales_max_kmh": 22.0,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 16.0,
+              "temperature_max": 22.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 23.1,
+              "temperature_max": 23.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 11,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 20.5,
+              "temperature_max": 23.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 16.6,
+          "temperature_max": 23.1,
+          "temperature_min": 16.5,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 5.4,
+          "vent_max_kmh": 16.4,
+          "rafales_max_kmh": 25.2,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 16.5,
+              "temperature_max": 21.8,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 12,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 22.2,
+              "temperature_max": 23.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 16,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 20.5,
+              "temperature_max": 22.9,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 13,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 14.1,
+          "temperature_max": 22.0,
+          "temperature_min": 13.8,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 5.2,
+          "vent_max_kmh": 9.0,
+          "rafales_max_kmh": 12.2,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 13.8,
+              "temperature_max": 19.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 20.8,
+              "temperature_max": 22.0,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 16.2,
+              "temperature_max": 20.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 13.3,
+          "temperature_max": 21.2,
+          "temperature_min": 13.3,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 7.9,
+          "vent_max_kmh": 9.0,
+          "rafales_max_kmh": 12.6,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 13.3,
+              "temperature_max": 19.0,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 19.8,
+              "temperature_max": 21.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 15.7,
+              "temperature_max": 19.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 23.7,
+      "temperature_min_zone": 13.3,
+      "probabilite_pluie_max_pct": 0,
+      "vent_max_kmh": 16.4,
+      "description_dominante": "couvert",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 13.3,
+          "temperature_max": 22.3,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 12,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 19.8,
+          "temperature_max": 23.7,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 16,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 15.7,
+          "temperature_max": 23.1,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 13,
+          "weather_code": 3,
+          "description": "couvert"
+        }
+      ],
+      "alertes": [],
+      "resume": "Ciel dégagé le matin, couvert l'après-midi, couvert le soir, de 13° à 24°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "Pride and Prejudice",
+      "auteur": "Jane Austen",
+      "annee": 1813,
+      "segments": [
+        {
+          "t": "It is a truth universally acknowledged",
+          "g": "reconnue de tous"
+        },
+        {
+          "t": ", that a single man in possession of a good fortune, must be in want of",
+          "g": "qui a besoin de"
+        },
+        {
+          "t": " a wife. However little known",
+          "g": "Si peu connus soient"
+        },
+        {
+          "t": " the feelings or views of such a man may be on his first entering a neighbourhood",
+          "g": "le voisinage"
+        },
+        {
+          "t": ", this truth is so well fixed",
+          "g": "solidement ancrée"
+        },
+        {
+          "t": " in the minds of the surrounding families, that he is considered the rightful property",
+          "g": "propriété légitime"
+        },
+        {
+          "t": " of some one or other of their daughters. \"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last",
+          "g": "enfin louée"
+        },
+        {
+          "t": "?\" Mr. Bennet replied that he had not. \"But it is,\" returned she",
+          "g": "répliqua-t-elle"
+        },
+        {
+          "t": "; \"for Mrs. Long has just been here, and she told me all about it.\" Mr. Bennet made no answer",
+          "g": "ne répondit rien"
+        },
+        {
+          "t": ".",
+          "g": null
+        }
+      ],
+      "texte_glose": "It is a truth universally acknowledged (= reconnue de tous), that a single man in possession of a good fortune, must be in want of (= qui a besoin de) a wife. However little known (= Si peu connus soient) the feelings or views of such a man may be on his first entering a neighbourhood (= le voisinage), this truth is so well fixed (= solidement ancrée) in the minds of the surrounding families, that he is considered the rightful property (= propriété légitime) of some one or other of their daughters. \"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last (= enfin louée)?\" Mr. Bennet replied that he had not. \"But it is,\" returned she (= répliqua-t-elle); \"for Mrs. Long has just been here, and she told me all about it.\" Mr. Bennet made no answer (= ne répondit rien)."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : EN DIRECT Guerre au Moyen-Orient : L’Arabie saoudite accuse les Houthis d'un « crime de guerre » à l’aéroport de Riyad…."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral+nvidia",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral+nvidia",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-10-11T06:10:38.694928+02:00"
+}

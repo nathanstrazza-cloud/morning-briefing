@@ -1,55 +1,57 @@
 {
-  "date": "2026-10-10",
-  "derniere_mise_a_jour": "2026-10-10T06:14:55.143068+02:00",
+  "date": "2026-10-11",
+  "derniere_mise_a_jour": "2026-10-11T06:14:19.975500+02:00",
   "briefing": {
     "actualite": {
       "france": [
         {
-          "titre": "La plateforme de vote pour la primaire de la gauche \"victime d'une cyberattaque\", le scrutin prolongé jusqu'à dimanche à 18 heures, annonce la commission d'organisation",
-          "resume": "Malgré une cyberattaque perturbant l’accès à la plateforme, la commission d’organisation assure que l’intégrité des votes reste garantie. A 19 heures, vendredi soir, le scrutin ne comptait que 20 000 votants sur 140 000 inscrits.",
-          "pourquoi_important": "La cyberattaque entraîne la prolongation du vote de la primaire de la gauche, affectant le calendrier et la participation électorale.",
+          "titre": "EN DIRECT Guerre au Moyen-Orient : L’Arabie saoudite accuse les Houthis d'un « crime de guerre » à l’aéroport de Riyad…",
+          "resume": "Tous les vols en provenance et à destination de la capitale saoudienne ont été déroutés après une frappe de missile lancé par les Houthis, samedi 10 octobre. Début octobre, l’Arabie saoudite et le gouvernement yéménite ont lancé une offensive de grande envergure contre le groupe rebelle.",
+          "pourquoi_important": "L’attaque a entraîné le déroutement de tous les vols à destination et en provenance de Riyad, perturbant le trafic aérien de la capitale saoudienne.",
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "Le Monde",
-            "France Info",
             "Libération",
             "20 Minutes"
           ]
         },
         {
-          "titre": "Présidentielle 2027 : le très droitier Gilles Platret présente sa candidature et embouteille son espace politique",
-          "resume": "Le maire de Châlon-sur-Saône, ancien vice-président de LR, a annoncé dans sa ville son intention de concourir à la magistrature suprême, jeudi soir. Ajoutant son nom à la longue, longue liste de prétendants de droite et d’extrême droite.",
-          "pourquoi_important": "L’annonce de la candidature de Gilles Platret élargit le champ des prétendants à la présidentielle 2027 du côté droit.",
+          "titre": "Présidentielle 2027 : « Ils me font rire »… Lalanne et Dieudonné lancent leur campagne à Valenciennes",
+          "resume": "Francis Lalanne et Dieudonné ont lancé leur campagne « bicéphale » pour l’élection présidentielle de 2027 lors d’un meeting en petit comité à Valenciennes, dans le Nord",
+          "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
-            "Libération"
+            "20 Minutes"
           ]
         },
         {
-          "titre": "Mobilisation des lycéens, premier tour de la primaire sociale-démocrate, le Nobel de la paix à la Sud-Africaine Navi Pillay… L’actu de ce vendredi 9 octobre",
-          "resume": "Proche collaboratrice de la juriste sud-africaine au Tribunal pour le Rwanda et à l’ONU, Cécile Aptel revient sur l’attribution du prix Nobel de la paix à cette figure de la justice internationale, dans un monde où le droit est menacé.",
-          "pourquoi_important": "L’attribution du Nobel de la paix à Navi Pillay souligne l’importance du droit international et de la justice dans le contexte actuel.",
+          "titre": "Tour de Lombardie : Fabuleux Paul Seixas ! Le Français s’impose en patron et remporte son premier Monument",
+          "resume": "La star montante du cyclisme français s'est envolée dans le Civiglio à 18 kilomètres de l'arrivée pour décrocher la plus belle victoire de sa jeune carrière à Côme, samedi.",
+          "pourquoi_important": "Le cycliste français remporte son premier monument en s’imposant au Tour de Lombardie, marquant une étape majeure de sa carrière.",
           "consequences": null,
-          "statut": "information_rapportee",
+          "statut": "fait_confirme",
           "sources": [
-            "Libération"
+            "France Info",
+            "Libération",
+            "20 Minutes",
+            "France 24 International"
           ]
         },
         {
-          "titre": "Présidentielle 2027 : Bruno Retailleau reçoit le soutien de François Baroin (qui croit encore aux miracles)",
-          "resume": "En déplacement à Troyes pour le séminaire de rentrée des sénateurs LR, le candidat à la présidentielle a obtenu l’appui du maire de la ville jeudi 8 octobre.",
-          "pourquoi_important": "Le soutien de François Baroin renforce la position de Bruno Retailleau dans la course à la présidentielle 2027.",
+          "titre": "Autoroute A69 : une dernière manifestation des opposants avant la mise en service début novembre",
+          "resume": "Soutenue par ​La Voie​ est libre, Les Soulèvements de la Terre et Extinction Rebellion, la marche contre cette autoroute reliant Castres à Toulouse a réuni samedi entre 1 100 et 1 500 personnes dans le calme.",
+          "pourquoi_important": "La manifestation rassemble entre 1 100 et 1 500 personnes pour protester contre la mise en service de l’autoroute A69 reliant Castres à Toulouse.",
           "consequences": null,
-          "statut": "information_rapportee",
+          "statut": "fait_confirme",
           "sources": [
-            "Libération"
+            "Le Monde",
+            "France Info"
           ]
         },
         {
-          "titre": "Présidentielle : le match Attal-Philippe s’étend au mouvement lycéen",
-          "resume": "Gabriel Attal, en meeting samedi à Lyon, revendique une approche plus compatissante envers les jeunes mobilisés. Cherchant à coller à son concurrent l’image d’un conservateur sourd aux revendications lycéennes.",
+          "titre": "Mobilisation lycéenne : quand les images «améliorées» par l’IA génèrent des fausses pistes",
+          "resume": "Dans le cadre du mouvement lycéen, de nombreux internautes utilisent des outils d’intelligence artificielle pour «rendre plus nettes» des photographies ou vidéos floues. Avec des résultats toujours très peu fiables.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
@@ -60,67 +62,59 @@
       ],
       "monde": [
         {
-          "titre": "Le copilote du vol FlyDubai dérouté planifiait une attaque-suicide sur l'aéroport de Tel-Aviv, en Israël, affirme le procureur général des Emirats arabes unis",
-          "resume": "Le copilote a affirmé avoir agi seul et s'est inspiré des attentats du 11 septembre pour planifier une attaque-suicide sur l'aéroport de Tel-Aviv.",
+          "titre": "Ukraine : des frappes russes font au moins 15 morts à Zaporijia et provoquent des coupures de courant massives à Kyiv",
+          "resume": "Cinq bombes aériennes guidées ont été lâchées sur des quartiers résidentiels de Zaporijia, selon la police nationale ukrainienne. Des coupures de courant massives ont également été signalées à Kyiv.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "France Info",
-            "Le Monde International",
-            "France 24 International",
             "Libération",
-            "20 Minutes"
-          ]
-        },
-        {
-          "titre": "Guerre en Ukraine : Trump scelle un accord avec Poutine sur le diesel",
-          "resume": "La Russie s'engage à fournir près de 5 millions de tonnes de gazole aux États-Unis et aux marchés mondiaux, contournant les sanctions sur le pétrole russe.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "20 Minutes",
-            "Le Monde International",
             "France 24 International"
           ]
         },
         {
-          "titre": "Prix Nobel de la paix : Navi Pillay saluée par la communauté internationale, Israël fait un parallèle avec les nazis",
-          "resume": "Israël critique la juriste sud-africaine pour avoir qualifié de « génocide » la guerre à Gaza lors d'une commission d'enquête qu'elle a présidée.",
+          "titre": "EN DIRECT, guerre en Ukraine : Donald Trump affirme que Vladimir Poutine « aimerait voir un règlement » avec Kiev",
+          "resume": "Donald Trump déclare que la Russie souhaiterait conclure un accord avec l'Ukraine, mais que Volodymyr Zelensky ne serait pas favorable à une telle solution.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "Libération",
-            "Le Monde International",
             "Le Monde",
-            "20 Minutes"
+            "Le Monde International"
           ]
         },
         {
-          "titre": "Un séisme de magnitude 7,7 a secoué le Panama, provoquant d'importants dégâts matériels",
-          "resume": "Le président du Panama évoque un « grand désastre » avec des routes « totalement effondrées » dans les zones touchées, sans bilan humain précisé.",
+          "titre": "Après le séisme de magnitude 7,7 au Panama, l’heure du déblaiement et la crainte de nouvelles secousses",
+          "resume": "Plus d’une centaine de répliques ont été enregistrées depuis le tremblement de terre de vendredi. Les autorités panaméennes font état d’une trentaine de blessés légers et évaluent les dégâts.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "Le Monde International",
-            "Le Monde",
-            "France Info"
+            "Le Monde"
           ]
         },
         {
-          "titre": "Les États-Unis imposent des sanctions contre la Cour pénale internationale, l'institution dénonce une \"attaque contre l'État de droit\"",
-          "resume": "Washington justifie ces sanctions par la volonté de « défendre la souveraineté américaine et ses citoyens » contre la Cour pénale internationale.",
+          "titre": "Palestine : Mahmoud Abbas reporte la présidentielle et les législatives à septembre 2027",
+          "resume": "Mahmoud Abbas a annoncé le report des élections législatives prévues le 28 novembre et de la présidentielle initialement prévue début 2027 au 11 septembre 2027.",
+          "pourquoi_important": "Ce report prolonge l'incertitude politique en Palestine et pourrait affecter la légitimité de l'Autorité palestinienne.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France 24 International",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "La Prix Nobel de la paix 2026, Navanethem Pillay, juge « inacceptables » les sanctions américaines contre la CPI",
+          "resume": "Navanethem Pillay, lauréate du Prix Nobel de la paix 2026, critique les sanctions américaines contre des juges de la Cour pénale internationale (CPI), qualifiées de « jamais vues ».",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "France Info",
-            "Libération",
-            "20 Minutes"
+            "Le Monde International",
+            "New York Times World"
           ]
         }
       ]
@@ -135,7 +129,7 @@
         },
         {
           "nom": "Or",
-          "variation_pct": 1.52,
+          "variation_pct": 1.43,
           "explication": null
         }
       ]
@@ -143,20 +137,20 @@
     "sport": {
       "items": [
         {
-          "sport": "football",
-          "texte": "Ferran Torres a été élu joueur du mois de septembre en Ligue 1 après avoir inscrit 4 buts avec le PSG."
-        },
-        {
-          "sport": "football",
-          "texte": "Vincenzo Montella n'est plus le sélectionneur de la Turquie."
-        },
-        {
           "sport": "tennis",
-          "texte": "Qinwen Zheng s'est qualifiée pour les demi-finales du WTA 1000 de Pékin en battant Elina Svitolina."
+          "texte": "Retour réussi au Masters 1000 de Shanghai pour Valentin Vacherot, tenant du titre et vainqueur de Sebastian Baez au 2e tour"
+        },
+        {
+          "sport": "football",
+          "texte": "Tottenham arrache le nul à Manchester United et quitte la dernière place de Premier League"
+        },
+        {
+          "sport": "football",
+          "texte": "Brilliant Guimaraes goal helps Arsenal fight back to beat Leeds"
         },
         {
           "sport": "basketball",
-          "texte": "A'ja Wilson a remporté son cinquième trophée MVP de la WNBA."
+          "texte": "Gabby Williams, Janelle Salaün et Aminata Gueye : record de Françaises en finales WNBA"
         }
       ],
       "rien_a_signaler": false,
@@ -164,291 +158,302 @@
     },
     "science": {
       "mode": "approfondi",
-      "titre": "Nous oublions la polio parce que la vaccination fonctionne, mais elle n’est pas éradiquée dans le monde",
-      "contenu_markdown": "## Introduction\nLa polio, ou poliomyélite, est une maladie infectieuse redoutée pour ses complications graves, comme la paralysie ou la mort. Cette réussite sanitaire a parfois conduit à une forme d’oubli : la polio n’est pas éradiquée, et sa réapparition reste un risque réel si les efforts de prévention faiblissent. Une récente tribune de l’experte en santé internationale Véronique Inès Thouvenot, relayée par *Le Monde*, rappelle cette vigilance nécessaire.\n\n## Pourquoi le sujet est important\nLa polio n’est pas une menace lointaine. Malgré les progrès, le virus circule encore dans certaines zones du globe, notamment en Afrique et en Asie, où des cas sporadiques ou des épidémies localisées sont régulièrement signalés. En Europe, où la maladie était considérée comme éliminée, un recul de la couverture vaccinale – observée dans une étude récente – soulève des inquiétudes. Sans vaccination suffisante, le virus pourrait se réimplanter, comme cela s’est produit dans des pays où les campagnes avaient été interrompues. L’enjeu n’est pas seulement médical, mais aussi sociétal : une maladie oubliée devient une maladie sous-estimée, et donc moins protégée.\n\n## Explication du phénomène\nLa poliomyélite est causée par un virus très contagieux qui se transmet principalement par voie fécale-orale, mais aussi par des gouttelettes respiratoires dans des environnements peu hygiéniques. Une fois dans l’organisme, le virus attaque le système nerveux, provoquant dans certains cas une paralysie irréversible, surtout chez les jeunes enfants. Avant l’ère vaccinale, des épidémies massives frappaient régulièrement les populations, laissant des milliers de personnes handicapées à vie.\n\n## Fonctionnement / mécanismes\nLa protection contre la polio repose sur deux mécanismes principaux :\n1. Chez une personne vaccinée, ces anticorps neutralisent le virus s’il est rencontré, empêchant ainsi l’infection ou limitant sa gravité.\n2. **L’immunité collective (ou \"bouclier immunitaire\")** : Lorsqu’une grande partie d’une population est vaccinée, la transmission du virus devient difficile, car il n’y a plus assez de personnes non immunisées pour le propager.\n\nCependant, cette protection n’est efficace que si la vaccination reste systématique. Un taux de couverture insuffisant crée des \"trous\" dans ce bouclier, permettant au virus de circuler à nouveau, comme cela a été observé lors de résurgences dans des pays où les campagnes avaient été relâchées.\n\n## Données et résultats scientifiques\n\nUne étude récente a mis en évidence une baisse de la couverture vaccinale contre la poliomyélite dans plusieurs pays européens. Le rapport indique également que, parallèlement à la baisse de la vaccination, le nombre de zones où la couverture chute sous le niveau considéré comme protecteur a augmenté. Aucun chiffre précis n’est fourni dans le texte source ; les données détaillées sont disponibles dans l’article complet de l’étude.\n\n## Ce que les scientifiques savent\n\n- La poliomyélite reste endémique dans quelques régions du monde, notamment en Asie du Sud et en Afrique subsaharienne.  \n- Les virus de la polio circulent encore à l’échelle internationale, principalement via des déplacements humains.  \n- Les systèmes de surveillance en Europe détectent régulièrement des cas importés de poliomyélite, mais la plupart des épidémies locales sont rapidement maîtrisées grâce aux campagnes de vaccination d’urgence.\n\n## Ce qui reste incertain\n\n- L’impact exact de la baisse de couverture vaccinale sur le risque de réémergence de la poliomyélite en Europe n’est pas quantifié de façon précise.  \n- Les modèles épidémiologiques divergent quant à la vitesse à laquelle une couverture insuffisante pourrait conduire à une transmission soutenue du virus.  \n- La durée de protection conférée par les différents schémas vaccinatifs chez les adultes reste partiellement étudiée, ce qui complique l’évaluation du risque chez les populations non‑cibles initiales.  \n- La capacité des systèmes de santé à réagir rapidement à un éventuel re‑déclenchement dépend de facteurs logistiques et politiques qui varient d’un pays à l’autre et ne sont pas encore pleinement évalués.\n\n## Limites et controverses éventuelles\n\n- **Qualité des données** : l’étude citée repose sur des enquêtes de couverture vaccinale qui peuvent souffrir de biais de déclaration ou de sous‑déclaration, surtout dans les régions où les registres sont moins complets.  \n- **Débat sur les stratégies de rappel** : certains experts plaident pour des campagnes de rappel universelles à l’adolescence, tandis que d’autres estiment que des rappels ciblés selon les zones à risque sont plus pertinents.  \n- **Ressources et priorités** : la réallocation de fonds de santé publique vers d’autres urgences (par exemple, les pandémies récentes) a suscité des discussions sur la viabilité à long terme des programmes de vaccination contre la polio.  \n- **Perception du public** : la diminution de la visibilité de la maladie a entraîné une moindre perception du risque, ce qui peut alimenter la réticence vaccinale, un point qui reste difficile à mesurer de façon objective.\n\n## Conclusion\n\nLes données récentes montrent une tendance inquiétante de baisse de la couverture vaccinale contre la poliomyélite en Europe, rappelant que la réussite des campagnes passées ne garantit pas l’éradication du virus. Les scientifiques s’accordent sur l’efficacité des vaccins existants et sur la nécessité d’une couverture élevée pour prévenir la circulation du virus. Cependant, des incertitudes subsistent quant à l’ampleur du risque de réémergence et aux meilleures stratégies de maintien de la vigilance. Les limites des données et les débats autour des politiques de rappel soulignent l’importance d’une surveillance renforcée, d’une communication transparente et d’un engagement continu des autorités sanitaires pour éviter que la polio, autrefois maîtrisée, ne retrouve la voie de la propagation.\n\n## Sources\n- Le Monde Sciences — https://www.lemonde.fr/sciences/article/2026/10/09/nous-oublions-la-polio-parce-que-la-vaccination-fonctionne-mais-elle-n-est-pas-eradiquee-dans-le-monde_6790547_1650684.html\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.",
-      "phrases_retirees_garde_fou": 7
+      "titre": "Quand la biologie devient un outil de contrôle social : la critique de Jérémie Naudé",
+      "contenu_markdown": "## Introduction\nLa biologie, et plus particulièrement la neuroscience, est souvent présentée comme une science neutre et objective, capable d’éclairer les mécanismes du vivant. Pourtant, le neuroscientifique Jérémie Naudé alerte dans son ouvrage *Neuro arnaque* contre une tendance croissante : l’utilisation détournée de ces connaissances pour justifier des discours politiques ou sociaux qui réduisent la complexité humaine à des déterminismes biologiques. Son analyse révèle comment certains discours, sous couvert de scientificité, cherchent à discipliner le vivant en effaçant ses dimensions culturelles, sociales et politiques.\n\n## Pourquoi ce sujet est important\nL’enjeu n’est pas seulement scientifique, mais aussi éthique et politique. Quand des concepts biologiques sont mobilisés pour expliquer des comportements humains – comme les inégalités, les différences cognitives ou les choix individuels –, ils peuvent servir à légitimer des hiérarchies ou à limiter les débats démocratiques. Jérémie Naudé souligne que cette instrumentalisation de la biologie risque de figer les représentations sociales en les présentant comme des vérités naturelles, au détriment des approches pluridisciplinaires qui prennent en compte l’environnement, l’éducation ou les structures de pouvoir.\n\nCette critique s’inscrit dans un contexte où les neurosciences, en particulier, sont souvent médiatisées de manière simplifiée, voire sélective. Des termes comme « plasticité cérébrale » ou « déterminisme génétique » sont parfois détournés pour justifier des positions idéologiques, comme si la biologie pouvait à elle seule expliquer des phénomènes profondément ancrés dans des contextes historiques et sociaux.\n\n## Explication du phénomène\nLe phénomène décrit par Naudé repose sur une confusion entre deux usages possibles de la biologie :\n1. **Un outil de description** : la science cherche à comprendre comment fonctionnent les organismes vivants, les mécanismes cérébraux, ou les interactions entre gènes et environnement. Ces connaissances peuvent aider à soigner des maladies, à améliorer les conditions de vie, ou à mieux cerner les capacités humaines.\n2. **Un outil de disciplinarisation** : certains discours utilisent ces mêmes connaissances pour imposer une vision restrictive de ce qui est « naturel » ou « normal ». Par exemple, affirmer qu’une différence cognitive est « innée » peut servir à justifier des inégalités d’accès à l’éducation ou à des postes de responsabilité, comme si la biologie scellait des destins.\n\nNaudé montre que cette seconde utilisation est souvent le fait de courants politiques ou idéologiques qui cherchent à réduire les débats sociaux à des questions de « nature humaine », excluant ainsi toute réflexion sur les causes sociales ou culturelles. Le risque ? Faire croire que les problèmes de société (comme les écarts de réussite scolaire ou les stéréotypes de genre) relèvent uniquement de la biologie, et non des choix collectifs ou des politiques publiques.\n\n## Fonctionnement / mécanismes\nLe mécanisme de cette instrumentalisation repose sur plusieurs éléments clés :\n\n- **La sélectivité des connaissances** : les neurosciences, comme toute science, produisent des résultats complexes et souvent nuancés. Pourtant, certains discours retiennent uniquement les éléments qui confortent une vision préétablie (par exemple, l’idée que certaines capacités seraient « génétiquement programmées »), tout en ignorant les facteurs environnementaux ou éducatifs. Cette sélection biaisée donne l’illusion d’une vérité scientifique incontestable.\n\n- **L’autorité supposée de la science** : la biologie, et surtout la neuroscience, bénéficient d’un prestige particulier dans le débat public. En s’appuyant sur des études ou des concepts scientifiques, même mal interprétés, certains discours gagnent en crédibilité aux yeux du grand public. Naudé rappelle que la science ne peut pas trancher des questions éthiques ou politiques : elle décrit, elle n’impose pas de normes.\n\n- **La naturalisation des inégalités** : en attribuant des différences (intelligences, comportements, réussites) à des causes biologiques, ces discours transforment des problèmes sociaux en fatalités. Par exemple, évoquer des « prédispositions cérébrales » pour expliquer des écarts de salaire peut servir à justifier le statu quo, comme si les structures économiques n’avaient aucun rôle à jouer.\n\n- Pourtant, en réduisant ces phénomènes à des mécanismes cérébraux ou génétiques, on évite d’aborder leurs causes sociales – et donc de les remettre en question.\n\nCe processus ne relève pas d’une « mauvaise science », mais d’une **stratégie rhétorique** : utiliser le langage de la biologie pour donner une apparence de neutralité à des arguments qui, en réalité, servent des intérêts précis (maintenir des hiérarchies, limiter les droits individuels, ou discréditer les approches sociales). Naudé insiste sur le fait que cette démarche n’est pas anodine : elle participe à une tentative de contrôle des corps et des esprits en les présentant comme soumis à des lois immuables.\n\n## Données et résultats scientifiques\n\nLes travaux cités dans le livre « Neuro arnaque » se fondent principalement sur une analyse critique de la littérature existante en neurosciences et en sciences sociales. Les données évoquées concernent plutôt des études de cas et des revues de discours où des concepts neurobiologiques sont mobilisés à des fins idéologiques. Les résultats détaillés, notamment les mesures quantitatives, sont consignés dans les ouvrages et articles de référence mentionnés dans les sources ; ils ne sont pas reproduits ici.\n\n## Ce que les scientifiques savent\n\n- La communauté neuroscientifique reconnaît que les fonctions cérébrales sont influencées par des facteurs biologiques, environnementaux, sociaux et culturels.  \n- De nombreuses recherches montrent que les expériences vécues, les interactions sociales et les contextes culturels modèlent le développement et le fonctionnement du cerveau.  \n- Les spécialistes soulignent que la réduction de phénomènes complexes à des explications purement biologiques (réductionnisme) peut masquer l’influence des dimensions sociales et politiques.  \n- Les critiques de l’auteur s’appuient sur le consensus scientifique selon lequel la biologie ne peut pas, à elle seule, expliquer des comportements humains qui sont profondément ancrés dans des structures sociales.\n\n## Ce qui reste incertain\n\n- La portée exacte de l’influence des discours politiques sur les processus neurobiologiques n’est pas encore quantifiée ; il manque des études empiriques qui mesureraient directement cet effet.  \n- La frontière entre l’usage légitime de connaissances neuroscientifiques pour éclairer les politiques publiques (par exemple en santé mentale) et leur instrumentalisation à des fins idéologiques demeure floue et dépend du contexte.  \n- La manière dont les publics perçoivent et intègrent les arguments neuro‑scientifiques dans leurs opinions politiques n’est pas encore pleinement comprise ; des recherches en psychologie sociale pourraient éclairer ce point.\n\n## Limites et controverses éventuelles\n\n- Certains chercheurs estiment que le livre exagère le rôle des discours réactionnaires en les présentant comme une « discipline » du vivant, alors que d’autres voient dans ces critiques une mise en garde nécessaire contre le détournement de la science.  \n- La critique du réductionnisme peut être perçue comme une opposition à l’avancée de la biologie, alors que la plupart des neuroscientifiques prônent une approche intégrative.  \n- Le manque de données empiriques directes sur l’impact des discours politiques sur le cerveau rend difficile la validation ou la réfutation des arguments avancés, ce qui alimente le débat entre partisans d’une lecture socioculturelle du cerveau et défenseurs d’une approche plus biomédicale.  \n\n## Conclusion\n\nLes analyses présentées dans « Neuro arnaque » mettent en lumière un risque réel : l’usage détourné de concepts neuroscientifiques pour soutenir des positions politiques qui négligent les dimensions sociales, culturelles et politiques des phénomènes humains. La communauté scientifique s’accorde sur la nécessité d’une approche multidisciplinaire qui intègre les connaissances biologiques avec les contextes sociaux. Toutefois, l’absence d’études empiriques précises sur l’influence directe des discours politiques sur le cerveau laisse plusieurs questions ouvertes. Une recherche future, combinant neurosciences, psychologie sociale et sciences politiques, serait indispensable pour clarifier ces interactions et éviter que la biologie ne soit instrumentalisée à des fins idéologiques.\n\n## Sources\n- Le Monde Sciences — https://www.lemonde.fr/sciences/article/2026/10/10/jeremie-naude-neuroscientifique-certains-discours-ne-tentent-pas-de-decrire-le-vivant-mais-cherchent-a-le-discipliner_6791013_1650684.html\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.",
+      "phrases_retirees_garde_fou": 2,
+      "matiere_source": "fine",
+      "textes_sources_audit": [
+        {
+          "source": "Le Monde Sciences",
+          "titre": "Jérémie Naudé, neuroscientifique : « Certains discours ne tentent pas de décrire le vivant, mais cherchent à le discipliner »",
+          "resume": "Dans son livre « Neuro arnaque », le chercheur dénonce les nouveaux atours de discours réactionnaires visant à dévoyer la biologie pour gommer la dimension sociale, culturelle et proprement politique de certains phénomènes."
+        }
+      ]
     },
     "citation": {
-      "texte": "Pour qu'on ne puisse abuser du pouvoir, il faut que, par la disposition des choses, le pouvoir arrête le pouvoir.",
-      "auteur": "Montesquieu",
-      "source": "De l'esprit des lois, livre XI, chapitre 4",
-      "annee": 1748
+      "texte": "Dans les champs de l'observation, le hasard ne favorise que les esprits préparés.",
+      "auteur": "Louis Pasteur",
+      "source": "Discours d'inauguration de la faculté des sciences de Lille, 7 décembre 1854",
+      "annee": 1854
     },
     "meteo": {
       "villes_detail": [
         {
           "ville": "Antibes",
-          "temperature_actuelle": 17.5,
-          "temperature_max": 23.1,
-          "temperature_min": 17.1,
+          "temperature_actuelle": 16.5,
+          "temperature_max": 23.7,
+          "temperature_min": 16.0,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 6.7,
-          "vent_max_kmh": 13.5,
-          "rafales_max_kmh": 28.4,
-          "weather_code": 0,
-          "description": "ciel dégagé",
+          "vent_kmh": 5.1,
+          "vent_max_kmh": 11.0,
+          "rafales_max_kmh": 22.0,
+          "weather_code": 3,
+          "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 17.5,
-              "temperature_max": 21.3,
+              "temperature_min": 16.0,
+              "temperature_max": 22.3,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 7,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 23.1,
+              "temperature_max": 23.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 11,
               "weather_code": 3,
               "description": "couvert"
             },
             {
-              "label": "Après-midi",
-              "temperature_min": 22.1,
+              "label": "Soir",
+              "temperature_min": 20.5,
               "temperature_max": 23.1,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 14,
-              "weather_code": 0,
-              "description": "ciel dégagé"
-            },
-            {
-              "label": "Soir",
-              "temperature_min": 18.4,
-              "temperature_max": 22.0,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
               "vent_max_kmh": 10,
-              "weather_code": 0,
-              "description": "ciel dégagé"
+              "weather_code": 3,
+              "description": "couvert"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Cannes",
-          "temperature_actuelle": 17.9,
-          "temperature_max": 22.5,
-          "temperature_min": 17.3,
+          "temperature_actuelle": 16.6,
+          "temperature_max": 23.1,
+          "temperature_min": 16.5,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
           "vent_kmh": 5.4,
-          "vent_max_kmh": 17.3,
-          "rafales_max_kmh": 28.1,
-          "weather_code": 0,
-          "description": "ciel dégagé",
+          "vent_max_kmh": 16.4,
+          "rafales_max_kmh": 25.2,
+          "weather_code": 3,
+          "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 17.3,
-              "temperature_max": 21.7,
+              "temperature_min": 16.5,
+              "temperature_max": 21.8,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 7,
+              "vent_max_kmh": 12,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 22.2,
+              "temperature_max": 23.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 16,
               "weather_code": 3,
               "description": "couvert"
             },
             {
-              "label": "Après-midi",
-              "temperature_min": 21.9,
-              "temperature_max": 22.5,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 17,
-              "weather_code": 0,
-              "description": "ciel dégagé"
-            },
-            {
               "label": "Soir",
-              "temperature_min": 18.9,
-              "temperature_max": 21.5,
+              "temperature_min": 20.5,
+              "temperature_max": 22.9,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 11,
-              "weather_code": 0,
-              "description": "ciel dégagé"
+              "vent_max_kmh": 13,
+              "weather_code": 3,
+              "description": "couvert"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Valbonne",
-          "temperature_actuelle": 13.8,
-          "temperature_max": 21.3,
-          "temperature_min": 13.5,
+          "temperature_actuelle": 14.1,
+          "temperature_max": 22.0,
+          "temperature_min": 13.8,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 5.8,
-          "vent_max_kmh": 8.7,
-          "rafales_max_kmh": 13.7,
+          "vent_kmh": 5.2,
+          "vent_max_kmh": 9.0,
+          "rafales_max_kmh": 12.2,
           "weather_code": 3,
           "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 13.5,
-              "temperature_max": 18.7,
+              "temperature_min": 13.8,
+              "temperature_max": 19.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 20.8,
+              "temperature_max": 22.0,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 16.2,
+              "temperature_max": 20.2,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 6,
               "weather_code": 3,
               "description": "couvert"
-            },
-            {
-              "label": "Après-midi",
-              "temperature_min": 19.3,
-              "temperature_max": 21.3,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 9,
-              "weather_code": 1,
-              "description": "plutôt dégagé"
-            },
-            {
-              "label": "Soir",
-              "temperature_min": 15.2,
-              "temperature_max": 19.9,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 6,
-              "weather_code": 0,
-              "description": "ciel dégagé"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Grasse",
-          "temperature_actuelle": 13.4,
-          "temperature_max": 20.4,
-          "temperature_min": 13.1,
+          "temperature_actuelle": 13.3,
+          "temperature_max": 21.2,
+          "temperature_min": 13.3,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 8.8,
-          "vent_max_kmh": 8.9,
-          "rafales_max_kmh": 15.1,
-          "weather_code": 0,
-          "description": "ciel dégagé",
+          "vent_kmh": 7.9,
+          "vent_max_kmh": 9.0,
+          "rafales_max_kmh": 12.6,
+          "weather_code": 3,
+          "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 13.1,
-              "temperature_max": 17.8,
+              "temperature_min": 13.3,
+              "temperature_max": 19.0,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 9,
-              "weather_code": 3,
-              "description": "couvert"
+              "vent_max_kmh": 8,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 18.5,
-              "temperature_max": 20.4,
+              "temperature_min": 19.8,
+              "temperature_max": 21.2,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 9,
-              "weather_code": 0,
-              "description": "ciel dégagé"
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             },
             {
               "label": "Soir",
-              "temperature_min": 14.6,
-              "temperature_max": 19.3,
+              "temperature_min": 15.7,
+              "temperature_max": 19.5,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 7,
-              "weather_code": 0,
-              "description": "ciel dégagé"
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
             }
           ],
           "alertes": []
         }
       ],
-      "temperature_max_zone": 23.1,
-      "temperature_min_zone": 13.1,
+      "temperature_max_zone": 23.7,
+      "temperature_min_zone": 13.3,
       "probabilite_pluie_max_pct": 0,
-      "vent_max_kmh": 17.3,
-      "description_dominante": "ciel dégagé",
+      "vent_max_kmh": 16.4,
+      "description_dominante": "couvert",
       "periodes": [
         {
           "label": "Matin",
-          "temperature_min": 13.1,
-          "temperature_max": 21.7,
+          "temperature_min": 13.3,
+          "temperature_max": 22.3,
           "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
-          "vent_max_kmh": 9,
+          "vent_max_kmh": 12,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 19.8,
+          "temperature_max": 23.7,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 16,
           "weather_code": 3,
           "description": "couvert"
         },
         {
-          "label": "Après-midi",
-          "temperature_min": 18.5,
+          "label": "Soir",
+          "temperature_min": 15.7,
           "temperature_max": 23.1,
           "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
-          "vent_max_kmh": 17,
-          "weather_code": 0,
-          "description": "ciel dégagé"
-        },
-        {
-          "label": "Soir",
-          "temperature_min": 14.6,
-          "temperature_max": 22.0,
-          "probabilite_pluie_pct": 0,
-          "precipitation_mm": 0.0,
-          "vent_max_kmh": 11,
-          "weather_code": 0,
-          "description": "ciel dégagé"
+          "vent_max_kmh": 13,
+          "weather_code": 3,
+          "description": "couvert"
         }
       ],
       "alertes": [],
-      "resume": "Couvert le matin, ciel dégagé l'après-midi, ciel dégagé le soir, de 13° à 23°."
+      "resume": "Ciel dégagé le matin, couvert l'après-midi, couvert le soir, de 13° à 24°."
     },
     "anglais": {
-      "titre_anglais": "Attacker in FlyDubai Flight Meant to Crash Into Israeli Airport, Emiratis Say",
-      "resume_anglais": "The attorney general of the United Arab Emirates said that the co-pilot had been inspired by the Sept. 11 attacks after years of developing extreme Islamist views.",
-      "url": "https://www.nytimes.com/2026/10/09/world/middleeast/flydubai-pilot-attack.html",
-      "source": "New York Times World",
-      "traduction_titre": "Attaquant sur le vol FlyDubai censé s'écraser sur un aéroport israélien, disent les Émiratis.",
-      "traduction_resume": "Le procureur général des Émirats arabes unis a déclaré que le copilote avait été inspiré par les attentats du 11 septembre après des années de développement de vues islamistes extrêmes.",
-      "niveau": "B2",
-      "mots_importants": [
+      "mode": "litterature",
+      "oeuvre": "Pride and Prejudice",
+      "auteur": "Jane Austen",
+      "annee": 1813,
+      "segments": [
         {
-          "mot": "attacker",
-          "traduction": "attaquant (nom)",
-          "exemple": "The attacker was caught before he could act."
+          "t": "It is a truth universally acknowledged",
+          "g": "reconnue de tous"
         },
         {
-          "mot": "FlyDubai",
-          "traduction": "FlyDubai (nom propre, compagnie aérienne)",
-          "exemple": "FlyDubai offers affordable flights across the Middle East."
+          "t": ", that a single man in possession of a good fortune, must be in want of",
+          "g": "qui a besoin de"
         },
         {
-          "mot": "crash",
-          "traduction": "s'écraser (verbe)",
-          "exemple": "The plane was scheduled to crash into the runway if the pilot failed to correct the course."
+          "t": " a wife. However little known",
+          "g": "Si peu connus soient"
         },
         {
-          "mot": "attorney general",
-          "traduction": "procureur général (titre officiel)",
-          "exemple": "The attorney general announced new reforms to improve court efficiency."
+          "t": " the feelings or views of such a man may be on his first entering a neighbourhood",
+          "g": "le voisinage"
         },
         {
-          "mot": "inspired",
-          "traduction": "inspiré (participe passé)",
-          "exemple": "She was inspired by the success of the project to start her own business."
+          "t": ", this truth is so well fixed",
+          "g": "solidement ancrée"
         },
         {
-          "mot": "extreme Islamist views",
-          "traduction": "vues islamistes extrêmes (expression)",
-          "exemple": "His extreme Islamist views caused controversy among the community."
+          "t": " in the minds of the surrounding families, that he is considered the rightful property",
+          "g": "propriété légitime"
         },
         {
-          "mot": "co-pilot",
-          "traduction": "copilote (nom)",
-          "exemple": "The co-pilot assisted the captain during the flight."
+          "t": " of some one or other of their daughters. \"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last",
+          "g": "enfin louée"
+        },
+        {
+          "t": "?\" Mr. Bennet replied that he had not. \"But it is,\" returned she",
+          "g": "répliqua-t-elle"
+        },
+        {
+          "t": "; \"for Mrs. Long has just been here, and she told me all about it.\" Mr. Bennet made no answer",
+          "g": "ne répondit rien"
+        },
+        {
+          "t": ".",
+          "g": null
         }
-      ]
+      ],
+      "texte_glose": "It is a truth universally acknowledged (= reconnue de tous), that a single man in possession of a good fortune, must be in want of (= qui a besoin de) a wife. However little known (= Si peu connus soient) the feelings or views of such a man may be on his first entering a neighbourhood (= le voisinage), this truth is so well fixed (= solidement ancrée) in the minds of the surrounding families, that he is considered the rightful property (= propriété légitime) of some one or other of their daughters. \"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last (= enfin louée)?\" Mr. Bennet replied that he had not. \"But it is,\" returned she (= répliqua-t-elle); \"for Mrs. Long has just been here, and she told me all about it.\" Mr. Bennet made no answer (= ne répondit rien)."
     },
     "meta": {
-      "resume_1_phrase": "À la une : La plateforme de vote pour la primaire de la gauche \"victime d'une cyberattaque\", le scrutin prolongé jusqu'à dimanche à 18 heures, annonce la commission d'organisation."
+      "resume_1_phrase": "À la une : EN DIRECT Guerre au Moyen-Orient : L’Arabie saoudite accuse les Houthis d'un « crime de guerre » à l’aéroport de Riyad…."
     },
     "_genere_par_llm": true,
     "_provider": "groq+mistral+nvidia",
@@ -472,12 +477,6 @@
         "erreur": null,
         "essais_echoues": 0
       },
-      "anglais": {
-        "genere_par_llm": true,
-        "provider": "nvidia",
-        "erreur": null,
-        "essais_echoues": 0
-      },
       "science_a": {
         "genere_par_llm": true,
         "provider": "mistral",
@@ -492,9 +491,9 @@
       },
       "sport": {
         "genere_par_llm": true,
-        "provider": "groq",
+        "provider": "nvidia",
         "erreur": null,
-        "essais_echoues": 1
+        "essais_echoues": 0
       }
     },
     "_bloc": {
@@ -508,10 +507,10 @@
       "erreur": null
     },
     "_anglais": {
-      "genere_par_llm": true,
-      "provider": "nvidia",
+      "genere_par_llm": false,
+      "provider": null,
       "erreur": null
     }
   },
-  "debut_run": "2026-10-10T06:10:34.742813+02:00"
+  "debut_run": "2026-10-11T06:10:38.694928+02:00"
 }
