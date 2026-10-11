@@ -55,6 +55,12 @@ MARQUEURS_MONDE = [
     "tennessee", "texas", "floride", "californie", "new york", "cnn", "pentagone", "congrès américain",
     "cour suprême des états-unis", "sénat américain", "gouverneur du", "midterms", "lula", "bolsonaro",
     "ebola", "rdc", "kinshasa", "lettonie",
+    # 11/10/2026 : « EN DIRECT Guerre au Moyen-Orient … aéroport de Riyad / Houthis » restait classé France
+    "moyen-orient", "proche-orient", "houthi", "houthis", "houthiste", "houthistes", "yemenite", "yemenites", "riyad",
+    "ryad", "saoudien", "saoudienne", "saoudiens", "emirats", "qatar", "koweit", "jordanie", "cisjordanie", "palestine",
+    "palestinien", "palestinienne", "palestiniens", "jerusalem", "tel-aviv", "beyrouth", "bagdad", "damas", "kaboul",
+    "islamabad", "new delhi", "tokyo", "mahmoud abbas", "panama", "zaporijia", "kharkiv", "odessa", "donbass", "tusk",
+    "union europeenne", "kenya", "ouganda", "djibouti", "somalie", "mozambique", "cameroun", "senegal", "madagascar",
 ]
 
 

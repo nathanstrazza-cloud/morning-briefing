@@ -18,7 +18,7 @@ from datetime import date, datetime
 
 import pytz
 
-from .analyse import dedup, diversite, science_events, scoring, sport_scoring, verification, zones
+from .analyse import dedup, diversite, science_events, scoring, sport_news, sport_scoring, titres, verification, zones
 from .collecte import calendrier, collector, markets as markets_collect, weather as weather_collect
 from .generation import anglais_litteraire, briefing_generator, llm_provider
 from .stockage import storage
@@ -99,7 +99,14 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
 
         # Affectation France/Monde par CONTENU (03/10/2026, src/analyse/zones.py) : le flux d'origine
         # ne décide plus seul. `raw` n'est pas modifié (l'anglais du jour lit raw["news"]["monde"]).
-        news_france, news_monde, _zones_stats = zones.assigner_zones(raw["news"]["france"], raw["news"]["monde"])
+        news_france, news_monde, _zones_stats = zones.assigner_zones(
+            titres.nettoyer_items(raw["news"]["france"]), titres.nettoyer_items(raw["news"]["monde"]))
+        # 11/10/2026 : les articles de SPORT arrivés par les flux d'actualité (Lens-Lyon, Tour de Lombardie…) vont au
+        # pool sport (mots-clés stricts dans le TITRE) au lieu de l'actualité générale.
+        news_france, _sport_fr = sport_news.separer_sport(news_france)
+        news_monde, _sport_mo = sport_news.separer_sport(news_monde)
+        sport_items = titres.nettoyer_items(list(raw["sport"])) + _sport_fr + _sport_mo
+        logger.info("Sport issu des flux d'actualité : %d article(s) déplacé(s) vers la section sport", len(_sport_fr) + len(_sport_mo))
         events_france = dedup.deduplicate(news_france)
         events_monde = dedup.deduplicate(news_monde)
         # Dédup inter-zones (03/10/2026) : un même événement ne doit pas figurer en France ET en Monde.
@@ -154,7 +161,7 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         # utilisateur. Dédup PAR sport (évite de fusionner deux sports sur des mots communs), puis sélection
         # par importance avec diversité entre sports et plafond global.
         par_sport: dict[str, list[dict]] = {}
-        for it in raw["sport"]:
+        for it in sport_items:
             par_sport.setdefault(it["sport"], []).append(it)
         sport_dedup = {sp: [dict(e, sport=sp) for e in dedup.deduplicate(items)] for sp, items in par_sport.items()}
         max_sport_total = config["seuils"].get("max_sport_total", 4)

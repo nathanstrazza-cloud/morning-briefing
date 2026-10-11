@@ -121,7 +121,8 @@ sans préférence pour un sport, une équipe ou un pays : tu traites seulement c
 
 {_REGLES_COMMUNES}
 6. Une courte phrase factuelle par élément fourni (résultat, classement significatif, blessure,
-   transfert, record). Les titres peuvent être en anglais : traduis-les, sans rien ajouter. Ne fais pas
+   transfert, record). Les titres peuvent être en anglais : TRADUIS-LES en français (chaque texte doit être entièrement
+   en français, aucun mot de phrase anglais), sans rien ajouter. Ne fais pas
    de compte rendu exhaustif et ne regroupe pas des éléments sans rapport.
 7. \"sport\" = nom du sport en français, en minuscules (ex. \"football\", \"tennis\"), repris des données.
 8. Si les données ne contiennent aucun élément : \"items\": [].

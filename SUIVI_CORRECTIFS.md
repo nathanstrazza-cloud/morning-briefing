@@ -266,3 +266,17 @@ Changement (fidèle au cahier §7 mode 2 « sujet pédagogique » ; le mode appr
   hors mode découverte (voulu). Tests : `tests/test_encyclopedie.py` (186 tests OK, sans réseau). Non validé en réel avant Dev Test.
 - À vérifier au Dev Test : log « Science : sujet pédagogique … », `sujet_id`/`origine` dans le JSON, nombre de phrases retirées,
   absence de « récemment », Sources = lien Wikipédia. Fusion dev -> main seulement avec l'accord de l'utilisateur.
+
+## Session du 11/10/2026 (suite) — Zones et Sport (sur `dev`)
+Défauts : `ANALYSE_RUN_2026-10-11.md` §2.2 (sport) et §2.3 (zones/EN DIRECT).
+- `src/analyse/titres.py` : retire emoji, préfixes « EN DIRECT/DIRECT/LIVE… » et ellipse finale des titres bruts ; vide les résumés de direct
+  (« Suivez avec nous… ») ; appliqué dans `main.py` à l'actualité ET au sport, avant zones/dédup.
+- `src/analyse/zones.py` : lexique « monde » élargi (Moyen-Orient, houthis, Riyad/Ryad, saoudien, Palestine, Panama, Pologne/Tusk, etc.).
+- `src/analyse/sport_news.py` : les articles de SPORT arrivés par les flux d'actualité (Lens-Lyon, Tour de Lombardie, Mondiaux de judo…)
+  sont déplacés vers le pool sport. Règle stricte : mot-clé sportif dans le TITRE uniquement (« combat contre le cancer » reste en actualité).
+  Cause du « Lens-Lyon absent » : l'article n'existait que dans les flux actualité, jamais vus par la section sport.
+- `src/generation/sport_format.py::semble_anglais` : un élément resté en anglais est écarté (sauf si tous le sont) ; prompt sport durci
+  (« texte entièrement en français »). `sport_scoring.SPORTS` : cyclisme reconnaît Tour de Lombardie, Liège-Bastogne, Milan-Sanremo.
+- Tests : `tests/test_titres_sport_zones.py` (194 tests OK, sans réseau). Non validé en réel avant Dev Test.
+- Limites : un article de sport sans mot-clé fort dans le titre reste en actualité ; l'écart d'importance entre Ligue 1 et Premier League reste neutre
+  (décision du 05/10 : aucune préférence d'équipe ou de pays).
