@@ -247,3 +247,22 @@ Demande de l'utilisateur : le texte NYT (titre + résumé RSS) était trop court
 - Tests : `tests/test_anglais_litteraire.py` (5, dont : chaque glose trouvée dans le texte, texte intact) ; 174 tests OK.
 **Non fait volontairement** : le mode « actualité ». Un flux RSS ne donne que 2 lignes, le texte complet d'un article (NYT, Le Monde…) est protégé, et un texte écrit par un LLM contredirait la règle « aucun fait inventé ». Piste si l'utilisateur y tient : Wikinews (licence CC BY, textes complets en anglais, API gratuite), à tester en réel ; il resterait le recoupement avec la section Actualité à éviter.
 **Pour agrandir la banque** : ajouter un objet dans `config/anglais_textes.json` (domaine public, mots difficiles) ; le test vérifie automatiquement la cohérence.
+
+## Session du 11/10/2026 — Science : sujet pédagogique à texte source réel (sur `dev`)
+Défaut (cf. `ANALYSE_RUN_2026-10-11.md` §2.1) : sans « découverte » qualifiée, l'article approfondi (~1 400 mots) était bâti sur
+UN résumé RSS de 2 lignes (interview Naudé / « Neuro arnaque ») avec des analyses attribuées sans source.
+Changement (fidèle au cahier §7 mode 2 « sujet pédagogique » ; le mode approfondi n'est plus tiré d'un résumé d'actualité) :
+- `config/science_sujets.json` : 36 sujets (sommeil, glucides, cyclones, CO2, IA…), champ `wiki` = titre exact de l'article Wikipédia FR.
+- `src/collecte/encyclopedie.py` : API MediaWiki (sans clé), extrait ≤ 6000 car. (≥ 2500 sinon rejeté), rotation déterministe par date,
+  sujets des 45 derniers briefings évités (lit `science.sujet_id` dans `docs/data/briefings`), jusqu'à 6 essais.
+- `briefing_generator.completer_sujet_pedagogique` (appelé dans `main.py` après `select_science_topic`) : si mode approfondi ->
+  sujet pédagogique ; sinon actualité seulement si `matiere == suffisante` ; sinon mode `indisponible` (AUCUN appel LLM science,
+  note « pas d'article plutôt qu'un article non vérifié »). Le mode « découverte » est inchangé.
+- Prompts : clause `origine == encyclopedie` (exposé intemporel, faits uniquement tirés de l'extrait, pas d'étude/chercheur absent).
+  `science_guard` vérifie nombres/noms/termes contre l'extrait ; section Sources construite par le code, Wikipédia signalée « non primaire ».
+- Le briefing stocke `science.sujet_id` et `science.origine` (rotation + audit).
+- Limites : Wikipédia n'est pas une source primaire (le dit la section Sources) ; la page peut changer d'un jour à l'autre ;
+  affirmations fausses en mots courants toujours non détectées par le garde-fou ; plus de lien direct avec l'actualité scientifique
+  hors mode découverte (voulu). Tests : `tests/test_encyclopedie.py` (186 tests OK, sans réseau). Non validé en réel avant Dev Test.
+- À vérifier au Dev Test : log « Science : sujet pédagogique … », `sujet_id`/`origine` dans le JSON, nombre de phrases retirées,
+  absence de « récemment », Sources = lien Wikipédia. Fusion dev -> main seulement avec l'accord de l'utilisateur.

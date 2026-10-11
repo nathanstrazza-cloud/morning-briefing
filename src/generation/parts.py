@@ -169,6 +169,11 @@ RÈGLES ANTI-INVENTION (strictes, un contrôle automatique supprime les phrases 
 - Tu disposes UNIQUEMENT des titres et résumés fournis (champ science_source, dont « textes_sources » qui
   réunit plusieurs articles sur le même sujet). Tout nombre, pourcentage, date, nom de chercheur,
   d'institution, d'étude ou de revue doit y figurer ; sinon NE L'ÉCRIS PAS (pas de « environ »).
+- Si science_source.origine vaut « encyclopedie », le texte fourni est un extrait d'ENCYCLOPÉDIE sur un sujet général :
+  écris un exposé pédagogique intemporel (jamais « récemment », « cette semaine », « une étude vient de »), appuie TOUS
+  les faits, chiffres, dates et noms sur cet extrait, ne cite aucune étude, revue ou chercheur qui n'y figure pas, et
+  n'invente pas de controverse : si l'extrait ne documente pas un point (limites, incertitudes), dis simplement que
+  la question est à approfondir dans les publications scientifiques.
 - N'écris AUCUN nom de protéine, gène, molécule, sigle, appareil ou méthode qui ne figure pas dans ces
   textes : décris le principe en mots simples (« une protéine sensible à la lumière »), jamais avec un nom
   technique de mémoire. Les phrases contenant un tel terme sont supprimées.
@@ -354,7 +359,9 @@ def build_parts(analysed: dict, science_topic: dict, nyt_article: dict | None, i
                         + bg._serialize({"titre_anglais": nyt_article["titre"],
                                          "resume_anglais": nyt_article["resume"]})),
             TOKENS_ANGLAIS, ("traduction_titre", "traduction_resume", "mots_importants"))
-    if science_topic["mode"] == "approfondi":
+    if science_topic["mode"] == "indisponible":
+        pass  # 11/10/2026 : aucun texte source -> aucun appel LLM science, le repli publie une note honnête
+    elif science_topic["mode"] == "approfondi":
         parts["science_a"] = Part("science_a", SYSTEM_SCIENCE_A, lambda mc: _science_prompt(science_topic, "A"),
                                   TOKENS_SCIENCE_MOITIE, ("science",), parser=parse_science_a("approfondi", 300))
         parts["science_b"] = Part("science_b", SYSTEM_SCIENCE_B, lambda mc: _science_prompt(science_topic, "B"),
@@ -454,6 +461,9 @@ def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: d
                 logger.warning("Garde-fou science : %d phrase(s) retirée(s) (chiffres absents de la source) : %s",
                                len(retirees), " | ".join(x[:80] for x in retirees[:8]))
         sci["contenu_markdown"] = contenu
+        if science_source is not None and science_source.get("sujet_id"):
+            sci["sujet_id"] = science_source["sujet_id"]  # rotation : ne pas reprendre un sujet récent
+            sci["origine"] = science_source.get("origine", "")
         if science_source is not None:
             # audit : ce que le rédacteur a RÉELLEMENT reçu (résumés RSS publics), pour relire l'article contre sa source
             sci["matiere_source"] = science_source.get("matiere", "")

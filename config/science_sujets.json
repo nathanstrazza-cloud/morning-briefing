@@ -1,0 +1,185 @@
+{
+ "_doc": "Sujets pédagogiques du mode « approfondi » (cahier §7, mode 2). `wiki` = titre exact de l'article de Wikipédia FR servant de TEXTE SOURCE (récupéré à chaque run, jamais écrit de mémoire). Ajouter un sujet = ajouter une ligne ; un titre introuvable est simplement ignoré (le sujet suivant est essayé).",
+ "sujets": [
+  {
+   "id": "sommeil",
+   "titre": "Sommeil",
+   "wiki": "Sommeil"
+  },
+  {
+   "id": "glucides",
+   "titre": "Glucide",
+   "wiki": "Glucide"
+  },
+  {
+   "id": "cyclones",
+   "titre": "Cyclone tropical",
+   "wiki": "Cyclone tropical"
+  },
+  {
+   "id": "champ-magnetique",
+   "titre": "Champ magnétique",
+   "wiki": "Champ magnétique"
+  },
+  {
+   "id": "co2",
+   "titre": "Dioxyde de carbone",
+   "wiki": "Dioxyde de carbone"
+  },
+  {
+   "id": "effet-de-serre",
+   "titre": "Effet de serre",
+   "wiki": "Effet de serre"
+  },
+  {
+   "id": "ia",
+   "titre": "Intelligence artificielle",
+   "wiki": "Intelligence artificielle"
+  },
+  {
+   "id": "apprentissage-automatique",
+   "titre": "Apprentissage automatique",
+   "wiki": "Apprentissage automatique"
+  },
+  {
+   "id": "cerveau",
+   "titre": "Cerveau humain",
+   "wiki": "Cerveau humain"
+  },
+  {
+   "id": "neurone",
+   "titre": "Neurone",
+   "wiki": "Neurone"
+  },
+  {
+   "id": "muscles",
+   "titre": "Muscle strié squelettique",
+   "wiki": "Muscle strié squelettique"
+  },
+  {
+   "id": "photosynthese",
+   "titre": "Photosynthèse",
+   "wiki": "Photosynthèse"
+  },
+  {
+   "id": "mitochondrie",
+   "titre": "Mitochondrie",
+   "wiki": "Mitochondrie"
+  },
+  {
+   "id": "systeme-immunitaire",
+   "titre": "Système immunitaire",
+   "wiki": "Système immunitaire"
+  },
+  {
+   "id": "vaccination",
+   "titre": "Vaccination",
+   "wiki": "Vaccination"
+  },
+  {
+   "id": "microbiote",
+   "titre": "Microbiote intestinal",
+   "wiki": "Microbiote intestinal"
+  },
+  {
+   "id": "insuline",
+   "titre": "Insuline",
+   "wiki": "Insuline"
+  },
+  {
+   "id": "cholesterol",
+   "titre": "Cholestérol",
+   "wiki": "Cholestérol"
+  },
+  {
+   "id": "rythme-circadien",
+   "titre": "Rythme circadien",
+   "wiki": "Rythme circadien"
+  },
+  {
+   "id": "tectonique",
+   "titre": "Tectonique des plaques",
+   "wiki": "Tectonique des plaques"
+  },
+  {
+   "id": "trou-noir",
+   "titre": "Trou noir",
+   "wiki": "Trou noir"
+  },
+  {
+   "id": "exoplanete",
+   "titre": "Exoplanète",
+   "wiki": "Exoplanète"
+  },
+  {
+   "id": "acidification-oceans",
+   "titre": "Acidification des océans",
+   "wiki": "Acidification des océans"
+  },
+  {
+   "id": "circulation-thermohaline",
+   "titre": "Circulation thermohaline",
+   "wiki": "Circulation thermohaline"
+  },
+  {
+   "id": "supraconductivite",
+   "titre": "Supraconductivité",
+   "wiki": "Supraconductivité"
+  },
+  {
+   "id": "fusion-nucleaire",
+   "titre": "Fusion nucléaire",
+   "wiki": "Fusion nucléaire"
+  },
+  {
+   "id": "energie-solaire",
+   "titre": "Énergie solaire",
+   "wiki": "Énergie solaire"
+  },
+  {
+   "id": "batterie-lithium",
+   "titre": "Accumulateur lithium-ion",
+   "wiki": "Accumulateur lithium-ion"
+  },
+  {
+   "id": "ordinateur-quantique",
+   "titre": "Ordinateur quantique",
+   "wiki": "Ordinateur quantique"
+  },
+  {
+   "id": "antibiotiques",
+   "titre": "Antibiotique",
+   "wiki": "Antibiotique"
+  },
+  {
+   "id": "resistance-antibiotiques",
+   "titre": "Résistance aux antibiotiques",
+   "wiki": "Résistance aux antibiotiques"
+  },
+  {
+   "id": "foudre",
+   "titre": "Foudre",
+   "wiki": "Foudre"
+  },
+  {
+   "id": "tsunami",
+   "titre": "Tsunami",
+   "wiki": "Tsunami"
+  },
+  {
+   "id": "volcan",
+   "titre": "Volcan",
+   "wiki": "Volcan"
+  },
+  {
+   "id": "seisme",
+   "titre": "Séisme",
+   "wiki": "Séisme"
+  },
+  {
+   "id": "hemoglobine",
+   "titre": "Hémoglobine",
+   "wiki": "Hémoglobine"
+  }
+ ]
+}

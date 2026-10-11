@@ -499,6 +499,7 @@ def fallback_briefing(
             "mode": science_topic["mode"],
             "titre": science_topic["contenu_source"].get("titre", "Sujet scientifique"),
             "contenu_markdown": (
+                NOTE_SCIENCE_INDISPONIBLE if science_topic["mode"] == "indisponible" else
                 "Synthèse rédigée indisponible pour le moment (LLM hors service). "
                 "Article source : " + science_topic["contenu_source"].get("url", "")
             ),
@@ -621,6 +622,32 @@ def matiere_fine(contenu_source: dict) -> bool:
     textes = {str(t.get("resume", "") or "").strip() for t in (contenu_source.get("textes_sources") or [])}
     textes.add(str(contenu_source.get("resume", "") or "").strip())
     return sum(len(t) for t in textes) < MATIERE_FINE_CARACTERES
+
+
+NOTE_SCIENCE_INDISPONIBLE = ("Aucun sujet scientifique vérifiable n'a pu être préparé ce matin (texte source indisponible) : "
+                             "pas d'article plutôt qu'un article non vérifié.")
+
+
+def completer_sujet_pedagogique(topic: dict, jour=None) -> dict:
+    """11/10/2026 : en mode « approfondi », remplace le sujet tiré d'un résumé RSS par un sujet PÉDAGOGIQUE à texte source
+    réel (cahier §7 mode 2, cf. collecte/encyclopedie.py). Ordre : sujet pédagogique ; à défaut, l'actualité scientifique
+    seulement si sa matière est suffisante ; sinon mode « indisponible » (aucun appel LLM science, note honnête)."""
+    if topic.get("mode") != "approfondi":
+        return topic
+    from src.collecte import encyclopedie
+    try:
+        sujet = encyclopedie.choisir_sujet_pedagogique(jour)
+    except Exception as exc:  # noqa: BLE001 — la science ne doit jamais faire échouer le run
+        logger.warning("Science : sujet pédagogique impossible (%s)", exc)
+        sujet = None
+    if sujet:
+        return sujet
+    if topic.get("contenu_source", {}).get("matiere") == "suffisante":
+        logger.warning("Science : aucun sujet pédagogique récupérable, repli sur l'actualité (matière suffisante)")
+        return topic
+    logger.warning("Science : aucun texte source suffisant -> mode indisponible (pas d'article)")
+    return {"mode": "indisponible", "contenu_source": {"titre": "Sujet scientifique indisponible ce matin", "resume": "",
+                                                       "url": "", "sources": []}}
 
 
 def _sujet(top: dict, mode: str) -> dict:
