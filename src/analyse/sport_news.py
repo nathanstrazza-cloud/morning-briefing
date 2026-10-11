@@ -23,8 +23,15 @@ MOTS_TITRE = [
 _RE = re.compile(r"(?<![\w-])(?:" + "|".join(re.escape(m) for m in sorted(MOTS_TITRE, key=len, reverse=True)) + r")(?![\w-])", re.I)
 
 
+# Directs / comptes rendus de match dont le titre ne cite ni compétition ni sport (« Suivez ce choc électrique avec nous »,
+# vu le 11/10 sur Liverpool - Manchester City) : stades connus et vocabulaire de match, TITRE uniquement.
+_RE_MATCH = re.compile(r"suivez ce (?:choc|match|derby|classico)|\b(?:mi-temps|coup d'envoi|prolongations|tirs au but)\b|"
+                       r"\b(?:anfield|old trafford|camp nou|parc des princes|santiago bernab[ée]u|allianz arena|stade v[ée]lodrome)\b", re.I)
+
+
 def est_sport(item: dict) -> bool:
-    return bool(_RE.search(str(item.get("titre", ""))))
+    titre = str(item.get("titre", ""))
+    return bool(_RE.search(titre) or _RE_MATCH.search(titre))
 
 
 def separer_sport(items: list[dict]) -> tuple[list[dict], list[dict]]:

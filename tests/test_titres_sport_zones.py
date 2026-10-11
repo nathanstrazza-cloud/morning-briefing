@@ -58,3 +58,16 @@ def test_riyad_houthis_classe_monde():
     assert zones.zone_par_contenu(it, "france") == "monde"
     it2 = {"titre": "Frappes sur l'aéroport de Riyad attribuées aux houthistes", "resume": "", "source": "France Info"}
     assert zones.zone_par_contenu(it2, "france") == "monde"
+
+
+def test_direct_de_match_sans_competition_va_au_sport():
+    it = {"titre": "Rpool - Manchester City : Anfield chambre des Cityzens et on s'ennuie… Suivez ce choc électrique avec nous", "resume": ""}
+    assert sport_news.est_sport(it)
+    assert not sport_news.est_sport({"titre": "Attal - Philippe : le match des centristes est lancé", "resume": ""})
+
+
+def test_titre_interrogatif_penalise_au_sport():
+    from src.analyse.sport_scoring import score_sport_event
+    q = {"titre": "Mondiaux de judo : comment le Français a-t-il pu perdre son combat décisif ?", "resume": "", "nb_sources": 1}
+    r = {"titre": "Mondiaux de judo : le Français perd son combat décisif", "resume": "", "nb_sources": 1}
+    assert score_sport_event(q) == score_sport_event(r) - 2

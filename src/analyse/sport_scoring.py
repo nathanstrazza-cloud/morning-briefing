@@ -95,6 +95,8 @@ def score_sport_event(event: dict, categorie: str | None = None, config: dict | 
     if _has(texte, _ANECDOTE):
         score -= 3
     score += min(2, max(0, event.get("nb_sources", 1) - 1))
+    if str(event.get("titre", "")).rstrip().endswith("?"):
+        score -= 2          # titre interrogatif = analyse/explicateur, pas un résultat (11/10 : « Comment… a-t-il pu perdre ? »)
     return max(0, min(10, score))
 
 
