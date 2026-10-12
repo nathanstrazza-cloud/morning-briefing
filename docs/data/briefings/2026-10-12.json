@@ -1,0 +1,529 @@
+{
+  "date": "2026-10-12",
+  "derniere_mise_a_jour": "2026-10-12T06:15:04.666352+02:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Présidentielle 2027 : Jean-Luc Mélenchon promet de supprimer « l’ignominie » Parcoursup devant une salle comble à Clermont-Ferrand",
+          "resume": "Le leader « insoumis » a renouvelé, dimanche, ses encouragements appuyés au mouvement de colère lycéen, dont il a loué la « très grande maturité politique et syndicale ».",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France Info",
+            "20 Minutes",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Raphaël Glucksmann, vainqueur de la primaire à gauche, au défi de mettre la famille sociale-démocrate en ordre de bataille",
+          "resume": "Le coprésident de Place publique, qui l’a emporté dès le premier tour dimanche, a revendiqué la « rupture avec le macronisme » et la fin de « l’hégémonie de Jean-Luc Mélenchon sur la gauche », tout en assurant que le principal adversaire reste « l’extrême droite ».",
+          "pourquoi_important": "Sa victoire définit le candidat de la gauche pour l’élection présidentielle de 2027.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Primaire de la gauche : Raphaël Glucksmann élu haut la main dès le premier tour avec 66,17% des voix",
+          "resume": "Le leader de Place publique devance très nettement Olivier Faure, le patron du Parti socialiste et tend la main aux autres forces de gauche hors LFI.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Le ministère de l'Intérieur a lancé une procédure de dissolution contre l'association d'extrême droite Egalité et Réconciliation de l'essayiste Alain Soral",
+          "resume": "Dans un courrier détaillé, le ministère de l'Intérieur reproche à l'association présidée par le polémiste d'extrême droite de provoquer la violence \"envers les personnes juives, immigrées, les femmes et la communauté LGBT\".",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "La France appelle les dirigeants palestiniens à \"revenir sur leur décision\" de reporter les élections législatives d'un an",
+          "resume": "Cette promesse d'organiser des élections était une des conditions de la reconnaissance d'un Etat palestinien par la France.",
+          "pourquoi_important": "Le rappel de la France souligne l’importance des élections pour la reconnaissance d’un État palestinien.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Arabie saoudite : au lendemain de l’attaque des Houthis qui a fait 13 morts, l’aéroport de Riyad ciblé par de nouvelles frappes ce dimanche",
+          "resume": "Les Houthis du Yémen revendiquent des « opérations d’envergure » contre des aéroports et des infrastructures énergétiques saoudiennes, avec des frappes inédites depuis 2014.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Libération",
+            "20 Minutes",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : l’accord de cessez-le-feu énergétique annoncé par Donald Trump n’a été confirmé ni par Moscou, ni par Kiev ; Volodymyr Zelensky dénonce de nouvelles frappes russes",
+          "resume": "Le président des Etats-Unis n'a livré aucun détail sur cet accord annoncé, alors qu'il appelait Kiev à cesser de frapper les infrastructure énergétiques russes, et que Moscou cible régulièrement celles de l'Ukraine.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Après vingt ans sans élection, les Palestiniens de nouveau privés de scrutin",
+          "resume": "Le président Mahmoud Abbas a reporté d’un an les élections législatives palestiniennes après des négociations entre les quatre grandes factions palestiniennes.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Au moins 139 morts et 84 disparus après le naufrage d'une embarcation transportant des migrants au large de Djibouti",
+          "resume": "Selon l'ONU, les passagers étaient majoritairement des Ethiopiens fuyant la guerre pour rejoindre les pays du Golfe.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Pologne : un suspect arrêté en lien avec « une possible tentative d’assassinat » contre le Premier ministre, Donald Tusk",
+          "resume": "L’homme qui menaçait de commettre cette attaque a été arrêté, ont annoncé le premier ministre et le ministre de l’intérieur. « Nous traitons cette affaire avec le plus grand sérieux », a commenté le porte-parole du ministre-coordinateur des services spéciaux.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Libération",
+            "Le Monde International"
+          ]
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
+      "mouvements_notables": [
+        {
+          "nom": "DAX",
+          "variation_pct": 1.13,
+          "explication": null
+        },
+        {
+          "nom": "Pétrole (Brent)",
+          "variation_pct": -1.42,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "natation",
+          "texte": "Tomoyuki Matsushita bat le record du monde du 400 m 4 nages en petit bassin"
+        },
+        {
+          "sport": "formule 1",
+          "texte": "Max Verstappen remporte à Singapour son deuxième Grand Prix d'affilée, Kimi Antonelli se rapproche du titre de champion du monde de F1"
+        },
+        {
+          "sport": "football",
+          "texte": "La victoire décisive de Man City donne une impression d'irrélevance avec la saison en suspens"
+        },
+        {
+          "sport": "tennis",
+          "texte": "Retour réussi au Masters 1000 de Shanghai pour Valentin Vacherot, tenant du titre et vainqueur de Sebastian Baez au 2e tour"
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": []
+    },
+    "science": {
+      "mode": "approfondi",
+      "titre": "Les antibiotiques : principes, mécanismes et enjeux d’une révolution thérapeutique",
+      "contenu_markdown": "## Introduction\nLes antibiotiques sont parmi les découvertes médicales les plus marquantes du XXe siècle. Ces substances, naturelles ou synthétiques, ciblent spécifiquement les bactéries pour les tuer ou bloquer leur multiplication. Leur introduction a transformé la médecine en réduisant drastiquement la mortalité liée aux infections bactériennes. Pourtant, leur usage massif pose aujourd’hui des défis majeurs, notamment celui de la résistance bactérienne. Pour comprendre leur rôle et leur impact, il faut d’abord saisir ce qu’ils sont, comment ils agissent, et pourquoi leur développement a été une avancée majeure.\n\n---\n\n## Pourquoi le sujet est important\nLes antibiotiques ont sauvé des millions de vies en permettant de traiter des infections autrefois mortelles, comme la pneumonie, la tuberculose ou les infections postopératoires. Leur découverte a permis une augmentation significative de l’espérance de vie, estimée à plus de dix ans grâce à ces traitements. Cependant, leur utilisation généralisée – en médecine humaine, vétérinaire, ou même dans l’élevage – a entraîné une sélection de bactéries résistantes. Aujourd’hui, certaines infections, comme celles causées par des bactéries multirésistantes en milieu hospitalier, deviennent difficiles à soigner. Comprendre leur mécanisme d’action et les limites de leur usage est donc essentiel pour préserver leur efficacité et développer de nouvelles stratégies thérapeutiques.\n\n---\n\n## Explication du phénomène : ce qu’est un antibiotique\nUn antibiotique est une substance qui agit contre les bactéries, soit en les tuant (effet **bactéricide**), soit en empêchant leur croissance (effet **bactériostatique**). Cette action dépend souvent de la dose administrée : une même molécule peut être bactéricide à haute dose et bactériostatique à faible dose.\n\nIl ne faut pas confondre antibiotiques et **antiseptiques** : ces derniers, utilisés en application externe (comme l’alcool ou le désinfectant), tuent ou inhibent un large éventail de micro-organismes (bactéries, champignons, virus) sans cibler spécifiquement les bactéries. Les antibiotiques, eux, sont conçus pour être ingérés ou injectés et agissent de manière sélective sur les bactéries pathogènes, sans affecter significativement les cellules humaines (grâce à leur **toxicité sélective**).\n\nEnfin, les antibiotiques ne sont généralement pas efficaces contre les virus ou les champignons. Pour ces derniers, on utilise respectivement des **antiviraux** et des **antimycosiques**.\n\n---\n\n## Fonctionnement et mécanismes : comment agissent les antibiotiques ?\nLes antibiotiques ciblent des processus **essentiels** au fonctionnement des bactéries, que les cellules humaines ne possèdent pas ou sous une forme différente. Voici leurs principales cibles :\n\n1. **La synthèse de la paroi bactérienne**.\n   Certaines bactéries, comme celles responsables de la pneumonie ou de la méningite, possèdent une paroi rigide composée de molécules spécifiques (comme le peptidoglycane). Des antibiotiques, tels ceux de la famille des **bêta-lactamines** (comme la pénicilline), bloquent la formation de cette paroi, affaiblissant la bactérie jusqu’à sa lyse (destruction).\n\n2. **La réplication de l’ADN**.\n   D’autres antibiotiques, comme la **ciprofloxacine**, interfèrent avec les enzymes bactériennes responsables de la copie de l’ADN, empêchant ainsi la bactérie de se diviser.\n\n3. **La synthèse des protéines**.\n   Les bactéries fabriquent leurs protéines à l’aide de structures appelées **ribosomes**, légèrement différentes de celles des cellules humaines. Des antibiotiques comme la **tétracycline** ou la **chloramphénicol** se fixent sur ces ribosomes et bloquent la production de protéines vitales pour la bactérie.\n\n4. **La production d’énergie**.\n   Certaines molécules, comme les **macrolides**, perturbent la fabrication d’énergie au sein de la bactérie, la privant des ressources nécessaires à sa survie.\n\nL’efficacité d’un antibiotique repose sur sa capacité à se fixer spécifiquement sur sa cible bactérienne, sans altérer les cellules de l’organisme hôte. Cette sélectivité est cruciale pour limiter les effets indésirables chez le patient. Cependant, lorsque les bactéries mutent pour résister à ces mécanismes (par exemple en modifiant leur cible ou en pompant l’antibiotique hors de leur cellule), l’efficacité du traitement diminue.\n\n## Données et résultats scientifiques\n\nLes statistiques historiques montrent que l’introduction massive des antibiotiques après la Seconde Guerre mondiale a permis d’allonger l’espérance de vie de plus de dix ans, constituant ainsi l’un des progrès thérapeutiques les plus marquants du XXᵉ siècle.  \n\nDes études épidémiologiques ont également mis en évidence une hausse du nombre d’infections nosocomiales résistantes aux traitements classiques, en particulier dans les établissements de santé où l’usage des antibiotiques est le plus intensif.  \n\nLes recherches sur la résistance bactérienne ont identifié plusieurs mécanismes génétiques (modifications de la cible de l’antibiotique, production d’enzymes inactivant le composé, pompes d’efflux) qui se propagent rapidement sous la pression sélective exercée par l’usage répété des molécules, qu’il soit humain, vétérinaire ou agricole.  \n\n## Ce que les scientifiques savent\n\n- **Spectre d’action** : les antibiotiques agissent de façon sélective sur les bactéries en bloquant une étape essentielle de leur métabolisme (synthèse de la paroi cellulaire, réplication de l’ADN, production de protéines ou génération d’énergie). Cette spécificité repose sur la fixation de la molécule sur une cible bactérienne précise.  \n- **Bactéricides vs bactériostatiques** : selon la dose administrée, un même antibiotique peut tuer les bactéries (bactéricides) ou simplement inhiber leur croissance (bactériostatiques).  \n- **Origine des molécules** : la majorité des antibiotiques découverts proviennent de micro‑organismes (champignons ou bactéries) qui les produisent naturellement pour éliminer leurs concurrents. Un petit nombre de ces composés naturels est exploitable en thérapeutique humaine ; la plupart des molécules commercialisées aujourd’hui sont synthétiques ou dérivées de ces substances naturelles, afin de contourner les problèmes de résistance.  \n- **Impact sur la santé publique** : l’usage généralisé des antibiotiques a contribué à une réduction significative de la mortalité liée aux infections bactériennes et à une augmentation de l’espérance de vie, comme indiqué précédemment.  \n\n## Ce qui reste incertain\n\n- **Évolution de la résistance** : bien que les mécanismes de résistance soient bien décrits, la vitesse à laquelle de nouvelles souches multirésistantes apparaissent et se propagent reste difficile à prévoir.  \n- **Efficacité des stratégies de contournement** : le développement de molécules dérivées des antibiotiques naturels ou totalement synthétiques vise à limiter la résistance, mais l’efficacité à long terme de ces approches n’est pas encore pleinement démontrée.  \n- **Rôle potentiel contre certains virus** : des études en cours suggèrent que quelques antibiotiques pourraient avoir une activité limitée contre des virus spécifiques (par exemple, la teicoplanine contre le virus Ebola), mais ces observations restent préliminaires et nécessitent des validations supplémentaires.  \n\n## Limites et controverses éventuelles\n\n- **Sur‑utilisation** : l’emploi d’antibiotiques en prévention, en traitement curatif, dans l’alimentation animale, la pisciculture ou comme pesticide crée une pression de sélection importante, favorisant l’émergence de bactéries résistantes.  \n- **Effets indésirables** : bien que la toxicité sélective soit un principe fondamental, certains antibiotiques peuvent provoquer des effets secondaires chez l’hôte, notamment des perturbations du microbiote intestinal.  \n- **Débat sur les politiques d’usage** : la communauté médicale et les autorités sanitaires discutent encore des meilleures pratiques pour limiter l’usage non indispensable tout en garantissant un accès efficace aux traitements nécessaires.  \n- **Limites de l’action** : les antibiotiques ne sont généralement pas actifs contre les champignons ou les virus ; les infections causées par ces agents requièrent des classes de médicaments distinctes (antimycosiques, antiviraux).  \n\n## Conclusion\n\nLes antibiotiques constituent une classe de substances essentielles qui ont transformé la médecine moderne en permettant de traiter efficacement les infections bactériennes et en prolongeant l’espérance de vie. Leur mode d’action sélectif, basé sur l’inhibition de processus vitaux bactériens, explique leur succès thérapeutique. Cependant, l’usage intensif et parfois inapproprié de ces molécules a engendré une résistance croissante, réduisant leur efficacité et posant un défi majeur à la santé publique. Les connaissances actuelles permettent de comprendre les mécanismes d’action et de résistance, mais de nombreuses incertitudes subsistent quant à l’évolution future de la résistance et à l’efficacité des nouvelles stratégies de contournement. Une utilisation prudente, encadrée par des politiques de prescription rigoureuses et une recherche continue, reste indispensable pour préserver l’utilité des antibiotiques dans les décennies à venir.\n\n## Sources\n- Wikipédia (fr) — Antibiotique — https://fr.wikipedia.org/wiki/Antibiotique\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 0,
+      "sujet_id": "antibiotiques",
+      "origine": "encyclopedie",
+      "matiere_source": "suffisante",
+      "textes_sources_audit": [
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Antibiotique",
+          "resume": "Un antibiotique (du grec anti : « contre », et bios : « la vie ») est une substance naturelle ou synthétique qui tue les bactéries ou bloque leur croissance. Dans le premier cas, on parle d'antibiotique bactéricide et dans le second cas d'antibiotique bactériostatique. Lorsque la substance est utilisée de manière externe pour tuer la bactérie par contact, on ne parle pas d'antibiotique mais d'antiseptique.\nUn antibiotique peut être à la fois bactéricide et bactériostatique, selon sa dose.\nUn grand nombre des antibiotiques existants sont constitués de molécules naturelles, fabriquées par des micro-organismes : des champignons ou d'autres bactéries. Ces dernières les produisent pour éliminer les bactéries concurrentes avec lesquelles elles sont en compétition dans leur biotope. Cependant, seul un petit nombre des antibiotiques naturels est utilisable en thérapeutique humaine, pour des raisons de disponibilité dans l'organisme ou d'effets indésirables. Un grand nombre de molécules aujourd'hui sur le marché sont des molécules de synthèse, dérivées ou non d'antibiotiques naturels, en particulier pour contourner les problèmes de résistance.\nLes antibiotiques agissent de manière spécifique sur les bactéries, en bloquant une étape essentielle de leur développement : synthèse de leur paroi, de l'ADN, des protéines, ou la production d'énergie, etc.. Ce blocage se produit lorsque l'antibiotique se fixe sur sa cible, une molécule de la bactérie qui participe à l'un de ces processus métaboliques essentiels. Cette interaction entre l'antibiotique et sa cible est très sélective, spécifique des bactéries et ces composés ne sont en général actifs ni sur les champignons ni sur les virus. Il existe d'autres molécules actives sur ces autres types d'agents infectieux que l'on appelle des antimycosiques ou des antiviraux, distincts des antibiotiques.\nL'introduction généralisée des antibiotiques après la Seconde Guerre mondiale a été l'un des progrès thérapeutiques les plus importants du XXe siècle. Les traitements antibiotiques ont fait progresser l'espérance de vie de plus de dix ans, soit plus qu'aucun autre traitement médical. Cependant, l'usage généralisé, voire abusif de certains antibiotiques, y compris en traitement préventif, curatif ou en complément alimentaire dans l'alimentation animale, en pisciculture, en médecine vétérinaire et humaine, ou encore comme pesticides pour le traitement des végétaux (contre le feu bactérien par exemple) a introduit une pression de sélection qui a conduit au développement de populations de micro-organismes antibiorésistants et à une baisse générale de l'efficacité thérapeutique. En milieu hospitalier, ceci conduit à une augmentation du risque nosocomial, faute de traitement adapté contre certains germes particulièrement résistants.\n\nGénéralités\n\nDéfinition\nDe manière simplifiée un antibiotique est, dans le domaine médical, « une substance chimique organique d’origine naturelle ou synthétique inhibant ou tuant les bactéries pathogènes à faible concentration et possédant une toxicité sélective ». Par toxicité sélective, on entend que celle-ci est spécifique des bactéries et que la molécule antibiotique n'affecte pas l'hôte infecté, au moins aux doses utilisées pour le traitement.\nPlus généralement, pour les microbiologistes et les chimistes, un antibiotique est une substance anti-bactérienne.\nIl a existé des variantes dans cette définition qui diffèrent par la présence ou non des concepts de toxicité sélective, d’origine microbienne et de limitation de cible aux seules bactéries.\nLes antiseptiques ne sont pas des antibiotiques. Leur fonction est de tuer un maximum de germes (bactéries, champignons, virus), leur mode d'action n'est pas spécifique, ils ne s'utilisent que localement en application externe et mal employés (trop concentrés par exemple) ils peuvent provoquer des lésions et/ou retarder la cicatrisation.\nLes antibiotiques ne sont généralement pas actifs contre les virus. Un produit luttant contre les virus est un antiviral. Toutefois, des études en cours tendent à démontrer une certaine efficacité de quelques antibiotiques dans des cas particuliers comme l'effet de la teicoplanine sur la maladie à virus Ebola.\n\nAvant l'ère moderne\nLes plus anciennes traces d’exposition à des antibiotiques remontent à la période 350–550 apr. J.-C., dans le nord du Soudan. Des analyses chimiques de squelettes ont révélé des concentrations élevées de tétracycline, un antibiotique à large spectre. Ces concentrations suggèrent une exposition répétée à cette molécule. Les chercheurs ont proposé que celle-ci provienne d'une consommation de boissons fermentées à base de céréales contenant des bactéries du genre Streptomyces, naturellement productrices de tétracycline.\n\nDécouverte\n\nLe premier antibiotique identifié fut la pénicilline. Si dès la fin du XIXe siècle Ernest Duchesne découvrit les propriétés curatives de Penicillium glaucum, la découverte de la pénicilline est à mettre au crédit de Sir Alexander Fleming qui s’aperçut en 1928 que certaines de ses cultures bactériennes dans des boîtes oubliées avaient été contaminées par les expériences de son voisin de paillasse étudiant le champignon Penicillium notatum et que celui-ci inhibait leur reproduction. Mais l’importance de cette découverte, ses implications et ses utilisations médicales ne furent comprises et élaborées qu’après sa redécouverte, entre les deux grandes guerres notamment à la suite des travaux de Howard Walter Florey, Ernst Chain, et Norman Heatley (en) en 1939."
+        }
+      ]
+    },
+    "citation": {
+      "texte": "Douter de tout ou tout croire, ce sont deux solutions également commodes, qui l'une et l'autre nous dispensent de réfléchir.",
+      "auteur": "Henri Poincaré",
+      "source": "La Science et l'Hypothèse",
+      "annee": 1902
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 18.6,
+          "temperature_max": 24.6,
+          "temperature_min": 18.2,
+          "precipitation_mm": 3.8,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 8.6,
+          "vent_max_kmh": 9.3,
+          "rafales_max_kmh": 19.8,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 18.6,
+              "temperature_max": 22.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 3.8,
+              "vent_max_kmh": 9,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 23.5,
+              "temperature_max": 24.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 20.1,
+              "temperature_max": 23.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 18.8,
+          "temperature_max": 23.4,
+          "temperature_min": 18.7,
+          "precipitation_mm": 0.3,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 6.3,
+          "vent_max_kmh": 10.0,
+          "rafales_max_kmh": 21.2,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 18.8,
+              "temperature_max": 22.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.3,
+              "vent_max_kmh": 6,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 23.0,
+              "temperature_max": 23.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 20.1,
+              "temperature_max": 22.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 14.4,
+          "temperature_max": 22.3,
+          "temperature_min": 14.2,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 6.3,
+          "vent_max_kmh": 9.4,
+          "rafales_max_kmh": 15.5,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 14.2,
+              "temperature_max": 20.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 21.2,
+              "temperature_max": 22.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 17.1,
+              "temperature_max": 20.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 13.7,
+          "temperature_max": 21.3,
+          "temperature_min": 13.6,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 8.7,
+          "vent_max_kmh": 11.3,
+          "rafales_max_kmh": 16.2,
+          "weather_code": 1,
+          "description": "plutôt dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 13.6,
+              "temperature_max": 19.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 20.0,
+              "temperature_max": 21.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 11,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 16.4,
+              "temperature_max": 19.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 24.6,
+      "temperature_min_zone": 13.6,
+      "probabilite_pluie_max_pct": 0,
+      "vent_max_kmh": 11.3,
+      "description_dominante": "ciel dégagé",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 13.6,
+          "temperature_max": 22.6,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 3.8,
+          "vent_max_kmh": 9,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 20.0,
+          "temperature_max": 24.6,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 11,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 16.4,
+          "temperature_max": 23.3,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 9,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        }
+      ],
+      "alertes": [],
+      "resume": "Ciel dégagé toute la journée, de 14° à 25°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "Moby-Dick",
+      "auteur": "Herman Melville",
+      "annee": 1851,
+      "segments": [
+        {
+          "t": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse",
+          "g": "la bourse, le porte-monnaie"
+        },
+        {
+          "t": ", and nothing particular to interest me on shore",
+          "g": "à terre"
+        },
+        {
+          "t": ", I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen",
+          "g": "la mauvaise humeur, le spleen"
+        },
+        {
+          "t": " and regulating the circulation. Whenever I find myself growing grim",
+          "g": "sombre, renfrogné"
+        },
+        {
+          "t": " about the mouth; whenever it is a damp, drizzly",
+          "g": "bruineux"
+        },
+        {
+          "t": " November in my soul; whenever I find myself involuntarily pausing before coffin warehouses",
+          "g": "entrepôts de cercueils"
+        },
+        {
+          "t": ", and bringing up the rear",
+          "g": "fermer la marche"
+        },
+        {
+          "t": " of every funeral I meet; and especially whenever my hypos",
+          "g": "idées noires"
+        },
+        {
+          "t": " get such an upper hand",
+          "g": "le dessus"
+        },
+        {
+          "t": " of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off",
+          "g": "faire voler le chapeau des passants"
+        },
+        {
+          "t": "—then, I account it high time",
+          "g": "juge qu'il est grand temps"
+        },
+        {
+          "t": " to get to sea as soon as I can.",
+          "g": null
+        }
+      ],
+      "texte_glose": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse (= la bourse, le porte-monnaie), and nothing particular to interest me on shore (= à terre), I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen (= la mauvaise humeur, le spleen) and regulating the circulation. Whenever I find myself growing grim (= sombre, renfrogné) about the mouth; whenever it is a damp, drizzly (= bruineux) November in my soul; whenever I find myself involuntarily pausing before coffin warehouses (= entrepôts de cercueils), and bringing up the rear (= fermer la marche) of every funeral I meet; and especially whenever my hypos (= idées noires) get such an upper hand (= le dessus) of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off (= faire voler le chapeau des passants)—then, I account it high time (= juge qu'il est grand temps) to get to sea as soon as I can."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Présidentielle 2027 : Jean-Luc Mélenchon promet de supprimer « l’ignominie » Parcoursup devant une salle comble à Clermont-Ferrand."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral+nvidia",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral+nvidia",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-10-12T06:10:36.589898+02:00"
+}

@@ -1,6 +1,6 @@
 {
-  "derniere_execution": "2026-10-11T06:14:19.975500+02:00",
-  "date_visee": "2026-10-11",
+  "derniere_execution": "2026-10-12T06:15:04.666352+02:00",
+  "date_visee": "2026-10-12",
   "succes": true,
   "erreur": null,
   "synthese_llm": true,
@@ -22,10 +22,16 @@
   },
   "sources_rss_en_erreur": [
     {
+      "source": "France 24 International",
+      "categorie": "monde",
+      "statut": "erreur",
+      "detail": "HTTPSConnectionPool(host='www.france24.com', port=443): Max retries exceeded with url: /fr/rss (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010)')))"
+    },
+    {
       "source": "CNRS Actualités",
       "categorie": "sciences",
       "statut": "erreur",
-      "detail": "<unknown>:15:231: not well-formed (invalid token)"
+      "detail": "<unknown>:18:68: not well-formed (invalid token)"
     },
     {
       "source": "L'Équipe Hand",
@@ -55,14 +61,14 @@
   "sources_marches_en_erreur": [],
   "funnel_actualite": {
     "france": {
-      "bruts": 92,
-      "evenements_uniques": 74,
-      "retenus_apres_seuil": 23
+      "bruts": 84,
+      "evenements_uniques": 69,
+      "retenus_apres_seuil": 25
     },
     "monde": {
-      "bruts": 87,
-      "evenements_uniques": 71,
-      "retenus_apres_seuil": 38
+      "bruts": 89,
+      "evenements_uniques": 68,
+      "retenus_apres_seuil": 25
     }
   }
 }
