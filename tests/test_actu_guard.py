@@ -176,3 +176,20 @@ def test_resume_1_phrase_jamais_coupe_en_plein_mot():
     énorme = "mot " * 80
     p = construire_resume_1_phrase([énorme])
     assert p.endswith("…") and len(p) <= 221 and not p[:-1].endswith("mo")
+
+
+def test_completer_manquants_ajoute_les_evenements_ecartes_par_le_llm():
+    from src.generation.actu_guard import completer_manquants
+    fournis = [
+        {"titre": "Séisme au Japon : 12 morts", "resume": "Un séisme a frappé.", "statut_verification": "fait_confirme",
+         "sources": [{"nom": "Le Monde"}, {"nom": "NYT"}]},
+        {"titre": "Élections législatives en Pologne dimanche", "resume": "Le scrutin approche.",
+         "statut_verification": "information_rapportee", "sources": [{"nom": "Libération"}]},
+    ]
+    rediges = [{"titre": "Séisme au Japon : 12 morts", "resume": "Un séisme a frappé.", "sources": ["Le Monde"]}]
+    out, ajoutes = completer_manquants(rediges, fournis)
+    assert len(out) == 2 and len(ajoutes) == 1
+    assert out[1]["titre"].startswith("Selon Libération, ") and out[1]["complete_par_code"] is True
+    assert out[1]["resume"] == "Le scrutin approche."
+    # rien à ajouter si tout est rendu
+    assert completer_manquants(out, fournis)[1] == []

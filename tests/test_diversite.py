@@ -51,3 +51,14 @@ def test_zone_etats_unis_sans_accent_et_tennessee():
     it = {"titre": "Aux Etats-Unis, Christa Pike est toujours dans un état critique", "resume": "gouverneur du Tennessee",
           "source": "Libération", "categorie": "france", "url": "u"}
     assert zone_par_contenu(it, "france") == "monde"
+
+
+def test_selection_ecarte_le_meme_sujet_a_entites_frequentes():
+    from src.analyse.diversite import selectionner_diversifie
+    evs = [
+        {"titre": "Présidentielle 2027 : Raphaël Glucksmann, vainqueur de la primaire à gauche, au défi de mettre la famille sociale-démocrate en ordre de bataille"},
+        {"titre": "Primaire de la gauche : Raphaël Glucksmann élu haut la main dès le premier tour avec 66,17% des voix"},
+        {"titre": "Séisme au Japon : douze morts dans la préfecture de Kumamoto"},
+    ]
+    out = selectionner_diversifie(evs, 2)
+    assert [e["titre"][:12] for e in out] == ["Présidentiel", "Séisme au Ja"]

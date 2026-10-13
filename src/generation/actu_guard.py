@@ -153,6 +153,29 @@ def guard_events(llm_events: list[dict], source_events: list[dict]) -> tuple[lis
     return result, all_removed
 
 
+def completer_manquants(rediges: list[dict], fournis: list[dict]) -> tuple[list[dict], list[str]]:
+    """12/10/2026 : le LLM (Mistral) écarte parfois des événements fournis malgré la consigne « un par événement »
+    (5 rendus sur 8 le 12/10). Les événements sans équivalent dans la liste rédigée sont ajoutés PAR LE CODE à
+    partir de leur texte source (titre + résumé du média, préfixe « Selon X » si non confirmé) : aucune
+    invention possible, mais présentation brute. Retourne (liste complétée, titres ajoutés)."""
+    out, ajoutes = list(rediges or []), []
+    for e in fournis or []:
+        titre = e.get("titre", "")
+        if any(_similarity(titre, r.get("titre", "")) >= MATCH_MIN for r in out):
+            continue
+        statut = e.get("statut_verification", "information_rapportee")
+        prefixe = ""
+        if statut != "fait_confirme":
+            nom = e["sources"][0]["nom"] if e.get("sources") else "une source"
+            prefixe = f"Selon {nom}, "
+        out.append({
+            "titre": prefixe + titre, "resume": e.get("resume", ""), "pourquoi_important": None, "consequences": None,
+            "statut": statut, "sources": [s["nom"] for s in e.get("sources", [])], "complete_par_code": True,
+        })
+        ajoutes.append(titre)
+    return out, ajoutes
+
+
 # --- Marchés (03/10/2026) -----------------------------------------------------------------
 # Constat du Dev Test du 03/10 : le LLM expliquait la hausse du Nasdaq/DAX par « l'augmentation des
 # dépenses de défense russe », cause sans rapport avec les articles économiques fournis. Règle :

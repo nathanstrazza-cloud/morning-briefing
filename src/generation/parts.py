@@ -16,7 +16,7 @@ import re
 
 from .llm_orchestrator import Part, PartResult, looks_like_leak
 from .citations import pick_citation
-from .actu_guard import guard_events, guard_marches
+from .actu_guard import completer_manquants, guard_events, guard_marches
 from .science_guard import guard_science_article
 from .anglais_guard import filtrer_mots
 from . import sport_format
@@ -408,6 +408,10 @@ def _garde_actu(events: list[dict], analysed: dict | None, cle: str) -> list[dic
     if retirees:
         logger.warning("Garde-fou actualité (%s) : %d phrase(s) retirée(s) : %s", cle, len(retirees),
                        " | ".join(x[:80] for x in retirees[:8]))
+    gardes, ajoutes = completer_manquants(gardes, fournis)
+    if ajoutes:
+        logger.warning("Actualité (%s) : %d événement(s) écarté(s) par le LLM complété(s) par le code (texte source) : %s",
+                       cle, len(ajoutes), " | ".join(a[:60] for a in ajoutes))
     return gardes
 
 
