@@ -1,0 +1,2 @@
+2026-10-13 14:49:08,361 [INFO] morning_briefing: === Démarrage du run Morning Briefing pour le 2026-10-13 ===
+2026-10-13 14:49:08,362 [INFO] morning_briefing: Un briefing a déjà été généré avec succès aujourd'hui (2026-10-13) -> run ignoré (second déclenchement cron été/hiver, comportement attendu).
