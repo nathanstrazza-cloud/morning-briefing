@@ -56,6 +56,10 @@ _EVENEMENT = ["blessure", "blessé", "forfait", "suspendu", "transfert", "recrut
 _ANECDOTE = ["chanson", "youtube", "clip", "guéguerre", "rivalité", "tiktok", "instagram", "polémique", "buzz",
              "gala", "people", "mariage", "livre", "interview", "portrait", "podcast", "documentaire", "séries",
              "mercato", "rumeur", "rumour", "gossip"]
+# 13/10/2026 : entretiens/témoignages (« Emmanuel Seixas, le père de Paul, revient sur la saison de son fils », citation
+# de joueur en titre) retenus à la place de résultats : malus sur le TITRE. « revient sur » ne vaut plus « résultat ».
+_TRIBUNE = ["revient sur", "se confie", "confie ", "raconte", "le père de", "la mère de", "le fils de", "le frère de",
+            "« ", "j'en rêvais", "témoigne", "dans l'intimité"]
 
 
 def _has(text: str, mots: list[str]) -> bool:
@@ -82,7 +86,8 @@ def score_sport_event(event: dict, categorie: str | None = None, config: dict | 
     score = 3
     if _has(texte, _COMPETITION_MAJEURE):
         score += 2
-    if _has(titre, _RESULTAT):
+    tribune = _has(titre, _TRIBUNE)
+    if _has(titre.replace("revient sur", ""), _RESULTAT):
         score += 2
     if _has(texte, _EVENEMENT):
         score += 1
@@ -93,6 +98,8 @@ def score_sport_event(event: dict, categorie: str | None = None, config: dict | 
     if not _has(texte, _COMPETITION_MAJEURE + _RESULTAT + _EVENEMENT):
         score -= 1
     if _has(texte, _ANECDOTE):
+        score -= 3
+    if tribune:
         score -= 3
     score += min(2, max(0, event.get("nb_sources", 1) - 1))
     if str(event.get("titre", "")).rstrip().endswith("?"):

@@ -106,3 +106,13 @@ def test_sans_horaire_repli_sur_les_valeurs_quotidiennes():
          "wind_speed_10m_max": [18], "wind_gusts_10m_max": [30], "precipitation_sum": [3.0], "weather_code": [61]}
     r = w.parse_city("Valbonne", {"current": {}, "daily": d, "hourly": {}})
     assert r["probabilite_pluie_pct"] == 40 and r["precipitation_mm"] == 3.0
+
+
+def test_cumul_sans_code_de_pluie_donne_une_pluie_et_masque_la_probabilite():
+    from src.collecte.weather import build_periods
+    hourly = {"time": [f"2026-10-12T{h:02d}:00" for h in range(6, 12)],
+              "temperature_2m": [19] * 6, "precipitation_probability": [0] * 6,
+              "precipitation": [3.8, 0, 0, 0, 0, 0], "weather_code": [0] * 6, "wind_speed_10m": [8] * 6}
+    m = build_periods(hourly)[0]
+    assert m["weather_code"] == 61 and m["description"] != "ciel dégagé"
+    assert m["probabilite_pluie_pct"] is None and m["precipitation_mm"] == 3.8

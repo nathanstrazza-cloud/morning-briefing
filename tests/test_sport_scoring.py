@@ -85,3 +85,13 @@ def test_format_sport_repli_et_normalisation():
     assert sport_format.normaliser("n'importe quoi", events) == sport_format.depuis_evenements(events)
     trop = {"items": [{"sport": "a", "texte": str(i)} for i in range(9)]}
     assert len(sport_format.normaliser(trop, events)["items"]) == 2   # jamais plus que les événements retenus
+
+
+def test_entretien_et_citation_en_titre_sont_penalises():
+    from src.analyse.sport_scoring import score_sport_event
+    result = {"titre": "Lens bat Lyon 2-1 et prend la tête de la Ligue 1", "resume": "", "nb_sources": 1}
+    tribune = {"titre": "Emmanuel Seixas, le père de Paul, revient sur la folle saison de son fils", "resume": "", "nb_sources": 1}
+    quote = {"titre": "Franchement, j'en rêvais : Giroud retrouve Arsenal en Ligue des champions", "resume": "", "nb_sources": 1}
+    assert score_sport_event(result) >= 7
+    assert score_sport_event(tribune) < 5
+    assert score_sport_event(quote) < score_sport_event(result)

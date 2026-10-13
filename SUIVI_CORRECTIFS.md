@@ -288,3 +288,16 @@ Dev Test réels (runs 38155667033 et suivant) : science OK (6/6 parties, sujet �
 sport entièrement en français. Premier run de production avec ce code : lundi 12/10 à 06h10 (fenêtre « lundi » = depuis vendredi 18h, cron-job.org lun-ven).
 À contrôler lundi : log `lundi=True` ; `science.sujet_id`/`origine` ; ligne « Sport issu des flux d'actualité » ; sport en français ; aucune section vide.
 Retour arrière : `git revert -m 1 7cee422`. Restent : Mistral rend 5 événements Monde sur 8, CNRS en erreur, jeton GitHub à régénérer avant le 25/10.
+
+## Session du 12-13/10/2026 — analyse du run du 12/10 et correctifs (sur `dev`, puis fusionnés dans `main`)
+Contexte : run de 06h10 du lundi 12/10 = code de `main` à jour (7cee422), 6/6 parties LLM, `lundi=True`, fenêtre depuis vendredi 18h.
+Défauts constatés dans `docs/data/briefings/2026-10-12.json` et corrigés :
+| Défaut | Correctif | Où |
+|---|---|---|
+| Monde : le LLM (Mistral) rend 5 événements sur 8 fournis (règle « un par événement » non respectée) | Les événements écartés sont ajoutés PAR LE CODE depuis leur texte source (titre + résumé, préfixe « Selon X, » si non confirmé, champ `complete_par_code`), log WARNING | `actu_guard.py::completer_manquants`, appelé dans `parts.py::_garde_actu` |
+| France : 2 événements sur la victoire de Glucksmann (entité trop fréquente pour la fusion « entités rares ») | La sélection écarte un événement qui partage ≥ 2 entités ET une similarité de titre ≥ 0,15 avec un retenu | `diversite.py::selectionner_diversifie` (`ENTITES_COMMUNES_DOUBLON`, `SIMILARITE_DOUBLON`) |
+| Météo Antibes matin : 3,8 mm mais « ciel dégagé » et 0 % | Cumul ≥ 1 mm sans code de pluie → code 61/63 déduit du cumul ; probabilité masquée (null) si elle contredit le cumul | `weather.py::code_selon_cumul` |
+| Sport : entretiens/citations retenus (« le père de Paul revient sur… », « Franchement, j'en rêvais… ») | Malus -3 sur titres tribune/entretien ; « revient sur » ne compte plus comme résultat | `sport_scoring.py::_TRIBUNE` |
+Tests : 200 OK (`python3 -m pytest -q tests`). Dev Test réel (run 38353261295, commit 249416c) : succès, 6/6 parties, météo cohérente, anglais littéraire OK. Le scoring sport (dernier correctif) n'est validé que par tests unitaires.
+Non traités : doublon inter-zones Palestine (France « La France appelle… » / Monde « Palestiniens privés de scrutin », 1 seule entité commune), explication marché Brent faible (1 article), CNRS « invalid token », flux ESPN/L'Équipe Hand-Volley vides, France 24 SSL.
+Jeton GitHub : le jeton actuel expire le 30/11/2026 (en-tête `github-authentication-token-expiration`).

@@ -20,11 +20,17 @@ import re
 import unicodedata
 
 from src.analyse import zones
+from src.analyse.dedup import _similarity
 
 logger = logging.getLogger("morning_briefing.analyse.diversite")
 
 FREQUENCE_MAX = 3
 MAX_PAR_ENTITE = 2
+# 12/10/2026 : deux événements retenus qui partagent >= 2 entités (quelle que soit leur fréquence) ET dont les titres
+# se ressemblent un peu (>= 0.15) sont le même sujet (ex. 2 articles sur la victoire de Glucksmann à la primaire, dont
+# l'entité est trop fréquente dans le lot pour être « rare » dans fusionner_par_entites) : le 2e est écarté.
+ENTITES_COMMUNES_DOUBLON = 2
+SIMILARITE_DOUBLON = 0.15
 _BANALES = {"selon", "avec", "dans", "pour", "apres", "avant", "entre", "contre", "depuis", "alors", "mais",
             "cette", "comme", "tout", "tous", "plus", "dont", "leur", "leurs", "nous", "vous", "etat", "etats"}
 
@@ -105,6 +111,10 @@ def selectionner_diversifie(events_tries: list[dict], n: int, max_par_entite: in
         if len(retenus) >= n:
             break
         es = entites(e["titre"])
+        if any(len(es & entites(r["titre"])) >= ENTITES_COMMUNES_DOUBLON
+               and _similarity(e["titre"], r["titre"]) >= SIMILARITE_DOUBLON for r in retenus):
+            restants.append(e)
+            continue
         if any(compte.get(x, 0) >= max_par_entite for x in es):
             restants.append(e)
             continue

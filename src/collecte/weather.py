@@ -106,6 +106,16 @@ def dominant_code(codes: list[int], precip_total_mm: float) -> int | None:
     return Counter(codes).most_common(1)[0][0]
 
 
+def code_selon_cumul(code, precip_total_mm: float):
+    """12/10/2026 : données discordantes (Antibes, matin : 3,8 mm cumulés mais « ciel dégagé » et 0 %). Un cumul
+    mesurable sans aucun code de précipitations est une pluie réelle pour le modèle : on la déduit du cumul
+    (61 = pluie faible < 5 mm, 63 = pluie modérée) plutôt que d'afficher « ciel dégagé » à côté de mm de pluie.
+    Retourne (code, discordant)."""
+    if code is not None and code not in SEVERITY and precip_total_mm >= PERIOD_PRECIP_MM:
+        return (61 if precip_total_mm < 5 else 63), True
+    return code, False
+
+
 def rain_probability(probs: list[float], codes_eff: list, precip_total_mm: float) -> int | None:
     """Probabilité de pluie à AFFICHER pour une plage horaire, cohérente avec les mm et le ciel.
     Pluie étayée (cumul >= PLUIE_ETAYEE_MM ou code de précipitations effectif) -> maximum horaire ;
@@ -138,11 +148,13 @@ def build_periods(hourly: dict) -> list[dict]:
         eff = [effective_code(codes[i], precs[i] if i < len(precs) else None)
                for i in idx if i < len(codes)]
         code = dominant_code(eff, sum(pr))
+        code, discordant = code_selon_cumul(code, sum(pr))
         out.append({
             "label": label,
             "temperature_min": round(min(t), 1) if t else None,
             "temperature_max": round(max(t), 1) if t else None,
-            "probabilite_pluie_pct": rain_probability(p, eff, sum(pr)),
+            # probabilité masquée si elle contredit le cumul (0 % avec 3,8 mm) : on n'affiche pas un chiffre faux
+            "probabilite_pluie_pct": None if discordant and (not p or max(p) < 10) else rain_probability(p, eff, sum(pr)),
             "precipitation_mm": round(sum(pr), 1) if pr else None,
             "vent_max_kmh": round(max(w)) if w else None,
             "weather_code": code,
