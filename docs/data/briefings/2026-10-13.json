@@ -1,0 +1,494 @@
+{
+  "date": "2026-10-13",
+  "derniere_mise_a_jour": "2026-10-13T06:15:26.120999+02:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Présidentielle : Xavier Bertrand, l’ambition qui ne meurt jamais",
+          "resume": "Battu à la primaire de la droite en 2021, le président des Hauts-de-France veut toujours croire en ses chances en 2027. Actif sur le terrain, il juge que la rupture avec Emmanuel Macron ne pourra venir de ses héritiers.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Avancer ou reculer l'âge légal, changer la durée de cotisation, capitalisation… Ce que proposent les candidats à la présidentielle pour les retraites",
+          "resume": "L'avenir du système des retraites s'annonce comme un enjeu majeur de la prochaine élection présidentielle. Alors que certains candidats veulent revenir sur la dernière réforme et abaisser l'âge de départ, d'autres défendent un allongement de la durée de travail ou l'introduction d'une part de capitalisation. Tour d'horizon de leurs propositions.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : « Pensée pour Léa Salamé »… Message de Valérie Trierweiler après la désignation de Glucksmann",
+          "resume": "L’ex-compagne de François Hollande a évoqué, lundi, sur X les sacrifices personnels et professionnels imposés à la journaliste de France 2 par la candidature de son compagnon",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : « Ça n’existe pas », Ferrand torpille la mesure RN visant à changer la Constitution par référendum",
+          "resume": "Marine Le Pen veut organiser un référendum par l’article 11 pour modifier la Constitution. « L’article 89 est la seule voie », répond le président du Conseil Constitutionnel dans le podcast du Club des juristes",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Le Népal frappé par une nouvelle crue, alors que les recherches après la catastrophe d’août sont toujours en cours",
+          "resume": "Une vague a emporté plusieurs maisons dimanche le long de la rivière Budi Gandaki, dans le centre du pays. Les secours sont à la recherche de cinq personnes disparues.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Aux Etats-Unis, le recours de Donald Trump au gazole russe, au détriment de l’Ukraine, provoque une vaste controverse",
+          "resume": "Le président américain envisage d’importer du diesel russe malgré les sanctions occidentales contre Moscou, ce qui suscite des réactions vives parmi les élus de Washington, y compris des républicains. À trois semaines des élections de mi-mandat, cette décision vise à éviter une défaite électorale majeure.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "La Russie a livré pour 320 milliards de dollars d'hydrocarbures à l'Europe depuis 2022",
+          "resume": "Selon le vice-Premier ministre russe Alexandre Novak, l’Union européenne a acheté plus de 320 milliards de dollars d’hydrocarbures russes depuis 2022, malgré les sanctions liées à la guerre en Ukraine, dont 21,3 milliards pour les neuf premiers mois de 2026.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "La marine française arraisonne un pétrolier au sud de La Réunion, soupçonné d’appartenir à la flotte fantôme russe",
+          "resume": "Un pétrolier battant pavillon béninois, le *« DF Peak »*, identifié comme le *« Kaliningrad »* dans la flotte fantôme russe, a été intercepté par la marine française au large de La Réunion et dérouté avec son équipage.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Au Royaume-Uni, les accusations tous azimuts du premier ministre contre l’Iran et la Russie",
+          "resume": "Andy Burnham a accusé l’Iran d’être impliqué dans un incident militaire survenu fin septembre et a réitéré les soupçons d’ingérences russes lors du référendum sur le Brexit.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Pour le chef des forces alliées de l’OTAN, « il est impossible que l’Alliance soit attaquée par surprise »",
+          "resume": "Le général Alexus Grynkewich a réaffirmé, lors d’un discours à Varsovie, l’engagement des États-Unis et l’impossibilité d’une attaque surprise contre l’OTAN, face aux menaces russes.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "",
+      "mouvements_notables": [
+        {
+          "nom": "Pétrole (Brent)",
+          "variation_pct": -1.14,
+          "explication": "libération de 10 millions de barils de pétrole"
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "football",
+          "texte": "Avant le match de Ligue des champions contre Lille, Mikel Arteta, l'entraîneur d'Arsenal, a perdu Piero Hincapié et Martin Zubimendi sur blessure"
+        },
+        {
+          "sport": "football",
+          "texte": "Parti à Manchester City pour une somme record cet été, Ayyoub Bouaddi, si proche et finalement si loin du Paris-Saint-Germain"
+        },
+        {
+          "sport": "tennis",
+          "texte": "Valentin Vacherot, éliminé du Masters 1000 de Shanghai dont il était tenant du titre : « J'ai joué comme une merde »"
+        },
+        {
+          "sport": "tennis",
+          "texte": "Auger-Aliassime assure, Tsitsipas et Jodar qualifiés : les résultats de la matinée de lundi au troisième tour du Masters 1000 de Shanghai"
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": []
+    },
+    "science": {
+      "mode": "decouverte",
+      "titre": "L’extrême sous-représentation des femmes parmi les lauréates du prix Nobel de sciences",
+      "contenu_markdown": "En 2026, aucune femme n’a été distinguée dans ces disciplines, un déséquilibre qui a suscité des critiques et poussé les académies responsables à revoir leurs méthodes de sélection.\n\nLes institutions concernées ont admis ce biais historique et engagé des réformes pour diversifier les profils retenus. Parmi les mesures évoquées figurent des ajustements dans les procédures de nomination, visant à mieux identifier les contributions scientifiques des femmes. Cependant, le processus de sélection reste largement **opaque**, et son efficacité dépendra de la transparence et de la volonté des comités.\n\nSi des progrès sont observés, les experts soulignent qu’un **effort supplémentaire** est nécessaire pour corriger durablement cette sous-représentation. Les détails des nouvelles procédures et leur impact concret sur les nominations futures restent à suivre dans les publications officielles des académies.\n\n## Sources\n- Le Monde Sciences — https://www.lemonde.fr/idees/article/2026/10/12/des-prix-nobel-scientifiques-sans-laureates-ce-n-est-pas-une-fatalite_6792617_3232.html\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.",
+      "phrases_retirees_garde_fou": 1,
+      "matiere_source": "fine",
+      "textes_sources_audit": [
+        {
+          "source": "Le Monde Sciences",
+          "titre": "Des prix Nobel scientifiques sans lauréates, ce n’est pas une fatalité",
+          "resume": "Seules 26 femmes ont été récompensées en médecine, en physique et en chimie depuis 1901, et aucune en 2026. Critiquées, les académies qui décernent les prix ont reconnu ce déséquilibre et commencé à modifier les procédures de nomination. Mais le processus restant opaque, un effort supplémentaire significatif est indispensable."
+        }
+      ]
+    },
+    "citation": {
+      "texte": "Rien n'est donné. Tout est construit.",
+      "auteur": "Gaston Bachelard",
+      "source": "La Formation de l'esprit scientifique",
+      "annee": 1938
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 21.1,
+          "temperature_max": 23.5,
+          "temperature_min": 19.4,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 9.6,
+          "vent_max_kmh": 12.0,
+          "rafales_max_kmh": 24.5,
+          "weather_code": 1,
+          "description": "plutôt dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 20.8,
+              "temperature_max": 22.6,
+              "probabilite_pluie_pct": 3,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 23.1,
+              "temperature_max": 23.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 12,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 19.4,
+              "temperature_max": 22.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 11,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 20.5,
+          "temperature_max": 23.1,
+          "temperature_min": 19.0,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 5.1,
+          "vent_max_kmh": 16.5,
+          "rafales_max_kmh": 25.9,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 19.0,
+              "temperature_max": 21.9,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 22.4,
+              "temperature_max": 23.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 16,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 20.1,
+              "temperature_max": 22.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 15,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 15.6,
+          "temperature_max": 22.3,
+          "temperature_min": 15.4,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 5.2,
+          "vent_max_kmh": 9.7,
+          "rafales_max_kmh": 18.4,
+          "weather_code": 2,
+          "description": "partiellement nuageux",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 15.4,
+              "temperature_max": 20.1,
+              "probabilite_pluie_pct": 3,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 5,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 21.0,
+              "temperature_max": 22.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 16.1,
+              "temperature_max": 20.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 15.6,
+          "temperature_max": 21.5,
+          "temperature_min": 15.1,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 8.1,
+          "vent_max_kmh": 9.8,
+          "rafales_max_kmh": 19.4,
+          "weather_code": 2,
+          "description": "partiellement nuageux",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 15.1,
+              "temperature_max": 19.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 20.0,
+              "temperature_max": 21.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 15.8,
+              "temperature_max": 19.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 23.5,
+      "temperature_min_zone": 15.1,
+      "probabilite_pluie_max_pct": 0,
+      "vent_max_kmh": 16.5,
+      "description_dominante": "partiellement nuageux",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 15.1,
+          "temperature_max": 22.6,
+          "probabilite_pluie_pct": 3,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 10,
+          "weather_code": 1,
+          "description": "plutôt dégagé"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 20.0,
+          "temperature_max": 23.5,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 16,
+          "weather_code": 2,
+          "description": "partiellement nuageux"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 15.8,
+          "temperature_max": 22.7,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 15,
+          "weather_code": 3,
+          "description": "couvert"
+        }
+      ],
+      "alertes": [],
+      "resume": "Plutôt dégagé le matin, partiellement nuageux l'après-midi, couvert le soir, de 15° à 24°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "Alice's Adventures in Wonderland",
+      "auteur": "Lewis Carroll",
+      "annee": 1865,
+      "segments": [
+        {
+          "t": "Alice was beginning to get very tired of sitting by her sister on the bank",
+          "g": "la berge"
+        },
+        {
+          "t": ", and of having nothing to do: once or twice she had peeped into",
+          "g": "jeté un coup d'œil dans"
+        },
+        {
+          "t": " the book her sister was reading, but it had no pictures or conversations in it, \"and what is the use of",
+          "g": "à quoi bon"
+        },
+        {
+          "t": " a book,\" thought Alice \"without pictures or conversations?\" So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid",
+          "g": "hébétée"
+        },
+        {
+          "t": "), whether the pleasure of making a daisy-chain",
+          "g": "collier de pâquerettes"
+        },
+        {
+          "t": " would be worth the trouble",
+          "g": "valoir la peine"
+        },
+        {
+          "t": " of getting up and picking",
+          "g": "cueillir"
+        },
+        {
+          "t": " the daisies, when suddenly a White Rabbit with pink eyes ran close by",
+          "g": "tout près de"
+        },
+        {
+          "t": " her.",
+          "g": null
+        }
+      ],
+      "texte_glose": "Alice was beginning to get very tired of sitting by her sister on the bank (= la berge), and of having nothing to do: once or twice she had peeped into (= jeté un coup d'œil dans) the book her sister was reading, but it had no pictures or conversations in it, \"and what is the use of (= à quoi bon) a book,\" thought Alice \"without pictures or conversations?\" So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid (= hébétée)), whether the pleasure of making a daisy-chain (= collier de pâquerettes) would be worth the trouble (= valoir la peine) of getting up and picking (= cueillir) the daisies, when suddenly a White Rabbit with pink eyes ran close by (= tout près de) her."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Présidentielle : Xavier Bertrand, l’ambition qui ne meurt jamais ; Aux Etats-Unis, le recours de Donald Trump au gazole russe, au détriment de l’Ukraine, provoque une vaste controverse."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral+nvidia",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral+nvidia",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-10-13T06:10:38.257095+02:00"
+}
