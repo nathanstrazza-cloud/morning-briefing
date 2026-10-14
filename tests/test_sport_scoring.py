@@ -95,3 +95,10 @@ def test_entretien_et_citation_en_titre_sont_penalises():
     assert score_sport_event(result) >= 7
     assert score_sport_event(tribune) < 5
     assert score_sport_event(quote) < score_sport_event(result)
+
+
+def test_prompt_sport_transmet_titre_et_resume_13_10():
+    from src.generation import parts
+    ev = {"titre": "T", "resume": "R" * 400, "sources": [{"nom": "L'Équipe Tennis"}]}
+    p = parts._sport_prompt({"sport_events": {"tennis": [ev]}}, False, 20000)
+    assert '"resume"' in p and "L'Équipe Tennis" in p and "R" * 300 in p and "R" * 301 not in p

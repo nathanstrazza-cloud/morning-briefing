@@ -585,7 +585,8 @@ _RE_RECHERCHE = re.compile(
     re.I)
 _RE_POLITIQUE = re.compile(
     r"\b(gouvernement|ministre|président|présidentielle|élection|élections|budget|parlement|sénat|assemblée|"
-    r"loi|trump|macron|polémique|grève|manifestation|procès|tribunal|politique de santé|arrêter de vacciner)\b", re.I)
+    r"loi|trump|macron|polémique|grève|manifestation|procès|tribunal|politique de santé|arrêter de vacciner|"
+    r"femmes|lauréates|parité|sous-représentation|discriminations?|inégalités)\b", re.I)
 RESUME_MIN_DECOUVERTE = 200
 RESUME_MIN_PRIMAIRE = 100
 RESUME_MIN_NOBEL = 60
@@ -609,8 +610,14 @@ def decouverte_qualifiee(event: dict) -> tuple[bool, str]:
     # été refusé pour « résumé trop court ») ; une source primaire tolère un résumé plus court.
     nobel = bool(re.search(r"\bnobel\b", texte, re.I))
     minimum = RESUME_MIN_NOBEL if nobel else (RESUME_MIN_PRIMAIRE if primaire else RESUME_MIN_DECOUVERTE)
-    if sum(len(r) for r in resumes) < minimum:
+    matiere = sum(len(r) for r in resumes)
+    if matiere < minimum:
         return False, f"résumé trop court (< {minimum} caractères)"
+    # 13/10/2026 : l'exception « Nobel » a fait passer en découverte une TRIBUNE du Monde (« sans lauréates », 3 phrases,
+    # aucune étude) -> article de 162 mots au lieu de ~1400. Une découverte ne vaut que si la matière réelle permet un
+    # vrai article (>= MATIERE_FINE_CARACTERES) ; sinon on bascule en « approfondi » (sujet pédagogique, ~10 min).
+    if matiere < MATIERE_FINE_CARACTERES and event.get("nb_sources", 1) < 2 and not primaire:
+        return False, f"matière trop fine pour un article (< {MATIERE_FINE_CARACTERES} caractères au total)"
     if event.get("nb_sources", 1) < 2 and not primaire and not nobel:
         return False, "une seule source non primaire"
     return True, ""
