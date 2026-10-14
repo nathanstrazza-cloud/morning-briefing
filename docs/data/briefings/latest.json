@@ -1,32 +1,34 @@
 {
-  "date": "2026-10-13",
-  "derniere_mise_a_jour": "2026-10-13T06:15:26.120999+02:00",
+  "date": "2026-10-14",
+  "derniere_mise_a_jour": "2026-10-14T06:14:03.902774+02:00",
   "briefing": {
     "actualite": {
       "france": [
         {
-          "titre": "Présidentielle : Xavier Bertrand, l’ambition qui ne meurt jamais",
-          "resume": "Battu à la primaire de la droite en 2021, le président des Hauts-de-France veut toujours croire en ses chances en 2027. Actif sur le terrain, il juge que la rupture avec Emmanuel Macron ne pourra venir de ses héritiers.",
+          "titre": "Présidentielle 2027 : la conversion partielle de Marine Le Pen aux recettes économiques d’Emmanuel Macron",
+          "resume": "Très critique des propositions du futur président en 2017, la candidate du Rassemblement national endosse en partie sa philosophie. Elle se fait fort de tenir ses promesses à sa place, sur la simplification, la baisse de la dépense publique et celle de la fiscalité des entreprises.",
           "pourquoi_important": null,
           "consequences": null,
-          "statut": "information_rapportee",
+          "statut": "fait_confirme",
           "sources": [
-            "Libération"
+            "Le Monde",
+            "Le Monde International"
           ]
         },
         {
-          "titre": "Avancer ou reculer l'âge légal, changer la durée de cotisation, capitalisation… Ce que proposent les candidats à la présidentielle pour les retraites",
-          "resume": "L'avenir du système des retraites s'annonce comme un enjeu majeur de la prochaine élection présidentielle. Alors que certains candidats veulent revenir sur la dernière réforme et abaisser l'âge de départ, d'autres défendent un allongement de la durée de travail ou l'introduction d'une part de capitalisation. Tour d'horizon de leurs propositions.",
+          "titre": "Présidentielle 2027 : pour Jean-Luc Mélenchon, le soutien au mouvement lycéen consacre le pari de LFI sur la jeunesse",
+          "resume": "Devenu « l’incarnation politique » de la mobilisation, le candidat de La France insoumise espère tirer profit de son travail de longue haleine auprès des jeunes générations dans la bataille pour l’Elysée, mais la traduction électorale de ce positionnement n’est pas assurée.",
           "pourquoi_important": null,
           "consequences": null,
-          "statut": "information_rapportee",
+          "statut": "fait_confirme",
           "sources": [
-            "France Info"
+            "Le Monde",
+            "20 Minutes"
           ]
         },
         {
-          "titre": "Présidentielle 2027 : « Pensée pour Léa Salamé »… Message de Valérie Trierweiler après la désignation de Glucksmann",
-          "resume": "L’ex-compagne de François Hollande a évoqué, lundi, sur X les sacrifices personnels et professionnels imposés à la journaliste de France 2 par la candidature de son compagnon",
+          "titre": "Présidentielle 2027 : Ségolène Royal pose ses conditions pour aider Raphaël Glucksmann",
+          "resume": "Ségolène Royal assure qu’elle soutiendra Raphaël Glucksmann pour rassembler la gauche, à condition qu’il « ne vire pas vers la compromission avec les macronistes »",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
@@ -35,110 +37,142 @@
           ]
         },
         {
-          "titre": "Présidentielle 2027 : « Ça n’existe pas », Ferrand torpille la mesure RN visant à changer la Constitution par référendum",
-          "resume": "Marine Le Pen veut organiser un référendum par l’article 11 pour modifier la Constitution. « L’article 89 est la seule voie », répond le président du Conseil Constitutionnel dans le podcast du Club des juristes",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "20 Minutes"
-          ]
-        },
-        {
-          "titre": "Le Népal frappé par une nouvelle crue, alors que les recherches après la catastrophe d’août sont toujours en cours",
-          "resume": "Une vague a emporté plusieurs maisons dimanche le long de la rivière Budi Gandaki, dans le centre du pays. Les secours sont à la recherche de cinq personnes disparues.",
-          "pourquoi_important": null,
+          "titre": "Municipales à Montpellier : le tribunal administratif rejette le recours de Rémi Gaillard",
+          "resume": "La justice a admis un «dysfonctionnement» sans considérer que «la sincérité du scrutin ait pu être remise en cause». Il envisage de faire appel devant le Conseil d’Etat.",
+          "pourquoi_important": "Le rejet du recours confirme la validité du scrutin municipal à Montpellier et ouvre la voie à un éventuel appel devant le Conseil d’État.",
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
             "Libération"
+          ]
+        },
+        {
+          "titre": "Le Conseil supérieur de la Magistrature « défavorable » à la réintégration de Rachida Dati",
+          "resume": "L’organe constitutionnel, garant de l’indépendance des magistrats, a estimé ce mardi que la procédure pénale dans laquelle est empêtrée l’ex-ministre fait obstacle à l’exercice des fonctions qu’elle vise. La balle est désormais dans le camp de Gérald Darmanin, actuel ministre de la Justice.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Libération",
+            "20 Minutes"
           ]
         }
       ],
       "monde": [
         {
-          "titre": "Aux Etats-Unis, le recours de Donald Trump au gazole russe, au détriment de l’Ukraine, provoque une vaste controverse",
-          "resume": "Le président américain envisage d’importer du diesel russe malgré les sanctions occidentales contre Moscou, ce qui suscite des réactions vives parmi les élus de Washington, y compris des républicains. À trois semaines des élections de mi-mandat, cette décision vise à éviter une défaite électorale majeure.",
+          "titre": "Guerre en Ukraine : une centrale de Kiev touchée par une frappe russe, sans alerte précoce, selon Volodymyr Zelensky",
+          "resume": "Des frappes russes sur Kiev ont causé deux morts et une vingtaine de blessés. Le président ukrainien a souligné l’absence d’avertissement préalable, critiquant la dépendance de l’Ukraine au renseignement occidental pour détecter les attaques.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "Le Monde",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "RDC : l’ancien président Joseph Kabila prend la tête du Front pour la refondation de la nation (FRN)",
+          "resume": "Joseph Kabila dirige désormais le FRN, une rébellion active dans l’est de la RDC, alors que les négociations de paix soutenues par Washington sont au point mort.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Libération",
             "Le Monde International"
           ]
         },
         {
-          "titre": "La Russie a livré pour 320 milliards de dollars d'hydrocarbures à l'Europe depuis 2022",
-          "resume": "Selon le vice-Premier ministre russe Alexandre Novak, l’Union européenne a acheté plus de 320 milliards de dollars d’hydrocarbures russes depuis 2022, malgré les sanctions liées à la guerre en Ukraine, dont 21,3 milliards pour les neuf premiers mois de 2026.",
+          "titre": "Sanctions contre la CPI : une soixantaine d’eurodéputés lancent un appel « urgent » à Ursula von der Leyen",
+          "resume": "Cinquante-huit eurodéputés ont demandé à la présidente de la Commission européenne d’activer le règlement de blocage pour contrer les sanctions américaines contre la Cour pénale internationale (CPI).",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Les frappes ukrainiennes sur des data centers perturbent les services en ligne en Russie",
+          "resume": "L’Ukraine a ciblé trois centres de données de Yandex, perturbant les services en ligne russes.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Lycéen éborgné à Tours : un policier mis en examen pour \"violences aggravées\"",
+          "resume": "Le parquet de Tours a annoncé mardi soir qu'un policier avait été mis en examen et placé sous contrôle judiciaire pour \"violences aggravées\", après qu'un lycéen a été éborgné le 30 septembre en marge des manifestations lycéennes. Un autre policier a été placé sous statut de témoin assisté, alors que l'enquête se poursuit.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France 24 International",
+            "Le Monde",
+            "France Info",
+            "20 Minutes"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Le roi Felipe VI a défendu la souveraineté \"indiscutable\" de l'Espagne sur Ceuta lors de sa visite historique dans l'enclave",
+          "resume": "Le roi du Maroc, Mohammed VI, avait défendu, vendredi, le \"partenariat\" avec l'Espagne, tout en reconnaissant qu'il se heurtait à des \"défis majeurs\".",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Le Monde International",
+            "Libération"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon 20 Minutes, Guerre en Ukraine : Le pari risqué de Trump sur Poutine et la colère froide de Moscou contre la France",
+          "resume": "« 20 Minutes » fait le point pour vous tous les soirs sur le conflit en Ukraine. Ce mardi 13 octobre 2026, un climat glacial a régné, entre Trump et l’Europe, Moscou et Paris, et même entre Zelensky et le maire de Kiev",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon France 24 International, Midterms 2026 : pour mobiliser sa base, Donald Trump mise sur le diesel",
+          "resume": "Les élections de mi-mandat, le 3 novembre, se profilent, et les sondages ne sont pas en faveur des Républicains. Donald Trump tente le tout pour le tout pour mobiliser sa base, avec un accord sur le diesel avec la Russie. Nous évoquons son pari avec notre correspondant à Washington Matthieu Mabin : pour lui, c'est loin d'être un \"game changer\".",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
             "France 24 International"
-          ]
-        },
-        {
-          "titre": "La marine française arraisonne un pétrolier au sud de La Réunion, soupçonné d’appartenir à la flotte fantôme russe",
-          "resume": "Un pétrolier battant pavillon béninois, le *« DF Peak »*, identifié comme le *« Kaliningrad »* dans la flotte fantôme russe, a été intercepté par la marine française au large de La Réunion et dérouté avec son équipage.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde International",
-            "France Info"
-          ]
-        },
-        {
-          "titre": "Au Royaume-Uni, les accusations tous azimuts du premier ministre contre l’Iran et la Russie",
-          "resume": "Andy Burnham a accusé l’Iran d’être impliqué dans un incident militaire survenu fin septembre et a réitéré les soupçons d’ingérences russes lors du référendum sur le Brexit.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "Le Monde International"
-          ]
-        },
-        {
-          "titre": "Pour le chef des forces alliées de l’OTAN, « il est impossible que l’Alliance soit attaquée par surprise »",
-          "resume": "Le général Alexus Grynkewich a réaffirmé, lors d’un discours à Varsovie, l’engagement des États-Unis et l’impossibilité d’une attaque surprise contre l’OTAN, face aux menaces russes.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "Le Monde International"
-          ]
+          ],
+          "complete_par_code": true
         }
       ]
     },
     "marches": {
       "resume_court": "",
-      "mouvements_notables": [
-        {
-          "nom": "Pétrole (Brent)",
-          "variation_pct": -1.14,
-          "explication": "libération de 10 millions de barils de pétrole"
-        }
-      ]
+      "mouvements_notables": []
     },
     "sport": {
       "items": [
         {
           "sport": "football",
-          "texte": "Avant le match de Ligue des champions contre Lille, Mikel Arteta, l'entraîneur d'Arsenal, a perdu Piero Hincapié et Martin Zubimendi sur blessure"
+          "texte": "Lille cède trois fois en huit minutes et s'incline lourdement contre Arsenal en Ligue des champions"
         },
         {
           "sport": "football",
-          "texte": "Parti à Manchester City pour une somme record cet été, Ayyoub Bouaddi, si proche et finalement si loin du Paris-Saint-Germain"
+          "texte": "Impuissant, le RC Lens concède sa première défaite de la saison en Ligue des champions face au Sporting"
         },
         {
-          "sport": "tennis",
-          "texte": "Valentin Vacherot, éliminé du Masters 1000 de Shanghai dont il était tenant du titre : « J'ai joué comme une merde »"
+          "sport": "basketball",
+          "texte": "Vainqueur du Rytas Vilnius, Nanterre lance sa saison de Ligue des champions"
         },
         {
-          "sport": "tennis",
-          "texte": "Auger-Aliassime assure, Tsitsipas et Jodar qualifiés : les résultats de la matinée de lundi au troisième tour du Masters 1000 de Shanghai"
+          "sport": "autres",
+          "texte": "Regardez : l'Écosse bat la Tchéquie pour se qualifier pour le play-off contre la Suède"
         }
       ],
       "rien_a_signaler": false,
@@ -146,140 +180,140 @@
     },
     "science": {
       "mode": "decouverte",
-      "titre": "L’extrême sous-représentation des femmes parmi les lauréates du prix Nobel de sciences",
-      "contenu_markdown": "En 2026, aucune femme n’a été distinguée dans ces disciplines, un déséquilibre qui a suscité des critiques et poussé les académies responsables à revoir leurs méthodes de sélection.\n\nLes institutions concernées ont admis ce biais historique et engagé des réformes pour diversifier les profils retenus. Parmi les mesures évoquées figurent des ajustements dans les procédures de nomination, visant à mieux identifier les contributions scientifiques des femmes. Cependant, le processus de sélection reste largement **opaque**, et son efficacité dépendra de la transparence et de la volonté des comités.\n\nSi des progrès sont observés, les experts soulignent qu’un **effort supplémentaire** est nécessaire pour corriger durablement cette sous-représentation. Les détails des nouvelles procédures et leur impact concret sur les nominations futures restent à suivre dans les publications officielles des académies.\n\n## Sources\n- Le Monde Sciences — https://www.lemonde.fr/idees/article/2026/10/12/des-prix-nobel-scientifiques-sans-laureates-ce-n-est-pas-une-fatalite_6792617_3232.html\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.",
-      "phrases_retirees_garde_fou": 1,
+      "titre": "Comment élargir les nominations pour les prix Nobel avant qu’il ne soit trop tard",
+      "contenu_markdown": "Les comités chargés d’attribuer les prix Nobel pourraient bientôt bénéficier d’un soutien actif des organisations scientifiques internationales pour diversifier leurs nominateurs. Selon un article publié dans *Nature* le 13 octobre 2026, cette initiative vise à ouvrir le processus de sélection à un plus large éventail de profils, afin d’éviter une surreprésentation des mêmes réseaux ou régions dans les nominations.\n\n## Pourquoi cette réforme ?\nLe système actuel de nomination des lauréats des prix Nobel repose sur un cercle restreint d’experts, souvent issus des mêmes institutions ou pays. Cette concentration peut limiter la visibilité de travaux innovants ou de chercheurs issus de disciplines moins représentées. Les organisations scientifiques proposent désormais leur aide pour identifier et solliciter des nominateurs plus variés, notamment en ciblant des chercheurs de différentes cultures, genres ou spécialités.\n\n## Ce qui reste à préciser\nLes modalités concrètes de cette collaboration (nombre de nominateurs supplémentaires, critères de sélection, impact sur les décisions finales) ne sont pas détaillées dans cette annonce. Les règles de nomination, fixées par les fondations Nobel, pourraient aussi imposer des limites à cette diversification. Les prochaines étapes dépendront donc des accords entre les comités et les partenaires scientifiques.\n\nPour en savoir plus sur le fonctionnement actuel des nominations, les sources officielles des prix Nobel ou les débats en cours, les articles de *Nature* et les publications des fondations Nobel restent les références.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03220-x\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.",
+      "phrases_retirees_garde_fou": 0,
       "matiere_source": "fine",
       "textes_sources_audit": [
         {
-          "source": "Le Monde Sciences",
-          "titre": "Des prix Nobel scientifiques sans lauréates, ce n’est pas une fatalité",
-          "resume": "Seules 26 femmes ont été récompensées en médecine, en physique et en chimie depuis 1901, et aucune en 2026. Critiquées, les académies qui décernent les prix ont reconnu ce déséquilibre et commencé à modifier les procédures de nomination. Mais le processus restant opaque, un effort supplémentaire significatif est indispensable."
+          "source": "Nature News",
+          "titre": "Diversify Nobel-prize nominations before it’s too late",
+          "resume": "Nature, Published online: 13 October 2026; doi:10.1038/d41586-026-03220-x International scientific organizations are ready to help the committees that award the prizes to invite a wider range of nominators."
         }
       ]
     },
     "citation": {
-      "texte": "Rien n'est donné. Tout est construit.",
-      "auteur": "Gaston Bachelard",
-      "source": "La Formation de l'esprit scientifique",
-      "annee": 1938
+      "texte": "Le vent se lève !... Il faut tenter de vivre !",
+      "auteur": "Paul Valéry",
+      "source": "Le Cimetière marin",
+      "annee": 1920
     },
     "meteo": {
       "villes_detail": [
         {
           "ville": "Antibes",
-          "temperature_actuelle": 21.1,
-          "temperature_max": 23.5,
-          "temperature_min": 19.4,
+          "temperature_actuelle": 18.1,
+          "temperature_max": 23.0,
+          "temperature_min": 17.5,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 9.6,
-          "vent_max_kmh": 12.0,
-          "rafales_max_kmh": 24.5,
-          "weather_code": 1,
-          "description": "plutôt dégagé",
+          "vent_kmh": 6.5,
+          "vent_max_kmh": 11.3,
+          "rafales_max_kmh": 19.8,
+          "weather_code": 3,
+          "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 20.8,
-              "temperature_max": 22.6,
-              "probabilite_pluie_pct": 3,
+              "temperature_min": 17.5,
+              "temperature_max": 22.0,
+              "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 10,
-              "weather_code": 1,
-              "description": "plutôt dégagé"
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 23.1,
-              "temperature_max": 23.5,
+              "temperature_min": 22.6,
+              "temperature_max": 23.0,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 12,
-              "weather_code": 1,
-              "description": "plutôt dégagé"
+              "vent_max_kmh": 10,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Soir",
-              "temperature_min": 19.4,
-              "temperature_max": 22.7,
+              "temperature_min": 18.7,
+              "temperature_max": 22.1,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 11,
-              "weather_code": 3,
-              "description": "couvert"
+              "vent_max_kmh": 9,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Cannes",
-          "temperature_actuelle": 20.5,
-          "temperature_max": 23.1,
-          "temperature_min": 19.0,
+          "temperature_actuelle": 18.7,
+          "temperature_max": 22.3,
+          "temperature_min": 17.8,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 5.1,
-          "vent_max_kmh": 16.5,
-          "rafales_max_kmh": 25.9,
-          "weather_code": 0,
-          "description": "ciel dégagé",
+          "vent_kmh": 6.2,
+          "vent_max_kmh": 11.9,
+          "rafales_max_kmh": 18.7,
+          "weather_code": 3,
+          "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 19.0,
-              "temperature_max": 21.9,
+              "temperature_min": 17.8,
+              "temperature_max": 21.4,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 8,
-              "weather_code": 1,
-              "description": "plutôt dégagé"
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 22.4,
-              "temperature_max": 23.1,
+              "temperature_min": 21.8,
+              "temperature_max": 22.3,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 16,
-              "weather_code": 0,
-              "description": "ciel dégagé"
+              "vent_max_kmh": 11,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Soir",
-              "temperature_min": 20.1,
-              "temperature_max": 22.4,
+              "temperature_min": 18.9,
+              "temperature_max": 21.8,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 15,
-              "weather_code": 3,
-              "description": "couvert"
+              "vent_max_kmh": 11,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Valbonne",
-          "temperature_actuelle": 15.6,
+          "temperature_actuelle": 14.8,
           "temperature_max": 22.3,
-          "temperature_min": 15.4,
+          "temperature_min": 14.7,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 5.2,
-          "vent_max_kmh": 9.7,
-          "rafales_max_kmh": 18.4,
-          "weather_code": 2,
-          "description": "partiellement nuageux",
+          "vent_kmh": 5.8,
+          "vent_max_kmh": 6.8,
+          "rafales_max_kmh": 13.0,
+          "weather_code": 3,
+          "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 15.4,
-              "temperature_max": 20.1,
-              "probabilite_pluie_pct": 3,
+              "temperature_min": 14.7,
+              "temperature_max": 19.7,
+              "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 5,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Après-midi",
@@ -287,157 +321,165 @@
               "temperature_max": 22.3,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 10,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
+              "vent_max_kmh": 7,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Soir",
-              "temperature_min": 16.1,
-              "temperature_max": 20.5,
+              "temperature_min": 17.3,
+              "temperature_max": 20.8,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 6,
-              "weather_code": 1,
-              "description": "plutôt dégagé"
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Grasse",
-          "temperature_actuelle": 15.6,
-          "temperature_max": 21.5,
-          "temperature_min": 15.1,
+          "temperature_actuelle": 14.2,
+          "temperature_max": 21.4,
+          "temperature_min": 14.1,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 8.1,
-          "vent_max_kmh": 9.8,
-          "rafales_max_kmh": 19.4,
-          "weather_code": 2,
-          "description": "partiellement nuageux",
+          "vent_kmh": 7.9,
+          "vent_max_kmh": 8.0,
+          "rafales_max_kmh": 13.7,
+          "weather_code": 3,
+          "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 15.1,
-              "temperature_max": 19.4,
+              "temperature_min": 14.2,
+              "temperature_max": 19.2,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 8,
-              "weather_code": 1,
-              "description": "plutôt dégagé"
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 20.0,
-              "temperature_max": 21.5,
+              "temperature_min": 20.1,
+              "temperature_max": 21.4,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 10,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Soir",
-              "temperature_min": 15.8,
-              "temperature_max": 19.4,
+              "temperature_min": 16.5,
+              "temperature_max": 20.1,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 7,
-              "weather_code": 1,
-              "description": "plutôt dégagé"
+              "vent_max_kmh": 6,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             }
           ],
           "alertes": []
         }
       ],
-      "temperature_max_zone": 23.5,
-      "temperature_min_zone": 15.1,
+      "temperature_max_zone": 23.0,
+      "temperature_min_zone": 14.1,
       "probabilite_pluie_max_pct": 0,
-      "vent_max_kmh": 16.5,
-      "description_dominante": "partiellement nuageux",
+      "vent_max_kmh": 11.9,
+      "description_dominante": "couvert",
       "periodes": [
         {
           "label": "Matin",
-          "temperature_min": 15.1,
-          "temperature_max": 22.6,
-          "probabilite_pluie_pct": 3,
+          "temperature_min": 14.2,
+          "temperature_max": 22.0,
+          "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
-          "vent_max_kmh": 10,
-          "weather_code": 1,
-          "description": "plutôt dégagé"
+          "vent_max_kmh": 8,
+          "weather_code": 3,
+          "description": "couvert"
         },
         {
           "label": "Après-midi",
-          "temperature_min": 20.0,
-          "temperature_max": 23.5,
+          "temperature_min": 20.1,
+          "temperature_max": 23.0,
           "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
-          "vent_max_kmh": 16,
-          "weather_code": 2,
-          "description": "partiellement nuageux"
+          "vent_max_kmh": 11,
+          "weather_code": 3,
+          "description": "couvert"
         },
         {
           "label": "Soir",
-          "temperature_min": 15.8,
-          "temperature_max": 22.7,
+          "temperature_min": 16.5,
+          "temperature_max": 22.1,
           "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
-          "vent_max_kmh": 15,
-          "weather_code": 3,
-          "description": "couvert"
+          "vent_max_kmh": 11,
+          "weather_code": 0,
+          "description": "ciel dégagé"
         }
       ],
       "alertes": [],
-      "resume": "Plutôt dégagé le matin, partiellement nuageux l'après-midi, couvert le soir, de 15° à 24°."
+      "resume": "Couvert le matin, couvert l'après-midi, ciel dégagé le soir, de 14° à 23°."
     },
     "anglais": {
       "mode": "litterature",
-      "oeuvre": "Alice's Adventures in Wonderland",
-      "auteur": "Lewis Carroll",
-      "annee": 1865,
+      "oeuvre": "A Scandal in Bohemia",
+      "auteur": "Arthur Conan Doyle",
+      "annee": 1891,
       "segments": [
         {
-          "t": "Alice was beginning to get very tired of sitting by her sister on the bank",
-          "g": "la berge"
+          "t": "To Sherlock Holmes she is always the woman. I have seldom",
+          "g": "rarement"
         },
         {
-          "t": ", and of having nothing to do: once or twice she had peeped into",
-          "g": "jeté un coup d'œil dans"
+          "t": " heard him mention her under any other name. In his eyes she eclipses",
+          "g": "éclipse"
         },
         {
-          "t": " the book her sister was reading, but it had no pictures or conversations in it, \"and what is the use of",
-          "g": "à quoi bon"
+          "t": " and predominates",
+          "g": "domine"
         },
         {
-          "t": " a book,\" thought Alice \"without pictures or conversations?\" So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid",
-          "g": "hébétée"
+          "t": " the whole of her sex. It was not that he felt any emotion akin to",
+          "g": "apparenté à"
         },
         {
-          "t": "), whether the pleasure of making a daisy-chain",
-          "g": "collier de pâquerettes"
+          "t": " love for Irene Adler. All emotions, and that one particularly, were abhorrent",
+          "g": "odieuses"
         },
         {
-          "t": " would be worth the trouble",
-          "g": "valoir la peine"
+          "t": " to his cold, precise but admirably balanced mind. He was, I take it",
+          "g": "je suppose"
         },
         {
-          "t": " of getting up and picking",
-          "g": "cueillir"
+          "t": ", the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position",
+          "g": "position déplacée"
         },
         {
-          "t": " the daisies, when suddenly a White Rabbit with pink eyes ran close by",
-          "g": "tout près de"
+          "t": ". He never spoke of the softer passions, save with",
+          "g": "sauf avec"
         },
         {
-          "t": " her.",
+          "t": " a gibe",
+          "g": "la raillerie"
+        },
+        {
+          "t": " and a sneer",
+          "g": "le ricanement"
+        },
+        {
+          "t": ".",
           "g": null
         }
       ],
-      "texte_glose": "Alice was beginning to get very tired of sitting by her sister on the bank (= la berge), and of having nothing to do: once or twice she had peeped into (= jeté un coup d'œil dans) the book her sister was reading, but it had no pictures or conversations in it, \"and what is the use of (= à quoi bon) a book,\" thought Alice \"without pictures or conversations?\" So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid (= hébétée)), whether the pleasure of making a daisy-chain (= collier de pâquerettes) would be worth the trouble (= valoir la peine) of getting up and picking (= cueillir) the daisies, when suddenly a White Rabbit with pink eyes ran close by (= tout près de) her."
+      "texte_glose": "To Sherlock Holmes she is always the woman. I have seldom (= rarement) heard him mention her under any other name. In his eyes she eclipses (= éclipse) and predominates (= domine) the whole of her sex. It was not that he felt any emotion akin to (= apparenté à) love for Irene Adler. All emotions, and that one particularly, were abhorrent (= odieuses) to his cold, precise but admirably balanced mind. He was, I take it (= je suppose), the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position (= position déplacée). He never spoke of the softer passions, save with (= sauf avec) a gibe (= la raillerie) and a sneer (= le ricanement)."
     },
     "meta": {
-      "resume_1_phrase": "À la une : Présidentielle : Xavier Bertrand, l’ambition qui ne meurt jamais ; Aux Etats-Unis, le recours de Donald Trump au gazole russe, au détriment de l’Ukraine, provoque une vaste controverse."
+      "resume_1_phrase": "À la une : Présidentielle 2027 : la conversion partielle de Marine Le Pen aux recettes économiques d’Emmanuel Macron."
     },
     "_genere_par_llm": true,
     "_provider": "groq+mistral+nvidia",
@@ -469,9 +511,9 @@
       },
       "sport": {
         "genere_par_llm": true,
-        "provider": "groq",
+        "provider": "nvidia",
         "erreur": null,
-        "essais_echoues": 1
+        "essais_echoues": 0
       }
     },
     "_bloc": {
@@ -490,5 +532,5 @@
       "erreur": null
     }
   },
-  "debut_run": "2026-10-13T06:10:38.257095+02:00"
+  "debut_run": "2026-10-14T06:10:40.859182+02:00"
 }

@@ -1,0 +1,536 @@
+{
+  "date": "2026-10-14",
+  "derniere_mise_a_jour": "2026-10-14T06:14:03.902774+02:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Présidentielle 2027 : la conversion partielle de Marine Le Pen aux recettes économiques d’Emmanuel Macron",
+          "resume": "Très critique des propositions du futur président en 2017, la candidate du Rassemblement national endosse en partie sa philosophie. Elle se fait fort de tenir ses promesses à sa place, sur la simplification, la baisse de la dépense publique et celle de la fiscalité des entreprises.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : pour Jean-Luc Mélenchon, le soutien au mouvement lycéen consacre le pari de LFI sur la jeunesse",
+          "resume": "Devenu « l’incarnation politique » de la mobilisation, le candidat de La France insoumise espère tirer profit de son travail de longue haleine auprès des jeunes générations dans la bataille pour l’Elysée, mais la traduction électorale de ce positionnement n’est pas assurée.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Ségolène Royal pose ses conditions pour aider Raphaël Glucksmann",
+          "resume": "Ségolène Royal assure qu’elle soutiendra Raphaël Glucksmann pour rassembler la gauche, à condition qu’il « ne vire pas vers la compromission avec les macronistes »",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Municipales à Montpellier : le tribunal administratif rejette le recours de Rémi Gaillard",
+          "resume": "La justice a admis un «dysfonctionnement» sans considérer que «la sincérité du scrutin ait pu être remise en cause». Il envisage de faire appel devant le Conseil d’Etat.",
+          "pourquoi_important": "Le rejet du recours confirme la validité du scrutin municipal à Montpellier et ouvre la voie à un éventuel appel devant le Conseil d’État.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Le Conseil supérieur de la Magistrature « défavorable » à la réintégration de Rachida Dati",
+          "resume": "L’organe constitutionnel, garant de l’indépendance des magistrats, a estimé ce mardi que la procédure pénale dans laquelle est empêtrée l’ex-ministre fait obstacle à l’exercice des fonctions qu’elle vise. La balle est désormais dans le camp de Gérald Darmanin, actuel ministre de la Justice.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Libération",
+            "20 Minutes"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Guerre en Ukraine : une centrale de Kiev touchée par une frappe russe, sans alerte précoce, selon Volodymyr Zelensky",
+          "resume": "Des frappes russes sur Kiev ont causé deux morts et une vingtaine de blessés. Le président ukrainien a souligné l’absence d’avertissement préalable, critiquant la dépendance de l’Ukraine au renseignement occidental pour détecter les attaques.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "RDC : l’ancien président Joseph Kabila prend la tête du Front pour la refondation de la nation (FRN)",
+          "resume": "Joseph Kabila dirige désormais le FRN, une rébellion active dans l’est de la RDC, alors que les négociations de paix soutenues par Washington sont au point mort.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Libération",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Sanctions contre la CPI : une soixantaine d’eurodéputés lancent un appel « urgent » à Ursula von der Leyen",
+          "resume": "Cinquante-huit eurodéputés ont demandé à la présidente de la Commission européenne d’activer le règlement de blocage pour contrer les sanctions américaines contre la Cour pénale internationale (CPI).",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Les frappes ukrainiennes sur des data centers perturbent les services en ligne en Russie",
+          "resume": "L’Ukraine a ciblé trois centres de données de Yandex, perturbant les services en ligne russes.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Lycéen éborgné à Tours : un policier mis en examen pour \"violences aggravées\"",
+          "resume": "Le parquet de Tours a annoncé mardi soir qu'un policier avait été mis en examen et placé sous contrôle judiciaire pour \"violences aggravées\", après qu'un lycéen a été éborgné le 30 septembre en marge des manifestations lycéennes. Un autre policier a été placé sous statut de témoin assisté, alors que l'enquête se poursuit.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France 24 International",
+            "Le Monde",
+            "France Info",
+            "20 Minutes"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Le roi Felipe VI a défendu la souveraineté \"indiscutable\" de l'Espagne sur Ceuta lors de sa visite historique dans l'enclave",
+          "resume": "Le roi du Maroc, Mohammed VI, avait défendu, vendredi, le \"partenariat\" avec l'Espagne, tout en reconnaissant qu'il se heurtait à des \"défis majeurs\".",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Le Monde International",
+            "Libération"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon 20 Minutes, Guerre en Ukraine : Le pari risqué de Trump sur Poutine et la colère froide de Moscou contre la France",
+          "resume": "« 20 Minutes » fait le point pour vous tous les soirs sur le conflit en Ukraine. Ce mardi 13 octobre 2026, un climat glacial a régné, entre Trump et l’Europe, Moscou et Paris, et même entre Zelensky et le maire de Kiev",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon France 24 International, Midterms 2026 : pour mobiliser sa base, Donald Trump mise sur le diesel",
+          "resume": "Les élections de mi-mandat, le 3 novembre, se profilent, et les sondages ne sont pas en faveur des Républicains. Donald Trump tente le tout pour le tout pour mobiliser sa base, avec un accord sur le diesel avec la Russie. Nous évoquons son pari avec notre correspondant à Washington Matthieu Mabin : pour lui, c'est loin d'être un \"game changer\".",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "",
+      "mouvements_notables": []
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "football",
+          "texte": "Lille cède trois fois en huit minutes et s'incline lourdement contre Arsenal en Ligue des champions"
+        },
+        {
+          "sport": "football",
+          "texte": "Impuissant, le RC Lens concède sa première défaite de la saison en Ligue des champions face au Sporting"
+        },
+        {
+          "sport": "basketball",
+          "texte": "Vainqueur du Rytas Vilnius, Nanterre lance sa saison de Ligue des champions"
+        },
+        {
+          "sport": "autres",
+          "texte": "Regardez : l'Écosse bat la Tchéquie pour se qualifier pour le play-off contre la Suède"
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": []
+    },
+    "science": {
+      "mode": "decouverte",
+      "titre": "Comment élargir les nominations pour les prix Nobel avant qu’il ne soit trop tard",
+      "contenu_markdown": "Les comités chargés d’attribuer les prix Nobel pourraient bientôt bénéficier d’un soutien actif des organisations scientifiques internationales pour diversifier leurs nominateurs. Selon un article publié dans *Nature* le 13 octobre 2026, cette initiative vise à ouvrir le processus de sélection à un plus large éventail de profils, afin d’éviter une surreprésentation des mêmes réseaux ou régions dans les nominations.\n\n## Pourquoi cette réforme ?\nLe système actuel de nomination des lauréats des prix Nobel repose sur un cercle restreint d’experts, souvent issus des mêmes institutions ou pays. Cette concentration peut limiter la visibilité de travaux innovants ou de chercheurs issus de disciplines moins représentées. Les organisations scientifiques proposent désormais leur aide pour identifier et solliciter des nominateurs plus variés, notamment en ciblant des chercheurs de différentes cultures, genres ou spécialités.\n\n## Ce qui reste à préciser\nLes modalités concrètes de cette collaboration (nombre de nominateurs supplémentaires, critères de sélection, impact sur les décisions finales) ne sont pas détaillées dans cette annonce. Les règles de nomination, fixées par les fondations Nobel, pourraient aussi imposer des limites à cette diversification. Les prochaines étapes dépendront donc des accords entre les comités et les partenaires scientifiques.\n\nPour en savoir plus sur le fonctionnement actuel des nominations, les sources officielles des prix Nobel ou les débats en cours, les articles de *Nature* et les publications des fondations Nobel restent les références.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03220-x\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.",
+      "phrases_retirees_garde_fou": 0,
+      "matiere_source": "fine",
+      "textes_sources_audit": [
+        {
+          "source": "Nature News",
+          "titre": "Diversify Nobel-prize nominations before it’s too late",
+          "resume": "Nature, Published online: 13 October 2026; doi:10.1038/d41586-026-03220-x International scientific organizations are ready to help the committees that award the prizes to invite a wider range of nominators."
+        }
+      ]
+    },
+    "citation": {
+      "texte": "Le vent se lève !... Il faut tenter de vivre !",
+      "auteur": "Paul Valéry",
+      "source": "Le Cimetière marin",
+      "annee": 1920
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 18.1,
+          "temperature_max": 23.0,
+          "temperature_min": 17.5,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 6.5,
+          "vent_max_kmh": 11.3,
+          "rafales_max_kmh": 19.8,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 17.5,
+              "temperature_max": 22.0,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 22.6,
+              "temperature_max": 23.0,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 18.7,
+              "temperature_max": 22.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 18.7,
+          "temperature_max": 22.3,
+          "temperature_min": 17.8,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 6.2,
+          "vent_max_kmh": 11.9,
+          "rafales_max_kmh": 18.7,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 17.8,
+              "temperature_max": 21.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 21.8,
+              "temperature_max": 22.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 11,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 18.9,
+              "temperature_max": 21.8,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 11,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 14.8,
+          "temperature_max": 22.3,
+          "temperature_min": 14.7,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 5.8,
+          "vent_max_kmh": 6.8,
+          "rafales_max_kmh": 13.0,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 14.7,
+              "temperature_max": 19.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 21.0,
+              "temperature_max": 22.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 17.3,
+              "temperature_max": 20.8,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 14.2,
+          "temperature_max": 21.4,
+          "temperature_min": 14.1,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 7.9,
+          "vent_max_kmh": 8.0,
+          "rafales_max_kmh": 13.7,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 14.2,
+              "temperature_max": 19.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 20.1,
+              "temperature_max": 21.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 16.5,
+              "temperature_max": 20.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 23.0,
+      "temperature_min_zone": 14.1,
+      "probabilite_pluie_max_pct": 0,
+      "vent_max_kmh": 11.9,
+      "description_dominante": "couvert",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 14.2,
+          "temperature_max": 22.0,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 8,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 20.1,
+          "temperature_max": 23.0,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 11,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 16.5,
+          "temperature_max": 22.1,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 11,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        }
+      ],
+      "alertes": [],
+      "resume": "Couvert le matin, couvert l'après-midi, ciel dégagé le soir, de 14° à 23°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "A Scandal in Bohemia",
+      "auteur": "Arthur Conan Doyle",
+      "annee": 1891,
+      "segments": [
+        {
+          "t": "To Sherlock Holmes she is always the woman. I have seldom",
+          "g": "rarement"
+        },
+        {
+          "t": " heard him mention her under any other name. In his eyes she eclipses",
+          "g": "éclipse"
+        },
+        {
+          "t": " and predominates",
+          "g": "domine"
+        },
+        {
+          "t": " the whole of her sex. It was not that he felt any emotion akin to",
+          "g": "apparenté à"
+        },
+        {
+          "t": " love for Irene Adler. All emotions, and that one particularly, were abhorrent",
+          "g": "odieuses"
+        },
+        {
+          "t": " to his cold, precise but admirably balanced mind. He was, I take it",
+          "g": "je suppose"
+        },
+        {
+          "t": ", the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position",
+          "g": "position déplacée"
+        },
+        {
+          "t": ". He never spoke of the softer passions, save with",
+          "g": "sauf avec"
+        },
+        {
+          "t": " a gibe",
+          "g": "la raillerie"
+        },
+        {
+          "t": " and a sneer",
+          "g": "le ricanement"
+        },
+        {
+          "t": ".",
+          "g": null
+        }
+      ],
+      "texte_glose": "To Sherlock Holmes she is always the woman. I have seldom (= rarement) heard him mention her under any other name. In his eyes she eclipses (= éclipse) and predominates (= domine) the whole of her sex. It was not that he felt any emotion akin to (= apparenté à) love for Irene Adler. All emotions, and that one particularly, were abhorrent (= odieuses) to his cold, precise but admirably balanced mind. He was, I take it (= je suppose), the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position (= position déplacée). He never spoke of the softer passions, save with (= sauf avec) a gibe (= la raillerie) and a sneer (= le ricanement)."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Présidentielle 2027 : la conversion partielle de Marine Le Pen aux recettes économiques d’Emmanuel Macron."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral+nvidia",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral+nvidia",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-10-14T06:10:40.859182+02:00"
+}

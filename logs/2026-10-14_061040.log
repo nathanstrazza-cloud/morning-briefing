@@ -1,0 +1,166 @@
+2026-10-14 04:10:40,859 [INFO] morning_briefing: === Démarrage du run Morning Briefing pour le 2026-10-14 ===
+2026-10-14 04:10:40,875 [INFO] morning_briefing: Fenêtre de recherche: 2026-10-13 00:10:38.257095+02:00 -> 2026-10-14 06:10:40.859182+02:00 (lundi=False, dernier_succes=2026-10-13 06:10:38.257095+02:00)
+2026-10-14 04:10:40,875 [INFO] morning_briefing.collecte: Début de la collecte (depuis=2026-10-13T00:10:38.257095+02:00, lundi=False)
+2026-10-14 04:10:41,032 [INFO] morning_briefing.collecte.rss: Flux Le Monde (france): 16 articles récupérés
+2026-10-14 04:10:41,700 [INFO] morning_briefing.collecte.rss: Flux France Info (france): 27 articles récupérés
+2026-10-14 04:10:42,039 [INFO] morning_briefing.collecte.rss: Flux Libération (france): 50 articles récupérés
+2026-10-14 04:10:42,258 [INFO] morning_briefing.collecte.rss: Flux 20 Minutes (france): 30 articles récupérés
+2026-10-14 04:10:42,313 [INFO] morning_briefing.collecte.rss: Flux Le Monde International (monde): 20 articles récupérés
+2026-10-14 04:10:42,548 [INFO] morning_briefing.collecte.rss: Flux New York Times World (monde): 53 articles récupérés
+2026-10-14 04:10:42,657 [INFO] morning_briefing.collecte.rss: Flux France 24 International (monde): 24 articles récupérés
+2026-10-14 04:10:42,706 [INFO] morning_briefing.collecte.rss: Flux Le Monde Économie (economie): 20 articles récupérés
+2026-10-14 04:10:42,874 [INFO] morning_briefing.collecte.rss: Flux Le Figaro Économie (economie): 20 articles récupérés
+2026-10-14 04:10:43,029 [INFO] morning_briefing.collecte.rss: Flux BFM Business (economie): 30 articles récupérés
+2026-10-14 04:10:43,076 [INFO] morning_briefing.collecte.rss: Flux Le Monde Sciences (sciences): 20 articles récupérés
+2026-10-14 04:10:44,031 [WARNING] morning_briefing.collecte.rss: Flux RSS illisible ou vide: CNRS Actualités (https://www.cnrs.fr/fr/rss.xml) -- <unknown>:14:488: not well-formed (invalid token)
+2026-10-14 04:10:44,174 [INFO] morning_briefing.collecte.rss: Flux Nature News (sciences): 75 articles récupérés
+2026-10-14 04:10:44,372 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Football (sport): 50 articles récupérés
+2026-10-14 04:10:45,345 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Basket (sport): 50 articles récupérés
+2026-10-14 04:10:45,764 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Tennis (sport): 50 articles récupérés
+2026-10-14 04:10:45,919 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Rugby (sport): 50 articles récupérés
+2026-10-14 04:10:46,083 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Cyclisme (sport): 50 articles récupérés
+2026-10-14 04:10:46,419 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Hand (sport): 0 articles récupérés
+2026-10-14 04:10:46,672 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Volley (sport): 0 articles récupérés
+2026-10-14 04:10:47,041 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Natation (sport): 50 articles récupérés
+2026-10-14 04:10:47,406 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Athlétisme (sport): 50 articles récupérés
+2026-10-14 04:10:47,785 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Formule 1 (sport): 50 articles récupérés
+2026-10-14 04:10:47,962 [INFO] morning_briefing.collecte.rss: Flux L'Équipe Golf (sport): 50 articles récupérés
+2026-10-14 04:10:48,046 [INFO] morning_briefing.collecte.rss: Flux ESPN NBA News (sport): 0 articles récupérés
+2026-10-14 04:10:48,077 [INFO] morning_briefing.collecte.rss: Flux ESPN Top Headlines (sport): 0 articles récupérés
+2026-10-14 04:10:48,239 [INFO] morning_briefing.collecte.rss: Flux BBC Sport (sport): 72 articles récupérés
+2026-10-14 04:10:48,241 [INFO] morning_briefing.collecte.sports: Sport collecté: 143 items {'football': 63, 'basketball': 13, 'tennis': 8, 'rugby': 17, 'cyclisme': 13, 'athlétisme': 1, 'formule 1': 5, 'golf': 2, 'autres': 19, 'boxe et combat': 2}
+2026-10-14 04:10:48,358 [INFO] morning_briefing.collecte.markets: Marché CAC 40: cours=7827.63 ref=7832.8798828125 (2026-10-12) var=-0.07% | meta.chartPreviousClose=7769.21 previousClose=None
+2026-10-14 04:10:48,428 [INFO] morning_briefing.collecte.markets: Marché S&P 500: cours=7805.45 ref=7807.240234375 (2026-10-12) var=-0.02% | meta.chartPreviousClose=7818.93 previousClose=None
+2026-10-14 04:10:48,498 [INFO] morning_briefing.collecte.markets: Marché Nasdaq: cours=27204.38 ref=27245.900390625 (2026-10-12) var=-0.15% | meta.chartPreviousClose=27599.79 previousClose=None
+2026-10-14 04:10:48,575 [INFO] morning_briefing.collecte.markets: Marché DAX: cours=25259.9 ref=25277.6796875 (2026-10-12) var=-0.07% | meta.chartPreviousClose=25449.19 previousClose=None
+2026-10-14 04:10:48,663 [INFO] morning_briefing.collecte.markets: Marché Euro Stoxx 50: cours=6167.01 ref=6201.2099609375 (2026-10-12) var=-0.55% | meta.chartPreviousClose=6180.29 previousClose=None
+2026-10-14 04:10:48,740 [INFO] morning_briefing.collecte.markets: Marché Pétrole (Brent): cours=106.35 ref=106.6500015258789 (2026-10-12) var=-0.28% | meta.chartPreviousClose=104.72 previousClose=None
+2026-10-14 04:10:48,838 [INFO] morning_briefing.collecte.markets: Marché Or: cours=4185.0 ref=4177.2998046875 (2026-10-13) var=0.18% | meta.chartPreviousClose=4216.3 previousClose=None
+2026-10-14 04:10:48,839 [INFO] morning_briefing.collecte.markets: Marchés collectés: 5 indices, 2 matières premières
+2026-10-14 04:10:50,853 [INFO] morning_briefing.collecte.weather: Météo collectée pour 4/4 villes
+2026-10-14 04:10:50,853 [INFO] morning_briefing.collecte: Collecte terminée: 287 actualités, 143 items sport, 5 indices, 4 villes météo
+2026-10-14 04:10:50,853 [WARNING] morning_briefing.collecte: Flux RSS en échec ce run: CNRS Actualités
+2026-10-14 04:10:50,855 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Etats-Unis : les faux pas de Kimberly Guilfoyle et Katie Zacharia, deux femmes de pouvoir 
+2026-10-14 04:10:50,855 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Déforestation : des progrès fragiles en Amazonie, mais une aggravation dans le bassin du C
+2026-10-14 04:10:50,855 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Midterms : la raréfaction du saumon, au cœur de la bataille entre républicains et démocrat
+2026-10-14 04:10:50,856 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Arsenal-Lille : à Londres, les Lillois coulent et poursuivent leur série cauchemardesque f
+2026-10-14 04:10:50,856 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Guerre en Ukraine : une centrale de Kiev touchée par une frappe russe, sans alerte précoce
+2026-10-14 04:10:50,857 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Accusé d'avoir posé un micro chez OpenAI, un ingénieur saoudien arrêté et inculpé à San Fr
+2026-10-14 04:10:50,858 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Le roi Felipe VI a défendu la souveraineté "indiscutable" de l'Espagne sur Ceuta lors de s
+2026-10-14 04:10:50,858 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Après la série d'attaques des houthis du Yémen à Riyad, l'Arabie saoudite semble délaissée
+2026-10-14 04:10:50,858 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Accident tragique dans un parc d'attractions aux États-Unis
+2026-10-14 04:10:50,859 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Aux États-Unis, le domicile de l'élue démocrate Ilhan Omar perquisitionné, sur fond d'atta
+2026-10-14 04:10:50,859 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Viol en réunion d'une étudiante à Cornell : le président de l'université américaine suspen
+2026-10-14 04:10:50,860 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Pologne : le suspect dans le complot visant à assassiner le Premier ministre était en poss
+2026-10-14 04:10:50,860 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Sanctions contre la CPI : une soixantaine d’eurodéputés lancent un appel «urgent» à Ursula
+2026-10-14 04:10:50,861 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | La Russie arrête un journaliste japonais accusé d’espionnage
+2026-10-14 04:10:50,861 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | En RDC, l’ancien président Joseph Kabila prend officiellement la tête de la rébellion
+2026-10-14 04:10:50,861 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Le documentaire israélien «Naza» fait le plein dans les salles en France : «J’ai entendu p
+2026-10-14 04:10:50,862 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | «Qui vit encore» de Nicolas Wadimoff : terrible carte mémoire de Palestine
+2026-10-14 04:10:50,862 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Mobilisation des lycéens, détricotage des lois anti-LGBT + en Hongrie, Thélyson Orélien so
+2026-10-14 04:10:50,862 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Birmanie : l’opération séduction de Min Aung Hlaing avec la collaboration des pays de l’As
+2026-10-14 04:10:50,863 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Donald Trump demande la démission de Kimberly Guilfoyle, l’ambassadrice des Etats-Unis en 
+2026-10-14 04:10:50,863 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Bureaux fastueux dans la Trump Tower, villa luxueuse à Miami… Le président de la Fifa Gian
+2026-10-14 04:10:50,863 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | «Minotaure» d’Andreï Zviaguintsev : la Russie à son corps décadent
+2026-10-14 04:10:50,863 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Exécution de Nidal Hasan : quand le châtiment pénal redevient un divertissement de masse a
+2026-10-14 04:10:50,864 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Non, la désinformation russe n’a pas ralenti après les attaques ukrainiennes sur les infra
+2026-10-14 04:10:50,865 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Une «tragédie terrible» : un mort et plusieurs blessés dans l’accident d’un grand huit au 
+2026-10-14 04:10:50,865 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Etats-Unis : À 63 ans, Duane Davis écope d’au moins 40 ans de prison pour le meurtre de Tu
+2026-10-14 04:10:50,865 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Guerre en Ukraine : Le pari risqué de Trump sur Poutine et la colère froide de Moscou cont
+2026-10-14 04:10:50,866 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Un enseignant tué par balles dans une école au Mexique
+2026-10-14 04:10:50,866 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Guerre en Ukraine : « Une trahison »... Douze sénateurs américains dénoncent l’accord  de 
+2026-10-14 04:10:50,867 [INFO] morning_briefing.analyse.zones: Zone par contenu: france -> monde | Guerre en Ukraine : « Une trahison »… Douze sénateurs américains dénoncent l’accord sur le
+2026-10-14 04:10:50,868 [INFO] morning_briefing.analyse.zones: Zone par contenu: monde -> france | A Paris, Emmanuel Macron et Mahamat Idriss Déby actent le renouveau de leur coopération mi
+2026-10-14 04:10:50,869 [INFO] morning_briefing.analyse.zones: Zone par contenu: monde -> france | Budget 2027 de la France : le débat s'est ouvert à l'Assemblée nationale, objectif déficit
+2026-10-14 04:10:50,870 [INFO] morning_briefing.analyse.zones: Zone par contenu: monde -> france | Arbitrage dans le sport : opération sensibilisation dans les écoles contre l'incivilité
+2026-10-14 04:10:50,870 [INFO] morning_briefing.analyse.zones: Zone par contenu: monde -> france | Ligue des champions : le RC Lens chute face au Sporting Portugal, Lille craque contre Arse
+2026-10-14 04:10:50,870 [INFO] morning_briefing.analyse.zones: Zone par contenu: monde -> france | Les lycéens de nouveau dans la rue : la mobilisation évolue-t-elle ?
+2026-10-14 04:10:50,871 [INFO] morning_briefing.analyse.zones: Zone par contenu: monde -> france | L'Assemblée nationale adopte à l'unanimité des votants la proposition de loi "intégrale" c
+2026-10-14 04:10:50,871 [INFO] morning_briefing.analyse.zones: Zone par contenu: monde -> france | France : les lycéens dans les rues sont "accompagnés par des parents, des professeurs"
+2026-10-14 04:10:50,872 [INFO] morning_briefing.analyse.zones: Affectation France/Monde par contenu: {'vers_monde': 30, 'vers_france': 7}
+2026-10-14 04:10:50,877 [INFO] morning_briefing: Sport issu des flux d'actualité : 3 article(s) déplacé(s) vers la section sport
+2026-10-14 04:10:50,919 [INFO] morning_briefing.analyse.dedup: Déduplication: 93 items bruts -> 81 événements uniques
+2026-10-14 04:10:50,959 [INFO] morning_briefing.analyse.dedup: Déduplication: 100 items bruts -> 88 événements uniques
+2026-10-14 04:10:51,033 [INFO] morning_briefing.analyse.dedup: Déduplication inter-zones: 6 événement(s) France fusionné(s) dans Monde
+2026-10-14 04:10:51,035 [INFO] morning_briefing.analyse.diversite: Fusion par entités: « «Une fascination adolescente pour les tueries de masse» : qu’est-ce qu » -> « «Une fascination adolescente pour les tueries de masse» : qu’est-ce qu »
+2026-10-14 04:10:51,036 [INFO] morning_briefing.analyse.diversite: Fusion par entités: « Espace:  L’être humain « n’est pas prêt pour aller sur Mars », selon S » -> « «Aller sur Mars, imaginez le carnage» : pour Sophie Adenot, un astrona »
+2026-10-14 04:10:51,036 [INFO] morning_briefing.analyse.diversite: Fusion par entités: « « Les Misérables » : Y a-t-il une malédiction à devoir perpétuellement » -> « «Les Misérables» de Fred Cavayé : une giga-adaptation du classique de  »
+2026-10-14 04:10:51,036 [INFO] morning_briefing.analyse.diversite: Fusion par entités: « Fusillade à Aubagne : Qu’est-ce que la « True crime Community » à laqu » -> « «Une fascination adolescente pour les tueries de masse» : qu’est-ce qu »
+2026-10-14 04:10:51,036 [INFO] morning_briefing.analyse.diversite: Fusion par entités: « Blocus des lycées : Le droit de vote dès 16 ans proposé par Jean-Luc M » -> « Présidentielle 2027 : pour Jean-Luc Mélenchon, le soutien au mouvement »
+2026-10-14 04:10:51,036 [INFO] morning_briefing.analyse.diversite: Fusion par entités: « A Paris, Emmanuel Macron et Mahamat Idriss Déby actent le renouveau de » -> « Présidentielle 2027 : la conversion partielle de Marine Le Pen aux rec »
+2026-10-14 04:10:51,036 [INFO] morning_briefing.analyse.diversite: Fusion par entités: 6 événement(s) fusionné(s)
+2026-10-14 04:10:51,039 [INFO] morning_briefing.analyse.diversite: Fusion par entités: « Donald Trump demande la démission de Kimberly Guilfoyle, l’ambassadric » -> « Etats-Unis : les faux pas de Kimberly Guilfoyle et Katie Zacharia, deu »
+2026-10-14 04:10:51,039 [INFO] morning_briefing.analyse.diversite: Fusion par entités: « FIFA Pays Millions for Trump Tower Office Said to Be Rarely Used » -> « Bureaux fastueux dans la Trump Tower, villa luxueuse à Miami… Le prési »
+2026-10-14 04:10:51,039 [INFO] morning_briefing.analyse.diversite: Fusion par entités: « Leo XIV’s Lung Cancer Diagnosis Tests a Papacy Still Taking Shape » -> « Leo XIV’s Lung Cancer Diagnosis Tests a Papacy Still Taking Shape »
+2026-10-14 04:10:51,039 [INFO] morning_briefing.analyse.diversite: Fusion par entités: « ‘Honey Please’: The Steep Rise and Sudden Fall of Kimberly Guilfoyle. » -> « Etats-Unis : les faux pas de Kimberly Guilfoyle et Katie Zacharia, deu »
+2026-10-14 04:10:51,040 [INFO] morning_briefing.analyse.diversite: Fusion par entités: « After Russian Diesel Deal, Trump Faces New Crisis Over Ukraine » -> « After Russian Diesel Deal, Trump Faces New Crisis Over Ukraine »
+2026-10-14 04:10:51,040 [INFO] morning_briefing.analyse.diversite: Fusion par entités: « Saudi Arabia Faces More Attacks as It Reels From Airport Strikes » -> « Saudi Energy Giant Struck as War Spikes Between Houthis and Saudi Arab »
+2026-10-14 04:10:51,040 [INFO] morning_briefing.analyse.diversite: Fusion par entités: « Un site administratif d'Aramco touché à Dhahran, en Arabie saoudite » -> « Après la série d'attaques des houthis du Yémen à Riyad, l'Arabie saoud »
+2026-10-14 04:10:51,040 [INFO] morning_briefing.analyse.diversite: Fusion par entités: « Des compagnies aériennes suspendent les vols vers l'Arabie saoudite » -> « Après la série d'attaques des houthis du Yémen à Riyad, l'Arabie saoud »
+2026-10-14 04:10:51,040 [INFO] morning_briefing.analyse.diversite: Fusion par entités: 8 événement(s) fusionné(s)
+2026-10-14 04:10:51,058 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 69 événements
+2026-10-14 04:10:51,058 [INFO] morning_briefing.analyse.verification: Vérification: 9/69 événements classés 'fait confirmé' (>= 2 sources)
+2026-10-14 04:10:51,077 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 80 événements
+2026-10-14 04:10:51,077 [INFO] morning_briefing.analyse.verification: Vérification: 12/80 événements classés 'fait confirmé' (>= 2 sources)
+2026-10-14 04:10:51,077 [INFO] morning_briefing: Entonnoir actualité (seuil=5): france {'bruts': 93, 'evenements_uniques': 69, 'retenus_apres_seuil': 24} | monde {'bruts': 100, 'evenements_uniques': 80, 'retenus_apres_seuil': 35}
+2026-10-14 04:10:51,078 [INFO] morning_briefing.analyse.diversite: Sélection diversifiée: 5 retenu(s) sur 24 (limite 2 par entité)
+2026-10-14 04:10:51,079 [INFO] morning_briefing.analyse.diversite: Sélection diversifiée: 8 retenu(s) sur 35 (limite 2 par entité)
+2026-10-14 04:10:51,101 [INFO] morning_briefing.analyse.dedup: Déduplication: 68 items bruts -> 52 événements uniques
+2026-10-14 04:10:51,115 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 52 événements
+2026-10-14 04:10:51,117 [INFO] morning_briefing.analyse.dedup: Déduplication: 23 items bruts -> 23 événements uniques
+2026-10-14 04:10:51,118 [INFO] morning_briefing.analyse.science_events: Fusion sciences: 23 événements -> 23
+2026-10-14 04:10:51,123 [INFO] morning_briefing.analyse.scoring: Scoring terminé pour 23 événements
+2026-10-14 04:10:51,123 [INFO] morning_briefing.analyse.verification: Vérification: 0/23 événements classés 'fait confirmé' (>= 2 sources)
+2026-10-14 04:10:51,142 [INFO] morning_briefing.analyse.dedup: Déduplication: 66 items bruts -> 61 événements uniques
+2026-10-14 04:10:51,143 [INFO] morning_briefing.analyse.dedup: Déduplication: 13 items bruts -> 12 événements uniques
+2026-10-14 04:10:51,144 [INFO] morning_briefing.analyse.dedup: Déduplication: 8 items bruts -> 8 événements uniques
+2026-10-14 04:10:51,145 [INFO] morning_briefing.analyse.dedup: Déduplication: 17 items bruts -> 17 événements uniques
+2026-10-14 04:10:51,146 [INFO] morning_briefing.analyse.dedup: Déduplication: 13 items bruts -> 12 événements uniques
+2026-10-14 04:10:51,146 [INFO] morning_briefing.analyse.dedup: Déduplication: 1 items bruts -> 1 événements uniques
+2026-10-14 04:10:51,147 [INFO] morning_briefing.analyse.dedup: Déduplication: 5 items bruts -> 5 événements uniques
+2026-10-14 04:10:51,147 [INFO] morning_briefing.analyse.dedup: Déduplication: 2 items bruts -> 2 événements uniques
+2026-10-14 04:10:51,148 [INFO] morning_briefing.analyse.dedup: Déduplication: 19 items bruts -> 19 événements uniques
+2026-10-14 04:10:51,148 [INFO] morning_briefing.analyse.dedup: Déduplication: 2 items bruts -> 2 événements uniques
+2026-10-14 04:10:51,153 [INFO] morning_briefing.analyse.sport_scoring: Sport: 4 retenu(s) {'football': 2, 'basketball': 1, 'autres': 1} (seuil=5, max 2/sport)
+2026-10-14 04:10:51,154 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Les géants de l’IA marchent sur les plates-bandes des sciences de la vie
+2026-10-14 04:10:51,154 [INFO] morning_briefing.generation: Science: découverte refusée (résumé trop court (< 200 caractères)) — Carole Fritz, archéologue et préhistorienne, grande amoureuse de l’art pariétal, est morte
+2026-10-14 04:10:51,154 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Le biologiste Pierre Joliot, découvreur de mécanismes fondamentaux de la photosynthèse et 
+2026-10-14 04:10:51,154 [INFO] morning_briefing.generation: Science: découverte refusée (une seule source non primaire) — Découverte de nouveaux courants marins grâce aux éléphants de mer des Kerguelen
+2026-10-14 04:10:51,155 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Preserve research data for tomorrow’s AI-enabled integrity checks
+2026-10-14 04:10:51,155 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Atomic-scale spin sensing of a 2D d-wave altermagnet <i>via</i> helical tunneling
+2026-10-14 04:10:51,155 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Decentralized AI needs more evidence on energy use
+2026-10-14 04:10:51,155 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Selective, Catalytic Oxidation of Polyethylene Surfaces
+2026-10-14 04:10:51,155 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Lead-tainted teeth reveal medieval mines’ unequal toll
+2026-10-14 04:10:51,155 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Why not every global problem can be tackled by an IPCC-like organization
+2026-10-14 04:10:51,156 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Is this idea from AI or humans? A detector claims it can tell
+2026-10-14 04:10:51,156 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Whistleblowing in universities is ‘extraordinarily risky’: stronger protections are needed
+2026-10-14 04:10:51,156 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Can GLP-1s heal the brain? Obesity drugs get a makeover for addiction and depression
+2026-10-14 04:10:51,156 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — Author Correction: Parkinson’s disease as a somato-cognitive action network disorder
+2026-10-14 04:10:51,156 [INFO] morning_briefing.generation: Science: découverte refusée (aucun vocabulaire de recherche (étude, chercheurs…)) — In the AI era, coding means thinking like a systems architect
+2026-10-14 04:10:51,157 [INFO] morning_briefing.generation: Science: découverte refusée (une seule source non primaire) — « Nous demandons à la Commission européenne de surseoir au projet de directive sur le marc
+2026-10-14 04:10:51,157 [INFO] morning_briefing.generation: Science: découverte refusée (une seule source non primaire) — « Etre une femme dans la recherche, c’est problématique. Etre une mère, plus encore » : le
+2026-10-14 04:10:51,157 [INFO] morning_briefing.generation: Science: mode découverte retenu — Diversify Nobel-prize nominations before it’s too late
+2026-10-14 04:10:51,157 [INFO] morning_briefing.generation.llm: Fournisseurs LLM disponibles (clé présente) : groq, mistral, cerebras, openrouter, nvidia
+2026-10-14 04:10:51,192 [INFO] morning_briefing.generation: === appel_1 : actu_france, actu_monde, marches ===
+2026-10-14 04:10:51,192 [INFO] morning_briefing.generation: Tour 1 : groq -> actu_france; mistral -> actu_monde
+2026-10-14 04:10:59,242 [INFO] morning_briefing.generation: Tour 1 : nvidia -> marches
+2026-10-14 04:11:13,519 [INFO] morning_briefing.generation: Pause de 150 s avant l'appel_2 (fenêtre tokens/minute des fournisseurs)
+2026-10-14 04:13:43,519 [INFO] morning_briefing.generation: === appel_2 : science_a, sport ===
+2026-10-14 04:13:43,519 [INFO] morning_briefing.generation: Tour 1 : mistral -> science_a; nvidia -> sport
+2026-10-14 04:13:57,691 [WARNING] morning_briefing.generation: Garde-fou actualité (actualite_france) : 6 phrase(s) retirée(s) : [pourquoi_important non étayé] Ce positionnement indique un possible rapprocheme | [pourquoi_important non étayé] Le soutien aux mouvements lycéens montre la strat | Selon 20 Minutes, Ségolène Royal assure qu’elle soutiendra Raphaël Glucksmann po | [pourquoi_important non étayé] Cette condition souligne les tensions internes à  | Selon Libération, L’humoriste, arrivé cinquième du premier tour, dénonçait un pr | L’avis défavorable du CSM bloque la possible réintégration de Rachida Dati dans 
+2026-10-14 04:13:57,691 [WARNING] morning_briefing.generation: Actualité (actualite_monde) : le LLM a rendu 4 événement(s) sur 8 fournis (consigne : un par événement)
+2026-10-14 04:13:57,693 [WARNING] morning_briefing.generation: Garde-fou actualité (actualite_monde) : 6 phrase(s) retirée(s) : [pourquoi_important non étayé] L’absence d’alerte précoce met en lumière les lim | [pourquoi_important non étayé] Son implication pourrait aggraver les tensions da | [consequences non étayées] Un risque accru d’escalade militaire dans l’est de la | [pourquoi_important non étayé] Cet appel reflète une division transpartisane au  | [pourquoi_important non étayé] Ces attaques illustrent la stratégie ukrainienne  | [consequences non étayées] Renforcement possible des cyberdéfenses russes et des
+2026-10-14 04:13:57,694 [WARNING] morning_briefing.generation: Actualité (actualite_monde) : 4 événement(s) écarté(s) par le LLM complété(s) par le code (texte source) : Lycéen éborgné à Tours : un policier mis en examen pour "vio | Le roi Felipe VI a défendu la souveraineté "indiscutable" de | Guerre en Ukraine : Le pari risqué de Trump sur Poutine et l | Midterms 2026 : pour mobiliser sa base, Donald Trump mise su
+2026-10-14 04:13:57,697 [INFO] morning_briefing.generation: Parties rédigées par LLM : 5/5 (actu_france=groq, actu_monde=mistral, marches=nvidia, science_a=mistral, sport=nvidia)
+2026-10-14 04:13:57,867 [WARNING] morning_briefing.collecte.calendrier: Calendrier: HTTP 400 pour soccer/fra.1 dates=20261014-20261028 : {"code":400,"message":"Failed to get events endpoint."}
+2026-10-14 04:13:57,868 [INFO] morning_briefing.collecte.calendrier: Calendrier: la plage de dates est refusée par ESPN -> requêtes jour par jour pour la suite du run
+2026-10-14 04:13:58,794 [INFO] morning_briefing.collecte.calendrier: Calendrier football fra.1: 12 match(s) à venir
+2026-10-14 04:13:59,217 [INFO] morning_briefing.collecte.calendrier: Calendrier football uefa.champions: 18 match(s) à venir
+2026-10-14 04:13:59,444 [INFO] morning_briefing.collecte.calendrier: Calendrier football uefa.europa: 18 match(s) à venir
+2026-10-14 04:14:00,652 [INFO] morning_briefing.collecte.calendrier: Calendrier football fifa.friendly: 0 match(s) à venir
+2026-10-14 04:14:01,855 [INFO] morning_briefing.collecte.calendrier: Calendrier football uefa.nations: 0 match(s) à venir
+2026-10-14 04:14:02,986 [INFO] morning_briefing.collecte.calendrier: Calendrier football fifa.worldq.uefa: 0 match(s) à venir
+2026-10-14 04:14:03,900 [INFO] morning_briefing.collecte.calendrier: Calendrier basketball nba: 89 match(s) à venir
+2026-10-14 04:14:03,901 [INFO] morning_briefing.collecte.calendrier: Calendrier: prochain football=Manchester City – PSG | prochain basketball=Los Angeles Lakers – Denver Nuggets
+2026-10-14 04:14:03,907 [INFO] morning_briefing.stockage: Briefing sauvegardé: /home/runner/work/morning-briefing/morning-briefing/docs/data/briefings/2026-10-14.json
+2026-10-14 04:14:03,907 [INFO] morning_briefing: === Run terminé avec succès pour le 2026-10-14 ===
