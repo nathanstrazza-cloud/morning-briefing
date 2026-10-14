@@ -1,4 +1,4 @@
-"""Abstraction multi-fournisseurs LLM (cf. README §4 pour le choix et les clés).
+"""Abstraction multi-fournisseurs LLM (cf. CONTEXT.md §5 pour le choix et les clés).
 
 Objectif : pouvoir changer de fournisseur (Groq, Mistral, Cerebras, Gemini, Anthropic, ...)
 en changeant uniquement la variable d'environnement LLM_PROVIDER, sans toucher au reste du

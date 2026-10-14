@@ -8,7 +8,7 @@ souvent une actualité déjà présente dans la section Actualité.
 Choix : banque `config/anglais_textes.json` (comme la citation du jour) -> aucun LLM, aucun quota, texte exact
 (pas de traduction inventée, droit d'auteur respecté : œuvres de plus de 70 ans). Tirage déterministe par date.
 Le mode « actualité » n'est PAS repris : un flux RSS ne fournit que 2 lignes et le texte complet d'un article est
-protégé ; voir SUIVI_CORRECTIFS.md pour les pistes (Wikinews, CC BY).
+protégé ; voir archives/SUIVI_CORRECTIFS_historique.md pour les pistes (Wikinews, CC BY).
 """
 from __future__ import annotations
 

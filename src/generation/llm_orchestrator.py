@@ -13,7 +13,7 @@ Ce qui compte pour la fiabilité (cahier §21) : une partie qui échoue partout 
 PartResult avec body=None et le détail des erreurs -- l'appelant (briefing_generator)
 retombe alors sur le contenu brut pour CETTE partie seulement, jamais sur tout le briefing.
 
-Voir aussi : config/llm_plan.yaml (le plan), HANDOFF_LLM.md (contexte), tests/.
+Voir aussi : config/llm_plan.yaml (le plan), CONTEXT.md (contexte LLM), tests/.
 """
 from __future__ import annotations
 

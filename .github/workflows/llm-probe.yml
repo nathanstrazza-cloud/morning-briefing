@@ -1,14 +1,14 @@
 name: LLM probe
 
 # Sonde manuelle : requête à 1 token sur Groq, Mistral, OpenRouter, NVIDIA + relevé des limites.
-# Lancement : onglet Actions > "LLM probe" > Run workflow. Ne publie pas le site ; commit seulement
-# logs/llm_probe.txt et logs/llm_probe.json (limites + codes HTTP, JAMAIS de clé : cf. _scrub()).
-# Voir scripts/llm_probe.py et docs de handoff (HANDOFF_LLM.md).
+# Lancement : onglet Actions > "LLM probe" > Run workflow. Ne publie pas le site ; ne committe rien : résultat dans
+# l'artefact llm-probe-<run> (probe.txt, probe.json) (limites + codes HTTP, JAMAIS de clé : cf. _scrub()).
+# Voir scripts/llm_probe.py et CONTEXT.md.
 on:
   workflow_dispatch: {}
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   probe:
@@ -32,13 +32,11 @@ jobs:
         run: |
           python scripts/llm_probe.py --json probe.json | tee probe.txt
           { echo '```'; cat probe.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
-      - name: Commit du résultat (lisible par une autre IA / l'utilisateur)
-        run: |
-          mkdir -p logs
-          cp probe.txt logs/llm_probe.txt
-          cp probe.json logs/llm_probe.json
-          git config user.name "morning-briefing-bot"
-          git config user.email "actions@github.com"
-          git add logs/llm_probe.txt logs/llm_probe.json
-          git diff --staged --quiet || git commit -m "Résultat de la sonde LLM"
-          git pull -q --rebase && git push
+      - name: Publication du résultat en artefact (rien n'est committé)
+        uses: actions/upload-artifact@v4
+        with:
+          name: llm-probe-${{ github.run_id }}
+          path: |
+            probe.txt
+            probe.json
+          retention-days: 30
