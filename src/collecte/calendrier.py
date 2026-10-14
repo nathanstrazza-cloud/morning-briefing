@@ -196,5 +196,6 @@ def annoter_sport(sport: dict | None, prochains: dict) -> dict | None:
         return None
     vide = not (sport.get("items") or [])
     sport["rien_a_signaler"] = vide
-    sport["prochains_matchs"] = ([dict(m, sport=c) for c, m in prochains.items() if m] if vide else [])
+    # 13/10/2026 : les prochaines affiches sont TOUJOURS jointes (section plus remplie), pas seulement si rien n'est retenu.
+    sport["prochains_matchs"] = [dict(m, sport=c) for c, m in prochains.items() if m]
     return sport

@@ -33,9 +33,10 @@ PLANCHER_ACTUALITE = 2          # on ne réduit jamais une zone sous 2 événeme
 
 TOKENS_ACTU = 1500
 TOKENS_MARCHES = 1200
-TOKENS_SPORT = 900
+TOKENS_SPORT = 1800   # 13/10/2026 : 900 -> 1800 (jusqu'à 8 éléments de 1-2 phrases)
 TOKENS_ANGLAIS = 900
 TOKENS_SCIENCE_MOITIE = 2200    # ~1 000 mots par moitié ; le raisonnement de Groq est réglé "low"
+NB_MOTS_APPROFONDI_MIN = 900     # seuil d'alerte (log) pour ~10 min de lecture
 TOKENS_SCIENCE_COMPLET = 3000   # mode "découverte" (un seul appel)
 
 _REGLES_COMMUNES = """RÈGLES ABSOLUES (à respecter strictement) :
@@ -120,10 +121,11 @@ UNIQUEMENT cette section (actualité, marchés, science : autres appels). Elle c
 sans préférence pour un sport, une équipe ou un pays : tu traites seulement ce qui figure dans les données.
 
 {_REGLES_COMMUNES}
-6. Une courte phrase factuelle par élément fourni (résultat, classement significatif, blessure,
-   transfert, record). Les titres peuvent être en anglais : TRADUIS-LES en français (chaque texte doit être entièrement
-   en français, aucun mot de phrase anglais), sans rien ajouter. Ne fais pas
-   de compte rendu exhaustif et ne regroupe pas des éléments sans rapport.
+6. Pour CHAQUE élément fourni, écris 1 à 2 phrases factuelles et informatives (qui a gagné/perdu et contre qui, score ou
+   enjeu SI ils figurent dans le titre ou le résumé, blessure, transfert, record, ce que cela change). Appuie-toi sur
+   \"titre\" ET \"resume\" ; n'ajoute AUCUN fait, score, chiffre ou nom absent de ces deux champs. Les titres peuvent être en
+   anglais : TRADUIS-LES en français (chaque texte entièrement en français). Reformule les propos cités d'un joueur
+   en les attribuant (« X estime que… ») sans reproduire les grossièretés. Ne regroupe pas des éléments sans rapport.
 7. \"sport\" = nom du sport en français, en minuscules (ex. \"football\", \"tennis\"), repris des données.
 8. Si les données ne contiennent aucun élément : \"items\": [].
 
@@ -313,7 +315,11 @@ def _marches_prompt(analysed: dict, is_monday: bool, max_chars: int) -> str:
 
 def _sport_prompt(analysed: dict, is_monday: bool, max_chars: int) -> str:
     bg = _bg()
-    sport = {cat: [e["titre"] for e in evs] for cat, evs in analysed["sport_events"].items()}
+    # 13/10/2026 : le LLM ne recevait que les TITRES (d'où des éléments réduits à un titre, sans contexte). On lui
+    # transmet aussi le résumé RSS (300 car. max) et la source : de quoi écrire 1-2 phrases utiles sans rien inventer.
+    sport = {cat: [{"titre": e["titre"], "resume": str(e.get("resume") or "")[:300],
+                    "source": ((e.get("sources") or [{}])[0].get("nom") or "")}
+                   for e in evs] for cat, evs in analysed["sport_events"].items()}
     ser = lambda: bg._serialize({"jour_lundi_couvre_weekend": is_monday, "sport": sport})  # noqa: E731
     s = ser()
     while len(s) > max_chars and any(sport.values()):
@@ -466,6 +472,10 @@ def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: d
                 logger.warning("Garde-fou science : %d phrase(s) retirée(s) (chiffres absents de la source) : %s",
                                len(retirees), " | ".join(x[:80] for x in retirees[:8]))
         sci["contenu_markdown"] = contenu
+        # 13/10/2026 : longueur mesurée et publiée (diagnostic) ; l'approfondi vise ~10 min de lecture (cahier §7).
+        sci["nb_mots"] = len(contenu.split())
+        if sci.get("mode") == "approfondi" and sci["nb_mots"] < NB_MOTS_APPROFONDI_MIN:
+            logger.warning("Science : article approfondi court (%d mots, attendu >= %d)", sci["nb_mots"], NB_MOTS_APPROFONDI_MIN)
         if science_source is not None and science_source.get("sujet_id"):
             sci["sujet_id"] = science_source["sujet_id"]  # rotation : ne pas reprendre un sujet récent
             sci["origine"] = science_source.get("origine", "")

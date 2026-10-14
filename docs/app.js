@@ -160,13 +160,14 @@ function renderSectionSport(sport) {
   }
   if (groupes.size === 0) {
     section.appendChild(el("p", { class: "sport-rien", text: "Rien d'intéressant à signaler aujourd'hui." }));
-    // `prochains_matchs` : liste (nouveau format) ou objet {football, basketball} (ancien format).
-    const pm = sport.prochains_matchs || [];
-    const prochains = Array.isArray(pm) ? pm : Object.entries(pm).filter(([, m]) => m).map(([c, m]) => ({ ...m, sport: c }));
-    for (const m of prochains) {
-      if (m && m.affiche) {
-        section.appendChild(el("p", { class: "sport-prochain", text: `Prochaine affiche (${m.sport || "sport"}) : ${m.affiche} (${m.competition}), ${m.date_texte}.` }));
-      }
+  }
+  // 13/10/2026 : les prochaines affiches sont affichées même quand des éléments ont été retenus.
+  // `prochains_matchs` : liste (nouveau format) ou objet {football, basketball} (ancien format).
+  const pm = sport.prochains_matchs || [];
+  const prochains = Array.isArray(pm) ? pm : Object.entries(pm).filter(([, m]) => m).map(([c, m]) => ({ ...m, sport: c }));
+  for (const m of prochains) {
+    if (m && m.affiche) {
+      section.appendChild(el("p", { class: "sport-prochain", text: `Prochaine affiche (${m.sport || "sport"}) : ${m.affiche} (${m.competition}), ${m.date_texte}.` }));
     }
   }
   return section;

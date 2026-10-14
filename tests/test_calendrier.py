@@ -65,7 +65,7 @@ def test_annoter_sport_rien_a_signaler_donne_les_prochaines_affiches():
     vide = c.annoter_sport({"items": []}, prochains)
     assert vide["rien_a_signaler"] is True and vide["prochains_matchs"] == [{"affiche": "a", "sport": "football"}]
     plein = c.annoter_sport({"items": [{"sport": "tennis", "texte": "Alcaraz gagne"}]}, prochains)
-    assert plein["rien_a_signaler"] is False and plein["prochains_matchs"] == []
+    assert plein["rien_a_signaler"] is False and plein["prochains_matchs"] == [{"affiche": "a", "sport": "football"}]  # 13/10 : affiches toujours jointes
     assert plein["items"] == [{"sport": "tennis", "texte": "Alcaraz gagne"}]
     assert c.annoter_sport(None, prochains) is None
 

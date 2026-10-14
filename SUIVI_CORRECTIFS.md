@@ -301,3 +301,11 @@ Défauts constatés dans `docs/data/briefings/2026-10-12.json` et corrigés :
 Tests : 200 OK (`python3 -m pytest -q tests`). Dev Test réel (run 38353261295, commit 249416c) : succès, 6/6 parties, météo cohérente, anglais littéraire OK. Le scoring sport (dernier correctif) n'est validé que par tests unitaires.
 Non traités : doublon inter-zones Palestine (France « La France appelle… » / Monde « Palestiniens privés de scrutin », 1 seule entité commune), explication marché Brent faible (1 article), CNRS « invalid token », flux ESPN/L'Équipe Hand-Volley vides, France 24 SSL.
 Jeton GitHub : le jeton actuel expire le 30/11/2026 (en-tête `github-authentication-token-expiration`).
+
+## 13/10/2026 soir — Science trop courte, sport trop vide (sur `dev`, non fusionné)
+Analyse : `ANALYSE_RUN_2026-10-13.md`. Fichiers touchés : `src/generation/briefing_generator.py` (`decouverte_qualifiee`, `_RE_POLITIQUE`),
+`src/generation/parts.py` (`_sport_prompt`, `SYSTEM_SPORT` règle 6, `TOKENS_SPORT`, `nb_mots`), `config/config.yaml` (sport 8 / 3 par sport),
+`src/collecte/calendrier.py` (`annoter_sport`), `docs/app.js` (affiches toujours visibles), tests mis à jour (`test_science_selection.py`,
+`test_calendrier.py`, `test_sport_scoring.py`). À vérifier au prochain run : `science.mode` = approfondi et `nb_mots` ≥ 900 ; 6-8 éléments sport
+de 1-2 phrases sans score inventé ; affiches sous les éléments. Limite connue : pas de contrôle automatique des scores cités par le LLM sport
+(seule la consigne l'interdit) ; une vraie découverte à résumé fin retombe en approfondi (la nouvelle n'est alors plus mentionnée).

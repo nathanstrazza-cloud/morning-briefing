@@ -19,14 +19,14 @@ ETUDE_SOLIDE = ev("Des chercheurs identifient une protéine clé de la résistan
 def test_floride_refusee_titre_politique_de_sante():
     ok, raison = decouverte_qualifiee(FLORIDE)
     # vocabulaire de recherche présent (« modèle de simulation » via « simulation ») mais source unique non primaire
-    assert not ok and ("source" in raison or "politique" in raison)
+    assert not ok and ("source" in raison or "politique" in raison or "matière" in raison)
 
 
 def test_une_seule_source_non_primaire_refusee():
     e = ev("Des chercheurs observent une nouvelle espèce de poisson",
            "Des chercheurs ont décrit une nouvelle espèce de poisson des grands fonds lors d'une mission, selon une étude. " * 3)
     ok, raison = decouverte_qualifiee(e)
-    assert not ok and "source" in raison
+    assert not ok and ("source" in raison or "matière" in raison)
 
 
 def test_resume_court_refuse():
@@ -69,14 +69,22 @@ def test_article_nature_anglais_qualifie_apres_correctif():
     assert decouverte_qualifiee(e) == (True, "")
 
 
-def test_nobel_resume_court_accepte():
+def test_nobel_resume_court_refuse_depuis_le_13_10():
+    # 13/10/2026 : une tribune « Nobel sans lauréates » (3 phrases) était passée en découverte -> article de 162 mots.
     e = ev("Le prix Nobel de chimie 2026 décerné à Henri Kagan et Kenso Soai", "Le prix a été attribué pour des travaux sur la chiralité des molécules organiques.", sources=("Le Monde Sciences",))
-    assert decouverte_qualifiee(e) == (True, "")
+    ok, raison = decouverte_qualifiee(e)
+    assert not ok and "matière" in raison
+
+
+def test_tribune_societale_nobel_sans_laureates_refusee():
+    e = ev("Des prix Nobel scientifiques sans lauréates, ce n’est pas une fatalité",
+           "Seules 26 femmes ont été récompensées depuis 1901 et aucune en 2026. Critiquées, les académies ont reconnu ce déséquilibre.")
+    assert not decouverte_qualifiee(e)[0]
 
 
 def test_nobel_prefere_a_un_article_ordinaire():
     ordinaire = ev("Des chercheurs découvrent un fossile inédit", "Une étude décrit un fossile exceptionnel " * 8, sources=("Nature News",))
-    nobel = ev("Nobel de physique 2026 : trois chercheurs récompensés", "Les chercheurs récompensés pour leurs travaux sur les particules.",
+    nobel = ev("Nobel de physique 2026 : trois chercheurs récompensés", "Les chercheurs récompensés pour leurs travaux sur les particules. " * 10,
                sources=("Le Monde Sciences",))
     assert select_science_topic([ordinaire, nobel])["contenu_source"]["titre"].startswith("Nobel")
 
