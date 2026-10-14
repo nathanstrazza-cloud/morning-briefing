@@ -562,7 +562,7 @@ def select_nyt_article(raw_monde_items: list[dict]) -> dict | None:
     }
 
 
-# --- Mode science (05/10/2026, point 3 de ANALYSE_RUN_2026-10-05.md) ------------------------------
+# --- Mode science (05/10/2026, point 3 de archives/ANALYSE_RUN_2026-10-05.md) ------------------------------
 # Constat : le mode « découverte » s'est déclenché sur un simple résumé RSS du Monde (« Et si la Floride arrêtait de
 # vacciner… », sujet de politique de santé, aucune étude identifiée, aucun chiffre) ; l'article écrit était pauvre et
 # se contredisait. Un mode « découverte » exige désormais : (1) un vocabulaire de RECHERCHE (étude, chercheurs,

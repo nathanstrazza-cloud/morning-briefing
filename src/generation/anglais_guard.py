@@ -1,4 +1,4 @@
-"""Garde-fous de la section « Anglais du jour » (point 7 de ANALYSE_RUN_2026-10-01.md).
+"""Garde-fous de la section « Anglais du jour » (point 7 de archives/ANALYSE_RUN_2026-10-01.md).
 
 Problèmes constatés le 01/10 : « centrist » traduit « centré » (au lieu de « centriste »),
 vocabulaire trop facile (Prime Minister, lawyer, politician…). Le LLM ne peut pas être

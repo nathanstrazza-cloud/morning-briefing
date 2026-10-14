@@ -4,10 +4,11 @@ __pycache__/
 .venv/
 venv/
 .DS_Store
-# NB (corrigé le 22/09) : *.log était ignoré ici, ce qui empêchait silencieusement le
-# "git add docs/data/ logs/" du workflow (cf. .github/workflows/briefing.yml) de committer
-# les logs de run -- alors même que le workflow est censé le faire pour le débogage (cahier
-# §22). Les logs/*.log DOIVENT être versionnés : ne pas les réintroduire ici.
+# Logs de run (réorganisation du 14/10/2026) : NON versionnés. Le workflow de production les publie en
+# artefact GitHub Actions « logs-<run> » (90 jours). Le dossier est conservé via logs/.gitkeep.
+logs/*
+!logs/.gitkeep
+llm_probe.*
 
 # Sorties du workflow dev-test (artefact uniquement, ne jamais committer)
 test-output/

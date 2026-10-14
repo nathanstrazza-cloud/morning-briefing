@@ -85,7 +85,8 @@ def sujets_deja_utilises(dossiers: list[Path] | None = None, n: int = HISTORIQUE
         from src.stockage import storage
         dossiers = [storage.resolve_data_dir(), storage.PROD_DATA_DIR]
     fichiers: dict[str, Path] = {}
-    for d in dossiers:
+    # + sous-dossier archives/ (rotation des briefings, 14/10/2026) : la mémoire des sujets dépasse les 30 publiés.
+    for d in [x for base in dossiers for x in (Path(base), Path(base) / "archives")]:
         for f in Path(d).glob("20??-??-??.json"):
             fichiers.setdefault(f.name, f)
     ids: set[str] = set()

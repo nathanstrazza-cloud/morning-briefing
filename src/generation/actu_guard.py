@@ -34,7 +34,7 @@ _RISKY = re.compile(
 )
 
 
-# --- Noms propres (05/10/2026, point 1 de ANALYSE_RUN_2026-10-05.md) -------------------------------
+# --- Noms propres (05/10/2026, point 1 de archives/ANALYSE_RUN_2026-10-05.md) -------------------------------
 # Constat : « visite du chancelier allemand Olaf Scholz » alors que la source disait « Merz ». Le garde-fou ne
 # contrôlait que les nombres. Règle : tout mot capitalisé HORS début de phrase (nom de personne, d'institution,
 # de lieu) doit figurer dans la source (titre + résumé), comparaison sans accents ni casse ; sinon la phrase est retirée.
@@ -136,7 +136,7 @@ def guard_events(llm_events: list[dict], source_events: list[dict]) -> tuple[lis
         if pi and (_est_creux(pi) or overlap_ratio(pi, source_text) < PI_MIN_OVERLAP):
             all_removed.append(f"[pourquoi_important non étayé] {pi}")
             ev["pourquoi_important"] = None
-        # Conséquences (06/10/2026, point 2 de ANALYSE_RUN_2026-10-06.md) : même règle que pourquoi_important. Le
+        # Conséquences (06/10/2026, point 2 de archives/ANALYSE_RUN_2026-10-06.md) : même règle que pourquoi_important. Le
         # préfixe « Hypothèse : » apposé à TOUT texte (même une généralité « une escalade pourrait prolonger le
         # conflit ») donnait une fausse impression d'analyse. Désormais : conséquence étayée par la source -> gardée ;
         # sinon null. Le caractère d'hypothèse (cahier §14) est porté par l'interface (« Conséquences possibles
@@ -196,7 +196,7 @@ def overlap_ratio(texte: str, source_text: str) -> float:
     return (len(mots & _mots(source_text)) / len(mots)) if mots else 0.0
 
 
-# Ancrage marché (05/10/2026, point 2 de ANALYSE_RUN_2026-10-05.md) : le DAX et l'Euro Stoxx étaient « expliqués » par
+# Ancrage marché (05/10/2026, point 2 de archives/ANALYSE_RUN_2026-10-05.md) : le DAX et l'Euro Stoxx étaient « expliqués » par
 # « le budget 2027 prévoit des garanties pour les réacteurs nucléaires » — un article France sans rapport avec un
 # indice, mais dont les mots se retrouvaient dans le lot d'articles économie (recouvrement global >= 50 %).
 # Désormais l'explication doit être étayée par UN SEUL article qui (a) parle explicitement de ce marché ou de la

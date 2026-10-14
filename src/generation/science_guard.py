@@ -1,6 +1,6 @@
 """Garde-fous « science » appliqués par le CODE après la rédaction LLM (cahier §1, §7, §11).
 
-Pourquoi (cf. ANALYSE_RUN_2026-10-01.md §1, confirmé le 02/10/2026) : les rédacteurs ne reçoivent
+Pourquoi (cf. archives/ANALYSE_RUN_2026-10-01.md §1, confirmé le 02/10/2026) : les rédacteurs ne reçoivent
 que le titre + le résumé RSS d'UN article, mais le plan exige « Données et résultats… ». Les petits
 modèles comblent avec des chiffres plausibles et de fausses sources. Le prompt seul ne suffit pas :
 ce module (1) retire toute phrase contenant un nombre absent de la source, (2) supprime les
@@ -124,7 +124,7 @@ def build_sources_section(contenu_source: dict) -> str:
     return "\n".join(lignes)
 
 
-# --- 06/10/2026 (ANALYSE_RUN_2026-10-06.md, point 1) -------------------------------------------------
+# --- 06/10/2026 (archives/ANALYSE_RUN_2026-10-06.md, point 1) -------------------------------------------------
 # Constat : l'article du Nobel contenait (a) des identifiants techniques absents de la source (ArchT, ChR2, AAV),
 # (b) des phrases qui parlent du « résumé » (fuite interne), (c) un « : » orphelin après suppression de puces,
 # (d) une section « Données » vide ou ne parlant que du résumé. Fonctions pures, sans réseau.
@@ -246,7 +246,7 @@ def ensure_sections_not_empty(text: str) -> str:
     return re.sub(r"\n{3,}", "\n\n", "\n".join(out)).strip()
 
 
-# --- 08/10/2026 (ANALYSE_RUN_2026-10-08.md, point 1) -----------------------------------------------------------
+# --- 08/10/2026 (archives/ANALYSE_RUN_2026-10-08.md, point 1) -----------------------------------------------------------
 # Constat : à partir d'UN résumé RSS, le rédacteur a écrit « aucun effet indésirable grave », « maintenues plusieurs
 # mois », « dix patients dans trois pays »… Les nombres et les noms propres étaient contrôlés, pas ces AFFIRMATIONS
 # sur l'étude. Règle : une phrase qui AFFIRME un résultat d'essai (sécurité, durée de suivi, participants, phase,

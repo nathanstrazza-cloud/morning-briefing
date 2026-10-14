@@ -1,10 +1,11 @@
-"""Étape STOCKAGE (cf. cahier §16-17) : sauvegarde du briefing sous forme JSON structurée,
-conserve l'historique, ne supprime jamais d'anciens briefings.
+"""Étape STOCKAGE (cf. cahier §16-17) : sauvegarde du briefing sous forme JSON structurée (entrée : dict
+briefing ; sortie : fichiers JSON dans docs/data/briefings/). Ne supprime jamais d'anciens briefings : au-delà de
+MAX_BRIEFINGS_PUBLIES (30) ils sont déplacés dans docs/data/briefings/archives/ (cf. rotate_briefings).
 
 Fichiers produits dans data/briefings/ :
-- YYYY-MM-DD.json     : le briefing complet de ce jour (permanent, jamais écrasé)
+- YYYY-MM-DD.json     : le briefing complet de ce jour (les 30 derniers ici, les plus anciens dans archives/)
 - latest.json         : copie du dernier briefing réussi (lu par la page d'accueil)
-- index.json          : liste de toutes les dates disponibles, pour l'historique (§16)
+- index.json          : dates des briefings publiés (les 30 derniers), pour l'historique du site (§16)
 - status.json         : statut du dernier run (succès/échec) affiché par le frontend (§21)
 - status_history.json : historique des statuts, un par date (2026-09-19, cf. onglet "Erreurs"
                          du site) -- status.json seul ne montre que le run le plus récent, ce
@@ -16,6 +17,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import shutil
 from datetime import datetime
 from pathlib import Path
 
@@ -23,7 +25,7 @@ logger = logging.getLogger("morning_briefing.stockage")
 
 # Les données vivent sous docs/ pour que GitHub Pages (mode "Deploy from branch -> /docs")
 # puisse servir le frontend ET les données JSON ensemble, gratuitement, sans workflow de
-# déploiement supplémentaire (cf. README §6).
+# déploiement supplémentaire (cf. README §3).
 ROOT = Path(__file__).resolve().parent.parent.parent
 PROD_DATA_DIR = ROOT / "docs" / "data" / "briefings"
 
@@ -103,6 +105,12 @@ def save_briefing(
     _write_json(DATA_DIR / "latest.json", enveloppe)
 
     _update_index(date_iso)
+    if not _is_test_mode():
+        # Rotation (14/10/2026) : ne jamais faire échouer la sauvegarde pour un problème d'archivage.
+        try:
+            rotate_briefings()
+        except Exception as exc:  # noqa: BLE001
+            logger.warning("Rotation des briefings ignorée (%s)", exc)
     # NB (corrigé le 2026-09-19) : jusqu'ici status.json indiquait toujours succes=True dès
     # que le pipeline se terminait, même quand la synthèse LLM avait échoué et qu'on était
     # tombé en mode fallback (cf. briefing["_genere_par_llm"]) -- l'échec LLM était alors
@@ -128,6 +136,37 @@ def save_briefing(
         funnel_actualite=funnel_actualite,
     )
     logger.info("Briefing sauvegardé: %s", day_path)
+
+
+# Rotation des briefings (réorganisation du 14/10/2026, objectif : alléger le dépôt). Les 30 derniers restent à la
+# racine du dossier (et dans index.json = historique du site) ; les plus anciens sont DÉPLACÉS, jamais supprimés
+# (cahier §16), dans `archives/`.
+MAX_BRIEFINGS_PUBLIES = 30
+ARCHIVE_SUBDIR = "archives"
+
+
+def _is_test_mode() -> bool:
+    return os.environ.get("TEST_MODE", "").strip().lower() in {"1", "true", "yes", "on"}
+
+
+def rotate_briefings(keep: int = MAX_BRIEFINGS_PUBLIES, data_dir: Path | None = None) -> list[str]:
+    """Déplace dans `archives/` les briefings `YYYY-MM-DD.json` au-delà des `keep` plus récents et retire ces
+    dates d'index.json. Retourne les noms de fichiers déplacés. latest/index/status ne sont jamais déplacés."""
+    d = Path(data_dir) if data_dir is not None else DATA_DIR
+    fichiers = sorted((f.name for f in d.glob("20??-??-??.json")), reverse=True)
+    a_archiver = fichiers[keep:]
+    if a_archiver:
+        (d / ARCHIVE_SUBDIR).mkdir(parents=True, exist_ok=True)
+        for nom in a_archiver:
+            shutil.move(str(d / nom), str(d / ARCHIVE_SUBDIR / nom))
+        logger.info("Rotation : %d briefing(s) archivé(s) (%s → %s)", len(a_archiver), a_archiver[-1], a_archiver[0])
+    index_path = d / "index.json"
+    index = _read_json(index_path)
+    if index and a_archiver:
+        archives = {n[:-5] for n in a_archiver}
+        index["dates"] = [x for x in index.get("dates", []) if x not in archives]
+        _write_json(index_path, index)
+    return a_archiver
 
 
 def _update_index(date_iso: str) -> None:
@@ -215,7 +254,7 @@ def _write_status(
 # panne récurrente sans faire grossir le fichier indéfiniment (cf. cahier §16 : ne pas
 # supprimer les anciens BRIEFINGS -- cette limite ne concerne que le journal de statuts,
 # pas les briefings eux-mêmes qui restent, eux, conservés indéfiniment dans YYYY-MM-DD.json).
-MAX_STATUS_HISTORY = 120
+MAX_STATUS_HISTORY = 50
 
 
 def _append_status_history(entry: dict) -> None:
