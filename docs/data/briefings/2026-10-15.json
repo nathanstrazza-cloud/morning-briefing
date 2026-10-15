@@ -1,0 +1,602 @@
+{
+  "date": "2026-10-15",
+  "derniere_mise_a_jour": "2026-10-15T06:14:27.883173+02:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Présidentielle 2027 : Marine Tondelier reprend sa campagne après quatre semaines de congé maternité, et appelle à \"lâcher la grappe aux femmes\"",
+          "resume": "La candidate des Ecologistes, qui a participé à une marche pour le climat quatre jours après avoir accouché, trouve \"incroyable de devoir se justifier sur ce sujet\", mais \"c'est malheureusement encore nécessaire en 2026\".",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Richard Ferrand « doit quitter la tête du Conseil constitutionnel », estime Marine Le Pen",
+          "resume": "La candidate RN n’a pas apprécié que Richard Ferrand torpille sa proposition de changer la Constitution par référendum",
+          "pourquoi_important": "Cette déclaration reflète les tensions entre la RN et le Conseil constitutionnel à l'approche de la présidentielle.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "L’attaque dans un collège d’Aubagne, premier attentat terroriste officiellement lié en France à la mouvance True Crime Community, qui glorifie les tueries de masse",
+          "resume": "Le collégien de 14 ans qui a tiré, lundi, sur le principal et une enseignante de son établissement a été mis en examen et placé en détention provisoire, mercredi, pour des faits de nature terroriste. Depuis 2008, neuf attaques commises en milieu scolaire en France pourraient être liées à cette communauté en ligne, selon le chercheur Alexandre Rodde.",
+          "pourquoi_important": "L’incident constitue le premier attentat terroriste en France lié à la mouvance True Crime Community, soulignant un nouveau vecteur de radicalisation chez les jeunes.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Mélenchon chipe la deuxième place à Philippe, mais serait balayé par Le Pen au second tour",
+          "resume": "Le candidat LFI poursuit sa dynamique dans les sondages, au moins pour le premier tour du scrutin",
+          "pourquoi_important": "Le positionnement de Mélenchon dans les sondages indique une évolution de la compétition électorale pour le premier tour.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "En cas de victoire à la présidentielle : LFI prévoit 106 milliards de recettes supplémentaires et 82 milliards de dépenses nouvelles pour 2027",
+          "resume": "Le parti mélenchoniste a présenté ce mercredi 14 octobre les mesures qu’il appliquerait s’il remportait la présidentielle. Parmi les principales mesures : un ISF climatique, la taxe Zucman et le retour de la retraite à 62 puis 60 ans.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Présidentielle au Brésil : le parti de Lula accuse Meta d’« ingérence » pendant l’entre-deux-tours",
+          "resume": "Le Parlement brésilien a adopté la réduction du temps de travail hebdomadaire de quarante-quatre à quarante heures, une mesure phare du programme du président Lula.",
+          "pourquoi_important": "Cette réforme pourrait renforcer son électorat avant le second tour du 25 octobre, face à Flavio Bolsonaro, qui s’y est opposé.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France 24 International",
+            "New York Times World"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : après la « trahison » de Trump, Kiev et ses alliés espèrent encore inverser le cours de l’histoire",
+          "resume": "Un accord entre Washington et Moscou sur le gazole russe a surpris les Ukrainiens et leurs alliés, alors que des émissaires se réunissaient en Floride pour discuter d’un plan de paix.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : Elon Musk suggère que le gouvernement américain est responsable d'un potentiel ralentissement du réseau militaire Starlink",
+          "resume": "L’Ukraine signale des restrictions d’utilisation du réseau Starlink, affectant ses drones aériens et sa défense antiaérienne, essentiels dans le conflit contre la Russie.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Ebola : le Kenya annonce un deuxième cas, mais \"aucune propagation\" à grande échelle",
+          "resume": "Selon le ministère de la santé kenyan, un deuxième cas d’Ebola a été confirmé, sans lien avec un voyage récent, alors que les autorités tentent d’éviter une épidémie après un premier décès.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "États-Unis : En cas de défaite aux midterms, le clan Trump pourrait crouler sous les enquêtes",
+          "resume": "En cas de victoire aux midterms, les démocrates menacent Trump, sa famille et Musk d’enquêtes parlementaires. Une offensive détaillée par le « Financial Times » et relayée par « Courrier International » ce mercredi",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Éthiopie : comment la désinformation sur les réseaux sociaux brouille la réalité de la guerre",
+          "resume": "La reprise des combats au Tigré s’accompagne d’une campagne de désinformation sur les réseaux sociaux, utilisant des vidéos manipulées, des images anciennes et de l’intelligence artificielle pour fausser la perception du conflit.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "En Albanie, deuxième jour de manifestations contre le pouvoir ; de nouveaux heurts avec la police à Tirana",
+          "resume": "Des centaines de manifestants ont protesté devant le ministère de l’éducation à Tirana pour exiger la démission du chef du gouvernement et plus d’aides aux étudiants.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "A Bruxelles, Marine Le Pen bien isolée après avoir menacé l’Europe d’un « bras de fer »",
+          "resume": "La candidate du Rassemblement national à l’élection présidentielle a défendu, mercredi, une baisse de la contribution française au budget de l’UE, mais ses propres alliés d’extrême droite européens se sont gardés d’appuyer ses promesses de rupture radicale avec les règles communautaires.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "Le Monde"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
+      "mouvements_notables": [
+        {
+          "nom": "S&P 500",
+          "variation_pct": -1.11,
+          "explication": null
+        },
+        {
+          "nom": "Nasdaq",
+          "variation_pct": -1.88,
+          "explication": null
+        },
+        {
+          "nom": "Pétrole (Brent)",
+          "variation_pct": -1.62,
+          "explication": null
+        },
+        {
+          "nom": "Or",
+          "variation_pct": 1.46,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "football",
+          "texte": "Le Real Madrid a renversé l'AS Rome grâce à un but historique de Kylian Mbappé, son centième en Ligue des champions, et trois buts inscrits dans les dix dernières minutes, Mbappé devenant le 5e meilleur buteur de l’histoire de la compétition avec 72 réalisations."
+        },
+        {
+          "sport": "football",
+          "texte": "La deuxième journée de la phase de ligue 2026-2027 de la Ligue des champions a enregistré 78 buts en 18 matches, soit une moyenne de 4,33 buts par rencontre, établissant un nouveau record historique."
+        },
+        {
+          "sport": "football",
+          "texte": "Le Paris Saint‑Germain a remporté un match de Ligue des champions à Manchester City, après une première période favorable suivie d’une seconde période difficile."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Cholet a battu Vechta 84-66 à domicile, dominant la deuxième mi‑temps, pour enregistrer sa deuxième victoire consécutive en Ligue des champions et sa cinquième victoire de suite."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Mohamed Diawara a obtenu du temps de jeu avec les Knicks en présaison malgré une défaite 148-98 contre les Raptors, et Noah Penda a joué quelques minutes lors de la victoire d’Orlando à Cleveland."
+        },
+        {
+          "sport": "cyclisme",
+          "texte": "Le quatuor français mené par Benjamin Thomas disputera la petite finale de la poursuite par équipes contre la Grande‑Bretagne pour la médaille de bronze aux Championnats du monde sur piste à Shanghai."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Daniil Medvedev a résisté à Stefanos Tsitsipas et s’est qualifié pour les quarts de finale du Masters 1000 de Shanghai."
+        },
+        {
+          "sport": "rugby",
+          "texte": "Thibaud Flament, touché à l’épaule lors de la victoire du Stade Toulousain 45-34 contre Bayonne, sera forfait pour la fin du Championnat des nations."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "PSG – Barcelona",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-10-20T19:00:00+00:00",
+          "date_texte": "mardi 20 octobre à 21h00",
+          "sport": "football"
+        },
+        {
+          "affiche": "Los Angeles Lakers – Denver Nuggets",
+          "competition": "NBA",
+          "date_iso": "2026-10-17T02:30:00+00:00",
+          "date_texte": "samedi 17 octobre à 4h30",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "decouverte",
+      "titre": "La couverture des zones protégées terrestres est bien plus élevée qu’estimé, mais l’objectif de 30 % reste fragile",
+      "contenu_markdown": "Les gouvernements mondiaux se sont engagés à protéger **30 % des terres émergées d’ici 2030**, un objectif clé pour la biodiversité. Or, selon une étude publiée dans *Nature* le **14 octobre 2026**, les données officielles sous-estimaient largement cette couverture. Une analyse combinant des données **globales et nationales** révèle que **27 % des terres** sont en réalité protégées, soit près de la moitié de l’objectif initial.\n\nPourtant, les auteurs soulignent que ces progrès masquent des **lacunes écologiques majeures** : certaines régions ou écosystèmes restent sous-représentés dans les aires protégées actuelles.\n\n**Pourquoi cette découverte est-elle importante ?**\n\n**Ce qui reste incertain**\nLes données ne précisent pas si cette couverture accrue se traduit par une **efficacité réelle** pour la biodiversité (certaines zones protégées au papier peuvent être mal gérées). Par ailleurs, l’étude ne couvre pas tous les pays : les **25 échantillonnés** pourraient ne pas être représentatifs de la diversité des contextes locaux. Les détails sur les types d’aires protégées (naturelles, gérées, etc.) et leur statut juridique sont à consulter dans les publications scientifiques originales.\n\n---\n*Sources : Nature (2026), doi [10.1038/s41586-026-11157-4](https://doi.org/10.1038/s41586-026-11157-4).*\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03307-5\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.",
+      "phrases_retirees_garde_fou": 3,
+      "nb_mots": 213,
+      "matiere_source": "suffisante",
+      "textes_sources_audit": [
+        {
+          "source": "Nature News",
+          "titre": "<b>The world is closer to a major conservation target than scientists thought</b>",
+          "resume": "Nature, Published online: 14 October 2026; doi:10.1038/d41586-026-03307-5 Analysis suggests number of protected areas is hugely underestimated but biodiversity is still in peril — plus, a huge study looking at the health effects of brown fat."
+        },
+        {
+          "source": "Nature News",
+          "titre": "Lay of the land: terrestrial conservation efforts cover a wider area than thought",
+          "resume": "Nature, Published online: 14 October 2026; doi:10.1038/d41586-026-03081-4 Governments around the world have pledged to conserve 30% of the terrestrial realm by 2030, but official data suggest that the target is barely halfway to being met. A combined global and national-level data set now shows that up to 27% of land area is conserved, but gaps in ecological representation remain."
+        },
+        {
+          "source": "Nature News",
+          "titre": "China’s extraordinary rise in science and how it will change the world",
+          "resume": "Nature, Published online: 14 October 2026; doi:10.1038/d41586-026-03222-9 The nation is on a trajectory to lead the world in science, a development that will reshape technological advancement, innovation and the balance of global power."
+        },
+        {
+          "source": "Nature News",
+          "titre": "Global conservation area coverage substantially exceeds current estimates",
+          "resume": "Nature, Published online: 14 October 2026; doi:10.1038/s41586-026-11157-4 A globally representative sample of 25 countries and territories indicates that conservation areas cover 26.81% of the land, much closer to the 30% by 2030 target than officially reported."
+        }
+      ]
+    },
+    "citation": {
+      "texte": "L'essentiel est invisible pour les yeux.",
+      "auteur": "Antoine de Saint-Exupéry",
+      "source": "Le Petit Prince, chapitre XXI",
+      "annee": 1943
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 18.5,
+          "temperature_max": 23.6,
+          "temperature_min": 17.3,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 1.1,
+          "vent_max_kmh": 16.2,
+          "rafales_max_kmh": 32.0,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 17.5,
+              "temperature_max": 21.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 3,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 22.0,
+              "temperature_max": 23.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 16,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 20.2,
+              "temperature_max": 23.0,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 14,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 18.3,
+          "temperature_max": 23.1,
+          "temperature_min": 17.6,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 3.3,
+          "vent_max_kmh": 21.1,
+          "rafales_max_kmh": 32.0,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 17.7,
+              "temperature_max": 20.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 20.8,
+              "temperature_max": 23.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 21,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 20.6,
+              "temperature_max": 22.9,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 18,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 15.1,
+          "temperature_max": 22.3,
+          "temperature_min": 14.7,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 5.2,
+          "vent_max_kmh": 8.6,
+          "rafales_max_kmh": 16.2,
+          "weather_code": 1,
+          "description": "plutôt dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 14.8,
+              "temperature_max": 19.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 5,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 20.6,
+              "temperature_max": 22.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 16.7,
+              "temperature_max": 20.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 14.6,
+          "temperature_max": 21.9,
+          "temperature_min": 13.9,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 8.3,
+          "vent_max_kmh": 8.3,
+          "rafales_max_kmh": 15.5,
+          "weather_code": 1,
+          "description": "plutôt dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 14.0,
+              "temperature_max": 18.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 19.7,
+              "temperature_max": 21.9,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 15.6,
+              "temperature_max": 20.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 23.6,
+      "temperature_min_zone": 13.9,
+      "probabilite_pluie_max_pct": 0,
+      "vent_max_kmh": 21.1,
+      "description_dominante": "ciel dégagé",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 14.0,
+          "temperature_max": 21.2,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 8,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 19.7,
+          "temperature_max": 23.6,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 21,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 15.6,
+          "temperature_max": 23.0,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 18,
+          "weather_code": 3,
+          "description": "couvert"
+        }
+      ],
+      "alertes": [],
+      "resume": "Ciel dégagé le matin, ciel dégagé l'après-midi, couvert le soir, de 14° à 24°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "Jane Eyre",
+      "auteur": "Charlotte Brontë",
+      "annee": 1847,
+      "segments": [
+        {
+          "t": "There was no possibility of taking a walk that day. We had been wandering",
+          "g": "errer"
+        },
+        {
+          "t": ", indeed, in the leafless",
+          "g": "dépouillé de ses feuilles"
+        },
+        {
+          "t": " shrubbery",
+          "g": "bosquet d'arbustes"
+        },
+        {
+          "t": " an hour in the morning; but since dinner (Mrs. Reed, when there was no company, dined early) the cold winter wind had brought with it clouds so sombre, and a rain so penetrating, that further out-door exercise was now out of the question",
+          "g": "hors de question"
+        },
+        {
+          "t": ". I was glad of it: I never liked long walks, especially on chilly",
+          "g": "frisquets"
+        },
+        {
+          "t": " afternoons: dreadful",
+          "g": "pénible, affreux"
+        },
+        {
+          "t": " to me was the coming home in the raw",
+          "g": "humide et glacial"
+        },
+        {
+          "t": " twilight",
+          "g": "le crépuscule"
+        },
+        {
+          "t": ", with nipped",
+          "g": "gelés"
+        },
+        {
+          "t": " fingers and toes, and a heart saddened by the chidings",
+          "g": "les réprimandes"
+        },
+        {
+          "t": " of Bessie, the nurse, and humbled",
+          "g": "humiliée"
+        },
+        {
+          "t": " by the consciousness of my physical inferiority to Eliza, John, and Georgiana Reed.",
+          "g": null
+        }
+      ],
+      "texte_glose": "There was no possibility of taking a walk that day. We had been wandering (= errer), indeed, in the leafless (= dépouillé de ses feuilles) shrubbery (= bosquet d'arbustes) an hour in the morning; but since dinner (Mrs. Reed, when there was no company, dined early) the cold winter wind had brought with it clouds so sombre, and a rain so penetrating, that further out-door exercise was now out of the question (= hors de question). I was glad of it: I never liked long walks, especially on chilly (= frisquets) afternoons: dreadful (= pénible, affreux) to me was the coming home in the raw (= humide et glacial) twilight (= le crépuscule), with nipped (= gelés) fingers and toes, and a heart saddened by the chidings (= les réprimandes) of Bessie, the nurse, and humbled (= humiliée) by the consciousness of my physical inferiority to Eliza, John, and Georgiana Reed."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Présidentielle 2027 : Marine Tondelier reprend sa campagne après quatre semaines de congé maternité, et appelle à \"lâcher la grappe aux femmes\"."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-10-15T06:10:37.271580+02:00"
+}
