@@ -373,6 +373,15 @@ def build_parts(analysed: dict, science_topic: dict, nyt_article: dict | None, i
                                   TOKENS_SCIENCE_MOITIE, ("science",), parser=parse_science_a("approfondi", 300))
         parts["science_b"] = Part("science_b", SYSTEM_SCIENCE_B, lambda mc: _science_prompt(science_topic, "B"),
                                   TOKENS_SCIENCE_MOITIE, ("contenu_markdown",), parser=parse_science_b)
+    elif science_topic.get("approfondissement"):
+        # 15/10/2026 : découverte courte (science_d) + dossier approfondi sur un autre sujet (science_a/science_b)
+        approf = science_topic["approfondissement"]
+        parts["science_a"] = Part("science_a", SYSTEM_SCIENCE_A, lambda mc: _science_prompt(approf, "A"),
+                                  TOKENS_SCIENCE_MOITIE, ("science",), parser=parse_science_a("approfondi", 300))
+        parts["science_b"] = Part("science_b", SYSTEM_SCIENCE_B, lambda mc: _science_prompt(approf, "B"),
+                                  TOKENS_SCIENCE_MOITIE, ("contenu_markdown",), parser=parse_science_b)
+        parts["science_d"] = Part("science_d", SYSTEM_SCIENCE_DECOUVERTE, lambda mc: _science_prompt(science_topic, None),
+                                  TOKENS_SCIENCE_COMPLET, ("science",), parser=parse_science_a("decouverte", 80))
     else:
         parts["science_a"] = Part("science_a", SYSTEM_SCIENCE_DECOUVERTE, lambda mc: _science_prompt(science_topic, None),
                                   TOKENS_SCIENCE_COMPLET, ("science",), parser=parse_science_a("decouverte", 80))
@@ -421,8 +430,72 @@ def _garde_actu(events: list[dict], analysed: dict | None, cle: str) -> list[dic
     return gardes
 
 
+def _assemble_science(r: dict[str, PartResult], source: dict | None) -> dict:
+    """Assemble science_a (+ science_b) et applique le garde-fou ; retourne le dict `science` du briefing."""
+    sci = dict(r["science_a"].body["science"])
+    contenu = str(sci.get("contenu_markdown", "")).strip()
+    if "science_b" in r:
+        if r["science_b"].ok:
+            contenu += "\n\n" + str(r["science_b"].body["contenu_markdown"]).strip()
+        else:
+            contenu += "\n\n" + NOTE_SUITE_ABSENTE
+    if source is not None:
+        contenu, retirees = guard_science_article(contenu, source)
+        sci["phrases_retirees_garde_fou"] = len(retirees)
+        if retirees:
+            logger.warning("Garde-fou science : %d phrase(s) retirée(s) (chiffres absents de la source) : %s",
+                           len(retirees), " | ".join(x[:80] for x in retirees[:8]))
+    sci["contenu_markdown"] = contenu
+    # 13/10/2026 : longueur mesurée et publiée (diagnostic) ; l'approfondi vise ~10 min de lecture (cahier §7).
+    sci["nb_mots"] = len(contenu.split())
+    if sci.get("mode") == "approfondi" and sci["nb_mots"] < NB_MOTS_APPROFONDI_MIN:
+        logger.warning("Science : article approfondi court (%d mots, attendu >= %d)", sci["nb_mots"], NB_MOTS_APPROFONDI_MIN)
+    if source is not None and source.get("sujet_id"):
+        sci["sujet_id"] = source["sujet_id"]  # rotation : ne pas reprendre un sujet récent
+        sci["origine"] = source.get("origine", "")
+    if source is not None:
+        # audit : ce que le rédacteur a RÉELLEMENT reçu (résumés RSS publics), pour relire l'article contre sa source
+        sci["matiere_source"] = source.get("matiere", "")
+        sci["textes_sources_audit"] = [
+            {"source": t.get("source", ""), "titre": t.get("titre", ""), "resume": t.get("resume", "")}
+            for t in (source.get("textes_sources") or [])[:4]
+        ] or [{"source": ", ".join(source.get("sources") or []), "titre": source.get("titre", ""),
+               "resume": str(source.get("resume", ""))[:700]}]
+    return sci
+
+
+def _merge_science_decouverte_approfondi(resultat: dict, r: dict[str, PartResult], source_decouverte: dict | None,
+                                         source_approf: dict | None) -> None:
+    """Découverte courte (science_d) + dossier approfondi (science_a/b), publiés dans UN seul article :
+    titre = celui de la découverte ; contenu = découverte, puis « ## Pour aller plus loin : <sujet> » + dossier.
+    Chaque partie est contrôlée par le garde-fou avec SA source. Si l'une échoue, l'autre est publiée seule."""
+    decouverte = _assemble_science({"science_a": r["science_d"]}, source_decouverte) if r["science_d"].ok else None
+    approf = _assemble_science(r, source_approf) if ("science_a" in r and r["science_a"].ok) else None
+    if decouverte and approf:
+        titre_approf = str((source_approf or {}).get("titre") or approf.get("titre") or "").strip()
+        sci = dict(decouverte)
+        sci["contenu_markdown"] = (decouverte["contenu_markdown"] + "\n\n## Pour aller plus loin : " + titre_approf
+                                   + "\n\n" + approf["contenu_markdown"])
+        sci["nb_mots"] = len(sci["contenu_markdown"].split())
+        sci["nb_mots_decouverte"] = decouverte["nb_mots"]
+        sci["nb_mots_approfondi"] = approf["nb_mots"]
+        sci["phrases_retirees_garde_fou"] = decouverte["phrases_retirees_garde_fou"] + approf["phrases_retirees_garde_fou"]
+        for k in ("sujet_id", "origine"):   # rotation des sujets pédagogiques (celui de l'approfondissement)
+            if approf.get(k):
+                sci[k] = approf[k]
+        sci["textes_sources_audit"] = (decouverte.get("textes_sources_audit") or []) + (approf.get("textes_sources_audit") or [])
+        resultat["science"] = sci
+    elif approf:
+        logger.warning("Science : découverte non rédigée, publication du seul dossier approfondi")
+        resultat["science"] = approf
+    elif decouverte:
+        logger.warning("Science : dossier approfondi non rédigé, publication de la seule découverte (courte)")
+        resultat["science"] = decouverte
+
+
 def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: dict | None,
-                  science_source: dict | None = None, analysed: dict | None = None) -> None:
+                  science_source: dict | None = None, analysed: dict | None = None,
+                  science_approf_source: dict | None = None) -> None:
     """Remplace, partie par partie, le contenu brut du briefing de repli par ce que les LLM ont
     rédigé. Une partie en échec garde son contenu brut (cf. cahier §21). Modifie `resultat`."""
     r = results
@@ -457,37 +530,11 @@ def merge_results(resultat: dict, results: dict[str, PartResult], nyt_article: d
 
     # Science : la moitié A est INDISPENSABLE (titre + introduction) ; sans elle on garde le repli,
     # jamais une moitié B orpheline. Sans la moitié B, on publie A avec une mention explicite.
-    if "science_a" in r and r["science_a"].ok:
-        sci = dict(r["science_a"].body["science"])
-        contenu = str(sci.get("contenu_markdown", "")).strip()
-        if "science_b" in r:
-            if r["science_b"].ok:
-                contenu += "\n\n" + str(r["science_b"].body["contenu_markdown"]).strip()
-            else:
-                contenu += "\n\n" + NOTE_SUITE_ABSENTE
-        if science_source is not None:
-            contenu, retirees = guard_science_article(contenu, science_source)
-            sci["phrases_retirees_garde_fou"] = len(retirees)
-            if retirees:
-                logger.warning("Garde-fou science : %d phrase(s) retirée(s) (chiffres absents de la source) : %s",
-                               len(retirees), " | ".join(x[:80] for x in retirees[:8]))
-        sci["contenu_markdown"] = contenu
-        # 13/10/2026 : longueur mesurée et publiée (diagnostic) ; l'approfondi vise ~10 min de lecture (cahier §7).
-        sci["nb_mots"] = len(contenu.split())
-        if sci.get("mode") == "approfondi" and sci["nb_mots"] < NB_MOTS_APPROFONDI_MIN:
-            logger.warning("Science : article approfondi court (%d mots, attendu >= %d)", sci["nb_mots"], NB_MOTS_APPROFONDI_MIN)
-        if science_source is not None and science_source.get("sujet_id"):
-            sci["sujet_id"] = science_source["sujet_id"]  # rotation : ne pas reprendre un sujet récent
-            sci["origine"] = science_source.get("origine", "")
-        if science_source is not None:
-            # audit : ce que le rédacteur a RÉELLEMENT reçu (résumés RSS publics), pour relire l'article contre sa source
-            sci["matiere_source"] = science_source.get("matiere", "")
-            sci["textes_sources_audit"] = [
-                {"source": t.get("source", ""), "titre": t.get("titre", ""), "resume": t.get("resume", "")}
-                for t in (science_source.get("textes_sources") or [])[:4]
-            ] or [{"source": ", ".join(science_source.get("sources") or []), "titre": science_source.get("titre", ""),
-                   "resume": str(science_source.get("resume", ""))[:700]}]
-        resultat["science"] = sci
+    # 15/10/2026 : « découverte » (science_d, courte) suivie d'un dossier approfondi (science_a/b, source = approfondissement).
+    if "science_d" in r:
+        _merge_science_decouverte_approfondi(resultat, r, science_source, science_approf_source)
+    elif "science_a" in r and r["science_a"].ok:
+        resultat["science"] = _assemble_science(r, science_source)
 
     # Phrase de synthèse : construite à partir des titres réellement publiés, sans appel LLM
     # supplémentaire ni risque d'invention.
@@ -528,6 +575,6 @@ def diagnostics(results: dict[str, PartResult]) -> dict:
         "_parts": {n: {"genere_par_llm": x.ok, "provider": x.provider, "erreur": x.error,
                        "essais_echoues": len(x.attempts)} for n, x in results.items()},
         "_bloc": _grp(["actu_france", "actu_monde", "marches", "sport"]),
-        "_science": _grp(["science_a", "science_b"]),
+        "_science": _grp(["science_a", "science_b", "science_d"]),
         "_anglais": _grp(["anglais"]),
     }

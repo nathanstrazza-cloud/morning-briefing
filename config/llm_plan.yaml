@@ -35,3 +35,4 @@ waves:
           science_a: [mistral, nvidia, groq, openrouter]        # 1re moitié de l'article
           science_b: [groq, nvidia, mistral, openrouter]        # 2e moitié (absente si science en mode "découverte")
           sport:     [nvidia, groq, mistral, openrouter]        # NVIDIA est libre pendant la science (Mistral + Groq) ; OpenRouter = dernier secours
+          science_d: [nvidia, mistral, groq, openrouter]        # 15/10 : découverte courte (présente seulement si un dossier approfondi la suit) ; après le sport chez NVIDIA
