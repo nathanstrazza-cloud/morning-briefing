@@ -446,7 +446,9 @@ def generate(
 
     parts = parts_mod.build_parts(analysed, science_topic, nyt_article, is_monday)
     results = llm_orchestrator.run_plan(plan or llm_orchestrator.load_plan(), parts, pool)
-    parts_mod.merge_results(resultat, results, nyt_article, science_source=science_topic["contenu_source"], analysed=analysed)
+    parts_mod.merge_results(
+        resultat, results, nyt_article, science_source=science_topic["contenu_source"], analysed=analysed,
+        science_approf_source=(science_topic.get("approfondissement") or {}).get("contenu_source"))
 
     diag = parts_mod.diagnostics(results)
     resultat.update(diag)
@@ -655,6 +657,25 @@ def completer_sujet_pedagogique(topic: dict, jour=None) -> dict:
     logger.warning("Science : aucun texte source suffisant -> mode indisponible (pas d'article)")
     return {"mode": "indisponible", "contenu_source": {"titre": "Sujet scientifique indisponible ce matin", "resume": "",
                                                        "url": "", "sources": []}}
+
+
+def ajouter_approfondissement(topic: dict, jour=None) -> dict:
+    """15/10/2026 : le mode « découverte » ne produisait que 160-295 mots (4 runs sur 12, les 3 derniers jours). On y ajoute
+    TOUJOURS un dossier pédagogique approfondi (~10 min, sujet encyclopédique) sous la découverte : `topic[\"approfondissement\"]`.
+    Aucun réseau/sujet disponible -> la découverte reste seule (jamais d'échec du run). Sans effet hors mode découverte."""
+    if topic.get("mode") != "decouverte":
+        return topic
+    from src.collecte import encyclopedie
+    try:
+        sujet = encyclopedie.choisir_sujet_pedagogique(jour)
+    except Exception as exc:  # noqa: BLE001 — la science ne doit jamais faire échouer le run
+        logger.warning("Science : approfondissement impossible (%s)", exc)
+        sujet = None
+    if sujet:
+        topic["approfondissement"] = sujet
+    else:
+        logger.warning("Science : aucun sujet d'approfondissement -> découverte seule (article court)")
+    return topic
 
 
 def _sujet(top: dict, mode: str) -> dict:

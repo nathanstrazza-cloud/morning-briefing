@@ -185,6 +185,8 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         science_topic = briefing_generator.select_science_topic(events_sciences)
         # 11/10/2026 : sujet pédagogique à texte source réel (Wikipédia FR) à la place d'un résumé RSS de 2 lignes
         science_topic = briefing_generator.completer_sujet_pedagogique(science_topic)
+        # 15/10/2026 : une découverte (courte) est toujours suivie d'un dossier approfondi (science trop courte sinon)
+        science_topic = briefing_generator.ajouter_approfondissement(science_topic)
 
         # NB (2026-09-27, demande explicite de l'utilisateur) : nouvelle section "Anglais du
         # jour" -- un article du New York Times (déjà collecté via le flux RSS "New York
