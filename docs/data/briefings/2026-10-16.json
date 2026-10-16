@@ -1,0 +1,615 @@
+{
+  "date": "2026-10-16",
+  "derniere_mise_a_jour": "2026-10-16T06:16:14.881792+02:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Présidentielle 2027 : Raphaël Glucksmann dénonce la « capitulation » de Marine Le Pen sur l’aide à l’Ukraine",
+          "resume": "La promesse de la candidate RN de cesser l’aide financière de la France à l’Ukraine après six mois de pouvoir si elle était élue en 2027 reviendrait à « soumet[tre] l’ensemble de l’Europe à Vladimir Poutine », a estimé le candidat-social-démocrate.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Glucksmann rattrape Mélenchon et Philippe pour la deuxième place, dans un nouveau sondage",
+          "resume": "Selon le dernier baromètre OpinionWay, Raphaël Glucksmann (Place publique) fait jeu égal avec Jean-Luc Mélenchon et Édouard Philippe, derrière Marine Le Pen qui fait la course en tête pour la présidentielle",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Violences d’extrême droite autour de l’OL : le député Thomas Portes demande d’envisager une dissolution des Bad Gones",
+          "resume": "Dans une lettre envoyée ce jeudi 15 octobre au ministre de l’Intérieur, Laurent Nuñez, que «Libé» révèle, le député insoumis demande d’examiner les agissements de l’influent groupe de supporteurs lyonnais, officiellement «apolitique», mais accusé de frayer avec l’extrême droite radicale, afin de voir si les conditions sont réunies pour une dissolution.",
+          "pourquoi_important": "Le député sollicite une éventuelle dissolution d’un groupe lié à l’extrême droite, ce qui pourrait entraîner des mesures de sécurité renforcées.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Attal, Retailleau, Philippe… Des candidats à la présidentielle 2027 au chevet de la presse écrite en souffrance",
+          "resume": "Six prétendants à la magistrature suprême ou leurs représentants ont défilé mercredi soir à Paris devant des patrons de journaux pour présenter leurs solutions à ce secteur en crise.",
+          "pourquoi_important": "Les candidats abordent la crise de la presse écrite, un secteur clé pour l’information publique.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Avec son référendum sur l’immigration, Marine Le Pen voudrait imposer un coup de force",
+          "resume": "Alors que le président du Conseil constitutionnel a déclaré qu’il était impossible de recourir à l’article 11 pour modifier la Constitution, il est la cible d’un appel à la démission de la part de la candidate d’extrême droite, dans le cadre d’une opération plus vaste de délégitimation des corps de contrôle institutionnel.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Guerre en Ukraine : Donald Trump juge que la reprise par l’Ukraine des frappes sur les raffineries russes est une « honte »",
+          "resume": "Donald Trump critique ouvertement Volodymyr Zelensky, estimant qu’il est « plus difficile de travailler avec lui qu’avec Poutine » et affirmant qu’il ne cherche pas réellement un accord.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Au Népal, la vallée meurtrie par le « tsunami des montagnes » cherche le chemin du retour à la vie",
+          "resume": "Un glissement de terrain et une crue dévastatrice dans la vallée de la Trishuli ont fait plus de 5 000 disparus, laissant les survivants confrontés à un traumatisme collectif.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : après sa rencontre avec Volodymyr Zelensky, Emmanuel Macron affirme qu’il est \"capital\" de donner les moyens à l’Ukraine de se défendre",
+          "resume": "Emmanuel Macron réitère la détermination française à soutenir l’Ukraine et son peuple, lors d’un échange avec Volodymyr Zelensky.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Second Ebola Infection Announced in Kenya",
+          "resume": "Un nouveau cas d’infection à Ebola a été signalé au Kenya, suscitant des inquiétudes sur les mesures de surveillance gouvernementales.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "New York Times World"
+          ]
+        },
+        {
+          "titre": "Liban : le Hezbollah reconnaît qu’une demi-tonne d’explosifs saisis il y a quelques jours étaient destinés à la « résistance » contre Israël",
+          "resume": "Le Hezbollah demande la restitution des explosifs saisis, affirmant qu’ils servent sa « résistance » contre Israël, tandis que les États-Unis exhortent le Liban à ne pas les rendre.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Selon Libération, Midterms : «Tout ce mécontentement économique, combiné aux actions de Trump, joue contre les républicains», estime Jason Furman",
+          "resume": "L’ancien conseiller économique de Barack Obama, aujourd’hui professeur à Harvard, analyse les inégalités, l’impact de l’IA et la perception de l’économie par les Américains, à un mois des élections de mi-mandat aux Etats-Unis, marquées par la question de l’augmentation du coût de la vie.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Carburants : les Vingt-Sept peinent à s’entendre pour faire baisser les prix de l’énergie, un cauchemar pour l’économie européenne",
+          "resume": "Les chefs d’Etat et de gouvernement, réunis à Bruxelles les 15 et 16 octobre, sont divisés sur les mesures à prendre et manquent d’outils, au moment où l’Union européenne, qui achète encore du gaz russe, est fragilisée dans sa réponse à l’accord entre Trump et Poutine sur le gazole.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "La France et l'Allemagne trouvent un accord provisoire sur l'avenir de l'industrie automobile",
+          "resume": "La France et l’Allemagne ont trouvé jeudi un accord provisoire selon lequel Paris ferait des concessions supplémentaires sur les émissions de CO2 des voitures, confirmant l’abandon du tout-électrique. En échange, Berlin accepterait une préférence européenne resserrée pour l'industrie automobile, face à la concurrence chinoise.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France 24 International",
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
+      "mouvements_notables": [
+        {
+          "nom": "CAC 40",
+          "variation_pct": 0.78,
+          "explication": null
+        },
+        {
+          "nom": "S&P 500",
+          "variation_pct": 0.33,
+          "explication": null
+        },
+        {
+          "nom": "Nasdaq",
+          "variation_pct": 0.08,
+          "explication": null
+        },
+        {
+          "nom": "DAX",
+          "variation_pct": 0.33,
+          "explication": null
+        },
+        {
+          "nom": "Euro Stoxx 50",
+          "variation_pct": -0.36,
+          "explication": null
+        },
+        {
+          "nom": "Pétrole (Brent)",
+          "variation_pct": -0.68,
+          "explication": null
+        },
+        {
+          "nom": "Or",
+          "variation_pct": 0.81,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "football",
+          "texte": "Celtic ont perdu deux matchs de groupe de l'Europa League et deux derbies ; Martin O'Neill affirme voir des signes positifs."
+        },
+        {
+          "sport": "football",
+          "texte": "La Fédération belge de football a annoncé une prochaine modification de l'article 27 de la FIFA, qui avait permis la réqualification de Folarin Balogun pour les huitièmes de finale de la Coupe du monde."
+        },
+        {
+          "sport": "football",
+          "texte": "Paris Brunner, suspendu en Ligue 1, a été décisif sur les deux buts de Monaco lors de la victoire 2-1 contre le CSKA Sofia en Ligue Conférence."
+        },
+        {
+          "sport": "cyclisme",
+          "texte": "L'équipe française de poursuite par équipes n'a pas obtenu de médaille de bronze aux championnats du monde sur piste à Shanghai, tandis que Lotte Kopecky et Harrie Lavreysen ont brillé."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Alexander Zverev a battu Alex De Minaur en deux sets (6-4, 6-4) et s'est qualifié pour les demi-finales du Masters 1000 de Shanghai."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Sonay Kartal a battu Jasmine Paolini en deux sets et s'est qualifiée pour les quarts de finale de l'Open de Wuhan."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Les Spurs ont remporté leur première victoire en présaison NBA en battant une équipe de remplaçants de Phoenix 123-103, Victor Wembanyama ayant inscrit 19 points et 4 contres."
+        },
+        {
+          "sport": "autres",
+          "texte": "Elfyn Evans a été accueilli par la foule à Dolgellau, accompagné du premier ministre, après avoir rendu visite à son ancienne école."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "PSG – Barcelona",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-10-20T19:00:00+00:00",
+          "date_texte": "mardi 20 octobre à 21h00",
+          "sport": "football"
+        },
+        {
+          "affiche": "Los Angeles Lakers – Denver Nuggets",
+          "competition": "NBA",
+          "date_iso": "2026-10-17T02:30:00+00:00",
+          "date_texte": "samedi 17 octobre à 4h30",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "decouverte",
+      "titre": "Des molécules prometteuses pour inverser la sclérose en plaques chez la souris",
+      "contenu_markdown": "Ces résultats, publiés dans *Nature* le 15 octobre 2026, ouvrent une piste pour mieux comprendre les mécanismes de la maladie et explorer de nouvelles thérapies.\n\n## Une avancée chez l’animal\nLa sclérose en plaques se caractérise par une destruction de la **gaine de myéline**, une couche protectrice autour des nerfs, entraînant des troubles moteurs et sensoriels. Dans cette étude, les chercheurs ont testé des molécules capables de **stimuler la régénération de cette gaine** ou de **protéger les neurones** chez des souris modèles. Les premiers résultats montrent une **amélioration fonctionnelle** après traitement, bien que les détails sur l’efficacité, la durée ou les effets secondaires restent à préciser dans les publications complètes.\n\n## Importance et limites\nCette découverte est encourageante, car elle suggère que des approches ciblant la **réparation des nerfs** pourraient compléter les traitements actuels, qui visent surtout à ralentir la progression de la maladie.\n\nLes données chiffrées détaillées (durée du traitement, pourcentage d’amélioration, etc.) sont à consulter dans les articles sources de *Nature*. La question des **mécanismes précis** par lesquels ces molécules agissent (stimulation des cellules productrices de myéline, protection directe des axones, etc.) reste également à approfondir.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03152-6\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Volcan\n\n## Introduction\nUn volcan est une structure géologique spectaculaire où le magma, issu des profondeurs de la Terre ou d’un autre astre, remonte jusqu’à la surface pour y libérer des matériaux sous forme de lave, de gaz ou de projections solides. Ces phénomènes, bien que redoutés pour leurs conséquences parfois dévastatrices, jouent un rôle clé dans la formation des paysages terrestres et la dynamique de la planète. Selon les données de la Smithsonian Institution, on dénombre **1 432 volcans actifs** sur Terre, dont environ **soixante par an** sont en éruption. Pourtant, cette estimation ne couvre qu’une infime partie des volcans sous-marins, bien plus nombreux et difficiles à observer. Au-delà de notre planète, des volcans ont également été identifiés sur d’autres corps du système solaire, révélant une activité géologique bien plus répandue qu’on ne le pense.\n\n## Pourquoi le sujet est-il important ?\nLes volcans ne sont pas seulement des acteurs majeurs de la géologie : ils influencent directement la vie humaine. Entre **500 et 600 millions de personnes** vivent aujourd’hui dans des zones exposées aux risques volcaniques, soit près de **10 % de la population mondiale**. Comprendre leur fonctionnement est donc essentiel pour anticiper les éruptions, protéger les populations et limiter les dégâts. La **volcanologie**, ou *vulcanologie*, est la science qui étudie ces phénomènes, en analysant à la fois leur formation, leur évolution et les mécanismes qui déclenchent les éruptions. Cette discipline permet aussi de retracer l’histoire géologique de la Terre et d’expliquer la diversité des paysages volcaniques, des montagnes imposantes aux îles nées de l’activité sous-marine.\n\n## Explication du phénomène : qu’est-ce qu’un volcan ?\nUn volcan se forme lorsque le magma, un mélange de roches fondues, de gaz et de cristaux, remonte depuis les profondeurs de la Terre (ou d’un autre astre) jusqu’à sa surface. Ce magma provient généralement de la **fusion partielle du manteau terrestre**, bien que dans des cas exceptionnels, il puisse aussi provenir de la croûte. Une fois à la surface, il se solidifie sous forme de lave, tandis que les gaz et les particules projetées (appelées *téphras*) s’accumulent, construisant peu à peu l’édifice volcanique.\n\nLes volcans peuvent prendre des formes variées selon leur activité, leur type d’éruption et leur environnement. La structure la plus emblématique est celle d’une **montagne conique** couronnée par un **cratère** (une dépression sommitale) ou une **caldeira** (un effondrement plus large, résultant du vidage d’une chambre magmatique). Cependant, leur apparence dépend aussi de l’histoire géologique du site : érosions, effondrements ou superposition d’éruptions successives peuvent complexifier leur morphologie.\n\n## Fonctionnement et mécanismes des éruptions\nLe cœur d’un volcan est constitué d’une **chambre magmatique**, un réservoir de magma situé entre **10 et 50 kilomètres de profondeur** dans la lithosphère. Cette chambre est alimentée en magma par des sources profondes et joue un rôle clé dans la différenciation des matériaux avant leur remontée. Lorsque la pression devient trop forte, le magma emprunte une **cheminée volcanique principale**, un conduit vertical qui le guide vers la surface.\n\n## Deux types d’éruptions opposées\nLes éruptions volcaniques se déclinent en deux grands types, aux caractéristiques radicalement différentes :\n1. **Les éruptions effusives** : Le magma, peu visqueux, s’écoule tranquillement sous forme de **coulées de lave fluide**. Ces éruptions, bien que spectaculaires, sont généralement moins dangereuses pour les populations, car elles permettent une évacuation progressive des gaz et une progression lente de la lave.\n2. **Les éruptions explosives** : Ici, le magma est **visqueux et riche en gaz**, ce qui bloque leur échappement. La pression s’accumule jusqu’à ce qu’une explosion projette dans l’atmosphère des **téphras** (fragments de roche), des **nuées ardentes** (mélanges de gaz et de cendres à haute température) et des panaches de cendres. Ces éruptions sont bien plus meurtrières en raison de leur violence et de leur capacité à affecter de vastes zones.\n\n## Le rôle des gaz et des fissures\nLes **gaz volcaniques** (vapeur d’eau à **50–90 %**, dioxyde de soufre à **3–25 %**, dioxyde de carbone à **5–25 %**, etc.) jouent un rôle central dans le déclenchement et le type d’éruption. Leur dégazage progressif peut faire monter le magma le long de la cheminée, tandis qu’un blocage brutal peut provoquer une explosion. Par ailleurs, les **fissures latérales** – des fractures dans les flancs du volcan – peuvent aussi servir de voies d’évacuation pour la lave, donnant lieu à des **éruptions fissurales** où le magma s’échappe sur de longues distances.\n\nEnfin, les volcans ne sont pas des structures statiques : leur histoire est marquée par des phases de construction (accumulation de lave et de téphras) et de destruction (effondrements, érosions). Certains développent même des **cheminées secondaires** ou des **cônes parasites** sur leurs flancs, témoignant d’une activité complexe et multiforme.\n\n## Données et résultats scientifiques\n\nLes recensements de la Smithsonian Institution indiquent **1 432 volcans actifs** dans le monde, avec **une soixantaine en éruption chaque année**. Ces chiffres concernent les volcans accessibles à l’observation, principalement terrestres et sous‑marins peu profonds. Le nombre réel de volcans sous‑marins, qui sont plus nombreux mais difficilement observables, reste donc incertain.  \n\nLes estimations démographiques montrent que **entre 500 et 600 millions de personnes** vivent sous la menace d’une éruption, ce qui représente **environ 10 % de la population mondiale**. Ces données proviennent d’études de vulnérabilité qui croisent la localisation des volcans actifs avec les densités de population.  \n\nLes bases de données scientifiques classifient les volcans selon leur morphologie (conique, caldeira, etc.) et leurs structures internes (chambre magmatique, cheminée, fissures latérales). Les profondeurs typiques des chambres magmatiques sont **entre 10 et 50 kilomètres** sous la lithosphère, bien que cette fourchette soit basée sur des mesures géophysiques limitées à un nombre restreint de volcans étudiés.  \n\nLes compositions des gaz volcaniques sont décrites de façon générale : **vapeur d’eau (50‑90 %)**, **dioxyde de carbone (5‑25 %)**, **dioxyde de soufre (3‑25 %)**, avec la présence d’autres volatils en plus petites quantités. Ces proportions sont issues d’analyses de dégazage réalisées sur plusieurs volcans actifs, mais les variations exactes d’un volcan à l’autre ne sont pas détaillées dans les sources.  \n\n## Ce que les scientifiques savent\n\n- **Mécanisme d’éruption** : le dégazage du magma en profondeur augmente la pression et favorise la montée du magma le long de la cheminée volcanique. La viscosité du magma, combinée à la quantité de gaz dissous, détermine si l’éruption sera **effusive** (coulées de lave fluides) ou **explosive** (émissions de téphra, explosions de gaz).  \n- **Structure interne** : la plupart des volcans possèdent une **chambre magmatique** (réservoir) alimentée par du magma provenant du manteau, une **cheminée** qui conduit le magma à la surface, et un **cratère ou une caldeira** en sommet. Des cheminées secondaires et des fissures latérales peuvent se développer, créant des cônes secondaires ou des éruptions fissurales.  \n- **Classification morphologique** : les volcans prennent des formes variées (montagnes coniques, caldeiras, îles) selon le type et la fréquence des éruptions ainsi que le contexte tectonique. La forme la plus typique est une montagne conique couronnée d’un cratère.  \n- **Impact humain** : les zones densément peuplées situées à proximité des volcans actifs sont exposées aux risques d’inondations de lave, de retombées de téphra, de coulées pyroclastiques et d’émissions de gaz toxiques. La connaissance de la localisation des volcans actifs permet d’identifier les populations menacées.  \n\n## Ce qui reste incertain\n\n- **Nombre exact de volcans sous‑marins** : les recensements actuels ne tiennent pas compte de la majorité des volcans sous‑marins, dont la détection nécessite des relevés bathymétriques et géophysiques encore incomplets.  \n- **Variabilité des compositions gazeuses** : les fourchettes de pourcentages de vapeur d’eau, de dioxyde de carbone et de dioxyde de soufre sont des moyennes générales. Les concentrations précises varient d’un volcan à l’autre et au cours du temps, et les données détaillées manquent pour de nombreux volcans.  \n- **Prévision précise des éruptions** : bien que le dégazage et la viscosité du magma soient reconnus comme facteurs clés, la capacité à prévoir le moment exact d’une éruption reste limitée. Les processus de différenciation du magma dans la chambre magmatique sont complexes et peu observés directement.  \n- **Classification des types d’éruption** : la catégorisation des volcans selon le type d’éruption (effusive vs explosive) est souvent difficile, car un même volcan peut alterner entre les deux modes au cours de son histoire.  \n\n## Limites et controverses éventuelles\n\n- **Définition du « volcan actif »** : la notion d’activité varie selon les critères (éruption récente, activité sismique, dégazage). Certains auteurs proposent des seuils différents, ce qui entraîne des divergences dans les recensements.  \n- **Évaluation du risque** : les estimations du nombre de personnes menacées reposent sur des modèles de densité de population et de zones d’influence des volcans. Ces modèles peuvent sous‑ou sur‑estimer le risque réel, notamment dans les régions où les données démographiques sont peu précises.  \n- **Interprétation des données géophysiques** : la profondeur des chambres magmatiques (10‑50 km) est déduite de mesures sismiques et gravimétriques qui comportent des incertitudes. Certains chercheurs contestent l’uniformité de ces profondeurs pour tous les types de volcans.  \n\n## Conclusion\n\nLes connaissances actuelles permettent de dresser un tableau global des volcans actifs, de leurs structures internes et des processus qui conduisent aux éruptions. Les recensements montrent qu’un nombre important de volcans, tant terrestres que sous‑marins, représente une menace pour des centaines de millions de personnes. Cependant, des incertitudes subsistent concernant la totalité du réseau volcanique sous‑marin, la variabilité précise des gaz émis et la capacité de prévoir les éruptions avec précision. La recherche continue d’affiner les méthodes de détection, d’améliorer les modèles de risque et d’approfondir la compréhension des mécanismes internes des volcans, afin de réduire les impacts humains et environnementaux.\n\n## Sources\n- Wikipédia (fr) — Volcan — https://fr.wikipedia.org/wiki/Volcan\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 2,
+      "nb_mots": 1846,
+      "matiere_source": "fine",
+      "textes_sources_audit": [
+        {
+          "source": "Nature News",
+          "titre": "Give me the good news: four science stories to brighten your day",
+          "resume": "Nature, Published online: 15 October 2026; doi:10.1038/d41586-026-03152-6 Drugs that can reverse multiple sclerosis in mice and a new species of penguin are just the beginning."
+        },
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Volcan",
+          "resume": "Un volcan est une structure géologique qui résulte de la montée d'un magma puis de l'éruption de matériaux (gaz et lave) issus de ce magma, à la surface de la croûte terrestre ou d'un autre astre. Il peut être aérien ou sous-marin.\nLa Smithsonian Institution recense 1 432 volcans actifs dans le monde, dont une soixantaine en éruption chaque année. Mais cela ne tient pas compte de la plupart des volcans sous-marins qui ne sont pas accessibles à l'observation, qui sont plus nombreux. Un grand nombre a été mis en évidence ailleurs dans le système solaire.\nEntre 500 et 600 millions de personnes vivent sous la menace d'une éruption. Environ 10 % des humains sont menacés par les activités volcaniques. Pour prévenir ce risque naturel, il faut comprendre la formation des volcans et le mécanisme des éruptions. C'est le sujet de la volcanologie, également appelée « vulcanologie ».\nLe magma provient de la fusion partielle du manteau et exceptionnellement de la croûte terrestre. L'éruption peut se manifester, de manière plus ou moins combinée, par des émissions de lave, par des émanations ou des explosions de gaz, par des projections de téphras, par des phénomènes hydromagmatiques, etc. Les laves refroidies et les retombées de téphras constituent des roches éruptives qui peuvent s'accumuler et atteindre des milliers de mètres d'épaisseur, formant ainsi des montagnes ou des îles. Selon la nature des matériaux, le type d'éruption, la fréquence d'éruption et l'orogenèse, les volcans prennent des formes variées, la plus typique étant celle d'une montagne conique couronnée par un cratère ou une caldeira. La définition de ce qu'est un volcan a évolué au cours des derniers siècles en fonction de la connaissance que les géologues en avaient et de la représentation qu'ils pouvaient en donner.\nLes volcans sont souvent des édifices complexes qui ont été construits par une succession d'éruptions et qui, dans la même période, ont été partiellement démolis par des phénomènes d'explosion, d'érosion ou d'effondrement. Il est ainsi fréquent d'observer diverses structures superposées ou emboîtées.\nAu cours de l'histoire d'un volcan, les types d'éruptions peuvent varier, entre deux types opposés : \n\nles éruptions effusives, avec des coulées de laves fluides, qui sont en général les moins dangereuses ;\nles éruptions explosives, plus meurtrières.\nLes bases de données scientifiques classifient le plus souvent les volcans par leur morphologie et/ou leur structure. La classification par type d'éruption reste difficile même si elle peut apparaître chez quelques auteurs français.\n\nÉtymologie\nLe substantif masculin « volcan » est un emprunt à l'espagnol volcán, substantif masculin de même sens, issu, par l'intermédiaire de l'arabe burkān, du latin Vulcanus, nom de Vulcain, le dieu romain du feu, et de Vulcano, une des îles Éoliennes, archipel volcanique au large de la Sicile.\n\nCaractéristiques\n\nStructures et reliefs\n\nUn volcan est formé de différentes structures que l'on retrouve en général chez chacun d'eux :\n\nune chambre magmatique alimentée par du magma venant du manteau et jouant le rôle de réservoir et de lieu de différenciation du magma. Lorsque celle-ci se vide à la suite d'une éruption, le volcan peut s'affaisser et donner naissance à une caldeira. Les chambres magmatiques se trouvent entre dix et cinquante kilomètres de profondeur dans la lithosphère[source insuffisante] ;\nune cheminée volcanique qui est le lieu de transit privilégié du magma de la chambre magmatique vers la surface ;\nun cratère ou une caldeira sommitale où débouche la cheminée volcanique ;\nune ou plusieurs cheminées volcaniques secondaires partant de la chambre magmatique ou de la cheminée volcanique principale et débouchant en général sur les flancs du volcan, parfois à sa base ; elles peuvent donner naissance à de petits cônes volcaniques secondaires ;\ndes fissures latérales qui sont des fractures longitudinales dans le flanc du volcan provoquées par son gonflement ou son dégonflement[réf. nécessaire] ; elles peuvent permettre l'émission de lave sous la forme d'une éruption fissurale.\n\nMatériaux émis\nTous les volcans en activité émettent des gaz, mais pas toujours des matériaux solides (laves, tephra). C'est le cas du Dallol qui n'émet que des gaz chauds.\n\nGaz volcaniques\n\nLes gaz volcaniques sont principalement composés de :\n\nvapeur d'eau à teneur de 50 à 90 % ;\ndioxyde de carbone à teneur de 5 à 25 % ;\ndioxyde de soufre à teneur de 3 à 25 %.\nPuis viennent d'autres éléments volatils comme le monoxyde de carbone, le chlorure d'hydrogène, le dihydrogène, le sulfure d'hydrogène, etc. Le dégazage du magma en profondeur peut se traduire à la surface par la présence de fumerolles autour desquelles des cristaux, le plus souvent de soufre, peuvent se former.\nCes émissions proviennent d'un magma qui contient ces gaz dissous. Le dégazage des magmas qui progresse sous la surface du sol est un phénomène déterminant dans le déclenchement d'une éruption et dans le type éruptif. Le dégazage fait monter le magma le long de la cheminée volcanique, ce qui peut donner le caractère explosif et violent d'une éruption en présence d'un magma visqueux.\n\nTephras et laves"
+        }
+      ],
+      "nb_mots_decouverte": 222,
+      "nb_mots_approfondi": 1617,
+      "sujet_id": "volcan",
+      "origine": "encyclopedie"
+    },
+    "citation": {
+      "texte": "Pour ce qui est de l'avenir, il ne s'agit pas de le prévoir, mais de le rendre possible.",
+      "auteur": "Antoine de Saint-Exupéry",
+      "source": "Citadelle",
+      "annee": 1948
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 19.7,
+          "temperature_max": 23.3,
+          "temperature_min": 19.0,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 3.8,
+          "vent_max_kmh": 8.8,
+          "rafales_max_kmh": 20.5,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 19.7,
+              "temperature_max": 21.8,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 22.3,
+              "temperature_max": 23.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 19.8,
+              "temperature_max": 22.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 19.6,
+          "temperature_max": 22.4,
+          "temperature_min": 19.0,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 4.8,
+          "vent_max_kmh": 10.0,
+          "rafales_max_kmh": 18.7,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 19.2,
+              "temperature_max": 21.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 22.2,
+              "temperature_max": 22.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 19.6,
+              "temperature_max": 22.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 15.5,
+          "temperature_max": 22.6,
+          "temperature_min": 14.7,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 5.2,
+          "vent_max_kmh": 8.5,
+          "rafales_max_kmh": 15.8,
+          "weather_code": 2,
+          "description": "partiellement nuageux",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 14.8,
+              "temperature_max": 19.8,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 20.6,
+              "temperature_max": 22.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 16.1,
+              "temperature_max": 19.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 15.5,
+          "temperature_max": 21.8,
+          "temperature_min": 15.1,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 5.8,
+          "vent_max_kmh": 8.4,
+          "rafales_max_kmh": 16.2,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 15.2,
+              "temperature_max": 18.8,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 19.6,
+              "temperature_max": 21.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 15.7,
+              "temperature_max": 18.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 23.3,
+      "temperature_min_zone": 14.7,
+      "probabilite_pluie_max_pct": 0,
+      "vent_max_kmh": 10.0,
+      "description_dominante": "couvert",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 14.8,
+          "temperature_max": 21.8,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 6,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 19.6,
+          "temperature_max": 23.2,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 10,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 15.7,
+          "temperature_max": 22.2,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 9,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        }
+      ],
+      "alertes": [],
+      "resume": "Couvert le matin, couvert l'après-midi, ciel dégagé le soir, de 15° à 23°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "The Great Gatsby",
+      "auteur": "F. Scott Fitzgerald",
+      "annee": 1925,
+      "segments": [
+        {
+          "t": "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind",
+          "g": "ruminer"
+        },
+        {
+          "t": " ever since. \"Whenever",
+          "g": "chaque fois que"
+        },
+        {
+          "t": " you feel like criticizing anyone,\" he told me, \"just remember that all the people in this world haven't had the advantages",
+          "g": "privilèges"
+        },
+        {
+          "t": " that you've had.\" He didn't say any more, but we've always been unusually communicative in a reserved way, and I understood that he meant a great deal more",
+          "g": "bien davantage"
+        },
+        {
+          "t": " than that. In consequence",
+          "g": "par conséquent"
+        },
+        {
+          "t": ", I'm inclined",
+          "g": "enclin"
+        },
+        {
+          "t": " to reserve all judgments",
+          "g": "suspendre tout jugement"
+        },
+        {
+          "t": ", a habit that has opened up many curious natures to me and also made me the victim of not a few",
+          "g": "pas mal de"
+        },
+        {
+          "t": " veteran bores",
+          "g": "vieux raseurs"
+        },
+        {
+          "t": ".",
+          "g": null
+        }
+      ],
+      "texte_glose": "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind (= ruminer) ever since. \"Whenever (= chaque fois que) you feel like criticizing anyone,\" he told me, \"just remember that all the people in this world haven't had the advantages (= privilèges) that you've had.\" He didn't say any more, but we've always been unusually communicative in a reserved way, and I understood that he meant a great deal more (= bien davantage) than that. In consequence (= par conséquent), I'm inclined (= enclin) to reserve all judgments (= suspendre tout jugement), a habit that has opened up many curious natures to me and also made me the victim of not a few (= pas mal de) veteran bores (= vieux raseurs)."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Présidentielle 2027 : Raphaël Glucksmann dénonce la « capitulation » de Marine Le Pen sur l’aide à l’Ukraine."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral+nvidia",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_d": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 1
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral+nvidia",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-10-16T06:10:41.306028+02:00"
+}
