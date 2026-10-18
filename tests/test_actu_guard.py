@@ -193,3 +193,20 @@ def test_completer_manquants_ajoute_les_evenements_ecartes_par_le_llm():
     assert out[1]["resume"] == "Le scrutin approche."
     # rien à ajouter si tout est rendu
     assert completer_manquants(out, fournis)[1] == []
+
+
+def test_marches_matiere_premiere_exige_article_qui_nomme_la_matiere():
+    # 18/10/2026 : un article « Bourse » générique ne peut plus expliquer le Brent (lien faible)
+    an = {"marches_data": {"indices": [], "matieres_premieres": [{"name": "Pétrole (Brent)", "variation_pct": -2.0}]},
+          "actualite_economie": [{"titre": "Les investisseurs saluent la baisse du prix du gazole en séance",
+                                  "resume": "Les bourses européennes profitent de la baisse du prix du gazole."}]}
+    m = {"resume_court": "", "mouvements_notables": [{"nom": "Pétrole (Brent)", "explication": "baisse du prix du gazole saluée par les investisseurs"}]}
+    out = guard_marches(m, an)
+    assert out["mouvements_notables"][0]["explication"] is None
+
+
+def test_marches_explication_trop_courte_en_mots_communs_refusee():
+    an = {"marches_data": {"indices": [{"name": "DAX", "variation_pct": 1.0}], "matieres_premieres": []},
+          "actualite_economie": [{"titre": "Le DAX monte", "resume": "Accord conclu."}]}
+    m = {"resume_court": "", "mouvements_notables": [{"nom": "DAX", "explication": "Accord conclu"}]}
+    assert guard_marches(m, an)["mouvements_notables"][0]["explication"] is None

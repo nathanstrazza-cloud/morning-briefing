@@ -2,7 +2,7 @@
 
 > Une IA qui reprend ce projet lit **uniquement ce fichier**. `README.md` (description/lancement), `OPERATIONS.md` (cron, dev/main) et `archives/`
 > (historique) ne se lisent que sur besoin explicite. `cahier_des_charges.md` = intentions du départ, **indicatives, modifiables** (le code y renvoie par « cahier §N »).
-> Mis à jour le 15/10/2026. Dépôt : github.com/nathanstrazza-cloud/morning-briefing (public). Langue du projet : français.
+> Mis à jour le 18/10/2026. Dépôt : github.com/nathanstrazza-cloud/morning-briefing (public). Langue du projet : français.
 
 ## 1. État courant
 Site personnel de veille quotidienne (lun-ven, run ~06h10 Paris) : collecte RSS/marchés/météo/sport → dédup/scoring/vérification → rédaction LLM par parties
@@ -10,16 +10,16 @@ avec garde-fous codés → JSON → site statique GitHub Pages (`docs/`). **Pipe
 Sections : Actualité France/Monde, Marchés, Sport (tous sports + prochaines affiches), Science (découverte qualifiée **suivie d'un dossier approfondi** ~1300 mots ; sinon dossier seul, à partir d'un
 extrait Wikipédia), Anglais du jour (passage littéraire domaine public, traductions en ligne, sans LLM), Météo (Antibes/Cannes/Valbonne/Grasse), Citation (banque vérifiée).
 Déclenchement : cron externe cron-job.org (`workflow_dispatch` sur `main`), le `schedule` natif n'est qu'un filet tardif (retards 4-6 h). Détails : `OPERATIONS.md`.
-Dernier changement : 15/10 science — le mode « découverte » ne faisait que 160-295 mots (4 runs sur 12, les 3 derniers jours) : une découverte est désormais TOUJOURS suivie d'un dossier
+Dernier changement (18/10) : correctifs §3 n°5 (marchés : matière première = article qui la nomme + ≥3 mots communs), n°9 (pas de run sam/dim sauf `FORCE_RUN=true`), n°7 partiel (flux CNRS retiré de `config.yaml`). Avant : 15/10 science — le mode « découverte » ne faisait que 160-295 mots (4 runs sur 12, les 3 derniers jours) : une découverte est désormais TOUJOURS suivie d'un dossier
 approfondi sur un sujet encyclopédique (`briefing_generator.ajouter_approfondissement`, parties LLM `science_d` = découverte, `science_a/b` = dossier, fusion `parts._merge_science_decouverte_approfondi`,
-un seul article : titre de la découverte + « ## Pour aller plus loin : <sujet> »). Champs publiés : `nb_mots`, `nb_mots_decouverte`, `nb_mots_approfondi`. Fusionné dans `main` le 15/10 (c67ae93, 212 tests ; Dev Test du 15/10 en mode approfondi OK, le chemin découverte+dossier n’est couvert que par tests unitaires : à vérifier dès le 1er run en mode découverte ; retour arrière : `git revert -m 1 c67ae93`).
+un seul article : titre de la découverte + « ## Pour aller plus loin : <sujet> »). Champs publiés : `nb_mots`, `nb_mots_decouverte`, `nb_mots_approfondi`. Fusionné dans `main` le 15/10 (c67ae93, 216 tests ; Dev Test du 15/10 en mode approfondi OK, le chemin découverte+dossier n’est couvert que par tests unitaires : à vérifier dès le 1er run en mode découverte ; retour arrière : `git revert -m 1 c67ae93`).
 Run du 15/10 (1re rotation/réorganisation) : OK, sport très positif (8 éléments + affiches, jugé par l'utilisateur), science = 213 mots (cause ci-dessus).
 **À contrôler au prochain run après fusion** : `science.nb_mots` ≥ 1000 même en mode découverte (`nb_mots_approfondi` ≥ 900) ; rotation (`docs/data/briefings/archives/`, `index.json` ≤ 30 dates) ; artefact `logs-<run>` ; aucun `logs/*.log` committé.
 Limite connue : le sujet d'approfondissement est tiré de la liste curée (`config/science_sujets.json`) et n'est PAS relié à la découverte du jour (piste : choisir le sujet le plus proche par mots-clés).
 
 ## 2. Règles de travail (ne pas enfreindre)
 1. Développer UNIQUEMENT sur `dev` ; `main` = production (le bot y committe `docs/data/` chaque matin). Ne jamais committer `docs/data/` depuis `dev`. Après une fusion, réaligner `dev` sur `main`.
-2. Tests sans réseau ni quota : `pip install -r requirements.txt pytest && python3 -m pytest -q tests` (212 tests, tout est simulé). Le sandbox de dev n'a PAS accès à Groq/Mistral/NVIDIA/flux RSS/blob Azure (seulement github.com / api.github.com).
+2. Tests sans réseau ni quota : `pip install -r requirements.txt pytest && python3 -m pytest -q tests` (216 tests, tout est simulé). Le sandbox de dev n'a PAS accès à Groq/Mistral/NVIDIA/flux RSS/blob Azure (seulement github.com / api.github.com).
 3. Test réel : Actions → **Dev Test** (manuel, rien n'est publié ni committé) ; consomme les quotas LLM : pas entre 05h45 et 06h45 en semaine. Lecture sans accès à l'artefact : annotations (cf. `OPERATIONS.md` §C).
 4. Mise en production = fusion `dev` → `main` après un Dev Test satisfaisant ET l'accord de l'utilisateur ; retour arrière par `git revert -m 1 <fusion>`. Forcer un re-run le même jour = supprimer `docs/data/briefings/AAAA-MM-JJ.json` (idempotence `day_briefing_exists`).
 5. **Fiabilité > tout** : ne jamais inventer un fait, un chiffre, un nom ou une citation ; en cas de doute ne pas afficher. Aucune clé/jeton dans le dépôt (GitHub Secrets). Coût visé 0 €.
@@ -32,11 +32,11 @@ Décisions de l'utilisateur à respecter : `pourquoi_important`/`conséquences` 
 | 2 | Science : dossier approfondi (et mode approfondi seul) fondé sur un extrait Wikipédia (source non primaire) ; garde-fou à faux positifs ; n'attrape pas les affirmations fausses en mots courants | sources primaires (Nature/CNRS/Inserm) ; liste de sujets curés (`config/science_sujets.json`, 36) |
 | 3 | Mistral rend ~5 événements Monde sur 8 fournis | contourné : le code complète depuis les sources (`actu_guard.completer_manquants`) ; cause non traitée |
 | 4 | Doublon inter-zones (ex. Palestine : 1 seule entité commune) et affectation France/Monde encore imparfaite | `analyse/diversite.py`, `analyse/zones.py` |
-| 5 | Marchés : explication tolérée avec 1 seul article (ex. Brent/gazole : lien faible) | durcir `guard_marches` |
+| 5 | ~~Marchés : explication tolérée avec 1 seul article~~ **traité 18/10** (matières : ancrage nommé ; ≥3 mots communs) ; reste : exiger 2 articles ? | `guard_marches` |
 | 6 | Sport : pas de contrôle automatique des scores cités par le LLM ; titres anglais non traduits écartés ; une affiche (ex. Lens-Lyon) peut sortir si le plafond (8) est saturé | `analyse/sport_scoring.py`, `parts.py::_sport_prompt` |
-| 7 | Flux en échec/vides : CNRS « invalid token » (3 correctifs sans effet), ESPN NBA/Top Headlines, L'Équipe Hand/Volley (parfois normal), France 24 SSL | décider : corriger ou retirer de `config/config.yaml` |
+| 7 | Flux en échec/vides : CNRS **retiré 18/10** ; restent ESPN NBA/Top Headlines, L'Équipe Hand/Volley (parfois normal), France 24 SSL | décider : corriger ou retirer de `config/config.yaml` |
 | 8 | OpenRouter : 429 amont / réponse vide à chaque run (le secours fonctionne, ~30 s perdues) ; « groq » masqué `***` dans les logs Actions (sans conséquence) | OpenRouter déjà en dernier secours |
-| 9 | Lundi : fenêtre « depuis vendredi 18h » redondante, pas de dédup inter-jours (reprises possibles du week-end) ; aucun garde-fou `weekday() >= 5` dans `main.py` (si le job cron-job.org tourne le week-end, le run a lieu) | proposable : garde-fou jour ouvré |
+| 9 | Lundi : fenêtre « depuis vendredi 18h » redondante, pas de dédup inter-jours (reprises possibles du week-end) ; garde-fou week-end **ajouté 18/10** (`main.py`, `FORCE_RUN=true` pour forcer) ; reste : fenêtre lundi redondante, dédup inter-jours | dédup inter-jours (chantier mémoire) |
 | 10 | Anglais : 9 passages de `config/anglais_textes.json` écrits de mémoire → à relire contre Project Gutenberg ; mode « actualité » non fait | piste Wikinews (CC BY) ; textes NYT protégés |
 
 ## 4. Architecture (une ligne par module ; chaque fichier de `src/` commence par une docstring qui détaille)
@@ -47,7 +47,7 @@ Pipeline (`src/main.py`) : fenêtre (lundi élargi) → `collecte` → zones →
 - `generation/` : `briefing_generator` (assemblage, mode science découverte/approfondi, repli sans LLM) · `parts.py` (prompts + parties LLM) · `llm_orchestrator` (plan, secours en chaîne) · `llm_provider` (Groq/Mistral/NVIDIA/OpenRouter/Cerebras/Gemini/Anthropic) · `actu_guard` / `science_guard` / `anglais_guard` (garde-fous appliqués par le CODE après le LLM : nombres, noms propres, sources) · `citations` (banque `config/citations.json`) · `anglais_litteraire` · `sport_format`.
 - `stockage/storage.py` : JSON du jour, `latest/index/status/status_history`, rotation (30 publiés, reste dans `archives/`).
 - `docs/` = site statique servi par Pages (`index/history/briefing/erreurs.html`, `app.js`, `style.css`) + `docs/data/briefings/` (données publiques ; **jamais de donnée privée**).
-- `tests/` (212) · `scripts/` (`llm_probe.py` sonde des quotas, `test_summary.py` annotations Dev Test, `generate_demo_data.py`) · `.github/workflows/` : `briefing.yml` (prod), `dev-test.yml` (manuel), `llm-probe.yml` (manuel, artefact).
+- `tests/` (216) · `scripts/` (`llm_probe.py` sonde des quotas, `test_summary.py` annotations Dev Test, `generate_demo_data.py`) · `.github/workflows/` : `briefing.yml` (prod), `dev-test.yml` (manuel), `llm-probe.yml` (manuel, artefact).
 
 ## 5. LLM (le plan réel est dans `config/llm_plan.yaml`, modifiable sans code)
 Secrets GitHub : `GROQ_API_KEY`, `MISTRAL_API_KEY`, `NVIDIA_API_KEY`, `OPENROUTER_API_KEY` (+ `LLM_PROVIDER`, `CEREBRAS_API_KEY` inutilisé). Pas de Gemini/Anthropic (payant ou non éligible).

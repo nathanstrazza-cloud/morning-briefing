@@ -215,9 +215,18 @@ _GENERIQUE_MARCHE = ["bourse", "bourses", "séance", "séances", "wall street", 
                      "marchés financiers", "marché des actions"]
 
 
+# 18/10/2026 (défaut n°5) : pour une matière première (pétrole, or), un article « Bourse » générique ne prouve rien
+# (cas Brent/gazole : lien faible) -> l'ancrage doit nommer la matière elle-même. Et l'explication doit partager
+# au moins EXPLICATION_MIN_MOTS mots significatifs avec l'article (pas seulement une proportion sur un texte court).
+_MATIERES = {"pétrole (brent)", "or"}
+EXPLICATION_MIN_MOTS = 3
+
+
 def _article_ancre(article_text: str, nom_mouvement: str) -> bool:
     low = f" {_fold(article_text)} "
     alias = [_fold(a) for a in _ALIAS_MARCHE.get(str(nom_mouvement).lower(), [str(nom_mouvement).lower()])]
+    if str(nom_mouvement).lower() in _MATIERES:
+        return any(a in low for a in alias)
     gen = [_fold(g) for g in _GENERIQUE_MARCHE]
     return any(a in low for a in alias + gen)
 
@@ -226,7 +235,8 @@ def explication_etayee(expl: str, nom_mouvement: str, articles: list[dict]) -> b
     """Vrai si au moins un article économique (a) mentionne ce marché / la Bourse et (b) recouvre l'explication."""
     for a in articles or []:
         txt = f"{a.get('titre', '')} {a.get('resume', '')}"
-        if _article_ancre(txt, nom_mouvement) and overlap_ratio(expl, txt) >= EXPLICATION_MIN_OVERLAP:
+        if (_article_ancre(txt, nom_mouvement) and overlap_ratio(expl, txt) >= EXPLICATION_MIN_OVERLAP
+                and len(_mots(expl) & _mots(txt)) >= EXPLICATION_MIN_MOTS):
             return True
     return False
 

@@ -12,6 +12,7 @@ préserver le dernier briefing valide (cf. cahier §21).
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 import traceback
 from datetime import date, datetime
@@ -59,6 +60,11 @@ def run(date_override: str | None = None, force_no_llm: bool = False) -> int:
         logger.info("TEST_MODE actif : garde-fous d'idempotence/horaire ignorés, sortie -> %s",
                     storage.DATA_DIR)
     elif not date_override:
+        # 18/10/2026 (défaut n°9) : briefing sur jours ouvrés seulement (décision utilisateur). Si le job cron externe
+        # tourne un week-end, on ne génère rien ; FORCE_RUN=true permet un run manuel volontaire un samedi/dimanche.
+        if reference.weekday() >= 5 and os.environ.get("FORCE_RUN", "").lower() != "true":
+            logger.info("Week-end (%s) -> run ignoré (briefing sur jours ouvrés ; FORCE_RUN=true pour forcer).", date_iso)
+            return 0
         if reference.hour < 6:
             logger.info(
                 "Heure Paris actuelle (%02d:%02d) avant 06:00 -> run ignoré "
