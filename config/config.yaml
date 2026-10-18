@@ -63,8 +63,8 @@ rss:
   sciences:
     - name: "Le Monde Sciences"
       url: "https://www.lemonde.fr/sciences/rss_full.xml"
-    - name: "CNRS Actualités"
-      url: "https://www.cnrs.fr/fr/rss.xml"
+    # CNRS retiré le 18/10/2026 : « invalid token » à chaque run (3 correctifs sans effet), source inutilisable.
+    # Réactiver ici si un flux valide est trouvé : - name: "CNRS Actualités" / url: "https://www.cnrs.fr/fr/rss.xml"
     - name: "Nature News"
       url: "https://www.nature.com/nature.rss"
 
