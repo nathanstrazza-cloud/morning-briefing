@@ -1,13 +1,13 @@
 {
-  "derniere_execution": "2026-10-16T06:16:14.881792+02:00",
-  "date_visee": "2026-10-16",
+  "derniere_execution": "2026-10-19T06:15:06.443345+02:00",
+  "date_visee": "2026-10-19",
   "succes": true,
   "erreur": null,
   "synthese_llm": true,
   "erreur_llm": null,
   "llm_bloc": {
     "genere_par_llm": true,
-    "provider": "groq+mistral+nvidia",
+    "provider": "groq+mistral",
     "erreur": null
   },
   "llm_science": {
@@ -21,12 +21,6 @@
     "erreur": null
   },
   "sources_rss_en_erreur": [
-    {
-      "source": "CNRS Actualités",
-      "categorie": "sciences",
-      "statut": "erreur",
-      "detail": "<unknown>:14:418: not well-formed (invalid token)"
-    },
     {
       "source": "L'Équipe Hand",
       "categorie": "sport",
@@ -55,14 +49,14 @@
   "sources_marches_en_erreur": [],
   "funnel_actualite": {
     "france": {
-      "bruts": 98,
-      "evenements_uniques": 82,
-      "retenus_apres_seuil": 31
+      "bruts": 114,
+      "evenements_uniques": 90,
+      "retenus_apres_seuil": 32
     },
     "monde": {
-      "bruts": 95,
+      "bruts": 92,
       "evenements_uniques": 80,
-      "retenus_apres_seuil": 37
+      "retenus_apres_seuil": 29
     }
   }
 }
