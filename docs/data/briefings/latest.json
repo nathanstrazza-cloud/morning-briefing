@@ -1,36 +1,24 @@
 {
-  "date": "2026-10-19",
-  "derniere_mise_a_jour": "2026-10-19T06:15:06.443345+02:00",
+  "date": "2026-10-20",
+  "derniere_mise_a_jour": "2026-10-20T06:15:12.105421+02:00",
   "briefing": {
     "actualite": {
       "france": [
         {
-          "titre": "De nouveaux heurts et des magasins pillés à Paris, Lyon et Marseille, au lendemain de la manifestation du 17 octobre",
-          "resume": "Des affrontements opposant plusieurs centaines de personnes aux forces de l'ordre ont duré plusieurs heures autour de la place de la République.",
-          "pourquoi_important": null,
+          "titre": "Episode cévenol dans le Sud-Est : vigilance orange pluie inondations dans trois départements ce lundi, huit mardi",
+          "resume": "Il s'agit de l'Aveyron, des Bouches-du-Rhône, du Gard, du Var, du Vaucluse, de l'Hérault, de la Lozère, de l'Ardèche et de la Haute-Corse, pour des alertes pluie-inondation, orages et crues.",
+          "pourquoi_important": "Des alertes météo renforcées indiquent un risque accru d'inondations et d'orages dans plusieurs départements du Sud-Est.",
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "France Info",
-            "Libération",
-            "France 24 International"
+            "Libération"
           ]
         },
         {
-          "titre": "Retour sur la manifestation et les violences du 17 octobre",
-          "resume": "Les actes des casseurs comme les questions légitimes qui se posent sur la stratégie des forces de l’ordre ont gommé les revendications de la jeunesse et d’une partie de la société. Pendant ce temps, les politiques n’ont les yeux braqués que sur la présidentielle.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Libération",
-            "20 Minutes"
-          ]
-        },
-        {
-          "titre": "L'Hérault et le Gard placés en vigilance orange pour un risque de pluies, d'inondations et d'orages à partir de lundi après-midi, annonce Météo-France",
-          "resume": "Une vaste goutte froide en provenance d'Espagne favorise les remontées orageuses.",
-          "pourquoi_important": null,
+          "titre": "Parcoursup publie ses résultats en pleine contestation sociale",
+          "resume": "Coïncidence du calendrier : les résultats de Parcoursup, objet de fortes critiques, sont publiés lundi, alors que certaines organisations lycéennes et étudiantes - les plus mobilisées - réclament notamment sa suppression.",
+          "pourquoi_important": "La publication des résultats intervient alors que le dispositif fait l'objet d'une contestation importante de la part d'étudiants et d'organisations lycéennes.",
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
@@ -38,8 +26,41 @@
           ]
         },
         {
-          "titre": "Manifestation du 17 octobre : « Lamentable », « irresponsable »… La déception face à l’allocution de Macron",
-          "resume": "Au cours de l’allocution d’Emmanuel Macron, aucune annonce concernant les revendications de la manifestation du 17 octobre n’a été faite. De quoi susciter la colère de l’opposition et des syndicats",
+          "titre": "Soixante-dix ans après leur arrivée en France, les rapatriés d’Indochine obtiennent reconnaissance et réparation",
+          "resume": "Après les députés en 2025, ce sont les sénateurs, lundi, qui ont adopté un texte ouvrant la voie à des « réparations de préjudices » pour le traitement réservé aux milliers de personnes placées dans des camps aux conditions indignes, après leur rapatriement à l’issue de la guerre d’Indochine.",
+          "pourquoi_important": "L'adoption du texte par le Sénat ouvre la voie à des réparations pour les rapatriés d'Indochine, reconnaissant les préjudices subis.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "La DGSI dément que des armes de guerre aient été retrouvées parmi les émeutiers du 17 octobre, comme annoncé sur CNews",
+          "resume": "Le service de renseignement intérieur infirme «complètement».",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Au procès de l’explosion de la rue de Trévise, la Ville de Paris et le syndic d’un immeuble face à la justice",
+          "resume": "Selon Le Monde, les deux personnes morales comparaissent pour « homicides involontaires », « blessures involontaires » et « destruction par l’effet d’une explosion ou d’un incendie ». La catastrophe survenue le 12 janvier 2019 a fait quatre morts et plus de 200 blessés et sinistrés.",
+          "pourquoi_important": "Le procès porte sur la responsabilité de la Ville de Paris et du syndic d’un immeuble dans une explosion qui a causé de nombreuses victimes en 2019.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Guerre en Ukraine : Zelensky accuse les États-Unis de retarder « la livraison de missiles déjà payés »",
+          "resume": "Le président ukrainien accuse Washington de ralentir le soutien à Kiev, estimant qu'une décision politique a été prise pour retarder la livraison de missiles déjà financés.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
@@ -49,52 +70,19 @@
           ]
         },
         {
-          "titre": "Natacha Polony, candidate des médias… et de l’IA, par Daniel Schneidermann",
-          "resume": "La situation «l’oblige», déclare l’essayiste souverainiste pour motiver sa candidature à la présidentielle. Comment, avec qui et pour quel programme ? On ne sait, mais l’ensemble dégage une impression étrange d’audace qui tourne à vide.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Libération"
-          ]
-        }
-      ],
-      "monde": [
-        {
-          "titre": "Guerre en Ukraine : Donald Trump accuse Volodymyr Zelensky de « ne pas vouloir mettre fin » à la guerre avec la Russie",
-          "resume": "Donald Trump affirme que Volodymyr Zelensky « ne veut pas mettre fin à cette guerre, et ne l’a probablement jamais voulu », justifiant ses décisions récentes favorables à Moscou.",
+          "titre": "Yémen : au moins 50 morts dans des bombardements houthis sur un camp des forces armées",
+          "resume": "Des attaques houthis sur un centre d’instruction militaire dans la province de Shabwa ont causé au moins 50 morts, avec un bilan incertain en raison de la saturation des hôpitaux.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "Le Monde",
+            "Libération",
             "Le Monde International"
           ]
         },
         {
-          "titre": "Elections législatives en Israël : les candidats inondent la campagne de « deepfakes » générés par l’IA",
-          "resume": "À dix jours du scrutin du 27 octobre, les partis israéliens utilisent massivement des vidéos truquées par IA pour discréditer leurs adversaires, une première à cette échelle dans le pays.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "Le Monde International"
-          ]
-        },
-        {
-          "titre": "Kenya Confirms Four New Ebola Cases",
-          "resume": "Le Kenya a confirmé quatre nouveaux cas d’Ebola, portant le total à sept infections, alors que le pays n’avait jamais enregistré de cas avant ce mois-ci.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "New York Times World"
-          ]
-        },
-        {
-          "titre": "Iran : La république islamique désigne enfin un ministre de la Défense, huit mois après le début de la guerre",
-          "resume": "Mehrdad Akhlaghi a été nommé ministre de la Défense iranien, huit mois après la mort de son prédécesseur survenue au premier jour d’un conflit non nommé.",
+          "titre": "11-Septembre : La Cour suprême des États-Unis rejette le recours du cerveau présumé des attentats",
+          "resume": "La Cour suprême a rejeté le recours de Khalid Cheikh Mohammed, identifié comme le cerveau des attentats du 11-Septembre 2001, ouvrant la voie à un procès militaire prévu en juin 2028 à Guantánamo.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
@@ -103,48 +91,59 @@
           ]
         },
         {
-          "titre": "En Albanie, le premier ministre exclut toute démission au sixième jour de violentes manifestations",
-          "resume": "Edi Rama rejette toute démission après six jours de manifestations violentes, qu’il attribue à une « main extérieure », avec 272 blessés, dont 169 policiers.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde International",
-            "Le Monde"
-          ]
-        },
-        {
-          "titre": "Donald Trump apporte son \"soutien plein et entier\" à Benyamin Nétanyahou avant les élections en Israël",
-          "resume": "Ce scrutin sera le premier organisé en Israël depuis l'attaque menée par le Hamas le 7 octobre 2023, à laquelle Israël a riposté en lançant une guerre qui a ravagé une grande partie de la bande de Gaza.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "France Info",
-            "France 24 International"
-          ],
-          "complete_par_code": true
-        },
-        {
-          "titre": "Selon Le Monde International, Au Brésil, la désinformation et l’IA irriguent la campagne présidentielle",
-          "resume": "Les trois quarts de la population brésilienne s’informent sur les réseaux sociaux, où prolifèrent les contenus trompeurs générés par l’intelligence artificielle.",
+          "titre": "En Algérie, les commentaires non autorisés sur l’économie exposent à des sanctions",
+          "resume": "Un universitaire a été condamné à quatre ans de prison pour ses propos sur l’industrie extractive, après la rétrogradation d’un ministre pour ses critiques sur les prix de la tomate.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
             "Le Monde International"
-          ],
-          "complete_par_code": true
+          ]
         },
         {
-          "titre": "Canada : quatre morts et 19 blessés dans un « état critique » après un incendie sur une base militaire en Alberta",
-          "resume": "« La nation est en deuil » après « l’une des pires tragédies ayant touché les forces [armées] sur le sol canadien en temps de paix », a souligné le premier ministre canadien, Mark Carney, dans une allocution solennelle, prononcée à Ottawa.",
+          "titre": "Benyamin Nétanyahou met en scène sa proximité avec Donald Trump, à une semaine des élections législatives en Israël",
+          "resume": "Le premier ministre israélien a reçu le soutien public de Donald Trump avant les élections législatives du 27 octobre, renforçant son image politique à quelques jours du scrutin.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "Le Monde",
             "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : « La Russie s’est bien comportée avec l’Ukraine. Elle n’a pas fait grand-chose », estime Donald Trump",
+          "resume": "Le président américain a renouvelé, lundi, ses critiques envers Volodymyr Zelensky en disant qu’il « était temps » pour l’Ukraine de changer de dirigeant. Le président ukrainien a, lui, accusé Washington de retarder la livraison à Kiev de missiles « déjà payés ».",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Violences lors de manifestations : Gérald Darmanin veut faire passer les gardes à vue de 48 à 72 heures",
+          "resume": "Le garde des Sceaux dit avoir envoyé \"une instruction à tous les parquets de France pour leur demander de passer en qualification de criminalité organisée\".",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France 24 International",
+            "France Info",
+            "20 Minutes"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon France 24 International, Des pluies intenses provoquent des inondations meurtrières dans l'est de Espagne",
+          "resume": "Des pluies diluviennes ont transformé certaines rues en torrents dans l'est de l'Espagne où des centaines d'opérations de sauvetage ont été menées. Le bilan était de quatre morts lundi soir. Les autorités demandent à la population de la région de Valence de rester chez elle.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
           ],
           "complete_par_code": true
         }
@@ -154,18 +153,18 @@
       "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
       "mouvements_notables": [
         {
-          "nom": "S&P 500",
-          "variation_pct": -1.09,
+          "nom": "CAC 40",
+          "variation_pct": -1.11,
           "explication": null
         },
         {
           "nom": "Nasdaq",
-          "variation_pct": -2.15,
+          "variation_pct": 1.11,
           "explication": null
         },
         {
-          "nom": "Pétrole (Brent)",
-          "variation_pct": -1.86,
+          "nom": "DAX",
+          "variation_pct": -1.18,
           "explication": null
         }
       ]
@@ -173,36 +172,36 @@
     "sport": {
       "items": [
         {
-          "sport": "tennis",
-          "texte": "Alejandro Davidovich Fokina a salué Arthur Fils après sa victoire en finale à Shanghai contre Rafael Jodar, expliquant que le retour et le parcours de Fils ces derniers mois l'avaient inspiré lorsqu'il était blessé."
-        },
-        {
-          "sport": "tennis",
-          "texte": "Ben Shelton est assuré d'être qualifié pour les Finales ATP (15‑22 novembre) et Arthur Fils perd une place mais reste bien parti pour Turin, après le Masters 1000 de Shanghai remporté par Alejandro Davidovich Fokina contre Rafael Jodar."
-        },
-        {
-          "sport": "tennis",
-          "texte": "Alejandro Davidovich Fokina a remporté son premier titre en Masters 1000 à Shanghai en battant Rafael Jodar (1‑6, 7‑6 [5], 6‑4)."
-        },
-        {
-          "sport": "rugby",
-          "texte": "L'ASM Clermont a été nettement battue à domicile par le Leinster en Coupe des champions, menant à la mi‑temps 16‑15 avant de s’incliner 23‑48 à Marcel‑Michelin."
-        },
-        {
-          "sport": "rugby",
-          "texte": "L'Angleterre a perdu contre le Canada à Toronto (24‑21), mettant fin à une série de 41 matches sans défaite depuis la finale de la Coupe du monde 2022."
-        },
-        {
-          "sport": "cyclisme",
-          "texte": "Iuri Leitao a remporté l'omnium aux Championnats du monde de cyclisme sur piste en Chine, Millie Couzens a gagné la poursuite individuelle et la France a obtenu une troisième médaille."
-        },
-        {
-          "sport": "cyclisme",
-          "texte": "Marion Borras et Clara Copponi ont décroché la médaille d'argent sur l'américaine pour la France, la Grande‑Bretagne a été sacrée championne."
+          "sport": "football",
+          "texte": "Manchester City risque une déduction de points record après avoir été reconnu coupable de 114 infractions au règlement de la Premier League, ce qui pourrait rendre impossible son maintien dans l'élite."
         },
         {
           "sport": "football",
-          "texte": "Nuno Mendes est forfait plusieurs semaines après une blessure à la cuisse à Strasbourg et manquera le match PSG‑Barça en Ligue des champions ; Lucas Digne n’est pas forcément son remplaçant."
+          "texte": "Tottenham Hotspur a enregistré sa première victoire en Premier League de la saison en battant Coventry City à domicile, ce qui les a fait sortir du bas du tableau."
+        },
+        {
+          "sport": "football",
+          "texte": "Ismaëlo Ganiou, défenseur du RC Lens, souffre d’une simple contusion au genou gauche et sera absent du match contre Bruges en Ligue des champions."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Arthur Fils revient dans le top 10 deux semaines après l’avoir quitté à l’issue du Masters 1000 de Shanghai, tandis qu’Arthur Gea intègre le top 50 à la 44e place."
+        },
+        {
+          "sport": "cyclisme",
+          "texte": "Victoire Berteau, championne de France 2023, quitte Cofidis après cinq saisons pour rejoindre l’équipe allemande Canyon//SRAM, transfert officialisé lundi."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Romane Bernies s’est rompue les ligaments croisés du genou gauche contre Charleville-Mézières et sera forfait jusqu’à la fin de la saison."
+        },
+        {
+          "sport": "autres",
+          "texte": "Ronnie O'Sullivan a perdu en frame décisive contre Ka Wai Cheung au premier tour du Northern Ireland Open."
+        },
+        {
+          "sport": "rugby",
+          "texte": "Après 41 matchs, quatre ans et un titre de Coupe du monde, la série d’invincibilité de l’Angleterre s’est arrêtée, le Canada ayant réduit l’écart avec les Red Roses."
         }
       ],
       "rien_a_signaler": false,
@@ -224,309 +223,333 @@
       ]
     },
     "science": {
-      "mode": "approfondi",
-      "titre": "Le sommeil : un état essentiel à la survie et à la régulation du corps humain",
-      "contenu_markdown": "## Introduction\nLe sommeil est un phénomène biologique universel chez les animaux, y compris chez l’humain, où il occupe près d’un tiers de la vie. Il se définit comme un état modifié de conscience, marqué par une réduction progressive du tonus musculaire et une perception altérée du monde extérieur, tout en conservant des réflexes de base. Contrairement à l’inconscience (comme le coma), le sommeil reste réversible : une personne endormie peut ouvrir les yeux ou réagir à des stimuli comme la parole ou le toucher. Cette alternance entre veille et sommeil suit des rythmes précis, liés à des mécanismes internes et externes, et joue un rôle crucial dans la santé physique et mentale.\n\n## Pourquoi le sommeil est-il important ?\nLe sommeil est considéré comme le **troisième besoin vital** après la respiration et l’hydratation. Son importance réside dans plusieurs fonctions clés :\n- **Récupération physique** : il permet au corps de se régénérer, notamment au niveau musculaire et cellulaire.\n- **Régulation cognitive** : il participe à la consolidation de la mémoire, au traitement des informations et à la clarté mentale.\n- **Équilibre métabolique** : il influence la production d’hormones (comme la croissance ou le cortisol) et le métabolisme énergétique.\n- **Protection immunitaire** : un sommeil de qualité renforce les défenses de l’organisme.\n\nDes perturbations du sommeil (insomnies, apnées, etc.) peuvent avoir des conséquences graves, comme une baisse des performances, des troubles de l’humeur ou un affaiblissement du système immunitaire.\n\n## Explication du phénomène : qu’est-ce que le sommeil ?\nLe sommeil est un état **cyclique et organisé**, structuré en plusieurs phases qui se répètent au cours de la nuit. Deux rythmes principaux le régissent.\n\nChez l’humain, le sommeil se divise en **trois grands états** (depuis 2011) :\n- **Sommeil léger** (stades 1 et 2) : phase de transition entre l’éveil et le sommeil profond, où le corps commence à se détendre.\n- **Sommeil lent profond** (stade 3) : phase de récupération physique, essentielle pour la réparation tissulaire et la mémoire.\n- **Sommeil paradoxal** : caractérisé par une activité cérébrale intense (similaire à l’éveil) et des mouvements oculaires rapides (MOR), il est lié aux rêves et à des fonctions cognitives complexes.\n\n## Fonctionnement et mécanismes : comment le cerveau contrôle-t-il le sommeil ?\nLe passage de la veille au sommeil dépend de l’activation de structures cérébrales spécifiques, notamment le **noyau ventrolatéral préoptique (VLPO)**. Deux mécanismes principaux régulent ce processus :\n\n1. **Processus homéostatique**.\n   Au fil de la journée, une substance appelée **adénosine** s’accumule dans le cerveau, signalant la fatigue. Les **astrocytes** (un type de cellule gliale) du VLPO détectent ce niveau d’adénosine et activent des neurones promoteurs du sommeil. Ceux-ci **inhibent les centres d’éveil**, réduisant la production de molécules excitantes comme l’**histamine**, ce qui favorise l’endormissement.\n\n2. **Processus circadien**.\n   L’horloge interne du noyau suprachiasmatique, synchronisée par la lumière, module aussi le sommeil. Elle influence la sécrétion de **mélatonine** (hormone du sommeil) et d’autres signaux qui préparent le corps à l’endormissement à des heures spécifiques.\n\nPendant le sommeil, le cerveau ne reste pas inactif : il **remodèle partiellement les connexions synaptiques** (les liaisons entre neurones), un processus lié à la mémoire, à l’apprentissage et à l’économie d’énergie. Les phases de sommeil lent et paradoxal alternent ainsi pour répondre à des besoins physiologiques et cognitifs distincts.\n\n## Données et résultats scientifiques\n\n- Chez l’être humain, le sommeil occupe **près d’un tiers de la vie en moyenne**.  \n- Les femmes sont **deux fois plus sujettes aux insomnies que les hommes** pendant leurs règles.  \n- Les hommes sont **deux à trois fois plus susceptibles de souffrir d’apnée du sommeil** que les femmes.  \n- L’alternance veille‑sommeil suit le **rythme circadien**, tandis que l’alternance entre sommeil lent et sommeil paradoxal suit un **rythme ultradien**.  \n\nLes études historiques basées sur l’électroencéphalogramme (EEG) ont permis d’identifier trois stades de sommeil : deux stades de sommeil léger (stades 1 et 2) et un stade de sommeil lent profond (stade 3).  \n\n## Ce que les scientifiques savent\n\n- **Organisation du sommeil** : le sommeil se compose de trois états principaux, dont le sommeil lent (stades 1‑3) et le sommeil paradoxal (REM).  \n- **Régulation** : deux mécanismes majeurs contrôlent le sommeil :  \n  1. Le **processus homéostatique**, lié à l’accumulation d’adénosine pendant l’éveil.  \n  2. Le **processus circadien**, orchestré par l’horloge centrale du noyau suprachiasmatique et synchronisé principalement par la lumière.  \n- **Rôle du noyau ventrolatéral préoptique (VLPO)** : l’activation du VLPO, notamment via les astrocytes qui intègrent les signaux homéostatiques et circadiens, conduit à l’inhibition des centres d’éveil et à la réduction de la production d’histamine et d’autres substances excitatrices.  \n- **Remodelage synaptique** : pendant le sommeil, une partie des synapses est remodelée, un phénomène qui pourrait avoir des implications métaboliques, énergétiques, informationnelles et mémorielles.  \n- **Différences démographiques** : les troubles du sommeil varient selon le sexe et l’âge ; les femmes rencontrent davantage d’insomnies liées aux cycles hormonaux, les hommes sont plus exposés à l’apnée du sommeil, et le sommeil se dégrade généralement avec l’âge.  \n\n## Ce qui reste incertain\n\n- **Fonctions précises du remodelage synaptique** : bien que le phénomène soit observé, les implications exactes pour la consolidation de la mémoire, le métabolisme cérébral et la santé globale restent à préciser.  \n- **Interactions détaillées entre astrocytes et neurones du VLPO** : le mécanisme par lequel les astrocytes ajustent les niveaux d’adénosine et déclenchent l’activation des neurones du sommeil lent nécessite davantage d’études.  \n- **Impact des variations hormonales féminines** : les raisons pour lesquelles les femmes sont deux fois plus sujettes aux insomnies pendant leurs règles, et les mécanismes sous‑jacents à la détérioration du sommeil pendant la ménopause, sont encore partiellement compris.  \n\n## Limites et controverses éventuelles\n\n- **Distinction sommeil‑coma** : la frontière entre le sommeil et l’inconscience (coma) repose sur la préservation des réflexes et la capacité à réagir à la parole ou au toucher, mais les critères exacts peuvent varier selon les contextes cliniques.  \n- **Variabilité interindividuelle** : les données sur la prévalence de l’apnée du sommeil et des insomnies sont basées sur des études populationnelles, mais les facteurs génétiques, environnementaux et culturels peuvent moduler ces chiffres.  \n\n## Conclusion\n\nLe sommeil constitue un tiers de notre existence et repose sur une orchestration fine entre processus homéostatique et circadien, médiée par le noyau ventrolatéral préoptique et ses astrocytes. Les connaissances actuelles décrivent clairement les grands stades du sommeil, les mécanismes de régulation et les différences démographiques majeures. Néanmoins, des questions cruciales subsistent : le rôle exact du remodelage synaptique, les interactions cellulaires précises au sein du VLPO, et les effets hormonaux sur le sommeil féminin. La recherche continue d’affiner la classification des stades et d’explorer les variations individuelles, afin de mieux comprendre comment le sommeil soutient la santé globale.\n\n## Sources\n- Wikipédia (fr) — Sommeil — https://fr.wikipedia.org/wiki/Sommeil\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
-      "phrases_retirees_garde_fou": 3,
-      "nb_mots": 1143,
-      "sujet_id": "sommeil",
-      "origine": "encyclopedie",
-      "matiere_source": "suffisante",
+      "mode": "decouverte",
+      "titre": "Amélioration d'un dispositif de collecte de photons pour la connexion d'ordinateurs quantiques",
+      "contenu_markdown": "Des chercheurs ont développé un dispositif de collecte de photons amélioré, capable de relier plusieurs réseaux d'ordinateurs quantiques. Cette avancée, décrite dans un article publié en ligne le 19 octobre 2026 dans *Nature* (doi 10.1038/d41586-026-03237-2), montre que la technologie de transmission de photons peut être optimisée pour connecter des systèmes quantiques de taille importante.  \n\nL'importance de cette découverte réside dans le fait qu'une connexion fiable entre plusieurs tableaux quantiques est un obstacle majeur à la construction de superordinateurs quantiques de grande échelle. En améliorant la collecte de photons, les scientifiques ouvrent la voie à des réseaux quantiques plus robustes et à une intégration plus facile de différents modules de calcul.  \n\nLes détails précis concernant la performance, la compatibilité avec les architectures existantes et les limites de cette technologie restent à être étudiés. Les données chiffrées et les résultats expérimentaux complets sont disponibles dans l'article original.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03237-2\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Glucide\n\n## Introduction\nLes glucides, ou *sucres*, sont l’une des trois grandes familles de molécules organiques essentielles à la vie, aux côtés des protéines et des lipides. Présents dans tous les organismes vivants, ils jouent un rôle central dans le stockage et la libération d’énergie, la structure cellulaire et même la communication entre cellules. Pourtant, leur définition chimique exacte et leur diversité structurale restent souvent méconnues du grand public. Longtemps appelés « hydrates de carbone » par erreur, ces composés ont en réalité une composition bien plus complexe, comme l’a démontré le chimiste Emil Fischer au début du XXe siècle. Leur étude révèle une organisation moléculaire fascinante, où se cachent des propriétés physiques et biologiques déterminantes pour la nutrition et la physiologie.\n\n---\n\n## Pourquoi le sujet est important\nComprendre les glucides est crucial pour plusieurs raisons scientifiques, médicales et alimentaires. D’abord, ils constituent **la principale source d’énergie rapide** pour les organismes vivants : leur oxydation lors de la digestion libère environ **17 kilojoules par gramme**, une valeur clé pour évaluer leur contribution calorique. Chez les plantes (organismes autotrophes), ils sont synthétisés sous forme d’amidon, tandis que chez les animaux (organismes hétérotrophes), ils sont stockés sous forme de **glycogène** dans le foie et les muscles.\n\nEnsuite, leur structure chimique influence directement leurs fonctions :\n- Les **monosaccharides** (comme le glucose ou le fructose) sont directement assimilables et dotés d’un pouvoir sucrant.\n- Les **polysaccharides** (amidon, cellulose, glycogène) servent de réserves ou de matériaux de structure (par exemple, la paroi cellulaire végétale est composée de cellulose).\n- Certains glucides modifiés (remplacement d’un groupe hydroxyle par un atome d’azote ou de soufre) jouent des rôles spécialisés, comme les **glycoprotéines** dans la reconnaissance cellulaire.\n\nUne connaissance précise de leur chimie est donc indispensable pour aborder des enjeux contemporains, comme l’équilibre nutritionnel ou le développement de biomatériaux.\n\n---\n\n## Explication du phénomène : qu’est-ce qu’un glucide ?\nUn glucide est défini par l’**Union internationale de chimie pure et appliquée (UICPA)** comme une molécule organique répondant à deux critères structuraux :\n2. **Présence d’au moins deux groupes hydroxyle** (–OH), typiques des alcools.\n\nCette définition inclut non seulement les sucres naturels (comme le glucose), mais aussi des dérivés obtenus par :\n- **Réduction du groupe carbonyle** (transformation en alcool).\n- **Remplacement d’un ou plusieurs groupes hydroxyle** par un atome d’hydrogène, un groupe amino (–NH₂), un groupe thiol (–SH), ou d’autres atomes similaires.\n\n## Une erreur historique : les « hydrates de carbone »\nÀ l’origine, les glucides étaient nommés *hydrates de carbone* car leur formule brute semblait correspondre à **Cₙ(H₂O)ₚ** (par exemple, C₆H₁₂O₆ pour le glucose). Cependant, cette appellation est trompeuse : les atomes d’oxygène et d’hydrogène ne sont pas liés sous forme d’eau (H₂O) dans la molécule, comme l’a démontré Emil Fischer.\n\n---\n## La dualité acyclique/cyclique : une clé de leur réactivité\nLes glucides existent sous deux formes principales :\n- **Forme linéaire (acyclique)** : Représentée par le modèle de Fischer, où la chaîne carbonée est droite et le groupe carbonyle est visible (aldéhyde ou cétone). Cette forme est instable en solution et réagit rapidement pour former des cycles.\n- **Forme cyclique** : La plupart des sucres adoptent spontanément une structure en **cycle de 5 ou 6 atomes** (respectivement *furanose* pour 5 atomes, *pyranose* pour 6), grâce à une réaction entre le groupe carbonyle et un groupe hydroxyle de la même molécule. Cette cyclisation crée un **nouveau carbone asymétrique** (le carbone anomérique), générant deux isomères possibles : les formes **α** et **β**. Par exemple, le glucose cyclique peut être soit **α-D-glucose** (groupe –OH en position « vers le bas » sur le carbone anomérique), soit **β-D-glucose** (groupe –OH « vers le haut »).\n\nCette transformation explique pourquoi les sucres cristallisent souvent sous forme de **cristaux incolores** : les molécules cycliques n’absorbent pas les rayonnements visibles ou ultraviolets.\n\n## Le pouvoir rotatoire : une propriété optique unique\nTous les glucides (sauf la dihydroxyacétone) possèdent **au moins un carbone asymétrique**, ce qui leur confère un **pouvoir rotatoire** : ils font tourner la lumière polarisée. Deux formes énantiomères (miroir l’une de l’autre) existent pour chaque sucre, notées **D** et **L** selon la position du groupe hydroxyle sur le carbone le plus éloigné du groupe carbonyle (dans la représentation de Fischer, à droite pour la forme D, à gauche pour la forme L). Seules les formes **D** sont généralement présentes dans la nature (par exemple, le **D-glucose** est le sucre dominant dans les organismes).\n\n## Les liaisons osidiques : l’assemblage des sucres complexes\nLes glucides simples (oses) peuvent s’associer pour former des **polymères** via des **liaisons osidiques**, créées par une réaction entre le groupe hydroxyle d’un sucre et le groupe hydroxyle anomérique d’un autre. Selon la nature des sucres impliqués, on distingue :\n- **Les holosides** : polymères exclusifs d’oses (ex. : amidon, cellulose, glycogène).\n  - *Amidon* : polymère de glucose en α-1→4 et α-1→6 (ramifications).\n  - *Cellulose* : polymère de glucose en β-1→4 (indigestible pour l’humain).\n  - *Glycogène* : réserve énergétique animale, similaire à l’amidon mais plus ramifié.\n- **Les hétérosides** : association d’un ose avec une molécule non glucidique (aglycone), comme dans les **glycosides** (ex. : certains médicaments ou pigments végétaux).\n\n## Rôle métabolique : du stockage à l’énergie\nLe métabolisme des glucides repose sur deux processus clés :\n- **La glycogénèse** : conversion du glucose en glycogène (chez les animaux) ou en amidon (chez les plantes) pour le stockage.\n- **La glycolyse** : dégradation du glucose en pyruvate, produisant de l’ATP (énergie utilisable par la cellule). Cette voie est centrale dans la respiration cellulaire.\n\nLes polysaccharides comme la **cellulose** (abondante dans les parois végétales) ou la **chitine** (constituant des exosquelettes d’insectes) jouent quant à eux un rôle **structural**, sans être directement énergétiques pour les humains.\n\n---\n\n## Données et résultats scientifiques\n\nLes glucides libèrent de l’énergie lors de leur oxydation. Selon les mesures réalisées avec une bombe calorimétrique, l’énergie fournie par la combustion d’un gramme de glucides est d’environ **17 kJ**. Cette valeur provient des expériences de mesure de la chaleur de combustion décrites dans les références encyclopédiques.  \n\nLes études de classification chimique ont permis de recenser les différents types d’oses selon le nombre d’atomes de carbone : trioses (3 C), tétroses (4 C), pentoses (5 C), hexoses (6 C), heptoses (7 C) et octoses (8 C). Chaque catégorie regroupe des molécules spécifiques (par exemple, le glucose et le fructose parmi les hexoses).  \n\nLes travaux de chimie organique ont également établi que les glucides se présentent sous forme cristalline blanche, n’absorbant ni les rayonnements UV ni ceux du spectre visible.  \n\n## Ce que les scientifiques savent\n\n- **Définition chimique** : Les glucides sont des composés organiques contenant un groupe carbonyle (aldéhyde ou cétone) et au moins deux groupes hydroxyle (-OH). Cette définition officielle provient de l’Union internationale de chimie pure et appliquée (UICPA).  \n- **Origine du nom** : Le terme « carbohydrate » (hydrate de carbone) était historiquement utilisé parce que la composition élémentaire semblait correspondre à la formule Cₙ(H₂O)ₚ. Emil Fischer a démontré que l’eau n’est pas réellement liée sous forme d’hydrate dans ces molécules, justifiant le changement de terminologie.  \n- **Rôle biologique** : Les glucides constituent, avec les protéines et les lipides, les macronutriments essentiels. Chez les plantes (autotrophes), ils sont stockés sous forme d’amidon ; chez les animaux (hétérotrophes), ils sont stockés sous forme de glycogène et servent de principale source d’énergie métabolique.  \n- **Classification** :  \n  - *Oses* (monosaccharides) : molécules simples, non hydrolysables, cristaux incolores.  \n  - *Osides* (polymères d’oses) : hydrolysables, incluant les disaccharides (saccharose, lactose, maltose) et les polysaccharides (amidon, cellulose, glycogène).  \n  - Seuls les monosaccharides et les disaccharides possèdent un pouvoir sucrant perceptible.  \n- **Structure** : Les oses possèdent un groupe carbonyle qui peut être sous forme libre (aldéhyde ou cétone) ou cyclisée (acétal ou hémiacétal). Ils sont chiraux, sauf la dihydroxyacétone, et existent sous deux énantiomères (D et L) avec des pouvoirs rotatoires opposés.  \n\n## Ce qui reste incertain\n\n- **Variabilité du pouvoir sucrant** : Si les sources indiquent que seuls les monosaccharides et les disaccharides sont sucrants, la relation précise entre la structure moléculaire et l’intensité du goût sucré n’est pas détaillée dans les textes fournis.  \n- **Impact nutritionnel détaillé** : Les valeurs énergétiques précises (par exemple, le rendement métabolique réel chez l’homme) peuvent varier selon les conditions physiologiques, mais les données chiffrées spécifiques ne sont pas présentées dans les sources.  \n\n## Limites et controverses éventuelles\n\n- **Terminologie** : Malgré le consensus scientifique sur le terme « glucide », les anglophones continuent d’utiliser « carbohydrate » et les germanophones « Kohlenhydrate ».\n- **Classification détaillée** : La distinction entre les différents types d’osides (holosides, oligoholosides, polyholosides, etc.) repose sur des critères de degré de polymérisation et de composition. Les seuils exacts (par exemple, le nombre de résidus d’oses définissant « oligoholoside ») sont conventionnels et peuvent varier légèrement selon les auteurs, mais aucune dispute majeure n’est mentionnée dans les sources.  \n\n## Conclusion\n\nLes glucides constituent une classe chimique bien définie, caractérisée par la présence d’un groupe carbonyle et de plusieurs groupes hydroxyle. Leur rôle central dans le métabolisme énergétique des organismes vivants, ainsi que leur classification en oses simples et en osides complexes, sont solidement établis. Les données expérimentales montrent qu’ils libèrent environ 17 kJ d’énergie par gramme lors de la combustion. Bien que la terminologie et certaines limites de classification puissent varier selon les langues et les conventions, les connaissances fondamentales sur la structure, la fonction et la valeur énergétique des glucides sont largement consensuelles. Les aspects plus fins, tels que les variations du pouvoir sucrant ou les rendements métaboliques précis, restent à approfondir dans les publications scientifiques spécialisées.\n\n## Sources\n- Wikipédia (fr) — Glucide — https://fr.wikipedia.org/wiki/Glucide\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 5,
+      "nb_mots": 1813,
+      "matiere_source": "fine",
       "textes_sources_audit": [
         {
+          "source": "Nature News",
+          "titre": "Light and mirrors move large quantum computers closer to reality",
+          "resume": "Nature, Published online: 19 October 2026; doi:10.1038/d41586-026-03237-2 Scientists improve photon-collecting device that could be used to connect multiple quantum-computing arrays."
+        },
+        {
           "source": "Wikipédia (fr)",
-          "titre": "Sommeil",
-          "resume": "Le sommeil est un état modifié de la conscience du monde extérieur (sans perte de la réception sensitive), accompagné d'une diminution progressive du tonus musculaire, survenant à intervalles réguliers. L'alternance veille-sommeil correspond à l'un des cycles fondamentaux chez les animaux appartenant au rythme circadien. Chez l'être humain, le sommeil occupe près d'un tiers de la vie en moyenne.\nC'est le troisième besoin de survie du corps, après la respiration et la soif.\nLe terme de narcose est utilisé pour désigner le sommeil artificiel ou provoqué, induit par des moyens médicamenteux ou autres.\nLe sommeil se distingue de l'inconscience (ou coma) par la préservation des réflexes et par la capacité de la personne endormie à ouvrir les yeux et à réagir à la parole et au toucher. Il existe une organisation du sommeil et de ses trois états. Il est question de rythme circadien pour l'alternance entre la veille et le sommeil. Il est question de rythme ultradien pour l'alternance entre le sommeil lent et le sommeil paradoxal.\nLe sommeil dépend en grande partie de l’activation du noyau ventrolatéral préoptique (VLPO). Deux grands mécanismes participent à la régulation du sommeil, le processus homéostatique, qui dépend de l'accumulation d'adénosine et le processus circadien, orchestré par l’horloge centrale du noyau suprachiasmatique et régulé par la lumière principalement. Les astrocytes du VLPO, des cellules gliales, intègrent les informations de ces deux processus pour adapter les niveaux d’adénosine et activer les neurones promoteurs du sommeil lent du VLPO. Ils inhiberont alors les centres associés à l'éveil, réduisant la production d'histamine et autres substances qui nous tiennent éveillés. Durant le sommeil, une partie des synapses sont remodelées et ce mécanisme pourrait avoir des explications et implications énergétiques, métaboliques, informationnelles et mémorielles.\nCertaines femmes dorment mal pendant leurs règles (elles sont deux fois plus sujettes aux insomnies que les hommes) et beaucoup d'entre elles durant la ménopause. Les personnes âgées dorment en général moins bien que les jeunes. Les hommes sont deux à trois fois plus susceptibles de souffrir d'apnée du sommeil que les femmes.\n\nHistoire\nPlaton a défini le sommeil comme un « percepteur de vie ». Le philosophe doxographe grec Théophraste avait écrit un ouvrage intitulé Du Sommeil et des Rêves (en grec ancien Περὶ ὕπνου καὶ ἐνυπνίων / perì húpnou kaì enupníōn) au IIIe siècle av. J.-C. ; le poète latin Virgile dans l’Énéide fait référence à un « premier sommeil » : la reconnaissance des différentes phases du sommeil est donc ancienne.\nLe sommeil, tant sa régulation que son rôle, reste un mystère pendant des siècles. Le développement de l'électroencéphalogramme (EEG) au XXe siècle permet son étude.\nDès 1937, le neurophysiologiste américain Alfred Lee Loomis met en évidence cinq phases dans une nuit de sommeil grâce à l'EEG ; il les énonce de A à E :\n\nA et B correspondaient à la phase d'endormissement ;\nC au sommeil léger ;\nD et E au sommeil profond.\nNathaniel Kleitman, directeur d'une unité de sommeil à l'université de Chicago, réduit le nombre de phases de sommeil à quatre :\n\nA et B constituaient un premier stade, I ;\nC un second stade ;\nD un troisième ;\nE un quatrième,\nl'ensemble constituant le sommeil lent (SL).\nUn de ses assistants, Eugene Aserinsky, remarque sur l'électroencéphalogramme des oscillations de grande amplitude, correspondant à des mouvements oculaires, un relâchement du tonus musculaire de la nuque (chez l'être humain qui peut relâcher volontairement ces muscles et ceux du menton), suivi d'une intense activité du cortex cérébral lorsque les sujets amorçaient le quatrième stade. La présence de mouvements oculaires rapides ou MOR (REM, Rapid eye movements en anglais) permet d'assimiler cette phase aux rêves : elle fut alors baptisée « sommeil rapide » ou « paradoxal » en 1961 par le Français Michel Jouvet, alors chercheur au CNRS à Lyon.\nDepuis 2011, le nombre de stades du sommeil a été réduit à 3. Les stades 1 et 2 correspondent au sommeil léger et le stade 3 correspond au sommeil lent profond."
+          "titre": "Glucide",
+          "resume": "Les glucides sont définis par l'Union internationale de chimie pure et appliquée (UICPA) comme une classe de composés organiques contenant un groupe carbonyle (aldéhyde ou cétone) et au moins deux groupes hydroxyle (-OH). On inclut dans cette classe les substances issues des monosaccharides par réduction du groupe carbonyle, par oxydation d'au moins un groupe à l'extrémité de la chaîne en acide carboxylique ou par remplacement d'un ou plusieurs groupes hydroxyle par un atome d'hydrogène, un groupe amino, un groupe thiol ou par tout atome similaire.\nLes glucides ont été initialement (et fautivement) nommés hydrates de carbone (ou carbohydrates), car on avait observé que leur composition élémentaire pourrait correspondre à un modèle Cn(H2O)p. Toutefois, le chimiste allemand Emil Fischer, qui obtint le prix Nobel de chimie en 1902, a découvert que ces composés ne sont pas des hydrates [parce que H2O ne s'y retrouve pas sous cette forme, avec un O et deux H qui lui sont liés, comme dans la molécule de glucose (ci-contre)], d'où un nécessaire changement de nom que n'ont pas encore complètement fait les anglophones, qui utilisent encore le terme « carbohydrates », ou les germanophones, qui parlent de « Kohlenhydrate ».\nIls se présentent généralement sous la forme de cristaux blancs, car ils n'absorbent pas les rayonnements du spectre UV, ni ceux du spectre visible.\nLes glucides font partie, avec les protéines et les lipides, des constituants essentiels des êtres vivants et de leur nutrition, car ils sont un des principaux intermédiaires biologiques de stockage et de consommation d'énergie. Chez les organismes autotrophes, comme les plantes, les sucres sont convertis en amidon pour le stockage. Chez les organismes hétérotrophes, comme les animaux, ils sont stockés sous forme de glycogène puis utilisés comme source d'énergie dans les réactions métaboliques, leur oxydation lors de la digestion des glucides apportant environ 17 kJ/g selon l'étude dans la bombe calorimétrique.\n\nTypologie\nLes glucides sont habituellement répartis entre oses (monosaccharides tels le glucose, le galactose ou le fructose) et osides, qui sont des polymères d'oses (oligosaccharides et polysaccharides). Les disaccharides (diholosides), tels le saccharose, le lactose ou le maltose font partie de cette dernière catégorie. Mais seuls les monosaccharides et les disaccharides ont un pouvoir sucrant. Les polysaccharides, comme l'amidon, sont insipides.\n\nLes oses (sucres simples) sont des molécules simples, non hydrolysables, formant des cristaux incolores.\nLes aldoses sont les glucides possédant un groupe aldéhyde sur le premier carbone.\nLes cétoses sont les glucides possédant un groupe cétone sur le deuxième carbone.\nLes osides (sucres complexes), hydrolysables sont des polymères d'oses liés par une liaison osidique :\nles holosides sont des polymères exclusivement d'oses ;\nles oligoholosides ont un degré de polymérisation inférieur à 10,\nles polyholosides ont un degré de polymérisation supérieur à 10 (ex. : amylose, amylopectine, cellulose, glycogène),\nles homopolyosides sont les glucides dont l'hydrolyse donne un seul type d'oses,\nles hétéropolyosides sont les glucides dont l'hydrolyse ne donne pas qu'un seul type d'oses ;\nles hétérosides sont des polymères d'oses et de molécule(s) non glucidique(s) (aglycone) :\nles O-hétérosides où un groupe alcool (-OH) de l'aglycone participe à la liaison osidique,\nles N-hétérosides où un groupe amine (-N=) de l'aglycone participe à la liaison osidique,\nles S-hétérosides où un groupe thiol (-SH) de l'aglycone participe à la liaison osidique.\n\nStructure, classification et nomenclature\n\nOses simples\nLes oses possèdent tous un groupe carbonyle mais celui-ci peut apparaître sous une forme « équivalente » ayant le même degré d'oxydation comme un acétal ou un hémiacétal, spécialement dans les formes cycliques. Les oses possédant un groupe aldéhyde, masqué ou non, sont nommés « aldoses ». Pour un groupe cétone, ils sont appelés « cétoses ».\nIls sont caractérisés par leur nombre d'atomes de carbone, toujours supérieur à trois :\n\nles trioses possèdent 3 carbones : dihydroxyacétone, glycéraldéhyde ;\nles tétroses possèdent 4 carbones : érythrose, thréose, érythrulose ;\nles pentoses possèdent 5 carbones : ribose, arabinose, xylose, lyxose, ribulose, xylulose ;\nles hexoses possèdent 6 carbones : allose, altrose, glucose, mannose, gulose, idose, galactose, talose, psicose, fructose, sorbose, tagatose ;\nles heptoses possèdent 7 carbones : sédoheptulose ;\nles octoses possèdent 8 carbones : heptahydroxyoctanal.\n\nReprésentation\nLes oses sont présents sous forme acyclique et cyclique (cycle de cinq ou six atomes), lesquelles sont détaillées ci-dessous.\n\nReprésentation linéaire : modèle de Fischer\n\nTous les oses possèdent un pouvoir rotatoire du fait de la présence d'un carbone asymétrique, les oses sont dits chiraux sauf la dihydroxyacétone.\nDeux énantiomères (antipodes optiques) ont les mêmes propriétés à l'exception d'une seule : leur pouvoir rotatoire opposé. La figure 1 représente les deux énantiomères du glucose, la forme D-glucose est la forme naturelle. Il est à noter que dans la représentation de Fischer, par convention, le carbone le plus oxydé est placé en haut, ce qui permet de définir sans ambiguïté le sens gauche/droite des substituants de la chaîne carbonée.\n\nDans la forme D, le groupe alcool (-OH) porté par le carbone n-1 est à droite (en représentation de Fischer).\nDans la forme L, le groupe alcool porté par le carbone n-1 est à gauche (en représentation de Fischer).\nIl existe aussi des stéréoisomères qui sont des isomères optiques. Tous les énantiomères sont des stéréoisomères."
         }
-      ]
+      ],
+      "nb_mots_decouverte": 179,
+      "nb_mots_approfondi": 1627,
+      "sujet_id": "glucides",
+      "origine": "encyclopedie"
     },
     "citation": {
-      "texte": "Ce n'est pas parce que les choses sont difficiles que nous n'osons pas ; c'est parce que nous n'osons pas qu'elles sont difficiles.",
-      "auteur": "Sénèque",
-      "source": "Lettres à Lucilius, 104",
-      "annee": 65
+      "texte": "Ce qui ne me tue pas me rend plus fort.",
+      "auteur": "Friedrich Nietzsche",
+      "source": "Crépuscule des idoles, « Maximes et pointes », 8",
+      "annee": 1888
     },
     "meteo": {
       "villes_detail": [
         {
           "ville": "Antibes",
-          "temperature_actuelle": 19.6,
-          "temperature_max": 22.7,
-          "temperature_min": 18.3,
-          "precipitation_mm": 0.0,
-          "probabilite_pluie_pct": 3,
-          "vent_kmh": 10.3,
+          "temperature_actuelle": 21.4,
+          "temperature_max": 21.9,
+          "temperature_min": 16.3,
+          "precipitation_mm": 52.7,
+          "probabilite_pluie_pct": 100,
+          "vent_kmh": 30.2,
           "vent_max_kmh": 38.6,
-          "rafales_max_kmh": 61.2,
-          "weather_code": 3,
-          "description": "couvert",
+          "rafales_max_kmh": 63.4,
+          "weather_code": 95,
+          "description": "orage",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 19.6,
-              "temperature_max": 22.1,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 32,
-              "weather_code": 3,
-              "description": "couvert"
+              "temperature_min": 20.9,
+              "temperature_max": 21.5,
+              "probabilite_pluie_pct": 88,
+              "precipitation_mm": 8.7,
+              "vent_max_kmh": 39,
+              "weather_code": 51,
+              "description": "bruine légère"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 21.8,
-              "temperature_max": 22.7,
-              "probabilite_pluie_pct": 12,
-              "precipitation_mm": 0.0,
+              "temperature_min": 16.4,
+              "temperature_max": 21.2,
+              "probabilite_pluie_pct": 100,
+              "precipitation_mm": 32.8,
               "vent_max_kmh": 39,
-              "weather_code": 3,
-              "description": "couvert"
+              "weather_code": 95,
+              "description": "orage"
             },
             {
               "label": "Soir",
-              "temperature_min": 21.7,
-              "temperature_max": 22.0,
-              "probabilite_pluie_pct": 9,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 35,
-              "weather_code": 3,
-              "description": "couvert"
+              "temperature_min": 18.5,
+              "temperature_max": 19.8,
+              "probabilite_pluie_pct": 100,
+              "precipitation_mm": 11.2,
+              "vent_max_kmh": 27,
+              "weather_code": 63,
+              "description": "pluie"
             }
           ],
           "alertes": [
-            "Rafales jusqu'à 61 km/h"
+            "Rafales jusqu'à 63 km/h",
+            "Pluie abondante (53 mm sur la journée)"
           ]
         },
         {
           "ville": "Cannes",
-          "temperature_actuelle": 20.2,
-          "temperature_max": 22.8,
-          "temperature_min": 19.6,
-          "precipitation_mm": 0.0,
-          "probabilite_pluie_pct": 6,
-          "vent_kmh": 9.5,
-          "vent_max_kmh": 28.7,
-          "rafales_max_kmh": 56.3,
-          "weather_code": 3,
-          "description": "couvert",
+          "temperature_actuelle": 20.9,
+          "temperature_max": 21.5,
+          "temperature_min": 16.3,
+          "precipitation_mm": 69.7,
+          "probabilite_pluie_pct": 100,
+          "vent_kmh": 27.3,
+          "vent_max_kmh": 33.0,
+          "rafales_max_kmh": 64.1,
+          "weather_code": 65,
+          "description": "forte pluie",
           "periodes": [
             {
               "label": "Matin",
               "temperature_min": 20.2,
-              "temperature_max": 22.3,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 27,
-              "weather_code": 3,
-              "description": "couvert"
+              "temperature_max": 21.4,
+              "probabilite_pluie_pct": 93,
+              "precipitation_mm": 8.1,
+              "vent_max_kmh": 33,
+              "weather_code": 51,
+              "description": "bruine légère"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 21.8,
-              "temperature_max": 22.8,
-              "probabilite_pluie_pct": 16,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 29,
-              "weather_code": 3,
-              "description": "couvert"
-            },
-            {
-              "label": "Soir",
-              "temperature_min": 21.5,
-              "temperature_max": 21.9,
-              "probabilite_pluie_pct": 13,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 25,
-              "weather_code": 3,
-              "description": "couvert"
-            }
-          ],
-          "alertes": []
-        },
-        {
-          "ville": "Valbonne",
-          "temperature_actuelle": 15.8,
-          "temperature_max": 21.9,
-          "temperature_min": 15.2,
-          "precipitation_mm": 0.0,
-          "probabilite_pluie_pct": 3,
-          "vent_kmh": 6.6,
-          "vent_max_kmh": 25.9,
-          "rafales_max_kmh": 47.2,
-          "weather_code": 3,
-          "description": "couvert",
-          "periodes": [
-            {
-              "label": "Matin",
-              "temperature_min": 15.8,
-              "temperature_max": 20.8,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 16,
-              "weather_code": 1,
-              "description": "plutôt dégagé"
-            },
-            {
-              "label": "Après-midi",
-              "temperature_min": 20.1,
-              "temperature_max": 21.9,
-              "probabilite_pluie_pct": 12,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 26,
-              "weather_code": 3,
-              "description": "couvert"
-            },
-            {
-              "label": "Soir",
-              "temperature_min": 18.9,
-              "temperature_max": 20.0,
-              "probabilite_pluie_pct": 9,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 13,
-              "weather_code": 3,
-              "description": "couvert"
-            }
-          ],
-          "alertes": []
-        },
-        {
-          "ville": "Grasse",
-          "temperature_actuelle": 15.0,
-          "temperature_max": 20.9,
-          "temperature_min": 14.7,
-          "precipitation_mm": 0.0,
-          "probabilite_pluie_pct": 6,
-          "vent_kmh": 7.3,
-          "vent_max_kmh": 25.6,
-          "rafales_max_kmh": 47.5,
-          "weather_code": 3,
-          "description": "couvert",
-          "periodes": [
-            {
-              "label": "Matin",
-              "temperature_min": 15.0,
-              "temperature_max": 19.9,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 17,
-              "weather_code": 1,
-              "description": "plutôt dégagé"
-            },
-            {
-              "label": "Après-midi",
-              "temperature_min": 19.0,
-              "temperature_max": 20.9,
-              "probabilite_pluie_pct": 16,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 26,
-              "weather_code": 3,
-              "description": "couvert"
+              "temperature_min": 16.3,
+              "temperature_max": 21.1,
+              "probabilite_pluie_pct": 100,
+              "precipitation_mm": 40.3,
+              "vent_max_kmh": 24,
+              "weather_code": 65,
+              "description": "forte pluie"
             },
             {
               "label": "Soir",
               "temperature_min": 18.0,
               "temperature_max": 18.9,
-              "probabilite_pluie_pct": 13,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 12,
-              "weather_code": 3,
-              "description": "couvert"
+              "probabilite_pluie_pct": 100,
+              "precipitation_mm": 21.3,
+              "vent_max_kmh": 22,
+              "weather_code": 65,
+              "description": "forte pluie"
             }
           ],
-          "alertes": []
+          "alertes": [
+            "Rafales jusqu'à 64 km/h",
+            "Pluie abondante (70 mm sur la journée)"
+          ]
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 18.3,
+          "temperature_max": 18.5,
+          "temperature_min": 16.5,
+          "precipitation_mm": 44.2,
+          "probabilite_pluie_pct": 100,
+          "vent_kmh": 9.7,
+          "vent_max_kmh": 22.3,
+          "rafales_max_kmh": 39.6,
+          "weather_code": 63,
+          "description": "pluie",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 17.6,
+              "temperature_max": 18.4,
+              "probabilite_pluie_pct": 88,
+              "precipitation_mm": 2.4,
+              "vent_max_kmh": 14,
+              "weather_code": 61,
+              "description": "pluie légère"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 17.4,
+              "temperature_max": 18.0,
+              "probabilite_pluie_pct": 100,
+              "precipitation_mm": 16.3,
+              "vent_max_kmh": 18,
+              "weather_code": 63,
+              "description": "pluie"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 16.7,
+              "temperature_max": 17.2,
+              "probabilite_pluie_pct": 100,
+              "precipitation_mm": 25.5,
+              "vent_max_kmh": 22,
+              "weather_code": 63,
+              "description": "pluie"
+            }
+          ],
+          "alertes": [
+            "Pluie abondante (44 mm sur la journée)"
+          ]
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 17.6,
+          "temperature_max": 17.7,
+          "temperature_min": 15.9,
+          "precipitation_mm": 65.3,
+          "probabilite_pluie_pct": 100,
+          "vent_kmh": 10.1,
+          "vent_max_kmh": 20.2,
+          "rafales_max_kmh": 36.0,
+          "weather_code": 65,
+          "description": "forte pluie",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 16.6,
+              "temperature_max": 17.6,
+              "probabilite_pluie_pct": 93,
+              "precipitation_mm": 3.5,
+              "vent_max_kmh": 13,
+              "weather_code": 61,
+              "description": "pluie légère"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 16.3,
+              "temperature_max": 17.2,
+              "probabilite_pluie_pct": 100,
+              "precipitation_mm": 17.4,
+              "vent_max_kmh": 19,
+              "weather_code": 63,
+              "description": "pluie"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 15.9,
+              "temperature_max": 16.3,
+              "probabilite_pluie_pct": 100,
+              "precipitation_mm": 44.4,
+              "vent_max_kmh": 20,
+              "weather_code": 65,
+              "description": "forte pluie"
+            }
+          ],
+          "alertes": [
+            "Pluie abondante (65 mm sur la journée)"
+          ]
         }
       ],
-      "temperature_max_zone": 22.8,
-      "temperature_min_zone": 14.7,
-      "probabilite_pluie_max_pct": 6,
+      "temperature_max_zone": 21.9,
+      "temperature_min_zone": 15.9,
+      "probabilite_pluie_max_pct": 100,
       "vent_max_kmh": 38.6,
-      "description_dominante": "couvert",
+      "description_dominante": "orage",
       "periodes": [
         {
           "label": "Matin",
-          "temperature_min": 15.0,
-          "temperature_max": 22.3,
-          "probabilite_pluie_pct": 0,
-          "precipitation_mm": 0.0,
-          "vent_max_kmh": 32,
-          "weather_code": 3,
-          "description": "couvert"
+          "temperature_min": 16.6,
+          "temperature_max": 21.5,
+          "probabilite_pluie_pct": 93,
+          "precipitation_mm": 8.7,
+          "vent_max_kmh": 39,
+          "weather_code": 61,
+          "description": "pluie légère"
         },
         {
           "label": "Après-midi",
-          "temperature_min": 19.0,
-          "temperature_max": 22.8,
-          "probabilite_pluie_pct": 16,
-          "precipitation_mm": 0.0,
+          "temperature_min": 16.3,
+          "temperature_max": 21.2,
+          "probabilite_pluie_pct": 100,
+          "precipitation_mm": 40.3,
           "vent_max_kmh": 39,
-          "weather_code": 3,
-          "description": "couvert"
+          "weather_code": 95,
+          "description": "orage"
         },
         {
           "label": "Soir",
-          "temperature_min": 18.0,
-          "temperature_max": 22.0,
-          "probabilite_pluie_pct": 13,
-          "precipitation_mm": 0.0,
-          "vent_max_kmh": 35,
-          "weather_code": 3,
-          "description": "couvert"
+          "temperature_min": 15.9,
+          "temperature_max": 19.8,
+          "probabilite_pluie_pct": 100,
+          "precipitation_mm": 44.4,
+          "vent_max_kmh": 27,
+          "weather_code": 65,
+          "description": "forte pluie"
         }
       ],
       "alertes": [
-        "Rafales jusqu'à 61 km/h"
+        "Rafales jusqu'à 63 km/h",
+        "Pluie abondante (53 mm sur la journée)",
+        "Rafales jusqu'à 64 km/h",
+        "Pluie abondante (70 mm sur la journée)",
+        "Pluie abondante (44 mm sur la journée)",
+        "Pluie abondante (65 mm sur la journée)"
       ],
-      "resume": "Couvert toute la journée, de 15° à 23°."
+      "resume": "Pluie légère le matin, orage l'après-midi, forte pluie le soir, de 16° à 22°."
     },
     "anglais": {
       "mode": "litterature",
-      "oeuvre": "A Tale of Two Cities",
-      "auteur": "Charles Dickens",
-      "annee": 1859,
+      "oeuvre": "Pride and Prejudice",
+      "auteur": "Jane Austen",
+      "annee": 1813,
       "segments": [
         {
-          "t": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness",
-          "g": "la sottise"
+          "t": "It is a truth universally acknowledged",
+          "g": "reconnue de tous"
         },
         {
-          "t": ", it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct",
-          "g": "tout droit"
+          "t": ", that a single man in possession of a good fortune, must be in want of",
+          "g": "qui a besoin de"
         },
         {
-          "t": " to Heaven, we were all going direct the other way – in short",
-          "g": "bref"
+          "t": " a wife. However little known",
+          "g": "Si peu connus soient"
         },
         {
-          "t": ", the period was so far like",
-          "g": "si semblable à"
+          "t": " the feelings or views of such a man may be on his first entering a neighbourhood",
+          "g": "le voisinage"
         },
         {
-          "t": " the present period, that some of its noisiest",
-          "g": "les plus bruyants"
+          "t": ", this truth is so well fixed",
+          "g": "solidement ancrée"
         },
         {
-          "t": " authorities insisted on",
-          "g": "exigeaient que"
+          "t": " in the minds of the surrounding families, that he is considered the rightful property",
+          "g": "propriété légitime"
         },
         {
-          "t": " its being received",
-          "g": "accueillie, admise"
+          "t": " of some one or other of their daughters. \"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last",
+          "g": "enfin louée"
         },
         {
-          "t": ", for good or for evil",
-          "g": "pour le meilleur ou pour le pire"
+          "t": "?\" Mr. Bennet replied that he had not. \"But it is,\" returned she",
+          "g": "répliqua-t-elle"
         },
         {
-          "t": ", in the superlative degree of comparison only.",
+          "t": "; \"for Mrs. Long has just been here, and she told me all about it.\" Mr. Bennet made no answer",
+          "g": "ne répondit rien"
+        },
+        {
+          "t": ".",
           "g": null
         }
       ],
-      "texte_glose": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness (= la sottise), it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct (= tout droit) to Heaven, we were all going direct the other way – in short (= bref), the period was so far like (= si semblable à) the present period, that some of its noisiest (= les plus bruyants) authorities insisted on (= exigeaient que) its being received (= accueillie, admise), for good or for evil (= pour le meilleur ou pour le pire), in the superlative degree of comparison only."
+      "texte_glose": "It is a truth universally acknowledged (= reconnue de tous), that a single man in possession of a good fortune, must be in want of (= qui a besoin de) a wife. However little known (= Si peu connus soient) the feelings or views of such a man may be on his first entering a neighbourhood (= le voisinage), this truth is so well fixed (= solidement ancrée) in the minds of the surrounding families, that he is considered the rightful property (= propriété légitime) of some one or other of their daughters. \"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last (= enfin louée)?\" Mr. Bennet replied that he had not. \"But it is,\" returned she (= répliqua-t-elle); \"for Mrs. Long has just been here, and she told me all about it.\" Mr. Bennet made no answer (= ne répondit rien)."
     },
     "meta": {
-      "resume_1_phrase": "À la une : De nouveaux heurts et des magasins pillés à Paris, Lyon et Marseille, au lendemain de la manifestation du 17 octobre."
+      "resume_1_phrase": "À la une : Episode cévenol dans le Sud-Est : vigilance orange pluie inondations dans trois départements ce lundi, huit mardi."
     },
     "_genere_par_llm": true,
-    "_provider": "groq+mistral",
+    "_provider": "groq+mistral+nvidia",
     "_erreur_llm": null,
     "_parts": {
       "actu_france": {
@@ -543,9 +566,9 @@
       },
       "marches": {
         "genere_par_llm": true,
-        "provider": "groq",
+        "provider": "nvidia",
         "erreur": null,
-        "essais_echoues": 1
+        "essais_echoues": 0
       },
       "science_a": {
         "genere_par_llm": true,
@@ -564,16 +587,22 @@
         "provider": "groq",
         "erreur": null,
         "essais_echoues": 1
+      },
+      "science_d": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
       }
     },
     "_bloc": {
       "genere_par_llm": true,
-      "provider": "groq+mistral",
+      "provider": "groq+mistral+nvidia",
       "erreur": null
     },
     "_science": {
       "genere_par_llm": true,
-      "provider": "groq+mistral",
+      "provider": "groq+mistral+nvidia",
       "erreur": null
     },
     "_anglais": {
@@ -582,5 +611,5 @@
       "erreur": null
     }
   },
-  "debut_run": "2026-10-19T06:10:41.780512+02:00"
+  "debut_run": "2026-10-20T06:10:41.127658+02:00"
 }
