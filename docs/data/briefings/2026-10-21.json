@@ -1,0 +1,605 @@
+{
+  "date": "2026-10-21",
+  "derniere_mise_a_jour": "2026-10-21T06:16:04.290093+02:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Procès de Rima Hassan : le parquet réclame deux ans d'inéligibilité et dix mois de prison avec sursis contre l'eurodéputée, jugée pour apologie du terrorisme",
+          "resume": "Dix mois de prison avec sursis et deux années d’inéligibilité ont été requis contre l’élue européenne, pour avoir publié un post sur X citant un militant propalestinien de l’Armée rouge japonaise, auteur de l’attentat de l’aéroport de Lod-Tel-Aviv en 1972.",
+          "pourquoi_important": "Sanction d’une eurodéputée pour apologie du terrorisme, illustrant la lutte contre les discours favorisant le terrorisme.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France Info",
+            "Libération",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Le Parlement abroge définitivement le Code noir, qui réglementait l'esclavage dans les colonies françaises, après un vote à l'unanimité du Sénat",
+          "resume": "L'abrogation vise un édit royal de 1685 et l'ensemble des dispositions en découlant, qui n'avaient jamais été purgées du droit français.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Procès de l'explosion rue de Trévise à Paris : \"Une espèce de scène de guerre au réveil\", les victimes racontent",
+          "resume": "Le 12 janvier 2019, en plein Paris, une explosion de gaz éventrait les immeubles de la rue de Trévise, faisant quatre morts et plus de 200 blessés. Sept ans après, les victimes attendent des réponses. Le procès s’est ouvert mardi 20 octobre pour sept semaines.",
+          "pourquoi_important": "Jugement des responsables de l’explosion de 2019, répondant aux attentes des victimes.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Nouveaux couvre-feux à Paris et Lyon, Emmanuel Macron sécurise du diesel dans le Golfe, inondations dans le sud de la France… L’actu de ce mardi 20 octobre",
+          "resume": "La rédaction de «Libération» récapitule les principales actualités de la journée du mardi.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "France : des habitations dévastées par des inondations",
+          "resume": "🌧️Le sud-est de la #France est en proie à de fortes #inondations après un violent épisode méditerranéen qui a fait un mort près de #Marseille. 🚨⚠️L’Occitanie et la région Provence-Alpes-Côte d’Azur sont touchées, et la Haute-Corse est placée en vigilance rouge pluie-inondation.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Ebola : le Nigeria annonce un premier cas et passe en « alerte maximale »",
+          "resume": "Une femme arrivée au Nigeria par un vol international en provenance d’Ouganda a été admise dans un hôpital privé d’Abuja.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "France 24 International",
+            "New York Times World"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : à Oslo, Zelensky entretient, sans y croire, l’espoir d’être à nouveau entendu par les Etats-Unis",
+          "resume": "Le président ukrainien a rencontré l’envoyé spécial de Donald Trump en Norvège, après une semaine de tensions accrues entre Kiev et Washington.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Présidentielle : au Brésil, le camp Lula va demander à la justice d’annuler la candidature de Bolsonaro pour « ingérence » de Meta",
+          "resume": "Le camp du président sortant accuse le géant Meta d’avoir manipulé les algorithmes pour favoriser le candidat d’extrême droite.",
+          "pourquoi_important": "Cette demande pourrait influencer l’issue du second tour de la présidentielle brésilienne, prévue dans cinq jours.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Libération",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Italie : 500 militaires vont être déployés à Milan jusqu’à la fin de l’année, après les violences du week-end",
+          "resume": "Le gouvernement italien a décidé d’envoyer des soldats renforcer les forces de l’ordre locales, en réponse à des affrontements lors de rassemblements.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "La guerre entre l’État islamique et Al-Qaïda prend de l’ampleur au Sahel",
+          "resume": "Un épisode sanglant du 9 octobre, à cheval sur le Mali, le Burkina Faso et le Niger, pourrait être le plus meurtrier depuis 2019.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : une attaque de drones russe fait deux morts dans la région de Kharkiv",
+          "resume": "Les victimes sont une femme de 81 ans et un homme de 83 ans, selon les autorités locales.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "À Gaza, des frappes israéliennes font sept morts, selon la défense civile et des hôpitaux",
+          "resume": "Le premier ministre israélien, Benyamin Nétanyahou, maintient sa politique de frappes contre le Hamas malgré le cessez-le-feu en vigueur depuis plus d’un an.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Etats-Unis : comment le camp Trump exploite les émeutes en France pour remotiver la base MAGA avant les midterms",
+          "resume": "Le président américain et son entourage se sont appuyés à plusieurs reprises sur les violences du 17 octobre pour dénoncer l’immigration et les musulmans, prévenant qu’une victoire des démocrates aux élections de mi-mandat, le 3 novembre, exposait les Etats-Unis au même péril.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
+      "mouvements_notables": [
+        {
+          "nom": "Pétrole (Brent)",
+          "variation_pct": 1.73,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "football",
+          "texte": "La Ligue des champions a établi un nouveau record de buts cette saison."
+        },
+        {
+          "sport": "football",
+          "texte": "Rodri est absent du match PSG‑Barcelone en Ligue des champions en raison d’une gêne musculaire ; son remplaçant est le jeune Marc Bernal."
+        },
+        {
+          "sport": "football",
+          "texte": "Le Paris Saint‑Germain a battu le FC Barcelone 4‑2 au Parc des Princes, poursuivant son parcours sans défaite en Ligue des champions."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Victor Wembanyama vise le titre de MVP, une première bague de champion NBA et un quadruple‑double lors de sa quatrième saison avec les San Antonio Spurs."
+        },
+        {
+          "sport": "basketball",
+          "texte": "AJ Dybantsa a été blessé à la cheville lors du dernier match de pré‑saison et ne jouera pas au premier match de saison régulière des Washington Wizards contre les Milwaukee Bucks."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Les Detroit Pistons ont renversé les Boston Celtics avec une victoire 121‑113 lors du match d’ouverture de la saison NBA 2026‑2027."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Iga Swiatek a déclaré forfait du WTA 500 de Ningbo à cause d’une blessure à la cuisse gauche, ce qui l’empêche de se qualifier pour le Masters du 7‑14 novembre, première fois depuis 2020."
+        },
+        {
+          "sport": "rugby",
+          "texte": "Matthieu Jalibert s’est de nouveau blessé au quadriceps droit et sera absent six à huit semaines, manquant le Championnat des nations avec le XV de France."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "Bayern Munich – Arsenal",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-10-21T19:00:00+00:00",
+          "date_texte": "mercredi 21 octobre à 21h00",
+          "sport": "football"
+        },
+        {
+          "affiche": "Los Angeles Lakers – Golden State Warriors",
+          "competition": "NBA",
+          "date_iso": "2026-10-22T02:00:00+00:00",
+          "date_texte": "jeudi 22 octobre à 4h00",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "decouverte",
+      "titre": "Des organismes négligés, source inattendue de découvertes majeures",
+      "contenu_markdown": "La recherche scientifique accorde souvent une attention prioritaire aux espèces modèles bien connues, comme la souris, la levure ou le nématode *Caenorhabditis elegans*. Pourtant, une analyse publiée dans *Nature* le 20 octobre 2026 souligne que certaines des percées les plus récompensées – comme les prix Nobel – proviennent d’organismes longtemps sous-estimés.\n\nCes découvertes illustrent comment des créatures méconnues, comme des bactéries, des champignons ou des invertébrés peu étudiés, ont permis des avancées fondamentales. Par exemple, des mécanismes biologiques découverts chez des espèces marginales ont éclairé des processus universels, comme la régulation génétique ou la réponse immunitaire. Leur étude a aussi conduit à des applications médicales ou biotechnologiques, parfois inattendues.\n\nCependant, cette observation ne signifie pas que ces organismes sont systématiquement plus prometteurs que les modèles classiques. Leur potentiel dépend souvent de caractéristiques spécifiques, comme leur facilité d’étude en laboratoire ou leur capacité à révéler des phénomènes biologiques uniques. Les limites de ces travaux résident aussi dans leur généralisation : certaines découvertes, bien que marquantes, peuvent ne pas s’appliquer à tous les organismes, y compris l’humain.\n\nPour approfondir les exemples précis et les mécanismes en jeu, les détails sont disponibles dans les publications scientifiques citées. Cette réflexion invite simplement à élargir le champ des recherches, sans négliger pour autant les modèles traditionnels.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03351-1\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Cyclone tropical\n\n## Introduction\nLes cyclones tropicaux sont parmi les phénomènes météorologiques les plus puissants et les plus destructeurs sur Terre. Ces tempêtes géantes se forment au-dessus des océans tropicaux et peuvent provoquer des vents violents, des pluies diluviennes et des vagues déferlantes, causant des dégâts matériels considérables et des pertes humaines. Leur nom varie selon les régions du monde : ouragan dans l’Atlantique Nord, typhon dans le Pacifique Nord-Ouest, ou simplement cyclone dans l’océan Indien. Malgré leur dangerosité, leur formation et leur fonctionnement reposent sur des principes météorologiques bien compris, qui permettent aujourd’hui de les surveiller et, dans une certaine mesure, de limiter leurs impacts.\n\n## Pourquoi le sujet est important\nLes cyclones tropicaux représentent un risque majeur pour les populations côtières et les îles tropicales. Chaque année, ils sont responsables de centaines, voire de milliers de victimes, et leurs conséquences économiques peuvent être dévastatrices, avec des coûts liés aux inondations, aux glissements de terrain et aux destructions d’infrastructures. Leur étude est donc cruciale pour améliorer les systèmes d’alerte précoce, affiner les modèles de prévision et renforcer les mesures de protection des populations. Par ailleurs, avec le réchauffement climatique, les scientifiques s’interrogent sur l’évolution possible de leur fréquence et de leur intensité, ce qui rend leur compréhension d’autant plus urgente.\n\n## Explication du phénomène\nCette perturbation se transforme progressivement en **dépression tropicale**, puis en **tempête tropicale** si les vents atteignent une vitesse comprise entre 63 et 117 km/h. Lorsqu’elle dépasse 118 km/h, elle devient un cyclone tropical à part entière, avec un **œil** bien défini au centre, entouré d’une zone de nuages d’orage en rotation rapide.\n\nContrairement aux dépressions classiques des latitudes tempérées, les cyclones tropicaux sont des systèmes à **noyau chaud**. Leur énergie provient de la **chaleur latente** libérée lors de la condensation de la vapeur d’eau en altitude. Cette chaleur élève la température à l’intérieur du cyclone de 15 à 20 °C par rapport à l’environnement extérieur, alimentant ainsi leur puissance. Ils appartiennent à la catégorie des **systèmes convectifs de méso-échelle**, car leur diamètre est généralement inférieur à celui des dépressions synoptiques (classiques), mais leur impact reste colossal.\n\n## Fonctionnement / mécanismes\nLe mécanisme de formation d’un cyclone tropical repose sur quatre conditions essentielles :\n1. **Une température élevée de l’océan** : l’eau doit être suffisamment chaude pour fournir l’énergie nécessaire à l’évaporation de l’eau et à la formation de nuages.\n2. **Une humidité atmosphérique importante** : la vapeur d’eau est le carburant des cyclones, car sa condensation libère de la chaleur.\n3. **Une faible cisaillement des vents** : si les vents changent trop brutalement d’altitude, ils peuvent empêcher l’organisation du système.\n4. **Une perturbation initiale** : une zone de basse pression ou un système nuageux préexistant sert de point de départ à la rotation.\n\nUne fois ces conditions réunies, la vapeur d’eau s’élève et se condense en nuages d’orage, libérant de la chaleur qui réchauffe l’air environnant. Cet air chaud et humide monte en spirale, créant une dépression en surface qui aspire davantage d’air humide. Le système se renforce progressivement, formant une structure en spirale caractéristique, avec un **œil central** où la pression est minimale et les vents sont relativement calmes. Autour de cet œil, le **mur de l’œil** concentre les vents les plus violents et les pluies les plus intenses.\n\nLa rotation du cyclone est due à la **force de Coriolis**, un effet lié à la rotation de la Terre qui dévie les vents vers la droite dans l’hémisphère Nord et vers la gauche dans l’hémisphère Sud. Sans cette force, près de l’équateur, les cyclones ne pourraient pas se former efficacement. Leur trajectoire dépend ensuite des courants atmosphériques et océaniques, ce qui explique pourquoi leur prévision reste un défi scientifique.\n\n## Données et résultats scientifiques\n\nLes cyclones tropicaux sont caractérisés par des seuils de vitesse du vent qui définissent leurs différentes étapes :  \n\n- **Dépression tropicale** : vents maximums inférieurs à 17 m s⁻¹ (63 km h⁻¹).  \n- **Tempête tropicale** : vents compris entre 17 et 33 m s⁻¹ (63 à 117 km h⁻¹).  \n- **Ouragan / typhon / cyclone** : vents supérieurs à 33 m s⁻¹ (environ 118 km h⁻¹) et présence d’un œil dégagé.  \n\nSur le plan thermique, le texte indique que le dégagement de chaleur latente élève la température à l’intérieur du cyclone de **15 à 20 °C** au-dessus de la température ambiante de la troposphère environnante.  \n\nLes cyclones sont classés parmi les systèmes convectifs de méso‑échelle, avec un diamètre inférieur à celui d’une dépression synoptique.  \n\n## Ce que les scientifiques savent\n\n- **Mécanisme énergétique** : la principale source d’énergie provient du dégagement de chaleur latente lors de la condensation de la vapeur d’eau dans les orages qui composent le cyclone. Cette chaleur alimente le « noyau chaud » du cyclone, le maintenant en rotation et en intensité.  \n- **Structure** : un cyclone tropical est une large zone de nuages d’orage en rotation, accompagnée de vents forts. L’organisation en circulation cyclonique fermée à la surface permet la classification en dépression, tempête ou cyclone selon la vitesse du vent.  \n- **Classification internationale** : les critères de vitesse du vent et la présence d’un œil sont reconnus par l’Organisation météorologique mondiale, qui harmonise la terminologie (ouragan, typhon, cyclone) selon les bassins océaniques.  \n- **Impacts** : les pluies torrentielles et les vents violents sont les principales sources de dégâts et de victimes, faisant des cyclones tropicaux l’un des risques naturels les plus fréquents.  \n\n## Ce qui reste incertain\n\n- **Prévision précise de l’intensité maximale** : bien que les seuils de vitesse du vent soient définis, la capacité à anticiper la rapidité avec laquelle un cyclone atteindra ou dépassera ces seuils demeure limitée.  \n- **Influence des variations climatiques** : l’impact exact du réchauffement climatique sur la fréquence, la localisation et l’intensité des cyclones tropicaux n’est pas encore entièrement quantifié.  \n- **Processus de formation** : la transition précise d’une perturbation atmosphérique à une dépression tropicale, puis à une tempête, dépend de multiples facteurs (vorticité, humidité, shear) dont l’interaction détaillée reste sujette à recherche.  \n\n## Limites et controverses éventuelles\n\n- **Délimitations régionales** : la terminologie (ouragan, typhon, cyclone) varie selon les régions, ce qui peut entraîner des ambiguïtés dans les comparaisons internationales.  \n- **Définition du « noyau chaud »** : bien que le concept de température intérieure supérieure de 15 à 20 °C soit largement accepté, la mesure exacte de ce gradient thermique dans le champ de bataille dynamique d’un cyclone reste difficile.  \n- **Évaluation des risques** : les estimations du nombre de victimes et des pertes économiques varient selon les sources nationales et internationales, reflétant des différences de méthodologie de comptage et de déclaration.  \n\n## Conclusion\n\nLes cyclones tropicaux sont des systèmes météorologiques puissants dont la dynamique repose sur le dégagement de chaleur latente et la formation d’un noyau chaud. Leur classification repose sur des seuils de vitesse du vent clairement établis, et leur impact humain et matériel en fait l’un des risques naturels majeurs. Si les mécanismes de base sont bien compris, des incertitudes subsistent quant à la prévision précise de leur intensité, à l’influence du climat changeant et aux détails de leur formation. La communauté scientifique continue d’affiner les modèles de prévision et d’harmoniser la terminologie afin de réduire les incertitudes et d’améliorer la résilience des populations exposées.\n\n## Sources\n- Wikipédia (fr) — Cyclone tropical — https://fr.wikipedia.org/wiki/Cyclone_tropical\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 1,
+      "nb_mots": 1490,
+      "matiere_source": "fine",
+      "textes_sources_audit": [
+        {
+          "source": "Nature News",
+          "titre": "Nobel-prizewinning breakthroughs can emerge from neglected organisms",
+          "resume": "Nature, Published online: 20 October 2026; doi:10.1038/d41586-026-03351-1 Nobel-prizewinning breakthroughs can emerge from neglected organisms"
+        },
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Cyclone tropical",
+          "resume": "Un cyclone tropical est un type de cyclone (dépression) qui prend forme dans les océans de la zone intertropicale à partir d'une perturbation atmosphérique qui s'organise en dépression tropicale puis en tempête. Son stade final est connu sous divers noms à travers le monde : ouragan dans l'Atlantique nord et le Pacifique nord-est, typhon dans le Pacifique nord-ouest et cyclone dans les autres bassins océaniques.\nStructurellement, un cyclone tropical est une large zone de nuages d'orage en rotation accompagnée de vents forts. On peut les classer dans la catégorie des systèmes convectifs de méso-échelle puisqu'ils ont un diamètre inférieur à une dépression classique, dite « synoptique », et que leur source d'énergie principale est le dégagement de chaleur latente causé par la condensation de la vapeur d'eau en altitude dans leurs orages. Le cyclone tropical est semblable à une machine thermique, au sens de la thermodynamique. Le dégagement de chaleur latente dans les niveaux supérieurs de la tempête élève la température à l'intérieur du cyclone de 15 à 20 °C au-dessus de la température ambiante dans la troposphère à l'extérieur du cyclone. Pour cette raison, les cyclones tropicaux sont des tempêtes à « noyau chaud ».\nLes cyclones tropicaux sont redoutés pour le caractère destructeur de leurs pluies torrentielles et de leurs vents. Ils sont classés parmi les risques naturels les plus courants et font chaque année des centaines, voire des milliers de victimes. Les régions les plus menacées ont mis en place des mesures de surveillance météorologique, coordonnée par l'Organisation météorologique mondiale, ainsi que des programmes de recherche et de prévision de la trajectoire et la vitesse de déplacement des cyclones.\n\nClassification et terminologie\n\nOrigine du terme\n\nLe terme cyclone, appliqué aux cyclones tropicaux, a été forgé par le Capitaine de navire anglais Henry Piddington (1797 – 1858) à la suite de ses études sur la terrible tempête tropicale de 1789, qui avait tué plus de 20 000 personnes dans la ville côtière indienne de Coringa. En 1844, il publia ses travaux sous le titre The Horn-book for the Law of Storms for the Indian and China Seas (« Mémoires sur les tempêtes de l'Inde »).\nLes marins du monde reconnurent la grande qualité de ses travaux et le nommèrent président de la Marine Court of Inquiry (Cour de marine) de Calcutta. En 1848, dans une nouvelle version agrandie et complétée de son livre, The Sailor's Horn-book for the Law of Storms (« Guide du marin sur la loi des tempêtes »), ce pionnier de la météorologie compara le phénomène météorologique à un serpent s'enroulant en cercle, kyklos en grec, d'où cyclone.\nLouis Froc (1859-1932) a été surnommé le « père ou le prêtre des typhons » pour avoir organisé le premier réseau d'observation permettant de prévoir et suivre les typhons en mer de Chine à la fin du XIXe siècle et au début du XXe siècle.\n\nNomenclature\n\nLes cyclones tropicaux sont divisés en trois stades de vie : les dépressions tropicales, les tempêtes tropicales et un troisième groupe dont le nom varie selon les régions. Ces stades sont en fait trois niveaux d'intensité et d'organisation qu'un cyclone tropical peut ou non atteindre. On retrouve donc dans l'ordre croissant d'intensité :\n\nla dépression tropicale. C'est un système organisé de nuages, d'eau et d'orages avec une circulation cyclonique fermée en surface et des vents dont la vitesse maximale est inférieure à 17 m/s (soit 63 km/h) ;\nla tempête tropicale. C'est un système cyclonique dont les vents ont une vitesse maximum comprise entre 17 et 33 m/s (soit entre 63 et 117 km/h) ;\nl'ouragan/typhon/cyclone. C'est un système cyclonique dont les vents ont une vitesse qui excède 33 m/s (environ 118 km/h) et qui a un œil dégagé en son centre.\nLe terme utilisé pour désigner les cyclones tropicaux supérieurs varie selon les régions, comme suit :\n\nouragan dans l'Atlantique Nord et l'océan Pacifique à l'est de la ligne de changement de date. L'origine du mot est contestée : d'huricán, du caraïbe pour « dieux du mal » ou « dieu des tempêtes », ou encore de l'arawak huracana signifiant « vent d'été ». Jean-Arnaud Bruneau de Rivedoux évoque, en 1572, « ce vent nommé Uracan [qui] souffle ordinairement aux mois d’août, septembre & octobre, és environ des Isles de Navace & Jamaïque, à quelque six-vingts lieues de l’Isle S. Dominique. Ce mot Uracan est un vocable des insulaires lequel signifie en leur langue les quatre vents joints ensemble & soufflant l’un contre l’autre. » ;\ntyphon dans le Pacifique Nord à l'ouest de la ligne de changement de date. Le mot viendrait du grec ancien Τυφών / tuphōn, un monstre de la mythologie grecque responsable des vents chauds et qui aurait voyagé vers l'Asie par l'arabe (tûfân) puis récupéré par les navigateurs portugais (tufão). D'autre part, les Chinois utilisent 颱風 (« grand vent »), prononcé tai fung en cantonais et le Japonais donne sur le même étymon taifû ;\ncyclone tropical dans le Pacifique Sud et dans l'océan Indien. Cependant, on utilise localement le terme de forte tempête tropicale dans l'océan Indien Nord ;\ndans l'Atlantique Sud, le terme à utiliser n'est pas déterminé. Jusqu'à présent, on n'a répertorié qu'un seul système de ce type en raison des conditions défavorables dans cette région.\nCette terminologie est définie par l'Organisation météorologique mondiale (OMM). En d'autres endroits dans le monde, les cyclones tropicaux ont reçu les noms de baguio aux Philippines, de chubasco au Mexique et taino en Haïti. Le terme willy-willy retrouvé souvent dans la littérature comme un terme local en Australie est erroné car il désigne en fait un tourbillon de poussière.\n\nCatégories"
+        }
+      ],
+      "nb_mots_decouverte": 245,
+      "nb_mots_approfondi": 1237,
+      "sujet_id": "cyclones",
+      "origine": "encyclopedie"
+    },
+    "citation": {
+      "texte": "Je pense, donc je suis.",
+      "auteur": "René Descartes",
+      "source": "Discours de la méthode (4e partie)",
+      "annee": 1637
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 15.9,
+          "temperature_max": 22.9,
+          "temperature_min": 15.0,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 10.5,
+          "vent_max_kmh": 37.2,
+          "rafales_max_kmh": 73.1,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 15.2,
+              "temperature_max": 18.8,
+              "probabilite_pluie_pct": 6,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 18.9,
+              "temperature_max": 22.9,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 28,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 18.0,
+              "temperature_max": 20.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 25,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": [
+            "Rafales jusqu'à 73 km/h"
+          ]
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 15.9,
+          "temperature_max": 21.8,
+          "temperature_min": 15.0,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 14.0,
+          "vent_max_kmh": 34.5,
+          "rafales_max_kmh": 62.3,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 15.0,
+              "temperature_max": 17.7,
+              "probabilite_pluie_pct": 3,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 14,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 18.1,
+              "temperature_max": 21.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 34,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 18.2,
+              "temperature_max": 19.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 31,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": [
+            "Rafales jusqu'à 62 km/h"
+          ]
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 15.6,
+          "temperature_max": 22.0,
+          "temperature_min": 12.4,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 5.4,
+          "vent_max_kmh": 24.1,
+          "rafales_max_kmh": 42.5,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 14.7,
+              "temperature_max": 17.5,
+              "probabilite_pluie_pct": 6,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 45,
+              "description": "brouillard"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 17.6,
+              "temperature_max": 21.8,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 20,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 14.0,
+              "temperature_max": 18.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 24,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 14.8,
+          "temperature_max": 20.5,
+          "temperature_min": 11.8,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 5.4,
+          "vent_max_kmh": 21.3,
+          "rafales_max_kmh": 38.5,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 13.7,
+              "temperature_max": 17.0,
+              "probabilite_pluie_pct": 4,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 16.9,
+              "temperature_max": 20.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 20,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 12.7,
+              "temperature_max": 17.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 21,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 22.9,
+      "temperature_min_zone": 11.8,
+      "probabilite_pluie_max_pct": 0,
+      "vent_max_kmh": 37.2,
+      "description_dominante": "ciel dégagé",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 13.7,
+          "temperature_max": 18.8,
+          "probabilite_pluie_pct": 6,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 14,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 16.9,
+          "temperature_max": 22.9,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 34,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 12.7,
+          "temperature_max": 20.3,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 31,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        }
+      ],
+      "alertes": [
+        "Rafales jusqu'à 73 km/h",
+        "Rafales jusqu'à 62 km/h"
+      ],
+      "resume": "Couvert le matin, ciel dégagé l'après-midi, ciel dégagé le soir, de 12° à 23°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "Moby-Dick",
+      "auteur": "Herman Melville",
+      "annee": 1851,
+      "segments": [
+        {
+          "t": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse",
+          "g": "la bourse, le porte-monnaie"
+        },
+        {
+          "t": ", and nothing particular to interest me on shore",
+          "g": "à terre"
+        },
+        {
+          "t": ", I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen",
+          "g": "la mauvaise humeur, le spleen"
+        },
+        {
+          "t": " and regulating the circulation. Whenever I find myself growing grim",
+          "g": "sombre, renfrogné"
+        },
+        {
+          "t": " about the mouth; whenever it is a damp, drizzly",
+          "g": "bruineux"
+        },
+        {
+          "t": " November in my soul; whenever I find myself involuntarily pausing before coffin warehouses",
+          "g": "entrepôts de cercueils"
+        },
+        {
+          "t": ", and bringing up the rear",
+          "g": "fermer la marche"
+        },
+        {
+          "t": " of every funeral I meet; and especially whenever my hypos",
+          "g": "idées noires"
+        },
+        {
+          "t": " get such an upper hand",
+          "g": "le dessus"
+        },
+        {
+          "t": " of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off",
+          "g": "faire voler le chapeau des passants"
+        },
+        {
+          "t": "—then, I account it high time",
+          "g": "juge qu'il est grand temps"
+        },
+        {
+          "t": " to get to sea as soon as I can.",
+          "g": null
+        }
+      ],
+      "texte_glose": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse (= la bourse, le porte-monnaie), and nothing particular to interest me on shore (= à terre), I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen (= la mauvaise humeur, le spleen) and regulating the circulation. Whenever I find myself growing grim (= sombre, renfrogné) about the mouth; whenever it is a damp, drizzly (= bruineux) November in my soul; whenever I find myself involuntarily pausing before coffin warehouses (= entrepôts de cercueils), and bringing up the rear (= fermer la marche) of every funeral I meet; and especially whenever my hypos (= idées noires) get such an upper hand (= le dessus) of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off (= faire voler le chapeau des passants)—then, I account it high time (= juge qu'il est grand temps) to get to sea as soon as I can."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Procès de Rima Hassan : le parquet réclame deux ans d'inéligibilité et dix mois de prison avec sursis contre l'eurodéputée, jugée pour apologie du terrorisme."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral+nvidia",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_d": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 1
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral+nvidia",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-10-21T06:10:42.422430+02:00"
+}
