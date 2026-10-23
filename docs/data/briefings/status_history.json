@@ -1,6 +1,68 @@
 {
   "entries": [
     {
+      "derniere_execution": "2026-10-23T06:17:30.574564+02:00",
+      "date_visee": "2026-10-23",
+      "succes": true,
+      "erreur": null,
+      "synthese_llm": true,
+      "erreur_llm": null,
+      "llm_bloc": {
+        "genere_par_llm": true,
+        "provider": "groq+mistral+nvidia",
+        "erreur": null
+      },
+      "llm_science": {
+        "genere_par_llm": true,
+        "provider": "groq+nvidia",
+        "erreur": null
+      },
+      "llm_anglais": {
+        "genere_par_llm": false,
+        "provider": null,
+        "erreur": null
+      },
+      "sources_rss_en_erreur": [
+        {
+          "source": "L'Équipe Hand",
+          "categorie": "sport",
+          "statut": "vide",
+          "detail": null
+        },
+        {
+          "source": "L'Équipe Volley",
+          "categorie": "sport",
+          "statut": "vide",
+          "detail": null
+        },
+        {
+          "source": "ESPN NBA News",
+          "categorie": "sport",
+          "statut": "vide",
+          "detail": null
+        },
+        {
+          "source": "ESPN Top Headlines",
+          "categorie": "sport",
+          "statut": "vide",
+          "detail": null
+        }
+      ],
+      "sources_marches_en_erreur": [],
+      "funnel_actualite": {
+        "france": {
+          "bruts": 106,
+          "evenements_uniques": 95,
+          "retenus_apres_seuil": 47
+        },
+        "monde": {
+          "bruts": 77,
+          "evenements_uniques": 67,
+          "retenus_apres_seuil": 33
+        }
+      }
+    },
+    {
       "derniere_execution": "2026-10-22T06:17:09.804214+02:00",
       "date_visee": "2026-10-22",
       "succes": true,

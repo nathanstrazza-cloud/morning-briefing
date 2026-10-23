@@ -1,131 +1,99 @@
 {
-  "date": "2026-10-22",
-  "derniere_mise_a_jour": "2026-10-22T06:17:09.804214+02:00",
+  "date": "2026-10-23",
+  "derniere_mise_a_jour": "2026-10-23T06:17:30.574564+02:00",
   "briefing": {
     "actualite": {
       "france": [
         {
-          "titre": "La plateforme eBay va supprimer 1 000 postes, soit environ 9% de ses effectifs",
-          "resume": "Malgré une croissance retrouvée en 2025 et au premier trimestre 2026, la plateforme de commerce en ligne poursuit sa restructuration, après avoir déjà procédé à un plan social portant sur 800 emplois en février.",
+          "titre": "Présidentielle 2027 : Edouard Philippe lance ses idées sans imprimer",
+          "resume": "En déplacement dans les Ardennes, l’ancien Premier ministre ne dévie pas de sa stratégie pour 2027 malgré les crises, et n’affiche aucune inquiétude quant à sa difficulté à susciter l’enthousiasme.",
           "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Au procès de l’explosion de la rue de Trévise, à Paris, le plombier, le maçon et le conducteur de travaux",
+          "resume": "Un collecteur d’eaux usées dans les caves du 6, rue de Trévise, et un trou récurrent dans le trottoir, devant la porte cochère de l’immeuble, ont été au centre des débats, jeudi 22 octobre, au tribunal judiciaire de Paris.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Pierre Moscovici démissionne de la Cour des comptes européenne pour «contribuer au débat public» lors de la présidentielle",
+          "resume": "L’ancien président de la Cour des comptes française justifie son départ par des raisons personnelles et sa volonté de conserver sa liberté de parole, à l’approche de l’élection présidentielle en 2027.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Budget 2027 : la taxe sur les produits sucrés torpillée sur fond de lobbying intense de l’industrie agro-alimentaire",
+          "resume": "Le vote sur cette taxe censée inciter les industriels à réduire le taux de sucre dans leurs recettes, est loin d’être définitif. L’adoption du budget de la Sécurité sociale par l’Assemblée nationale lors de cette première lecture paraît hautement improbable et le texte devra aussi être discuté au Sénat.",
+          "pourquoi_important": "Le rejet de la taxe sur les produits sucrés affecte les politiques de santé publique et les recettes budgétaires.",
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "Le Monde",
-            "France Info"
-          ]
-        },
-        {
-          "titre": "Carrefour dégringole en Bourse et rejette la faute sur les violences du 17 octobre",
-          "resume": "L’action a dévissé de 15% après que le PDG Alexandre Bompard a annoncé le 20 octobre revoir à la baisse ses résultats du fait des manifestations. L’explication semble bien courte, aussi bien aux salariés qu‑aux concurrents, qui s’interrogent sur le modèle économique de l’enseigne.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
             "Libération"
           ]
         },
         {
-          "titre": "Des scientifiques partent à l’exploration de l’insula, îlot du cerveau «au carrefour entre émotions, sensations et cognition»",
-          "resume": "Des chercheurs américains ont établi la carte anatomique et fonctionnelle du cortex insulaire, une région du cerveau encore mal connue. Leurs résultats, parus ce mercredi, mettent en lumière l’influence mutuelle entre des émotions comme l’anxiété et nos sensations.",
-          "pourquoi_important": null,
+          "titre": "Congrès du RN à Orléans ce week-end : de 20 000 à 30 000 opposants attendus et un dispositif de sécurité « exceptionnel »",
+          "resume": "Près de 3 000 membres des forces de l’ordre seront mobilisés pour encadrer les 20 000 à 30 000 opposants attendus, à Orléans ce week-end, à l’occasion du congrès du Rassemblement national et du lancement officiel de la campagne présidentielle de Marine Le Pen.",
+          "pourquoi_important": "Selon Le Monde, le dispositif de sécurité exceptionnel reflète l’importance politique du congrès du RN et les tensions attendues.",
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
-            "Libération"
-          ]
-        },
-        {
-          "titre": "Marya Chéliga, Louise Michel, Sophie de Bawr… Des «théâtreuses» remises sur le devant de la scène",
-          "resume": "La dramaturge Julie Rossello Rochet réhabilite des autrices de théâtre de la Révolution française à la Première Guerre mondiale.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Libération"
-          ]
-        },
-        {
-          "titre": "Intempéries dans le Sud-Est : Le bilan s’alourdit et s’élève à quatre morts et un disparu",
-          "resume": "L’épisode méditerranéen qui a balayé les Bouches-du-Rhône et la Corse, associé à des cumuls de pluie très importants, a provoqué d’importantes perturbations. Trois personnes sont mortes dans les Bouches-du-Rhône, et une autre en Haute-Corse.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "20 Minutes",
-            "France 24 International"
+            "Le Monde"
           ]
         }
       ],
       "monde": [
         {
-          "titre": "Guerre en Ukraine : plus de 600 drones lancés en direction de Moscou, selon le maire ; quinze blessés dans des frappes sur Kiev",
-          "resume": "Le maire de Moscou a rapporté que 163 drones se sont approchés de Moscou durant la nuit, blessant deux personnes. Quinze blessés ont été signalés dans des frappes sur Kiev.",
+          "titre": "En Chine, le séisme de magnitude 7 qui a frappé la région du Tibet fait au moins 16 morts et des dizaines de blessés",
+          "resume": "Un séisme majeur a frappé jeudi soir la région du Tibet, en Chine. La secousse, survenue à 22 h 33, heure locale, a eu lieu dans une région régulièrement touchée par des tremblements de terre.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "20 Minutes",
-            "Le Monde International"
+            "Le Monde International",
+            "France 24 International",
+            "France Info"
           ]
         },
         {
-          "titre": "Italie : après les émeutes, Giorgia Meloni durcit encore son arsenal sécuritaire",
-          "resume": "Alors que des violences se sont déroulées, samedi et dimanche, dans plusieurs villes italiennes, la présidente du Conseil a annoncé de nouvelles sanctions et déployé cinq cents soldats supplémentaires à Milan.",
+          "titre": "Guerre en Ukraine : Vladimir Poutine se dit prêt à reprendre les négociations avec l’Ukraine et les États-Unis en vue « d’un accord final »",
+          "resume": "Le président russe a évoqué des discussions sur des garanties de sécurité pour l’Ukraine et la Russie, dans le cadre d’un accord final et non après une pause des combats.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "Libération",
+            "Le Monde",
+            "France Info",
             "Le Monde International"
           ]
         },
         {
-          "titre": "Face à la Russie, les pays du nord et de l’est de l’Europe préparent leurs sociétés à la guerre",
-          "resume": "Les pays européens frontaliers de la Russie investissent dans la défense civile, incluant abris antibombes, réserves stratégiques et plans d’évacuation.",
+          "titre": "République centrafricaine : Trois otages libérés après 10 mois de captivité",
+          "resume": "Trois personnes, dont la sous-préfète de Bambouti et deux agents de l’Autorité nationale des élections, ont été libérées après 10 mois de détention par un groupe armé actif dans le sud-est du pays.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
-            "Le Monde International"
+            "France 24 International"
           ]
         },
         {
-          "titre": "Chérif Ould Taher, le sulfureux intermédiaire malien derrière les dernières libérations d’otages au Sahel",
-          "resume": "Un homme d’affaires malien, considéré comme narcotrafiquant, a joué un rôle clé dans la libération récente d’une Suissesse et d’une Autrichienne enlevées par l’État islamique au Sahel.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Le Monde International"
-          ]
-        },
-        {
-          "titre": "Otages au Niger depuis 2025, deux européennes de 69 et 76 ans libérées",
-          "resume": "La Libye a contribué à la libération de deux otages européennes, détenues par l’État islamique depuis plus d’un an.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "20 Minutes"
-          ]
-        },
-        {
-          "titre": "Brésil : Lula et Bolsonaro utilisent la justice pour gagner la présidentielle",
-          "resume": "Que Flávio Bolsonaro remporte ou non la présidentielle, dimanche 25 octobre, le mouvement lancé par son père s’est renforcé au Congrès. Son implantation institutionnelle lui permettra de peser sur le prochain mandat.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Libération",
-            "20 Minutes"
-          ],
-          "complete_par_code": true
-        },
-        {
-          "titre": "Sur la Route 66 auprès des reclus des monts Ozarks : à la veille des midterms, « l’humeur n’est pas très bonne »",
-          "resume": "« Route 66, pouls de l’Amérique » (2/6). Dans le Missouri, l’isolement d’un ancien militaire survivaliste, coupé du monde, tranche avec la volonté de vivre-ensemble des habitants d’une petite ville de l’Arkansas, unis par la musique et leur réticence à évoquer Donald Trump.",
+          "titre": "Au Brésil, pourquoi les classes moyennes ont tourné le dos à Lula",
+          "resume": "Si les politiques sociales menées par le Parti des travailleurs durant ses dix-sept ans au pouvoir ont permis de réduire la pauvreté, nombre de Brésiliens peinent toujours à boucler leur fin de mois. Beaucoup envisagent de voter pour le candidat d’extrême droite, Flavio Boslonaro, au second tour de l’élection présidentielle, le 25 octobre.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
@@ -136,8 +104,41 @@
           "complete_par_code": true
         },
         {
-          "titre": "Selon 20 Minutes, Etats-Unis : Auditions, destitution, blocages budgétaires… Trump sous la menace d’une défaite aux midterms",
-          "resume": "Que se passera-t-il si Trump perd les midterms du 3 novembre ? Paralysie politique, shutdowns, procédures de destitution et présidentielle 2028… Explications avec Rebecca D. Gill, politologue à l’Université du Nevada",
+          "titre": "Selon Le Monde International, Election présidentielle au Brésil : « Chaque victoire de l’extrême droite à l’étranger banalise cette perspective chez nous », alertent des responsables politiques de gauche en France",
+          "resume": "A la veille du second tour du scrutin, qui aura lieu le 25 octobre, plusieurs personnalités, parmi lesquelles Jean-Luc Mélenchon, Marine Tondelier et Fabien Roussel, s’inquiètent, dans une tribune au « Monde », de la possible victoire de Flavio Bolsonaro et des conséquences que pourrait avoir celle-ci tant sur le pays que sur l’équilibre géopolitique mondial.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon New York Times World, How Pastors Mobilize Communities in Congo’s Fight Against Ebola",
+          "resume": "As health care workers fought to control the latest outbreak this year, they got crucial aid from churches in beating back fear and misinformation.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "New York Times World"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon Le Monde International, Aux Fidji, une épidémie de VIH favorisée par l’essor d’une drogue de synthèse",
+          "resume": "L’archipel mélanésien doit affronter l’une des progressions du virus les plus rapides au monde à la suite de l’introduction de la métamphétamine, un produit aussi puissant qu’addictif, souvent consommé sans précautions d’hygiène.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon 20 Minutes, Guerre en Ukraine : Les bombardements meurtriers reprennent, des familles ukrainiennes évacuées",
+          "resume": "« 20 Minutes » fait le point pour vous tous les soirs sur le conflit. Ce jeudi, les frappes ont repris au lendemain d’une tentative de relance de diplomatie, faisant au moins neuf victimes en Ukraine",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
@@ -149,36 +150,31 @@
       ]
     },
     "marches": {
-      "resume_court": "Les marchés ont clôturé en hausse, les indices européens et américains ont progressé, tandis que les matières premières ont connu des variations modérées.",
+      "resume_court": "Les principaux indices mondiaux ont clôturé en baisse, notamment à cause des inquiétudes sur l’intelligence artificielle et des hausses de taux d’intérêt.",
       "mouvements_notables": [
         {
           "nom": "CAC 40",
-          "variation_pct": 1.06,
-          "explication": "EssilorLuxottica s'envole après ses résultats"
+          "variation_pct": -1.39,
+          "explication": "les inquiétudes sur l’intelligence artificielle"
+        },
+        {
+          "nom": "S&P 500",
+          "variation_pct": -1.21,
+          "explication": "les inquiétudes sur l’intelligence artificielle"
         },
         {
           "nom": "Nasdaq",
-          "variation_pct": 1.05,
-          "explication": null
+          "variation_pct": -2.6,
+          "explication": "les inquiétudes sur l’intelligence artificielle"
         },
         {
           "nom": "DAX",
-          "variation_pct": 1.35,
-          "explication": "EssilorLuxottica s'envole après ses résultats"
-        },
-        {
-          "nom": "Euro Stoxx 50",
-          "variation_pct": 1.4,
-          "explication": "EssilorLuxottica s'envole après ses résultats"
-        },
-        {
-          "nom": "Pétrole (Brent)",
-          "variation_pct": 1.68,
+          "variation_pct": -1.07,
           "explication": null
         },
         {
-          "nom": "Or",
-          "variation_pct": -1.01,
+          "nom": "Euro Stoxx 50",
+          "variation_pct": -1.94,
           "explication": null
         }
       ]
@@ -186,36 +182,36 @@
     "sport": {
       "items": [
         {
-          "sport": "football",
-          "texte": "Lens a perdu 0-3 contre le Club Bruges en Ligue des champions, une lourde défaite après un premier temps dominateur, et compte trois points après trois journées."
+          "sport": "formule 1",
+          "texte": "Kimi Antonelli, pilote italien de Mercedes, aura l'occasion à Austin (Texas) de remporter une course et de devenir le plus jeune champion du monde de l'histoire. Il a indiqué en conférence de presse vouloir garder le suspense sur ses ambitions."
         },
         {
           "sport": "football",
-          "texte": "Après un premier temps dominateur, les Lensois ont cédé à Bruges et quitté la Belgique avec une défaite 0-3, suscitant des regrets."
+          "texte": "Le Forge FC, équipe de la Première Ligue locale, a remporté le Championnat canadien contre le CF Montréal (1-1, 4-2 aux tirs au but) grâce à l'ancien gardien de Montpellier Dimitry Bertaud."
         },
         {
           "sport": "football",
-          "texte": "Declan Rice a inscrit un but tardif pour offrir un match nul à Arsenal contre le Bayern Munich, tandis que Bukayo Saka a quitté le terrain avec une blessure précoce."
+          "texte": "Le principal groupe d'ultras de Lens, les Red Tigers, a condamné les jets de fumigènes lors du match de Ligue des champions Bruges-Lens, qui s'est soldé par une victoire 3-0 de Bruges."
+        },
+        {
+          "sport": "football",
+          "texte": "Bournemouth a battu l'AC Milan 3-0, illustrant la domination des clubs de Premier League face à leurs homologues européens."
+        },
+        {
+          "sport": "golf",
+          "texte": "Antoine Rozner et Frédéric Lacroix sont arrivés troisièmes à -4 après le premier tour du Genesis Championship en Corée du Sud, se reclassant provisoirement dans le top 70 de la Race to Dubai, qui assure la qualification pour les play‑offs."
         },
         {
           "sport": "tennis",
-          "texte": "Moïse Kouame a été battu par Lorenzo Musetti 6-4, 6-4 après une douleur à la cuisse, Musetti se qualifiant pour les quarts de finale du Grand Prix Auvergne‑Rhône‑Alpes."
+          "texte": "Elena Rybakina s'est qualifiée pour les quarts de finale du WTA 500 de Ningbo (Chine) après l'abandon de Polina Kudermetova (5-0, ab.), enregistrant ainsi sa première victoire depuis son accession à la première place mondiale."
         },
         {
-          "sport": "tennis",
-          "texte": "Tommy Paul a vaincu Benjamin Bonzi 6-4, 6-7 (4), 6-3 pour accéder aux quarts de finale de l’ATP 250 de Lyon, où il affrontera Corentin Moutet."
+          "sport": "cyclisme",
+          "texte": "Le tracé de la 114e édition du Tour de France 2027 a été présenté, avec un départ en Écosse et une arrivée sur les Champs‑Élysées, où le Slovène Tadej Pogacar tentera d'obtenir un sixième succès, record absolu, sur la Grande Boucle."
         },
         {
-          "sport": "tennis",
-          "texte": "Adrian Mannarino a battu Andrey Rublev 6-4, 3-6, 6-3 à Almaty, se qualifiant pour les quarts de finale et rejoignant Nikoloz Basilashvili."
-        },
-        {
-          "sport": "basketball",
-          "texte": "La bague de champion des New York Knicks révèle un modèle du Madison Square Garden à l’intérieur, design très apprécié."
-        },
-        {
-          "sport": "rugby",
-          "texte": "Tommaso Menoncello est forfait pour le Championnat des nations en raison d’une blessure à l’épaule, l’Italie devra se passer de ce centre de Toulouse."
+          "sport": "cyclisme",
+          "texte": "Le parcours du Tour de France Femmes 2027 a été détaillé, comprenant 21 étapes du Grand Départ en Écosse à l'arrivée sur les Champs‑Élysées, avec un contre‑la‑montre par équipes sur le puy de Dôme."
         }
       ],
       "rien_a_signaler": false,
@@ -237,326 +233,310 @@
       ]
     },
     "science": {
-      "mode": "decouverte",
-      "titre": "Salt marshes tested in a giant wave machine: lessons for coastal protection",
-      "contenu_markdown": "Un groupe de scientifiques a placé un plateau de marais salants dans une machine capable de générer de gigantesques vagues. L’expérience, publiée dans *Nature* le 21 octobre 2026 (doi 10.1038/s41586-026-11145-8), a permis de mesurer comment ces écosystèmes peuvent amortir les vagues et protéger les zones intérieures.  \n\nLes résultats montrent que les plates‑formes de marais résistent à l’érosion même lorsqu’elles sont soumises à des vagues extrêmes. Cependant, les plantes qui recouvrent le sol réduisent l’efficacité d’atténuation des vagues. Cette diminution est surtout notable lorsqu’on observe des vagues dont la hauteur dépasse 1 m, car l’attaque des vagues endommage progressivement la végétation. En revanche, sur les côtes de marais à faible énergie, où les vagues restent en dessous de 1 m, la végétation contribue de façon significative à amortir les ondes.  \n\nCette découverte souligne l’importance de préserver la végétation des marais pour maintenir leur rôle de protection naturelle contre les tempêtes. Elle indique également que la capacité d’atténuation est limitée lorsqu’on fait face à des vagues très puissantes, ce qui suggère que les marais seuls ne suffiront pas à protéger les zones côtières contre les événements extrêmes.  \n\nDes questions subsistent quant à la façon dont les marais peuvent être restaurés ou gérés pour maximiser leur efficacité face aux vagues de grande hauteur, ainsi qu’à l’impact à long terme de l’endommagement progressif de la végétation. Les données détaillées sont disponibles dans l’article original.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03376-6\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Champ magnétique\n\n## Introduction\nLe champ magnétique est une notion fondamentale en physique, omniprésente dans notre quotidien sans que nous en ayons toujours conscience. Que ce soit pour comprendre le fonctionnement d’un moteur électrique, le comportement d’une boussole ou même les phénomènes cosmiques comme les aurores boréales, ce concept joue un rôle clé. Mais qu’est-ce exactement qu’un champ magnétique ? Comment se manifeste-t-il et quelles sont ses sources ? Pour répondre à ces questions, plongeons dans les principes de base de cette force invisible, décrite par les lois de l’électromagnétisme.\n\n---\n\n## Pourquoi le sujet est important\nLe champ magnétique est essentiel pour expliquer de nombreux phénomènes naturels et technologiques. Il permet de modéliser des interactions invisibles mais puissantes, comme celles entre des aimants ou entre des courants électriques. Sans lui, des technologies modernes comme les générateurs électriques, les transformateurs ou les disques durs n’existeraient pas. De plus, il intervient dans des domaines variés :\n- **Physique fondamentale** : il est lié au champ électrique via les équations de Maxwell, formant ainsi la base de l’électromagnétisme.\n- **Géophysique** : le champ magnétique terrestre protège la vie en déviant les particules solaires nocives.\n- **Médecine** : l’imagerie par résonance magnétique (IRM) utilise des champs magnétiques intenses pour explorer le corps humain.\nComprendre ce champ, c’est donc saisir un pilier de la science moderne.\n\n---\n\n## Explication du phénomène\nUn champ magnétique est un **champ vectoriel**, ce qui signifie qu’il possède trois caractéristiques en chaque point de l’espace :\n1. **Une norme** (ou intensité) : mesurée en teslas (T), elle indique la force du champ.\n2. **Une direction** : orientée selon les lignes de champ, visibles par exemple autour d’un aimant.\n3. **Un sens** : déterminé par la règle de la main droite pour un courant électrique.\n\nSa présence se manifeste de deux manières principales :\n- **Sur les charges électriques en mouvement** : il exerce une **force de Lorentz**, perpendiculaire à la fois à la direction du champ et à celle du mouvement des charges. C’est cette force qui fait dévier un électron dans un champ magnétique ou qui permet à un moteur électrique de tourner.\n- **Sur certains matériaux** : selon leur nature, ils peuvent être attirés (ferromagnétisme, comme dans le fer), faiblement attirés (paramagnétisme) ou repoussés (diamagnétisme, comme dans le cuivre).\n\n---\n## Fonctionnement / mécanismes\nLes champs magnétiques trouvent leurs origines dans deux sources principales :\n1. **Les aimants permanents** (comme une boussole ou un aimant de réfrigérateur), où les atomes sont déjà organisés pour créer un champ spontané.\n2. **Les courants électriques** : un fil parcouru par un courant génère un champ magnétique autour de lui, décrit par la **loi de Biot et Savart** (en régime statique, c’est-à-dire lorsque le courant ne varie pas dans le temps).\n\n## Comment se propage-t-il ?\nEn régime statique (courants ou aimants stables), le champ magnétique existe indépendamment d’un champ électrique. Cependant, si le courant ou le champ varie (par exemple dans une bobine alimentée par un courant alternatif), il engendre à son tour un **champ électrique** : c’est le principe de l’**induction électromagnétique**, décrit par la loi de Faraday. Cette interaction mutuelle entre champs magnétique et électrique est au cœur de l’électrodynamique.\n\n## Deux grandeurs clés pour le décrire\nPour quantifier précisément un champ magnétique, les physiciens utilisent deux vecteurs distincts :\n- **Le champ d’induction magnétique (noté B)** : il mesure la \"densité de flux magnétique\" et est responsable des effets à distance (comme l’induction). Son unité est le tesla (T).\n- **Le champ d’aimantation (noté H)** : il décrit l’\"excitation magnétique\" locale dans un matériau, c’est-à-dire comment la matière répond à un champ externe. Il s’exprime en ampères par mètre (A/m) et est surtout utilisé pour étudier les milieux continus (comme les bobinages ou les noyaux ferromagnétiques).\n\nCes deux grandeurs sont liées par la **susceptibilité magnétique** du matériau, qui indique sa capacité à être aimanté. Par exemple, le fer a une susceptibilité très élevée, ce qui explique pourquoi il est fortement attiré par un aimant.\n\n## Données et résultats scientifiques\n\nLe champ magnétique, noté **B**, est quantifié en teslas (T). Les valeurs typiques observées sont :  \n\n- Les champs créés dans les bobines de laboratoire, réglables de quelques milliteslas à plusieurs teslas en fonction du courant appliqué.  \n\nCes mesures confirment que le champ **B** possède à chaque point de l’espace une norme, une direction et un sens, conformément à la définition vectorielle.  \n\n## Ce que les scientifiques savent\n\n- **Nature vectorielle** : **B** est un champ vectoriel, caractérisé par une intensité (norme), une direction et un sens.  \n- **Sources** : Les deux sources fondamentales sont les courants électriques (déplacement d’ensemble de charges) et les aimants permanents.  \n- **Relations fondamentales** : En régime statique, la loi de Biot‑Savart permet de calculer **B** à partir de la distribution de courant. Les équations de Maxwell, sous forme des équations de Jefimenko, donnent la relation générale entre **B**, les courants et les variations temporelles.  \n- **Propagation** : Le champ magnétique se propage à la vitesse de la lumière c dans le vide, comme le prédit la théorie de l’électromagnétisme.  \n- **Interaction avec la matière** : La réponse d’un matériau à **B** est décrite par sa susceptibilité magnétique, qui détermine les phénomènes de diamagnétisme, paramagnétisme ou ferromagnétisme.  \n- **Terminologie** : Deux champs vectoriels apparentés existent : **B**, la densité de flux magnétique (induction magnétique, exprimée en teslas), et **H**, le champ d’aimantation (exprimé en ampères par mètre). Dans la plupart des contextes fondamentaux, le terme « champ magnétique » désigne **B**.  \n\n## Ce qui reste incertain\n\nLes connaissances présentées sont établies pour le régime statique ou quasi‑statique. Dans les situations où les champs varient très rapidement (par exemple, lors d’interactions ultrarapides entre ondes électromagnétiques et matière dense), certaines approximations classiques (comme la loi de Biot‑Savart) ne suffisent plus et nécessitent l’usage complet des équations de Maxwell. Les détails quantitatifs de ces phénomènes à très haute fréquence restent l’objet de recherches actives, notamment dans le domaine de la photonique magnétique et des matériaux métamatériaux.  \n\n## Limites et controverses éventuelles\n\n- **Distinction B/H** : Bien que les normes internationales recommandent de réserver le terme « champ magnétique » à **H**, la pratique courante en physique fondamentale utilise **B**. Cette dualité terminologique peut prêter à confusion, mais elle n’est pas source de controverse scientifique majeure.  \n- **Modélisation des milieux complexes** : Dans les milieux anisotropes ou non linéaires, la relation entre **B**, **H** et la susceptibilité magnétique devient plus compliquée. Les modèles classiques restent approximatifs et font l’objet de débats quant à leur portée exacte.  \n\n## Conclusion\n\nLe champ magnétique **B** constitue une grandeur vectorielle fondamentale de l’électromagnétisme, caractérisée par sa norme, sa direction et son sens. Il résulte de courants électriques et d’aimants permanents, se propage à la vitesse de la lumière et interagit avec la matière selon la susceptibilité magnétique. Les lois classiques (Biot‑Savart, équations de Maxwell) décrivent avec précision son comportement dans les régimes statiques et quasi‑statiques. Les incertitudes subsistent principalement dans les régimes très dynamiques ou dans les milieux fortement anisotropes, où des modèles plus avancés sont nécessaires. Malgré quelques nuances terminologiques, le cadre théorique du champ magnétique est solidement établi et constitue un pilier de la physique moderne.\n\n## Sources\n- Wikipédia (fr) — Champ magnétique — https://fr.wikipedia.org/wiki/Champ_magn%C3%A9tique\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
-      "phrases_retirees_garde_fou": 4,
-      "nb_mots": 1503,
+      "mode": "approfondi",
+      "titre": "Dioxyde de carbone",
+      "contenu_markdown": "## Introduction\nLe dioxyde de carbone, appelé aussi gaz carbonique ou anhydride carbonique, est un composé inorganique dont la formule chimique est CO₂. La molécule possède une structure linéaire de la forme O=C=O. À la pression atmosphérique et à la température ambiante, il se présente comme un gaz incolore, inodore, à la saveur piquante.\n\n## Pourquoi le sujet est important\nLe CO₂ est un élément fondamental du cycle du carbone sur notre planète. Il est utilisé par les végétaux dans l’anabolisme pour produire de la biomasse à travers la photosynthèse, processus qui consiste à réduire le CO₂ par l’eau grâce à l’énergie lumineuse captée par la chlorophylle, en libérant de l’oxygène. À l’inverse, le CO₂ est libéré par le catabolisme des plantes, des animaux, des fungi et des micro-organismes, notamment à travers le cycle de Krebs.  \nLe CO₂ est également produit par la combustion des énergies fossiles telles que le charbon, le gaz naturel et le pétrole, ainsi que par la combustion de toutes les matières organiques en général. Il est un sous-produit indésirable dans les processus industriels à grande échelle.  \nDes quantités significatives de CO₂ sont rejetées par les volcans et d’autres phénomènes géothermiques tels que les geysers.  \nEn mars 2025, l’atmosphère terrestre comportait 428 ppmv (parties par million en volume) de CO₂, soit 0,0428 %. Cette teneur était de 283 ppmv en 1839, soit une augmentation globale d’environ 51 % en 186 ans.  \nLe CO₂ est un gaz à effet de serre majeur, transparent en lumière visible mais absorbant dans le domaine infrarouge, de sorte qu’il tend à bloquer la réémission vers l’espace de l’énergie thermique reçue au sol sous l’effet du rayonnement solaire. Il est responsable d’environ 26 % de l’effet de serre à l’œuvre dans l’atmosphère terrestre (la vapeur d’eau assurant 60 %). L’augmentation de sa concentration est responsable de l’essentiel du changement climatique constaté à l’échelle de notre planète depuis les dernières décennies du XXe siècle. Par ailleurs, l’acidification des océans résultant de la dissolution du dioxyde de carbone atmosphérique pourrait compromettre la survie de nombreux organismes marins avant la fin du XXIe siècle.\n\n## Explication du phénomène\nLe CO₂ est libéré dans l’atmosphère par plusieurs mécanismes. La combustion des combustibles fossiles et de la matière organique libère directement du CO₂. La respiration des organismes vivants, ainsi que la décomposition des matières organiques, produisent également du CO₂. Les volcans et les geysers émettent du CO₂ à partir de sources géothermiques.  \nDans l’atmosphère, le CO₂ participe à l’effet de serre en absorbant les longueurs d’onde infrarouges, ce qui entraîne un réchauffement de la surface terrestre.  \nDans les océans, le CO₂ se dissout dans l’eau et forme de l’acide carbonique. Ce processus contribue à l’acidification des océans, un phénomène qui peut affecter la vie marine.\n\n## Photosynthèse\nLes végétaux réduisent le CO₂ en utilisant l’énergie lumineuse captée par la chlorophylle, en libérant de l’oxygène et en produisant des oses, principalement du glucose, via le cycle de Calvin.  \n## Catabolisme\nLes organismes vivants oxydent les lipides et les glucides en présence d’oxygène, produisant de l’eau et du CO₂, ainsi que de l’énergie sous forme d’ATP et de NADH + H⁺.  \n## Solubilité aqueuse\nLe CO₂ se dissout dans l’eau et y forme de l’acide carbonique (H₂CO₃) selon l’équation CO₂(aq) + H₂O ⇌ H₂CO₃(aq), avec une constante d’équilibre Kh ≈ 1,70 × 10⁻³ à 25 °C.  \nLorsque le CO₂ se dissout dans une solution aqueuse basique, la base déprotone l’acide carbonique pour former un ion hydrogénocarbonate (HCO₃⁻), puis un ion carbonate (CO₃²⁻). Cette réaction augmente considérablement la solubilité du CO₂.  \nLe carbonate de potassium (K₂CO₃) a une solubilité de 1,12 kg l⁻¹ d’eau à 20 °C.  \nDans l’eau, le CO₂ peut également former des clathrates, des cages d’eau qui piégent le gaz. Cette propriété est étudiée comme un moyen possible de séparation industrielle du CO₂ contenu dans un gaz en pré- ou postcombustion, ainsi que comme un moyen envisagé de séquestration industrielle ou de stockage géologique.  \n## Phase\nÀ la pression atmosphérique, le CO₂ se sublime à −78,5 °C (passage de l’état solide à l’état gazeux) mais ne fond pas. La phase liquide ne peut exister qu’à une pression minimale de 519 kPa (5,12 atm), dans un intervalle de température allant de −56,6 °C (point triple) à 31,1 °C au maximum à 7,38 MPa (72,8 atm) (point critique).  \nIl existe au moins cinq phases solides moléculaires (à basse pression, moins de 30 à 60 GPa) et trois phases solides polymériques (à pressions plus élevées) du CO₂ :  \n- Phases moléculaires : I (glace sèche, jusqu’à 800 K et 11–12 GPa), II (entre 400 et 5–600 K et une pression de 12 à environ 50 GPa), III (au-delà de 12 GPa et moins de 500 K), IV (au-delà de 11 GPa et plus de 500 K), VII (de 600 à 900 K, jusqu’à 1000 K en incluant la partie supercritique, et 11 à 20 GPa).  \n- Phases polymériques : V (plus de 30 GPa et plus d’environ 1300 K), VI (température comprise entre environ 500 K et 1300 K et pression supérieure à 30 GPa), et une forme amorphe, à moins de 500 K et plus de 50 GPa.\n\n## Données et résultats scientifiques\n\n- En mars 2025, la concentration atmosphérique de dioxyde de carbone était de **428 ppmv** (0,0428 %).  \n- Cette valeur était de **283 ppmv** en 1839, d’après des carottes de glace prélevées en Antarctique, ce qui représente une **augmentation d’environ 51 %** sur 186 ans.  \n- Le CO₂ représente **environ 26 %** de l’effet de serre total de l’atmosphère terrestre, la vapeur d’eau en assurant 60 %.  \n- Le point triple du CO₂ se situe à **−56,6 °C** et 519 kPa ; le point critique à **31,1 °C** et 7,38 MPa.  \n- La constante d’équilibre de dissolution dans l’eau à 25 °C est **Kh ≈ 1,70 × 10⁻³** (rapport des concentrations de H₂CO₃ et de CO₂).  \n\nCes chiffres proviennent des mesures atmosphériques, des analyses de carottes de glace et des propriétés physico‑chimiques établies par la communauté scientifique.\n\n## Ce que les scientifiques savent\n\n- **Rôle biogéochimique** : Le CO₂ est un réactif central du cycle du carbone. Il est fixé par les plantes lors de la photosynthèse (réduction du CO₂ en glucose via le cycle de Calvin) et libéré lors du catabolisme (respiration cellulaire, cycle de Krebs) des organismes vivants.  \n- **Sources anthropiques** : La combustion des énergies fossiles (charbon, gaz naturel, pétrole) et la combustion de matières organiques génèrent la majeure partie du CO₂ additionnel observé depuis la révolution industrielle.  \n- **Sources naturelles** : Volcans, geysers et autres phénomènes géothermiques libèrent également du CO₂, mais à des échelles beaucoup plus modestes que les émissions humaines actuelles.  \n- **Effet de serre** : En absorbant le rayonnement infrarouge réémis par la surface terrestre, le CO₂ retient de l’énergie thermique, contribuant ainsi à l’effet de serre. Son augmentation est identifiée comme le principal facteur du réchauffement climatique observé depuis la fin du XXᵉ siècle.  \n- **Acidification des océans** : Le CO₂ dissous dans l’eau de mer forme de l’acide carbonique, diminuant le pH des océans. Cette acidification menace la calcification des organismes marins (coraux, coquillages, certains phytoplanctons).  \n- **Propriétés physiques** : À pression atmosphérique, le CO₂ subit une sublimation à **−78,5 °C** sans passer par l’état liquide. La phase liquide n’existe que sous pressions supérieures à 5,12 atm et dans une plage de température limitée.  \n- **Phases solides** : Sous haute pression, le CO₂ adopte plusieurs phases cristallines (glace sèche, phases moléculaires I‑IV, VII, ainsi que des phases polymériques V‑VI).  \n\n## Ce qui reste incertain\n\n- **Projection de l’acidification océanique** : Bien que le mécanisme de dissolution du CO₂ dans l’eau soit bien compris, les conséquences précises sur la biodiversité marine à l’échelle du XXIᵉ siècle restent sujettes à des incertitudes, notamment en raison de la complexité des interactions écologiques.  \n- **Quantification exacte des sources naturelles** : Les contributions précises des volcans et des phénomènes géothermiques au budget global de CO₂ sont difficiles à mesurer avec précision, surtout sur des échelles de temps géologiques.  \n- **Comportement à très haute pression** : Les propriétés exactes des phases polymériques du CO₂ (V, VI) à des pressions et températures extrêmes sont encore étudiées, notamment pour leurs implications potentielles en stockage géologique.  \n\n## Limites et controverses éventuelles\n\n- **Impact climatique futur** : Bien que le rôle du CO₂ dans le réchauffement climatique soit largement accepté, les rétroactions climatiques (par ex. modification de la couverture nuageuse, changements dans les cycles biogéochimiques) introduisent des marges d’incertitude dans les modèles climatiques.  \n- **Effet sur la santé humaine** : Le texte source ne fournit pas d’informations détaillées sur les effets directs du CO₂ sur la santé à des concentrations typiques d’environnement, ce qui laisse la question ouverte à la recherche médicale.  \n\n## Conclusion\n\nLe dioxyde de carbone occupe une place centrale dans le cycle du carbone, tant du point de vue biologique que géologique. Les mesures montrent une hausse marquée de sa concentration atmosphérique depuis le XIXᵉ siècle, corrélée à l’augmentation des émissions humaines. Cette hausse renforce l’effet de serre, contribue au réchauffement climatique et entraîne l’acidification des océans, avec des implications majeures pour les écosystèmes terrestres et marins.  \n\nLes connaissances actuelles permettent de quantifier les concentrations, les propriétés physiques et le rôle du CO₂ dans les processus climatiques. La poursuite des recherches dans ces domaines est essentielle pour affiner les stratégies d’atténuation et d’adaptation au changement climatique.\n\n## Sources\n- Wikipédia (fr) — Dioxyde de carbone — https://fr.wikipedia.org/wiki/Dioxyde_de_carbone\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 2,
+      "nb_mots": 1599,
+      "sujet_id": "co2",
+      "origine": "encyclopedie",
       "matiere_source": "suffisante",
       "textes_sources_audit": [
         {
-          "source": "Nature News",
-          "titre": "Scientists put a salt marsh in a giant wave-machine: here's what they learned",
-          "resume": "Nature, Published online: 21 October 2026; doi:10.1038/d41586-026-03376-6 Experiment shows how these ecosystems could protect coastlines from huge storms — plus, new evidence hints at what Denisovans might have looked like."
-        },
-        {
-          "source": "Nature News",
-          "titre": "Can plants defend coasts against storms?",
-          "resume": "Nature, Published online: 21 October 2026; doi:10.1038/d41586-026-03063-6 Salt-marsh plants can protect inland areas against huge waves — but seemingly only up to a point, and big storms cause progressive damage."
-        },
-        {
-          "source": "Nature News",
-          "titre": "The contribution of salt marshes to wave attenuation during extreme storms",
-          "resume": "Nature, Published online: 21 October 2026; doi:10.1038/s41586-026-11145-8 Salt marsh platforms resist erosion under extreme waves, but vegetation damage reduces wave attenuation; substantial wave attenuation by vegetation is mainly limited to low-energy marsh coasts with waves below 1 m."
-        },
-        {
           "source": "Wikipédia (fr)",
-          "titre": "Champ magnétique",
-          "resume": "En physique, dans le domaine de l'électromagnétisme, le champ magnétique est une grandeur ayant le caractère d'un champ vectoriel, c'est-à-dire caractérisée par la donnée d'une norme, d’une direction et d’un sens, définie en tout point de l'espace et permettant de modéliser et quantifier les effets magnétiques du courant électrique ou des matériaux magnétiques comme les aimants permanents.\nLa présence du champ magnétique se traduit par l'existence d'une force agissant sur les charges électriques en mouvement (dite force de Lorentz) et par divers effets affectant certains matériaux (diamagnétisme, paramagnétisme, ferromagnétisme, etc.). La grandeur qui détermine l'interaction entre un matériau et un champ magnétique est la susceptibilité magnétique.\nLes deux sources de champ magnétique sont les aimants permanents et le courant électrique (c'est-à-dire le déplacement d'ensemble de charges électriques). La relation directe liant le champ magnétique avec ses sources est donnée par les équations de Panofsky-Phillips ainsi que par les équations de Jefimenko, qui sont les solutions générales des équations de Maxwell. Ces équations prennent notamment en compte le fait que le champ magnétique se propage dans l'espace à la vitesse de la lumière dans le vide, notée c. Si l'on se place en régime statique, la loi de Biot et Savart suffit à exprimer le champ magnétique en fonction de ses sources.\nSauf exception, cet article traite du cas du régime statique ou indépendant du temps, pour lequel le champ magnétique existe indépendamment de tout champ électrique, soit en pratique celui créé par les aimants ou les courants électriques permanents. Toutefois, en régime variable, c'est-à-dire pour des courants électriques non permanents, ou des champs électriques variables, le champ magnétique créé, lui-même variable, est la source d'un champ électrique, et donc ne peut être considéré de façon indépendante (cf. champ électromagnétique).\n\nTerminologie\nDeux champs vectoriels apparentés servent en physique à décrire les phénomènes magnétiques et peuvent de ce fait prétendre au nom générique de « champ magnétique » :\n\nl'un, noté \n  \n    \n      \n        \n          \n            \n              B\n              →\n            \n          \n        \n      \n    \n    {\\displaystyle {\\vec {B}}}\n  \n, décrit la « densité de flux magnétique » dans l'espace, qui est à l'origine des effets à distance du magnétisme, et notamment du phénomène d'induction électromagnétique, ce qui fait que ce champ est aussi nommé induction magnétique. Il s'exprime en teslas ;\nl'autre, noté \n  \n    \n      \n        \n          \n            \n              H\n              →\n            \n          \n        \n      \n    \n    {\\displaystyle {\\vec {H}}}\n  \n, qui est en pratique plutôt utilisé dans l'étude de l'électromagnétisme des milieux continus, décrit au niveau local l'« aimantation » propre de la matière, ou son « excitation magnétique » sous l'effet d'un champ électromagnétique externe (dont l'effet global confère en particulier à un corps donné un moment magnétique d'ensemble). Il s'exprime en ampères par mètre (de symbole A/m ou A m−1).\nLorsqu'il est nécessaire de faire la différence entre les deux, le champ \n  \n    \n      \n        \n          \n            \n              B\n              →\n            \n          \n        \n      \n    \n    {\\displaystyle {\\vec {B}}}\n  \n peut être qualifié de « champ d'induction magnétique » et le champ \n  \n    \n      \n        \n          \n            \n              H\n              →\n            \n          \n        \n      \n    \n    {\\displaystyle {\\vec {H}}}\n  \n de « champ d'aimantation » ou de « champ d'excitation magnétique ». Cette nomenclature peut être comparée à d'autres champs homologues; le champ d'induction électrique \n  \n    \n      \n        \n          \n            \n              D\n              →\n            \n          \n        \n      \n    \n    {\\displaystyle {\\vec {D}}}\n  \n et le champ électrique \n  \n    \n      \n        \n          \n            \n              E\n              →\n            \n          \n        \n      \n    \n    {\\displaystyle {\\vec {E}}}\n  \n, qui sont proportionnels, dans un milieu linéaire, homogène et isotrope comme le vide.\nBien que les normes internationales de terminologie prescrivent de réserver l’appellation de « champ magnétique » au seul champ vectoriel \n  \n    \n      \n        \n          \n            \n              H\n              →\n            \n          \n        \n      \n    \n    {\\displaystyle {\\vec {H}}}\n  \n, en physique fondamentale, le terme pris absolument désigne le plus souvent le champ vectoriel \n  \n    \n      \n        \n          \n            \n              B\n              →\n            \n          \n        \n      \n    \n    {\\displaystyle {\\vec {B}}}\n  \n, en dehors du cas spécifique de l'étude des milieux continus. C'est bien de ce champ \n  \n    \n      \n        \n          \n            \n              B\n              →\n            \n          \n        \n      \n    \n    {\\displaystyle {\\vec {B}}}\n  \n qu'il est question dans le présent article.\n\nDescription"
+          "titre": "Dioxyde de carbone",
+          "resume": "Le dioxyde de carbone, aussi appelé gaz carbonique ou anhydride carbonique, est un composé inorganique dont la formule chimique est CO2, la molécule ayant une structure linéaire de la forme O=C=O. Il se présente, sous les conditions normales de température et de pression, comme un gaz incolore, inodore, à la saveur piquante.\nLe CO2 est utilisé par l'anabolisme des végétaux pour produire de la biomasse à travers la photosynthèse, processus qui consiste à réduire le dioxyde de carbone par l'eau, grâce à l'énergie lumineuse reçue du Soleil et captée par la chlorophylle, en libérant de l'oxygène pour produire des oses, et en premier lieu du glucose par le cycle de Calvin. Le CO2 est libéré, à travers le cycle de Krebs, par le catabolisme des plantes, des animaux, des fungi (mycètes, ou champignons) et des micro-organismes. Ce catabolisme consiste notamment à oxyder les lipides et les glucides en eau et en dioxyde de carbone grâce à l'oxygène de l'air pour produire de l'énergie et du pouvoir réducteur, sous forme respectivement d'ATP et de NADH + H+. Le CO2 est par conséquent un élément fondamental du cycle du carbone sur notre planète. Il est également produit par la combustion des énergies fossiles telles que le charbon, le gaz naturel et le pétrole, ainsi que par celle de toutes les matières organiques en général. C'est un sous-produit indésirable dans les processus industriels à grande échelle.\nDes quantités significatives de CO2 sont par ailleurs rejetées par les volcans et autres phénomènes géothermiques tels que les geysers.\nEn mars 2025, l'atmosphère terrestre comportait 428 ppmv (parties par million en volume) de CO2, soit 0,0428 %. Cette teneur était de 283 ppmv en 1839 d'après des carottes de glace prélevées dans l'Antarctique, soit une augmentation globale d'environ 51 % en 186 ans.\nLe CO2 est un gaz à effet de serre majeur, transparent en lumière visible mais absorbant dans le domaine infrarouge, de sorte qu'il tend à bloquer la réémission vers l'espace de l'énergie thermique reçue au sol sous l'effet du rayonnement solaire. Il est responsable d'environ 26 % de l'effet de serre à l'œuvre dans l'atmosphère terrestre (la vapeur d'eau en assurant 60 %) ; l'augmentation de sa concentration est responsable de l'essentiel du changement climatique constaté à l'échelle de notre planète depuis les dernières décennies du XXe siècle. Par ailleurs, l'acidification des océans résultant de la dissolution du dioxyde de carbone atmosphérique pourrait compromettre la survie de nombreux organismes marins avant la fin du XXIe siècle.\n\nCaractéristiques physico-chimiques\nÀ la pression atmosphérique, il se sublime à −78,5 °C (passage de l'état solide à l'état gazeux), mais ne fond pas (passage de l'état solide à l'état liquide).\nLa phase liquide ne peut exister qu'à une pression minimale de 519 kPa (soit 5,12 atm), et dans un intervalle de température allant de −56,6 °C (point triple) à 31,1 °C au maximum à 7,38 MPa (soit 72,8 atm) (point critique).\n\nIl existerait au moins cinq phases solides moléculaires (existant à « basse » pression, moins de 30 à 60 GPa) et trois phases solides polymériques (aux pressions plus élevées) du CO2 :\n\nphases moléculaires :\nI : la « glace sèche », jusqu'à 800 K et 11-12 GPa\nII : entre 400 et 5-600 K et une pression de 12 à environ 50 GPa\nIII : au-delà de 12 GPA et moins de 500 K\nIV : au-delà de 11 GPa et plus de 500 K\nVII : de 600 à 900 K (jusqu'à 1000 K en incluant la partie supercritique) et 11 à 20 GPa\nphases polymériques :\nV : plus de 30 GPa et plus d'environ 1 300 K\nVI : température comprise entre environ 500 K et 1 300 K et pression supérieure à de 30 (à 1300 K) à 50 GPa (à 500 K)\namorphe, à moins de 500 K et plus de 50 GPa\n\nSolubilité aqueuse\nLe CO2 se dissout dans l’eau et y forme de l’acide carbonique H2CO3 :\nCO2 (aq) + H2O (l)  \n  \n    \n      \n        ⇌\n      \n    \n    {\\displaystyle \\rightleftharpoons }\n  \n  H2CO3 (aq), avec Kh = [H2CO3] / [CO2] ≈ 1,70 × 10−3 à 25 °C.\nIl est également liposoluble (soluble dans les corps gras).\nL’acide carbonique n’est que modérément stable et il se décompose facilement en H2O et CO2. En revanche, lorsque le dioxyde de carbone se dissout dans une solution aqueuse basique (soude, potasse…), la base déprotone l’acide carbonique pour former un ion hydrogénocarbonate HCO–3, aussi appelé ion bicarbonate, puis un ion carbonate CO2–3. De cette façon, la solubilité du CO2 est considérablement augmentée. Le carbonate de potassium K2CO3 a par exemple une solubilité de 1,12 kg/l d'eau à 20 °C.\nC'est ainsi que le calcaire se dissout dans l'eau, dans la plage de pH dans laquelle l'hydrogénocarbonate acide est stable, en produisant une solution d'hydrogénocarbonate(s) (de calcium et de magnésium…). Il est donc susceptible de précipiter lorsque le CO2 dissous est dégazé, comme dans la formation des stalagmites et des stalactites. Le calcaire a ainsi, en présence de CO2, une solubilité qui diminue quand la température augmente, à l'instar des gaz et au contraire de la plupart des solides (dont la solubilité augmente généralement avec la température).\nDans certaines conditions (haute pression + basse température) le CO2 peut être piégé dans des cages d'eau dites clathrates. C'est un des moyens possibles de séparation industrielle du CO2 contenu dans un gaz en pré- ou postcombustion. C'est aussi un des moyens envisagés de séquestration industrielle de CO2 ou de stockage géologique étudié, éventuellement corrélativement à la désalinisation d'eau de mer (il peut théoriquement même être substitué à l'hydrate de méthane).\n\nHistorique des connaissances"
         }
-      ],
-      "nb_mots_decouverte": 264,
-      "nb_mots_approfondi": 1231,
-      "sujet_id": "champ-magnetique",
-      "origine": "encyclopedie"
+      ]
     },
     "citation": {
-      "texte": "L'homme est condamné à être libre.",
-      "auteur": "Jean-Paul Sartre",
-      "source": "L'existentialisme est un humanisme",
-      "annee": 1946
+      "texte": "On ne naît pas femme : on le devient.",
+      "auteur": "Simone de Beauvoir",
+      "source": "Le Deuxième Sexe",
+      "annee": 1949
     },
     "meteo": {
       "villes_detail": [
         {
           "ville": "Antibes",
-          "temperature_actuelle": 14.9,
-          "temperature_max": 21.3,
-          "temperature_min": 14.7,
-          "precipitation_mm": 0.0,
-          "probabilite_pluie_pct": 0,
-          "vent_kmh": 8.5,
-          "vent_max_kmh": 25.2,
-          "rafales_max_kmh": 65.2,
-          "weather_code": 3,
-          "description": "couvert",
+          "temperature_actuelle": 15.6,
+          "temperature_max": 20.1,
+          "temperature_min": 15.3,
+          "precipitation_mm": 2.8,
+          "probabilite_pluie_pct": 94,
+          "vent_kmh": 10.8,
+          "vent_max_kmh": 24.1,
+          "rafales_max_kmh": 47.2,
+          "weather_code": 61,
+          "description": "pluie légère",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 14.9,
-              "temperature_max": 19.4,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 8,
-              "weather_code": 0,
-              "description": "ciel dégagé"
+              "temperature_min": 15.6,
+              "temperature_max": 19.7,
+              "probabilite_pluie_pct": 3,
+              "precipitation_mm": 0.2,
+              "vent_max_kmh": 12,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 20.6,
-              "temperature_max": 21.2,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 8,
-              "weather_code": 3,
-              "description": "couvert"
+              "temperature_min": 17.9,
+              "temperature_max": 20.1,
+              "probabilite_pluie_pct": 94,
+              "precipitation_mm": 2.6,
+              "vent_max_kmh": 14,
+              "weather_code": 61,
+              "description": "pluie légère"
             },
             {
               "label": "Soir",
-              "temperature_min": 17.2,
-              "temperature_max": 19.9,
+              "temperature_min": 16.1,
+              "temperature_max": 19.5,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 8,
-              "weather_code": 3,
-              "description": "couvert"
+              "vent_max_kmh": 24,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             }
           ],
-          "alertes": [
-            "Rafales jusqu'à 65 km/h"
-          ]
+          "alertes": []
         },
         {
           "ville": "Cannes",
-          "temperature_actuelle": 16.1,
-          "temperature_max": 19.6,
+          "temperature_actuelle": 15.0,
+          "temperature_max": 20.1,
           "temperature_min": 15.0,
-          "precipitation_mm": 0.0,
-          "probabilite_pluie_pct": 0,
-          "vent_kmh": 12.3,
-          "vent_max_kmh": 37.7,
-          "rafales_max_kmh": 60.5,
-          "weather_code": 3,
-          "description": "couvert",
+          "precipitation_mm": 3.5,
+          "probabilite_pluie_pct": 97,
+          "vent_kmh": 9.7,
+          "vent_max_kmh": 25.7,
+          "rafales_max_kmh": 41.4,
+          "weather_code": 61,
+          "description": "pluie légère",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 15.1,
+              "temperature_min": 15.0,
               "temperature_max": 18.8,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 12,
-              "weather_code": 0,
-              "description": "ciel dégagé"
+              "probabilite_pluie_pct": 1,
+              "precipitation_mm": 0.1,
+              "vent_max_kmh": 11,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 19.2,
+              "temperature_min": 17.8,
+              "temperature_max": 20.1,
+              "probabilite_pluie_pct": 97,
+              "precipitation_mm": 3.4,
+              "vent_max_kmh": 18,
+              "weather_code": 61,
+              "description": "pluie légère"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 16.0,
               "temperature_max": 19.6,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 16,
-              "weather_code": 3,
-              "description": "couvert"
-            },
-            {
-              "label": "Soir",
-              "temperature_min": 17.1,
-              "temperature_max": 18.9,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 9,
-              "weather_code": 3,
-              "description": "couvert"
+              "vent_max_kmh": 26,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             }
           ],
-          "alertes": [
-            "Rafales jusqu'à 60 km/h"
-          ]
+          "alertes": []
         },
         {
           "ville": "Valbonne",
-          "temperature_actuelle": 11.2,
-          "temperature_max": 19.2,
-          "temperature_min": 10.3,
-          "precipitation_mm": 0.0,
-          "probabilite_pluie_pct": 0,
-          "vent_kmh": 7.4,
-          "vent_max_kmh": 10.2,
-          "rafales_max_kmh": 19.1,
-          "weather_code": 2,
-          "description": "partiellement nuageux",
+          "temperature_actuelle": 11.5,
+          "temperature_max": 16.0,
+          "temperature_min": 8.7,
+          "precipitation_mm": 1.0,
+          "probabilite_pluie_pct": 96,
+          "vent_kmh": 6.0,
+          "vent_max_kmh": 9.7,
+          "rafales_max_kmh": 20.9,
+          "weather_code": 61,
+          "description": "pluie légère",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 11.2,
-              "temperature_max": 17.2,
+              "temperature_min": 11.3,
+              "temperature_max": 15.4,
               "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 7,
-              "weather_code": 1,
-              "description": "plutôt dégagé"
+              "precipitation_mm": 0.1,
+              "vent_max_kmh": 8,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 17.5,
-              "temperature_max": 19.2,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 6,
+              "temperature_min": 13.4,
+              "temperature_max": 16.0,
+              "probabilite_pluie_pct": 96,
+              "precipitation_mm": 0.9,
+              "vent_max_kmh": 10,
               "weather_code": 3,
               "description": "couvert"
             },
             {
               "label": "Soir",
-              "temperature_min": 12.7,
-              "temperature_max": 17.1,
+              "temperature_min": 8.7,
+              "temperature_max": 15.8,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 8,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
+              "vent_max_kmh": 9,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Grasse",
-          "temperature_actuelle": 10.6,
-          "temperature_max": 18.0,
-          "temperature_min": 10.0,
-          "precipitation_mm": 0.0,
-          "probabilite_pluie_pct": 0,
-          "vent_kmh": 9.0,
-          "vent_max_kmh": 10.5,
-          "rafales_max_kmh": 18.0,
-          "weather_code": 2,
-          "description": "partiellement nuageux",
+          "temperature_actuelle": 11.7,
+          "temperature_max": 16.7,
+          "temperature_min": 8.9,
+          "precipitation_mm": 1.2,
+          "probabilite_pluie_pct": 96,
+          "vent_kmh": 8.0,
+          "vent_max_kmh": 10.3,
+          "rafales_max_kmh": 17.6,
+          "weather_code": 61,
+          "description": "pluie légère",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 10.6,
-              "temperature_max": 16.3,
+              "temperature_min": 11.7,
+              "temperature_max": 14.7,
               "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
+              "precipitation_mm": 0.1,
               "vent_max_kmh": 10,
-              "weather_code": 1,
-              "description": "plutôt dégagé"
-            },
-            {
-              "label": "Après-midi",
-              "temperature_min": 16.6,
-              "temperature_max": 18.0,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 7,
               "weather_code": 3,
               "description": "couvert"
             },
             {
+              "label": "Après-midi",
+              "temperature_min": 12.9,
+              "temperature_max": 16.7,
+              "probabilite_pluie_pct": 96,
+              "precipitation_mm": 1.1,
+              "vent_max_kmh": 7,
+              "weather_code": 61,
+              "description": "pluie légère"
+            },
+            {
               "label": "Soir",
-              "temperature_min": 12.4,
-              "temperature_max": 16.0,
+              "temperature_min": 8.9,
+              "temperature_max": 15.5,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 10,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
+              "vent_max_kmh": 9,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             }
           ],
           "alertes": []
         }
       ],
-      "temperature_max_zone": 21.3,
-      "temperature_min_zone": 10.0,
-      "probabilite_pluie_max_pct": 0,
-      "vent_max_kmh": 37.7,
-      "description_dominante": "couvert",
+      "temperature_max_zone": 20.1,
+      "temperature_min_zone": 8.7,
+      "probabilite_pluie_max_pct": 97,
+      "vent_max_kmh": 25.7,
+      "description_dominante": "pluie légère",
       "periodes": [
         {
           "label": "Matin",
-          "temperature_min": 10.6,
-          "temperature_max": 19.4,
-          "probabilite_pluie_pct": 0,
-          "precipitation_mm": 0.0,
+          "temperature_min": 11.3,
+          "temperature_max": 19.7,
+          "probabilite_pluie_pct": 3,
+          "precipitation_mm": 0.2,
           "vent_max_kmh": 12,
-          "weather_code": 0,
-          "description": "ciel dégagé"
+          "weather_code": 3,
+          "description": "couvert"
         },
         {
           "label": "Après-midi",
-          "temperature_min": 16.6,
-          "temperature_max": 21.2,
-          "probabilite_pluie_pct": 0,
-          "precipitation_mm": 0.0,
-          "vent_max_kmh": 16,
-          "weather_code": 3,
-          "description": "couvert"
+          "temperature_min": 12.9,
+          "temperature_max": 20.1,
+          "probabilite_pluie_pct": 97,
+          "precipitation_mm": 3.4,
+          "vent_max_kmh": 18,
+          "weather_code": 61,
+          "description": "pluie légère"
         },
         {
           "label": "Soir",
-          "temperature_min": 12.4,
-          "temperature_max": 19.9,
+          "temperature_min": 8.7,
+          "temperature_max": 19.6,
           "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
-          "vent_max_kmh": 10,
-          "weather_code": 3,
-          "description": "couvert"
+          "vent_max_kmh": 26,
+          "weather_code": 0,
+          "description": "ciel dégagé"
         }
       ],
-      "alertes": [
-        "Rafales jusqu'à 65 km/h",
-        "Rafales jusqu'à 60 km/h"
-      ],
-      "resume": "Ciel dégagé le matin, couvert l'après-midi, couvert le soir, de 10° à 21°."
+      "alertes": [],
+      "resume": "Couvert le matin, pluie légère l'après-midi, ciel dégagé le soir, de 9° à 20°."
     },
     "anglais": {
       "mode": "litterature",
-      "oeuvre": "Alice's Adventures in Wonderland",
-      "auteur": "Lewis Carroll",
-      "annee": 1865,
+      "oeuvre": "A Scandal in Bohemia",
+      "auteur": "Arthur Conan Doyle",
+      "annee": 1891,
       "segments": [
         {
-          "t": "Alice was beginning to get very tired of sitting by her sister on the bank",
-          "g": "la berge"
+          "t": "To Sherlock Holmes she is always the woman. I have seldom",
+          "g": "rarement"
         },
         {
-          "t": ", and of having nothing to do: once or twice she had peeped into",
-          "g": "jeté un coup d'œil dans"
+          "t": " heard him mention her under any other name. In his eyes she eclipses",
+          "g": "éclipse"
         },
         {
-          "t": " the book her sister was reading, but it had no pictures or conversations in it, \"and what is the use of",
-          "g": "à quoi bon"
+          "t": " and predominates",
+          "g": "domine"
         },
         {
-          "t": " a book,\" thought Alice \"without pictures or conversations?\" So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid",
-          "g": "hébétée"
+          "t": " the whole of her sex. It was not that he felt any emotion akin to",
+          "g": "apparenté à"
         },
         {
-          "t": "), whether the pleasure of making a daisy-chain",
-          "g": "collier de pâquerettes"
+          "t": " love for Irene Adler. All emotions, and that one particularly, were abhorrent",
+          "g": "odieuses"
         },
         {
-          "t": " would be worth the trouble",
-          "g": "valoir la peine"
+          "t": " to his cold, precise but admirably balanced mind. He was, I take it",
+          "g": "je suppose"
         },
         {
-          "t": " of getting up and picking",
-          "g": "cueillir"
+          "t": ", the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position",
+          "g": "position déplacée"
         },
         {
-          "t": " the daisies, when suddenly a White Rabbit with pink eyes ran close by",
-          "g": "tout près de"
+          "t": ". He never spoke of the softer passions, save with",
+          "g": "sauf avec"
         },
         {
-          "t": " her.",
+          "t": " a gibe",
+          "g": "la raillerie"
+        },
+        {
+          "t": " and a sneer",
+          "g": "le ricanement"
+        },
+        {
+          "t": ".",
           "g": null
         }
       ],
-      "texte_glose": "Alice was beginning to get very tired of sitting by her sister on the bank (= la berge), and of having nothing to do: once or twice she had peeped into (= jeté un coup d'œil dans) the book her sister was reading, but it had no pictures or conversations in it, \"and what is the use of (= à quoi bon) a book,\" thought Alice \"without pictures or conversations?\" So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid (= hébétée)), whether the pleasure of making a daisy-chain (= collier de pâquerettes) would be worth the trouble (= valoir la peine) of getting up and picking (= cueillir) the daisies, when suddenly a White Rabbit with pink eyes ran close by (= tout près de) her."
+      "texte_glose": "To Sherlock Holmes she is always the woman. I have seldom (= rarement) heard him mention her under any other name. In his eyes she eclipses (= éclipse) and predominates (= domine) the whole of her sex. It was not that he felt any emotion akin to (= apparenté à) love for Irene Adler. All emotions, and that one particularly, were abhorrent (= odieuses) to his cold, precise but admirably balanced mind. He was, I take it (= je suppose), the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position (= position déplacée). He never spoke of the softer passions, save with (= sauf avec) a gibe (= la raillerie) and a sneer (= le ricanement)."
     },
     "meta": {
-      "resume_1_phrase": "À la une : La plateforme eBay va supprimer 1 000 postes, soit environ 9% de ses effectifs ; Guerre en Ukraine : plus de 600 drones lancés en direction de Moscou, selon le maire ; quinze blessés dans des frappes sur Kiev."
+      "resume_1_phrase": "À la une : Présidentielle 2027 : Edouard Philippe lance ses idées sans imprimer ; En Chine, le séisme de magnitude 7 qui a frappé la région du Tibet fait au moins 16 morts et des dizaines de blessés."
     },
     "_genere_par_llm": true,
     "_provider": "groq+mistral+nvidia",
@@ -582,9 +562,9 @@
       },
       "science_a": {
         "genere_par_llm": true,
-        "provider": "mistral",
+        "provider": "nvidia",
         "erreur": null,
-        "essais_echoues": 0
+        "essais_echoues": 1
       },
       "science_b": {
         "genere_par_llm": true,
@@ -597,12 +577,6 @@
         "provider": "groq",
         "erreur": null,
         "essais_echoues": 1
-      },
-      "science_d": {
-        "genere_par_llm": true,
-        "provider": "nvidia",
-        "erreur": null,
-        "essais_echoues": 0
       }
     },
     "_bloc": {
@@ -612,7 +586,7 @@
     },
     "_science": {
       "genere_par_llm": true,
-      "provider": "groq+mistral+nvidia",
+      "provider": "groq+nvidia",
       "erreur": null
     },
     "_anglais": {
@@ -621,5 +595,5 @@
       "erreur": null
     }
   },
-  "debut_run": "2026-10-22T06:10:42.607845+02:00"
+  "debut_run": "2026-10-23T06:10:40.942134+02:00"
 }

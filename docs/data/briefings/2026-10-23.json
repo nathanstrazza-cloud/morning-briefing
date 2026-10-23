@@ -1,0 +1,599 @@
+{
+  "date": "2026-10-23",
+  "derniere_mise_a_jour": "2026-10-23T06:17:30.574564+02:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Présidentielle 2027 : Edouard Philippe lance ses idées sans imprimer",
+          "resume": "En déplacement dans les Ardennes, l’ancien Premier ministre ne dévie pas de sa stratégie pour 2027 malgré les crises, et n’affiche aucune inquiétude quant à sa difficulté à susciter l’enthousiasme.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Au procès de l’explosion de la rue de Trévise, à Paris, le plombier, le maçon et le conducteur de travaux",
+          "resume": "Un collecteur d’eaux usées dans les caves du 6, rue de Trévise, et un trou récurrent dans le trottoir, devant la porte cochère de l’immeuble, ont été au centre des débats, jeudi 22 octobre, au tribunal judiciaire de Paris.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Pierre Moscovici démissionne de la Cour des comptes européenne pour «contribuer au débat public» lors de la présidentielle",
+          "resume": "L’ancien président de la Cour des comptes française justifie son départ par des raisons personnelles et sa volonté de conserver sa liberté de parole, à l’approche de l’élection présidentielle en 2027.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Budget 2027 : la taxe sur les produits sucrés torpillée sur fond de lobbying intense de l’industrie agro-alimentaire",
+          "resume": "Le vote sur cette taxe censée inciter les industriels à réduire le taux de sucre dans leurs recettes, est loin d’être définitif. L’adoption du budget de la Sécurité sociale par l’Assemblée nationale lors de cette première lecture paraît hautement improbable et le texte devra aussi être discuté au Sénat.",
+          "pourquoi_important": "Le rejet de la taxe sur les produits sucrés affecte les politiques de santé publique et les recettes budgétaires.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Congrès du RN à Orléans ce week-end : de 20 000 à 30 000 opposants attendus et un dispositif de sécurité « exceptionnel »",
+          "resume": "Près de 3 000 membres des forces de l’ordre seront mobilisés pour encadrer les 20 000 à 30 000 opposants attendus, à Orléans ce week-end, à l’occasion du congrès du Rassemblement national et du lancement officiel de la campagne présidentielle de Marine Le Pen.",
+          "pourquoi_important": "Selon Le Monde, le dispositif de sécurité exceptionnel reflète l’importance politique du congrès du RN et les tensions attendues.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "En Chine, le séisme de magnitude 7 qui a frappé la région du Tibet fait au moins 16 morts et des dizaines de blessés",
+          "resume": "Un séisme majeur a frappé jeudi soir la région du Tibet, en Chine. La secousse, survenue à 22 h 33, heure locale, a eu lieu dans une région régulièrement touchée par des tremblements de terre.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "France 24 International",
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : Vladimir Poutine se dit prêt à reprendre les négociations avec l’Ukraine et les États-Unis en vue « d’un accord final »",
+          "resume": "Le président russe a évoqué des discussions sur des garanties de sécurité pour l’Ukraine et la Russie, dans le cadre d’un accord final et non après une pause des combats.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France Info",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "République centrafricaine : Trois otages libérés après 10 mois de captivité",
+          "resume": "Trois personnes, dont la sous-préfète de Bambouti et deux agents de l’Autorité nationale des élections, ont été libérées après 10 mois de détention par un groupe armé actif dans le sud-est du pays.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Au Brésil, pourquoi les classes moyennes ont tourné le dos à Lula",
+          "resume": "Si les politiques sociales menées par le Parti des travailleurs durant ses dix-sept ans au pouvoir ont permis de réduire la pauvreté, nombre de Brésiliens peinent toujours à boucler leur fin de mois. Beaucoup envisagent de voter pour le candidat d’extrême droite, Flavio Boslonaro, au second tour de l’élection présidentielle, le 25 octobre.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon Le Monde International, Election présidentielle au Brésil : « Chaque victoire de l’extrême droite à l’étranger banalise cette perspective chez nous », alertent des responsables politiques de gauche en France",
+          "resume": "A la veille du second tour du scrutin, qui aura lieu le 25 octobre, plusieurs personnalités, parmi lesquelles Jean-Luc Mélenchon, Marine Tondelier et Fabien Roussel, s’inquiètent, dans une tribune au « Monde », de la possible victoire de Flavio Bolsonaro et des conséquences que pourrait avoir celle-ci tant sur le pays que sur l’équilibre géopolitique mondial.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon New York Times World, How Pastors Mobilize Communities in Congo’s Fight Against Ebola",
+          "resume": "As health care workers fought to control the latest outbreak this year, they got crucial aid from churches in beating back fear and misinformation.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "New York Times World"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon Le Monde International, Aux Fidji, une épidémie de VIH favorisée par l’essor d’une drogue de synthèse",
+          "resume": "L’archipel mélanésien doit affronter l’une des progressions du virus les plus rapides au monde à la suite de l’introduction de la métamphétamine, un produit aussi puissant qu’addictif, souvent consommé sans précautions d’hygiène.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon 20 Minutes, Guerre en Ukraine : Les bombardements meurtriers reprennent, des familles ukrainiennes évacuées",
+          "resume": "« 20 Minutes » fait le point pour vous tous les soirs sur le conflit. Ce jeudi, les frappes ont repris au lendemain d’une tentative de relance de diplomatie, faisant au moins neuf victimes en Ukraine",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Les principaux indices mondiaux ont clôturé en baisse, notamment à cause des inquiétudes sur l’intelligence artificielle et des hausses de taux d’intérêt.",
+      "mouvements_notables": [
+        {
+          "nom": "CAC 40",
+          "variation_pct": -1.39,
+          "explication": "les inquiétudes sur l’intelligence artificielle"
+        },
+        {
+          "nom": "S&P 500",
+          "variation_pct": -1.21,
+          "explication": "les inquiétudes sur l’intelligence artificielle"
+        },
+        {
+          "nom": "Nasdaq",
+          "variation_pct": -2.6,
+          "explication": "les inquiétudes sur l’intelligence artificielle"
+        },
+        {
+          "nom": "DAX",
+          "variation_pct": -1.07,
+          "explication": null
+        },
+        {
+          "nom": "Euro Stoxx 50",
+          "variation_pct": -1.94,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "formule 1",
+          "texte": "Kimi Antonelli, pilote italien de Mercedes, aura l'occasion à Austin (Texas) de remporter une course et de devenir le plus jeune champion du monde de l'histoire. Il a indiqué en conférence de presse vouloir garder le suspense sur ses ambitions."
+        },
+        {
+          "sport": "football",
+          "texte": "Le Forge FC, équipe de la Première Ligue locale, a remporté le Championnat canadien contre le CF Montréal (1-1, 4-2 aux tirs au but) grâce à l'ancien gardien de Montpellier Dimitry Bertaud."
+        },
+        {
+          "sport": "football",
+          "texte": "Le principal groupe d'ultras de Lens, les Red Tigers, a condamné les jets de fumigènes lors du match de Ligue des champions Bruges-Lens, qui s'est soldé par une victoire 3-0 de Bruges."
+        },
+        {
+          "sport": "football",
+          "texte": "Bournemouth a battu l'AC Milan 3-0, illustrant la domination des clubs de Premier League face à leurs homologues européens."
+        },
+        {
+          "sport": "golf",
+          "texte": "Antoine Rozner et Frédéric Lacroix sont arrivés troisièmes à -4 après le premier tour du Genesis Championship en Corée du Sud, se reclassant provisoirement dans le top 70 de la Race to Dubai, qui assure la qualification pour les play‑offs."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Elena Rybakina s'est qualifiée pour les quarts de finale du WTA 500 de Ningbo (Chine) après l'abandon de Polina Kudermetova (5-0, ab.), enregistrant ainsi sa première victoire depuis son accession à la première place mondiale."
+        },
+        {
+          "sport": "cyclisme",
+          "texte": "Le tracé de la 114e édition du Tour de France 2027 a été présenté, avec un départ en Écosse et une arrivée sur les Champs‑Élysées, où le Slovène Tadej Pogacar tentera d'obtenir un sixième succès, record absolu, sur la Grande Boucle."
+        },
+        {
+          "sport": "cyclisme",
+          "texte": "Le parcours du Tour de France Femmes 2027 a été détaillé, comprenant 21 étapes du Grand Départ en Écosse à l'arrivée sur les Champs‑Élysées, avec un contre‑la‑montre par équipes sur le puy de Dôme."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "Atlético Madrid – Bayern Munich",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-11-03T20:00:00+00:00",
+          "date_texte": "mardi 3 novembre à 21h00",
+          "sport": "football"
+        },
+        {
+          "affiche": "Boston Celtics – New York Knicks",
+          "competition": "NBA",
+          "date_iso": "2026-10-23T23:00:00+00:00",
+          "date_texte": "samedi 24 octobre à 1h00",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "approfondi",
+      "titre": "Dioxyde de carbone",
+      "contenu_markdown": "## Introduction\nLe dioxyde de carbone, appelé aussi gaz carbonique ou anhydride carbonique, est un composé inorganique dont la formule chimique est CO₂. La molécule possède une structure linéaire de la forme O=C=O. À la pression atmosphérique et à la température ambiante, il se présente comme un gaz incolore, inodore, à la saveur piquante.\n\n## Pourquoi le sujet est important\nLe CO₂ est un élément fondamental du cycle du carbone sur notre planète. Il est utilisé par les végétaux dans l’anabolisme pour produire de la biomasse à travers la photosynthèse, processus qui consiste à réduire le CO₂ par l’eau grâce à l’énergie lumineuse captée par la chlorophylle, en libérant de l’oxygène. À l’inverse, le CO₂ est libéré par le catabolisme des plantes, des animaux, des fungi et des micro-organismes, notamment à travers le cycle de Krebs.  \nLe CO₂ est également produit par la combustion des énergies fossiles telles que le charbon, le gaz naturel et le pétrole, ainsi que par la combustion de toutes les matières organiques en général. Il est un sous-produit indésirable dans les processus industriels à grande échelle.  \nDes quantités significatives de CO₂ sont rejetées par les volcans et d’autres phénomènes géothermiques tels que les geysers.  \nEn mars 2025, l’atmosphère terrestre comportait 428 ppmv (parties par million en volume) de CO₂, soit 0,0428 %. Cette teneur était de 283 ppmv en 1839, soit une augmentation globale d’environ 51 % en 186 ans.  \nLe CO₂ est un gaz à effet de serre majeur, transparent en lumière visible mais absorbant dans le domaine infrarouge, de sorte qu’il tend à bloquer la réémission vers l’espace de l’énergie thermique reçue au sol sous l’effet du rayonnement solaire. Il est responsable d’environ 26 % de l’effet de serre à l’œuvre dans l’atmosphère terrestre (la vapeur d’eau assurant 60 %). L’augmentation de sa concentration est responsable de l’essentiel du changement climatique constaté à l’échelle de notre planète depuis les dernières décennies du XXe siècle. Par ailleurs, l’acidification des océans résultant de la dissolution du dioxyde de carbone atmosphérique pourrait compromettre la survie de nombreux organismes marins avant la fin du XXIe siècle.\n\n## Explication du phénomène\nLe CO₂ est libéré dans l’atmosphère par plusieurs mécanismes. La combustion des combustibles fossiles et de la matière organique libère directement du CO₂. La respiration des organismes vivants, ainsi que la décomposition des matières organiques, produisent également du CO₂. Les volcans et les geysers émettent du CO₂ à partir de sources géothermiques.  \nDans l’atmosphère, le CO₂ participe à l’effet de serre en absorbant les longueurs d’onde infrarouges, ce qui entraîne un réchauffement de la surface terrestre.  \nDans les océans, le CO₂ se dissout dans l’eau et forme de l’acide carbonique. Ce processus contribue à l’acidification des océans, un phénomène qui peut affecter la vie marine.\n\n## Photosynthèse\nLes végétaux réduisent le CO₂ en utilisant l’énergie lumineuse captée par la chlorophylle, en libérant de l’oxygène et en produisant des oses, principalement du glucose, via le cycle de Calvin.  \n## Catabolisme\nLes organismes vivants oxydent les lipides et les glucides en présence d’oxygène, produisant de l’eau et du CO₂, ainsi que de l’énergie sous forme d’ATP et de NADH + H⁺.  \n## Solubilité aqueuse\nLe CO₂ se dissout dans l’eau et y forme de l’acide carbonique (H₂CO₃) selon l’équation CO₂(aq) + H₂O ⇌ H₂CO₃(aq), avec une constante d’équilibre Kh ≈ 1,70 × 10⁻³ à 25 °C.  \nLorsque le CO₂ se dissout dans une solution aqueuse basique, la base déprotone l’acide carbonique pour former un ion hydrogénocarbonate (HCO₃⁻), puis un ion carbonate (CO₃²⁻). Cette réaction augmente considérablement la solubilité du CO₂.  \nLe carbonate de potassium (K₂CO₃) a une solubilité de 1,12 kg l⁻¹ d’eau à 20 °C.  \nDans l’eau, le CO₂ peut également former des clathrates, des cages d’eau qui piégent le gaz. Cette propriété est étudiée comme un moyen possible de séparation industrielle du CO₂ contenu dans un gaz en pré- ou postcombustion, ainsi que comme un moyen envisagé de séquestration industrielle ou de stockage géologique.  \n## Phase\nÀ la pression atmosphérique, le CO₂ se sublime à −78,5 °C (passage de l’état solide à l’état gazeux) mais ne fond pas. La phase liquide ne peut exister qu’à une pression minimale de 519 kPa (5,12 atm), dans un intervalle de température allant de −56,6 °C (point triple) à 31,1 °C au maximum à 7,38 MPa (72,8 atm) (point critique).  \nIl existe au moins cinq phases solides moléculaires (à basse pression, moins de 30 à 60 GPa) et trois phases solides polymériques (à pressions plus élevées) du CO₂ :  \n- Phases moléculaires : I (glace sèche, jusqu’à 800 K et 11–12 GPa), II (entre 400 et 5–600 K et une pression de 12 à environ 50 GPa), III (au-delà de 12 GPa et moins de 500 K), IV (au-delà de 11 GPa et plus de 500 K), VII (de 600 à 900 K, jusqu’à 1000 K en incluant la partie supercritique, et 11 à 20 GPa).  \n- Phases polymériques : V (plus de 30 GPa et plus d’environ 1300 K), VI (température comprise entre environ 500 K et 1300 K et pression supérieure à 30 GPa), et une forme amorphe, à moins de 500 K et plus de 50 GPa.\n\n## Données et résultats scientifiques\n\n- En mars 2025, la concentration atmosphérique de dioxyde de carbone était de **428 ppmv** (0,0428 %).  \n- Cette valeur était de **283 ppmv** en 1839, d’après des carottes de glace prélevées en Antarctique, ce qui représente une **augmentation d’environ 51 %** sur 186 ans.  \n- Le CO₂ représente **environ 26 %** de l’effet de serre total de l’atmosphère terrestre, la vapeur d’eau en assurant 60 %.  \n- Le point triple du CO₂ se situe à **−56,6 °C** et 519 kPa ; le point critique à **31,1 °C** et 7,38 MPa.  \n- La constante d’équilibre de dissolution dans l’eau à 25 °C est **Kh ≈ 1,70 × 10⁻³** (rapport des concentrations de H₂CO₃ et de CO₂).  \n\nCes chiffres proviennent des mesures atmosphériques, des analyses de carottes de glace et des propriétés physico‑chimiques établies par la communauté scientifique.\n\n## Ce que les scientifiques savent\n\n- **Rôle biogéochimique** : Le CO₂ est un réactif central du cycle du carbone. Il est fixé par les plantes lors de la photosynthèse (réduction du CO₂ en glucose via le cycle de Calvin) et libéré lors du catabolisme (respiration cellulaire, cycle de Krebs) des organismes vivants.  \n- **Sources anthropiques** : La combustion des énergies fossiles (charbon, gaz naturel, pétrole) et la combustion de matières organiques génèrent la majeure partie du CO₂ additionnel observé depuis la révolution industrielle.  \n- **Sources naturelles** : Volcans, geysers et autres phénomènes géothermiques libèrent également du CO₂, mais à des échelles beaucoup plus modestes que les émissions humaines actuelles.  \n- **Effet de serre** : En absorbant le rayonnement infrarouge réémis par la surface terrestre, le CO₂ retient de l’énergie thermique, contribuant ainsi à l’effet de serre. Son augmentation est identifiée comme le principal facteur du réchauffement climatique observé depuis la fin du XXᵉ siècle.  \n- **Acidification des océans** : Le CO₂ dissous dans l’eau de mer forme de l’acide carbonique, diminuant le pH des océans. Cette acidification menace la calcification des organismes marins (coraux, coquillages, certains phytoplanctons).  \n- **Propriétés physiques** : À pression atmosphérique, le CO₂ subit une sublimation à **−78,5 °C** sans passer par l’état liquide. La phase liquide n’existe que sous pressions supérieures à 5,12 atm et dans une plage de température limitée.  \n- **Phases solides** : Sous haute pression, le CO₂ adopte plusieurs phases cristallines (glace sèche, phases moléculaires I‑IV, VII, ainsi que des phases polymériques V‑VI).  \n\n## Ce qui reste incertain\n\n- **Projection de l’acidification océanique** : Bien que le mécanisme de dissolution du CO₂ dans l’eau soit bien compris, les conséquences précises sur la biodiversité marine à l’échelle du XXIᵉ siècle restent sujettes à des incertitudes, notamment en raison de la complexité des interactions écologiques.  \n- **Quantification exacte des sources naturelles** : Les contributions précises des volcans et des phénomènes géothermiques au budget global de CO₂ sont difficiles à mesurer avec précision, surtout sur des échelles de temps géologiques.  \n- **Comportement à très haute pression** : Les propriétés exactes des phases polymériques du CO₂ (V, VI) à des pressions et températures extrêmes sont encore étudiées, notamment pour leurs implications potentielles en stockage géologique.  \n\n## Limites et controverses éventuelles\n\n- **Impact climatique futur** : Bien que le rôle du CO₂ dans le réchauffement climatique soit largement accepté, les rétroactions climatiques (par ex. modification de la couverture nuageuse, changements dans les cycles biogéochimiques) introduisent des marges d’incertitude dans les modèles climatiques.  \n- **Effet sur la santé humaine** : Le texte source ne fournit pas d’informations détaillées sur les effets directs du CO₂ sur la santé à des concentrations typiques d’environnement, ce qui laisse la question ouverte à la recherche médicale.  \n\n## Conclusion\n\nLe dioxyde de carbone occupe une place centrale dans le cycle du carbone, tant du point de vue biologique que géologique. Les mesures montrent une hausse marquée de sa concentration atmosphérique depuis le XIXᵉ siècle, corrélée à l’augmentation des émissions humaines. Cette hausse renforce l’effet de serre, contribue au réchauffement climatique et entraîne l’acidification des océans, avec des implications majeures pour les écosystèmes terrestres et marins.  \n\nLes connaissances actuelles permettent de quantifier les concentrations, les propriétés physiques et le rôle du CO₂ dans les processus climatiques. La poursuite des recherches dans ces domaines est essentielle pour affiner les stratégies d’atténuation et d’adaptation au changement climatique.\n\n## Sources\n- Wikipédia (fr) — Dioxyde de carbone — https://fr.wikipedia.org/wiki/Dioxyde_de_carbone\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 2,
+      "nb_mots": 1599,
+      "sujet_id": "co2",
+      "origine": "encyclopedie",
+      "matiere_source": "suffisante",
+      "textes_sources_audit": [
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Dioxyde de carbone",
+          "resume": "Le dioxyde de carbone, aussi appelé gaz carbonique ou anhydride carbonique, est un composé inorganique dont la formule chimique est CO2, la molécule ayant une structure linéaire de la forme O=C=O. Il se présente, sous les conditions normales de température et de pression, comme un gaz incolore, inodore, à la saveur piquante.\nLe CO2 est utilisé par l'anabolisme des végétaux pour produire de la biomasse à travers la photosynthèse, processus qui consiste à réduire le dioxyde de carbone par l'eau, grâce à l'énergie lumineuse reçue du Soleil et captée par la chlorophylle, en libérant de l'oxygène pour produire des oses, et en premier lieu du glucose par le cycle de Calvin. Le CO2 est libéré, à travers le cycle de Krebs, par le catabolisme des plantes, des animaux, des fungi (mycètes, ou champignons) et des micro-organismes. Ce catabolisme consiste notamment à oxyder les lipides et les glucides en eau et en dioxyde de carbone grâce à l'oxygène de l'air pour produire de l'énergie et du pouvoir réducteur, sous forme respectivement d'ATP et de NADH + H+. Le CO2 est par conséquent un élément fondamental du cycle du carbone sur notre planète. Il est également produit par la combustion des énergies fossiles telles que le charbon, le gaz naturel et le pétrole, ainsi que par celle de toutes les matières organiques en général. C'est un sous-produit indésirable dans les processus industriels à grande échelle.\nDes quantités significatives de CO2 sont par ailleurs rejetées par les volcans et autres phénomènes géothermiques tels que les geysers.\nEn mars 2025, l'atmosphère terrestre comportait 428 ppmv (parties par million en volume) de CO2, soit 0,0428 %. Cette teneur était de 283 ppmv en 1839 d'après des carottes de glace prélevées dans l'Antarctique, soit une augmentation globale d'environ 51 % en 186 ans.\nLe CO2 est un gaz à effet de serre majeur, transparent en lumière visible mais absorbant dans le domaine infrarouge, de sorte qu'il tend à bloquer la réémission vers l'espace de l'énergie thermique reçue au sol sous l'effet du rayonnement solaire. Il est responsable d'environ 26 % de l'effet de serre à l'œuvre dans l'atmosphère terrestre (la vapeur d'eau en assurant 60 %) ; l'augmentation de sa concentration est responsable de l'essentiel du changement climatique constaté à l'échelle de notre planète depuis les dernières décennies du XXe siècle. Par ailleurs, l'acidification des océans résultant de la dissolution du dioxyde de carbone atmosphérique pourrait compromettre la survie de nombreux organismes marins avant la fin du XXIe siècle.\n\nCaractéristiques physico-chimiques\nÀ la pression atmosphérique, il se sublime à −78,5 °C (passage de l'état solide à l'état gazeux), mais ne fond pas (passage de l'état solide à l'état liquide).\nLa phase liquide ne peut exister qu'à une pression minimale de 519 kPa (soit 5,12 atm), et dans un intervalle de température allant de −56,6 °C (point triple) à 31,1 °C au maximum à 7,38 MPa (soit 72,8 atm) (point critique).\n\nIl existerait au moins cinq phases solides moléculaires (existant à « basse » pression, moins de 30 à 60 GPa) et trois phases solides polymériques (aux pressions plus élevées) du CO2 :\n\nphases moléculaires :\nI : la « glace sèche », jusqu'à 800 K et 11-12 GPa\nII : entre 400 et 5-600 K et une pression de 12 à environ 50 GPa\nIII : au-delà de 12 GPA et moins de 500 K\nIV : au-delà de 11 GPa et plus de 500 K\nVII : de 600 à 900 K (jusqu'à 1000 K en incluant la partie supercritique) et 11 à 20 GPa\nphases polymériques :\nV : plus de 30 GPa et plus d'environ 1 300 K\nVI : température comprise entre environ 500 K et 1 300 K et pression supérieure à de 30 (à 1300 K) à 50 GPa (à 500 K)\namorphe, à moins de 500 K et plus de 50 GPa\n\nSolubilité aqueuse\nLe CO2 se dissout dans l’eau et y forme de l’acide carbonique H2CO3 :\nCO2 (aq) + H2O (l)  \n  \n    \n      \n        ⇌\n      \n    \n    {\\displaystyle \\rightleftharpoons }\n  \n  H2CO3 (aq), avec Kh = [H2CO3] / [CO2] ≈ 1,70 × 10−3 à 25 °C.\nIl est également liposoluble (soluble dans les corps gras).\nL’acide carbonique n’est que modérément stable et il se décompose facilement en H2O et CO2. En revanche, lorsque le dioxyde de carbone se dissout dans une solution aqueuse basique (soude, potasse…), la base déprotone l’acide carbonique pour former un ion hydrogénocarbonate HCO–3, aussi appelé ion bicarbonate, puis un ion carbonate CO2–3. De cette façon, la solubilité du CO2 est considérablement augmentée. Le carbonate de potassium K2CO3 a par exemple une solubilité de 1,12 kg/l d'eau à 20 °C.\nC'est ainsi que le calcaire se dissout dans l'eau, dans la plage de pH dans laquelle l'hydrogénocarbonate acide est stable, en produisant une solution d'hydrogénocarbonate(s) (de calcium et de magnésium…). Il est donc susceptible de précipiter lorsque le CO2 dissous est dégazé, comme dans la formation des stalagmites et des stalactites. Le calcaire a ainsi, en présence de CO2, une solubilité qui diminue quand la température augmente, à l'instar des gaz et au contraire de la plupart des solides (dont la solubilité augmente généralement avec la température).\nDans certaines conditions (haute pression + basse température) le CO2 peut être piégé dans des cages d'eau dites clathrates. C'est un des moyens possibles de séparation industrielle du CO2 contenu dans un gaz en pré- ou postcombustion. C'est aussi un des moyens envisagés de séquestration industrielle de CO2 ou de stockage géologique étudié, éventuellement corrélativement à la désalinisation d'eau de mer (il peut théoriquement même être substitué à l'hydrate de méthane).\n\nHistorique des connaissances"
+        }
+      ]
+    },
+    "citation": {
+      "texte": "On ne naît pas femme : on le devient.",
+      "auteur": "Simone de Beauvoir",
+      "source": "Le Deuxième Sexe",
+      "annee": 1949
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 15.6,
+          "temperature_max": 20.1,
+          "temperature_min": 15.3,
+          "precipitation_mm": 2.8,
+          "probabilite_pluie_pct": 94,
+          "vent_kmh": 10.8,
+          "vent_max_kmh": 24.1,
+          "rafales_max_kmh": 47.2,
+          "weather_code": 61,
+          "description": "pluie légère",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 15.6,
+              "temperature_max": 19.7,
+              "probabilite_pluie_pct": 3,
+              "precipitation_mm": 0.2,
+              "vent_max_kmh": 12,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 17.9,
+              "temperature_max": 20.1,
+              "probabilite_pluie_pct": 94,
+              "precipitation_mm": 2.6,
+              "vent_max_kmh": 14,
+              "weather_code": 61,
+              "description": "pluie légère"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 16.1,
+              "temperature_max": 19.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 24,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 15.0,
+          "temperature_max": 20.1,
+          "temperature_min": 15.0,
+          "precipitation_mm": 3.5,
+          "probabilite_pluie_pct": 97,
+          "vent_kmh": 9.7,
+          "vent_max_kmh": 25.7,
+          "rafales_max_kmh": 41.4,
+          "weather_code": 61,
+          "description": "pluie légère",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 15.0,
+              "temperature_max": 18.8,
+              "probabilite_pluie_pct": 1,
+              "precipitation_mm": 0.1,
+              "vent_max_kmh": 11,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 17.8,
+              "temperature_max": 20.1,
+              "probabilite_pluie_pct": 97,
+              "precipitation_mm": 3.4,
+              "vent_max_kmh": 18,
+              "weather_code": 61,
+              "description": "pluie légère"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 16.0,
+              "temperature_max": 19.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 26,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 11.5,
+          "temperature_max": 16.0,
+          "temperature_min": 8.7,
+          "precipitation_mm": 1.0,
+          "probabilite_pluie_pct": 96,
+          "vent_kmh": 6.0,
+          "vent_max_kmh": 9.7,
+          "rafales_max_kmh": 20.9,
+          "weather_code": 61,
+          "description": "pluie légère",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 11.3,
+              "temperature_max": 15.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.1,
+              "vent_max_kmh": 8,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 13.4,
+              "temperature_max": 16.0,
+              "probabilite_pluie_pct": 96,
+              "precipitation_mm": 0.9,
+              "vent_max_kmh": 10,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 8.7,
+              "temperature_max": 15.8,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 11.7,
+          "temperature_max": 16.7,
+          "temperature_min": 8.9,
+          "precipitation_mm": 1.2,
+          "probabilite_pluie_pct": 96,
+          "vent_kmh": 8.0,
+          "vent_max_kmh": 10.3,
+          "rafales_max_kmh": 17.6,
+          "weather_code": 61,
+          "description": "pluie légère",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 11.7,
+              "temperature_max": 14.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.1,
+              "vent_max_kmh": 10,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 12.9,
+              "temperature_max": 16.7,
+              "probabilite_pluie_pct": 96,
+              "precipitation_mm": 1.1,
+              "vent_max_kmh": 7,
+              "weather_code": 61,
+              "description": "pluie légère"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 8.9,
+              "temperature_max": 15.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 20.1,
+      "temperature_min_zone": 8.7,
+      "probabilite_pluie_max_pct": 97,
+      "vent_max_kmh": 25.7,
+      "description_dominante": "pluie légère",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 11.3,
+          "temperature_max": 19.7,
+          "probabilite_pluie_pct": 3,
+          "precipitation_mm": 0.2,
+          "vent_max_kmh": 12,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 12.9,
+          "temperature_max": 20.1,
+          "probabilite_pluie_pct": 97,
+          "precipitation_mm": 3.4,
+          "vent_max_kmh": 18,
+          "weather_code": 61,
+          "description": "pluie légère"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 8.7,
+          "temperature_max": 19.6,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 26,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        }
+      ],
+      "alertes": [],
+      "resume": "Couvert le matin, pluie légère l'après-midi, ciel dégagé le soir, de 9° à 20°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "A Scandal in Bohemia",
+      "auteur": "Arthur Conan Doyle",
+      "annee": 1891,
+      "segments": [
+        {
+          "t": "To Sherlock Holmes she is always the woman. I have seldom",
+          "g": "rarement"
+        },
+        {
+          "t": " heard him mention her under any other name. In his eyes she eclipses",
+          "g": "éclipse"
+        },
+        {
+          "t": " and predominates",
+          "g": "domine"
+        },
+        {
+          "t": " the whole of her sex. It was not that he felt any emotion akin to",
+          "g": "apparenté à"
+        },
+        {
+          "t": " love for Irene Adler. All emotions, and that one particularly, were abhorrent",
+          "g": "odieuses"
+        },
+        {
+          "t": " to his cold, precise but admirably balanced mind. He was, I take it",
+          "g": "je suppose"
+        },
+        {
+          "t": ", the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position",
+          "g": "position déplacée"
+        },
+        {
+          "t": ". He never spoke of the softer passions, save with",
+          "g": "sauf avec"
+        },
+        {
+          "t": " a gibe",
+          "g": "la raillerie"
+        },
+        {
+          "t": " and a sneer",
+          "g": "le ricanement"
+        },
+        {
+          "t": ".",
+          "g": null
+        }
+      ],
+      "texte_glose": "To Sherlock Holmes she is always the woman. I have seldom (= rarement) heard him mention her under any other name. In his eyes she eclipses (= éclipse) and predominates (= domine) the whole of her sex. It was not that he felt any emotion akin to (= apparenté à) love for Irene Adler. All emotions, and that one particularly, were abhorrent (= odieuses) to his cold, precise but admirably balanced mind. He was, I take it (= je suppose), the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position (= position déplacée). He never spoke of the softer passions, save with (= sauf avec) a gibe (= la raillerie) and a sneer (= le ricanement)."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Présidentielle 2027 : Edouard Philippe lance ses idées sans imprimer ; En Chine, le séisme de magnitude 7 qui a frappé la région du Tibet fait au moins 16 morts et des dizaines de blessés."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral+nvidia",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral+nvidia",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+nvidia",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-10-23T06:10:40.942134+02:00"
+}
