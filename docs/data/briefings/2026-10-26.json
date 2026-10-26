@@ -1,0 +1,593 @@
+{
+  "date": "2026-10-26",
+  "derniere_mise_a_jour": "2026-10-26T06:15:07.498723+01:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Présidentielle 2027 : à Orléans, Marine Le Pen lance sa campagne entre radicalité et « optimisme », dans une ville en état de siège",
+          "resume": "La candidate du Rassemblement national a réuni plus de 8 000 soutiens, dimanche 25 octobre, en périphérie de la préfecture du Loiret, mise sous cloche.",
+          "pourquoi_important": "Marque le lancement officiel de la campagne présidentielle 2027.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France Info",
+            "Libération",
+            "20 Minutes",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Le Premier ministre serbe Aleksandar Vucic reconnaît sa défaite aux élections législatives anticipées, après 14 ans au pouvoir",
+          "resume": "Il s'incline face à la liste menée par le mouvement étudiant, qui organise des manifestations dans tout le pays depuis deux ans.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Paris, Nantes, Bordeaux, Marseille… Après l’attentat raciste dans les Yvelines, des rassemblements lundi dans plusieurs villes",
+          "resume": "Les Parisiens sont notamment appelés à converger vers la place Stalingrad lundi 26 octobre à 19 heures. Un homme de 26 ans est mort et cinq autres blessées lors de l’attaque raciste vendredi à Trappes et à La Verrière. Le suspect a été diagnostiqué schizophrène.",
+          "pourquoi_important": "Mobilise la population dans plusieurs villes suite à un attentat raciste.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Attentat raciste à Trappes : le tireur sous traitement pour schizophrénie",
+          "resume": "Selon les informations de LCI, Kevin T., 39 ans, a été diagnostiqué schizophrène et suivait un traitement médical. Sa garde à vue a été levée ce dimanche matin. Il fait actuellement l’objet d’une expertise à l’infirmerie psychiatrique de la préfecture de police.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Un duel Le Pen-Mélenchon encore annoncé par un sondage",
+          "resume": "Selon un sondage Ipsos-BVA-Cesi école d’ingénieurs pour « Le Parisien », le leader de LFI est devant Édouard Philippe et Raphaël Glucksmann mais reste loin derrière la candidate du RN",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "En Serbie, le mouvement des étudiants remporte les législatives face au dirigeant populiste Aleksandar Vucic",
+          "resume": "La coalition menée par Aleksandar Vucic a perdu les législatives, marquant une alternance démocratique majeure en Serbie après deux décennies de blocage politique.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "France 24 International",
+            "Le Monde",
+            "Libération",
+            "20 Minutes",
+            "New York Times World"
+          ]
+        },
+        {
+          "titre": "Présidentielle au Brésil : Lula remporte l’élection avec 51,79 % des voix, Flavio Bolsonaro va « demander l’annulation » du scrutin",
+          "resume": "Lula a été réélu président du Brésil avec 51,79 % des voix, après une prolongation de l’ouverture des bureaux de vote due à des perturbations dans les transports publics, notamment à São Paulo.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "20 Minutes",
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : Favorable au dialogue avec Moscou, la présidente sortante en tête du premier tour en Bulgarie",
+          "resume": "La présidente sortante de Bulgarie, favorable à un dialogue avec Moscou, arrive en tête du premier tour des élections présidentielles.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "RD Congo : la proposition de loi fixant les conditions d’organisation du référendum adoptée",
+          "resume": "L’Assemblée nationale de la RD Congo a adopté une proposition de loi encadrant l’organisation d’un référendum, incluant des modifications constitutionnelles possibles, suscitant des craintes d’un troisième mandat pour Félix Tshisekedi.",
+          "pourquoi_important": null,
+          "consequences": "L’opposition dénonce une manœuvre pour prolonger le mandat de Félix Tshisekedi, risquant des protestations ou une crise institutionnelle.",
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Le rêve cabossé d’Hollywood face à l’IA : « Tout le monde l’utilise, mais personne ne veut en parler »",
+          "resume": "« Sur la Route 66, pouls de l’Amérique » (6/6). Déclin des studios mythiques aux tournages trop coûteux, déploiement du streaming, arrivée de l’intelligence artificielle : le fief américain de l’industrie du divertissement a perdu de sa superbe. C’est la fin de la route, et, à la veille des midterms, peut-être pas la fin du rêve.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon France Info, L'article à lire pour comprendre les enjeux des élections législatives cruciales en Israël",
+          "resume": "Les électeurs israéliens sont appelés à élire leurs députés, mardi. Affaibli dans les sondages, le Likoud du Premier ministre sortant, Benyamin Nétanyahou, est au coude-à-coude avec son principal rival, le parti d'opposition Yashar, mené par l'ancien chef d'état-major Gadi Eisenkot.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon Le Monde International, Elections législatives en Israël : la guerre d’influence de Yaïr Nétanyahou, le très à droite fils de son père",
+          "resume": "Omniprésent sur les réseaux sociaux, le fils du premier ministre israélien fait tourner à plein la « machine à poison » dans la campagne des législatives pour nuire aux opposants de son père et assurer la survie politique de ce dernier.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon 20 Minutes, Guerre en Ukraine : Embrouilles sur Starlink et les Patriots, l’haltérophilie de retour en Russie",
+          "resume": "« 20 Minutes » fait le point pour vous tous les soirs sur le conflit. Ce dimanche, les tensions entre Kiev et Washington continuent, tandis que les sports olympiques s’apprêtent timidement à faire leur retour en Russie",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
+      "mouvements_notables": [
+        {
+          "nom": "Pétrole (Brent)",
+          "variation_pct": -6.1,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "rugby",
+          "texte": "Après six journées de Championnat, plus d'un quart des joueurs du Top 14 est à l'infirmerie. Le Stade Toulousain, qui a compté 22 blessés fin septembre, montre que tous les clubs sont touchés."
+        },
+        {
+          "sport": "formule 1",
+          "texte": "Kimi Antonelli a dominé le Grand Prix des États-Unis, se rapprochant de son premier titre mondial. La course a été animée par des bagarres en piste entre Charles Leclerc et Max Verstappen."
+        },
+        {
+          "sport": "formule 1",
+          "texte": "Charles Leclerc et Max Verstappen ont accompagné Kimi Antonelli sur le podium du Grand Prix des États-Unis. Ils lorgnent sur la deuxième place du Championnat."
+        },
+        {
+          "sport": "formule 1",
+          "texte": "Kimi Antonelli a remporté le Grand Prix des États-Unis, se battant contre Charles Leclerc et Max Verstappen. Il devra encore attendre pour être sacré champion du monde de F1."
+        },
+        {
+          "sport": "football",
+          "texte": "Avec son doublé, Kylian Mbappé a fait plier le Barça, offrant le Clasico au Real. Les Merengues reviennent à trois points des Blaugrana en Liga."
+        },
+        {
+          "sport": "football",
+          "texte": "Le Barça a manqué ses deux premiers chocs de la saison, à Paris et le Clasico. Son rival merengue est revenu à trois points."
+        },
+        {
+          "sport": "football",
+          "texte": "L'AC Milan, toujours invaincu, a tenu son rang contre l'Udinese. Les Rossoneri sont quatrièmes du Championnat."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Tallon Griekspoor a remporté l'Open de Bruxelles, battant Jan-Lennard Struff en finale (4-6, 6-3, 6-4). Le Néerlandais remporte son quatrième titre de carrière."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "Atlético Madrid – Bayern Munich",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-11-03T20:00:00+00:00",
+          "date_texte": "mardi 3 novembre à 21h00",
+          "sport": "football"
+        },
+        {
+          "affiche": "Denver Nuggets – Golden State Warriors",
+          "competition": "NBA",
+          "date_iso": "2026-10-27T02:00:00+00:00",
+          "date_texte": "mardi 27 octobre à 3h00",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "approfondi",
+      "titre": "L’apprentissage automatique : comment les ordinateurs apprennent à partir des données",
+      "contenu_markdown": "## Introduction\nL’apprentissage automatique, ou *machine learning* (ML), est une branche de l’intelligence artificielle qui permet aux ordinateurs d’améliorer leurs performances dans des tâches spécifiques sans être explicitement programmés pour chacune. Contrairement à un logiciel classique, qui suit des instructions précises, un système d’apprentissage automatique analyse des données pour identifier des motifs, des corrélations ou des règles, puis utilise ces connaissances pour prendre des décisions ou effectuer des prédictions. Cette approche repose sur des méthodes statistiques et mathématiques pour construire des modèles capables de généraliser à partir d’exemples.\n\n## Pourquoi le sujet est important\nL’apprentissage automatique a révolutionné de nombreux domaines, de la médecine à la finance, en passant par les transports ou la reconnaissance d’images. Son importance tient à sa capacité à traiter des volumes massifs de données (big data) et à détecter des tendances invisibles à l’œil humain. Par exemple, il permet de :\n- **Diagnostiquer des maladies** en analysant des images médicales (comme des radiographies) ;\n- **Optimiser des processus industriels** en prédisant les pannes d’équipements ;\n- **Personnaliser les recommandations** (films, produits, publicités) sur les plateformes numériques ;\n- **Automatiser des tâches complexes**, comme la traduction automatique ou la conduite autonome.\n\nSon développement reflète aussi les défis posés par la quantité croissante de données disponibles, rendant indispensable des outils capables de les exploiter efficacement.\n\n## Explication du phénomène\nL’apprentissage automatique repose sur un principe fondamental : **un système apprend à partir d’exemples**. Prenons l’analogie d’un enfant qui reconnaît des chats : il observe des images étiquetées (« chat » ou « non-chat »), identifie des caractéristiques communes (oreilles pointues, moustaches, forme des yeux), puis généralise ces traits à de nouvelles images. De la même manière, un algorithme d’apprentissage automatique analyse des données pour extraire des règles ou des modèles mathématiques décrivant les relations entre les informations.\n\nLe cœur du processus repose sur deux phases distinctes :\n1. **La phase d’apprentissage (ou d’entraînement)** : le système étudie un jeu de données (appelé *jeu d’entraînement*) pour ajuster les paramètres d’un modèle. Par exemple, pour reconnaître des chiffres manuscrits, il pourrait s’entraîner sur des milliers d’écritures étiquetées (0 à 9).\n2. **La phase de prédiction** : une fois le modèle formé, il est appliqué à de nouvelles données pour produire des résultats (comme classer un chiffre inconnu ou détecter un spam dans un email).\n\n## Les paradigmes d’apprentissage\nLes méthodes d’apprentissage automatique se distinguent selon la nature des données utilisées et la manière dont elles guident l’apprentissage. Trois grands paradigmes existent :\n\n1. **Apprentissage supervisé**.\n   Le système reçoit des données **étiquetées**, c’est-à-dire accompagnées de la réponse attendue. Par exemple, pour un détecteur de spam, chaque email est marqué « spam » ou « non-spam ». L’algorithme apprend à associer des mots-clés ou des motifs à ces étiquettes. Les problèmes typiques incluent :\n   - **La classification** (catégoriser des données, comme trier des emails) ;\n   - **La régression** (prédire une valeur continue, comme le prix d’une maison).\n\n2. **Apprentissage non supervisé**.\n   Les données **ne sont pas étiquetées**, et l’algorithme doit découvrir seul des structures ou des regroupements. Par exemple, un système peut identifier des groupes de clients aux comportements similaires dans une base de données de ventes, sans savoir à l’avance combien de groupes existent. Les applications incluent :\n   - **Le partitionnement** (regrouper des données, comme la segmentation client) ;\n   - **La réduction de dimensionnalité** (simplifier des données complexes, comme compresser des images).\n\n3. **Apprentissage par renforcement**.\n   Le système apprend en **interagissant avec son environnement** et en recevant des **signaux de récompense ou de punition** pour ses actions. Par exemple, un robot apprenant à marcher reçoit une récompense à chaque pas réussi et ajuste ses mouvements en conséquence.\n\n## Le choix du modèle et son entraînement\nUn modèle d’apprentissage automatique est une représentation mathématique qui capture les relations dans les données. Son efficacité dépend de deux facteurs :\n- **Sa complexité** : un modèle trop simple (comme une droite) peut échouer à capturer des motifs complexes, tandis qu’un modèle trop complexe (comme un réseau de neurones profond) risque de surapprendre, c’est-à-dire de mémoriser les données d’entraînement sans généraliser.\n- **Les algorithmes d’optimisation** : pour ajuster les paramètres du modèle, on utilise des techniques comme la **descente de gradient**, qui minimise l’erreur entre les prédictions du modèle et les données réelles. Dans le cas des réseaux de neurones, la **rétropropagation du gradient** permet de calculer, pour chaque paramètre, comment il contribue à l’erreur globale, afin de l’ajuster itérativement.\n\n## Exemples concrets de données exploitées\nLes méthodes d’apprentissage automatique s’appliquent à des types de données variés :\n- **Données numériques** (tableaux de chiffres, comme les performances sportives) ;\n- **Séries temporelles** (évolution d’un cours boursier ou d’une température) ;\n- **Textes** (analyse de sentiments sur les réseaux sociaux) ;\n- **Images ou vidéos** (reconnaissance faciale, détection d’objets) ;\n- **Graphes** (réseaux sociaux, où les nœuds sont des utilisateurs et les arêtes des connexions).\n\nChaque type de données nécessite des techniques adaptées pour en extraire des caractéristiques utiles (appelées *features*), comme la taille d’un objet dans une image ou la fréquence d’un mot dans un texte.\n\n## Données et résultats scientifiques\n\nLes travaux en apprentissage automatique reposent sur l’analyse de jeux de données variés (texte, image, son, graphes, etc.). Les performances des algorithmes sont généralement évaluées à l’aide de mesures standardisées : précision, rappel, taux d’erreur ou coefficient de détermination, selon qu’il s’agit de tâches de classification, de régression ou de réduction de dimension. Les publications rapportent régulièrement des améliorations de ces indicateurs lorsqu’un nouveau modèle ou une nouvelle technique d’optimisation est introduit. Par exemple, les réseaux de neurones profonds entraînés par rétropropagation ont permis d’atteindre des taux de précision supérieurs à ceux des méthodes plus simples sur des bases de données d’images largement utilisées. Les résultats détaillés, incluant les valeurs numériques exactes, sont disponibles dans les articles cités dans la bibliographie.\n\n## Ce que les scientifiques savent\n\n- **Principe de base** : l’apprentissage automatique consiste à ajuster les paramètres d’un modèle mathématique afin de minimiser l’erreur moyenne sur un jeu de données d’entraînement, puis à appliquer ce modèle à de nouvelles données.  \n- **Phases distinctes** : une phase d’entraînement (optimisation des paramètres) suivie d’une phase de prédiction.  \n- **Classification des méthodes** : les algorithmes se distinguent selon le paradigme d’apprentissage (supervisé, non‑supervisé, par renforcement) et le type de problème visé (régression, classification, partitionnement, réduction de dimension).  \n- **Choix du modèle** : il implique un compromis entre simplicité (facilité d’entraînement) et expressivité (capacité à capturer des relations complexes).  \n- **Algorithmes d’optimisation** : la descente de gradient et ses variantes (stochastique, mini‑batch) sont les plus couramment utilisées pour résoudre le problème d’optimisation sous‑jacent.  \n- **Apprentissage incrémental** : certains systèmes peuvent continuer à s’ajuster après le déploiement, en intégrant de nouvelles données ou en recevant des récompenses (apprentissage par renforcement).\n\n## Ce qui reste incertain\n\n- **Généralisation** : il n’existe pas de règle universelle garantissant qu’un modèle performant sur un jeu de données d’entraînement sera également performant sur des données réelles et variées.  \n- **Choix optimal du modèle** : la détermination a priori du niveau de complexité adéquat pour un problème donné reste largement empirique et dépend de la nature et de la quantité des données disponibles.  \n- **Robustesse aux biais** : la façon dont les biais présents dans les données d’entraînement se propagent dans les prédictions n’est pas complètement comprise, surtout pour les systèmes très complexes.  \n- **Convergence des algorithmes** : pour les modèles non convexes (par exemple les réseaux de neurones profonds), les garanties théoriques de convergence vers une solution optimale sont limitées ; on ne sait pas toujours si le point d’arrêt correspond à un optimum global ou à un optimum local.\n\n## Limites et controverses éventuelles\n\n- **Coût computationnel** : l’entraînement de modèles très complexes requiert d’importantes ressources matérielles (puissance de calcul, mémoire), ce qui peut limiter leur accessibilité.  \n- **Interprétabilité** : les modèles les plus performants (notamment les réseaux de neurones profonds) sont souvent considérés comme des « boîtes noires », ce qui soulève des questions d’explicabilité, notamment dans les domaines où la transparence est cruciale (santé, justice).  \n- **Impact environnemental** : la consommation énergétique liée à l’entraînement de grands modèles suscite des débats quant à la durabilité de ces pratiques.  \n- **Éthique et usage** : l’utilisation de l’apprentissage automatique pour des applications sensibles (reconnaissance faciale, prise de décision automatisée) fait l’objet de controverses, notamment concernant la protection de la vie privée et le risque de discrimination.  \n- **Limites théoriques** : malgré les succès pratiques, la compréhension complète des propriétés d’apprentissage (par exemple les limites d’échantillonnage nécessaires pour garantir une bonne généralisation) demeure incomplète.\n\n## Conclusion\n\nL’apprentissage automatique constitue aujourd’hui un pilier de l’intelligence artificielle, reposant sur des principes mathématiques et statistiques solides. Les avancées récentes ont démontré la capacité de ces méthodes à résoudre des tâches complexes grâce à des modèles puissants et à des algorithmes d’optimisation efficaces. Néanmoins, plusieurs aspects restent à approfondir : la généralisation fiable, la maîtrise des biais, la réduction du coût computationnel et l’amélioration de l’interprétabilité. Les débats éthiques et environnementaux soulignent la nécessité d’un encadrement prudent de l’usage de ces technologies. La recherche continue d’explorer de nouvelles architectures, de meilleurs critères d’évaluation et des stratégies d’apprentissage plus économes, afin de rendre l’apprentissage automatique à la fois plus performant et plus responsable.\n\n## Sources\n- Wikipédia (fr) — Apprentissage automatique — https://fr.wikipedia.org/wiki/Apprentissage_automatique\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 1,
+      "nb_mots": 1573,
+      "sujet_id": "apprentissage-automatique",
+      "origine": "encyclopedie",
+      "matiere_source": "suffisante",
+      "textes_sources_audit": [
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Apprentissage automatique",
+          "resume": "L'apprentissage automatique (en anglais : machine learning (ML), litt. « apprentissage machine »), apprentissage artificiel ou apprentissage statistique est un champ d'étude de l'intelligence artificielle qui se fonde sur des approches mathématiques et statistiques pour donner aux ordinateurs la capacité d'« apprendre » à partir de données, c'est-à-dire d'améliorer leurs performances à résoudre des tâches sans être explicitement programmés pour chacune. Plus largement, il concerne la conception, l'analyse, l'optimisation, le développement et l'implémentation de telles méthodes. On parle d'apprentissage statistique car l'apprentissage consiste à créer un modèle dont l'erreur statistique moyenne est la plus faible possible.\nL'apprentissage automatique comporte généralement deux phases. La première, \ndite phase d'apprentissage ou d'entraînement, consiste à estimer un modèle à partir d'un jeu de données d'entraînement. Cette étape est souvent formulée comme un problème d'optimisation.  \nLa seconde phase consiste à utiliser le modèle entraîné afin d'effectuer des prédictions sur de nouvelles données. \nLes méthodes d'apprentissage incrémental peuvent continuer à apprendre une fois en production.\nPlusieurs critères permettent de classifier les méthodes existantes. \nLe paradigme d'apprentissage (supervisé, non-supervisé, par renforcement…) est déterminé par la nature des données, et notamment la disponibilité ou non de données étiquetées, c'est-à-dire pour lesquelles la réponse au problème est connue.\nPar ailleurs, chaque méthode cherche à résoudre un problème d'apprentissage précis : on distingue les problèmes de régression, de classification, de partitionnement, et de réduction de dimensionnalité.\nEnfin, pour une tâche identifiée, une méthode d'apprentissage est caractérisée par le choix d'un modèle ainsi que d'algorithmes permettant d'entraîner ce modèle.\nL'apprentissage automatique peut être appliqué à divers types de données, tels des graphes, des arbres, des courbes, ou plus simplement des vecteurs de caractéristiques, qui peuvent être des variables qualitatives ou quantitatives continues ou discrètes.\nSi le modèle apprend de manière incrémentale, en fonction d'une récompense reçue par le programme pour chacune des actions entreprises, on parle d'apprentissage par renforcement.\n\nPrincipes\nL'apprentissage automatique permet à un système piloté ou assisté par ordinateur d'adapter ses réponses ou comportements aux situations rencontrées, en se fondant sur l'analyse de données empiriques passées issues de bases de données, de capteurs, ou du web.\n\nDonnées et paradigme d'apprentissage\nLe point commun à toutes les méthodes d'apprentissage automatique est d'exploiter de l'information contenue dans un jeu de données. Ces données peuvent toutefois être de nature très différentes : des données numériques, des séries temporelles, un corpus de textes, une collection d'images, de signaux audio ou vidéo, de graphes, etc.\nLa nature et la richesse des données disponibles définit le paradigme d'apprentissage, c'est-à-dire la manière dont les données guident le processus d'apprentissage. Par exemple, si l'on cherche à apprendre un détecteur de spam à partir d'une collection d'emails ayant été manuellement annotés comme désirables ou indésirables, on parle d'apprentissage supervisé : les données contiennent de l'information issue d'une supervision humaine, qui permet d'expliquer ce que l'on cherche à prédire.\n\nModèle d'apprentissage\nUn système d'apprentissage repose sur le choix d'un modèle, c'est-à-dire d'un objet mathématique, décrit le plus souvent par des paramètres, permettant de capturer et d'expliquer certaines structures ou relations dans les données étudiées. Les paramètres du modèle sont ajustés à partir des données d'entraînement afin d'en décrire au mieux la structure. \nLe choix du modèle est sujet à un compromis : un modèle simple contenant peu de paramètres est plus facile à entraîner, mais peut se révéler insuffisant si les données à modéliser sont complexes (par exemple fortement non linéaires) ; à l'inverse, un modèle complexe contenant de nombreux paramètres sera typiquement plus expressif et performant, mais il sera beaucoup plus difficile et coûteux d'en ajuster les paramètres.\n\nL'entraînement du modèle : un problème d'optimisation\n\nLa phase d'apprentissage consiste à rechercher la valeur des paramètres du modèle permettant d'expliquer au mieux les données observées. Elle est souvent formulée comme un problème d'optimisation, qui peut être convexe ou non convexe selon la complexité du modèle, et dont la résolution est typiquement effectuée en utilisant des algorithmes comme la descente de gradient ou descente de gradient stochastique.\nL'entraînement de réseaux de neurones artificiels \nest par exemple un problème non convexe, et est  classiquement résolu en utilisant la méthode de rétropropagation du gradient. Cette technique consiste à estimer itérativement, pour chaque couche du modèle et chaque paramètre de chaque couche, dans quelle mesure il a contribué à une bonne réponse ou à une erreur du modèle, et à l'ajuster en conséquence.\n\nHistorique"
+        }
+      ]
+    },
+    "citation": {
+      "texte": "Le cœur a ses raisons que la raison ne connaît point.",
+      "auteur": "Blaise Pascal",
+      "source": "Pensées",
+      "annee": 1670
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 14.2,
+          "temperature_max": 20.3,
+          "temperature_min": 13.9,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 7.2,
+          "vent_max_kmh": 9.9,
+          "rafales_max_kmh": 15.8,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 14.2,
+              "temperature_max": 19.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 19.5,
+              "temperature_max": 20.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 17.1,
+              "temperature_max": 19.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 14.3,
+          "temperature_max": 20.1,
+          "temperature_min": 14.3,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 7.9,
+          "vent_max_kmh": 9.6,
+          "rafales_max_kmh": 17.6,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 14.3,
+              "temperature_max": 19.0,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 19.2,
+              "temperature_max": 20.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 17.2,
+              "temperature_max": 18.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 11.3,
+          "temperature_max": 19.1,
+          "temperature_min": 11.0,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 6.3,
+          "vent_max_kmh": 6.8,
+          "rafales_max_kmh": 11.2,
+          "weather_code": 2,
+          "description": "partiellement nuageux",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 11.3,
+              "temperature_max": 18.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 17.0,
+              "temperature_max": 19.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 13.1,
+              "temperature_max": 15.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 5,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 10.7,
+          "temperature_max": 18.2,
+          "temperature_min": 10.1,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 8.2,
+          "vent_max_kmh": 8.8,
+          "rafales_max_kmh": 10.8,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 10.7,
+              "temperature_max": 16.9,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 16.1,
+              "temperature_max": 18.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 5,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 13.7,
+              "temperature_max": 14.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 4,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 20.3,
+      "temperature_min_zone": 10.1,
+      "probabilite_pluie_max_pct": 0,
+      "vent_max_kmh": 9.9,
+      "description_dominante": "couvert",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 10.7,
+          "temperature_max": 19.6,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 9,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 16.1,
+          "temperature_max": 20.2,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 9,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 13.1,
+          "temperature_max": 19.1,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 10,
+          "weather_code": 3,
+          "description": "couvert"
+        }
+      ],
+      "alertes": [],
+      "resume": "Couvert toute la journée, de 10° à 20°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "The Fall of the House of Usher",
+      "auteur": "Edgar Allan Poe",
+      "annee": 1839,
+      "segments": [
+        {
+          "t": "During the whole of a dull",
+          "g": "terne"
+        },
+        {
+          "t": ", dark, and soundless",
+          "g": "sans un bruit"
+        },
+        {
+          "t": " day in the autumn of the year, when the clouds hung oppressively",
+          "g": "de façon oppressante"
+        },
+        {
+          "t": " low in the heavens, I had been passing alone, on horseback",
+          "g": "à cheval"
+        },
+        {
+          "t": ", through a singularly",
+          "g": "singulièrement"
+        },
+        {
+          "t": " dreary",
+          "g": "désolée"
+        },
+        {
+          "t": " tract",
+          "g": "l'étendue"
+        },
+        {
+          "t": " of country; and at length",
+          "g": "enfin"
+        },
+        {
+          "t": " found myself, as the shades of the evening drew on",
+          "g": "le crépuscule approchait"
+        },
+        {
+          "t": ", within view of the melancholy House of Usher. I know not how it was—but, with the first glimpse",
+          "g": "l'aperçu"
+        },
+        {
+          "t": " of the building, a sense of insufferable gloom",
+          "g": "la tristesse sombre"
+        },
+        {
+          "t": " pervaded",
+          "g": "envahissait"
+        },
+        {
+          "t": " my spirit.",
+          "g": null
+        }
+      ],
+      "texte_glose": "During the whole of a dull (= terne), dark, and soundless (= sans un bruit) day in the autumn of the year, when the clouds hung oppressively (= de façon oppressante) low in the heavens, I had been passing alone, on horseback (= à cheval), through a singularly (= singulièrement) dreary (= désolée) tract (= l'étendue) of country; and at length (= enfin) found myself, as the shades of the evening drew on (= le crépuscule approchait), within view of the melancholy House of Usher. I know not how it was—but, with the first glimpse (= l'aperçu) of the building, a sense of insufferable gloom (= la tristesse sombre) pervaded (= envahissait) my spirit."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Présidentielle 2027 : à Orléans, Marine Le Pen lance sa campagne entre radicalité et « optimisme », dans une ville en état de siège."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral+nvidia",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral+nvidia",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-10-26T06:10:41.302613+01:00"
+}

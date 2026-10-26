@@ -1,99 +1,116 @@
 {
-  "date": "2026-10-23",
-  "derniere_mise_a_jour": "2026-10-23T06:17:30.574564+02:00",
+  "date": "2026-10-26",
+  "derniere_mise_a_jour": "2026-10-26T06:15:07.498723+01:00",
   "briefing": {
     "actualite": {
       "france": [
         {
-          "titre": "Présidentielle 2027 : Edouard Philippe lance ses idées sans imprimer",
-          "resume": "En déplacement dans les Ardennes, l’ancien Premier ministre ne dévie pas de sa stratégie pour 2027 malgré les crises, et n’affiche aucune inquiétude quant à sa difficulté à susciter l’enthousiasme.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Libération"
-          ]
-        },
-        {
-          "titre": "Au procès de l’explosion de la rue de Trévise, à Paris, le plombier, le maçon et le conducteur de travaux",
-          "resume": "Un collecteur d’eaux usées dans les caves du 6, rue de Trévise, et un trou récurrent dans le trottoir, devant la porte cochère de l’immeuble, ont été au centre des débats, jeudi 22 octobre, au tribunal judiciaire de Paris.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Le Monde"
-          ]
-        },
-        {
-          "titre": "Pierre Moscovici démissionne de la Cour des comptes européenne pour «contribuer au débat public» lors de la présidentielle",
-          "resume": "L’ancien président de la Cour des comptes française justifie son départ par des raisons personnelles et sa volonté de conserver sa liberté de parole, à l’approche de l’élection présidentielle en 2027.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Libération"
-          ]
-        },
-        {
-          "titre": "Budget 2027 : la taxe sur les produits sucrés torpillée sur fond de lobbying intense de l’industrie agro-alimentaire",
-          "resume": "Le vote sur cette taxe censée inciter les industriels à réduire le taux de sucre dans leurs recettes, est loin d’être définitif. L’adoption du budget de la Sécurité sociale par l’Assemblée nationale lors de cette première lecture paraît hautement improbable et le texte devra aussi être discuté au Sénat.",
-          "pourquoi_important": "Le rejet de la taxe sur les produits sucrés affecte les politiques de santé publique et les recettes budgétaires.",
+          "titre": "Présidentielle 2027 : à Orléans, Marine Le Pen lance sa campagne entre radicalité et « optimisme », dans une ville en état de siège",
+          "resume": "La candidate du Rassemblement national a réuni plus de 8 000 soutiens, dimanche 25 octobre, en périphérie de la préfecture du Loiret, mise sous cloche.",
+          "pourquoi_important": "Marque le lancement officiel de la campagne présidentielle 2027.",
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "Le Monde",
+            "France Info",
+            "Libération",
+            "20 Minutes",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Le Premier ministre serbe Aleksandar Vucic reconnaît sa défaite aux élections législatives anticipées, après 14 ans au pouvoir",
+          "resume": "Il s'incline face à la liste menée par le mouvement étudiant, qui organise des manifestations dans tout le pays depuis deux ans.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Paris, Nantes, Bordeaux, Marseille… Après l’attentat raciste dans les Yvelines, des rassemblements lundi dans plusieurs villes",
+          "resume": "Les Parisiens sont notamment appelés à converger vers la place Stalingrad lundi 26 octobre à 19 heures. Un homme de 26 ans est mort et cinq autres blessées lors de l’attaque raciste vendredi à Trappes et à La Verrière. Le suspect a été diagnostiqué schizophrène.",
+          "pourquoi_important": "Mobilise la population dans plusieurs villes suite à un attentat raciste.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
             "Libération"
           ]
         },
         {
-          "titre": "Congrès du RN à Orléans ce week-end : de 20 000 à 30 000 opposants attendus et un dispositif de sécurité « exceptionnel »",
-          "resume": "Près de 3 000 membres des forces de l’ordre seront mobilisés pour encadrer les 20 000 à 30 000 opposants attendus, à Orléans ce week-end, à l’occasion du congrès du Rassemblement national et du lancement officiel de la campagne présidentielle de Marine Le Pen.",
-          "pourquoi_important": "Selon Le Monde, le dispositif de sécurité exceptionnel reflète l’importance politique du congrès du RN et les tensions attendues.",
+          "titre": "Attentat raciste à Trappes : le tireur sous traitement pour schizophrénie",
+          "resume": "Selon les informations de LCI, Kevin T., 39 ans, a été diagnostiqué schizophrène et suivait un traitement médical. Sa garde à vue a été levée ce dimanche matin. Il fait actuellement l’objet d’une expertise à l’infirmerie psychiatrique de la préfecture de police.",
+          "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
-            "Le Monde"
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Un duel Le Pen-Mélenchon encore annoncé par un sondage",
+          "resume": "Selon un sondage Ipsos-BVA-Cesi école d’ingénieurs pour « Le Parisien », le leader de LFI est devant Édouard Philippe et Raphaël Glucksmann mais reste loin derrière la candidate du RN",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
           ]
         }
       ],
       "monde": [
         {
-          "titre": "En Chine, le séisme de magnitude 7 qui a frappé la région du Tibet fait au moins 16 morts et des dizaines de blessés",
-          "resume": "Un séisme majeur a frappé jeudi soir la région du Tibet, en Chine. La secousse, survenue à 22 h 33, heure locale, a eu lieu dans une région régulièrement touchée par des tremblements de terre.",
+          "titre": "En Serbie, le mouvement des étudiants remporte les législatives face au dirigeant populiste Aleksandar Vucic",
+          "resume": "La coalition menée par Aleksandar Vucic a perdu les législatives, marquant une alternance démocratique majeure en Serbie après deux décennies de blocage politique.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "Le Monde International",
             "France 24 International",
-            "France Info"
+            "Le Monde",
+            "Libération",
+            "20 Minutes",
+            "New York Times World"
           ]
         },
         {
-          "titre": "Guerre en Ukraine : Vladimir Poutine se dit prêt à reprendre les négociations avec l’Ukraine et les États-Unis en vue « d’un accord final »",
-          "resume": "Le président russe a évoqué des discussions sur des garanties de sécurité pour l’Ukraine et la Russie, dans le cadre d’un accord final et non après une pause des combats.",
+          "titre": "Présidentielle au Brésil : Lula remporte l’élection avec 51,79 % des voix, Flavio Bolsonaro va « demander l’annulation » du scrutin",
+          "resume": "Lula a été réélu président du Brésil avec 51,79 % des voix, après une prolongation de l’ouverture des bureaux de vote due à des perturbations dans les transports publics, notamment à São Paulo.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "Le Monde",
-            "France Info",
-            "Le Monde International"
+            "20 Minutes",
+            "Le Monde International",
+            "France 24 International"
           ]
         },
         {
-          "titre": "République centrafricaine : Trois otages libérés après 10 mois de captivité",
-          "resume": "Trois personnes, dont la sous-préfète de Bambouti et deux agents de l’Autorité nationale des élections, ont été libérées après 10 mois de détention par un groupe armé actif dans le sud-est du pays.",
+          "titre": "Guerre en Ukraine : Favorable au dialogue avec Moscou, la présidente sortante en tête du premier tour en Bulgarie",
+          "resume": "La présidente sortante de Bulgarie, favorable à un dialogue avec Moscou, arrive en tête du premier tour des élections présidentielles.",
           "pourquoi_important": null,
           "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "RD Congo : la proposition de loi fixant les conditions d’organisation du référendum adoptée",
+          "resume": "L’Assemblée nationale de la RD Congo a adopté une proposition de loi encadrant l’organisation d’un référendum, incluant des modifications constitutionnelles possibles, suscitant des craintes d’un troisième mandat pour Félix Tshisekedi.",
+          "pourquoi_important": null,
+          "consequences": "L’opposition dénonce une manœuvre pour prolonger le mandat de Félix Tshisekedi, risquant des protestations ou une crise institutionnelle.",
           "statut": "information_rapportee",
           "sources": [
             "France 24 International"
           ]
         },
         {
-          "titre": "Au Brésil, pourquoi les classes moyennes ont tourné le dos à Lula",
-          "resume": "Si les politiques sociales menées par le Parti des travailleurs durant ses dix-sept ans au pouvoir ont permis de réduire la pauvreté, nombre de Brésiliens peinent toujours à boucler leur fin de mois. Beaucoup envisagent de voter pour le candidat d’extrême droite, Flavio Boslonaro, au second tour de l’élection présidentielle, le 25 octobre.",
+          "titre": "Le rêve cabossé d’Hollywood face à l’IA : « Tout le monde l’utilise, mais personne ne veut en parler »",
+          "resume": "« Sur la Route 66, pouls de l’Amérique » (6/6). Déclin des studios mythiques aux tournages trop coûteux, déploiement du streaming, arrivée de l’intelligence artificielle : le fief américain de l’industrie du divertissement a perdu de sa superbe. C’est la fin de la route, et, à la veille des midterms, peut-être pas la fin du rêve.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
@@ -104,8 +121,19 @@
           "complete_par_code": true
         },
         {
-          "titre": "Selon Le Monde International, Election présidentielle au Brésil : « Chaque victoire de l’extrême droite à l’étranger banalise cette perspective chez nous », alertent des responsables politiques de gauche en France",
-          "resume": "A la veille du second tour du scrutin, qui aura lieu le 25 octobre, plusieurs personnalités, parmi lesquelles Jean-Luc Mélenchon, Marine Tondelier et Fabien Roussel, s’inquiètent, dans une tribune au « Monde », de la possible victoire de Flavio Bolsonaro et des conséquences que pourrait avoir celle-ci tant sur le pays que sur l’équilibre géopolitique mondial.",
+          "titre": "Selon France Info, L'article à lire pour comprendre les enjeux des élections législatives cruciales en Israël",
+          "resume": "Les électeurs israéliens sont appelés à élire leurs députés, mardi. Affaibli dans les sondages, le Likoud du Premier ministre sortant, Benyamin Nétanyahou, est au coude-à-coude avec son principal rival, le parti d'opposition Yashar, mené par l'ancien chef d'état-major Gadi Eisenkot.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon Le Monde International, Elections législatives en Israël : la guerre d’influence de Yaïr Nétanyahou, le très à droite fils de son père",
+          "resume": "Omniprésent sur les réseaux sociaux, le fils du premier ministre israélien fait tourner à plein la « machine à poison » dans la campagne des législatives pour nuire aux opposants de son père et assurer la survie politique de ce dernier.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
@@ -115,30 +143,8 @@
           "complete_par_code": true
         },
         {
-          "titre": "Selon New York Times World, How Pastors Mobilize Communities in Congo’s Fight Against Ebola",
-          "resume": "As health care workers fought to control the latest outbreak this year, they got crucial aid from churches in beating back fear and misinformation.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "New York Times World"
-          ],
-          "complete_par_code": true
-        },
-        {
-          "titre": "Selon Le Monde International, Aux Fidji, une épidémie de VIH favorisée par l’essor d’une drogue de synthèse",
-          "resume": "L’archipel mélanésien doit affronter l’une des progressions du virus les plus rapides au monde à la suite de l’introduction de la métamphétamine, un produit aussi puissant qu’addictif, souvent consommé sans précautions d’hygiène.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Le Monde International"
-          ],
-          "complete_par_code": true
-        },
-        {
-          "titre": "Selon 20 Minutes, Guerre en Ukraine : Les bombardements meurtriers reprennent, des familles ukrainiennes évacuées",
-          "resume": "« 20 Minutes » fait le point pour vous tous les soirs sur le conflit. Ce jeudi, les frappes ont repris au lendemain d’une tentative de relance de diplomatie, faisant au moins neuf victimes en Ukraine",
+          "titre": "Selon 20 Minutes, Guerre en Ukraine : Embrouilles sur Starlink et les Patriots, l’haltérophilie de retour en Russie",
+          "resume": "« 20 Minutes » fait le point pour vous tous les soirs sur le conflit. Ce dimanche, les tensions entre Kiev et Washington continuent, tandis que les sports olympiques s’apprêtent timidement à faire leur retour en Russie",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
@@ -150,31 +156,11 @@
       ]
     },
     "marches": {
-      "resume_court": "Les principaux indices mondiaux ont clôturé en baisse, notamment à cause des inquiétudes sur l’intelligence artificielle et des hausses de taux d’intérêt.",
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
       "mouvements_notables": [
         {
-          "nom": "CAC 40",
-          "variation_pct": -1.39,
-          "explication": "les inquiétudes sur l’intelligence artificielle"
-        },
-        {
-          "nom": "S&P 500",
-          "variation_pct": -1.21,
-          "explication": "les inquiétudes sur l’intelligence artificielle"
-        },
-        {
-          "nom": "Nasdaq",
-          "variation_pct": -2.6,
-          "explication": "les inquiétudes sur l’intelligence artificielle"
-        },
-        {
-          "nom": "DAX",
-          "variation_pct": -1.07,
-          "explication": null
-        },
-        {
-          "nom": "Euro Stoxx 50",
-          "variation_pct": -1.94,
+          "nom": "Pétrole (Brent)",
+          "variation_pct": -6.1,
           "explication": null
         }
       ]
@@ -182,36 +168,36 @@
     "sport": {
       "items": [
         {
+          "sport": "rugby",
+          "texte": "Après six journées de Championnat, plus d'un quart des joueurs du Top 14 est à l'infirmerie. Le Stade Toulousain, qui a compté 22 blessés fin septembre, montre que tous les clubs sont touchés."
+        },
+        {
           "sport": "formule 1",
-          "texte": "Kimi Antonelli, pilote italien de Mercedes, aura l'occasion à Austin (Texas) de remporter une course et de devenir le plus jeune champion du monde de l'histoire. Il a indiqué en conférence de presse vouloir garder le suspense sur ses ambitions."
+          "texte": "Kimi Antonelli a dominé le Grand Prix des États-Unis, se rapprochant de son premier titre mondial. La course a été animée par des bagarres en piste entre Charles Leclerc et Max Verstappen."
+        },
+        {
+          "sport": "formule 1",
+          "texte": "Charles Leclerc et Max Verstappen ont accompagné Kimi Antonelli sur le podium du Grand Prix des États-Unis. Ils lorgnent sur la deuxième place du Championnat."
+        },
+        {
+          "sport": "formule 1",
+          "texte": "Kimi Antonelli a remporté le Grand Prix des États-Unis, se battant contre Charles Leclerc et Max Verstappen. Il devra encore attendre pour être sacré champion du monde de F1."
         },
         {
           "sport": "football",
-          "texte": "Le Forge FC, équipe de la Première Ligue locale, a remporté le Championnat canadien contre le CF Montréal (1-1, 4-2 aux tirs au but) grâce à l'ancien gardien de Montpellier Dimitry Bertaud."
+          "texte": "Avec son doublé, Kylian Mbappé a fait plier le Barça, offrant le Clasico au Real. Les Merengues reviennent à trois points des Blaugrana en Liga."
         },
         {
           "sport": "football",
-          "texte": "Le principal groupe d'ultras de Lens, les Red Tigers, a condamné les jets de fumigènes lors du match de Ligue des champions Bruges-Lens, qui s'est soldé par une victoire 3-0 de Bruges."
+          "texte": "Le Barça a manqué ses deux premiers chocs de la saison, à Paris et le Clasico. Son rival merengue est revenu à trois points."
         },
         {
           "sport": "football",
-          "texte": "Bournemouth a battu l'AC Milan 3-0, illustrant la domination des clubs de Premier League face à leurs homologues européens."
-        },
-        {
-          "sport": "golf",
-          "texte": "Antoine Rozner et Frédéric Lacroix sont arrivés troisièmes à -4 après le premier tour du Genesis Championship en Corée du Sud, se reclassant provisoirement dans le top 70 de la Race to Dubai, qui assure la qualification pour les play‑offs."
+          "texte": "L'AC Milan, toujours invaincu, a tenu son rang contre l'Udinese. Les Rossoneri sont quatrièmes du Championnat."
         },
         {
           "sport": "tennis",
-          "texte": "Elena Rybakina s'est qualifiée pour les quarts de finale du WTA 500 de Ningbo (Chine) après l'abandon de Polina Kudermetova (5-0, ab.), enregistrant ainsi sa première victoire depuis son accession à la première place mondiale."
-        },
-        {
-          "sport": "cyclisme",
-          "texte": "Le tracé de la 114e édition du Tour de France 2027 a été présenté, avec un départ en Écosse et une arrivée sur les Champs‑Élysées, où le Slovène Tadej Pogacar tentera d'obtenir un sixième succès, record absolu, sur la Grande Boucle."
-        },
-        {
-          "sport": "cyclisme",
-          "texte": "Le parcours du Tour de France Femmes 2027 a été détaillé, comprenant 21 étapes du Grand Départ en Écosse à l'arrivée sur les Champs‑Élysées, avec un contre‑la‑montre par équipes sur le puy de Dôme."
+          "texte": "Tallon Griekspoor a remporté l'Open de Bruxelles, battant Jan-Lennard Struff en finale (4-6, 6-3, 6-4). Le Néerlandais remporte son quatrième titre de carrière."
         }
       ],
       "rien_a_signaler": false,
@@ -224,319 +210,327 @@
           "sport": "football"
         },
         {
-          "affiche": "Boston Celtics – New York Knicks",
+          "affiche": "Denver Nuggets – Golden State Warriors",
           "competition": "NBA",
-          "date_iso": "2026-10-23T23:00:00+00:00",
-          "date_texte": "samedi 24 octobre à 1h00",
+          "date_iso": "2026-10-27T02:00:00+00:00",
+          "date_texte": "mardi 27 octobre à 3h00",
           "sport": "basketball"
         }
       ]
     },
     "science": {
       "mode": "approfondi",
-      "titre": "Dioxyde de carbone",
-      "contenu_markdown": "## Introduction\nLe dioxyde de carbone, appelé aussi gaz carbonique ou anhydride carbonique, est un composé inorganique dont la formule chimique est CO₂. La molécule possède une structure linéaire de la forme O=C=O. À la pression atmosphérique et à la température ambiante, il se présente comme un gaz incolore, inodore, à la saveur piquante.\n\n## Pourquoi le sujet est important\nLe CO₂ est un élément fondamental du cycle du carbone sur notre planète. Il est utilisé par les végétaux dans l’anabolisme pour produire de la biomasse à travers la photosynthèse, processus qui consiste à réduire le CO₂ par l’eau grâce à l’énergie lumineuse captée par la chlorophylle, en libérant de l’oxygène. À l’inverse, le CO₂ est libéré par le catabolisme des plantes, des animaux, des fungi et des micro-organismes, notamment à travers le cycle de Krebs.  \nLe CO₂ est également produit par la combustion des énergies fossiles telles que le charbon, le gaz naturel et le pétrole, ainsi que par la combustion de toutes les matières organiques en général. Il est un sous-produit indésirable dans les processus industriels à grande échelle.  \nDes quantités significatives de CO₂ sont rejetées par les volcans et d’autres phénomènes géothermiques tels que les geysers.  \nEn mars 2025, l’atmosphère terrestre comportait 428 ppmv (parties par million en volume) de CO₂, soit 0,0428 %. Cette teneur était de 283 ppmv en 1839, soit une augmentation globale d’environ 51 % en 186 ans.  \nLe CO₂ est un gaz à effet de serre majeur, transparent en lumière visible mais absorbant dans le domaine infrarouge, de sorte qu’il tend à bloquer la réémission vers l’espace de l’énergie thermique reçue au sol sous l’effet du rayonnement solaire. Il est responsable d’environ 26 % de l’effet de serre à l’œuvre dans l’atmosphère terrestre (la vapeur d’eau assurant 60 %). L’augmentation de sa concentration est responsable de l’essentiel du changement climatique constaté à l’échelle de notre planète depuis les dernières décennies du XXe siècle. Par ailleurs, l’acidification des océans résultant de la dissolution du dioxyde de carbone atmosphérique pourrait compromettre la survie de nombreux organismes marins avant la fin du XXIe siècle.\n\n## Explication du phénomène\nLe CO₂ est libéré dans l’atmosphère par plusieurs mécanismes. La combustion des combustibles fossiles et de la matière organique libère directement du CO₂. La respiration des organismes vivants, ainsi que la décomposition des matières organiques, produisent également du CO₂. Les volcans et les geysers émettent du CO₂ à partir de sources géothermiques.  \nDans l’atmosphère, le CO₂ participe à l’effet de serre en absorbant les longueurs d’onde infrarouges, ce qui entraîne un réchauffement de la surface terrestre.  \nDans les océans, le CO₂ se dissout dans l’eau et forme de l’acide carbonique. Ce processus contribue à l’acidification des océans, un phénomène qui peut affecter la vie marine.\n\n## Photosynthèse\nLes végétaux réduisent le CO₂ en utilisant l’énergie lumineuse captée par la chlorophylle, en libérant de l’oxygène et en produisant des oses, principalement du glucose, via le cycle de Calvin.  \n## Catabolisme\nLes organismes vivants oxydent les lipides et les glucides en présence d’oxygène, produisant de l’eau et du CO₂, ainsi que de l’énergie sous forme d’ATP et de NADH + H⁺.  \n## Solubilité aqueuse\nLe CO₂ se dissout dans l’eau et y forme de l’acide carbonique (H₂CO₃) selon l’équation CO₂(aq) + H₂O ⇌ H₂CO₃(aq), avec une constante d’équilibre Kh ≈ 1,70 × 10⁻³ à 25 °C.  \nLorsque le CO₂ se dissout dans une solution aqueuse basique, la base déprotone l’acide carbonique pour former un ion hydrogénocarbonate (HCO₃⁻), puis un ion carbonate (CO₃²⁻). Cette réaction augmente considérablement la solubilité du CO₂.  \nLe carbonate de potassium (K₂CO₃) a une solubilité de 1,12 kg l⁻¹ d’eau à 20 °C.  \nDans l’eau, le CO₂ peut également former des clathrates, des cages d’eau qui piégent le gaz. Cette propriété est étudiée comme un moyen possible de séparation industrielle du CO₂ contenu dans un gaz en pré- ou postcombustion, ainsi que comme un moyen envisagé de séquestration industrielle ou de stockage géologique.  \n## Phase\nÀ la pression atmosphérique, le CO₂ se sublime à −78,5 °C (passage de l’état solide à l’état gazeux) mais ne fond pas. La phase liquide ne peut exister qu’à une pression minimale de 519 kPa (5,12 atm), dans un intervalle de température allant de −56,6 °C (point triple) à 31,1 °C au maximum à 7,38 MPa (72,8 atm) (point critique).  \nIl existe au moins cinq phases solides moléculaires (à basse pression, moins de 30 à 60 GPa) et trois phases solides polymériques (à pressions plus élevées) du CO₂ :  \n- Phases moléculaires : I (glace sèche, jusqu’à 800 K et 11–12 GPa), II (entre 400 et 5–600 K et une pression de 12 à environ 50 GPa), III (au-delà de 12 GPa et moins de 500 K), IV (au-delà de 11 GPa et plus de 500 K), VII (de 600 à 900 K, jusqu’à 1000 K en incluant la partie supercritique, et 11 à 20 GPa).  \n- Phases polymériques : V (plus de 30 GPa et plus d’environ 1300 K), VI (température comprise entre environ 500 K et 1300 K et pression supérieure à 30 GPa), et une forme amorphe, à moins de 500 K et plus de 50 GPa.\n\n## Données et résultats scientifiques\n\n- En mars 2025, la concentration atmosphérique de dioxyde de carbone était de **428 ppmv** (0,0428 %).  \n- Cette valeur était de **283 ppmv** en 1839, d’après des carottes de glace prélevées en Antarctique, ce qui représente une **augmentation d’environ 51 %** sur 186 ans.  \n- Le CO₂ représente **environ 26 %** de l’effet de serre total de l’atmosphère terrestre, la vapeur d’eau en assurant 60 %.  \n- Le point triple du CO₂ se situe à **−56,6 °C** et 519 kPa ; le point critique à **31,1 °C** et 7,38 MPa.  \n- La constante d’équilibre de dissolution dans l’eau à 25 °C est **Kh ≈ 1,70 × 10⁻³** (rapport des concentrations de H₂CO₃ et de CO₂).  \n\nCes chiffres proviennent des mesures atmosphériques, des analyses de carottes de glace et des propriétés physico‑chimiques établies par la communauté scientifique.\n\n## Ce que les scientifiques savent\n\n- **Rôle biogéochimique** : Le CO₂ est un réactif central du cycle du carbone. Il est fixé par les plantes lors de la photosynthèse (réduction du CO₂ en glucose via le cycle de Calvin) et libéré lors du catabolisme (respiration cellulaire, cycle de Krebs) des organismes vivants.  \n- **Sources anthropiques** : La combustion des énergies fossiles (charbon, gaz naturel, pétrole) et la combustion de matières organiques génèrent la majeure partie du CO₂ additionnel observé depuis la révolution industrielle.  \n- **Sources naturelles** : Volcans, geysers et autres phénomènes géothermiques libèrent également du CO₂, mais à des échelles beaucoup plus modestes que les émissions humaines actuelles.  \n- **Effet de serre** : En absorbant le rayonnement infrarouge réémis par la surface terrestre, le CO₂ retient de l’énergie thermique, contribuant ainsi à l’effet de serre. Son augmentation est identifiée comme le principal facteur du réchauffement climatique observé depuis la fin du XXᵉ siècle.  \n- **Acidification des océans** : Le CO₂ dissous dans l’eau de mer forme de l’acide carbonique, diminuant le pH des océans. Cette acidification menace la calcification des organismes marins (coraux, coquillages, certains phytoplanctons).  \n- **Propriétés physiques** : À pression atmosphérique, le CO₂ subit une sublimation à **−78,5 °C** sans passer par l’état liquide. La phase liquide n’existe que sous pressions supérieures à 5,12 atm et dans une plage de température limitée.  \n- **Phases solides** : Sous haute pression, le CO₂ adopte plusieurs phases cristallines (glace sèche, phases moléculaires I‑IV, VII, ainsi que des phases polymériques V‑VI).  \n\n## Ce qui reste incertain\n\n- **Projection de l’acidification océanique** : Bien que le mécanisme de dissolution du CO₂ dans l’eau soit bien compris, les conséquences précises sur la biodiversité marine à l’échelle du XXIᵉ siècle restent sujettes à des incertitudes, notamment en raison de la complexité des interactions écologiques.  \n- **Quantification exacte des sources naturelles** : Les contributions précises des volcans et des phénomènes géothermiques au budget global de CO₂ sont difficiles à mesurer avec précision, surtout sur des échelles de temps géologiques.  \n- **Comportement à très haute pression** : Les propriétés exactes des phases polymériques du CO₂ (V, VI) à des pressions et températures extrêmes sont encore étudiées, notamment pour leurs implications potentielles en stockage géologique.  \n\n## Limites et controverses éventuelles\n\n- **Impact climatique futur** : Bien que le rôle du CO₂ dans le réchauffement climatique soit largement accepté, les rétroactions climatiques (par ex. modification de la couverture nuageuse, changements dans les cycles biogéochimiques) introduisent des marges d’incertitude dans les modèles climatiques.  \n- **Effet sur la santé humaine** : Le texte source ne fournit pas d’informations détaillées sur les effets directs du CO₂ sur la santé à des concentrations typiques d’environnement, ce qui laisse la question ouverte à la recherche médicale.  \n\n## Conclusion\n\nLe dioxyde de carbone occupe une place centrale dans le cycle du carbone, tant du point de vue biologique que géologique. Les mesures montrent une hausse marquée de sa concentration atmosphérique depuis le XIXᵉ siècle, corrélée à l’augmentation des émissions humaines. Cette hausse renforce l’effet de serre, contribue au réchauffement climatique et entraîne l’acidification des océans, avec des implications majeures pour les écosystèmes terrestres et marins.  \n\nLes connaissances actuelles permettent de quantifier les concentrations, les propriétés physiques et le rôle du CO₂ dans les processus climatiques. La poursuite des recherches dans ces domaines est essentielle pour affiner les stratégies d’atténuation et d’adaptation au changement climatique.\n\n## Sources\n- Wikipédia (fr) — Dioxyde de carbone — https://fr.wikipedia.org/wiki/Dioxyde_de_carbone\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
-      "phrases_retirees_garde_fou": 2,
-      "nb_mots": 1599,
-      "sujet_id": "co2",
+      "titre": "L’apprentissage automatique : comment les ordinateurs apprennent à partir des données",
+      "contenu_markdown": "## Introduction\nL’apprentissage automatique, ou *machine learning* (ML), est une branche de l’intelligence artificielle qui permet aux ordinateurs d’améliorer leurs performances dans des tâches spécifiques sans être explicitement programmés pour chacune. Contrairement à un logiciel classique, qui suit des instructions précises, un système d’apprentissage automatique analyse des données pour identifier des motifs, des corrélations ou des règles, puis utilise ces connaissances pour prendre des décisions ou effectuer des prédictions. Cette approche repose sur des méthodes statistiques et mathématiques pour construire des modèles capables de généraliser à partir d’exemples.\n\n## Pourquoi le sujet est important\nL’apprentissage automatique a révolutionné de nombreux domaines, de la médecine à la finance, en passant par les transports ou la reconnaissance d’images. Son importance tient à sa capacité à traiter des volumes massifs de données (big data) et à détecter des tendances invisibles à l’œil humain. Par exemple, il permet de :\n- **Diagnostiquer des maladies** en analysant des images médicales (comme des radiographies) ;\n- **Optimiser des processus industriels** en prédisant les pannes d’équipements ;\n- **Personnaliser les recommandations** (films, produits, publicités) sur les plateformes numériques ;\n- **Automatiser des tâches complexes**, comme la traduction automatique ou la conduite autonome.\n\nSon développement reflète aussi les défis posés par la quantité croissante de données disponibles, rendant indispensable des outils capables de les exploiter efficacement.\n\n## Explication du phénomène\nL’apprentissage automatique repose sur un principe fondamental : **un système apprend à partir d’exemples**. Prenons l’analogie d’un enfant qui reconnaît des chats : il observe des images étiquetées (« chat » ou « non-chat »), identifie des caractéristiques communes (oreilles pointues, moustaches, forme des yeux), puis généralise ces traits à de nouvelles images. De la même manière, un algorithme d’apprentissage automatique analyse des données pour extraire des règles ou des modèles mathématiques décrivant les relations entre les informations.\n\nLe cœur du processus repose sur deux phases distinctes :\n1. **La phase d’apprentissage (ou d’entraînement)** : le système étudie un jeu de données (appelé *jeu d’entraînement*) pour ajuster les paramètres d’un modèle. Par exemple, pour reconnaître des chiffres manuscrits, il pourrait s’entraîner sur des milliers d’écritures étiquetées (0 à 9).\n2. **La phase de prédiction** : une fois le modèle formé, il est appliqué à de nouvelles données pour produire des résultats (comme classer un chiffre inconnu ou détecter un spam dans un email).\n\n## Les paradigmes d’apprentissage\nLes méthodes d’apprentissage automatique se distinguent selon la nature des données utilisées et la manière dont elles guident l’apprentissage. Trois grands paradigmes existent :\n\n1. **Apprentissage supervisé**.\n   Le système reçoit des données **étiquetées**, c’est-à-dire accompagnées de la réponse attendue. Par exemple, pour un détecteur de spam, chaque email est marqué « spam » ou « non-spam ». L’algorithme apprend à associer des mots-clés ou des motifs à ces étiquettes. Les problèmes typiques incluent :\n   - **La classification** (catégoriser des données, comme trier des emails) ;\n   - **La régression** (prédire une valeur continue, comme le prix d’une maison).\n\n2. **Apprentissage non supervisé**.\n   Les données **ne sont pas étiquetées**, et l’algorithme doit découvrir seul des structures ou des regroupements. Par exemple, un système peut identifier des groupes de clients aux comportements similaires dans une base de données de ventes, sans savoir à l’avance combien de groupes existent. Les applications incluent :\n   - **Le partitionnement** (regrouper des données, comme la segmentation client) ;\n   - **La réduction de dimensionnalité** (simplifier des données complexes, comme compresser des images).\n\n3. **Apprentissage par renforcement**.\n   Le système apprend en **interagissant avec son environnement** et en recevant des **signaux de récompense ou de punition** pour ses actions. Par exemple, un robot apprenant à marcher reçoit une récompense à chaque pas réussi et ajuste ses mouvements en conséquence.\n\n## Le choix du modèle et son entraînement\nUn modèle d’apprentissage automatique est une représentation mathématique qui capture les relations dans les données. Son efficacité dépend de deux facteurs :\n- **Sa complexité** : un modèle trop simple (comme une droite) peut échouer à capturer des motifs complexes, tandis qu’un modèle trop complexe (comme un réseau de neurones profond) risque de surapprendre, c’est-à-dire de mémoriser les données d’entraînement sans généraliser.\n- **Les algorithmes d’optimisation** : pour ajuster les paramètres du modèle, on utilise des techniques comme la **descente de gradient**, qui minimise l’erreur entre les prédictions du modèle et les données réelles. Dans le cas des réseaux de neurones, la **rétropropagation du gradient** permet de calculer, pour chaque paramètre, comment il contribue à l’erreur globale, afin de l’ajuster itérativement.\n\n## Exemples concrets de données exploitées\nLes méthodes d’apprentissage automatique s’appliquent à des types de données variés :\n- **Données numériques** (tableaux de chiffres, comme les performances sportives) ;\n- **Séries temporelles** (évolution d’un cours boursier ou d’une température) ;\n- **Textes** (analyse de sentiments sur les réseaux sociaux) ;\n- **Images ou vidéos** (reconnaissance faciale, détection d’objets) ;\n- **Graphes** (réseaux sociaux, où les nœuds sont des utilisateurs et les arêtes des connexions).\n\nChaque type de données nécessite des techniques adaptées pour en extraire des caractéristiques utiles (appelées *features*), comme la taille d’un objet dans une image ou la fréquence d’un mot dans un texte.\n\n## Données et résultats scientifiques\n\nLes travaux en apprentissage automatique reposent sur l’analyse de jeux de données variés (texte, image, son, graphes, etc.). Les performances des algorithmes sont généralement évaluées à l’aide de mesures standardisées : précision, rappel, taux d’erreur ou coefficient de détermination, selon qu’il s’agit de tâches de classification, de régression ou de réduction de dimension. Les publications rapportent régulièrement des améliorations de ces indicateurs lorsqu’un nouveau modèle ou une nouvelle technique d’optimisation est introduit. Par exemple, les réseaux de neurones profonds entraînés par rétropropagation ont permis d’atteindre des taux de précision supérieurs à ceux des méthodes plus simples sur des bases de données d’images largement utilisées. Les résultats détaillés, incluant les valeurs numériques exactes, sont disponibles dans les articles cités dans la bibliographie.\n\n## Ce que les scientifiques savent\n\n- **Principe de base** : l’apprentissage automatique consiste à ajuster les paramètres d’un modèle mathématique afin de minimiser l’erreur moyenne sur un jeu de données d’entraînement, puis à appliquer ce modèle à de nouvelles données.  \n- **Phases distinctes** : une phase d’entraînement (optimisation des paramètres) suivie d’une phase de prédiction.  \n- **Classification des méthodes** : les algorithmes se distinguent selon le paradigme d’apprentissage (supervisé, non‑supervisé, par renforcement) et le type de problème visé (régression, classification, partitionnement, réduction de dimension).  \n- **Choix du modèle** : il implique un compromis entre simplicité (facilité d’entraînement) et expressivité (capacité à capturer des relations complexes).  \n- **Algorithmes d’optimisation** : la descente de gradient et ses variantes (stochastique, mini‑batch) sont les plus couramment utilisées pour résoudre le problème d’optimisation sous‑jacent.  \n- **Apprentissage incrémental** : certains systèmes peuvent continuer à s’ajuster après le déploiement, en intégrant de nouvelles données ou en recevant des récompenses (apprentissage par renforcement).\n\n## Ce qui reste incertain\n\n- **Généralisation** : il n’existe pas de règle universelle garantissant qu’un modèle performant sur un jeu de données d’entraînement sera également performant sur des données réelles et variées.  \n- **Choix optimal du modèle** : la détermination a priori du niveau de complexité adéquat pour un problème donné reste largement empirique et dépend de la nature et de la quantité des données disponibles.  \n- **Robustesse aux biais** : la façon dont les biais présents dans les données d’entraînement se propagent dans les prédictions n’est pas complètement comprise, surtout pour les systèmes très complexes.  \n- **Convergence des algorithmes** : pour les modèles non convexes (par exemple les réseaux de neurones profonds), les garanties théoriques de convergence vers une solution optimale sont limitées ; on ne sait pas toujours si le point d’arrêt correspond à un optimum global ou à un optimum local.\n\n## Limites et controverses éventuelles\n\n- **Coût computationnel** : l’entraînement de modèles très complexes requiert d’importantes ressources matérielles (puissance de calcul, mémoire), ce qui peut limiter leur accessibilité.  \n- **Interprétabilité** : les modèles les plus performants (notamment les réseaux de neurones profonds) sont souvent considérés comme des « boîtes noires », ce qui soulève des questions d’explicabilité, notamment dans les domaines où la transparence est cruciale (santé, justice).  \n- **Impact environnemental** : la consommation énergétique liée à l’entraînement de grands modèles suscite des débats quant à la durabilité de ces pratiques.  \n- **Éthique et usage** : l’utilisation de l’apprentissage automatique pour des applications sensibles (reconnaissance faciale, prise de décision automatisée) fait l’objet de controverses, notamment concernant la protection de la vie privée et le risque de discrimination.  \n- **Limites théoriques** : malgré les succès pratiques, la compréhension complète des propriétés d’apprentissage (par exemple les limites d’échantillonnage nécessaires pour garantir une bonne généralisation) demeure incomplète.\n\n## Conclusion\n\nL’apprentissage automatique constitue aujourd’hui un pilier de l’intelligence artificielle, reposant sur des principes mathématiques et statistiques solides. Les avancées récentes ont démontré la capacité de ces méthodes à résoudre des tâches complexes grâce à des modèles puissants et à des algorithmes d’optimisation efficaces. Néanmoins, plusieurs aspects restent à approfondir : la généralisation fiable, la maîtrise des biais, la réduction du coût computationnel et l’amélioration de l’interprétabilité. Les débats éthiques et environnementaux soulignent la nécessité d’un encadrement prudent de l’usage de ces technologies. La recherche continue d’explorer de nouvelles architectures, de meilleurs critères d’évaluation et des stratégies d’apprentissage plus économes, afin de rendre l’apprentissage automatique à la fois plus performant et plus responsable.\n\n## Sources\n- Wikipédia (fr) — Apprentissage automatique — https://fr.wikipedia.org/wiki/Apprentissage_automatique\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 1,
+      "nb_mots": 1573,
+      "sujet_id": "apprentissage-automatique",
       "origine": "encyclopedie",
       "matiere_source": "suffisante",
       "textes_sources_audit": [
         {
           "source": "Wikipédia (fr)",
-          "titre": "Dioxyde de carbone",
-          "resume": "Le dioxyde de carbone, aussi appelé gaz carbonique ou anhydride carbonique, est un composé inorganique dont la formule chimique est CO2, la molécule ayant une structure linéaire de la forme O=C=O. Il se présente, sous les conditions normales de température et de pression, comme un gaz incolore, inodore, à la saveur piquante.\nLe CO2 est utilisé par l'anabolisme des végétaux pour produire de la biomasse à travers la photosynthèse, processus qui consiste à réduire le dioxyde de carbone par l'eau, grâce à l'énergie lumineuse reçue du Soleil et captée par la chlorophylle, en libérant de l'oxygène pour produire des oses, et en premier lieu du glucose par le cycle de Calvin. Le CO2 est libéré, à travers le cycle de Krebs, par le catabolisme des plantes, des animaux, des fungi (mycètes, ou champignons) et des micro-organismes. Ce catabolisme consiste notamment à oxyder les lipides et les glucides en eau et en dioxyde de carbone grâce à l'oxygène de l'air pour produire de l'énergie et du pouvoir réducteur, sous forme respectivement d'ATP et de NADH + H+. Le CO2 est par conséquent un élément fondamental du cycle du carbone sur notre planète. Il est également produit par la combustion des énergies fossiles telles que le charbon, le gaz naturel et le pétrole, ainsi que par celle de toutes les matières organiques en général. C'est un sous-produit indésirable dans les processus industriels à grande échelle.\nDes quantités significatives de CO2 sont par ailleurs rejetées par les volcans et autres phénomènes géothermiques tels que les geysers.\nEn mars 2025, l'atmosphère terrestre comportait 428 ppmv (parties par million en volume) de CO2, soit 0,0428 %. Cette teneur était de 283 ppmv en 1839 d'après des carottes de glace prélevées dans l'Antarctique, soit une augmentation globale d'environ 51 % en 186 ans.\nLe CO2 est un gaz à effet de serre majeur, transparent en lumière visible mais absorbant dans le domaine infrarouge, de sorte qu'il tend à bloquer la réémission vers l'espace de l'énergie thermique reçue au sol sous l'effet du rayonnement solaire. Il est responsable d'environ 26 % de l'effet de serre à l'œuvre dans l'atmosphère terrestre (la vapeur d'eau en assurant 60 %) ; l'augmentation de sa concentration est responsable de l'essentiel du changement climatique constaté à l'échelle de notre planète depuis les dernières décennies du XXe siècle. Par ailleurs, l'acidification des océans résultant de la dissolution du dioxyde de carbone atmosphérique pourrait compromettre la survie de nombreux organismes marins avant la fin du XXIe siècle.\n\nCaractéristiques physico-chimiques\nÀ la pression atmosphérique, il se sublime à −78,5 °C (passage de l'état solide à l'état gazeux), mais ne fond pas (passage de l'état solide à l'état liquide).\nLa phase liquide ne peut exister qu'à une pression minimale de 519 kPa (soit 5,12 atm), et dans un intervalle de température allant de −56,6 °C (point triple) à 31,1 °C au maximum à 7,38 MPa (soit 72,8 atm) (point critique).\n\nIl existerait au moins cinq phases solides moléculaires (existant à « basse » pression, moins de 30 à 60 GPa) et trois phases solides polymériques (aux pressions plus élevées) du CO2 :\n\nphases moléculaires :\nI : la « glace sèche », jusqu'à 800 K et 11-12 GPa\nII : entre 400 et 5-600 K et une pression de 12 à environ 50 GPa\nIII : au-delà de 12 GPA et moins de 500 K\nIV : au-delà de 11 GPa et plus de 500 K\nVII : de 600 à 900 K (jusqu'à 1000 K en incluant la partie supercritique) et 11 à 20 GPa\nphases polymériques :\nV : plus de 30 GPa et plus d'environ 1 300 K\nVI : température comprise entre environ 500 K et 1 300 K et pression supérieure à de 30 (à 1300 K) à 50 GPa (à 500 K)\namorphe, à moins de 500 K et plus de 50 GPa\n\nSolubilité aqueuse\nLe CO2 se dissout dans l’eau et y forme de l’acide carbonique H2CO3 :\nCO2 (aq) + H2O (l)  \n  \n    \n      \n        ⇌\n      \n    \n    {\\displaystyle \\rightleftharpoons }\n  \n  H2CO3 (aq), avec Kh = [H2CO3] / [CO2] ≈ 1,70 × 10−3 à 25 °C.\nIl est également liposoluble (soluble dans les corps gras).\nL’acide carbonique n’est que modérément stable et il se décompose facilement en H2O et CO2. En revanche, lorsque le dioxyde de carbone se dissout dans une solution aqueuse basique (soude, potasse…), la base déprotone l’acide carbonique pour former un ion hydrogénocarbonate HCO–3, aussi appelé ion bicarbonate, puis un ion carbonate CO2–3. De cette façon, la solubilité du CO2 est considérablement augmentée. Le carbonate de potassium K2CO3 a par exemple une solubilité de 1,12 kg/l d'eau à 20 °C.\nC'est ainsi que le calcaire se dissout dans l'eau, dans la plage de pH dans laquelle l'hydrogénocarbonate acide est stable, en produisant une solution d'hydrogénocarbonate(s) (de calcium et de magnésium…). Il est donc susceptible de précipiter lorsque le CO2 dissous est dégazé, comme dans la formation des stalagmites et des stalactites. Le calcaire a ainsi, en présence de CO2, une solubilité qui diminue quand la température augmente, à l'instar des gaz et au contraire de la plupart des solides (dont la solubilité augmente généralement avec la température).\nDans certaines conditions (haute pression + basse température) le CO2 peut être piégé dans des cages d'eau dites clathrates. C'est un des moyens possibles de séparation industrielle du CO2 contenu dans un gaz en pré- ou postcombustion. C'est aussi un des moyens envisagés de séquestration industrielle de CO2 ou de stockage géologique étudié, éventuellement corrélativement à la désalinisation d'eau de mer (il peut théoriquement même être substitué à l'hydrate de méthane).\n\nHistorique des connaissances"
+          "titre": "Apprentissage automatique",
+          "resume": "L'apprentissage automatique (en anglais : machine learning (ML), litt. « apprentissage machine »), apprentissage artificiel ou apprentissage statistique est un champ d'étude de l'intelligence artificielle qui se fonde sur des approches mathématiques et statistiques pour donner aux ordinateurs la capacité d'« apprendre » à partir de données, c'est-à-dire d'améliorer leurs performances à résoudre des tâches sans être explicitement programmés pour chacune. Plus largement, il concerne la conception, l'analyse, l'optimisation, le développement et l'implémentation de telles méthodes. On parle d'apprentissage statistique car l'apprentissage consiste à créer un modèle dont l'erreur statistique moyenne est la plus faible possible.\nL'apprentissage automatique comporte généralement deux phases. La première, \ndite phase d'apprentissage ou d'entraînement, consiste à estimer un modèle à partir d'un jeu de données d'entraînement. Cette étape est souvent formulée comme un problème d'optimisation.  \nLa seconde phase consiste à utiliser le modèle entraîné afin d'effectuer des prédictions sur de nouvelles données. \nLes méthodes d'apprentissage incrémental peuvent continuer à apprendre une fois en production.\nPlusieurs critères permettent de classifier les méthodes existantes. \nLe paradigme d'apprentissage (supervisé, non-supervisé, par renforcement…) est déterminé par la nature des données, et notamment la disponibilité ou non de données étiquetées, c'est-à-dire pour lesquelles la réponse au problème est connue.\nPar ailleurs, chaque méthode cherche à résoudre un problème d'apprentissage précis : on distingue les problèmes de régression, de classification, de partitionnement, et de réduction de dimensionnalité.\nEnfin, pour une tâche identifiée, une méthode d'apprentissage est caractérisée par le choix d'un modèle ainsi que d'algorithmes permettant d'entraîner ce modèle.\nL'apprentissage automatique peut être appliqué à divers types de données, tels des graphes, des arbres, des courbes, ou plus simplement des vecteurs de caractéristiques, qui peuvent être des variables qualitatives ou quantitatives continues ou discrètes.\nSi le modèle apprend de manière incrémentale, en fonction d'une récompense reçue par le programme pour chacune des actions entreprises, on parle d'apprentissage par renforcement.\n\nPrincipes\nL'apprentissage automatique permet à un système piloté ou assisté par ordinateur d'adapter ses réponses ou comportements aux situations rencontrées, en se fondant sur l'analyse de données empiriques passées issues de bases de données, de capteurs, ou du web.\n\nDonnées et paradigme d'apprentissage\nLe point commun à toutes les méthodes d'apprentissage automatique est d'exploiter de l'information contenue dans un jeu de données. Ces données peuvent toutefois être de nature très différentes : des données numériques, des séries temporelles, un corpus de textes, une collection d'images, de signaux audio ou vidéo, de graphes, etc.\nLa nature et la richesse des données disponibles définit le paradigme d'apprentissage, c'est-à-dire la manière dont les données guident le processus d'apprentissage. Par exemple, si l'on cherche à apprendre un détecteur de spam à partir d'une collection d'emails ayant été manuellement annotés comme désirables ou indésirables, on parle d'apprentissage supervisé : les données contiennent de l'information issue d'une supervision humaine, qui permet d'expliquer ce que l'on cherche à prédire.\n\nModèle d'apprentissage\nUn système d'apprentissage repose sur le choix d'un modèle, c'est-à-dire d'un objet mathématique, décrit le plus souvent par des paramètres, permettant de capturer et d'expliquer certaines structures ou relations dans les données étudiées. Les paramètres du modèle sont ajustés à partir des données d'entraînement afin d'en décrire au mieux la structure. \nLe choix du modèle est sujet à un compromis : un modèle simple contenant peu de paramètres est plus facile à entraîner, mais peut se révéler insuffisant si les données à modéliser sont complexes (par exemple fortement non linéaires) ; à l'inverse, un modèle complexe contenant de nombreux paramètres sera typiquement plus expressif et performant, mais il sera beaucoup plus difficile et coûteux d'en ajuster les paramètres.\n\nL'entraînement du modèle : un problème d'optimisation\n\nLa phase d'apprentissage consiste à rechercher la valeur des paramètres du modèle permettant d'expliquer au mieux les données observées. Elle est souvent formulée comme un problème d'optimisation, qui peut être convexe ou non convexe selon la complexité du modèle, et dont la résolution est typiquement effectuée en utilisant des algorithmes comme la descente de gradient ou descente de gradient stochastique.\nL'entraînement de réseaux de neurones artificiels \nest par exemple un problème non convexe, et est  classiquement résolu en utilisant la méthode de rétropropagation du gradient. Cette technique consiste à estimer itérativement, pour chaque couche du modèle et chaque paramètre de chaque couche, dans quelle mesure il a contribué à une bonne réponse ou à une erreur du modèle, et à l'ajuster en conséquence.\n\nHistorique"
         }
       ]
     },
     "citation": {
-      "texte": "On ne naît pas femme : on le devient.",
-      "auteur": "Simone de Beauvoir",
-      "source": "Le Deuxième Sexe",
-      "annee": 1949
+      "texte": "Le cœur a ses raisons que la raison ne connaît point.",
+      "auteur": "Blaise Pascal",
+      "source": "Pensées",
+      "annee": 1670
     },
     "meteo": {
       "villes_detail": [
         {
           "ville": "Antibes",
-          "temperature_actuelle": 15.6,
-          "temperature_max": 20.1,
-          "temperature_min": 15.3,
-          "precipitation_mm": 2.8,
-          "probabilite_pluie_pct": 94,
-          "vent_kmh": 10.8,
-          "vent_max_kmh": 24.1,
-          "rafales_max_kmh": 47.2,
-          "weather_code": 61,
-          "description": "pluie légère",
+          "temperature_actuelle": 14.2,
+          "temperature_max": 20.3,
+          "temperature_min": 13.9,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 7.2,
+          "vent_max_kmh": 9.9,
+          "rafales_max_kmh": 15.8,
+          "weather_code": 3,
+          "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 15.6,
-              "temperature_max": 19.7,
-              "probabilite_pluie_pct": 3,
-              "precipitation_mm": 0.2,
-              "vent_max_kmh": 12,
+              "temperature_min": 14.2,
+              "temperature_max": 19.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
               "weather_code": 3,
               "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 17.9,
-              "temperature_max": 20.1,
-              "probabilite_pluie_pct": 94,
-              "precipitation_mm": 2.6,
-              "vent_max_kmh": 14,
-              "weather_code": 61,
-              "description": "pluie légère"
+              "temperature_min": 19.5,
+              "temperature_max": 20.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Soir",
-              "temperature_min": 16.1,
-              "temperature_max": 19.5,
+              "temperature_min": 17.1,
+              "temperature_max": 19.1,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 24,
-              "weather_code": 0,
-              "description": "ciel dégagé"
+              "vent_max_kmh": 8,
+              "weather_code": 3,
+              "description": "couvert"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Cannes",
-          "temperature_actuelle": 15.0,
+          "temperature_actuelle": 14.3,
           "temperature_max": 20.1,
-          "temperature_min": 15.0,
-          "precipitation_mm": 3.5,
-          "probabilite_pluie_pct": 97,
-          "vent_kmh": 9.7,
-          "vent_max_kmh": 25.7,
-          "rafales_max_kmh": 41.4,
-          "weather_code": 61,
-          "description": "pluie légère",
+          "temperature_min": 14.3,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 7.9,
+          "vent_max_kmh": 9.6,
+          "rafales_max_kmh": 17.6,
+          "weather_code": 3,
+          "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 15.0,
-              "temperature_max": 18.8,
-              "probabilite_pluie_pct": 1,
-              "precipitation_mm": 0.1,
-              "vent_max_kmh": 11,
+              "temperature_min": 14.3,
+              "temperature_max": 19.0,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
               "weather_code": 3,
               "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 17.8,
+              "temperature_min": 19.2,
               "temperature_max": 20.1,
-              "probabilite_pluie_pct": 97,
-              "precipitation_mm": 3.4,
-              "vent_max_kmh": 18,
-              "weather_code": 61,
-              "description": "pluie légère"
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Soir",
-              "temperature_min": 16.0,
-              "temperature_max": 19.6,
+              "temperature_min": 17.2,
+              "temperature_max": 18.7,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 26,
-              "weather_code": 0,
-              "description": "ciel dégagé"
+              "vent_max_kmh": 10,
+              "weather_code": 3,
+              "description": "couvert"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Valbonne",
-          "temperature_actuelle": 11.5,
-          "temperature_max": 16.0,
-          "temperature_min": 8.7,
-          "precipitation_mm": 1.0,
-          "probabilite_pluie_pct": 96,
-          "vent_kmh": 6.0,
-          "vent_max_kmh": 9.7,
-          "rafales_max_kmh": 20.9,
-          "weather_code": 61,
-          "description": "pluie légère",
+          "temperature_actuelle": 11.3,
+          "temperature_max": 19.1,
+          "temperature_min": 11.0,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 6.3,
+          "vent_max_kmh": 6.8,
+          "rafales_max_kmh": 11.2,
+          "weather_code": 2,
+          "description": "partiellement nuageux",
           "periodes": [
             {
               "label": "Matin",
               "temperature_min": 11.3,
-              "temperature_max": 15.4,
+              "temperature_max": 18.1,
               "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.1,
-              "vent_max_kmh": 8,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
               "weather_code": 3,
               "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 13.4,
-              "temperature_max": 16.0,
-              "probabilite_pluie_pct": 96,
-              "precipitation_mm": 0.9,
-              "vent_max_kmh": 10,
-              "weather_code": 3,
-              "description": "couvert"
+              "temperature_min": 17.0,
+              "temperature_max": 19.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             },
             {
               "label": "Soir",
-              "temperature_min": 8.7,
-              "temperature_max": 15.8,
+              "temperature_min": 13.1,
+              "temperature_max": 15.7,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 9,
-              "weather_code": 0,
-              "description": "ciel dégagé"
+              "vent_max_kmh": 5,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Grasse",
-          "temperature_actuelle": 11.7,
-          "temperature_max": 16.7,
-          "temperature_min": 8.9,
-          "precipitation_mm": 1.2,
-          "probabilite_pluie_pct": 96,
-          "vent_kmh": 8.0,
-          "vent_max_kmh": 10.3,
-          "rafales_max_kmh": 17.6,
-          "weather_code": 61,
-          "description": "pluie légère",
+          "temperature_actuelle": 10.7,
+          "temperature_max": 18.2,
+          "temperature_min": 10.1,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 8.2,
+          "vent_max_kmh": 8.8,
+          "rafales_max_kmh": 10.8,
+          "weather_code": 3,
+          "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 11.7,
-              "temperature_max": 14.7,
+              "temperature_min": 10.7,
+              "temperature_max": 16.9,
               "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.1,
-              "vent_max_kmh": 10,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
               "weather_code": 3,
               "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 12.9,
-              "temperature_max": 16.7,
-              "probabilite_pluie_pct": 96,
-              "precipitation_mm": 1.1,
-              "vent_max_kmh": 7,
-              "weather_code": 61,
-              "description": "pluie légère"
+              "temperature_min": 16.1,
+              "temperature_max": 18.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 5,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             },
             {
               "label": "Soir",
-              "temperature_min": 8.9,
-              "temperature_max": 15.5,
+              "temperature_min": 13.7,
+              "temperature_max": 14.4,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 9,
-              "weather_code": 0,
-              "description": "ciel dégagé"
+              "vent_max_kmh": 4,
+              "weather_code": 3,
+              "description": "couvert"
             }
           ],
           "alertes": []
         }
       ],
-      "temperature_max_zone": 20.1,
-      "temperature_min_zone": 8.7,
-      "probabilite_pluie_max_pct": 97,
-      "vent_max_kmh": 25.7,
-      "description_dominante": "pluie légère",
+      "temperature_max_zone": 20.3,
+      "temperature_min_zone": 10.1,
+      "probabilite_pluie_max_pct": 0,
+      "vent_max_kmh": 9.9,
+      "description_dominante": "couvert",
       "periodes": [
         {
           "label": "Matin",
-          "temperature_min": 11.3,
-          "temperature_max": 19.7,
-          "probabilite_pluie_pct": 3,
-          "precipitation_mm": 0.2,
-          "vent_max_kmh": 12,
+          "temperature_min": 10.7,
+          "temperature_max": 19.6,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 9,
           "weather_code": 3,
           "description": "couvert"
         },
         {
           "label": "Après-midi",
-          "temperature_min": 12.9,
-          "temperature_max": 20.1,
-          "probabilite_pluie_pct": 97,
-          "precipitation_mm": 3.4,
-          "vent_max_kmh": 18,
-          "weather_code": 61,
-          "description": "pluie légère"
+          "temperature_min": 16.1,
+          "temperature_max": 20.2,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 9,
+          "weather_code": 3,
+          "description": "couvert"
         },
         {
           "label": "Soir",
-          "temperature_min": 8.7,
-          "temperature_max": 19.6,
+          "temperature_min": 13.1,
+          "temperature_max": 19.1,
           "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
-          "vent_max_kmh": 26,
-          "weather_code": 0,
-          "description": "ciel dégagé"
+          "vent_max_kmh": 10,
+          "weather_code": 3,
+          "description": "couvert"
         }
       ],
       "alertes": [],
-      "resume": "Couvert le matin, pluie légère l'après-midi, ciel dégagé le soir, de 9° à 20°."
+      "resume": "Couvert toute la journée, de 10° à 20°."
     },
     "anglais": {
       "mode": "litterature",
-      "oeuvre": "A Scandal in Bohemia",
-      "auteur": "Arthur Conan Doyle",
-      "annee": 1891,
+      "oeuvre": "The Fall of the House of Usher",
+      "auteur": "Edgar Allan Poe",
+      "annee": 1839,
       "segments": [
         {
-          "t": "To Sherlock Holmes she is always the woman. I have seldom",
-          "g": "rarement"
+          "t": "During the whole of a dull",
+          "g": "terne"
         },
         {
-          "t": " heard him mention her under any other name. In his eyes she eclipses",
-          "g": "éclipse"
+          "t": ", dark, and soundless",
+          "g": "sans un bruit"
         },
         {
-          "t": " and predominates",
-          "g": "domine"
+          "t": " day in the autumn of the year, when the clouds hung oppressively",
+          "g": "de façon oppressante"
         },
         {
-          "t": " the whole of her sex. It was not that he felt any emotion akin to",
-          "g": "apparenté à"
+          "t": " low in the heavens, I had been passing alone, on horseback",
+          "g": "à cheval"
         },
         {
-          "t": " love for Irene Adler. All emotions, and that one particularly, were abhorrent",
-          "g": "odieuses"
+          "t": ", through a singularly",
+          "g": "singulièrement"
         },
         {
-          "t": " to his cold, precise but admirably balanced mind. He was, I take it",
-          "g": "je suppose"
+          "t": " dreary",
+          "g": "désolée"
         },
         {
-          "t": ", the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position",
-          "g": "position déplacée"
+          "t": " tract",
+          "g": "l'étendue"
         },
         {
-          "t": ". He never spoke of the softer passions, save with",
-          "g": "sauf avec"
+          "t": " of country; and at length",
+          "g": "enfin"
         },
         {
-          "t": " a gibe",
-          "g": "la raillerie"
+          "t": " found myself, as the shades of the evening drew on",
+          "g": "le crépuscule approchait"
         },
         {
-          "t": " and a sneer",
-          "g": "le ricanement"
+          "t": ", within view of the melancholy House of Usher. I know not how it was—but, with the first glimpse",
+          "g": "l'aperçu"
         },
         {
-          "t": ".",
+          "t": " of the building, a sense of insufferable gloom",
+          "g": "la tristesse sombre"
+        },
+        {
+          "t": " pervaded",
+          "g": "envahissait"
+        },
+        {
+          "t": " my spirit.",
           "g": null
         }
       ],
-      "texte_glose": "To Sherlock Holmes she is always the woman. I have seldom (= rarement) heard him mention her under any other name. In his eyes she eclipses (= éclipse) and predominates (= domine) the whole of her sex. It was not that he felt any emotion akin to (= apparenté à) love for Irene Adler. All emotions, and that one particularly, were abhorrent (= odieuses) to his cold, precise but admirably balanced mind. He was, I take it (= je suppose), the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position (= position déplacée). He never spoke of the softer passions, save with (= sauf avec) a gibe (= la raillerie) and a sneer (= le ricanement)."
+      "texte_glose": "During the whole of a dull (= terne), dark, and soundless (= sans un bruit) day in the autumn of the year, when the clouds hung oppressively (= de façon oppressante) low in the heavens, I had been passing alone, on horseback (= à cheval), through a singularly (= singulièrement) dreary (= désolée) tract (= l'étendue) of country; and at length (= enfin) found myself, as the shades of the evening drew on (= le crépuscule approchait), within view of the melancholy House of Usher. I know not how it was—but, with the first glimpse (= l'aperçu) of the building, a sense of insufferable gloom (= la tristesse sombre) pervaded (= envahissait) my spirit."
     },
     "meta": {
-      "resume_1_phrase": "À la une : Présidentielle 2027 : Edouard Philippe lance ses idées sans imprimer ; En Chine, le séisme de magnitude 7 qui a frappé la région du Tibet fait au moins 16 morts et des dizaines de blessés."
+      "resume_1_phrase": "À la une : Présidentielle 2027 : à Orléans, Marine Le Pen lance sa campagne entre radicalité et « optimisme », dans une ville en état de siège."
     },
     "_genere_par_llm": true,
     "_provider": "groq+mistral+nvidia",
@@ -562,9 +556,9 @@
       },
       "science_a": {
         "genere_par_llm": true,
-        "provider": "nvidia",
+        "provider": "mistral",
         "erreur": null,
-        "essais_echoues": 1
+        "essais_echoues": 0
       },
       "science_b": {
         "genere_par_llm": true,
@@ -574,9 +568,9 @@
       },
       "sport": {
         "genere_par_llm": true,
-        "provider": "groq",
+        "provider": "nvidia",
         "erreur": null,
-        "essais_echoues": 1
+        "essais_echoues": 0
       }
     },
     "_bloc": {
@@ -586,7 +580,7 @@
     },
     "_science": {
       "genere_par_llm": true,
-      "provider": "groq+nvidia",
+      "provider": "groq+mistral",
       "erreur": null
     },
     "_anglais": {
@@ -595,5 +589,5 @@
       "erreur": null
     }
   },
-  "debut_run": "2026-10-23T06:10:40.942134+02:00"
+  "debut_run": "2026-10-26T06:10:41.302613+01:00"
 }
