@@ -1,26 +1,43 @@
 {
-  "date": "2026-10-26",
-  "derniere_mise_a_jour": "2026-10-26T06:15:07.498723+01:00",
+  "date": "2026-10-27",
+  "derniere_mise_a_jour": "2026-10-27T06:16:45.025321+01:00",
   "briefing": {
     "actualite": {
       "france": [
         {
-          "titre": "Présidentielle 2027 : à Orléans, Marine Le Pen lance sa campagne entre radicalité et « optimisme », dans une ville en état de siège",
-          "resume": "La candidate du Rassemblement national a réuni plus de 8 000 soutiens, dimanche 25 octobre, en périphérie de la préfecture du Loiret, mise sous cloche.",
-          "pourquoi_important": "Marque le lancement officiel de la campagne présidentielle 2027.",
+          "titre": "Attentat raciste à Trappes et La Verrière : Kevin T. « conteste le caractère raciste », sa garde à vue a repris",
+          "resume": "Désormais de nouveau en garde à vue, Kévin T., le suspect de l’attaque mortelle dans les Yvelines, avait été placé en soins psychiatriques samedi 24 octobre. Une décision qui ne dit rien, à cette heure, d’une éventuelle irresponsabilité pénale.",
+          "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "Le Monde",
-            "France Info",
             "Libération",
-            "20 Minutes",
-            "France 24 International"
+            "20 Minutes"
           ]
         },
         {
-          "titre": "Le Premier ministre serbe Aleksandar Vucic reconnaît sa défaite aux élections législatives anticipées, après 14 ans au pouvoir",
-          "resume": "Il s'incline face à la liste menée par le mouvement étudiant, qui organise des manifestations dans tout le pays depuis deux ans.",
+          "titre": "Attentat de Trappes : la gauche en ordre dispersé dans les rassemblements contre le racisme",
+          "resume": "Autour de leur candidat à la présidentielle, Raphaël Glucksmann, les partis de l’espace social-démocrate ont répondu à l’appel des associations et des syndicats, place Stalingrad, à Paris, quand Jean-Luc Mélenchon et LFI se sont réunis à La Courneuve.",
+          "pourquoi_important": "Selon Le Monde, les partis social-démocrates ont organisé des rassemblements contre le racisme suite à l’attentat.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Attentat dans les Yvelines : la garde à vue de Kévin T. a repris, il conteste le mobile raciste de ses actes",
+          "resume": "Devant la presse ce lundi 26 octobre, le procureur antiterroriste s’est exprimé sur l’attaque qui a fait un mort et quatre blessés graves vendredi, à Trappes et La Verrière.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Le profil psychiatrique du suspect de l'attentat dans les Yvelines \"ne change rien\" au mobile \"raciste\", estime Laurent Nuñez",
+          "resume": "La garde à vue de Kévin T. a été suspendue pour motifs psychiatriques, dimanche, afin de vérifier si son état est compatible avec la poursuite de ses auditions.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
@@ -29,111 +46,74 @@
           ]
         },
         {
-          "titre": "Paris, Nantes, Bordeaux, Marseille… Après l’attentat raciste dans les Yvelines, des rassemblements lundi dans plusieurs villes",
-          "resume": "Les Parisiens sont notamment appelés à converger vers la place Stalingrad lundi 26 octobre à 19 heures. Un homme de 26 ans est mort et cinq autres blessées lors de l’attaque raciste vendredi à Trappes et à La Verrière. Le suspect a été diagnostiqué schizophrène.",
-          "pourquoi_important": "Mobilise la population dans plusieurs villes suite à un attentat raciste.",
+          "titre": "Ballon d’or 2026 : Harry Kane remporte le trophée, Mbappé deuxième et Lamine Yamal troisième... Revivez la cérémonie avec nous",
+          "resume": "L’attaquant du Bayern Munich, arrivé en tête après le vote de 100 journalistes internationaux, devance Kylian Mbappé et Yamine Lamal au classement. A 33 ans, il succède au palmarès à Ousmane Dembélé.",
+          "pourquoi_important": "Le trophée récompense le meilleur joueur selon le vote de journalistes internationaux.",
           "consequences": null,
-          "statut": "information_rapportee",
+          "statut": "fait_confirme",
           "sources": [
+            "Le Monde",
+            "20 Minutes",
             "Libération"
-          ]
-        },
-        {
-          "titre": "Attentat raciste à Trappes : le tireur sous traitement pour schizophrénie",
-          "resume": "Selon les informations de LCI, Kevin T., 39 ans, a été diagnostiqué schizophrène et suivait un traitement médical. Sa garde à vue a été levée ce dimanche matin. Il fait actuellement l’objet d’une expertise à l’infirmerie psychiatrique de la préfecture de police.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Libération"
-          ]
-        },
-        {
-          "titre": "Présidentielle 2027 : Un duel Le Pen-Mélenchon encore annoncé par un sondage",
-          "resume": "Selon un sondage Ipsos-BVA-Cesi école d’ingénieurs pour « Le Parisien », le leader de LFI est devant Édouard Philippe et Raphaël Glucksmann mais reste loin derrière la candidate du RN",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "20 Minutes"
           ]
         }
       ],
       "monde": [
         {
-          "titre": "En Serbie, le mouvement des étudiants remporte les législatives face au dirigeant populiste Aleksandar Vucic",
-          "resume": "La coalition menée par Aleksandar Vucic a perdu les législatives, marquant une alternance démocratique majeure en Serbie après deux décennies de blocage politique.",
+          "titre": "Donald Trump promet un million de dollars pour toute information débouchant sur une condamnation pour fraude électorale",
+          "resume": "Le président américain offre une récompense pour des signalements de fraude électorale lors des élections de mi-mandat prévues le 3 novembre, jetant le doute sur leur légitimité.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Législatives en Israël : Benyamin Nétanyahou face aux électeurs pour la première fois depuis les attaques du 7-Octobre",
+          "resume": "Le premier ministre sortant affronte les électeurs dans un scrutin serré face au bloc de l’opposition mené par Gadi Eisenkot, ancien chef de l’armée.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Des frappes jordaniennes en Syrie font au moins six morts après une attaque contre une église en Jordanie",
+          "resume": "La Jordanie cible des groupes terroristes liés à l’attaque ayant tué neuf personnes dans une église orthodoxe grecque, selon son armée.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : une trêve humanitaire commence à Olechky, ville ukrainienne sous occupation russe",
+          "resume": "Une suspension des combats permet une opération humanitaire pour les habitants privés de nourriture et de médicaments, tandis que des frappes russes à Kiev font une victime et dix blessés.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "Le Monde International",
-            "France 24 International",
-            "Le Monde",
-            "Libération",
-            "20 Minutes",
-            "New York Times World"
-          ]
-        },
-        {
-          "titre": "Présidentielle au Brésil : Lula remporte l’élection avec 51,79 % des voix, Flavio Bolsonaro va « demander l’annulation » du scrutin",
-          "resume": "Lula a été réélu président du Brésil avec 51,79 % des voix, après une prolongation de l’ouverture des bureaux de vote due à des perturbations dans les transports publics, notamment à São Paulo.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "20 Minutes",
-            "Le Monde International",
             "France 24 International"
           ]
         },
         {
-          "titre": "Guerre en Ukraine : Favorable au dialogue avec Moscou, la présidente sortante en tête du premier tour en Bulgarie",
-          "resume": "La présidente sortante de Bulgarie, favorable à un dialogue avec Moscou, arrive en tête du premier tour des élections présidentielles.",
+          "titre": "Présidentielle au Brésil : « La victoire de Lula porte un coup d’arrêt à la politique de Donald Trump »",
+          "resume": "Selon un professeur de science politique, la réélection de Lula au Brésil envoie un signal de résistance à l’influence de Donald Trump sur le continent américain.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
-            "20 Minutes"
+            "Libération"
           ]
         },
         {
-          "titre": "RD Congo : la proposition de loi fixant les conditions d’organisation du référendum adoptée",
-          "resume": "L’Assemblée nationale de la RD Congo a adopté une proposition de loi encadrant l’organisation d’un référendum, incluant des modifications constitutionnelles possibles, suscitant des craintes d’un troisième mandat pour Félix Tshisekedi.",
-          "pourquoi_important": null,
-          "consequences": "L’opposition dénonce une manœuvre pour prolonger le mandat de Félix Tshisekedi, risquant des protestations ou une crise institutionnelle.",
-          "statut": "information_rapportee",
-          "sources": [
-            "France 24 International"
-          ]
-        },
-        {
-          "titre": "Le rêve cabossé d’Hollywood face à l’IA : « Tout le monde l’utilise, mais personne ne veut en parler »",
-          "resume": "« Sur la Route 66, pouls de l’Amérique » (6/6). Déclin des studios mythiques aux tournages trop coûteux, déploiement du streaming, arrivée de l’intelligence artificielle : le fief américain de l’industrie du divertissement a perdu de sa superbe. C’est la fin de la route, et, à la veille des midterms, peut-être pas la fin du rêve.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "Le Monde International"
-          ],
-          "complete_par_code": true
-        },
-        {
-          "titre": "Selon France Info, L'article à lire pour comprendre les enjeux des élections législatives cruciales en Israël",
-          "resume": "Les électeurs israéliens sont appelés à élire leurs députés, mardi. Affaibli dans les sondages, le Likoud du Premier ministre sortant, Benyamin Nétanyahou, est au coude-à-coude avec son principal rival, le parti d'opposition Yashar, mené par l'ancien chef d'état-major Gadi Eisenkot.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "France Info"
-          ],
-          "complete_par_code": true
-        },
-        {
-          "titre": "Selon Le Monde International, Elections législatives en Israël : la guerre d’influence de Yaïr Nétanyahou, le très à droite fils de son père",
-          "resume": "Omniprésent sur les réseaux sociaux, le fils du premier ministre israélien fait tourner à plein la « machine à poison » dans la campagne des législatives pour nuire aux opposants de son père et assurer la survie politique de ce dernier.",
+          "titre": "Selon Le Monde International, Ces lobbys évangéliques américains qui exportent leur guerre culturelle en Afrique",
+          "resume": "« En Afrique, la vague réactionnaire » (1/4). Profitant du discours en vogue sur le continent autour des « valeurs traditionnelles africaines » menacées par la « perversion » de l’Occident, la droite évangélique américaine a su exporter son idéologie ultraconservatrice auprès de certains dirigeants africains.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
@@ -143,8 +123,19 @@
           "complete_par_code": true
         },
         {
-          "titre": "Selon 20 Minutes, Guerre en Ukraine : Embrouilles sur Starlink et les Patriots, l’haltérophilie de retour en Russie",
-          "resume": "« 20 Minutes » fait le point pour vous tous les soirs sur le conflit. Ce dimanche, les tensions entre Kiev et Washington continuent, tandis que les sports olympiques s’apprêtent timidement à faire leur retour en Russie",
+          "titre": "Selon France 24 International, Législatives en Israël : comment se joue la bataille pour gouverner",
+          "resume": "Les Israéliennes et Israéliens voteront le 27 octobre à l'occasion des premières élections législatives organisées depuis les attaques du 7-Octobre. Scrutin proportionnel, jeu des coalitions, majorité à 61 sièges... alors qu'aucun bloc ne semble majoritaire dans les sondages, France 24 fait le point sur le fonctionnement d’un système électoral qui peut réserver l’essentiel de la bataille à l’après-scrutin.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon 20 Minutes, Guerre au Moyen-Orient : Une nappe de pétrole grossit au large des Émirats",
+          "resume": "Les autorités craignent que cela ne menace des plages et des stations de dessalement du pays du Golfe situées non loin de là",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
@@ -160,7 +151,7 @@
       "mouvements_notables": [
         {
           "nom": "Pétrole (Brent)",
-          "variation_pct": -6.1,
+          "variation_pct": -5.34,
           "explication": null
         }
       ]
@@ -168,36 +159,36 @@
     "sport": {
       "items": [
         {
-          "sport": "rugby",
-          "texte": "Après six journées de Championnat, plus d'un quart des joueurs du Top 14 est à l'infirmerie. Le Stade Toulousain, qui a compté 22 blessés fin septembre, montre que tous les clubs sont touchés."
-        },
-        {
-          "sport": "formule 1",
-          "texte": "Kimi Antonelli a dominé le Grand Prix des États-Unis, se rapprochant de son premier titre mondial. La course a été animée par des bagarres en piste entre Charles Leclerc et Max Verstappen."
-        },
-        {
-          "sport": "formule 1",
-          "texte": "Charles Leclerc et Max Verstappen ont accompagné Kimi Antonelli sur le podium du Grand Prix des États-Unis. Ils lorgnent sur la deuxième place du Championnat."
-        },
-        {
-          "sport": "formule 1",
-          "texte": "Kimi Antonelli a remporté le Grand Prix des États-Unis, se battant contre Charles Leclerc et Max Verstappen. Il devra encore attendre pour être sacré champion du monde de F1."
+          "sport": "football",
+          "texte": "Alexia Putellas a remporté le Ballon d'Or France Football 2026 à Londres, succédant à Aitana Bonmati qui détenait trois sacres consécutifs."
         },
         {
           "sport": "football",
-          "texte": "Avec son doublé, Kylian Mbappé a fait plier le Barça, offrant le Clasico au Real. Les Merengues reviennent à trois points des Blaugrana en Liga."
+          "texte": "Alexia Putellas a gagné le Ballon d'Or Féminin pour la troisième fois, égalant ainsi le record."
         },
         {
           "sport": "football",
-          "texte": "Le Barça a manqué ses deux premiers chocs de la saison, à Paris et le Clasico. Son rival merengue est revenu à trois points."
-        },
-        {
-          "sport": "football",
-          "texte": "L'AC Milan, toujours invaincu, a tenu son rang contre l'Udinese. Les Rossoneri sont quatrièmes du Championnat."
+          "texte": "Harry Kane a été désigné vainqueur du Ballon d'Or 2026 à Londres, devenant le premier Anglais à recevoir cette distinction."
         },
         {
           "sport": "tennis",
-          "texte": "Tallon Griekspoor a remporté l'Open de Bruxelles, battant Jan-Lennard Struff en finale (4-6, 6-3, 6-4). Le Néerlandais remporte son quatrième titre de carrière."
+          "texte": "Daniil Medvedev, vainqueur à Almaty la semaine précédente, a réalisé un important progrès vers la qualification pour les Finales ATP à Turin."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Carlos Alcaraz a été confirmé pour participer à la phase finale de la Coupe Davis, qui se déroulera du 24 au 29 novembre à Bologne."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Jannik Sinner a été réintégré au casting du Six Kings Slam, tandis que Learner Tien a été exclu de l'exhibition prévue fin décembre."
+        },
+        {
+          "sport": "rugby",
+          "texte": "Pauline Barrat a été nommée par World Rugby pour le trophée de révélation de l'année, après avoir déjà reçu ce prix en mai lors du Tournoi des Six Nations."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Les Knicks restent sans victoire (0-3) au début de la saison, les Sixers ont subi leur première défaite face aux Pistons, et Luka Doncic a inscrit 52 points contre Utah."
         }
       ],
       "rien_a_signaler": false,
@@ -210,79 +201,86 @@
           "sport": "football"
         },
         {
-          "affiche": "Denver Nuggets – Golden State Warriors",
+          "affiche": "Golden State Warriors – Los Angeles Lakers",
           "competition": "NBA",
-          "date_iso": "2026-10-27T02:00:00+00:00",
-          "date_texte": "mardi 27 octobre à 3h00",
+          "date_iso": "2026-10-31T02:00:00+00:00",
+          "date_texte": "samedi 31 octobre à 3h00",
           "sport": "basketball"
         }
       ]
     },
     "science": {
-      "mode": "approfondi",
-      "titre": "L’apprentissage automatique : comment les ordinateurs apprennent à partir des données",
-      "contenu_markdown": "## Introduction\nL’apprentissage automatique, ou *machine learning* (ML), est une branche de l’intelligence artificielle qui permet aux ordinateurs d’améliorer leurs performances dans des tâches spécifiques sans être explicitement programmés pour chacune. Contrairement à un logiciel classique, qui suit des instructions précises, un système d’apprentissage automatique analyse des données pour identifier des motifs, des corrélations ou des règles, puis utilise ces connaissances pour prendre des décisions ou effectuer des prédictions. Cette approche repose sur des méthodes statistiques et mathématiques pour construire des modèles capables de généraliser à partir d’exemples.\n\n## Pourquoi le sujet est important\nL’apprentissage automatique a révolutionné de nombreux domaines, de la médecine à la finance, en passant par les transports ou la reconnaissance d’images. Son importance tient à sa capacité à traiter des volumes massifs de données (big data) et à détecter des tendances invisibles à l’œil humain. Par exemple, il permet de :\n- **Diagnostiquer des maladies** en analysant des images médicales (comme des radiographies) ;\n- **Optimiser des processus industriels** en prédisant les pannes d’équipements ;\n- **Personnaliser les recommandations** (films, produits, publicités) sur les plateformes numériques ;\n- **Automatiser des tâches complexes**, comme la traduction automatique ou la conduite autonome.\n\nSon développement reflète aussi les défis posés par la quantité croissante de données disponibles, rendant indispensable des outils capables de les exploiter efficacement.\n\n## Explication du phénomène\nL’apprentissage automatique repose sur un principe fondamental : **un système apprend à partir d’exemples**. Prenons l’analogie d’un enfant qui reconnaît des chats : il observe des images étiquetées (« chat » ou « non-chat »), identifie des caractéristiques communes (oreilles pointues, moustaches, forme des yeux), puis généralise ces traits à de nouvelles images. De la même manière, un algorithme d’apprentissage automatique analyse des données pour extraire des règles ou des modèles mathématiques décrivant les relations entre les informations.\n\nLe cœur du processus repose sur deux phases distinctes :\n1. **La phase d’apprentissage (ou d’entraînement)** : le système étudie un jeu de données (appelé *jeu d’entraînement*) pour ajuster les paramètres d’un modèle. Par exemple, pour reconnaître des chiffres manuscrits, il pourrait s’entraîner sur des milliers d’écritures étiquetées (0 à 9).\n2. **La phase de prédiction** : une fois le modèle formé, il est appliqué à de nouvelles données pour produire des résultats (comme classer un chiffre inconnu ou détecter un spam dans un email).\n\n## Les paradigmes d’apprentissage\nLes méthodes d’apprentissage automatique se distinguent selon la nature des données utilisées et la manière dont elles guident l’apprentissage. Trois grands paradigmes existent :\n\n1. **Apprentissage supervisé**.\n   Le système reçoit des données **étiquetées**, c’est-à-dire accompagnées de la réponse attendue. Par exemple, pour un détecteur de spam, chaque email est marqué « spam » ou « non-spam ». L’algorithme apprend à associer des mots-clés ou des motifs à ces étiquettes. Les problèmes typiques incluent :\n   - **La classification** (catégoriser des données, comme trier des emails) ;\n   - **La régression** (prédire une valeur continue, comme le prix d’une maison).\n\n2. **Apprentissage non supervisé**.\n   Les données **ne sont pas étiquetées**, et l’algorithme doit découvrir seul des structures ou des regroupements. Par exemple, un système peut identifier des groupes de clients aux comportements similaires dans une base de données de ventes, sans savoir à l’avance combien de groupes existent. Les applications incluent :\n   - **Le partitionnement** (regrouper des données, comme la segmentation client) ;\n   - **La réduction de dimensionnalité** (simplifier des données complexes, comme compresser des images).\n\n3. **Apprentissage par renforcement**.\n   Le système apprend en **interagissant avec son environnement** et en recevant des **signaux de récompense ou de punition** pour ses actions. Par exemple, un robot apprenant à marcher reçoit une récompense à chaque pas réussi et ajuste ses mouvements en conséquence.\n\n## Le choix du modèle et son entraînement\nUn modèle d’apprentissage automatique est une représentation mathématique qui capture les relations dans les données. Son efficacité dépend de deux facteurs :\n- **Sa complexité** : un modèle trop simple (comme une droite) peut échouer à capturer des motifs complexes, tandis qu’un modèle trop complexe (comme un réseau de neurones profond) risque de surapprendre, c’est-à-dire de mémoriser les données d’entraînement sans généraliser.\n- **Les algorithmes d’optimisation** : pour ajuster les paramètres du modèle, on utilise des techniques comme la **descente de gradient**, qui minimise l’erreur entre les prédictions du modèle et les données réelles. Dans le cas des réseaux de neurones, la **rétropropagation du gradient** permet de calculer, pour chaque paramètre, comment il contribue à l’erreur globale, afin de l’ajuster itérativement.\n\n## Exemples concrets de données exploitées\nLes méthodes d’apprentissage automatique s’appliquent à des types de données variés :\n- **Données numériques** (tableaux de chiffres, comme les performances sportives) ;\n- **Séries temporelles** (évolution d’un cours boursier ou d’une température) ;\n- **Textes** (analyse de sentiments sur les réseaux sociaux) ;\n- **Images ou vidéos** (reconnaissance faciale, détection d’objets) ;\n- **Graphes** (réseaux sociaux, où les nœuds sont des utilisateurs et les arêtes des connexions).\n\nChaque type de données nécessite des techniques adaptées pour en extraire des caractéristiques utiles (appelées *features*), comme la taille d’un objet dans une image ou la fréquence d’un mot dans un texte.\n\n## Données et résultats scientifiques\n\nLes travaux en apprentissage automatique reposent sur l’analyse de jeux de données variés (texte, image, son, graphes, etc.). Les performances des algorithmes sont généralement évaluées à l’aide de mesures standardisées : précision, rappel, taux d’erreur ou coefficient de détermination, selon qu’il s’agit de tâches de classification, de régression ou de réduction de dimension. Les publications rapportent régulièrement des améliorations de ces indicateurs lorsqu’un nouveau modèle ou une nouvelle technique d’optimisation est introduit. Par exemple, les réseaux de neurones profonds entraînés par rétropropagation ont permis d’atteindre des taux de précision supérieurs à ceux des méthodes plus simples sur des bases de données d’images largement utilisées. Les résultats détaillés, incluant les valeurs numériques exactes, sont disponibles dans les articles cités dans la bibliographie.\n\n## Ce que les scientifiques savent\n\n- **Principe de base** : l’apprentissage automatique consiste à ajuster les paramètres d’un modèle mathématique afin de minimiser l’erreur moyenne sur un jeu de données d’entraînement, puis à appliquer ce modèle à de nouvelles données.  \n- **Phases distinctes** : une phase d’entraînement (optimisation des paramètres) suivie d’une phase de prédiction.  \n- **Classification des méthodes** : les algorithmes se distinguent selon le paradigme d’apprentissage (supervisé, non‑supervisé, par renforcement) et le type de problème visé (régression, classification, partitionnement, réduction de dimension).  \n- **Choix du modèle** : il implique un compromis entre simplicité (facilité d’entraînement) et expressivité (capacité à capturer des relations complexes).  \n- **Algorithmes d’optimisation** : la descente de gradient et ses variantes (stochastique, mini‑batch) sont les plus couramment utilisées pour résoudre le problème d’optimisation sous‑jacent.  \n- **Apprentissage incrémental** : certains systèmes peuvent continuer à s’ajuster après le déploiement, en intégrant de nouvelles données ou en recevant des récompenses (apprentissage par renforcement).\n\n## Ce qui reste incertain\n\n- **Généralisation** : il n’existe pas de règle universelle garantissant qu’un modèle performant sur un jeu de données d’entraînement sera également performant sur des données réelles et variées.  \n- **Choix optimal du modèle** : la détermination a priori du niveau de complexité adéquat pour un problème donné reste largement empirique et dépend de la nature et de la quantité des données disponibles.  \n- **Robustesse aux biais** : la façon dont les biais présents dans les données d’entraînement se propagent dans les prédictions n’est pas complètement comprise, surtout pour les systèmes très complexes.  \n- **Convergence des algorithmes** : pour les modèles non convexes (par exemple les réseaux de neurones profonds), les garanties théoriques de convergence vers une solution optimale sont limitées ; on ne sait pas toujours si le point d’arrêt correspond à un optimum global ou à un optimum local.\n\n## Limites et controverses éventuelles\n\n- **Coût computationnel** : l’entraînement de modèles très complexes requiert d’importantes ressources matérielles (puissance de calcul, mémoire), ce qui peut limiter leur accessibilité.  \n- **Interprétabilité** : les modèles les plus performants (notamment les réseaux de neurones profonds) sont souvent considérés comme des « boîtes noires », ce qui soulève des questions d’explicabilité, notamment dans les domaines où la transparence est cruciale (santé, justice).  \n- **Impact environnemental** : la consommation énergétique liée à l’entraînement de grands modèles suscite des débats quant à la durabilité de ces pratiques.  \n- **Éthique et usage** : l’utilisation de l’apprentissage automatique pour des applications sensibles (reconnaissance faciale, prise de décision automatisée) fait l’objet de controverses, notamment concernant la protection de la vie privée et le risque de discrimination.  \n- **Limites théoriques** : malgré les succès pratiques, la compréhension complète des propriétés d’apprentissage (par exemple les limites d’échantillonnage nécessaires pour garantir une bonne généralisation) demeure incomplète.\n\n## Conclusion\n\nL’apprentissage automatique constitue aujourd’hui un pilier de l’intelligence artificielle, reposant sur des principes mathématiques et statistiques solides. Les avancées récentes ont démontré la capacité de ces méthodes à résoudre des tâches complexes grâce à des modèles puissants et à des algorithmes d’optimisation efficaces. Néanmoins, plusieurs aspects restent à approfondir : la généralisation fiable, la maîtrise des biais, la réduction du coût computationnel et l’amélioration de l’interprétabilité. Les débats éthiques et environnementaux soulignent la nécessité d’un encadrement prudent de l’usage de ces technologies. La recherche continue d’explorer de nouvelles architectures, de meilleurs critères d’évaluation et des stratégies d’apprentissage plus économes, afin de rendre l’apprentissage automatique à la fois plus performant et plus responsable.\n\n## Sources\n- Wikipédia (fr) — Apprentissage automatique — https://fr.wikipedia.org/wiki/Apprentissage_automatique\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
-      "phrases_retirees_garde_fou": 1,
-      "nb_mots": 1573,
-      "sujet_id": "apprentissage-automatique",
-      "origine": "encyclopedie",
-      "matiere_source": "suffisante",
+      "mode": "decouverte",
+      "titre": "Les salaires des chercheurs semblent se détériorer, selon une enquête de 4 000 scientifiques",
+      "contenu_markdown": "Une enquête publiée dans la revue *Nature* le 26 octobre 2026 a interrogé près de 4 000 chercheurs. Les résultats montrent que de nombreux scientifiques estiment que leurs revenus ne suivent plus le rythme des coûts de la vie, et que la dernière augmentation de salaire leur paraît lointaine. Cette perception de détérioration salariale est partagée par une majorité d’entre eux, soulignant une préoccupation croissante au sein de la communauté scientifique. Les détails chiffrés de l’étude sont disponibles dans l’article original.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03398-0\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Cerveau humain\n\nLe cerveau humain est un organe fascinant, à la fois héritier de l’évolution des mammifères et porteur d’une complexité unique. Bien que partagent une structure de base commune avec les autres vertébrés, il se distingue par sa taille relative et sa spécialisation fonctionnelle. Avec un poids moyen d’environ 1,5 kilogramme, il est bien moins massif que celui de la baleine bleue (6,92 kg), mais son **coefficient d’encéphalisation** – rapport entre la taille du cerveau et celle du corps – est sept fois supérieur à la moyenne des mammifères. Cette particularité reflète une adaptation évolutive majeure, où la croissance du cortex cérébral a joué un rôle central.\n\n## Pourquoi le cerveau humain est-il si important ?\n\nLe cerveau humain est la structure vivante la plus complexe connue à ce jour. Il ne se limite pas à un simple organe de contrôle, mais constitue un réseau de territoires spécialisés, chacun associé à des fonctions précises : perception sensorielle, mouvement, langage, mémoire ou encore prise de décision. Cette organisation fine explique pourquoi les lésions cérébrales peuvent avoir des conséquences si variées, allant de troubles moteurs à des altérations cognitives profondes.\n\nSon importance dépasse le cadre biologique : c’est aussi le siège de la conscience, des émotions et des capacités uniques à l’espèce humaine, comme le langage articulé ou la planification complexe. Pourtant, malgré sa protection par le crâne, la barrière hémato-encéphalique et le liquide cérébrospinal, il reste vulnérable. Les traumatismes crâniens, les maladies neurodégénératives (comme Alzheimer) ou les troubles psychiatriques (comme la schizophrénie) en témoignent, même si leurs causes exactes restent souvent mal comprises.\n\n## Explication du phénomène : une évolution unique\n\nL’évolution du cerveau humain s’est accompagnée d’une augmentation significative du volume cérébral, notamment grâce au développement du **cortex cérébral**. Celui-ci représente une couche externe plissée, où se concentrent les fonctions supérieures. Parmi ses régions, les **lobes frontaux** occupent plus de 30 % de sa surface et jouent un rôle clé dans la planification, le langage et les mouvements volontaires. Une autre particularité réside dans la répartition des zones sensorielles : près de la moitié du cortex est dédiée à l’analyse visuelle, reflétant l’importance de cette modalité chez l’humain.\n\nCette complexité structurelle s’accompagne d’une spécialisation fonctionnelle absente chez les autres primates. Par exemple, les aires cérébrales liées à la parole ou à la manipulation d’outils sont bien plus développées, illustrant une adaptation à des comportements sociaux et techniques inédits.\n\n## Fonctionnement et mécanismes : de Galien à l’anatomie moderne\n\nL’histoire de la compréhension du cerveau humain est marquée par des débats philosophiques et des avancées scientifiques majeures. Dès l’Antiquité, deux visions s’opposaient : pour Aristote, le cœur était le siège de l’âme, tandis qu’Hippocrate et Hérophile défendaient une approche **céphalo-centrée**, attribuant au cerveau un rôle central dans l’intelligence.\n\nGalien, au IIᵉ siècle, a posé les bases d’une théorie plus précise en décrivant les connexions entre le cerveau, les nerfs et les muscles. Il proposait que les nerfs transmettent un « esprit animal » (pneuma psychique) pour activer les mouvements, une idée qui a influencé la médecine médiévale. Cependant, c’est à la Renaissance que les progrès ont accéléré, notamment grâce à Descartes, qui, bien qu’adoptant une vision dualiste (séparant corps et esprit), a contribué à une compréhension mécanique des fonctions nerveuses.\n\nLe tournant décisif est venu avec les découvertes de **Luigi Galvani** au XVIIIᵉ siècle, montrant que l’électricité pouvait stimuler les nerfs et provoquer des contractions musculaires. Cette observation a ouvert la voie à une approche expérimentale du système nerveux. Au XVIIᵉ siècle, **Thomas Willis** a renforcé l’idée que le cortex cérébral était le siège des fonctions cognitives, s’éloignant de la théorie ventriculaire (ancienne croyance selon laquelle les ventricules cérébraux abritaient l’esprit).\n\nAu XIXᵉ siècle, les travaux de **Franz Joseph Gall** (phrénologie) et les observations chirurgicales de **Charles Scott Sherrington** ont permis de cartographier les zones cérébrales en fonction de leur rôle. Sherrington a notamment noté que certaines régions du cortex s’activent (rougissent) lorsque le patient bouge une partie spécifique du corps, révélant une consommation locale d’oxygène liée à l’activité neuronale. Ces découvertes ont jeté les bases de la **neuropsychologie moderne**, confirmant que les fonctions cérébrales sont localisées et interconnectées.\n\n## Données et résultats scientifiques\n\n- Le cerveau humain pèse en moyenne **environ 1,5 kg**, alors que le plus lourd parmi les mammifères, le cerveau de la baleine bleue, atteint **6,92 kg**.  \n- Le **coefficient d’encéphalisation** (rapport entre le poids du cerveau et la masse corporelle) de l’homme est le plus élevé chez les mammifères et **sept fois supérieur** à la moyenne de ce groupe.  \n- Le **cortex cérébral** représente plus de **30 % de la surface cérébrale** humaine, avec une prédominance des lobes frontaux.  \n- Près de **la moitié du cortex** est dédié à l’analyse sensorielle, surtout visuelle.  \n\nCes chiffres proviennent des mesures anatomiques classiques et sont largement cités dans les ouvrages de référence sur l’anatomie du cerveau.\n\n## Ce que les scientifiques savent\n\n- **Structure générale** : Le cerveau humain conserve la même organisation de base que celui des autres mammifères (cortex, sous-cortex, cervelet, tronc cérébral).  \n- **Spécialisation du cortex** : Les lobes frontaux, plus développés chez l’homme, sont associés à la planification, au langage et au contrôle moteur volontaire.  \n- **Barrières protectrices** : Le cerveau est entouré d’une barrière hémato‑encéphalique, d’un crâne osseux épais et baigne dans le liquide cérébrospinal, ce qui limite l’accès de nombreuses substances et protège contre les traumatismes.  \n- **Vulnérabilités** : Malgré ces protections, le cerveau reste exposé aux traumatismes crâniens, aux agents neurotoxiques, aux maladies neurologiques (ex. maladie d’Alzheimer) et aux troubles psychiatriques (ex. schizophrénie), dont les mécanismes restent partiellement élucidés.  \n\n## Ce qui reste incertain\n\n- **Origine évolutive du volume cortical** : Bien que l’augmentation du volume cérébral humain soit largement attribuée au développement du cortex, les pressions sélectives précises (sociales, environnementales, technologiques) qui ont conduit à cette expansion restent débattues.  \n- **Bases neurobiologiques des troubles psychiatriques** : La relation exacte entre dysfonctionnements cérébraux et maladies comme la schizophrénie n’est pas encore clairement définie ; les causes restent multiples et souvent indéterminées.  \n- **Fonctions exactes de certaines zones corticales** : Malgré les avancées en neuroimagerie, la contribution précise de nombreuses sous‑régions du cortex à des processus cognitifs complexes (ex. conscience, créativité) demeure partiellement hypothétique.  \n\n## Limites et controverses éventuelles\n\n- **Mesure du coefficient d’encéphalisation** : Le calcul repose sur des estimations de masse corporelle et de poids cérébral qui peuvent varier selon les méthodes de mesure et les populations étudiées, ce qui peut influencer les comparaisons inter‑espèces.  \n- **Interprétation des corrélations anatomoclinique** : Les études historiques reliant lésions cérébrales à déficits fonctionnels ont parfois été limitées par la taille d’échantillon et la précision des techniques d’imagerie, entraînant des débats sur la localisation exacte de certaines fonctions.  \n- **Protection du cerveau** : Bien que la barrière hémato‑encéphalique soit reconnue comme un bouclier majeur, son rôle exact dans la prévention de certaines pathologies neurodégénératives fait encore l’objet de recherches, notamment concernant son perméabilité variable avec l’âge.  \n\n## Conclusion\n\nLe cerveau humain se distingue par son poids relatif, son coefficient d’encéphalisation élevé et le développement prononcé de son cortex, notamment les lobes frontaux. Ces caractéristiques sous-tendent des capacités cognitives avancées, mais le cerveau demeure vulnérable à de nombreuses affections. La connaissance actuelle repose sur des mesures anatomiques solides et sur une compréhension détaillée des structures protectrices, tandis que les mécanismes précis de certaines fonctions cérébrales et de troubles psychiatriques restent à préciser. Les recherches futures, notamment en neuroimagerie et en génétique, devront affiner ces points incertains et dépasser les limites méthodologiques des études antérieures.\n\n## Sources\n- Wikipédia (fr) — Cerveau humain — https://fr.wikipedia.org/wiki/Cerveau_humain\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 0,
+      "nb_mots": 1406,
+      "matiere_source": "fine",
       "textes_sources_audit": [
         {
+          "source": "Nature News",
+          "titre": "Are salaries getting worse? Many scientists think so",
+          "resume": "Nature, Published online: 26 October 2026; doi:10.1038/d41586-026-03398-0 Nature’s survey of almost 4,000 researchers shows that you’re not alone if you struggle to make ends meet or your last pay rise is a distant memory."
+        },
+        {
           "source": "Wikipédia (fr)",
-          "titre": "Apprentissage automatique",
-          "resume": "L'apprentissage automatique (en anglais : machine learning (ML), litt. « apprentissage machine »), apprentissage artificiel ou apprentissage statistique est un champ d'étude de l'intelligence artificielle qui se fonde sur des approches mathématiques et statistiques pour donner aux ordinateurs la capacité d'« apprendre » à partir de données, c'est-à-dire d'améliorer leurs performances à résoudre des tâches sans être explicitement programmés pour chacune. Plus largement, il concerne la conception, l'analyse, l'optimisation, le développement et l'implémentation de telles méthodes. On parle d'apprentissage statistique car l'apprentissage consiste à créer un modèle dont l'erreur statistique moyenne est la plus faible possible.\nL'apprentissage automatique comporte généralement deux phases. La première, \ndite phase d'apprentissage ou d'entraînement, consiste à estimer un modèle à partir d'un jeu de données d'entraînement. Cette étape est souvent formulée comme un problème d'optimisation.  \nLa seconde phase consiste à utiliser le modèle entraîné afin d'effectuer des prédictions sur de nouvelles données. \nLes méthodes d'apprentissage incrémental peuvent continuer à apprendre une fois en production.\nPlusieurs critères permettent de classifier les méthodes existantes. \nLe paradigme d'apprentissage (supervisé, non-supervisé, par renforcement…) est déterminé par la nature des données, et notamment la disponibilité ou non de données étiquetées, c'est-à-dire pour lesquelles la réponse au problème est connue.\nPar ailleurs, chaque méthode cherche à résoudre un problème d'apprentissage précis : on distingue les problèmes de régression, de classification, de partitionnement, et de réduction de dimensionnalité.\nEnfin, pour une tâche identifiée, une méthode d'apprentissage est caractérisée par le choix d'un modèle ainsi que d'algorithmes permettant d'entraîner ce modèle.\nL'apprentissage automatique peut être appliqué à divers types de données, tels des graphes, des arbres, des courbes, ou plus simplement des vecteurs de caractéristiques, qui peuvent être des variables qualitatives ou quantitatives continues ou discrètes.\nSi le modèle apprend de manière incrémentale, en fonction d'une récompense reçue par le programme pour chacune des actions entreprises, on parle d'apprentissage par renforcement.\n\nPrincipes\nL'apprentissage automatique permet à un système piloté ou assisté par ordinateur d'adapter ses réponses ou comportements aux situations rencontrées, en se fondant sur l'analyse de données empiriques passées issues de bases de données, de capteurs, ou du web.\n\nDonnées et paradigme d'apprentissage\nLe point commun à toutes les méthodes d'apprentissage automatique est d'exploiter de l'information contenue dans un jeu de données. Ces données peuvent toutefois être de nature très différentes : des données numériques, des séries temporelles, un corpus de textes, une collection d'images, de signaux audio ou vidéo, de graphes, etc.\nLa nature et la richesse des données disponibles définit le paradigme d'apprentissage, c'est-à-dire la manière dont les données guident le processus d'apprentissage. Par exemple, si l'on cherche à apprendre un détecteur de spam à partir d'une collection d'emails ayant été manuellement annotés comme désirables ou indésirables, on parle d'apprentissage supervisé : les données contiennent de l'information issue d'une supervision humaine, qui permet d'expliquer ce que l'on cherche à prédire.\n\nModèle d'apprentissage\nUn système d'apprentissage repose sur le choix d'un modèle, c'est-à-dire d'un objet mathématique, décrit le plus souvent par des paramètres, permettant de capturer et d'expliquer certaines structures ou relations dans les données étudiées. Les paramètres du modèle sont ajustés à partir des données d'entraînement afin d'en décrire au mieux la structure. \nLe choix du modèle est sujet à un compromis : un modèle simple contenant peu de paramètres est plus facile à entraîner, mais peut se révéler insuffisant si les données à modéliser sont complexes (par exemple fortement non linéaires) ; à l'inverse, un modèle complexe contenant de nombreux paramètres sera typiquement plus expressif et performant, mais il sera beaucoup plus difficile et coûteux d'en ajuster les paramètres.\n\nL'entraînement du modèle : un problème d'optimisation\n\nLa phase d'apprentissage consiste à rechercher la valeur des paramètres du modèle permettant d'expliquer au mieux les données observées. Elle est souvent formulée comme un problème d'optimisation, qui peut être convexe ou non convexe selon la complexité du modèle, et dont la résolution est typiquement effectuée en utilisant des algorithmes comme la descente de gradient ou descente de gradient stochastique.\nL'entraînement de réseaux de neurones artificiels \nest par exemple un problème non convexe, et est  classiquement résolu en utilisant la méthode de rétropropagation du gradient. Cette technique consiste à estimer itérativement, pour chaque couche du modèle et chaque paramètre de chaque couche, dans quelle mesure il a contribué à une bonne réponse ou à une erreur du modèle, et à l'ajuster en conséquence.\n\nHistorique"
+          "titre": "Cerveau humain",
+          "resume": "Le cerveau humain a la même structure générale que le cerveau des autres mammifères, mais il est celui dont la taille relative par rapport au reste du corps est devenue la plus grande au cours de l'évolution. Le cerveau humain est la structure vivante la plus complexe que nous connaissons. Cet organe n'est pas homogène et sa complexité est représentée par la juxtaposition de différents territoires dont les fonctions sont spécifiées\nSi la baleine bleue a le cerveau le plus lourd avec 6,92 kilogrammes contre environ 1,5 kg pour celui de l'homme, le coefficient d'encéphalisation humain est le plus élevé et est sept fois supérieur à celui de la moyenne des mammifères. L'augmentation du volume cérébral humain vient en grande partie du développement du cortex cérébral qui est bien distinct de celui des autres Primates, en particulier les lobes frontaux qui représentent plus de 30 % de la surface cérébrale et interviennent essentiellement dans la planification, le langage et le mouvement volontaire. Près de la moitié du cortex cérébral est consacré à l'analyse sensorielle, principalement la vision.\nBien qu'il soit protégé par la barrière hémato-encéphalique et les os épais du crâne et qu'il baigne dans le liquide cérébrospinal, le cerveau humain reste soumis à des blessures et maladies dont les plus fréquentes sont le traumatisme crânien, les maladies neurotoxiques, neurologiques et neurodégénératives. Un certain nombre de troubles psychiques, comme la schizophrénie sont considérés comme associés à des dysfonctionnements du cerveau, bien que la cause de ces troubles soit mal comprise.[réf. nécessaire]\n\nHistoire de la connaissance du cerveau humain\n\nHistoriquement, les avis se sont souvent opposés pour savoir qui du cerveau ou du cœur était le siège de l'âme. Dans un sens, il était impossible de nier que la conscience semble comme localisée dans la tête, qu'un coup à la tête provoque bien plus facilement l'inconscience qu'un coup sur le torse, et que secouer la tête donne des vertiges.\nDans un autre sens, le cerveau soumis à un examen superficiel semble inerte, tandis que le cœur bat constamment. L'arrêt des battements cardiaques provoque la mort, tandis que les émotions induisent des changements de la fréquence cardiaque et que le chagrin produit souvent une sensation de douleur au niveau du cœur (« cœur brisé »).\nPour Aristote, le siège de l'âme était le cœur. Le cerveau, organe de refroidissement, servait simplement à assurer la circulation du sang (théorie philosophique et médicale du cardiocentrisme). Démocrite divise l'âme en trois parties : l'intellect dans la tête, l'émotion dans le cœur, le désir autour du foie.\nHippocrate était sûr que l'âme se trouvait dans le cerveau (théorie philosophique et médicale du cérébrocentrisme ou céphalocentrisme).\nPour Hérophile, le cerveau était le centre de l’intelligence.\n\nGalien a aussi défendu l'importance du cerveau, et élaboré des théories assez avancées sur sa manière de fonctionner. Même après la reconnaissance de la primauté du cerveau par la société savante, l'idée du cœur comme siège de l'intelligence a continué de survivre dans les idiomes populaires. Galien a entrepris un long travail pour décrire les relations anatomiques entre le cerveau, les nerfs, et les muscles, démontrant que tous les muscles du corps sont connectés au cerveau par un réseau de nerfs. Il postulait que les nerfs activent les muscles mécaniquement, en transportant une substance mystérieuse qu'il appelle le pneuma psychique (ou « esprit animal »). Ses idées connaissent une relative renommée pendant le Moyen Âge, mais ne progressent pas jusqu'à la Renaissance.\nÀ la Renaissance, des études anatomiques détaillées résument et combinent les idées de Galien avec celles de Descartes et ses successeurs. Comme Galien, Descartes pensait le système nerveux en termes hydrauliques. Il est convaincu que les plus hautes fonctions cognitives, le langage notamment, sont effectuées par une « chose pensante » non-physique (res cogitans), mais que la majorité des comportements humains et animaux peuvent s'expliquer mécaniquement. Le premier grand pas vers la médecine moderne provient des recherches de Luigi Galvani, qui découvre qu'une décharge d'électricité statique appliquée sur le nerf d'une grenouille morte provoque la contraction de sa jambe.\nChaque grande avancée dans la compréhension du cerveau a suivi plus ou moins directement le développement d'une nouvelle méthode d'analyse.\nAu XVIIe siècle, Thomas Willis, père des neurosciences modernes, prend le contrepied de la théorie dualiste de Descartes, privilégiant l'approche matérialiste grâce à sa description du fonctionnement des nerfs. Préoccupé par la recherche du lien entre cerveau et esprit, Willis étend les concepts proposés par Galien, selon lesquels le cerveau était l'organe responsable de l'excrétion des « esprits animaux » (théorie ventriculaire des cerveaux), et situe la pensée dans le cortex cérébral.\nAu XVIIIe siècle, Vincenzo Malacarne (it), fondateur de l'anatomie topographique et de la neuropsychologie, pose les principes de l'existence de signes cliniques de ses patients reliés à l’observation post-mortem de lésions de leur cerveau. Paul Broca démontre cette corrélation anatomoclinique.\nAu XIXe siècle, Franz Joseph Gall développe grâce à des techniques organologiques, une théorie localisationiste selon laquelle les fonctions cognitives sont au niveau des circonvolutions du cortex cérébral. Les chirurgiens Charles Scott Sherrington et C.S. Roy observent le cerveau en salle d'opération et remarquent qu'une zone du cortex rougit lorsque le patient bouge une partie précise de son corps, montrant la consommation d'oxygène cérébrale.\nJusqu'au début du XXe siècle, les principales avancées ont découlé de la découverte de nouveaux colorants histologiques."
         }
-      ]
+      ],
+      "nb_mots_decouverte": 115,
+      "nb_mots_approfondi": 1283,
+      "sujet_id": "cerveau",
+      "origine": "encyclopedie"
     },
     "citation": {
-      "texte": "Le cœur a ses raisons que la raison ne connaît point.",
-      "auteur": "Blaise Pascal",
-      "source": "Pensées",
-      "annee": 1670
+      "texte": "Que sais-je ?",
+      "auteur": "Michel de Montaigne",
+      "source": "Essais, livre II, chapitre 12",
+      "annee": 1580
     },
     "meteo": {
       "villes_detail": [
         {
           "ville": "Antibes",
-          "temperature_actuelle": 14.2,
-          "temperature_max": 20.3,
-          "temperature_min": 13.9,
+          "temperature_actuelle": 15.3,
+          "temperature_max": 20.8,
+          "temperature_min": 14.7,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 7.2,
-          "vent_max_kmh": 9.9,
-          "rafales_max_kmh": 15.8,
+          "vent_kmh": 6.4,
+          "vent_max_kmh": 10.2,
+          "rafales_max_kmh": 16.9,
           "weather_code": 3,
           "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 14.2,
-              "temperature_max": 19.6,
+              "temperature_min": 15.3,
+              "temperature_max": 20.0,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 7,
+              "vent_max_kmh": 8,
               "weather_code": 3,
               "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 19.5,
-              "temperature_max": 20.2,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 6,
-              "weather_code": 3,
-              "description": "couvert"
-            },
-            {
-              "label": "Soir",
-              "temperature_min": 17.1,
-              "temperature_max": 19.1,
+              "temperature_min": 19.8,
+              "temperature_max": 20.7,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 8,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 18.4,
+              "temperature_max": 19.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
               "weather_code": 3,
               "description": "couvert"
             }
@@ -291,44 +289,44 @@
         },
         {
           "ville": "Cannes",
-          "temperature_actuelle": 14.3,
-          "temperature_max": 20.1,
-          "temperature_min": 14.3,
+          "temperature_actuelle": 16.1,
+          "temperature_max": 20.6,
+          "temperature_min": 16.0,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 7.9,
-          "vent_max_kmh": 9.6,
-          "rafales_max_kmh": 17.6,
+          "vent_kmh": 5.9,
+          "vent_max_kmh": 10.6,
+          "rafales_max_kmh": 19.1,
           "weather_code": 3,
           "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 14.3,
-              "temperature_max": 19.0,
+              "temperature_min": 16.1,
+              "temperature_max": 20.1,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 9,
+              "vent_max_kmh": 6,
               "weather_code": 3,
               "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 19.2,
-              "temperature_max": 20.1,
+              "temperature_min": 19.5,
+              "temperature_max": 20.5,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 9,
-              "weather_code": 3,
-              "description": "couvert"
+              "weather_code": 0,
+              "description": "ciel dégagé"
             },
             {
               "label": "Soir",
-              "temperature_min": 17.2,
-              "temperature_max": 18.7,
+              "temperature_min": 18.5,
+              "temperature_max": 19.3,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 10,
+              "vent_max_kmh": 9,
               "weather_code": 3,
               "description": "couvert"
             }
@@ -338,43 +336,43 @@
         {
           "ville": "Valbonne",
           "temperature_actuelle": 11.3,
-          "temperature_max": 19.1,
-          "temperature_min": 11.0,
+          "temperature_max": 19.3,
+          "temperature_min": 11.2,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 6.3,
-          "vent_max_kmh": 6.8,
-          "rafales_max_kmh": 11.2,
+          "vent_kmh": 7.8,
+          "vent_max_kmh": 7.8,
+          "rafales_max_kmh": 14.0,
           "weather_code": 2,
           "description": "partiellement nuageux",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 11.3,
-              "temperature_max": 18.1,
+              "temperature_min": 11.2,
+              "temperature_max": 18.2,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 6,
-              "weather_code": 3,
-              "description": "couvert"
+              "vent_max_kmh": 8,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 17.0,
-              "temperature_max": 19.1,
+              "temperature_min": 17.8,
+              "temperature_max": 19.3,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 6,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
+              "vent_max_kmh": 8,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
             },
             {
               "label": "Soir",
-              "temperature_min": 13.1,
-              "temperature_max": 15.7,
+              "temperature_min": 13.8,
+              "temperature_max": 16.6,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 5,
+              "vent_max_kmh": 6,
               "weather_code": 2,
               "description": "partiellement nuageux"
             }
@@ -383,61 +381,61 @@
         },
         {
           "ville": "Grasse",
-          "temperature_actuelle": 10.7,
+          "temperature_actuelle": 10.8,
           "temperature_max": 18.2,
-          "temperature_min": 10.1,
+          "temperature_min": 10.8,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 8.2,
-          "vent_max_kmh": 8.8,
-          "rafales_max_kmh": 10.8,
-          "weather_code": 3,
-          "description": "couvert",
+          "vent_kmh": 8.8,
+          "vent_max_kmh": 9.2,
+          "rafales_max_kmh": 14.4,
+          "weather_code": 2,
+          "description": "partiellement nuageux",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 10.7,
-              "temperature_max": 16.9,
+              "temperature_min": 10.8,
+              "temperature_max": 17.2,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 9,
-              "weather_code": 3,
-              "description": "couvert"
+              "weather_code": 0,
+              "description": "ciel dégagé"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 16.1,
+              "temperature_min": 16.8,
               "temperature_max": 18.2,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 5,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
+              "vent_max_kmh": 8,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
             },
             {
               "label": "Soir",
-              "temperature_min": 13.7,
-              "temperature_max": 14.4,
+              "temperature_min": 13.4,
+              "temperature_max": 15.6,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 4,
-              "weather_code": 3,
-              "description": "couvert"
+              "vent_max_kmh": 6,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             }
           ],
           "alertes": []
         }
       ],
-      "temperature_max_zone": 20.3,
-      "temperature_min_zone": 10.1,
+      "temperature_max_zone": 20.8,
+      "temperature_min_zone": 10.8,
       "probabilite_pluie_max_pct": 0,
-      "vent_max_kmh": 9.9,
+      "vent_max_kmh": 10.6,
       "description_dominante": "couvert",
       "periodes": [
         {
           "label": "Matin",
-          "temperature_min": 10.7,
-          "temperature_max": 19.6,
+          "temperature_min": 10.8,
+          "temperature_max": 20.1,
           "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
           "vent_max_kmh": 9,
@@ -446,91 +444,91 @@
         },
         {
           "label": "Après-midi",
-          "temperature_min": 16.1,
-          "temperature_max": 20.2,
+          "temperature_min": 16.8,
+          "temperature_max": 20.7,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 9,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 13.4,
+          "temperature_max": 19.6,
           "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
           "vent_max_kmh": 9,
           "weather_code": 3,
           "description": "couvert"
-        },
-        {
-          "label": "Soir",
-          "temperature_min": 13.1,
-          "temperature_max": 19.1,
-          "probabilite_pluie_pct": 0,
-          "precipitation_mm": 0.0,
-          "vent_max_kmh": 10,
-          "weather_code": 3,
-          "description": "couvert"
         }
       ],
       "alertes": [],
-      "resume": "Couvert toute la journée, de 10° à 20°."
+      "resume": "Couvert le matin, ciel dégagé l'après-midi, couvert le soir, de 11° à 21°."
     },
     "anglais": {
       "mode": "litterature",
-      "oeuvre": "The Fall of the House of Usher",
-      "auteur": "Edgar Allan Poe",
-      "annee": 1839,
+      "oeuvre": "A Christmas Carol",
+      "auteur": "Charles Dickens",
+      "annee": 1843,
       "segments": [
         {
-          "t": "During the whole of a dull",
-          "g": "terne"
+          "t": "Marley was dead: to begin with",
+          "g": "pour commencer"
         },
         {
-          "t": ", dark, and soundless",
-          "g": "sans un bruit"
+          "t": ". There is no doubt whatever about that. The register of his burial",
+          "g": "l'enterrement"
         },
         {
-          "t": " day in the autumn of the year, when the clouds hung oppressively",
-          "g": "de façon oppressante"
+          "t": " was signed by the clergyman",
+          "g": "le pasteur"
         },
         {
-          "t": " low in the heavens, I had been passing alone, on horseback",
-          "g": "à cheval"
+          "t": ", the clerk, the undertaker",
+          "g": "le croque-mort"
         },
         {
-          "t": ", through a singularly",
-          "g": "singulièrement"
+          "t": ", and the chief mourner",
+          "g": "le principal parent en deuil"
         },
         {
-          "t": " dreary",
-          "g": "désolée"
+          "t": ". Scrooge signed it: and Scrooge's name was good upon 'Change",
+          "g": "la Bourse"
         },
         {
-          "t": " tract",
-          "g": "l'étendue"
+          "t": ", for anything he chose to put his hand to",
+          "g": "apposer sa signature à"
         },
         {
-          "t": " of country; and at length",
-          "g": "enfin"
+          "t": ". Old Marley was as dead as a door-nail",
+          "g": "bel et bien mort"
         },
         {
-          "t": " found myself, as the shades of the evening drew on",
-          "g": "le crépuscule approchait"
+          "t": ". Mind! I don't mean to say that I know, of my own knowledge, what there is particularly dead about a door-nail. I might have been inclined, myself, to regard a coffin-nail as the deadest piece of ironmongery",
+          "g": "la quincaillerie"
         },
         {
-          "t": ", within view of the melancholy House of Usher. I know not how it was—but, with the first glimpse",
-          "g": "l'aperçu"
+          "t": " in the trade. But the wisdom of our ancestors is in the simile",
+          "g": "la comparaison"
         },
         {
-          "t": " of the building, a sense of insufferable gloom",
-          "g": "la tristesse sombre"
+          "t": "; and my unhallowed",
+          "g": "profanes"
         },
         {
-          "t": " pervaded",
-          "g": "envahissait"
+          "t": " hands shall not disturb it, or the Country's done for",
+          "g": "fichu"
         },
         {
-          "t": " my spirit.",
+          "t": ".",
           "g": null
         }
       ],
-      "texte_glose": "During the whole of a dull (= terne), dark, and soundless (= sans un bruit) day in the autumn of the year, when the clouds hung oppressively (= de façon oppressante) low in the heavens, I had been passing alone, on horseback (= à cheval), through a singularly (= singulièrement) dreary (= désolée) tract (= l'étendue) of country; and at length (= enfin) found myself, as the shades of the evening drew on (= le crépuscule approchait), within view of the melancholy House of Usher. I know not how it was—but, with the first glimpse (= l'aperçu) of the building, a sense of insufferable gloom (= la tristesse sombre) pervaded (= envahissait) my spirit."
+      "texte_glose": "Marley was dead: to begin with (= pour commencer). There is no doubt whatever about that. The register of his burial (= l'enterrement) was signed by the clergyman (= le pasteur), the clerk, the undertaker (= le croque-mort), and the chief mourner (= le principal parent en deuil). Scrooge signed it: and Scrooge's name was good upon 'Change (= la Bourse), for anything he chose to put his hand to (= apposer sa signature à). Old Marley was as dead as a door-nail (= bel et bien mort). Mind! I don't mean to say that I know, of my own knowledge, what there is particularly dead about a door-nail. I might have been inclined, myself, to regard a coffin-nail as the deadest piece of ironmongery (= la quincaillerie) in the trade. But the wisdom of our ancestors is in the simile (= la comparaison); and my unhallowed (= profanes) hands shall not disturb it, or the Country's done for (= fichu)."
     },
     "meta": {
-      "resume_1_phrase": "À la une : Présidentielle 2027 : à Orléans, Marine Le Pen lance sa campagne entre radicalité et « optimisme », dans une ville en état de siège."
+      "resume_1_phrase": "À la une : Attentat raciste à Trappes et La Verrière : Kevin T. « conteste le caractère raciste », sa garde à vue a repris."
     },
     "_genere_par_llm": true,
     "_provider": "groq+mistral+nvidia",
@@ -568,6 +566,12 @@
       },
       "sport": {
         "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_d": {
+        "genere_par_llm": true,
         "provider": "nvidia",
         "erreur": null,
         "essais_echoues": 0
@@ -580,7 +584,7 @@
     },
     "_science": {
       "genere_par_llm": true,
-      "provider": "groq+mistral",
+      "provider": "groq+mistral+nvidia",
       "erreur": null
     },
     "_anglais": {
@@ -589,5 +593,5 @@
       "erreur": null
     }
   },
-  "debut_run": "2026-10-26T06:10:41.302613+01:00"
+  "debut_run": "2026-10-27T06:10:41.169937+01:00"
 }
