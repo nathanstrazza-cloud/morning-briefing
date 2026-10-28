@@ -1,14 +1,14 @@
 {
-  "derniere_execution": "2026-10-27T06:16:45.025321+01:00",
-  "date_visee": "2026-10-27",
+  "derniere_execution": "2026-10-28T06:17:23.308732+01:00",
+  "date_visee": "2026-10-28",
   "succes": true,
   "erreur": null,
   "synthese_llm": true,
-  "erreur_llm": null,
+  "erreur_llm": "actu_monde[mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | nvidia: Réponse vide (provider=nvidia) | groq: Expecting ',' delimiter: line 58 column 6 (char 4201) | openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":]",
   "llm_bloc": {
     "genere_par_llm": true,
-    "provider": "groq+mistral+nvidia",
-    "erreur": null
+    "provider": "groq+nvidia",
+    "erreur": "actu_monde[mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | nvidia: Réponse vide (provider=nvidia) | groq: Expecting ',' delimiter: line 58 column 6 (char 4201) | openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"message\":\"Provider returned error\",\"code\":429,"
   },
   "llm_science": {
     "genere_par_llm": true,
@@ -49,14 +49,14 @@
   "sources_marches_en_erreur": [],
   "funnel_actualite": {
     "france": {
-      "bruts": 81,
-      "evenements_uniques": 71,
-      "retenus_apres_seuil": 41
+      "bruts": 86,
+      "evenements_uniques": 72,
+      "retenus_apres_seuil": 34
     },
     "monde": {
-      "bruts": 108,
-      "evenements_uniques": 85,
-      "retenus_apres_seuil": 48
+      "bruts": 130,
+      "evenements_uniques": 110,
+      "retenus_apres_seuil": 44
     }
   }
 }

@@ -1,0 +1,589 @@
+{
+  "date": "2026-10-28",
+  "derniere_mise_a_jour": "2026-10-28T06:17:23.308732+01:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Présidentielle 2027 : Edouard Philippe estime que « l’échec de l’intégration » depuis « plusieurs décennies est incontestable »",
+          "resume": "Le candidat d’Horizons à l’élection présidentielle souhaite « diviser l’immigration légale par deux ». Il propose de réformer l’instruction du droit d’asile et de restreindre le regroupement familial, ainsi que de rétablir un service national obligatoire pour renforcer l’intégration.",
+          "pourquoi_important": "Le programme propose des mesures majeures sur l’immigration et le service national, susceptibles d’influencer le débat électoral de 2027.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Il \"était mû par la haine et il a tué pour ça\" : Kévin T., suspect de l'attentat de Trappes, un profil \"nourri d'idéologie raciste\"",
+          "resume": "Déclaré schizophrène, sans condamnation notable, l'homme arrêté après l'attaque à Trappes et La Verrière de vendredi a fait un mort et sept blessés. Il est décrit par son entourage comme renfermé et biberonné aux chaînes d'information en continu.",
+          "pourquoi_important": "L’attentat a fait un mort et plusieurs blessés, soulevant des questions de radicalisation et de santé mentale.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Yaël Braun-Pivet voit en Gérard Larcher un recours possible pour la droite et le centre",
+          "resume": "La présidente de l’Assemblée nationale appelle le Premier ministre à utiliser le 49.3 « dans les prochains jours plutôt que de jouer la montre »",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "A l’audience sur les descentes de l’extrême droite à Nice contre des manifestants : «L’état d’esprit est clair : on va commencer la guerre»",
+          "resume": "Entendues une première fois ce mardi 27 octobre par le tribunal correctionnel, onze personnes, interpellées en marge de rixes qui ont émaillé la fin de la mobilisation de samedi, expliquent avoir voulu «protéger» les commerces. Elles seront jugées en novembre.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Le RN poursuit \"Le Monde\" en diffamation, dénonçant la publication d'une \"information mensongère\" sur l'attentat raciste dans les Yvelines",
+          "resume": "Le journal avait affirmé que des tracts du Rassemblement national avaient été retrouvés dans la voiture de Kévin T., le suspect de l'attaque terroriste. L'information a été démentie par le procureur national antiterroriste.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Brésil : après sa défaite à la présidentielle, Flavio Bolsonaro soupçonné d’avoir pris la fuite vers les Etats-Unis",
+          "resume": "Mis en cause dans plusieurs affaires de corruption, le candidat d’extrême droite aurait violé son interdiction de quitter le pays et se serait vu accorder des visas pour lui et sa famille par l’administration Trump.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France Info",
+            "20 Minutes",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Attentat raciste de Trappes : une minute de silence observée à l'Assemblée",
+          "resume": "Gaëlle Fonseca est en direct de l'Assemblée Nationale.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France 24 International",
+            "Le Monde",
+            "Libération",
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Législatives en Israël : le bloc de l'opposition à Benyamin Nétanyahou légèrement en tête, mais sans majorité, selon des sondages réalisés à la sortie des urnes",
+          "resume": "Le \"bloc du changement\" emmené par le centriste Gadi Eisenkot récolte entre 52 et 53 sièges sur les 120 que compte la Knesset, tandis que la coalition sortante du Premier ministre en recueille 50, selon ces premières tendances.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Israël : au lendemain de législatives cruciales pour l’avenir du pays, le vertige d’une Knesset sans majorité",
+          "resume": "Selon des résultats provisoires, mercredi matin, le camp Nétanyahou est en net recul mais l’opposition, emmenée par Gadi Eisenkot, échoue à détrôner le Likoud, aucun des deux blocs n’étant en position de former un gouvernement. Les partis arabes effectuent une percée historique et pèseront sur les futures coalitions.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Comment l’administration Trump nourrit la suspicion sur l’intégrité des midterms, à une semaine du vote",
+          "resume": "Alors que les sondages prévoient un désaveu pour le camp républicain lors des élections de mi-mandat, mardi 3 novembre, la Maison Blanche cherche à empiéter sur le rôle des Etats en matière d’organisation du scrutin et prépare le terrain à une contestation des résultats.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Selon France 24 International, Élections en Serbie : \"La mobilisation contre la fraude a sûrement eu un impact sur les résultats\"",
+          "resume": "Le mouvement de contestation mené par les étudiants en Serbie a remporté dimanche une victoire historique aux élections législatives, battant le parti du président démissionnaire Aleksandar Vucic. Les soutiens de la liste étudiante expliquent comment ils se sont massivement mobilisés afin d’empêcher les fraudes électorales, avant et pendant le scrutin.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Selon Le Monde International, Midterms 2026 : Donald Trump dit qu’il acceptera les résultats des élections si elles sont « honnêtes », dans une nouvelle allusion à des fraudes électorales jamais prouvées",
+          "resume": "Le président américain agite ainsi une nouvelle fois le spectre d’une contestation postélectorale si son parti était battu aux élections de mi-mandat, traditionnellement défavorables au parti qui occupe la Maison Blanche.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Selon France 24 International, Eisenkot accuse Netanyahu de se préparer à contester les résultats",
+          "resume": "Antoine Mariotti, notre chroniqueur international, analyse la situation.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ]
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
+      "mouvements_notables": [
+        {
+          "nom": "Nasdaq",
+          "variation_pct": 1.18,
+          "explication": null
+        },
+        {
+          "nom": "Pétrole (Brent)",
+          "variation_pct": -2.63,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "basketball",
+          "texte": "Paris a battu Dubaï 93-99 lors de la 8e journée de l'Euroligue, grâce à un solide Jared Rhoden qui a inscrit 20 points, offrant ainsi sa deuxième victoire de la saison."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Les Bleues ont annoncé une liste de 14 joueuses pour les qualifications à l'Euro 2027, sans Gabby Williams, Marine Johannès et Dominique Malonga, mais avec quatre vice-championnes du monde."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Nanterre a perdu contre le Sabah BC en Azerbaïdjan 87-80, enregistrant sa deuxième défaite en trois rencontres de phase de groupes de la Ligue des champions."
+        },
+        {
+          "sport": "football",
+          "texte": "Le Borussia Dortmund s'est imposé 3-2 contre le Werder Brême en Coupe d'Allemagne, grâce à un but sur coup franc de Marcel Sabitzer, et se qualifie pour les huitièmes de finale."
+        },
+        {
+          "sport": "football",
+          "texte": "L'UEFA a infligé au RC Lens une amende de 80 000 euros et une interdiction de déplacement pour ses supporters lors des prochains matchs de Ligue des champions à Leipzig et à Liverpool, suite aux incidents à Bruges."
+        },
+        {
+          "sport": "football",
+          "texte": "Le Bayern Munich a lancé la commercialisation d'un flocage doré à l'effigie de Harry Kane, récemment sacré Ballon d'Or 2026."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Les organisateurs du Rolex Paris Masters ont annoncé les wild-cards pour le tableau principal, incluant Arthur Gea, ainsi que les invitations en qualifications pour Moïse Kouame et Felix Balshaw."
+        },
+        {
+          "sport": "rugby",
+          "texte": "Garry Ringrose est incertain pour la série de matches d'automne du Championnat des nations en raison d'une blessure aux ischio-jambiers, selon la Fédération irlandaise de rugby."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "Atlético Madrid – Bayern Munich",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-11-03T20:00:00+00:00",
+          "date_texte": "mardi 3 novembre à 21h00",
+          "sport": "football"
+        },
+        {
+          "affiche": "Golden State Warriors – Los Angeles Lakers",
+          "competition": "NBA",
+          "date_iso": "2026-10-31T02:00:00+00:00",
+          "date_texte": "samedi 31 octobre à 3h00",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "decouverte",
+      "titre": "Le prix Nobel d'économie révèle un grave problème de genre",
+      "contenu_markdown": "Selon un article publié en ligne le 27 octobre 2026 dans *Nature*, la répartition des lauréats montre une forte disparité entre les sexes. Cette constatation soulève des questions sur les critères de sélection et la visibilité des contributions féminines dans le domaine économique. Les implications de ce déséquilibre sont encore à explorer, notamment en ce qui concerne les mécanismes qui ont conduit à cette situation. Les détails complets et les données chiffrées sont disponibles dans l’article original.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03404-5\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Neurone\n\n## Introduction\nLe neurone, ou cellule nerveuse, est l’élément de base du système nerveux, responsable de la transmission des informations sous forme de signaux électriques et chimiques. Ces cellules excitable forment un réseau complexe qui permet la perception, la pensée, le mouvement et la régulation des fonctions vitales. Leur étude, au cœur des neurosciences, a révélé des mécanismes fondamentaux du fonctionnement cérébral et des applications variées, allant de la médecine à l’intelligence artificielle.\n\n## Pourquoi le sujet est important\nComprendre le neurone est essentiel pour éclairer des domaines aussi divers que la cognition, les maladies neurodégénératives (comme Alzheimer ou Parkinson) ou encore le développement de traitements pour les troubles neurologiques. Les neurones jouent un rôle clé dans des processus comme la mémoire, l’apprentissage ou la prise de décision. Leur étude permet aussi d’inspirer des modèles informatiques, comme les réseaux de neurones artificiels, qui reproduisent partiellement leur fonctionnement pour résoudre des problèmes complexes.\n\n## Explication du phénomène\nUn neurone fonctionne selon deux principes fondamentaux : **l’excitabilité** et **la conductivité**. L’excitabilité désigne sa capacité à répondre à un stimulus (lumière, toucher, pensée) en générant un signal électrique, appelé **potentiel d’action**. La conductivité permet ensuite à ce signal de se propager le long de ses prolongements pour atteindre d’autres neurones. Ces signaux ne sont pas continus, mais se manifestent sous forme d’impulsions brèves et intenses, similaires à des décharges électriques.\n\n## Fonctionnement / mécanismes\nUn neurone se compose d’un **corps cellulaire** (ou soma), où se trouve le noyau, et de deux types de prolongements :\n- **Les dendrites** (en moyenne 7 000 par neurone), qui reçoivent les signaux des autres cellules et les transmettent au soma.\n- **L’axone**, unique et long (parfois plusieurs mètres chez l’humain), qui émet le signal vers d’autres neurones ou vers des muscles.\n\nLe signal électrique naît lorsque le neurone est stimulé : des canaux membranaires s’ouvrent, laissant passer des ions (sodium, potassium) et créant une différence de charge. Cette variation, le **potentiel d’action**, se propage le long de l’axone jusqu’à ses extrémités, où il déclenche la libération de molécules chimiques (neurotransmetteurs) dans l’espace synaptique. Ces molécules traversent l’écart et activent les dendrites du neurone voisin, perpétuant ainsi la transmission de l’information.\n\nChez les animaux supérieurs, les neurones sont spécialisés : certains transmettent des informations sensorielles (comme la douleur ou la température), d’autres commandent les mouvements, et d’autres encore assurent des fonctions d’intégration au sein du cerveau. Leur organisation en réseaux permet des processus complexes, comme la pensée ou la coordination motrice.\n\n## Données et résultats scientifiques\n\nLes études histologiques et génomiques ont permis d’établir plusieurs mesures quantitatives concernant les neurones humains. Le nombre total de neurones du cerveau est estimé entre **86 et 100 milliards**. En comparaison, l’intestin en compte environ **500 millions** et le cœur **40 000**. Le rapport entre neurones et cellules gliales est d’environ **1 neurone pour 3 cellules gliales**.  \n\nAu niveau morphologique, un neurone possède en moyenne **7 000 dendrites**. Le corps cellulaire (soma) est accompagné d’un seul axone, qui conduit le potentiel d’action depuis le cône axonique jusqu’à ses terminaisons.  \n\nDes observations récentes (Nature Neuroscience, 2018) ont décrit un nouveau type de neurone humain, le « rosehip », caractérisé par une petite taille, un axe central bulbeux et une organisation en faisceau dense. Ce type n’a pas été identifié chez la souris.  \n\nChez les éponges, l’analyse du génome d’**Amphimedon queenslandica** (séquençage 2010) a révélé la présence de gènes associés aux synapses chez les eumétazoaires, bien que les éponges ne possèdent pas de système nerveux. Une étude de 2021 sur **Spongilla lacustris** a montré l’expression de ces gènes « synaptiques » dans des cellules neuroïdes situées autour des chambres digestives, suggérant une fonction de communication cellulaire primitive.  \n\n## Ce que les scientifiques savent\n\n- **Fonctions fondamentales** : les neurones assurent l’excitabilité (réponse aux stimulations) et la conductivité (transmission des impulsions) du système nerveux.  \n- **Structure de base** : chaque neurone comprend un soma, un axone unique et de multiples dendrites qui reçoivent les signaux.  \n- **Classification** : les neurones se distinguent morphologiquement (unipolaires, pseudo‑unipolaires, bipolaires, multipolaires) et fonctionnellement (sensitifs, moteurs, interneurones).  \n- **Évolution** : la majorité des chercheurs soutient l’hypothèse selon laquelle les neurones sont apparus chez les eumétazoaires, avec une spécialisation des neurites en axones et dendrites chez les bilatériens.  \n- **Diversité cellulaire** : la découverte du neurone « rosehip » montre que le cerveau humain recèle encore des types cellulaires non répertoriés chez d’autres espèces.  \n- **Quantification** : les estimations du nombre total de neurones et du rapport avec les cellules gliales sont bien établies grâce à des méthodes de comptage stereologique et d’imagerie.  \n\n## Ce qui reste incertain\n\n- **Origine évolutive** : bien que l’hypothèse dominante place l’émergence des neurones chez les eumétazoaires, la possibilité d’une origine indépendante chez les cténaires n’est pas complètement exclue.  \n- **Fonction exacte des cellules neuroïdes** chez les éponges : les observations suggèrent une communication avec les choanocytes, mais le rôle précis de ces cellules dans le comportement de l’éponge reste à préciser.  \n- **Distribution et rôle du neurone « rosehip »** : son absence chez la souris indique une spécificité humaine, mais la prévalence exacte dans le cerveau humain et ses fonctions physiologiques détaillées sont encore à explorer.  \n- **Variabilité inter‑individuelle** : les fourchettes de nombre de neurones (86–100 milliards) reflètent des variations individuelles dont les déterminants (génétiques, environnementaux) ne sont pas encore pleinement compris.  \n\n## Limites et controverses éventuelles\n\n- **Méthodes de comptage** : les estimations du nombre de neurones reposent sur des techniques d’imagerie et de comptage qui peuvent introduire des biais, notamment dans les régions très denses ou très petites.  \n- **Interprétation des gènes « synaptiques » chez les éponges** : la présence de ces gènes ne prouve pas l’existence d’un système nerveux fonctionnel chez les éponges ; il s’agit d’une hypothèse interprétative qui fait l’objet de débats.  \n- **Classification des neurones** : la catégorisation morphologique (unipolaire, bipolaire, etc.) est utile mais ne rend pas toujours compte de la complexité fonctionnelle et de la plasticité des cellules, ce qui peut conduire à des discussions sur la pertinence de ces classes.  \n\n## Conclusion\n\nLes neurones constituent l’unité fonctionnelle du système nerveux, caractérisée par leur excitabilité et leur capacité à conduire les impulsions électriques. Les connaissances actuelles reposent sur des données solides concernant leur nombre, leur structure et leur classification, ainsi que sur des découvertes récentes qui enrichissent notre compréhension de la diversité neuronale humaine. Néanmoins, des questions subsistent sur l’origine évolutive des neurones, le rôle exact de certaines cellules neuroïdes chez les éponges, et la fonction précise de nouveaux types neuronaux comme le « rosehip ». La poursuite des recherches en neuroanatomie, en génomique comparative et en imagerie avancée demeure essentielle pour affiner ces connaissances et résoudre les incertitudes encore présentes.\n\n## Sources\n- Wikipédia (fr) — Neurone — https://fr.wikipedia.org/wiki/Neurone\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 1,
+      "nb_mots": 1271,
+      "matiere_source": "fine",
+      "textes_sources_audit": [
+        {
+          "source": "Nature News",
+          "titre": "The Nobel prize in economic science has a serious gender problem",
+          "resume": "Nature, Published online: 27 October 2026; doi:10.1038/d41586-026-03404-5 The Nobel prize in economic science has a serious gender problem"
+        },
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Neurone",
+          "resume": "Un neurone, ou une cellule nerveuse, est une cellule excitable constituant l'unité fonctionnelle de la base du système nerveux.\nLes neurones assurent la transmission d'un signal bioélectrique appelé influx nerveux. Ils ont deux propriétés physiologiques : l'excitabilité, c'est-à-dire la capacité de répondre aux stimulations et de convertir celles-ci en impulsions nerveuses, et la conductivité, c'est-à-dire la capacité de transmettre les impulsions.\nLa compréhension du fonctionnement du neurone et du système nerveux, particulièrement chez l'homme, est l'objet d'étude des neurosciences. Ses applications recouvrent la médecine, la psychologie et l'informatique (via les réseaux de neurones artificiels).\n\nHistoire\nGrâce au développement de la microscopie optique et à la coloration, Santiago Ramon y Cajal a été le premier à réaliser des descriptions histologiques détaillées du système nerveux. Il décrit le système nerveux central comme composé de différents types de cellules disposant de prolongements dendritiques et axonaux. Entre ces neurones, il identifie une discontinuité que Charles Scott Sherrington nommera « synapse » en 1897.\nLe terme « neurone » est introduit dans le vocabulaire médical en 1891 par l'anatomiste allemand Heinrich Wilhelm Waldeyer.\nDès le début des années 1950, les biologistes Alan Hodgkin et Andrew Huxley ont découvert que l'influx nerveux provenait de changements de la perméabilité membranaire aux ions.\nDe nouveaux types de neurones sont régulièrement découverts au sein des organismes de diverses espèces. Plus rarement on en découvre encore chez l'humain, avec par exemple en 2018 la description d'un nouveau type de cellule neuronale trouvé dans la couche externe du cortex, une zone du cerveau qui abrite de nombreux types de neurone capables d'inhiber l'activité d'autres neurones. Il a été trouvé lors d'une étude cherchant à répertorier tous les types de cellules humaines cérébrales en combinant l'anatomie et la génétique. Baptisé « rosehip », cette cellule est plus petite et compacte que les autres neurones, organisée en faisceau dense et buissonnant autour d’un gros bouton central en forme de bulbe. Selon l'étude parue dans Nature Neurosciences, ce type de neurone et son expression génétique semblent manquer chez la souris.\n\nDans le règne animal\n\nLes neurones sont présents chez tous les animaux à l'exception des éponges et des placozoaires.\nChez les cnidaires et les cténaires, les neurones ne sont pas polarisés, le signal nerveux passe dans les deux sens. On ne parle donc pas de dendrites ou d'axones mais de neurites.\nChez les bilatériens, il y a apparition d'une spécialisation des neurites en prolongement émetteur (axone) ou récepteur (dendrite).\n\nOrigine\nIl existe deux hypothèses majeures concernant l'apparition des neurones :\n\nils seraient apparus chez les eumétazoaires et constitueraient donc une synapomorphie de ce groupe. Dans cette hypothèse les cténaires font partie des eumétazoaires. Il s'agit de l'hypothèse dominante actuellement ;\nils seraient apparus indépendamment chez les eumétazoaires et les cténaires (qui ne font alors pas partie des eumétazoaires).\nLe génome d’Amphimedon queenslandica, une éponge de la Grande Barrière de corail, a été séquencé en 2010. Il comporte plusieurs gènes qui, chez les eumétazoaires, sont impliqués dans le fonctionnement des synapses, alors que les éponges n'ont pas de système nerveux. En 2021, l'ARN de cellules individuelles de Spongilla lacustris, une éponge d'eau douce, a révélé que ces gènes « synaptiques » sont exprimés dans des cellules concentrées autour des chambres digestives de l'éponge. L'examen de ces cellules « neuroïdes », par microscopie électronique et imagerie X, montre qu'elles tendent de longues protubérances vers les choanocytes, qui sont d'autres cellules chargées du système de filtrage de l'éponge et de la capture de la nourriture, et qui portent elles-mêmes des protrusions. L'interprétation des chercheurs est que les protubérances permettent aux cellules neuroïdes de communiquer avec les choanocytes, pour qu'ils interrompent le filtrage et permettent ainsi de nettoyer les chambres digestives des débris accumulés. Cette étude suggère que les neurones ont évolué à partir de cellules digestives.\n\nChez l'être humain\n\nDénombrement\nLe nombre total de neurones du cerveau humain est estimé dans une fourchette de 86 à 100 milliards (1011). L'intestin en compte environ 500 millions, et le cœur environ 40 000.\nLes neurones sont toutefois moins nombreux que les cellules gliales (il y a généralement 3 cellules gliales pour un neurone). Ces dernières sont le second composant du tissu nerveux assurant plusieurs fonctions dont le soutien et la nutrition des neurones.\n\nStructure\n\nLe neurone est composé d'un corps appelé péricaryon ou corps cellulaire ou encore soma, et de deux types de prolongements : l'axone, unique, qui en tant qu'émetteur conduit le potentiel d'action du cône axonique vers sa terminaison, et les dendrites, qui sont en moyenne 7 000 par neurone et qui sont pour un neurone jouant un rôle de transmetteur les récepteurs du potentiel d'action. La morphologie, la localisation et le nombre de ces prolongements, ainsi que la forme du soma, varient et contribuent à définir différentes familles morphologiques de neurones.\nClassement morphologique (en fonction du nombre de neurites) : \n\nneurones unipolaires (un seul axone), cas de la plupart des neurones sensitifs. Dans ce cas, la fonction de réception est assurée par des récepteurs sensoriels, sortes de dendrites spécialisées présentes à l'extrémité d'un prolongement périphérique de l'axone) ;\nneurones pseudo-unipolaires : forme transitoire des neurones bipolaires pendant leur développement ;\nneurones bipolaires : un seul axone et une seule dendrite,  présents dans quelques organes sensoriels ;\nneurones multipolaires : un seul axone, nombreuses dendrites ; cas des interneurones et neurones moteurs.\nClassement fonctionnel (selon leur fonction) :"
+        }
+      ],
+      "nb_mots_decouverte": 111,
+      "nb_mots_approfondi": 1153,
+      "sujet_id": "neurone",
+      "origine": "encyclopedie"
+    },
+    "citation": {
+      "texte": "La plus grande chose du monde, c'est de savoir être à soi.",
+      "auteur": "Michel de Montaigne",
+      "source": "Essais, livre I, chapitre 39",
+      "annee": 1580
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 17.2,
+          "temperature_max": 20.8,
+          "temperature_min": 16.6,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 6.9,
+          "vent_max_kmh": 12.8,
+          "rafales_max_kmh": 25.6,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 17.2,
+              "temperature_max": 20.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 19.4,
+              "temperature_max": 20.8,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 13,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 17.3,
+              "temperature_max": 19.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 18.2,
+          "temperature_max": 20.2,
+          "temperature_min": 16.6,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 6.1,
+          "vent_max_kmh": 14.3,
+          "rafales_max_kmh": 22.7,
+          "weather_code": 1,
+          "description": "plutôt dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 18.2,
+              "temperature_max": 19.8,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 19.1,
+              "temperature_max": 20.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 14,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 16.9,
+              "temperature_max": 18.8,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 12.9,
+          "temperature_max": 19.7,
+          "temperature_min": 12.7,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 6.3,
+          "vent_max_kmh": 10.3,
+          "rafales_max_kmh": 15.1,
+          "weather_code": 2,
+          "description": "partiellement nuageux",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 12.7,
+              "temperature_max": 18.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 17.1,
+              "temperature_max": 19.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 13.6,
+              "temperature_max": 16.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 5,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 12.5,
+          "temperature_max": 18.9,
+          "temperature_min": 12.3,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 7.3,
+          "vent_max_kmh": 10.2,
+          "rafales_max_kmh": 14.8,
+          "weather_code": 2,
+          "description": "partiellement nuageux",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 12.3,
+              "temperature_max": 17.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 16.3,
+              "temperature_max": 18.8,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 13.5,
+              "temperature_max": 15.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 5,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 20.8,
+      "temperature_min_zone": 12.3,
+      "probabilite_pluie_max_pct": 0,
+      "vent_max_kmh": 14.3,
+      "description_dominante": "partiellement nuageux",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 12.3,
+          "temperature_max": 20.2,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 7,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 16.3,
+          "temperature_max": 20.8,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 14,
+          "weather_code": 2,
+          "description": "partiellement nuageux"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 13.5,
+          "temperature_max": 19.1,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 10,
+          "weather_code": 2,
+          "description": "partiellement nuageux"
+        }
+      ],
+      "alertes": [],
+      "resume": "Couvert le matin, partiellement nuageux l'après-midi, partiellement nuageux le soir, de 12° à 21°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "A Tale of Two Cities",
+      "auteur": "Charles Dickens",
+      "annee": 1859,
+      "segments": [
+        {
+          "t": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness",
+          "g": "la sottise"
+        },
+        {
+          "t": ", it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct",
+          "g": "tout droit"
+        },
+        {
+          "t": " to Heaven, we were all going direct the other way – in short",
+          "g": "bref"
+        },
+        {
+          "t": ", the period was so far like",
+          "g": "si semblable à"
+        },
+        {
+          "t": " the present period, that some of its noisiest",
+          "g": "les plus bruyants"
+        },
+        {
+          "t": " authorities insisted on",
+          "g": "exigeaient que"
+        },
+        {
+          "t": " its being received",
+          "g": "accueillie, admise"
+        },
+        {
+          "t": ", for good or for evil",
+          "g": "pour le meilleur ou pour le pire"
+        },
+        {
+          "t": ", in the superlative degree of comparison only.",
+          "g": null
+        }
+      ],
+      "texte_glose": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness (= la sottise), it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct (= tout droit) to Heaven, we were all going direct the other way – in short (= bref), the period was so far like (= si semblable à) the present period, that some of its noisiest (= les plus bruyants) authorities insisted on (= exigeaient que) its being received (= accueillie, admise), for good or for evil (= pour le meilleur ou pour le pire), in the superlative degree of comparison only."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Présidentielle 2027 : Edouard Philippe estime que « l’échec de l’intégration » depuis « plusieurs décennies est incontestable »."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral+nvidia",
+    "_erreur_llm": "actu_monde[mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | nvidia: Réponse vide (provider=nvidia) | groq: Expecting ',' delimiter: line 58 column 6 (char 4201) | openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":]",
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": false,
+        "provider": null,
+        "erreur": "mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | nvidia: Réponse vide (provider=nvidia) | groq: Expecting ',' delimiter: line 58 column 6 (char 4201) | openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":",
+        "essais_echoues": 4
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_d": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+nvidia",
+      "erreur": "actu_monde[mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | nvidia: Réponse vide (provider=nvidia) | groq: Expecting ',' delimiter: line 58 column 6 (char 4201) | openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"message\":\"Provider returned error\",\"code\":429,"
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral+nvidia",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-10-28T06:10:40.912952+01:00"
+}

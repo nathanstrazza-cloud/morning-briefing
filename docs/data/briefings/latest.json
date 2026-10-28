@@ -1,44 +1,24 @@
 {
-  "date": "2026-10-27",
-  "derniere_mise_a_jour": "2026-10-27T06:16:45.025321+01:00",
+  "date": "2026-10-28",
+  "derniere_mise_a_jour": "2026-10-28T06:17:23.308732+01:00",
   "briefing": {
     "actualite": {
       "france": [
         {
-          "titre": "Attentat raciste à Trappes et La Verrière : Kevin T. « conteste le caractère raciste », sa garde à vue a repris",
-          "resume": "Désormais de nouveau en garde à vue, Kévin T., le suspect de l’attaque mortelle dans les Yvelines, avait été placé en soins psychiatriques samedi 24 octobre. Une décision qui ne dit rien, à cette heure, d’une éventuelle irresponsabilité pénale.",
-          "pourquoi_important": null,
+          "titre": "Présidentielle 2027 : Edouard Philippe estime que « l’échec de l’intégration » depuis « plusieurs décennies est incontestable »",
+          "resume": "Le candidat d’Horizons à l’élection présidentielle souhaite « diviser l’immigration légale par deux ». Il propose de réformer l’instruction du droit d’asile et de restreindre le regroupement familial, ainsi que de rétablir un service national obligatoire pour renforcer l’intégration.",
+          "pourquoi_important": "Le programme propose des mesures majeures sur l’immigration et le service national, susceptibles d’influencer le débat électoral de 2027.",
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "Libération",
+            "Le Monde",
             "20 Minutes"
           ]
         },
         {
-          "titre": "Attentat de Trappes : la gauche en ordre dispersé dans les rassemblements contre le racisme",
-          "resume": "Autour de leur candidat à la présidentielle, Raphaël Glucksmann, les partis de l’espace social-démocrate ont répondu à l’appel des associations et des syndicats, place Stalingrad, à Paris, quand Jean-Luc Mélenchon et LFI se sont réunis à La Courneuve.",
-          "pourquoi_important": "Selon Le Monde, les partis social-démocrates ont organisé des rassemblements contre le racisme suite à l’attentat.",
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Le Monde"
-          ]
-        },
-        {
-          "titre": "Attentat dans les Yvelines : la garde à vue de Kévin T. a repris, il conteste le mobile raciste de ses actes",
-          "resume": "Devant la presse ce lundi 26 octobre, le procureur antiterroriste s’est exprimé sur l’attaque qui a fait un mort et quatre blessés graves vendredi, à Trappes et La Verrière.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Libération"
-          ]
-        },
-        {
-          "titre": "Le profil psychiatrique du suspect de l'attentat dans les Yvelines \"ne change rien\" au mobile \"raciste\", estime Laurent Nuñez",
-          "resume": "La garde à vue de Kévin T. a été suspendue pour motifs psychiatriques, dimanche, afin de vérifier si son état est compatible avec la poursuite de ses auditions.",
-          "pourquoi_important": null,
+          "titre": "Il \"était mû par la haine et il a tué pour ça\" : Kévin T., suspect de l'attentat de Trappes, un profil \"nourri d'idéologie raciste\"",
+          "resume": "Déclaré schizophrène, sans condamnation notable, l'homme arrêté après l'attaque à Trappes et La Verrière de vendredi a fait un mort et sept blessés. Il est décrit par son entourage comme renfermé et biberonné aux chaînes d'information en continu.",
+          "pourquoi_important": "L’attentat a fait un mort et plusieurs blessés, soulevant des questions de radicalisation et de santé mentale.",
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
@@ -46,103 +26,126 @@
           ]
         },
         {
-          "titre": "Ballon d’or 2026 : Harry Kane remporte le trophée, Mbappé deuxième et Lamine Yamal troisième... Revivez la cérémonie avec nous",
-          "resume": "L’attaquant du Bayern Munich, arrivé en tête après le vote de 100 journalistes internationaux, devance Kylian Mbappé et Yamine Lamal au classement. A 33 ans, il succède au palmarès à Ousmane Dembélé.",
-          "pourquoi_important": "Le trophée récompense le meilleur joueur selon le vote de journalistes internationaux.",
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "20 Minutes",
-            "Libération"
-          ]
-        }
-      ],
-      "monde": [
-        {
-          "titre": "Donald Trump promet un million de dollars pour toute information débouchant sur une condamnation pour fraude électorale",
-          "resume": "Le président américain offre une récompense pour des signalements de fraude électorale lors des élections de mi-mandat prévues le 3 novembre, jetant le doute sur leur légitimité.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "France 24 International"
-          ]
-        },
-        {
-          "titre": "Législatives en Israël : Benyamin Nétanyahou face aux électeurs pour la première fois depuis les attaques du 7-Octobre",
-          "resume": "Le premier ministre sortant affronte les électeurs dans un scrutin serré face au bloc de l’opposition mené par Gadi Eisenkot, ancien chef de l’armée.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde"
-          ]
-        },
-        {
-          "titre": "Des frappes jordaniennes en Syrie font au moins six morts après une attaque contre une église en Jordanie",
-          "resume": "La Jordanie cible des groupes terroristes liés à l’attaque ayant tué neuf personnes dans une église orthodoxe grecque, selon son armée.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde"
-          ]
-        },
-        {
-          "titre": "Guerre en Ukraine : une trêve humanitaire commence à Olechky, ville ukrainienne sous occupation russe",
-          "resume": "Une suspension des combats permet une opération humanitaire pour les habitants privés de nourriture et de médicaments, tandis que des frappes russes à Kiev font une victime et dix blessés.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde International",
-            "France 24 International"
-          ]
-        },
-        {
-          "titre": "Présidentielle au Brésil : « La victoire de Lula porte un coup d’arrêt à la politique de Donald Trump »",
-          "resume": "Selon un professeur de science politique, la réélection de Lula au Brésil envoie un signal de résistance à l’influence de Donald Trump sur le continent américain.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Libération"
-          ]
-        },
-        {
-          "titre": "Selon Le Monde International, Ces lobbys évangéliques américains qui exportent leur guerre culturelle en Afrique",
-          "resume": "« En Afrique, la vague réactionnaire » (1/4). Profitant du discours en vogue sur le continent autour des « valeurs traditionnelles africaines » menacées par la « perversion » de l’Occident, la droite évangélique américaine a su exporter son idéologie ultraconservatrice auprès de certains dirigeants africains.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Le Monde International"
-          ],
-          "complete_par_code": true
-        },
-        {
-          "titre": "Selon France 24 International, Législatives en Israël : comment se joue la bataille pour gouverner",
-          "resume": "Les Israéliennes et Israéliens voteront le 27 octobre à l'occasion des premières élections législatives organisées depuis les attaques du 7-Octobre. Scrutin proportionnel, jeu des coalitions, majorité à 61 sièges... alors qu'aucun bloc ne semble majoritaire dans les sondages, France 24 fait le point sur le fonctionnement d’un système électoral qui peut réserver l’essentiel de la bataille à l’après-scrutin.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "France 24 International"
-          ],
-          "complete_par_code": true
-        },
-        {
-          "titre": "Selon 20 Minutes, Guerre au Moyen-Orient : Une nappe de pétrole grossit au large des Émirats",
-          "resume": "Les autorités craignent que cela ne menace des plages et des stations de dessalement du pays du Golfe situées non loin de là",
+          "titre": "Présidentielle 2027 : Yaël Braun-Pivet voit en Gérard Larcher un recours possible pour la droite et le centre",
+          "resume": "La présidente de l’Assemblée nationale appelle le Premier ministre à utiliser le 49.3 « dans les prochains jours plutôt que de jouer la montre »",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
             "20 Minutes"
-          ],
-          "complete_par_code": true
+          ]
+        },
+        {
+          "titre": "A l’audience sur les descentes de l’extrême droite à Nice contre des manifestants : «L’état d’esprit est clair : on va commencer la guerre»",
+          "resume": "Entendues une première fois ce mardi 27 octobre par le tribunal correctionnel, onze personnes, interpellées en marge de rixes qui ont émaillé la fin de la mobilisation de samedi, expliquent avoir voulu «protéger» les commerces. Elles seront jugées en novembre.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Le RN poursuit \"Le Monde\" en diffamation, dénonçant la publication d'une \"information mensongère\" sur l'attentat raciste dans les Yvelines",
+          "resume": "Le journal avait affirmé que des tracts du Rassemblement national avaient été retrouvés dans la voiture de Kévin T., le suspect de l'attaque terroriste. L'information a été démentie par le procureur national antiterroriste.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Brésil : après sa défaite à la présidentielle, Flavio Bolsonaro soupçonné d’avoir pris la fuite vers les Etats-Unis",
+          "resume": "Mis en cause dans plusieurs affaires de corruption, le candidat d’extrême droite aurait violé son interdiction de quitter le pays et se serait vu accorder des visas pour lui et sa famille par l’administration Trump.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France Info",
+            "20 Minutes",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Attentat raciste de Trappes : une minute de silence observée à l'Assemblée",
+          "resume": "Gaëlle Fonseca est en direct de l'Assemblée Nationale.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France 24 International",
+            "Le Monde",
+            "Libération",
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Législatives en Israël : le bloc de l'opposition à Benyamin Nétanyahou légèrement en tête, mais sans majorité, selon des sondages réalisés à la sortie des urnes",
+          "resume": "Le \"bloc du changement\" emmené par le centriste Gadi Eisenkot récolte entre 52 et 53 sièges sur les 120 que compte la Knesset, tandis que la coalition sortante du Premier ministre en recueille 50, selon ces premières tendances.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Israël : au lendemain de législatives cruciales pour l’avenir du pays, le vertige d’une Knesset sans majorité",
+          "resume": "Selon des résultats provisoires, mercredi matin, le camp Nétanyahou est en net recul mais l’opposition, emmenée par Gadi Eisenkot, échoue à détrôner le Likoud, aucun des deux blocs n’étant en position de former un gouvernement. Les partis arabes effectuent une percée historique et pèseront sur les futures coalitions.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Comment l’administration Trump nourrit la suspicion sur l’intégrité des midterms, à une semaine du vote",
+          "resume": "Alors que les sondages prévoient un désaveu pour le camp républicain lors des élections de mi-mandat, mardi 3 novembre, la Maison Blanche cherche à empiéter sur le rôle des Etats en matière d’organisation du scrutin et prépare le terrain à une contestation des résultats.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Selon France 24 International, Élections en Serbie : \"La mobilisation contre la fraude a sûrement eu un impact sur les résultats\"",
+          "resume": "Le mouvement de contestation mené par les étudiants en Serbie a remporté dimanche une victoire historique aux élections législatives, battant le parti du président démissionnaire Aleksandar Vucic. Les soutiens de la liste étudiante expliquent comment ils se sont massivement mobilisés afin d’empêcher les fraudes électorales, avant et pendant le scrutin.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Selon Le Monde International, Midterms 2026 : Donald Trump dit qu’il acceptera les résultats des élections si elles sont « honnêtes », dans une nouvelle allusion à des fraudes électorales jamais prouvées",
+          "resume": "Le président américain agite ainsi une nouvelle fois le spectre d’une contestation postélectorale si son parti était battu aux élections de mi-mandat, traditionnellement défavorables au parti qui occupe la Maison Blanche.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Selon France 24 International, Eisenkot accuse Netanyahu de se préparer à contester les résultats",
+          "resume": "Antoine Mariotti, notre chroniqueur international, analyse la situation.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ]
         }
       ]
     },
@@ -150,8 +153,13 @@
       "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
       "mouvements_notables": [
         {
+          "nom": "Nasdaq",
+          "variation_pct": 1.18,
+          "explication": null
+        },
+        {
           "nom": "Pétrole (Brent)",
-          "variation_pct": -5.34,
+          "variation_pct": -2.63,
           "explication": null
         }
       ]
@@ -159,36 +167,36 @@
     "sport": {
       "items": [
         {
-          "sport": "football",
-          "texte": "Alexia Putellas a remporté le Ballon d'Or France Football 2026 à Londres, succédant à Aitana Bonmati qui détenait trois sacres consécutifs."
-        },
-        {
-          "sport": "football",
-          "texte": "Alexia Putellas a gagné le Ballon d'Or Féminin pour la troisième fois, égalant ainsi le record."
-        },
-        {
-          "sport": "football",
-          "texte": "Harry Kane a été désigné vainqueur du Ballon d'Or 2026 à Londres, devenant le premier Anglais à recevoir cette distinction."
-        },
-        {
-          "sport": "tennis",
-          "texte": "Daniil Medvedev, vainqueur à Almaty la semaine précédente, a réalisé un important progrès vers la qualification pour les Finales ATP à Turin."
-        },
-        {
-          "sport": "tennis",
-          "texte": "Carlos Alcaraz a été confirmé pour participer à la phase finale de la Coupe Davis, qui se déroulera du 24 au 29 novembre à Bologne."
-        },
-        {
-          "sport": "tennis",
-          "texte": "Jannik Sinner a été réintégré au casting du Six Kings Slam, tandis que Learner Tien a été exclu de l'exhibition prévue fin décembre."
-        },
-        {
-          "sport": "rugby",
-          "texte": "Pauline Barrat a été nommée par World Rugby pour le trophée de révélation de l'année, après avoir déjà reçu ce prix en mai lors du Tournoi des Six Nations."
+          "sport": "basketball",
+          "texte": "Paris a battu Dubaï 93-99 lors de la 8e journée de l'Euroligue, grâce à un solide Jared Rhoden qui a inscrit 20 points, offrant ainsi sa deuxième victoire de la saison."
         },
         {
           "sport": "basketball",
-          "texte": "Les Knicks restent sans victoire (0-3) au début de la saison, les Sixers ont subi leur première défaite face aux Pistons, et Luka Doncic a inscrit 52 points contre Utah."
+          "texte": "Les Bleues ont annoncé une liste de 14 joueuses pour les qualifications à l'Euro 2027, sans Gabby Williams, Marine Johannès et Dominique Malonga, mais avec quatre vice-championnes du monde."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Nanterre a perdu contre le Sabah BC en Azerbaïdjan 87-80, enregistrant sa deuxième défaite en trois rencontres de phase de groupes de la Ligue des champions."
+        },
+        {
+          "sport": "football",
+          "texte": "Le Borussia Dortmund s'est imposé 3-2 contre le Werder Brême en Coupe d'Allemagne, grâce à un but sur coup franc de Marcel Sabitzer, et se qualifie pour les huitièmes de finale."
+        },
+        {
+          "sport": "football",
+          "texte": "L'UEFA a infligé au RC Lens une amende de 80 000 euros et une interdiction de déplacement pour ses supporters lors des prochains matchs de Ligue des champions à Leipzig et à Liverpool, suite aux incidents à Bruges."
+        },
+        {
+          "sport": "football",
+          "texte": "Le Bayern Munich a lancé la commercialisation d'un flocage doré à l'effigie de Harry Kane, récemment sacré Ballon d'Or 2026."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Les organisateurs du Rolex Paris Masters ont annoncé les wild-cards pour le tableau principal, incluant Arthur Gea, ainsi que les invitations en qualifications pour Moïse Kouame et Felix Balshaw."
+        },
+        {
+          "sport": "rugby",
+          "texte": "Garry Ringrose est incertain pour la série de matches d'automne du Championnat des nations en raison d'une blessure aux ischio-jambiers, selon la Fédération irlandaise de rugby."
         }
       ],
       "rien_a_signaler": false,
@@ -211,76 +219,76 @@
     },
     "science": {
       "mode": "decouverte",
-      "titre": "Les salaires des chercheurs semblent se détériorer, selon une enquête de 4 000 scientifiques",
-      "contenu_markdown": "Une enquête publiée dans la revue *Nature* le 26 octobre 2026 a interrogé près de 4 000 chercheurs. Les résultats montrent que de nombreux scientifiques estiment que leurs revenus ne suivent plus le rythme des coûts de la vie, et que la dernière augmentation de salaire leur paraît lointaine. Cette perception de détérioration salariale est partagée par une majorité d’entre eux, soulignant une préoccupation croissante au sein de la communauté scientifique. Les détails chiffrés de l’étude sont disponibles dans l’article original.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03398-0\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Cerveau humain\n\nLe cerveau humain est un organe fascinant, à la fois héritier de l’évolution des mammifères et porteur d’une complexité unique. Bien que partagent une structure de base commune avec les autres vertébrés, il se distingue par sa taille relative et sa spécialisation fonctionnelle. Avec un poids moyen d’environ 1,5 kilogramme, il est bien moins massif que celui de la baleine bleue (6,92 kg), mais son **coefficient d’encéphalisation** – rapport entre la taille du cerveau et celle du corps – est sept fois supérieur à la moyenne des mammifères. Cette particularité reflète une adaptation évolutive majeure, où la croissance du cortex cérébral a joué un rôle central.\n\n## Pourquoi le cerveau humain est-il si important ?\n\nLe cerveau humain est la structure vivante la plus complexe connue à ce jour. Il ne se limite pas à un simple organe de contrôle, mais constitue un réseau de territoires spécialisés, chacun associé à des fonctions précises : perception sensorielle, mouvement, langage, mémoire ou encore prise de décision. Cette organisation fine explique pourquoi les lésions cérébrales peuvent avoir des conséquences si variées, allant de troubles moteurs à des altérations cognitives profondes.\n\nSon importance dépasse le cadre biologique : c’est aussi le siège de la conscience, des émotions et des capacités uniques à l’espèce humaine, comme le langage articulé ou la planification complexe. Pourtant, malgré sa protection par le crâne, la barrière hémato-encéphalique et le liquide cérébrospinal, il reste vulnérable. Les traumatismes crâniens, les maladies neurodégénératives (comme Alzheimer) ou les troubles psychiatriques (comme la schizophrénie) en témoignent, même si leurs causes exactes restent souvent mal comprises.\n\n## Explication du phénomène : une évolution unique\n\nL’évolution du cerveau humain s’est accompagnée d’une augmentation significative du volume cérébral, notamment grâce au développement du **cortex cérébral**. Celui-ci représente une couche externe plissée, où se concentrent les fonctions supérieures. Parmi ses régions, les **lobes frontaux** occupent plus de 30 % de sa surface et jouent un rôle clé dans la planification, le langage et les mouvements volontaires. Une autre particularité réside dans la répartition des zones sensorielles : près de la moitié du cortex est dédiée à l’analyse visuelle, reflétant l’importance de cette modalité chez l’humain.\n\nCette complexité structurelle s’accompagne d’une spécialisation fonctionnelle absente chez les autres primates. Par exemple, les aires cérébrales liées à la parole ou à la manipulation d’outils sont bien plus développées, illustrant une adaptation à des comportements sociaux et techniques inédits.\n\n## Fonctionnement et mécanismes : de Galien à l’anatomie moderne\n\nL’histoire de la compréhension du cerveau humain est marquée par des débats philosophiques et des avancées scientifiques majeures. Dès l’Antiquité, deux visions s’opposaient : pour Aristote, le cœur était le siège de l’âme, tandis qu’Hippocrate et Hérophile défendaient une approche **céphalo-centrée**, attribuant au cerveau un rôle central dans l’intelligence.\n\nGalien, au IIᵉ siècle, a posé les bases d’une théorie plus précise en décrivant les connexions entre le cerveau, les nerfs et les muscles. Il proposait que les nerfs transmettent un « esprit animal » (pneuma psychique) pour activer les mouvements, une idée qui a influencé la médecine médiévale. Cependant, c’est à la Renaissance que les progrès ont accéléré, notamment grâce à Descartes, qui, bien qu’adoptant une vision dualiste (séparant corps et esprit), a contribué à une compréhension mécanique des fonctions nerveuses.\n\nLe tournant décisif est venu avec les découvertes de **Luigi Galvani** au XVIIIᵉ siècle, montrant que l’électricité pouvait stimuler les nerfs et provoquer des contractions musculaires. Cette observation a ouvert la voie à une approche expérimentale du système nerveux. Au XVIIᵉ siècle, **Thomas Willis** a renforcé l’idée que le cortex cérébral était le siège des fonctions cognitives, s’éloignant de la théorie ventriculaire (ancienne croyance selon laquelle les ventricules cérébraux abritaient l’esprit).\n\nAu XIXᵉ siècle, les travaux de **Franz Joseph Gall** (phrénologie) et les observations chirurgicales de **Charles Scott Sherrington** ont permis de cartographier les zones cérébrales en fonction de leur rôle. Sherrington a notamment noté que certaines régions du cortex s’activent (rougissent) lorsque le patient bouge une partie spécifique du corps, révélant une consommation locale d’oxygène liée à l’activité neuronale. Ces découvertes ont jeté les bases de la **neuropsychologie moderne**, confirmant que les fonctions cérébrales sont localisées et interconnectées.\n\n## Données et résultats scientifiques\n\n- Le cerveau humain pèse en moyenne **environ 1,5 kg**, alors que le plus lourd parmi les mammifères, le cerveau de la baleine bleue, atteint **6,92 kg**.  \n- Le **coefficient d’encéphalisation** (rapport entre le poids du cerveau et la masse corporelle) de l’homme est le plus élevé chez les mammifères et **sept fois supérieur** à la moyenne de ce groupe.  \n- Le **cortex cérébral** représente plus de **30 % de la surface cérébrale** humaine, avec une prédominance des lobes frontaux.  \n- Près de **la moitié du cortex** est dédié à l’analyse sensorielle, surtout visuelle.  \n\nCes chiffres proviennent des mesures anatomiques classiques et sont largement cités dans les ouvrages de référence sur l’anatomie du cerveau.\n\n## Ce que les scientifiques savent\n\n- **Structure générale** : Le cerveau humain conserve la même organisation de base que celui des autres mammifères (cortex, sous-cortex, cervelet, tronc cérébral).  \n- **Spécialisation du cortex** : Les lobes frontaux, plus développés chez l’homme, sont associés à la planification, au langage et au contrôle moteur volontaire.  \n- **Barrières protectrices** : Le cerveau est entouré d’une barrière hémato‑encéphalique, d’un crâne osseux épais et baigne dans le liquide cérébrospinal, ce qui limite l’accès de nombreuses substances et protège contre les traumatismes.  \n- **Vulnérabilités** : Malgré ces protections, le cerveau reste exposé aux traumatismes crâniens, aux agents neurotoxiques, aux maladies neurologiques (ex. maladie d’Alzheimer) et aux troubles psychiatriques (ex. schizophrénie), dont les mécanismes restent partiellement élucidés.  \n\n## Ce qui reste incertain\n\n- **Origine évolutive du volume cortical** : Bien que l’augmentation du volume cérébral humain soit largement attribuée au développement du cortex, les pressions sélectives précises (sociales, environnementales, technologiques) qui ont conduit à cette expansion restent débattues.  \n- **Bases neurobiologiques des troubles psychiatriques** : La relation exacte entre dysfonctionnements cérébraux et maladies comme la schizophrénie n’est pas encore clairement définie ; les causes restent multiples et souvent indéterminées.  \n- **Fonctions exactes de certaines zones corticales** : Malgré les avancées en neuroimagerie, la contribution précise de nombreuses sous‑régions du cortex à des processus cognitifs complexes (ex. conscience, créativité) demeure partiellement hypothétique.  \n\n## Limites et controverses éventuelles\n\n- **Mesure du coefficient d’encéphalisation** : Le calcul repose sur des estimations de masse corporelle et de poids cérébral qui peuvent varier selon les méthodes de mesure et les populations étudiées, ce qui peut influencer les comparaisons inter‑espèces.  \n- **Interprétation des corrélations anatomoclinique** : Les études historiques reliant lésions cérébrales à déficits fonctionnels ont parfois été limitées par la taille d’échantillon et la précision des techniques d’imagerie, entraînant des débats sur la localisation exacte de certaines fonctions.  \n- **Protection du cerveau** : Bien que la barrière hémato‑encéphalique soit reconnue comme un bouclier majeur, son rôle exact dans la prévention de certaines pathologies neurodégénératives fait encore l’objet de recherches, notamment concernant son perméabilité variable avec l’âge.  \n\n## Conclusion\n\nLe cerveau humain se distingue par son poids relatif, son coefficient d’encéphalisation élevé et le développement prononcé de son cortex, notamment les lobes frontaux. Ces caractéristiques sous-tendent des capacités cognitives avancées, mais le cerveau demeure vulnérable à de nombreuses affections. La connaissance actuelle repose sur des mesures anatomiques solides et sur une compréhension détaillée des structures protectrices, tandis que les mécanismes précis de certaines fonctions cérébrales et de troubles psychiatriques restent à préciser. Les recherches futures, notamment en neuroimagerie et en génétique, devront affiner ces points incertains et dépasser les limites méthodologiques des études antérieures.\n\n## Sources\n- Wikipédia (fr) — Cerveau humain — https://fr.wikipedia.org/wiki/Cerveau_humain\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
-      "phrases_retirees_garde_fou": 0,
-      "nb_mots": 1406,
+      "titre": "Le prix Nobel d'économie révèle un grave problème de genre",
+      "contenu_markdown": "Selon un article publié en ligne le 27 octobre 2026 dans *Nature*, la répartition des lauréats montre une forte disparité entre les sexes. Cette constatation soulève des questions sur les critères de sélection et la visibilité des contributions féminines dans le domaine économique. Les implications de ce déséquilibre sont encore à explorer, notamment en ce qui concerne les mécanismes qui ont conduit à cette situation. Les détails complets et les données chiffrées sont disponibles dans l’article original.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03404-5\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Neurone\n\n## Introduction\nLe neurone, ou cellule nerveuse, est l’élément de base du système nerveux, responsable de la transmission des informations sous forme de signaux électriques et chimiques. Ces cellules excitable forment un réseau complexe qui permet la perception, la pensée, le mouvement et la régulation des fonctions vitales. Leur étude, au cœur des neurosciences, a révélé des mécanismes fondamentaux du fonctionnement cérébral et des applications variées, allant de la médecine à l’intelligence artificielle.\n\n## Pourquoi le sujet est important\nComprendre le neurone est essentiel pour éclairer des domaines aussi divers que la cognition, les maladies neurodégénératives (comme Alzheimer ou Parkinson) ou encore le développement de traitements pour les troubles neurologiques. Les neurones jouent un rôle clé dans des processus comme la mémoire, l’apprentissage ou la prise de décision. Leur étude permet aussi d’inspirer des modèles informatiques, comme les réseaux de neurones artificiels, qui reproduisent partiellement leur fonctionnement pour résoudre des problèmes complexes.\n\n## Explication du phénomène\nUn neurone fonctionne selon deux principes fondamentaux : **l’excitabilité** et **la conductivité**. L’excitabilité désigne sa capacité à répondre à un stimulus (lumière, toucher, pensée) en générant un signal électrique, appelé **potentiel d’action**. La conductivité permet ensuite à ce signal de se propager le long de ses prolongements pour atteindre d’autres neurones. Ces signaux ne sont pas continus, mais se manifestent sous forme d’impulsions brèves et intenses, similaires à des décharges électriques.\n\n## Fonctionnement / mécanismes\nUn neurone se compose d’un **corps cellulaire** (ou soma), où se trouve le noyau, et de deux types de prolongements :\n- **Les dendrites** (en moyenne 7 000 par neurone), qui reçoivent les signaux des autres cellules et les transmettent au soma.\n- **L’axone**, unique et long (parfois plusieurs mètres chez l’humain), qui émet le signal vers d’autres neurones ou vers des muscles.\n\nLe signal électrique naît lorsque le neurone est stimulé : des canaux membranaires s’ouvrent, laissant passer des ions (sodium, potassium) et créant une différence de charge. Cette variation, le **potentiel d’action**, se propage le long de l’axone jusqu’à ses extrémités, où il déclenche la libération de molécules chimiques (neurotransmetteurs) dans l’espace synaptique. Ces molécules traversent l’écart et activent les dendrites du neurone voisin, perpétuant ainsi la transmission de l’information.\n\nChez les animaux supérieurs, les neurones sont spécialisés : certains transmettent des informations sensorielles (comme la douleur ou la température), d’autres commandent les mouvements, et d’autres encore assurent des fonctions d’intégration au sein du cerveau. Leur organisation en réseaux permet des processus complexes, comme la pensée ou la coordination motrice.\n\n## Données et résultats scientifiques\n\nLes études histologiques et génomiques ont permis d’établir plusieurs mesures quantitatives concernant les neurones humains. Le nombre total de neurones du cerveau est estimé entre **86 et 100 milliards**. En comparaison, l’intestin en compte environ **500 millions** et le cœur **40 000**. Le rapport entre neurones et cellules gliales est d’environ **1 neurone pour 3 cellules gliales**.  \n\nAu niveau morphologique, un neurone possède en moyenne **7 000 dendrites**. Le corps cellulaire (soma) est accompagné d’un seul axone, qui conduit le potentiel d’action depuis le cône axonique jusqu’à ses terminaisons.  \n\nDes observations récentes (Nature Neuroscience, 2018) ont décrit un nouveau type de neurone humain, le « rosehip », caractérisé par une petite taille, un axe central bulbeux et une organisation en faisceau dense. Ce type n’a pas été identifié chez la souris.  \n\nChez les éponges, l’analyse du génome d’**Amphimedon queenslandica** (séquençage 2010) a révélé la présence de gènes associés aux synapses chez les eumétazoaires, bien que les éponges ne possèdent pas de système nerveux. Une étude de 2021 sur **Spongilla lacustris** a montré l’expression de ces gènes « synaptiques » dans des cellules neuroïdes situées autour des chambres digestives, suggérant une fonction de communication cellulaire primitive.  \n\n## Ce que les scientifiques savent\n\n- **Fonctions fondamentales** : les neurones assurent l’excitabilité (réponse aux stimulations) et la conductivité (transmission des impulsions) du système nerveux.  \n- **Structure de base** : chaque neurone comprend un soma, un axone unique et de multiples dendrites qui reçoivent les signaux.  \n- **Classification** : les neurones se distinguent morphologiquement (unipolaires, pseudo‑unipolaires, bipolaires, multipolaires) et fonctionnellement (sensitifs, moteurs, interneurones).  \n- **Évolution** : la majorité des chercheurs soutient l’hypothèse selon laquelle les neurones sont apparus chez les eumétazoaires, avec une spécialisation des neurites en axones et dendrites chez les bilatériens.  \n- **Diversité cellulaire** : la découverte du neurone « rosehip » montre que le cerveau humain recèle encore des types cellulaires non répertoriés chez d’autres espèces.  \n- **Quantification** : les estimations du nombre total de neurones et du rapport avec les cellules gliales sont bien établies grâce à des méthodes de comptage stereologique et d’imagerie.  \n\n## Ce qui reste incertain\n\n- **Origine évolutive** : bien que l’hypothèse dominante place l’émergence des neurones chez les eumétazoaires, la possibilité d’une origine indépendante chez les cténaires n’est pas complètement exclue.  \n- **Fonction exacte des cellules neuroïdes** chez les éponges : les observations suggèrent une communication avec les choanocytes, mais le rôle précis de ces cellules dans le comportement de l’éponge reste à préciser.  \n- **Distribution et rôle du neurone « rosehip »** : son absence chez la souris indique une spécificité humaine, mais la prévalence exacte dans le cerveau humain et ses fonctions physiologiques détaillées sont encore à explorer.  \n- **Variabilité inter‑individuelle** : les fourchettes de nombre de neurones (86–100 milliards) reflètent des variations individuelles dont les déterminants (génétiques, environnementaux) ne sont pas encore pleinement compris.  \n\n## Limites et controverses éventuelles\n\n- **Méthodes de comptage** : les estimations du nombre de neurones reposent sur des techniques d’imagerie et de comptage qui peuvent introduire des biais, notamment dans les régions très denses ou très petites.  \n- **Interprétation des gènes « synaptiques » chez les éponges** : la présence de ces gènes ne prouve pas l’existence d’un système nerveux fonctionnel chez les éponges ; il s’agit d’une hypothèse interprétative qui fait l’objet de débats.  \n- **Classification des neurones** : la catégorisation morphologique (unipolaire, bipolaire, etc.) est utile mais ne rend pas toujours compte de la complexité fonctionnelle et de la plasticité des cellules, ce qui peut conduire à des discussions sur la pertinence de ces classes.  \n\n## Conclusion\n\nLes neurones constituent l’unité fonctionnelle du système nerveux, caractérisée par leur excitabilité et leur capacité à conduire les impulsions électriques. Les connaissances actuelles reposent sur des données solides concernant leur nombre, leur structure et leur classification, ainsi que sur des découvertes récentes qui enrichissent notre compréhension de la diversité neuronale humaine. Néanmoins, des questions subsistent sur l’origine évolutive des neurones, le rôle exact de certaines cellules neuroïdes chez les éponges, et la fonction précise de nouveaux types neuronaux comme le « rosehip ». La poursuite des recherches en neuroanatomie, en génomique comparative et en imagerie avancée demeure essentielle pour affiner ces connaissances et résoudre les incertitudes encore présentes.\n\n## Sources\n- Wikipédia (fr) — Neurone — https://fr.wikipedia.org/wiki/Neurone\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 1,
+      "nb_mots": 1271,
       "matiere_source": "fine",
       "textes_sources_audit": [
         {
           "source": "Nature News",
-          "titre": "Are salaries getting worse? Many scientists think so",
-          "resume": "Nature, Published online: 26 October 2026; doi:10.1038/d41586-026-03398-0 Nature’s survey of almost 4,000 researchers shows that you’re not alone if you struggle to make ends meet or your last pay rise is a distant memory."
+          "titre": "The Nobel prize in economic science has a serious gender problem",
+          "resume": "Nature, Published online: 27 October 2026; doi:10.1038/d41586-026-03404-5 The Nobel prize in economic science has a serious gender problem"
         },
         {
           "source": "Wikipédia (fr)",
-          "titre": "Cerveau humain",
-          "resume": "Le cerveau humain a la même structure générale que le cerveau des autres mammifères, mais il est celui dont la taille relative par rapport au reste du corps est devenue la plus grande au cours de l'évolution. Le cerveau humain est la structure vivante la plus complexe que nous connaissons. Cet organe n'est pas homogène et sa complexité est représentée par la juxtaposition de différents territoires dont les fonctions sont spécifiées\nSi la baleine bleue a le cerveau le plus lourd avec 6,92 kilogrammes contre environ 1,5 kg pour celui de l'homme, le coefficient d'encéphalisation humain est le plus élevé et est sept fois supérieur à celui de la moyenne des mammifères. L'augmentation du volume cérébral humain vient en grande partie du développement du cortex cérébral qui est bien distinct de celui des autres Primates, en particulier les lobes frontaux qui représentent plus de 30 % de la surface cérébrale et interviennent essentiellement dans la planification, le langage et le mouvement volontaire. Près de la moitié du cortex cérébral est consacré à l'analyse sensorielle, principalement la vision.\nBien qu'il soit protégé par la barrière hémato-encéphalique et les os épais du crâne et qu'il baigne dans le liquide cérébrospinal, le cerveau humain reste soumis à des blessures et maladies dont les plus fréquentes sont le traumatisme crânien, les maladies neurotoxiques, neurologiques et neurodégénératives. Un certain nombre de troubles psychiques, comme la schizophrénie sont considérés comme associés à des dysfonctionnements du cerveau, bien que la cause de ces troubles soit mal comprise.[réf. nécessaire]\n\nHistoire de la connaissance du cerveau humain\n\nHistoriquement, les avis se sont souvent opposés pour savoir qui du cerveau ou du cœur était le siège de l'âme. Dans un sens, il était impossible de nier que la conscience semble comme localisée dans la tête, qu'un coup à la tête provoque bien plus facilement l'inconscience qu'un coup sur le torse, et que secouer la tête donne des vertiges.\nDans un autre sens, le cerveau soumis à un examen superficiel semble inerte, tandis que le cœur bat constamment. L'arrêt des battements cardiaques provoque la mort, tandis que les émotions induisent des changements de la fréquence cardiaque et que le chagrin produit souvent une sensation de douleur au niveau du cœur (« cœur brisé »).\nPour Aristote, le siège de l'âme était le cœur. Le cerveau, organe de refroidissement, servait simplement à assurer la circulation du sang (théorie philosophique et médicale du cardiocentrisme). Démocrite divise l'âme en trois parties : l'intellect dans la tête, l'émotion dans le cœur, le désir autour du foie.\nHippocrate était sûr que l'âme se trouvait dans le cerveau (théorie philosophique et médicale du cérébrocentrisme ou céphalocentrisme).\nPour Hérophile, le cerveau était le centre de l’intelligence.\n\nGalien a aussi défendu l'importance du cerveau, et élaboré des théories assez avancées sur sa manière de fonctionner. Même après la reconnaissance de la primauté du cerveau par la société savante, l'idée du cœur comme siège de l'intelligence a continué de survivre dans les idiomes populaires. Galien a entrepris un long travail pour décrire les relations anatomiques entre le cerveau, les nerfs, et les muscles, démontrant que tous les muscles du corps sont connectés au cerveau par un réseau de nerfs. Il postulait que les nerfs activent les muscles mécaniquement, en transportant une substance mystérieuse qu'il appelle le pneuma psychique (ou « esprit animal »). Ses idées connaissent une relative renommée pendant le Moyen Âge, mais ne progressent pas jusqu'à la Renaissance.\nÀ la Renaissance, des études anatomiques détaillées résument et combinent les idées de Galien avec celles de Descartes et ses successeurs. Comme Galien, Descartes pensait le système nerveux en termes hydrauliques. Il est convaincu que les plus hautes fonctions cognitives, le langage notamment, sont effectuées par une « chose pensante » non-physique (res cogitans), mais que la majorité des comportements humains et animaux peuvent s'expliquer mécaniquement. Le premier grand pas vers la médecine moderne provient des recherches de Luigi Galvani, qui découvre qu'une décharge d'électricité statique appliquée sur le nerf d'une grenouille morte provoque la contraction de sa jambe.\nChaque grande avancée dans la compréhension du cerveau a suivi plus ou moins directement le développement d'une nouvelle méthode d'analyse.\nAu XVIIe siècle, Thomas Willis, père des neurosciences modernes, prend le contrepied de la théorie dualiste de Descartes, privilégiant l'approche matérialiste grâce à sa description du fonctionnement des nerfs. Préoccupé par la recherche du lien entre cerveau et esprit, Willis étend les concepts proposés par Galien, selon lesquels le cerveau était l'organe responsable de l'excrétion des « esprits animaux » (théorie ventriculaire des cerveaux), et situe la pensée dans le cortex cérébral.\nAu XVIIIe siècle, Vincenzo Malacarne (it), fondateur de l'anatomie topographique et de la neuropsychologie, pose les principes de l'existence de signes cliniques de ses patients reliés à l’observation post-mortem de lésions de leur cerveau. Paul Broca démontre cette corrélation anatomoclinique.\nAu XIXe siècle, Franz Joseph Gall développe grâce à des techniques organologiques, une théorie localisationiste selon laquelle les fonctions cognitives sont au niveau des circonvolutions du cortex cérébral. Les chirurgiens Charles Scott Sherrington et C.S. Roy observent le cerveau en salle d'opération et remarquent qu'une zone du cortex rougit lorsque le patient bouge une partie précise de son corps, montrant la consommation d'oxygène cérébrale.\nJusqu'au début du XXe siècle, les principales avancées ont découlé de la découverte de nouveaux colorants histologiques."
+          "titre": "Neurone",
+          "resume": "Un neurone, ou une cellule nerveuse, est une cellule excitable constituant l'unité fonctionnelle de la base du système nerveux.\nLes neurones assurent la transmission d'un signal bioélectrique appelé influx nerveux. Ils ont deux propriétés physiologiques : l'excitabilité, c'est-à-dire la capacité de répondre aux stimulations et de convertir celles-ci en impulsions nerveuses, et la conductivité, c'est-à-dire la capacité de transmettre les impulsions.\nLa compréhension du fonctionnement du neurone et du système nerveux, particulièrement chez l'homme, est l'objet d'étude des neurosciences. Ses applications recouvrent la médecine, la psychologie et l'informatique (via les réseaux de neurones artificiels).\n\nHistoire\nGrâce au développement de la microscopie optique et à la coloration, Santiago Ramon y Cajal a été le premier à réaliser des descriptions histologiques détaillées du système nerveux. Il décrit le système nerveux central comme composé de différents types de cellules disposant de prolongements dendritiques et axonaux. Entre ces neurones, il identifie une discontinuité que Charles Scott Sherrington nommera « synapse » en 1897.\nLe terme « neurone » est introduit dans le vocabulaire médical en 1891 par l'anatomiste allemand Heinrich Wilhelm Waldeyer.\nDès le début des années 1950, les biologistes Alan Hodgkin et Andrew Huxley ont découvert que l'influx nerveux provenait de changements de la perméabilité membranaire aux ions.\nDe nouveaux types de neurones sont régulièrement découverts au sein des organismes de diverses espèces. Plus rarement on en découvre encore chez l'humain, avec par exemple en 2018 la description d'un nouveau type de cellule neuronale trouvé dans la couche externe du cortex, une zone du cerveau qui abrite de nombreux types de neurone capables d'inhiber l'activité d'autres neurones. Il a été trouvé lors d'une étude cherchant à répertorier tous les types de cellules humaines cérébrales en combinant l'anatomie et la génétique. Baptisé « rosehip », cette cellule est plus petite et compacte que les autres neurones, organisée en faisceau dense et buissonnant autour d’un gros bouton central en forme de bulbe. Selon l'étude parue dans Nature Neurosciences, ce type de neurone et son expression génétique semblent manquer chez la souris.\n\nDans le règne animal\n\nLes neurones sont présents chez tous les animaux à l'exception des éponges et des placozoaires.\nChez les cnidaires et les cténaires, les neurones ne sont pas polarisés, le signal nerveux passe dans les deux sens. On ne parle donc pas de dendrites ou d'axones mais de neurites.\nChez les bilatériens, il y a apparition d'une spécialisation des neurites en prolongement émetteur (axone) ou récepteur (dendrite).\n\nOrigine\nIl existe deux hypothèses majeures concernant l'apparition des neurones :\n\nils seraient apparus chez les eumétazoaires et constitueraient donc une synapomorphie de ce groupe. Dans cette hypothèse les cténaires font partie des eumétazoaires. Il s'agit de l'hypothèse dominante actuellement ;\nils seraient apparus indépendamment chez les eumétazoaires et les cténaires (qui ne font alors pas partie des eumétazoaires).\nLe génome d’Amphimedon queenslandica, une éponge de la Grande Barrière de corail, a été séquencé en 2010. Il comporte plusieurs gènes qui, chez les eumétazoaires, sont impliqués dans le fonctionnement des synapses, alors que les éponges n'ont pas de système nerveux. En 2021, l'ARN de cellules individuelles de Spongilla lacustris, une éponge d'eau douce, a révélé que ces gènes « synaptiques » sont exprimés dans des cellules concentrées autour des chambres digestives de l'éponge. L'examen de ces cellules « neuroïdes », par microscopie électronique et imagerie X, montre qu'elles tendent de longues protubérances vers les choanocytes, qui sont d'autres cellules chargées du système de filtrage de l'éponge et de la capture de la nourriture, et qui portent elles-mêmes des protrusions. L'interprétation des chercheurs est que les protubérances permettent aux cellules neuroïdes de communiquer avec les choanocytes, pour qu'ils interrompent le filtrage et permettent ainsi de nettoyer les chambres digestives des débris accumulés. Cette étude suggère que les neurones ont évolué à partir de cellules digestives.\n\nChez l'être humain\n\nDénombrement\nLe nombre total de neurones du cerveau humain est estimé dans une fourchette de 86 à 100 milliards (1011). L'intestin en compte environ 500 millions, et le cœur environ 40 000.\nLes neurones sont toutefois moins nombreux que les cellules gliales (il y a généralement 3 cellules gliales pour un neurone). Ces dernières sont le second composant du tissu nerveux assurant plusieurs fonctions dont le soutien et la nutrition des neurones.\n\nStructure\n\nLe neurone est composé d'un corps appelé péricaryon ou corps cellulaire ou encore soma, et de deux types de prolongements : l'axone, unique, qui en tant qu'émetteur conduit le potentiel d'action du cône axonique vers sa terminaison, et les dendrites, qui sont en moyenne 7 000 par neurone et qui sont pour un neurone jouant un rôle de transmetteur les récepteurs du potentiel d'action. La morphologie, la localisation et le nombre de ces prolongements, ainsi que la forme du soma, varient et contribuent à définir différentes familles morphologiques de neurones.\nClassement morphologique (en fonction du nombre de neurites) : \n\nneurones unipolaires (un seul axone), cas de la plupart des neurones sensitifs. Dans ce cas, la fonction de réception est assurée par des récepteurs sensoriels, sortes de dendrites spécialisées présentes à l'extrémité d'un prolongement périphérique de l'axone) ;\nneurones pseudo-unipolaires : forme transitoire des neurones bipolaires pendant leur développement ;\nneurones bipolaires : un seul axone et une seule dendrite,  présents dans quelques organes sensoriels ;\nneurones multipolaires : un seul axone, nombreuses dendrites ; cas des interneurones et neurones moteurs.\nClassement fonctionnel (selon leur fonction) :"
         }
       ],
-      "nb_mots_decouverte": 115,
-      "nb_mots_approfondi": 1283,
-      "sujet_id": "cerveau",
+      "nb_mots_decouverte": 111,
+      "nb_mots_approfondi": 1153,
+      "sujet_id": "neurone",
       "origine": "encyclopedie"
     },
     "citation": {
-      "texte": "Que sais-je ?",
+      "texte": "La plus grande chose du monde, c'est de savoir être à soi.",
       "auteur": "Michel de Montaigne",
-      "source": "Essais, livre II, chapitre 12",
+      "source": "Essais, livre I, chapitre 39",
       "annee": 1580
     },
     "meteo": {
       "villes_detail": [
         {
           "ville": "Antibes",
-          "temperature_actuelle": 15.3,
+          "temperature_actuelle": 17.2,
           "temperature_max": 20.8,
-          "temperature_min": 14.7,
+          "temperature_min": 16.6,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 6.4,
-          "vent_max_kmh": 10.2,
-          "rafales_max_kmh": 16.9,
+          "vent_kmh": 6.9,
+          "vent_max_kmh": 12.8,
+          "rafales_max_kmh": 25.6,
           "weather_code": 3,
           "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 15.3,
-              "temperature_max": 20.0,
+              "temperature_min": 17.2,
+              "temperature_max": 20.2,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 8,
+              "vent_max_kmh": 7,
               "weather_code": 3,
               "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 19.8,
-              "temperature_max": 20.7,
+              "temperature_min": 19.4,
+              "temperature_max": 20.8,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 8,
-              "weather_code": 0,
-              "description": "ciel dégagé"
+              "vent_max_kmh": 13,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
             },
             {
               "label": "Soir",
-              "temperature_min": 18.4,
-              "temperature_max": 19.6,
+              "temperature_min": 17.3,
+              "temperature_max": 19.1,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 9,
+              "vent_max_kmh": 10,
               "weather_code": 3,
               "description": "couvert"
             }
@@ -289,90 +297,90 @@
         },
         {
           "ville": "Cannes",
-          "temperature_actuelle": 16.1,
-          "temperature_max": 20.6,
-          "temperature_min": 16.0,
+          "temperature_actuelle": 18.2,
+          "temperature_max": 20.2,
+          "temperature_min": 16.6,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 5.9,
-          "vent_max_kmh": 10.6,
-          "rafales_max_kmh": 19.1,
-          "weather_code": 3,
-          "description": "couvert",
+          "vent_kmh": 6.1,
+          "vent_max_kmh": 14.3,
+          "rafales_max_kmh": 22.7,
+          "weather_code": 1,
+          "description": "plutôt dégagé",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 16.1,
-              "temperature_max": 20.1,
+              "temperature_min": 18.2,
+              "temperature_max": 19.8,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 6,
+              "vent_max_kmh": 7,
               "weather_code": 3,
               "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 19.5,
-              "temperature_max": 20.5,
+              "temperature_min": 19.1,
+              "temperature_max": 20.1,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 9,
+              "vent_max_kmh": 14,
               "weather_code": 0,
               "description": "ciel dégagé"
             },
             {
               "label": "Soir",
-              "temperature_min": 18.5,
-              "temperature_max": 19.3,
+              "temperature_min": 16.9,
+              "temperature_max": 18.8,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 9,
-              "weather_code": 3,
-              "description": "couvert"
+              "vent_max_kmh": 10,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Valbonne",
-          "temperature_actuelle": 11.3,
-          "temperature_max": 19.3,
-          "temperature_min": 11.2,
+          "temperature_actuelle": 12.9,
+          "temperature_max": 19.7,
+          "temperature_min": 12.7,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 7.8,
-          "vent_max_kmh": 7.8,
-          "rafales_max_kmh": 14.0,
+          "vent_kmh": 6.3,
+          "vent_max_kmh": 10.3,
+          "rafales_max_kmh": 15.1,
           "weather_code": 2,
           "description": "partiellement nuageux",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 11.2,
-              "temperature_max": 18.2,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 8,
-              "weather_code": 0,
-              "description": "ciel dégagé"
-            },
-            {
-              "label": "Après-midi",
-              "temperature_min": 17.8,
-              "temperature_max": 19.3,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 8,
-              "weather_code": 1,
-              "description": "plutôt dégagé"
-            },
-            {
-              "label": "Soir",
-              "temperature_min": 13.8,
-              "temperature_max": 16.6,
+              "temperature_min": 12.7,
+              "temperature_max": 18.4,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 6,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 17.1,
+              "temperature_max": 19.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 13.6,
+              "temperature_max": 16.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 5,
               "weather_code": 2,
               "description": "partiellement nuageux"
             }
@@ -381,44 +389,44 @@
         },
         {
           "ville": "Grasse",
-          "temperature_actuelle": 10.8,
-          "temperature_max": 18.2,
-          "temperature_min": 10.8,
+          "temperature_actuelle": 12.5,
+          "temperature_max": 18.9,
+          "temperature_min": 12.3,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 8.8,
-          "vent_max_kmh": 9.2,
-          "rafales_max_kmh": 14.4,
+          "vent_kmh": 7.3,
+          "vent_max_kmh": 10.2,
+          "rafales_max_kmh": 14.8,
           "weather_code": 2,
           "description": "partiellement nuageux",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 10.8,
-              "temperature_max": 17.2,
+              "temperature_min": 12.3,
+              "temperature_max": 17.6,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 9,
-              "weather_code": 0,
-              "description": "ciel dégagé"
-            },
-            {
-              "label": "Après-midi",
-              "temperature_min": 16.8,
-              "temperature_max": 18.2,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 8,
+              "vent_max_kmh": 7,
               "weather_code": 1,
               "description": "plutôt dégagé"
             },
             {
-              "label": "Soir",
-              "temperature_min": 13.4,
-              "temperature_max": 15.6,
+              "label": "Après-midi",
+              "temperature_min": 16.3,
+              "temperature_max": 18.8,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 6,
+              "vent_max_kmh": 10,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 13.5,
+              "temperature_max": 15.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 5,
               "weather_code": 2,
               "description": "partiellement nuageux"
             }
@@ -427,112 +435,96 @@
         }
       ],
       "temperature_max_zone": 20.8,
-      "temperature_min_zone": 10.8,
+      "temperature_min_zone": 12.3,
       "probabilite_pluie_max_pct": 0,
-      "vent_max_kmh": 10.6,
-      "description_dominante": "couvert",
+      "vent_max_kmh": 14.3,
+      "description_dominante": "partiellement nuageux",
       "periodes": [
         {
           "label": "Matin",
-          "temperature_min": 10.8,
-          "temperature_max": 20.1,
+          "temperature_min": 12.3,
+          "temperature_max": 20.2,
           "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
-          "vent_max_kmh": 9,
+          "vent_max_kmh": 7,
           "weather_code": 3,
           "description": "couvert"
         },
         {
           "label": "Après-midi",
-          "temperature_min": 16.8,
-          "temperature_max": 20.7,
+          "temperature_min": 16.3,
+          "temperature_max": 20.8,
           "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
-          "vent_max_kmh": 9,
-          "weather_code": 0,
-          "description": "ciel dégagé"
+          "vent_max_kmh": 14,
+          "weather_code": 2,
+          "description": "partiellement nuageux"
         },
         {
           "label": "Soir",
-          "temperature_min": 13.4,
-          "temperature_max": 19.6,
+          "temperature_min": 13.5,
+          "temperature_max": 19.1,
           "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
-          "vent_max_kmh": 9,
-          "weather_code": 3,
-          "description": "couvert"
+          "vent_max_kmh": 10,
+          "weather_code": 2,
+          "description": "partiellement nuageux"
         }
       ],
       "alertes": [],
-      "resume": "Couvert le matin, ciel dégagé l'après-midi, couvert le soir, de 11° à 21°."
+      "resume": "Couvert le matin, partiellement nuageux l'après-midi, partiellement nuageux le soir, de 12° à 21°."
     },
     "anglais": {
       "mode": "litterature",
-      "oeuvre": "A Christmas Carol",
+      "oeuvre": "A Tale of Two Cities",
       "auteur": "Charles Dickens",
-      "annee": 1843,
+      "annee": 1859,
       "segments": [
         {
-          "t": "Marley was dead: to begin with",
-          "g": "pour commencer"
+          "t": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness",
+          "g": "la sottise"
         },
         {
-          "t": ". There is no doubt whatever about that. The register of his burial",
-          "g": "l'enterrement"
+          "t": ", it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct",
+          "g": "tout droit"
         },
         {
-          "t": " was signed by the clergyman",
-          "g": "le pasteur"
+          "t": " to Heaven, we were all going direct the other way – in short",
+          "g": "bref"
         },
         {
-          "t": ", the clerk, the undertaker",
-          "g": "le croque-mort"
+          "t": ", the period was so far like",
+          "g": "si semblable à"
         },
         {
-          "t": ", and the chief mourner",
-          "g": "le principal parent en deuil"
+          "t": " the present period, that some of its noisiest",
+          "g": "les plus bruyants"
         },
         {
-          "t": ". Scrooge signed it: and Scrooge's name was good upon 'Change",
-          "g": "la Bourse"
+          "t": " authorities insisted on",
+          "g": "exigeaient que"
         },
         {
-          "t": ", for anything he chose to put his hand to",
-          "g": "apposer sa signature à"
+          "t": " its being received",
+          "g": "accueillie, admise"
         },
         {
-          "t": ". Old Marley was as dead as a door-nail",
-          "g": "bel et bien mort"
+          "t": ", for good or for evil",
+          "g": "pour le meilleur ou pour le pire"
         },
         {
-          "t": ". Mind! I don't mean to say that I know, of my own knowledge, what there is particularly dead about a door-nail. I might have been inclined, myself, to regard a coffin-nail as the deadest piece of ironmongery",
-          "g": "la quincaillerie"
-        },
-        {
-          "t": " in the trade. But the wisdom of our ancestors is in the simile",
-          "g": "la comparaison"
-        },
-        {
-          "t": "; and my unhallowed",
-          "g": "profanes"
-        },
-        {
-          "t": " hands shall not disturb it, or the Country's done for",
-          "g": "fichu"
-        },
-        {
-          "t": ".",
+          "t": ", in the superlative degree of comparison only.",
           "g": null
         }
       ],
-      "texte_glose": "Marley was dead: to begin with (= pour commencer). There is no doubt whatever about that. The register of his burial (= l'enterrement) was signed by the clergyman (= le pasteur), the clerk, the undertaker (= le croque-mort), and the chief mourner (= le principal parent en deuil). Scrooge signed it: and Scrooge's name was good upon 'Change (= la Bourse), for anything he chose to put his hand to (= apposer sa signature à). Old Marley was as dead as a door-nail (= bel et bien mort). Mind! I don't mean to say that I know, of my own knowledge, what there is particularly dead about a door-nail. I might have been inclined, myself, to regard a coffin-nail as the deadest piece of ironmongery (= la quincaillerie) in the trade. But the wisdom of our ancestors is in the simile (= la comparaison); and my unhallowed (= profanes) hands shall not disturb it, or the Country's done for (= fichu)."
+      "texte_glose": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness (= la sottise), it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct (= tout droit) to Heaven, we were all going direct the other way – in short (= bref), the period was so far like (= si semblable à) the present period, that some of its noisiest (= les plus bruyants) authorities insisted on (= exigeaient que) its being received (= accueillie, admise), for good or for evil (= pour le meilleur ou pour le pire), in the superlative degree of comparison only."
     },
     "meta": {
-      "resume_1_phrase": "À la une : Attentat raciste à Trappes et La Verrière : Kevin T. « conteste le caractère raciste », sa garde à vue a repris."
+      "resume_1_phrase": "À la une : Présidentielle 2027 : Edouard Philippe estime que « l’échec de l’intégration » depuis « plusieurs décennies est incontestable »."
     },
     "_genere_par_llm": true,
     "_provider": "groq+mistral+nvidia",
-    "_erreur_llm": null,
+    "_erreur_llm": "actu_monde[mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | nvidia: Réponse vide (provider=nvidia) | groq: Expecting ',' delimiter: line 58 column 6 (char 4201) | openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":]",
     "_parts": {
       "actu_france": {
         "genere_par_llm": true,
@@ -541,10 +533,10 @@
         "essais_echoues": 0
       },
       "actu_monde": {
-        "genere_par_llm": true,
-        "provider": "mistral",
-        "erreur": null,
-        "essais_echoues": 0
+        "genere_par_llm": false,
+        "provider": null,
+        "erreur": "mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | nvidia: Réponse vide (provider=nvidia) | groq: Expecting ',' delimiter: line 58 column 6 (char 4201) | openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":",
+        "essais_echoues": 4
       },
       "marches": {
         "genere_par_llm": true,
@@ -579,8 +571,8 @@
     },
     "_bloc": {
       "genere_par_llm": true,
-      "provider": "groq+mistral+nvidia",
-      "erreur": null
+      "provider": "groq+nvidia",
+      "erreur": "actu_monde[mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | nvidia: Réponse vide (provider=nvidia) | groq: Expecting ',' delimiter: line 58 column 6 (char 4201) | openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"message\":\"Provider returned error\",\"code\":429,"
     },
     "_science": {
       "genere_par_llm": true,
@@ -593,5 +585,5 @@
       "erreur": null
     }
   },
-  "debut_run": "2026-10-27T06:10:41.169937+01:00"
+  "debut_run": "2026-10-28T06:10:40.912952+01:00"
 }
