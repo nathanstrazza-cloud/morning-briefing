@@ -1,65 +1,12 @@
 {
-  "date": "2026-10-28",
-  "derniere_mise_a_jour": "2026-10-28T06:17:23.308732+01:00",
+  "date": "2026-10-29",
+  "derniere_mise_a_jour": "2026-10-29T06:17:56.374693+01:00",
   "briefing": {
     "actualite": {
       "france": [
         {
-          "titre": "Présidentielle 2027 : Edouard Philippe estime que « l’échec de l’intégration » depuis « plusieurs décennies est incontestable »",
-          "resume": "Le candidat d’Horizons à l’élection présidentielle souhaite « diviser l’immigration légale par deux ». Il propose de réformer l’instruction du droit d’asile et de restreindre le regroupement familial, ainsi que de rétablir un service national obligatoire pour renforcer l’intégration.",
-          "pourquoi_important": "Le programme propose des mesures majeures sur l’immigration et le service national, susceptibles d’influencer le débat électoral de 2027.",
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "20 Minutes"
-          ]
-        },
-        {
-          "titre": "Il \"était mû par la haine et il a tué pour ça\" : Kévin T., suspect de l'attentat de Trappes, un profil \"nourri d'idéologie raciste\"",
-          "resume": "Déclaré schizophrène, sans condamnation notable, l'homme arrêté après l'attaque à Trappes et La Verrière de vendredi a fait un mort et sept blessés. Il est décrit par son entourage comme renfermé et biberonné aux chaînes d'information en continu.",
-          "pourquoi_important": "L’attentat a fait un mort et plusieurs blessés, soulevant des questions de radicalisation et de santé mentale.",
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "France Info"
-          ]
-        },
-        {
-          "titre": "Présidentielle 2027 : Yaël Braun-Pivet voit en Gérard Larcher un recours possible pour la droite et le centre",
-          "resume": "La présidente de l’Assemblée nationale appelle le Premier ministre à utiliser le 49.3 « dans les prochains jours plutôt que de jouer la montre »",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "20 Minutes"
-          ]
-        },
-        {
-          "titre": "A l’audience sur les descentes de l’extrême droite à Nice contre des manifestants : «L’état d’esprit est clair : on va commencer la guerre»",
-          "resume": "Entendues une première fois ce mardi 27 octobre par le tribunal correctionnel, onze personnes, interpellées en marge de rixes qui ont émaillé la fin de la mobilisation de samedi, expliquent avoir voulu «protéger» les commerces. Elles seront jugées en novembre.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Libération"
-          ]
-        },
-        {
-          "titre": "Le RN poursuit \"Le Monde\" en diffamation, dénonçant la publication d'une \"information mensongère\" sur l'attentat raciste dans les Yvelines",
-          "resume": "Le journal avait affirmé que des tracts du Rassemblement national avaient été retrouvés dans la voiture de Kévin T., le suspect de l'attaque terroriste. L'information a été démentie par le procureur national antiterroriste.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "France Info"
-          ]
-        }
-      ],
-      "monde": [
-        {
-          "titre": "Brésil : après sa défaite à la présidentielle, Flavio Bolsonaro soupçonné d’avoir pris la fuite vers les Etats-Unis",
-          "resume": "Mis en cause dans plusieurs affaires de corruption, le candidat d’extrême droite aurait violé son interdiction de quitter le pays et se serait vu accorder des visas pour lui et sa famille par l’administration Trump.",
+          "titre": "Le candidat LR à la présidentielle Bruno Retailleau juge \"fantaisiste et ridicule\" l'organisation d'une \"grande primaire des démocrates\" proposée par son adversaire Gabriel Attal",
+          "resume": "La primaire que propose le candidat Renaissance à l’élection présidentielle permettrait, selon lui, « d’empêcher » un second tour entre Jean-Luc Mélenchon et Marine Le Pen.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
@@ -67,85 +14,142 @@
             "Le Monde",
             "France Info",
             "20 Minutes",
-            "Le Monde International"
+            "France 24 International"
           ]
         },
         {
-          "titre": "Attentat raciste de Trappes : une minute de silence observée à l'Assemblée",
-          "resume": "Gaëlle Fonseca est en direct de l'Assemblée Nationale.",
-          "pourquoi_important": null,
+          "titre": "La gauche dénonce la tenue de manifestations et d’évènements «néofascistes» ce week-end à Paris et dans les Hauts-de-Seine",
+          "resume": "Quelques jours après l’attentat raciste de Trappes, plusieurs évènements organisés par l’extrême droite suscitent l’indignation de LFI et du maire de Paris Emmanuel Grégoire.",
+          "pourquoi_important": "Des manifestations qualifiées de néofascistes sont prévues, suscitant l'indignation de la gauche après un attentat raciste récent.",
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "France 24 International",
-            "Le Monde",
             "Libération",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Après l’attentat raciste de Trappes, LFI et Emmanuel Grégoire mettent en garde contre des manifestations liées à l’extrême droite prévues ce week-end",
+          "resume": "Les élus « insoumis » et le maire de Paris dénoncent trois événements prévus samedi et dimanche à Paris et dans les Hauts-de-Seine autour du concept de « remigration », mot employé par l’extrême droite pour définir sa volonté d’expulsion de masse d’étrangers.",
+          "pourquoi_important": "Les responsables dénoncent des manifestations d'extrême droite prévues, soulignant le risque de tensions après l'attentat de Trappes.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Collision ferroviaire en Espagne : \"On n'est absolument pas à l'abri de ce genre de catastrophe\" en France, alerte un eurodéputé",
+          "resume": "Après la collision entre deux trains en Espagne, François Kalfon, eurodéputé PS-Place publique, membre de la commission des transports au Parlement européen, alerte sur le manque d'investissements dans les infrastructures ferroviaires, y compris en France. Il appelle à renforcer la sécurité des réseaux et à accélérer le déploiement des systèmes de signalisation automatique.",
+          "pourquoi_important": "Un eurodéputé met en garde contre le risque de catastrophes ferroviaires en France en raison d'investissements insuffisants.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
             "France Info"
           ]
         },
         {
-          "titre": "Législatives en Israël : le bloc de l'opposition à Benyamin Nétanyahou légèrement en tête, mais sans majorité, selon des sondages réalisés à la sortie des urnes",
-          "resume": "Le \"bloc du changement\" emmené par le centriste Gadi Eisenkot récolte entre 52 et 53 sièges sur les 120 que compte la Knesset, tandis que la coalition sortante du Premier ministre en recueille 50, selon ces premières tendances.",
+          "titre": "Les sanctions contre l’infirmière refusant d’ôter son calot étaient «disproportionnées», tranche la justice",
+          "resume": "Aucune règle d’hygiène n’interdisait ce couvre-chef estime ce mercredi 28 octobre le tribunal administratif de Paris, qui annule la suspension de huit mois infligée à Majdouline B. par l’AP-HP.",
+          "pourquoi_important": "Le tribunal administratif annule une suspension jugée disproportionnée, soulignant l'absence de règle d'hygiène interdisant le couvre-chef.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Guerre en Ukraine | Le cessez-le-feu à Olechky est un « immense succès », selon Volodymyr Zelensky, qui appelle à une rencontre entre Moscou, Kiev et Washington en novembre",
+          "resume": "Le président ukrainien a qualifié le cessez-le-feu à Olechky d’immense succès et souligné qu’il a permis un répit aux habitants de Kherson, située face à Olechky sur l’autre rive du Dniepr.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Midterms 2026 : Donald Trump en meeting dans l’Ohio, Barack Obama en Géorgie… Suivez la campagne des élections de mi-mandat aux Etats-Unis",
+          "resume": "Les élections de mi-mandat aux États-Unis, prévues le 3 novembre, concernent tous les sièges de la Chambre des représentants et un tiers des sièges du Sénat.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "L’Espagne à nouveau endeuillée par une catastrophe ferroviaire, moins d’un an après celle d’Adamuz",
+          "resume": "La collision entre deux trains à grande vitesse, qui a fait au moins 68 morts près de Tolède, serait due à une panne informatique suivie d’une erreur humaine. Le ministre des transports a qualifié l’accident d’« invraisemblable ».",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Législatives en Israël : une formation arabe se dit prête à « soutenir » un gouvernement d'opposition « pour faire tomber » la coalition de Benyamin Nétanyahou",
+          "resume": "Le camp de Benyamin Nétanyahou est légèrement en tête à mi-dépouillement, mais une formation arabe pourrait contribuer à faire basculer les résultats en soutenant une opposition.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "France Info",
-            "Le Monde International",
-            "France 24 International"
+            "Libération"
           ]
         },
         {
-          "titre": "Israël : au lendemain de législatives cruciales pour l’avenir du pays, le vertige d’une Knesset sans majorité",
-          "resume": "Selon des résultats provisoires, mercredi matin, le camp Nétanyahou est en net recul mais l’opposition, emmenée par Gadi Eisenkot, échoue à détrôner le Likoud, aucun des deux blocs n’étant en position de former un gouvernement. Les partis arabes effectuent une percée historique et pèseront sur les futures coalitions.",
+          "titre": "Russie : « Un génie, vraiment un génie »… Vladimir Poutine encense Elon Musk",
+          "resume": "Lors du sommet Russie-Afrique au Kremlin, Vladimir Poutine a salué Elon Musk, tandis que la délégation africaine, réduite de moitié par rapport aux années précédentes, comprend surtout des dirigeants de juntes militaires.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "Le Monde",
-            "Le Monde International"
+            "Libération",
+            "20 Minutes"
           ]
         },
         {
-          "titre": "Comment l’administration Trump nourrit la suspicion sur l’intégrité des midterms, à une semaine du vote",
-          "resume": "Alors que les sondages prévoient un désaveu pour le camp républicain lors des élections de mi-mandat, mardi 3 novembre, la Maison Blanche cherche à empiéter sur le rôle des Etats en matière d’organisation du scrutin et prépare le terrain à une contestation des résultats.",
+          "titre": "Selon Libération, Catastrophe ferroviaire en Espagne : au moins 68 morts selon le bilan encore provisoire, un deuil national de trois jours décrété",
+          "resume": "L’accident de train meurtrier, le deuxième en moins d’un an, est survenu sur la ligne à grande vitesse Madrid-Séville peu avant 9 heures ce mercredi 28 octobre. Plus de 100 personnes sont blessées, dont 18 gravement.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon 20 Minutes, Elections en Israël : Netanyahou arrive en tête mais il pourrait être privé du pouvoir par les partis arabes",
+          "resume": "Revivez avec nous les résultats des élections législatives du 27 octobre en Israël, un enjeu important pour l’ensemble du Proche et Moyen-Orient",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Au moins 68 morts, deuil national, circonstances \"inexplicables\"… Ce que l'on sait de la collision meurtrière de deux trains dans le centre de l'Espagne",
+          "resume": "L'accident s'est produit mercredi matin entre Madrid et l'Andalousie. Le Premier ministre espagnol a annoncé trois jours de deuil national dans le pays.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "Le Monde",
+            "France Info",
+            "20 Minutes",
             "Le Monde International"
-          ]
-        },
-        {
-          "titre": "Selon France 24 International, Élections en Serbie : \"La mobilisation contre la fraude a sûrement eu un impact sur les résultats\"",
-          "resume": "Le mouvement de contestation mené par les étudiants en Serbie a remporté dimanche une victoire historique aux élections législatives, battant le parti du président démissionnaire Aleksandar Vucic. Les soutiens de la liste étudiante expliquent comment ils se sont massivement mobilisés afin d’empêcher les fraudes électorales, avant et pendant le scrutin.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "France 24 International"
-          ]
-        },
-        {
-          "titre": "Selon Le Monde International, Midterms 2026 : Donald Trump dit qu’il acceptera les résultats des élections si elles sont « honnêtes », dans une nouvelle allusion à des fraudes électorales jamais prouvées",
-          "resume": "Le président américain agite ainsi une nouvelle fois le spectre d’une contestation postélectorale si son parti était battu aux élections de mi-mandat, traditionnellement défavorables au parti qui occupe la Maison Blanche.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Le Monde International"
-          ]
-        },
-        {
-          "titre": "Selon France 24 International, Eisenkot accuse Netanyahu de se préparer à contester les résultats",
-          "resume": "Antoine Mariotti, notre chroniqueur international, analyse la situation.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "France 24 International"
-          ]
+          ],
+          "complete_par_code": true
         }
       ]
     },
@@ -153,13 +157,8 @@
       "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
       "mouvements_notables": [
         {
-          "nom": "Nasdaq",
-          "variation_pct": 1.18,
-          "explication": null
-        },
-        {
           "nom": "Pétrole (Brent)",
-          "variation_pct": -2.63,
+          "variation_pct": -4.47,
           "explication": null
         }
       ]
@@ -167,36 +166,36 @@
     "sport": {
       "items": [
         {
-          "sport": "basketball",
-          "texte": "Paris a battu Dubaï 93-99 lors de la 8e journée de l'Euroligue, grâce à un solide Jared Rhoden qui a inscrit 20 points, offrant ainsi sa deuxième victoire de la saison."
-        },
-        {
-          "sport": "basketball",
-          "texte": "Les Bleues ont annoncé une liste de 14 joueuses pour les qualifications à l'Euro 2027, sans Gabby Williams, Marine Johannès et Dominique Malonga, mais avec quatre vice-championnes du monde."
-        },
-        {
-          "sport": "basketball",
-          "texte": "Nanterre a perdu contre le Sabah BC en Azerbaïdjan 87-80, enregistrant sa deuxième défaite en trois rencontres de phase de groupes de la Ligue des champions."
+          "sport": "football",
+          "texte": "Chelsea revient à son meilleur après sa victoire 2-0 contre Roma en Ligue des champions féminine."
         },
         {
           "sport": "football",
-          "texte": "Le Borussia Dortmund s'est imposé 3-2 contre le Werder Brême en Coupe d'Allemagne, grâce à un but sur coup franc de Marcel Sabitzer, et se qualifie pour les huitièmes de finale."
+          "texte": "Alessia Russo devient le meilleur buteur anglais de l'histoire de la Ligue des champions féminine après son triplé dans la victoire 3-0 d'Arsenal contre Benfica."
         },
         {
           "sport": "football",
-          "texte": "L'UEFA a infligé au RC Lens une amende de 80 000 euros et une interdiction de déplacement pour ses supporters lors des prochains matchs de Ligue des champions à Leipzig et à Liverpool, suite aux incidents à Bruges."
-        },
-        {
-          "sport": "football",
-          "texte": "Le Bayern Munich a lancé la commercialisation d'un flocage doré à l'effigie de Harry Kane, récemment sacré Ballon d'Or 2026."
+          "texte": "OL Lyonnes a battu l'Inter Milan 6-0 lors de la troisième journée de la Ligue des champions féminine et prend provisoirement la tête du classement."
         },
         {
           "sport": "tennis",
-          "texte": "Les organisateurs du Rolex Paris Masters ont annoncé les wild-cards pour le tableau principal, incluant Arthur Gea, ainsi que les invitations en qualifications pour Moïse Kouame et Felix Balshaw."
+          "texte": "Holger Rune a battu Hubert Hurkacz à Bâle, remportant son deuxième succès de rang après plus d'un an sans victoire, et se qualifie pour les quarts de finale."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Basket Landes a remporté son premier succès de la saison en Euroligue 78-65 à Athènes contre Athinaïkos, tandis que Bourges a gagné 88-69 à Lublin."
+        },
+        {
+          "sport": "basketball",
+          "texte": "AJ Dybantsa, sélectionné en première position de la draft 2026, fait ses débuts en NBA avec les Washington Wizards contre les Cleveland Cavaliers."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Un raté improbable décale le match du titre à l'heure du déjeuner."
         },
         {
           "sport": "rugby",
-          "texte": "Garry Ringrose est incertain pour la série de matches d'automne du Championnat des nations en raison d'une blessure aux ischio-jambiers, selon la Fédération irlandaise de rugby."
+          "texte": "Kurtley Beale, 37 ans, est rappelé par l'Australie pour le Championnat des nations afin de remplacer Hunter Paisami."
         }
       ],
       "rien_a_signaler": false,
@@ -219,76 +218,91 @@
     },
     "science": {
       "mode": "decouverte",
-      "titre": "Le prix Nobel d'économie révèle un grave problème de genre",
-      "contenu_markdown": "Selon un article publié en ligne le 27 octobre 2026 dans *Nature*, la répartition des lauréats montre une forte disparité entre les sexes. Cette constatation soulève des questions sur les critères de sélection et la visibilité des contributions féminines dans le domaine économique. Les implications de ce déséquilibre sont encore à explorer, notamment en ce qui concerne les mécanismes qui ont conduit à cette situation. Les détails complets et les données chiffrées sont disponibles dans l’article original.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03404-5\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Neurone\n\n## Introduction\nLe neurone, ou cellule nerveuse, est l’élément de base du système nerveux, responsable de la transmission des informations sous forme de signaux électriques et chimiques. Ces cellules excitable forment un réseau complexe qui permet la perception, la pensée, le mouvement et la régulation des fonctions vitales. Leur étude, au cœur des neurosciences, a révélé des mécanismes fondamentaux du fonctionnement cérébral et des applications variées, allant de la médecine à l’intelligence artificielle.\n\n## Pourquoi le sujet est important\nComprendre le neurone est essentiel pour éclairer des domaines aussi divers que la cognition, les maladies neurodégénératives (comme Alzheimer ou Parkinson) ou encore le développement de traitements pour les troubles neurologiques. Les neurones jouent un rôle clé dans des processus comme la mémoire, l’apprentissage ou la prise de décision. Leur étude permet aussi d’inspirer des modèles informatiques, comme les réseaux de neurones artificiels, qui reproduisent partiellement leur fonctionnement pour résoudre des problèmes complexes.\n\n## Explication du phénomène\nUn neurone fonctionne selon deux principes fondamentaux : **l’excitabilité** et **la conductivité**. L’excitabilité désigne sa capacité à répondre à un stimulus (lumière, toucher, pensée) en générant un signal électrique, appelé **potentiel d’action**. La conductivité permet ensuite à ce signal de se propager le long de ses prolongements pour atteindre d’autres neurones. Ces signaux ne sont pas continus, mais se manifestent sous forme d’impulsions brèves et intenses, similaires à des décharges électriques.\n\n## Fonctionnement / mécanismes\nUn neurone se compose d’un **corps cellulaire** (ou soma), où se trouve le noyau, et de deux types de prolongements :\n- **Les dendrites** (en moyenne 7 000 par neurone), qui reçoivent les signaux des autres cellules et les transmettent au soma.\n- **L’axone**, unique et long (parfois plusieurs mètres chez l’humain), qui émet le signal vers d’autres neurones ou vers des muscles.\n\nLe signal électrique naît lorsque le neurone est stimulé : des canaux membranaires s’ouvrent, laissant passer des ions (sodium, potassium) et créant une différence de charge. Cette variation, le **potentiel d’action**, se propage le long de l’axone jusqu’à ses extrémités, où il déclenche la libération de molécules chimiques (neurotransmetteurs) dans l’espace synaptique. Ces molécules traversent l’écart et activent les dendrites du neurone voisin, perpétuant ainsi la transmission de l’information.\n\nChez les animaux supérieurs, les neurones sont spécialisés : certains transmettent des informations sensorielles (comme la douleur ou la température), d’autres commandent les mouvements, et d’autres encore assurent des fonctions d’intégration au sein du cerveau. Leur organisation en réseaux permet des processus complexes, comme la pensée ou la coordination motrice.\n\n## Données et résultats scientifiques\n\nLes études histologiques et génomiques ont permis d’établir plusieurs mesures quantitatives concernant les neurones humains. Le nombre total de neurones du cerveau est estimé entre **86 et 100 milliards**. En comparaison, l’intestin en compte environ **500 millions** et le cœur **40 000**. Le rapport entre neurones et cellules gliales est d’environ **1 neurone pour 3 cellules gliales**.  \n\nAu niveau morphologique, un neurone possède en moyenne **7 000 dendrites**. Le corps cellulaire (soma) est accompagné d’un seul axone, qui conduit le potentiel d’action depuis le cône axonique jusqu’à ses terminaisons.  \n\nDes observations récentes (Nature Neuroscience, 2018) ont décrit un nouveau type de neurone humain, le « rosehip », caractérisé par une petite taille, un axe central bulbeux et une organisation en faisceau dense. Ce type n’a pas été identifié chez la souris.  \n\nChez les éponges, l’analyse du génome d’**Amphimedon queenslandica** (séquençage 2010) a révélé la présence de gènes associés aux synapses chez les eumétazoaires, bien que les éponges ne possèdent pas de système nerveux. Une étude de 2021 sur **Spongilla lacustris** a montré l’expression de ces gènes « synaptiques » dans des cellules neuroïdes situées autour des chambres digestives, suggérant une fonction de communication cellulaire primitive.  \n\n## Ce que les scientifiques savent\n\n- **Fonctions fondamentales** : les neurones assurent l’excitabilité (réponse aux stimulations) et la conductivité (transmission des impulsions) du système nerveux.  \n- **Structure de base** : chaque neurone comprend un soma, un axone unique et de multiples dendrites qui reçoivent les signaux.  \n- **Classification** : les neurones se distinguent morphologiquement (unipolaires, pseudo‑unipolaires, bipolaires, multipolaires) et fonctionnellement (sensitifs, moteurs, interneurones).  \n- **Évolution** : la majorité des chercheurs soutient l’hypothèse selon laquelle les neurones sont apparus chez les eumétazoaires, avec une spécialisation des neurites en axones et dendrites chez les bilatériens.  \n- **Diversité cellulaire** : la découverte du neurone « rosehip » montre que le cerveau humain recèle encore des types cellulaires non répertoriés chez d’autres espèces.  \n- **Quantification** : les estimations du nombre total de neurones et du rapport avec les cellules gliales sont bien établies grâce à des méthodes de comptage stereologique et d’imagerie.  \n\n## Ce qui reste incertain\n\n- **Origine évolutive** : bien que l’hypothèse dominante place l’émergence des neurones chez les eumétazoaires, la possibilité d’une origine indépendante chez les cténaires n’est pas complètement exclue.  \n- **Fonction exacte des cellules neuroïdes** chez les éponges : les observations suggèrent une communication avec les choanocytes, mais le rôle précis de ces cellules dans le comportement de l’éponge reste à préciser.  \n- **Distribution et rôle du neurone « rosehip »** : son absence chez la souris indique une spécificité humaine, mais la prévalence exacte dans le cerveau humain et ses fonctions physiologiques détaillées sont encore à explorer.  \n- **Variabilité inter‑individuelle** : les fourchettes de nombre de neurones (86–100 milliards) reflètent des variations individuelles dont les déterminants (génétiques, environnementaux) ne sont pas encore pleinement compris.  \n\n## Limites et controverses éventuelles\n\n- **Méthodes de comptage** : les estimations du nombre de neurones reposent sur des techniques d’imagerie et de comptage qui peuvent introduire des biais, notamment dans les régions très denses ou très petites.  \n- **Interprétation des gènes « synaptiques » chez les éponges** : la présence de ces gènes ne prouve pas l’existence d’un système nerveux fonctionnel chez les éponges ; il s’agit d’une hypothèse interprétative qui fait l’objet de débats.  \n- **Classification des neurones** : la catégorisation morphologique (unipolaire, bipolaire, etc.) est utile mais ne rend pas toujours compte de la complexité fonctionnelle et de la plasticité des cellules, ce qui peut conduire à des discussions sur la pertinence de ces classes.  \n\n## Conclusion\n\nLes neurones constituent l’unité fonctionnelle du système nerveux, caractérisée par leur excitabilité et leur capacité à conduire les impulsions électriques. Les connaissances actuelles reposent sur des données solides concernant leur nombre, leur structure et leur classification, ainsi que sur des découvertes récentes qui enrichissent notre compréhension de la diversité neuronale humaine. Néanmoins, des questions subsistent sur l’origine évolutive des neurones, le rôle exact de certaines cellules neuroïdes chez les éponges, et la fonction précise de nouveaux types neuronaux comme le « rosehip ». La poursuite des recherches en neuroanatomie, en génomique comparative et en imagerie avancée demeure essentielle pour affiner ces connaissances et résoudre les incertitudes encore présentes.\n\n## Sources\n- Wikipédia (fr) — Neurone — https://fr.wikipedia.org/wiki/Neurone\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
-      "phrases_retirees_garde_fou": 1,
-      "nb_mots": 1271,
-      "matiere_source": "fine",
+      "titre": "Deux souches d'archées révèlent des indices clés sur l'origine des cellules complexes",
+      "contenu_markdown": "Deux chercheurs ont réussi à cultiver pour la première fois deux souches d’archées appartenant à une lignée très proche de l’ancêtre des cellules eucaryotes, ces cellules complexes dotées d’organites (comme le noyau). Cette avancée, publiée dans *Nature* le 28 octobre 2026, offre des pistes sur les étapes ayant mené à l’évolution des cellules eucaryotes à partir de leurs ancêtres procaryotes.\n\n## Des caractéristiques uniques pour comprendre l’évolution\nCes archées, bien que simples en organisation interne, présentent des structures de surface élaborées, des partenariats avec d’autres micro-organismes et un mode de vie dépendant de protéines. Ces traits pourraient expliquer comment les cellules eucaryotes ont acquis leur complexité, notamment leur capacité à s’associer avec d’autres organismes (symbiose) et à développer des compartiments internes.\n\n## Pourquoi cette découverte est-elle importante ?\nLes cellules eucaryotes, présentes chez tous les organismes pluricellulaires (animaux, plantes, champignons), sont bien plus complexes que les bactéries ou archées classiques. Jusqu’à présent, les hypothèses sur leur origine reposaient sur des preuves indirectes (fossiles, génétique). Ces deux souches cultivées en laboratoire permettent désormais d’étudier *in vivo* des mécanismes potentiellement ancestraux, comme les interactions entre cellules ou l’émergence de structures spécialisées.\n\n## Des limites à cette avancée\nSi ces résultats ouvrent des perspectives, plusieurs questions restent en suspens :\n- **Le lien direct avec l’ancêtre eucaryote** : ces archées sont proches de la lignée, mais ne sont pas *exactement* l’ancêtre. Leur étude doit être complétée par d’autres données génétiques ou fossiles.\n- **Les mécanismes précis** : comment ces traits (partenariats, protéines) ont-ils conduit à la formation d’organites comme le noyau ? Les détails moléculaires nécessitent des recherches complémentaires.\n- **L’évolution ultérieure** : ces archées ne représentent qu’un maillon de la chaîne. Leur rôle dans l’émergence des mitochondries (organites énergétiques) ou d’autres innovations reste à préciser.\n\nLes données détaillées sur leur mode de vie, leur génome ou leur interaction avec d’autres micro-organismes sont à consulter dans l’article original de *Nature*. Cette découverte ne résout pas à elle seule le mystère de l’origine des eucaryotes, mais elle fournit des éléments concrets pour affiner les modèles évolutifs.\n\n## Sources\n- Le Monde Sciences — https://www.lemonde.fr/realites-biomedicales/article/2026/10/28/diagnostic-medical-quand-l-intelligence-artificielle-imite-la-demarche-etape-par-etape-des-medecins_6801586_6579630.html\n- Nature News — https://www.nature.com/articles/d41586-026-03294-7\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Muscle strié squelettique\n\n## Introduction\nSous le contrôle du système nerveux central, ils constituent la partie active de l’appareil locomoteur, en collaboration avec les os et les articulations. Bien que souvent perçus comme un ensemble homogène, ces muscles présentent une grande diversité en termes de forme, de fonction et d’organisation interne. Leur étude révèle une architecture complexe, adaptée à des rôles variés, allant de la mobilité fine des doigts à la puissance des membres inférieurs.\n\n## Pourquoi le sujet est important\nComprendre les muscles squelettiques est fondamental pour saisir comment le corps humain se déplace, maintient sa posture ou interagit avec son environnement. Leur dysfonctionnement peut entraîner des troubles moteurs, des douleurs chroniques ou des limitations physiques, soulignant leur importance en médecine, en rééducation et en sport. Par ailleurs, leur étude permet de mieux appréhender des phénomènes comme la fatigue musculaire, la récupération après un effort ou les adaptations liées à l’entraînement.\n\n## Explication du phénomène : qu’est-ce qu’un muscle squelettique ?\nUn muscle squelettique est un **muscle strié**, c’est-à-dire présentant des bandes visibles au microscope, sous contrôle **volontaire** du système nerveux central. Contrairement aux muscles lisses (présents dans les organes internes) ou cardiaques, leur activation dépend de la volonté ou de réflexes contrôlés par le cerveau et la moelle épinière. Le corps humain en compte environ **600**, répartis en groupes spécialisés selon leur localisation et leur fonction.\n\n## Une organisation en trois parties fonctionnelles\n1. **Le ventre musculaire** : partie centrale où se produit la **contraction musculaire**, composée de **cellules musculaires** (appelées *rhabdomyocytes*). Ces cellules sont regroupées en faisceaux, eux-mêmes entourés de tissus conjonctifs (périmysium et endomysium).\n2. **Les tendons** : structures fibreuses et résistantes reliant le ventre musculaire aux **os**, à la peau (muscles cutanés) ou à d’autres structures comme les cartilages. Ils transmettent la force de contraction pour provoquer un mouvement.\n3. **Les insertions** : zones d’ancrage des tendons sur les structures mobiles. L’**origine** (généralement proximale, c’est-à-dire proche du tronc) reste fixe lors de la contraction, tandis que l’**insertion** (distale) se déplace.\n\n## Une diversité de formes et de fonctions\nLes muscles squelettiques ne se ressemblent pas tous. Leur classification repose sur :\n- **Leur forme** :\n  - *Fusiformes* (ex. : biceps brachial), en forme de fuseau.\n  - *Parallèles* (ex. : droit de l’abdomen), avec des fibres alignées sur l’axe du muscle.\n  - *Plats* (ex. : grand dorsal), larges et minces.\n  - *Pennés* (ex. : soléaire), dont les fibres sont obliques par rapport au tendon central, augmentant la puissance de contraction.\n- **Leur action mécanique** :\n  - **Fléchisseurs** (réduisent l’angle entre deux segments, ex. : biceps pour le coude).\n  - **Extenseurs** (l’augmentent, ex. : triceps).\n  - **Rotateurs**, **adducteurs** (rapprochent un membre de l’axe du corps), **abducteurs** (l’éloignent), ou encore **sphincters** (ferment une ouverture, ex. : muscle anal).\n\nCette diversité permet d’adapter la force, la précision ou l’amplitude des mouvements à chaque besoin.\n\n## Fonctionnement : comment se produit la contraction musculaire ?\nLa contraction d’un muscle squelettique repose sur un mécanisme **neurophysiologique** et **biochimique** précis, impliquant plusieurs acteurs.\n\n## La transmission nerveuse : du cerveau à la fibre musculaire\nLa contraction est initiée par un **signal électrique** émis par le système nerveux central. Un **neurone moteur** (ou motoneurone) transmet cet ordre via une **fibre nerveuse** jusqu’à la **plaque motrice**, une zone spécialisée à la jonction entre le nerf et la cellule musculaire. Là, un neurotransmetteur (l’**acétylcholine**) est libéré, déclenchant un potentiel d’action dans la fibre musculaire.\n\n## Le couplage excitation-contraction\nÀ l’intérieur de la cellule musculaire, le potentiel d’action provoque la libération de **calcium** dans le cytoplasme. Ce calcium se lie à une protéine régulatrice, permettant aux **filaments d’actine et de myosine** (deux protéines contractiles) de s’assembler et de glisser l’un sur l’autre, un phénomène appelé **théorie du fil glissant**. Cette interaction consomme de l’**adénosine triphosphate (ATP)**, la \"monnaie énergétique\" de la cellule, produite lors de la respiration cellulaire.\n\n## La propagation de la contraction\nLa contraction d’une seule fibre musculaire est faible, mais les muscles squelettiques sont composés de **centaines, voire de milliers de fibres**, regroupées en **unités motrices**. Selon le nombre de fibres activées (recrutement) et la fréquence des signaux nerveux (tétanos), la force développée varie. Par exemple, un mouvement précis (comme écrire) sollicite peu de fibres, tandis qu’un effort intense (comme soulever une charge lourde) en active un grand nombre simultanément.\n\n## Le rôle des tissus conjonctifs et des tendons\nLes tissus conjonctifs (endomysium, périmysium, épimysium) assurent la cohésion des fibres et la transmission des forces vers les tendons. Ces derniers, composés de fibres de collagène, sont conçus pour résister à des tensions importantes sans se rompre. Leur élasticité permet aussi d’emmagasiner et de restituer de l’énergie lors des mouvements répétés (comme la marche ou la course).\n\n## La proprioception : le muscle comme capteur\nCertaines fibres musculaires contiennent des **fuseaux neuromusculaires**, des mécanorécepteurs sensibles à l’étirement. Ils envoient en permanence des informations au système nerveux central sur la longueur et la tension du muscle, permettant de **contrôler finement les mouvements** et de maintenir l’équilibre (posture, réflexes).\n\n---\n*La suite de l’article abordera les données scientifiques sur leur fonctionnement, les connaissances actuelles des chercheurs, ainsi que les limites et questions encore ouvertes sur ces tissus essentiels à la vie.*\n\n## Données et résultats scientifiques\n\n- Le corps humain possède environ **600 muscles squelettiques**.  \n- Sur le plan histologique, chaque muscle est constitué de cellules musculaires (rhabdomyocytes) regroupées en fascicules, entourés de tissu conjonctif (périmysium, endomysium, épimysium).  \n- La composition chimique du muscle squelettique est dominée par l’eau (**≈ 75 %**), complétée par des minéraux (sodium, potassium, calcium) et des protéines, dont la myoglobine ainsi que les deux protéines contractiles essentielles, l’actine et la myosine.  \n- Les muscles peuvent être classés selon la forme de leurs fibres (fusiformes, droits, plats, pennés, etc.) ou selon leur fonction (fléchisseurs, extenseurs, pronateurs, etc.).  \n- Les insertions musculaires sont décrites en termes d’origines (partie fixe) et d’insertion proprement dite (partie mobile).  \n\n## Ce que les scientifiques savent\n\n- **Contrôle volontaire** : les muscles squelettiques sont sous le contrôle du système nerveux central via les neurones moteurs qui libèrent le neurotransmetteur à la plaque motrice, déclenchant la contraction.  \n- **Organisation structurale** : la hiérarchie du tissu conjonctif (endomysium → périmysium → épimysium) assure la transmission de la force générée par les fibres musculaires aux tendons, puis aux os ou autres structures ancrées.  \n- **Fonctions mécaniques** : selon leur architecture fibreuse, les muscles sont adaptés à des actions spécifiques (par ex. les muscles bipennés comme les interosseux de la main sont optimisés pour la puissance, tandis que les muscles fusiformes comme le biceps brachial privilégient la vitesse).  \n- **Proprioception** : certains myocytes sont spécialisés en fuseaux neuromusculaires, fournissant au système nerveux central des informations sur la longueur et la tension du muscle.  \n- **Métabolisme** : la forte teneur en eau et en ions (Na⁺, K⁺, Ca²⁺) ainsi que la présence de myoglobine permettent le transport et le stockage d’oxygène, indispensable à la contraction répétée.  \n\n## Ce qui reste incertain\n\n- **Variabilité interindividuelle** : la distribution exacte du nombre de muscles (≈ 600) peut varier légèrement selon les critères anatomiques employés et les variations congénitales.  \n- **Rôle des muscles cutanés et viscéraux** : la fonction précise de certains muscles striés situés dans la peau ou les organes internes (muscles striés viscéraux) fait encore l’objet de recherches.  \n- **Adaptations physiologiques** : les mécanismes détaillés par lesquels l’architecture fibreuse influence la fatigue musculaire et la récupération restent partiellement élucidés.  \n\n## Limites et controverses éventuelles\n\n- **Classification fonctionnelle** : bien que les catégories (fléchisseurs, extenseurs, etc.) soient largement utilisées, certaines fonctions musculaires sont mixtes et peuvent prêter à débat quant à leur classification exclusive.  \n- **Définition des chefs musculaires** : la distinction entre « chef » et « partie » d’un muscle (ex. biceps vs triceps) repose sur des conventions anatomiques qui peuvent différer entre les écoles, sans impact majeur sur la compréhension fonctionnelle.  \n\n## Conclusion\n\nLes muscles squelettiques constituent le moteur principal du mouvement volontaire chez l’humain. Leur organisation hiérarchique – des cellules musculaires aux tendons – ainsi que leur classification selon forme et fonction offrent un cadre solide pour comprendre la mécanique du corps. Les connaissances actuelles couvrent largement la structure, la composition chimique et le contrôle neurologique, tandis que des questions subsistent concernant les variations individuelles, les fonctions spécialisées de certains muscles striés et les détails de la fatigue musculaire. Ces points d’incertitude ouvrent la voie à de futures investigations anatomiques et physiologiques.\n\n## Sources\n- Wikipédia (fr) — Muscle squelettique — https://fr.wikipedia.org/wiki/Muscle_squelettique\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 3,
+      "nb_mots": 1825,
+      "matiere_source": "suffisante",
       "textes_sources_audit": [
         {
+          "source": "Le Monde Sciences",
+          "titre": "Diagnostic médical : quand l’intelligence artificielle imite la démarche, étape par étape, des médecins",
+          "resume": "Un nouveau système d’IA développé par Microsoft simule la démarche des médecins en interrogeant les patients, puis en proposant des examens complémentaires. Il surpasse la précision diagnostique de cliniciens chevronnés, tout en réduisant les coûts."
+        },
+        {
+          "source": "Le Monde Sciences",
+          "titre": "Des professionnels de santé décrivent les effets de la crise sociale sur la santé psychique : « un bruit de fond anxieux permanent »",
+          "resume": "Depuis le début des blocages lycéens, et encore plus depuis le 17 octobre, médecins généralistes, psychiatres et psychologues observent l’impact du climat anxiogène actuel sur certains de leurs patients, et tentent de leur proposer des clés pour se protéger."
+        },
+        {
           "source": "Nature News",
-          "titre": "The Nobel prize in economic science has a serious gender problem",
-          "resume": "Nature, Published online: 27 October 2026; doi:10.1038/d41586-026-03404-5 The Nobel prize in economic science has a serious gender problem"
+          "titre": "Clues about complex life come from freshly cultivated archaea",
+          "resume": "Nature, Published online: 28 October 2026; doi:10.1038/d41586-026-03294-7 Two archaeal strains that belong to a lineage closely related to the ancestor of eukaryotic cells (complex cells with membrane-bound organelles) have been brought into culture. Their simple internal organization, elaborate surface structures, microbial partnerships and protein-dependent lifestyle provide clues about how eukaryotic cells arose."
+        },
+        {
+          "source": "Nature News",
+          "titre": "Connectome simulations identify a central pattern generator for fly walking",
+          "resume": "Nature, Published online: 28 October 2026; doi:10.1038/s41586-026-11195-y Computational simulations of a neural network based on fly connectomes identify a three-neuron circuit that is organized to produce leg motor rhythms for walking."
         },
         {
           "source": "Wikipédia (fr)",
-          "titre": "Neurone",
-          "resume": "Un neurone, ou une cellule nerveuse, est une cellule excitable constituant l'unité fonctionnelle de la base du système nerveux.\nLes neurones assurent la transmission d'un signal bioélectrique appelé influx nerveux. Ils ont deux propriétés physiologiques : l'excitabilité, c'est-à-dire la capacité de répondre aux stimulations et de convertir celles-ci en impulsions nerveuses, et la conductivité, c'est-à-dire la capacité de transmettre les impulsions.\nLa compréhension du fonctionnement du neurone et du système nerveux, particulièrement chez l'homme, est l'objet d'étude des neurosciences. Ses applications recouvrent la médecine, la psychologie et l'informatique (via les réseaux de neurones artificiels).\n\nHistoire\nGrâce au développement de la microscopie optique et à la coloration, Santiago Ramon y Cajal a été le premier à réaliser des descriptions histologiques détaillées du système nerveux. Il décrit le système nerveux central comme composé de différents types de cellules disposant de prolongements dendritiques et axonaux. Entre ces neurones, il identifie une discontinuité que Charles Scott Sherrington nommera « synapse » en 1897.\nLe terme « neurone » est introduit dans le vocabulaire médical en 1891 par l'anatomiste allemand Heinrich Wilhelm Waldeyer.\nDès le début des années 1950, les biologistes Alan Hodgkin et Andrew Huxley ont découvert que l'influx nerveux provenait de changements de la perméabilité membranaire aux ions.\nDe nouveaux types de neurones sont régulièrement découverts au sein des organismes de diverses espèces. Plus rarement on en découvre encore chez l'humain, avec par exemple en 2018 la description d'un nouveau type de cellule neuronale trouvé dans la couche externe du cortex, une zone du cerveau qui abrite de nombreux types de neurone capables d'inhiber l'activité d'autres neurones. Il a été trouvé lors d'une étude cherchant à répertorier tous les types de cellules humaines cérébrales en combinant l'anatomie et la génétique. Baptisé « rosehip », cette cellule est plus petite et compacte que les autres neurones, organisée en faisceau dense et buissonnant autour d’un gros bouton central en forme de bulbe. Selon l'étude parue dans Nature Neurosciences, ce type de neurone et son expression génétique semblent manquer chez la souris.\n\nDans le règne animal\n\nLes neurones sont présents chez tous les animaux à l'exception des éponges et des placozoaires.\nChez les cnidaires et les cténaires, les neurones ne sont pas polarisés, le signal nerveux passe dans les deux sens. On ne parle donc pas de dendrites ou d'axones mais de neurites.\nChez les bilatériens, il y a apparition d'une spécialisation des neurites en prolongement émetteur (axone) ou récepteur (dendrite).\n\nOrigine\nIl existe deux hypothèses majeures concernant l'apparition des neurones :\n\nils seraient apparus chez les eumétazoaires et constitueraient donc une synapomorphie de ce groupe. Dans cette hypothèse les cténaires font partie des eumétazoaires. Il s'agit de l'hypothèse dominante actuellement ;\nils seraient apparus indépendamment chez les eumétazoaires et les cténaires (qui ne font alors pas partie des eumétazoaires).\nLe génome d’Amphimedon queenslandica, une éponge de la Grande Barrière de corail, a été séquencé en 2010. Il comporte plusieurs gènes qui, chez les eumétazoaires, sont impliqués dans le fonctionnement des synapses, alors que les éponges n'ont pas de système nerveux. En 2021, l'ARN de cellules individuelles de Spongilla lacustris, une éponge d'eau douce, a révélé que ces gènes « synaptiques » sont exprimés dans des cellules concentrées autour des chambres digestives de l'éponge. L'examen de ces cellules « neuroïdes », par microscopie électronique et imagerie X, montre qu'elles tendent de longues protubérances vers les choanocytes, qui sont d'autres cellules chargées du système de filtrage de l'éponge et de la capture de la nourriture, et qui portent elles-mêmes des protrusions. L'interprétation des chercheurs est que les protubérances permettent aux cellules neuroïdes de communiquer avec les choanocytes, pour qu'ils interrompent le filtrage et permettent ainsi de nettoyer les chambres digestives des débris accumulés. Cette étude suggère que les neurones ont évolué à partir de cellules digestives.\n\nChez l'être humain\n\nDénombrement\nLe nombre total de neurones du cerveau humain est estimé dans une fourchette de 86 à 100 milliards (1011). L'intestin en compte environ 500 millions, et le cœur environ 40 000.\nLes neurones sont toutefois moins nombreux que les cellules gliales (il y a généralement 3 cellules gliales pour un neurone). Ces dernières sont le second composant du tissu nerveux assurant plusieurs fonctions dont le soutien et la nutrition des neurones.\n\nStructure\n\nLe neurone est composé d'un corps appelé péricaryon ou corps cellulaire ou encore soma, et de deux types de prolongements : l'axone, unique, qui en tant qu'émetteur conduit le potentiel d'action du cône axonique vers sa terminaison, et les dendrites, qui sont en moyenne 7 000 par neurone et qui sont pour un neurone jouant un rôle de transmetteur les récepteurs du potentiel d'action. La morphologie, la localisation et le nombre de ces prolongements, ainsi que la forme du soma, varient et contribuent à définir différentes familles morphologiques de neurones.\nClassement morphologique (en fonction du nombre de neurites) : \n\nneurones unipolaires (un seul axone), cas de la plupart des neurones sensitifs. Dans ce cas, la fonction de réception est assurée par des récepteurs sensoriels, sortes de dendrites spécialisées présentes à l'extrémité d'un prolongement périphérique de l'axone) ;\nneurones pseudo-unipolaires : forme transitoire des neurones bipolaires pendant leur développement ;\nneurones bipolaires : un seul axone et une seule dendrite,  présents dans quelques organes sensoriels ;\nneurones multipolaires : un seul axone, nombreuses dendrites ; cas des interneurones et neurones moteurs.\nClassement fonctionnel (selon leur fonction) :"
+          "titre": "Muscle squelettique",
+          "resume": "Les muscles squelettiques sont des muscles striés sous contrôle volontaire du système nerveux central. Ils constituent la partie active de l'appareil locomoteur.\nLe corps humain comprend environ 600 muscles squelettiques.\n\nStructure\nUn muscle squelettique est généralement constitué d'un ventre musculaire où se produit la contraction musculaire. C'est dans cette partie que se trouvent les cellules musculaires.\nLe ventre musculaire est relié par des tendons aux parties qu'il mobilise en général les os. Mais cela peut être la face profonde du derme, on parle alors de muscle cutané, ou encore des cartilages ou des organes dans le cas des muscles striés viscéraux.\nLe muscle peut comporter deux ventres reliés par un tendon intermédiaire pour constituer un muscle digastrique.\nLe ventre peut se diviser en plusieurs parties possédant des attaches distinctes constituant des chefs musculaires. Cette division intervient dans la terminologie :\n\nmuscle biceps : muscle possédant deux chefs musculaires,\nmuscle triceps : muscle possédant trois chefs musculaires,\nmuscle quadriceps : muscle possédant quatre chefs musculaires.\nLes muscles squelettiques peuvent être classés suivant l'organisation de leurs fibres :\n\nles muscles fusiformes en forme de fuseau avec un ventre plus large au centre comme le muscle biceps brachial ;\nles muscles droits (ou parallèles) présentent des faisceaux de fibres parallèles dans le grand axe du muscle et se terminant par des tendons plats aux deux extrémités comme le muscle droit de l'abdomen ;\nles muscles plats : minces et larges occupant une grande surface comme le muscle grand dorsal ;\nles muscles carrés qui sont des muscles plats de forme approximativement carrée comme le muscle carré des lombes ;\nles muscles triangulaires qui possèdent des faisceaux qui s’insèrent sur un ligne puis convergent vers un tendon comme le muscle deltoïde ;\nles muscles orbiculaires en forme d'anneau autour d'une ouverture comme le muscle orbiculaire de la bouche ;\nles muscles sphincters également à structure circulaire comme le muscle sphincter externe de l'anus ;\nles muscles dilatateurs qui agrandissent des ouvertures comme le muscle stylo-pharyngien ;\nles muscles pennés (ou penniformes) dont les fibres sont obliques par rapport au grand axe du muscle:\nles muscles unipennés dont les fibres se fixent obliquement sur une face latérale d'un tendon comme le muscle soléaire ;\nles muscles bipennés dont les fibres se fixent obliquement de part et d'autre d'un tendon central comme les muscles interosseux de la main ;\nles muscles multipennés dont les fibres se fixent obliquement de part et d'autre de plusieurs tendons comme le muscle semi-tendineux.\nIls peuvent également être classés en fonction de leur action :\n\nles muscles fléchisseurs provoquant la flexion d'un segment squelettique par rapport à un autre,\nles muscles extenseurs provoquant l'extension d'un segment squelettique par rapport à un autre,\nles muscles pronateurs provoquant la rotation d'un segment squelettique de dehors en dedans,\nles muscles supinateurs provoquant la rotation d'un segment squelettique de dedans en dehors,\nles muscles rotateurs provoquant la rotation d'un segment squelettique par rapport à un autre,\nles muscles sphincters à structure circulaire permettant de fermer un orifice comme le muscle sphincter externe de l'anus,\nles muscles adducteurs provoquant le rapprochement d'un segment squelettique vers un axe médian,\nles muscles abducteurs provoquant l'éloignement d'un segment squelettique un axe médian.\nPour ces deux dernières fonctions l'axe de référence est l'axe médian du corps, sauf pour les muscles des mains et des pieds où l'axe de référence est l'axe passant par les troisièmes phalanges en extension et le troisième métacarpien pour la main ou métatarsien pour le pied.\n\nInsertions musculaires\nLes insertions musculaires sont nommées en fonction de leur position :\n\nInsertion supérieure ou inférieure,\ninsertion médiale ou latérale,\ninsertion distale ou proximale.\nL'insertion qui ne bouge pas lors de la contraction musculaire (la proximale le plus souvent) est nommée origine du muscle, l'autre extrémité étant nommée insertion proprement dite.\n\nHistologie\n\nLes muscles striés squelettiques sont constitués de cellules musculaires : les rhabdomyocytes.\nCelles-ci sont regroupées en fascicules musculaires entourés par un tissu conjonctif : le périmysium. Au sein du fascicule chaque myocyte est gainé par un tissu conjonctif relié au périmysium : l'endomysium.\nL'ensemble du muscle est recouvert par un tissu conjonctif formant l'épimysium.\nAu sein des structures conjonctives les vaisseaux sanguins assurent l'apport des nutriments et les fibres nerveuses le contrôle des contractions et la sensibilité proprioceptive.\nLes structures conjonctives sont reliées entre elles et se regroupent pour former les tendons permettant l'ancrage des muscles sur les structures que ceux-ci mobilisent (os, peau, cartilages).\nLes neurones moteurs contrôlent la contraction ou le relâchement des cellules musculaires par le biais de la plaque motrice, c'est là que se fait la transmission neuromusculaire.\nCertaines cellules musculaires sont spécialisées en mécanorécepteurs au sein des fuseaux neuromusculaires permettant la proprioception.\n\nConstitution chimique\nLes muscles sont constitués principalement d'eau (75 %), d'éléments minéraux (sodium, potassium, calcium) et de protéines : la myoglobine et de deux protéines essentielles à la contraction : l'actine et la myosine."
         }
       ],
-      "nb_mots_decouverte": 111,
-      "nb_mots_approfondi": 1153,
-      "sujet_id": "neurone",
+      "nb_mots_decouverte": 382,
+      "nb_mots_approfondi": 1434,
+      "sujet_id": "muscles",
       "origine": "encyclopedie"
     },
     "citation": {
-      "texte": "La plus grande chose du monde, c'est de savoir être à soi.",
-      "auteur": "Michel de Montaigne",
-      "source": "Essais, livre I, chapitre 39",
-      "annee": 1580
+      "texte": "Patience et longueur de temps font plus que force ni que rage.",
+      "auteur": "Jean de La Fontaine",
+      "source": "Fables, « Le Lion et le Rat »",
+      "annee": 1668
     },
     "meteo": {
       "villes_detail": [
         {
           "ville": "Antibes",
-          "temperature_actuelle": 17.2,
-          "temperature_max": 20.8,
-          "temperature_min": 16.6,
+          "temperature_actuelle": 14.2,
+          "temperature_max": 21.1,
+          "temperature_min": 14.1,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 6.9,
-          "vent_max_kmh": 12.8,
-          "rafales_max_kmh": 25.6,
+          "vent_kmh": 3.2,
+          "vent_max_kmh": 8.7,
+          "rafales_max_kmh": 16.4,
           "weather_code": 3,
           "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 17.2,
-              "temperature_max": 20.2,
+              "temperature_min": 14.2,
+              "temperature_max": 20.5,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 7,
+              "vent_max_kmh": 8,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 19.9,
+              "temperature_max": 21.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
               "weather_code": 3,
               "description": "couvert"
             },
             {
-              "label": "Après-midi",
-              "temperature_min": 19.4,
-              "temperature_max": 20.8,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 13,
-              "weather_code": 1,
-              "description": "plutôt dégagé"
-            },
-            {
               "label": "Soir",
-              "temperature_min": 17.3,
-              "temperature_max": 19.1,
+              "temperature_min": 16.0,
+              "temperature_max": 19.4,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 10,
+              "vent_max_kmh": 8,
               "weather_code": 3,
               "description": "couvert"
             }
@@ -297,90 +311,90 @@
         },
         {
           "ville": "Cannes",
-          "temperature_actuelle": 18.2,
-          "temperature_max": 20.2,
-          "temperature_min": 16.6,
+          "temperature_actuelle": 15.3,
+          "temperature_max": 21.1,
+          "temperature_min": 15.3,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 6.1,
-          "vent_max_kmh": 14.3,
-          "rafales_max_kmh": 22.7,
-          "weather_code": 1,
-          "description": "plutôt dégagé",
+          "vent_kmh": 5.4,
+          "vent_max_kmh": 9.0,
+          "rafales_max_kmh": 18.4,
+          "weather_code": 0,
+          "description": "ciel dégagé",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 18.2,
-              "temperature_max": 19.8,
+              "temperature_min": 15.3,
+              "temperature_max": 20.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 19.7,
+              "temperature_max": 21.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 17.2,
+              "temperature_max": 19.1,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 7,
               "weather_code": 3,
               "description": "couvert"
-            },
-            {
-              "label": "Après-midi",
-              "temperature_min": 19.1,
-              "temperature_max": 20.1,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 14,
-              "weather_code": 0,
-              "description": "ciel dégagé"
-            },
-            {
-              "label": "Soir",
-              "temperature_min": 16.9,
-              "temperature_max": 18.8,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 10,
-              "weather_code": 1,
-              "description": "plutôt dégagé"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Valbonne",
-          "temperature_actuelle": 12.9,
-          "temperature_max": 19.7,
-          "temperature_min": 12.7,
+          "temperature_actuelle": 12.6,
+          "temperature_max": 20.5,
+          "temperature_min": 12.3,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 6.3,
-          "vent_max_kmh": 10.3,
-          "rafales_max_kmh": 15.1,
-          "weather_code": 2,
-          "description": "partiellement nuageux",
+          "vent_kmh": 5.8,
+          "vent_max_kmh": 8.4,
+          "rafales_max_kmh": 16.2,
+          "weather_code": 0,
+          "description": "ciel dégagé",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 12.7,
-              "temperature_max": 18.4,
+              "temperature_min": 12.3,
+              "temperature_max": 18.6,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 6,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
+              "weather_code": 1,
+              "description": "plutôt dégagé"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 17.1,
-              "temperature_max": 19.7,
+              "temperature_min": 17.8,
+              "temperature_max": 20.4,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 10,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
+              "vent_max_kmh": 8,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             },
             {
               "label": "Soir",
-              "temperature_min": 13.6,
-              "temperature_max": 16.1,
+              "temperature_min": 13.3,
+              "temperature_max": 16.0,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 5,
+              "vent_max_kmh": 7,
               "weather_code": 2,
               "description": "partiellement nuageux"
             }
@@ -389,44 +403,44 @@
         },
         {
           "ville": "Grasse",
-          "temperature_actuelle": 12.5,
-          "temperature_max": 18.9,
-          "temperature_min": 12.3,
+          "temperature_actuelle": 11.9,
+          "temperature_max": 19.6,
+          "temperature_min": 11.6,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 7.3,
-          "vent_max_kmh": 10.2,
-          "rafales_max_kmh": 14.8,
-          "weather_code": 2,
-          "description": "partiellement nuageux",
+          "vent_kmh": 7.1,
+          "vent_max_kmh": 9.6,
+          "rafales_max_kmh": 16.9,
+          "weather_code": 0,
+          "description": "ciel dégagé",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 12.3,
+              "temperature_min": 11.7,
               "temperature_max": 17.6,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 7,
-              "weather_code": 1,
-              "description": "plutôt dégagé"
+              "vent_max_kmh": 8,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 16.3,
-              "temperature_max": 18.8,
+              "temperature_min": 16.9,
+              "temperature_max": 19.5,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 10,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
+              "vent_max_kmh": 9,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             },
             {
               "label": "Soir",
-              "temperature_min": 13.5,
-              "temperature_max": 15.2,
+              "temperature_min": 12.6,
+              "temperature_max": 15.3,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 5,
+              "vent_max_kmh": 10,
               "weather_code": 2,
               "description": "partiellement nuageux"
             }
@@ -434,97 +448,101 @@
           "alertes": []
         }
       ],
-      "temperature_max_zone": 20.8,
-      "temperature_min_zone": 12.3,
+      "temperature_max_zone": 21.1,
+      "temperature_min_zone": 11.6,
       "probabilite_pluie_max_pct": 0,
-      "vent_max_kmh": 14.3,
-      "description_dominante": "partiellement nuageux",
+      "vent_max_kmh": 9.6,
+      "description_dominante": "ciel dégagé",
       "periodes": [
         {
           "label": "Matin",
-          "temperature_min": 12.3,
-          "temperature_max": 20.2,
+          "temperature_min": 11.7,
+          "temperature_max": 20.6,
           "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
-          "vent_max_kmh": 7,
+          "vent_max_kmh": 8,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 16.9,
+          "temperature_max": 21.1,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 9,
           "weather_code": 3,
           "description": "couvert"
         },
         {
-          "label": "Après-midi",
-          "temperature_min": 16.3,
-          "temperature_max": 20.8,
-          "probabilite_pluie_pct": 0,
-          "precipitation_mm": 0.0,
-          "vent_max_kmh": 14,
-          "weather_code": 2,
-          "description": "partiellement nuageux"
-        },
-        {
           "label": "Soir",
-          "temperature_min": 13.5,
-          "temperature_max": 19.1,
+          "temperature_min": 12.6,
+          "temperature_max": 19.4,
           "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
           "vent_max_kmh": 10,
-          "weather_code": 2,
-          "description": "partiellement nuageux"
+          "weather_code": 3,
+          "description": "couvert"
         }
       ],
       "alertes": [],
-      "resume": "Couvert le matin, partiellement nuageux l'après-midi, partiellement nuageux le soir, de 12° à 21°."
+      "resume": "Ciel dégagé le matin, couvert l'après-midi, couvert le soir, de 12° à 21°."
     },
     "anglais": {
       "mode": "litterature",
-      "oeuvre": "A Tale of Two Cities",
-      "auteur": "Charles Dickens",
-      "annee": 1859,
+      "oeuvre": "Pride and Prejudice",
+      "auteur": "Jane Austen",
+      "annee": 1813,
       "segments": [
         {
-          "t": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness",
-          "g": "la sottise"
+          "t": "It is a truth universally acknowledged",
+          "g": "reconnue de tous"
         },
         {
-          "t": ", it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct",
-          "g": "tout droit"
+          "t": ", that a single man in possession of a good fortune, must be in want of",
+          "g": "qui a besoin de"
         },
         {
-          "t": " to Heaven, we were all going direct the other way – in short",
-          "g": "bref"
+          "t": " a wife. However little known",
+          "g": "Si peu connus soient"
         },
         {
-          "t": ", the period was so far like",
-          "g": "si semblable à"
+          "t": " the feelings or views of such a man may be on his first entering a neighbourhood",
+          "g": "le voisinage"
         },
         {
-          "t": " the present period, that some of its noisiest",
-          "g": "les plus bruyants"
+          "t": ", this truth is so well fixed",
+          "g": "solidement ancrée"
         },
         {
-          "t": " authorities insisted on",
-          "g": "exigeaient que"
+          "t": " in the minds of the surrounding families, that he is considered the rightful property",
+          "g": "propriété légitime"
         },
         {
-          "t": " its being received",
-          "g": "accueillie, admise"
+          "t": " of some one or other of their daughters. \"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last",
+          "g": "enfin louée"
         },
         {
-          "t": ", for good or for evil",
-          "g": "pour le meilleur ou pour le pire"
+          "t": "?\" Mr. Bennet replied that he had not. \"But it is,\" returned she",
+          "g": "répliqua-t-elle"
         },
         {
-          "t": ", in the superlative degree of comparison only.",
+          "t": "; \"for Mrs. Long has just been here, and she told me all about it.\" Mr. Bennet made no answer",
+          "g": "ne répondit rien"
+        },
+        {
+          "t": ".",
           "g": null
         }
       ],
-      "texte_glose": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness (= la sottise), it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct (= tout droit) to Heaven, we were all going direct the other way – in short (= bref), the period was so far like (= si semblable à) the present period, that some of its noisiest (= les plus bruyants) authorities insisted on (= exigeaient que) its being received (= accueillie, admise), for good or for evil (= pour le meilleur ou pour le pire), in the superlative degree of comparison only."
+      "texte_glose": "It is a truth universally acknowledged (= reconnue de tous), that a single man in possession of a good fortune, must be in want of (= qui a besoin de) a wife. However little known (= Si peu connus soient) the feelings or views of such a man may be on his first entering a neighbourhood (= le voisinage), this truth is so well fixed (= solidement ancrée) in the minds of the surrounding families, that he is considered the rightful property (= propriété légitime) of some one or other of their daughters. \"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last (= enfin louée)?\" Mr. Bennet replied that he had not. \"But it is,\" returned she (= répliqua-t-elle); \"for Mrs. Long has just been here, and she told me all about it.\" Mr. Bennet made no answer (= ne répondit rien)."
     },
     "meta": {
-      "resume_1_phrase": "À la une : Présidentielle 2027 : Edouard Philippe estime que « l’échec de l’intégration » depuis « plusieurs décennies est incontestable »."
+      "resume_1_phrase": "À la une : Le candidat LR à la présidentielle Bruno Retailleau juge \"fantaisiste et ridicule\" l'organisation d'une \"grande primaire des démocrates\" proposée par son adversaire Gabriel Attal."
     },
     "_genere_par_llm": true,
     "_provider": "groq+mistral+nvidia",
-    "_erreur_llm": "actu_monde[mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | nvidia: Réponse vide (provider=nvidia) | groq: Expecting ',' delimiter: line 58 column 6 (char 4201) | openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":]",
+    "_erreur_llm": null,
     "_parts": {
       "actu_france": {
         "genere_par_llm": true,
@@ -533,10 +551,10 @@
         "essais_echoues": 0
       },
       "actu_monde": {
-        "genere_par_llm": false,
-        "provider": null,
-        "erreur": "mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | nvidia: Réponse vide (provider=nvidia) | groq: Expecting ',' delimiter: line 58 column 6 (char 4201) | openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":",
-        "essais_echoues": 4
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
       },
       "marches": {
         "genere_par_llm": true,
@@ -558,25 +576,25 @@
       },
       "sport": {
         "genere_par_llm": true,
-        "provider": "groq",
-        "erreur": null,
-        "essais_echoues": 1
-      },
-      "science_d": {
-        "genere_par_llm": true,
         "provider": "nvidia",
         "erreur": null,
         "essais_echoues": 0
+      },
+      "science_d": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 1
       }
     },
     "_bloc": {
       "genere_par_llm": true,
-      "provider": "groq+nvidia",
-      "erreur": "actu_monde[mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | nvidia: Réponse vide (provider=nvidia) | groq: Expecting ',' delimiter: line 58 column 6 (char 4201) | openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"message\":\"Provider returned error\",\"code\":429,"
+      "provider": "groq+mistral+nvidia",
+      "erreur": null
     },
     "_science": {
       "genere_par_llm": true,
-      "provider": "groq+mistral+nvidia",
+      "provider": "groq+mistral",
       "erreur": null
     },
     "_anglais": {
@@ -585,5 +603,5 @@
       "erreur": null
     }
   },
-  "debut_run": "2026-10-28T06:10:40.912952+01:00"
+  "debut_run": "2026-10-29T06:10:42.525137+01:00"
 }
