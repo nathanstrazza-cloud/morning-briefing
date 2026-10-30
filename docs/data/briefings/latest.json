@@ -1,152 +1,157 @@
 {
-  "date": "2026-10-29",
-  "derniere_mise_a_jour": "2026-10-29T06:17:56.374693+01:00",
+  "date": "2026-10-30",
+  "derniere_mise_a_jour": "2026-10-30T06:15:21.702449+01:00",
   "briefing": {
     "actualite": {
       "france": [
         {
-          "titre": "Le candidat LR à la présidentielle Bruno Retailleau juge \"fantaisiste et ridicule\" l'organisation d'une \"grande primaire des démocrates\" proposée par son adversaire Gabriel Attal",
-          "resume": "La primaire que propose le candidat Renaissance à l’élection présidentielle permettrait, selon lui, « d’empêcher » un second tour entre Jean-Luc Mélenchon et Marine Le Pen.",
+          "titre": "Attentat raciste dans les Yvelines : le suspect, Kévin Tessier, a été mis en examen et placé en détention provisoire",
+          "resume": "L'homme de 39 ans a reconnu être l'auteur de l'attentat raciste et a admis avoir \"spécifiquement\" ciblé des personnes \"de type musulman, africain ou nord-africain\", a annoncé le procureur du Pnat jeudi.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Attentat raciste de Trappes : Kevin T., mis en examen pour « assassinat et tentatives d’assassinat terroriste », a reconnu avoir ciblé des personnes « de type musulman » ou « africain »",
+          "resume": "Le Parquet national antiterroriste a précisé, jeudi, que le diagnostic de schizophrénie, évoqué par le suspect, n’était pas confirmé par son médecin. Il a par ailleurs évoqué la découverte, à son domicile, de 30 autocollants confectionnés par Kevin T. portant la mention « Vive la France, RN, fier d’être français ».",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Attentat raciste de La Verrière et de Trappes : te dire, Ramatou, notre effroi, notre honte et notre solidarité",
+          "resume": "Lettre à la fillette de 11 ans qui a été gravement blessée dans l’attaque terroriste du 23 octobre, ciblée par celui qui voulait «tuer des noirs et des arabes».",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : WhatsApp, invisibiliser le RN… LFI lance son « armée » sur les réseaux, pour faire « comme au Brésil »",
+          "resume": "Après la victoire de Lula, des militants LFI veulent s’inspirer de la méthode du député brésilien André Janones qui a accompagné le candidat du PT pour remporter l’élection présidentielle grâce, entre autres, à son « armée » sur WhatsApp",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "\"Ce serait du suicide\" : la primaire proposée par Gabriel Attal en vue de la présidentielle ne convainc ni Edouard Philippe, ni Bruno Retailleau",
+          "resume": "Le candidat Renaissance, qui a peu convaincu par son appel à une primaire incluant la gauche sociale-démocrate, a recentré sa proposition. Il aimerait voir d’autres personnalités mettre la pression sur Edouard Philippe qui refuse de se plier à cette idée.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "Le Monde",
             "France Info",
-            "20 Minutes",
-            "France 24 International"
-          ]
-        },
-        {
-          "titre": "La gauche dénonce la tenue de manifestations et d’évènements «néofascistes» ce week-end à Paris et dans les Hauts-de-Seine",
-          "resume": "Quelques jours après l’attentat raciste de Trappes, plusieurs évènements organisés par l’extrême droite suscitent l’indignation de LFI et du maire de Paris Emmanuel Grégoire.",
-          "pourquoi_important": "Des manifestations qualifiées de néofascistes sont prévues, suscitant l'indignation de la gauche après un attentat raciste récent.",
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Libération",
-            "France 24 International"
-          ]
-        },
-        {
-          "titre": "Après l’attentat raciste de Trappes, LFI et Emmanuel Grégoire mettent en garde contre des manifestations liées à l’extrême droite prévues ce week-end",
-          "resume": "Les élus « insoumis » et le maire de Paris dénoncent trois événements prévus samedi et dimanche à Paris et dans les Hauts-de-Seine autour du concept de « remigration », mot employé par l’extrême droite pour définir sa volonté d’expulsion de masse d’étrangers.",
-          "pourquoi_important": "Les responsables dénoncent des manifestations d'extrême droite prévues, soulignant le risque de tensions après l'attentat de Trappes.",
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Le Monde"
-          ]
-        },
-        {
-          "titre": "Collision ferroviaire en Espagne : \"On n'est absolument pas à l'abri de ce genre de catastrophe\" en France, alerte un eurodéputé",
-          "resume": "Après la collision entre deux trains en Espagne, François Kalfon, eurodéputé PS-Place publique, membre de la commission des transports au Parlement européen, alerte sur le manque d'investissements dans les infrastructures ferroviaires, y compris en France. Il appelle à renforcer la sécurité des réseaux et à accélérer le déploiement des systèmes de signalisation automatique.",
-          "pourquoi_important": "Un eurodéputé met en garde contre le risque de catastrophes ferroviaires en France en raison d'investissements insuffisants.",
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "France Info"
-          ]
-        },
-        {
-          "titre": "Les sanctions contre l’infirmière refusant d’ôter son calot étaient «disproportionnées», tranche la justice",
-          "resume": "Aucune règle d’hygiène n’interdisait ce couvre-chef estime ce mercredi 28 octobre le tribunal administratif de Paris, qui annule la suspension de huit mois infligée à Majdouline B. par l’AP-HP.",
-          "pourquoi_important": "Le tribunal administratif annule une suspension jugée disproportionnée, soulignant l'absence de règle d'hygiène interdisant le couvre-chef.",
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
             "Libération"
           ]
         }
       ],
       "monde": [
         {
-          "titre": "Guerre en Ukraine | Le cessez-le-feu à Olechky est un « immense succès », selon Volodymyr Zelensky, qui appelle à une rencontre entre Moscou, Kiev et Washington en novembre",
-          "resume": "Le président ukrainien a qualifié le cessez-le-feu à Olechky d’immense succès et souligné qu’il a permis un répit aux habitants de Kherson, située face à Olechky sur l’autre rive du Dniepr.",
+          "titre": "Législatives en Israël : le camp de Benyamin Nétanyahou arrive en tête mais sans majorité selon les résultats définitifs",
+          "resume": "Netanyahou arrive en tête des élections en Israël, mais sans majorité. Les partis arabes joueront un rôle décisif dans la formation d’une coalition.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "Le Monde",
+            "20 Minutes",
             "Le Monde International",
-            "20 Minutes"
+            "France 24 International"
           ]
         },
         {
-          "titre": "Midterms 2026 : Donald Trump en meeting dans l’Ohio, Barack Obama en Géorgie… Suivez la campagne des élections de mi-mandat aux Etats-Unis",
-          "resume": "Les élections de mi-mandat aux États-Unis, prévues le 3 novembre, concernent tous les sièges de la Chambre des représentants et un tiers des sièges du Sénat.",
+          "titre": "Guerre en Ukraine : Kiev visée par une nouvelle salve de missiles balistiques russes",
+          "resume": "Une attaque russe a tué au moins une personne à Kiev. Un drone a fait 14 morts et 14 blessés à la gare de Dnipro, et d’autres frappes ont touché des zones résidentielles à Tchernihiv, Krementchouk et dans l’oblast de Zaporijia.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Nigeria’s Ebola Patient Evacuated as Investigators Press for Answers",
+          "resume": "Les enquêteurs cherchent des réponses sur la propagation de l’infection.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "New York Times World"
+          ]
+        },
+        {
+          "titre": "Soupçons de détournement de fonds publics : Édouard Philippe placé sous le statut de témoin assisté",
+          "resume": "Candidat à l'élection présidentielle, Édouard Philippe a été placé jeudi sous le statut de témoin assisté dans l'enquête ouverte pour détournement de fonds publics, favoritisme et harcèlement moral au sein de la communauté d'agglomération du Havre, dont il est maire, rapportent des sources proches du dossier. Il a été entendu par deux juges d'instruction financiers.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France 24 International",
+            "Le Monde",
+            "France Info",
+            "Libération",
+            "20 Minutes"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Midterms 2026 : deux Dan Sullivan pour un siège en Alaska, la manipulation des démocrates dévoilée",
+          "resume": "Le « New York Times » a révélé, mercredi 28 octobre, que le recrutement d’un homonyme du sénateur sortant républicain a été orchestré par l’entourage de la candidate démocrate, Mary Peltola.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "Le Monde",
             "Le Monde International"
-          ]
+          ],
+          "complete_par_code": true
         },
         {
-          "titre": "L’Espagne à nouveau endeuillée par une catastrophe ferroviaire, moins d’un an après celle d’Adamuz",
-          "resume": "La collision entre deux trains à grande vitesse, qui a fait au moins 68 morts près de Tolède, serait due à une panne informatique suivie d’une erreur humaine. Le ministre des transports a qualifié l’accident d’« invraisemblable ».",
+          "titre": "Crise énergétique : onze pays de l’UE vont libérer 42,6 millions de barils de pétrole afin de stabiliser les prix du gazole avant l’hiver",
+          "resume": "Face à la flambée des prix, l’Union européenne va puiser dans ses réserves stratégiques, tout en assurant que la sécurité d’approvisionnement ne serait pas menacée cet hiver.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "Le Monde International",
-            "Le Monde"
-          ]
-        },
-        {
-          "titre": "Législatives en Israël : une formation arabe se dit prête à « soutenir » un gouvernement d'opposition « pour faire tomber » la coalition de Benyamin Nétanyahou",
-          "resume": "Le camp de Benyamin Nétanyahou est légèrement en tête à mi-dépouillement, mais une formation arabe pourrait contribuer à faire basculer les résultats en soutenant une opposition.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "France Info",
-            "Libération"
-          ]
-        },
-        {
-          "titre": "Russie : « Un génie, vraiment un génie »… Vladimir Poutine encense Elon Musk",
-          "resume": "Lors du sommet Russie-Afrique au Kremlin, Vladimir Poutine a salué Elon Musk, tandis que la délégation africaine, réduite de moitié par rapport aux années précédentes, comprend surtout des dirigeants de juntes militaires.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Libération",
-            "20 Minutes"
-          ]
-        },
-        {
-          "titre": "Selon Libération, Catastrophe ferroviaire en Espagne : au moins 68 morts selon le bilan encore provisoire, un deuil national de trois jours décrété",
-          "resume": "L’accident de train meurtrier, le deuxième en moins d’un an, est survenu sur la ligne à grande vitesse Madrid-Séville peu avant 9 heures ce mercredi 28 octobre. Plus de 100 personnes sont blessées, dont 18 gravement.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
+            "Le Monde",
             "Libération"
           ],
           "complete_par_code": true
         },
         {
-          "titre": "Selon 20 Minutes, Elections en Israël : Netanyahou arrive en tête mais il pourrait être privé du pouvoir par les partis arabes",
-          "resume": "Revivez avec nous les résultats des élections législatives du 27 octobre en Israël, un enjeu important pour l’ensemble du Proche et Moyen-Orient",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "20 Minutes"
-          ],
-          "complete_par_code": true
-        },
-        {
-          "titre": "Au moins 68 morts, deuil national, circonstances \"inexplicables\"… Ce que l'on sait de la collision meurtrière de deux trains dans le centre de l'Espagne",
-          "resume": "L'accident s'est produit mercredi matin entre Madrid et l'Andalousie. Le Premier ministre espagnol a annoncé trois jours de deuil national dans le pays.",
+          "titre": "Union européenne : l’idée d’un Canada «membre associé» ravive les tensions entre Ursula von der Leyen et les Vingt-Sept",
+          "resume": "Réunis pour un sommet, jeudi et vendredi, Ursula von der Leyen, et Mark Carney ont maintenu l’idée qu’Ottawa devienne « membre associé » de l’UE, malgré les réserves claires formulées par l’Allemagne sur ce terme.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "France Info",
-            "20 Minutes",
+            "Le Monde",
+            "Le Monde International",
+            "Libération"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon Le Monde International, Midterms 2026 : Donald Trump annule ses meetings du week-end dans le Kansas et l’Iowa",
+          "resume": "A cinq jours des élections de mi-mandat, le parti républicain a annoncé jeudi que deux meetings que devait animer Donald Trump ce week-end n’auront pas lieu, et que le président américain participerait à la place à « un grand nombre de meetings virtuels ».",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
             "Le Monde International"
           ],
           "complete_par_code": true
@@ -154,12 +159,27 @@
       ]
     },
     "marches": {
-      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
+      "resume_court": "Les résultats de TotalEnergies et d'Amazon, ainsi que la libération de pétrole par l'UE, ont influencé ces mouvements.",
       "mouvements_notables": [
         {
-          "nom": "Pétrole (Brent)",
-          "variation_pct": -4.47,
+          "nom": "CAC 40",
+          "variation_pct": 1.05,
           "explication": null
+        },
+        {
+          "nom": "Nasdaq",
+          "variation_pct": -1.38,
+          "explication": "Résultats trimestriels inférieurs aux attentes d'Amazon"
+        },
+        {
+          "nom": "DAX",
+          "variation_pct": 1.31,
+          "explication": null
+        },
+        {
+          "nom": "Pétrole (Brent)",
+          "variation_pct": -2.56,
+          "explication": "Crise énergétique: libération de 42,6 millions de barils de pétrole par l'UE"
         }
       ]
     },
@@ -167,35 +187,35 @@
       "items": [
         {
           "sport": "football",
-          "texte": "Chelsea revient à son meilleur après sa victoire 2-0 contre Roma en Ligue des champions féminine."
+          "texte": "Le Paris Saint‑Germain a fait match nul 1-1 contre Manchester City en phase de ligue de la Ligue des champions féminine."
         },
         {
           "sport": "football",
-          "texte": "Alessia Russo devient le meilleur buteur anglais de l'histoire de la Ligue des champions féminine après son triplé dans la victoire 3-0 d'Arsenal contre Benfica."
+          "texte": "Le Paris Saint‑Germain a inscrit un but tardif pour obtenir le match nul 1-1 contre Manchester City en Ligue des champions féminine."
         },
         {
           "sport": "football",
-          "texte": "OL Lyonnes a battu l'Inter Milan 6-0 lors de la troisième journée de la Ligue des champions féminine et prend provisoirement la tête du classement."
+          "texte": "Le Paris FC a été tenu en échec 1-1 par Häcken en Ligue des champions féminine."
+        },
+        {
+          "sport": "cyclisme",
+          "texte": "Tifany Huot‑Marchand et Alexandre Léauté ont remporté l’or du scratch aux championnats du monde de para‑cyclisme sur piste à Apeldoorn."
         },
         {
           "sport": "tennis",
-          "texte": "Holger Rune a battu Hubert Hurkacz à Bâle, remportant son deuxième succès de rang après plus d'un an sans victoire, et se qualifie pour les quarts de finale."
+          "texte": "Novak Djokovic a perdu en deuxième tour à Bâle contre Jan‑Lennard Struff, score 6‑7(4) 7‑5 7‑6(5)."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Alexander Zverev s’est qualifié pour les quarts de finale de l’ATP 500 de Vienne en battant Tallon Griekspoor 6‑4, 7‑5."
+        },
+        {
+          "sport": "natation",
+          "texte": "Maxime Grousset, Béryl Gastaldello et Yohann Ndoye Brouard ont remporté leurs titres aux championnats de France, permettant à huit nageurs français de se qualifier pour les championnats du monde à Pékin."
         },
         {
           "sport": "basketball",
-          "texte": "Basket Landes a remporté son premier succès de la saison en Euroligue 78-65 à Athènes contre Athinaïkos, tandis que Bourges a gagné 88-69 à Lublin."
-        },
-        {
-          "sport": "basketball",
-          "texte": "AJ Dybantsa, sélectionné en première position de la draft 2026, fait ses débuts en NBA avec les Washington Wizards contre les Cleveland Cavaliers."
-        },
-        {
-          "sport": "basketball",
-          "texte": "Un raté improbable décale le match du titre à l'heure du déjeuner."
-        },
-        {
-          "sport": "rugby",
-          "texte": "Kurtley Beale, 37 ans, est rappelé par l'Australie pour le Championnat des nations afin de remplacer Hunter Paisami."
+          "texte": "Atlanta a battu le Dream, malgré les 26 points de la capitaine française, ramenant la série à 3‑3 avant le match décisif à San Francisco."
         }
       ],
       "rien_a_signaler": false,
@@ -218,180 +238,170 @@
     },
     "science": {
       "mode": "decouverte",
-      "titre": "Deux souches d'archées révèlent des indices clés sur l'origine des cellules complexes",
-      "contenu_markdown": "Deux chercheurs ont réussi à cultiver pour la première fois deux souches d’archées appartenant à une lignée très proche de l’ancêtre des cellules eucaryotes, ces cellules complexes dotées d’organites (comme le noyau). Cette avancée, publiée dans *Nature* le 28 octobre 2026, offre des pistes sur les étapes ayant mené à l’évolution des cellules eucaryotes à partir de leurs ancêtres procaryotes.\n\n## Des caractéristiques uniques pour comprendre l’évolution\nCes archées, bien que simples en organisation interne, présentent des structures de surface élaborées, des partenariats avec d’autres micro-organismes et un mode de vie dépendant de protéines. Ces traits pourraient expliquer comment les cellules eucaryotes ont acquis leur complexité, notamment leur capacité à s’associer avec d’autres organismes (symbiose) et à développer des compartiments internes.\n\n## Pourquoi cette découverte est-elle importante ?\nLes cellules eucaryotes, présentes chez tous les organismes pluricellulaires (animaux, plantes, champignons), sont bien plus complexes que les bactéries ou archées classiques. Jusqu’à présent, les hypothèses sur leur origine reposaient sur des preuves indirectes (fossiles, génétique). Ces deux souches cultivées en laboratoire permettent désormais d’étudier *in vivo* des mécanismes potentiellement ancestraux, comme les interactions entre cellules ou l’émergence de structures spécialisées.\n\n## Des limites à cette avancée\nSi ces résultats ouvrent des perspectives, plusieurs questions restent en suspens :\n- **Le lien direct avec l’ancêtre eucaryote** : ces archées sont proches de la lignée, mais ne sont pas *exactement* l’ancêtre. Leur étude doit être complétée par d’autres données génétiques ou fossiles.\n- **Les mécanismes précis** : comment ces traits (partenariats, protéines) ont-ils conduit à la formation d’organites comme le noyau ? Les détails moléculaires nécessitent des recherches complémentaires.\n- **L’évolution ultérieure** : ces archées ne représentent qu’un maillon de la chaîne. Leur rôle dans l’émergence des mitochondries (organites énergétiques) ou d’autres innovations reste à préciser.\n\nLes données détaillées sur leur mode de vie, leur génome ou leur interaction avec d’autres micro-organismes sont à consulter dans l’article original de *Nature*. Cette découverte ne résout pas à elle seule le mystère de l’origine des eucaryotes, mais elle fournit des éléments concrets pour affiner les modèles évolutifs.\n\n## Sources\n- Le Monde Sciences — https://www.lemonde.fr/realites-biomedicales/article/2026/10/28/diagnostic-medical-quand-l-intelligence-artificielle-imite-la-demarche-etape-par-etape-des-medecins_6801586_6579630.html\n- Nature News — https://www.nature.com/articles/d41586-026-03294-7\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Muscle strié squelettique\n\n## Introduction\nSous le contrôle du système nerveux central, ils constituent la partie active de l’appareil locomoteur, en collaboration avec les os et les articulations. Bien que souvent perçus comme un ensemble homogène, ces muscles présentent une grande diversité en termes de forme, de fonction et d’organisation interne. Leur étude révèle une architecture complexe, adaptée à des rôles variés, allant de la mobilité fine des doigts à la puissance des membres inférieurs.\n\n## Pourquoi le sujet est important\nComprendre les muscles squelettiques est fondamental pour saisir comment le corps humain se déplace, maintient sa posture ou interagit avec son environnement. Leur dysfonctionnement peut entraîner des troubles moteurs, des douleurs chroniques ou des limitations physiques, soulignant leur importance en médecine, en rééducation et en sport. Par ailleurs, leur étude permet de mieux appréhender des phénomènes comme la fatigue musculaire, la récupération après un effort ou les adaptations liées à l’entraînement.\n\n## Explication du phénomène : qu’est-ce qu’un muscle squelettique ?\nUn muscle squelettique est un **muscle strié**, c’est-à-dire présentant des bandes visibles au microscope, sous contrôle **volontaire** du système nerveux central. Contrairement aux muscles lisses (présents dans les organes internes) ou cardiaques, leur activation dépend de la volonté ou de réflexes contrôlés par le cerveau et la moelle épinière. Le corps humain en compte environ **600**, répartis en groupes spécialisés selon leur localisation et leur fonction.\n\n## Une organisation en trois parties fonctionnelles\n1. **Le ventre musculaire** : partie centrale où se produit la **contraction musculaire**, composée de **cellules musculaires** (appelées *rhabdomyocytes*). Ces cellules sont regroupées en faisceaux, eux-mêmes entourés de tissus conjonctifs (périmysium et endomysium).\n2. **Les tendons** : structures fibreuses et résistantes reliant le ventre musculaire aux **os**, à la peau (muscles cutanés) ou à d’autres structures comme les cartilages. Ils transmettent la force de contraction pour provoquer un mouvement.\n3. **Les insertions** : zones d’ancrage des tendons sur les structures mobiles. L’**origine** (généralement proximale, c’est-à-dire proche du tronc) reste fixe lors de la contraction, tandis que l’**insertion** (distale) se déplace.\n\n## Une diversité de formes et de fonctions\nLes muscles squelettiques ne se ressemblent pas tous. Leur classification repose sur :\n- **Leur forme** :\n  - *Fusiformes* (ex. : biceps brachial), en forme de fuseau.\n  - *Parallèles* (ex. : droit de l’abdomen), avec des fibres alignées sur l’axe du muscle.\n  - *Plats* (ex. : grand dorsal), larges et minces.\n  - *Pennés* (ex. : soléaire), dont les fibres sont obliques par rapport au tendon central, augmentant la puissance de contraction.\n- **Leur action mécanique** :\n  - **Fléchisseurs** (réduisent l’angle entre deux segments, ex. : biceps pour le coude).\n  - **Extenseurs** (l’augmentent, ex. : triceps).\n  - **Rotateurs**, **adducteurs** (rapprochent un membre de l’axe du corps), **abducteurs** (l’éloignent), ou encore **sphincters** (ferment une ouverture, ex. : muscle anal).\n\nCette diversité permet d’adapter la force, la précision ou l’amplitude des mouvements à chaque besoin.\n\n## Fonctionnement : comment se produit la contraction musculaire ?\nLa contraction d’un muscle squelettique repose sur un mécanisme **neurophysiologique** et **biochimique** précis, impliquant plusieurs acteurs.\n\n## La transmission nerveuse : du cerveau à la fibre musculaire\nLa contraction est initiée par un **signal électrique** émis par le système nerveux central. Un **neurone moteur** (ou motoneurone) transmet cet ordre via une **fibre nerveuse** jusqu’à la **plaque motrice**, une zone spécialisée à la jonction entre le nerf et la cellule musculaire. Là, un neurotransmetteur (l’**acétylcholine**) est libéré, déclenchant un potentiel d’action dans la fibre musculaire.\n\n## Le couplage excitation-contraction\nÀ l’intérieur de la cellule musculaire, le potentiel d’action provoque la libération de **calcium** dans le cytoplasme. Ce calcium se lie à une protéine régulatrice, permettant aux **filaments d’actine et de myosine** (deux protéines contractiles) de s’assembler et de glisser l’un sur l’autre, un phénomène appelé **théorie du fil glissant**. Cette interaction consomme de l’**adénosine triphosphate (ATP)**, la \"monnaie énergétique\" de la cellule, produite lors de la respiration cellulaire.\n\n## La propagation de la contraction\nLa contraction d’une seule fibre musculaire est faible, mais les muscles squelettiques sont composés de **centaines, voire de milliers de fibres**, regroupées en **unités motrices**. Selon le nombre de fibres activées (recrutement) et la fréquence des signaux nerveux (tétanos), la force développée varie. Par exemple, un mouvement précis (comme écrire) sollicite peu de fibres, tandis qu’un effort intense (comme soulever une charge lourde) en active un grand nombre simultanément.\n\n## Le rôle des tissus conjonctifs et des tendons\nLes tissus conjonctifs (endomysium, périmysium, épimysium) assurent la cohésion des fibres et la transmission des forces vers les tendons. Ces derniers, composés de fibres de collagène, sont conçus pour résister à des tensions importantes sans se rompre. Leur élasticité permet aussi d’emmagasiner et de restituer de l’énergie lors des mouvements répétés (comme la marche ou la course).\n\n## La proprioception : le muscle comme capteur\nCertaines fibres musculaires contiennent des **fuseaux neuromusculaires**, des mécanorécepteurs sensibles à l’étirement. Ils envoient en permanence des informations au système nerveux central sur la longueur et la tension du muscle, permettant de **contrôler finement les mouvements** et de maintenir l’équilibre (posture, réflexes).\n\n---\n*La suite de l’article abordera les données scientifiques sur leur fonctionnement, les connaissances actuelles des chercheurs, ainsi que les limites et questions encore ouvertes sur ces tissus essentiels à la vie.*\n\n## Données et résultats scientifiques\n\n- Le corps humain possède environ **600 muscles squelettiques**.  \n- Sur le plan histologique, chaque muscle est constitué de cellules musculaires (rhabdomyocytes) regroupées en fascicules, entourés de tissu conjonctif (périmysium, endomysium, épimysium).  \n- La composition chimique du muscle squelettique est dominée par l’eau (**≈ 75 %**), complétée par des minéraux (sodium, potassium, calcium) et des protéines, dont la myoglobine ainsi que les deux protéines contractiles essentielles, l’actine et la myosine.  \n- Les muscles peuvent être classés selon la forme de leurs fibres (fusiformes, droits, plats, pennés, etc.) ou selon leur fonction (fléchisseurs, extenseurs, pronateurs, etc.).  \n- Les insertions musculaires sont décrites en termes d’origines (partie fixe) et d’insertion proprement dite (partie mobile).  \n\n## Ce que les scientifiques savent\n\n- **Contrôle volontaire** : les muscles squelettiques sont sous le contrôle du système nerveux central via les neurones moteurs qui libèrent le neurotransmetteur à la plaque motrice, déclenchant la contraction.  \n- **Organisation structurale** : la hiérarchie du tissu conjonctif (endomysium → périmysium → épimysium) assure la transmission de la force générée par les fibres musculaires aux tendons, puis aux os ou autres structures ancrées.  \n- **Fonctions mécaniques** : selon leur architecture fibreuse, les muscles sont adaptés à des actions spécifiques (par ex. les muscles bipennés comme les interosseux de la main sont optimisés pour la puissance, tandis que les muscles fusiformes comme le biceps brachial privilégient la vitesse).  \n- **Proprioception** : certains myocytes sont spécialisés en fuseaux neuromusculaires, fournissant au système nerveux central des informations sur la longueur et la tension du muscle.  \n- **Métabolisme** : la forte teneur en eau et en ions (Na⁺, K⁺, Ca²⁺) ainsi que la présence de myoglobine permettent le transport et le stockage d’oxygène, indispensable à la contraction répétée.  \n\n## Ce qui reste incertain\n\n- **Variabilité interindividuelle** : la distribution exacte du nombre de muscles (≈ 600) peut varier légèrement selon les critères anatomiques employés et les variations congénitales.  \n- **Rôle des muscles cutanés et viscéraux** : la fonction précise de certains muscles striés situés dans la peau ou les organes internes (muscles striés viscéraux) fait encore l’objet de recherches.  \n- **Adaptations physiologiques** : les mécanismes détaillés par lesquels l’architecture fibreuse influence la fatigue musculaire et la récupération restent partiellement élucidés.  \n\n## Limites et controverses éventuelles\n\n- **Classification fonctionnelle** : bien que les catégories (fléchisseurs, extenseurs, etc.) soient largement utilisées, certaines fonctions musculaires sont mixtes et peuvent prêter à débat quant à leur classification exclusive.  \n- **Définition des chefs musculaires** : la distinction entre « chef » et « partie » d’un muscle (ex. biceps vs triceps) repose sur des conventions anatomiques qui peuvent différer entre les écoles, sans impact majeur sur la compréhension fonctionnelle.  \n\n## Conclusion\n\nLes muscles squelettiques constituent le moteur principal du mouvement volontaire chez l’humain. Leur organisation hiérarchique – des cellules musculaires aux tendons – ainsi que leur classification selon forme et fonction offrent un cadre solide pour comprendre la mécanique du corps. Les connaissances actuelles couvrent largement la structure, la composition chimique et le contrôle neurologique, tandis que des questions subsistent concernant les variations individuelles, les fonctions spécialisées de certains muscles striés et les détails de la fatigue musculaire. Ces points d’incertitude ouvrent la voie à de futures investigations anatomiques et physiologiques.\n\n## Sources\n- Wikipédia (fr) — Muscle squelettique — https://fr.wikipedia.org/wiki/Muscle_squelettique\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
-      "phrases_retirees_garde_fou": 3,
-      "nb_mots": 1825,
-      "matiere_source": "suffisante",
+      "titre": "Des trous noirs supermassifs ne peuvent expliquer la matière noire",
+      "contenu_markdown": "Une étude publiée dans *Nature* le 29 octobre 2026 écarte une hypothèse théorique selon laquelle des trous noirs d’une masse exceptionnelle pourraient constituer la matière noire. Cette dernière désigne la substance invisible dont on déduit l’existence par ses effets gravitationnels sur les galaxies, mais que l’on n’a jamais observée directement.\n\nLes chercheurs ont examiné si des trous noirs extrêmement massifs, bien plus lourds que ceux connus aujourd’hui, pourraient générer la force invisible qui maintient les galaxies assemblées. Leur contribution à la matière noire semble donc négligeable, voire inexistante.\n\nCette conclusion renforce l’idée que la matière noire doit être composée d’une autre forme de particules ou d’énergie, encore inconnue. Les détails des simulations et des observations utilisées pour cette exclusion sont disponibles dans l’article de *Nature News*. La nature exacte de la matière noire reste l’un des grands défis ouverts de la physique moderne.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03386-4\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Photosynthèse\n\n## Introduction\nLa photosynthèse est un processus fondamental qui permet à certains organismes vivants de transformer l’énergie lumineuse du soleil en matière organique, en utilisant du dioxyde de carbone et de l’eau. Ce mécanisme, apparu il y a des milliards d’années, est à la base de la chaîne alimentaire et de la composition de l’atmosphère terrestre. Sans lui, la vie telle que nous la connaissons n’existerait pas. Mais comment fonctionne-t-il exactement ? Et pourquoi est-il si crucial pour la planète ?\n\n---\n\n## Pourquoi la photosynthèse est-elle importante ?\nLa photosynthèse joue un rôle central dans l’équilibre des écosystèmes et la survie des espèces. Elle est responsable de plusieurs phénomènes clés :\n\n- **Production d’oxygène** : La photosynthèse oxygénique, apparue il y a au moins **2,87 milliards d’années**, libère du dioxygène (O₂) dans l’atmosphère. Ce processus a permis la **Grande Oxydation** (entre **2,4 et 2 milliards d’années**), un bouleversement écologique majeur qui a transformé une atmosphère riche en dioxyde de carbone (CO₂) et en vapeur d’eau en une atmosphère oxygénée, propice au développement de formes de vie complexes.\n- **Fixation du carbone** : Les organismes photosynthétiques (plantes, algues, cyanobactéries) captent le CO₂ atmosphérique et le transforment en molécules organiques, comme le **D-glucose**, une forme de sucre essentielle à leur croissance. Ce processus est la **principale voie de conversion du carbone minéral en carbone organique** sur Terre.\n- **Source d’énergie pour la biosphère** : Environ **100 à 115 milliards de tonnes de carbone** sont assimilées chaque année sous forme de biomasse grâce à la photosynthèse. Cette énergie est ensuite transmise aux herbivores, puis aux carnivores, formant ainsi le socle de la chaîne alimentaire.\n- **Régulation du climat** : En absorbant du CO₂, les plantes contribuent à limiter l’effet de serre naturel, jouant un rôle indirect dans la stabilité du climat terrestre.\n\nSans la photosynthèse, l’atmosphère serait dépourvue d’oxygène, et la plupart des écosystèmes actuels ne pourraient pas exister.\n\n---\n\n## Explication du phénomène : de quoi s’agit-il ?\nLa photosynthèse est un **processus bioénergétique** qui se déroule en deux grandes phases chez les plantes, les algues et les cyanobactéries :\n\n1. **Réactions dépendantes de la lumière**.\n   Ces réactions, appelées **réactions photochimiques**, ont lieu dans des structures spécialisées :\n   - Chez les plantes et les algues, elles se produisent dans les **thylakoïdes**, des membranes internes des **chloroplastes** (organites présents surtout dans les feuilles).\n   - Chez les bactéries, elles se déroulent directement dans la **membrane plasmique**.\n   L’énergie lumineuse est captée par des **protéines sensibles à la lumière**, les **centres réactionnels**, qui contiennent des **pigments photosynthétiques** comme les **chlorophylles** (le pigment vert caractéristique des plantes). Ces pigments absorbent principalement la lumière bleue et rouge, tandis que le vert est réfléchi, donnant leur couleur aux feuilles.\n\n   L’énergie captée permet d’**exciter des électrons** issus d’une molécule donneuse, généralement **l’eau (H₂O)**, qui est alors **oxydée** en libérant du dioxygène (O₂). Les électrons ainsi mobilisés servent à produire deux molécules riches en énergie :\n   - Le **NADPH** (un transporteur d’électrons et de protons).\n   - L’**ATP** (l’**adénosine triphosphate**, la \"monnaie énergétique\" de la cellule).\n\n2. **Réactions indépendantes de la lumière (cycle de Calvin)**.\n   Ces réactions, qui n’ont pas besoin de lumière directe, utilisent l’ATP et le NADPH produits précédemment pour **fixer le dioxyde de carbone (CO₂)** atmosphérique. Chez les plantes, les algues et les cyanobactéries, ce processus s’appelle le **cycle de Calvin** :\n   - Le CO₂ est incorporé dans une molécule organique simple, le **ribulose-1,5-bisphosphate** (un sucre à 5 atomes de carbone).\n   - Grâce à l’énergie de l’ATP et des électrons du NADPH, cette molécule est transformée en **glucides** (comme le **D-glucose**), qui serviront de source d’énergie et de matière première pour construire d’autres composés (amidon, cellulose, etc.).\n\nChez certaines bactéries, d’autres voies métaboliques, comme le **cycle de Krebs inverse**, permettent aussi de fixer le carbone, mais le cycle de Calvin reste le plus répandu chez les organismes photosynthétiques oxygénants.\n\n---\n## Fonctionnement et mécanismes : une machine biochimique complexe\n\nLe fonctionnement de la photosynthèse repose sur une **séquence précise de réactions chimiques**, orchestrée par des structures cellulaires spécialisées. Voici les étapes clés, décrites de manière simplifiée.\n\n## Capture de la lumière\nLes **chlorophylles** et autres pigments (comme les caroténoïdes) absorbent les photons lumineux. Ces pigments sont organisés en **complexes protéiques** au sein des membranes des thylakoïdes (chez les plantes) ou de la membrane plasmique (chez les bactéries). Lorsqu’un photon est absorbé, un électron du chlorophylles passe à un niveau d’énergie supérieur, devenant un **électron excité**.\n\n## Transport des électrons et production d’ATP\nLes électrons excités sont transférés à une chaîne de transporteurs d’électrons, déclenchant une série de réactions redox (oxydoréduction) :\n- **Oxydation de l’eau** : Dans les réactions dépendantes de la lumière, l’eau (H₂O) est cassée en **oxygène (O₂)**, en **protons (H⁺)** et en **électrons**. Ces électrons remplacent ceux perdus par les chlorophylles, maintenant le cycle en marche. L’oxygène libéré est un **sous-produit** de ce processus, mais il est vital pour la respiration des êtres vivants aérobies.\n- **Pompage de protons** : Le transport des électrons à travers la chaîne génère un **gradient de protons** (H⁺) entre l’intérieur et l’extérieur des thylakoïdes. L’ATP stockera cette énergie pour les réactions ultérieures.\n\n## Formation du NADPH\nCe dernier servira de **réducteur** dans les réactions indépendantes de la lumière, fournissant les électrons nécessaires à la fixation du carbone.\n\n## Fixation du carbone : le cycle de Calvin\nVoici les grandes étapes.\n\n## Stockage et utilisation des produits\nLes glucides produits (comme le glucose) peuvent être :\n- **Stockés** sous forme d’**amidon** (dans les racines, les tubercules, etc.) ou de **sucres** (comme le saccharose, transporté dans la plante).\n- **Utilisés immédiatement** pour fournir de l’énergie via la **respiration cellulaire** ou pour synthétiser d’autres molécules essentielles (lipides, acides aminés, etc.).\n\n## Un équilibre dynamique\nLa photosynthèse ne se limite pas à ces étapes : elle est **régulée finement** en fonction des conditions environnementales (intensité lumineuse, température, disponibilité en CO₂ et en eau).\n- En cas de **manque de lumière**, les réactions photochimiques ralentissent, limitant la production d’ATP et de NADPH, et donc la fixation du carbone.\n- En cas de **stress hydrique**, les stomates (petites ouvertures des feuilles) se ferment pour économiser l’eau, réduisant l’apport en CO₂ et affectant le cycle de Calvin.\n- Les plantes adaptent aussi leur **métabolisme** selon le type de lumière disponible (par exemple, en profondeur dans l’eau, où seule la lumière bleue et verte pénètre).\n\nCe processus, apparu il y a plus de **3,8 milliards d’années**, a évolué pour devenir l’un des mécanismes les plus efficaces de conversion d’énergie sur Terre. Aujourd’hui, la photosynthèse capte en moyenne **130 térawatts** d’énergie solaire par an, soit **six fois la consommation énergétique totale\n\n## Données et résultats scientifiques\n\n- La photosynthèse oxygénique est attestée dès **2,87 milliards d’années** (Ga) et devient quantitativement importante chez les cyanobactéries vers **2,45 Ga**.  \n- L’oxygénation de l’atmosphère, dite Grande Oxydation, s’est déroulée entre **2,4 et 2 Ga**.  \n- L’atmosphère actuelle est composée d’environ **78,08 % de diazote** et **20,95 % de dioxygène**.  \n- Au niveau planétaire, les organismes photosynthétiques assimilent chaque année entre **100 et 115 milliards de tonnes de carbone** sous forme de biomasse.  \n- La puissance moyenne captée par la photosynthèse à l’échelle du globe est d’environ **130 térawatts**, soit près de six fois la consommation énergétique de l’humanité.  \n\nCes valeurs proviennent d’estimations géochimiques et biogéographiques basées sur les archives fossiles, les isotopes et les bilans énergétiques globaux.\n\n## Ce que les scientifiques savent\n\n- **Origine évolutive** : les tout premiers organismes photosynthétiques, apparus il y a **3,8 Ga**, utilisaient probablement des réducteurs tels que l’hydrogène (H₂) ou le sulfure d’hydrogène (H₂S) plutôt que l’eau.  \n- **Mécanisme de base** : la lumière est absorbée par des pigments (chlorophylles) situés dans des centres réactionnels membranaires (thylakoïdes chez les plantes, membrane plasmique chez les bactéries). Cette absorption excite des électrons provenant généralement de l’eau, générant du **NADPH** et de l’**ATP**.  \n- **Fixation du carbone** : chez les plantes, algues et cyanobactéries, le **cycle de Calvin** fixe le CO₂ sur le ribulose‑1,5‑bisphosphate, puis, grâce au NADPH et à l’ATP, produit des glucides tels que le D‑glucose. D’autres micro‑organismes utilisent des voies alternatives (par ex. le cycle de Krebs inverse).  \n- **Impact global** : la photosynthèse oxygénique maintient le taux d’oxygène atmosphérique et constitue la principale voie de transformation du carbone minéral en carbone organique, soutenant la chaîne trophique terrestre.  \n\n## Ce qui reste incertain\n\n- **Chronologie précise** des tout premiers systèmes photosynthétiques : les preuves directes de la transition d’une chimiosynthèse à base de H₂/H₂S vers une oxygénique restent limitées, et les dates exactes d’émergence des premiers pigments photosynthétiques sont encore débattues.  \n- **Quantification détaillée** de la contribution relative des différents groupes (cyanobactéries, algues, plantes terrestres) à la capture globale de 130 térawatts : les modèles actuels offrent des estimations, mais la répartition exacte dépend de paramètres climatiques et biogéographiques complexes.  \n- **Mécanismes de régulation** de l’efficacité photosynthétique à l’échelle cellulaire et organique, notamment l’interaction entre les différents types de pigments et les variations d’intensité lumineuse, restent partiellement élucidés.  \n\n## Limites et controverses éventuelles\n\n- **Variabilité des estimations** : les chiffres d’assimilation annuelle de carbone (100–115 milliards de tonnes) et de puissance captée (130 térawatts) proviennent de modèles globaux qui intègrent des incertitudes liées aux mesures de productivité primaire, aux couvertures végétales et aux conditions climatiques.  \n- **Débat sur l’origine de la Grande Oxydation** : si les cyanobactéries sont largement reconnues comme responsables de l’augmentation d’O₂, la contribution exacte d’autres micro‑organismes et les mécanismes déclencheurs (par ex. changements géochimiques) font encore l’objet de discussions.  \n- **Limites méthodologiques** : les reconstructions géologiques (datation par lanthane‑cérium, isotopes) comportent des marges d’erreur qui peuvent affecter les âges attribués aux premières preuves de photosynthèse oxygénique.  \n\n## Conclusion\n\nLa photosynthèse, processus fondamental de conversion de l’énergie lumineuse en matière organique, a façonné l’atmosphère terrestre et soutient la quasi‑totalité de la vie actuelle. Les données géologiques montrent qu’elle est apparue très tôt dans l’histoire de la Terre, avec une évolution majeure vers la production d’oxygène il y a plus de deux milliards d’années. Aujourd’hui, elle capte une puissance globale de l’ordre de 130 térawatts et transforme chaque année plus d’un centième de milliard de tonnes de carbone. Malgré ces connaissances solides, des incertitudes subsistent quant aux premiers mécanismes, à la répartition précise des contributions entre les différents groupes d’organismes et aux détails de la régulation de l’efficacité photosynthétique. La poursuite des recherches en géochimie, en biologie évolutive et en modélisation climatique continuera d’affiner notre compréhension de ce processus vital.\n\n## Sources\n- Wikipédia (fr) — Photosynthèse — https://fr.wikipedia.org/wiki/Photosynth%C3%A8se\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 8,
+      "nb_mots": 1957,
+      "matiere_source": "fine",
       "textes_sources_audit": [
         {
-          "source": "Le Monde Sciences",
-          "titre": "Diagnostic médical : quand l’intelligence artificielle imite la démarche, étape par étape, des médecins",
-          "resume": "Un nouveau système d’IA développé par Microsoft simule la démarche des médecins en interrogeant les patients, puis en proposant des examens complémentaires. Il surpasse la précision diagnostique de cliniciens chevronnés, tout en réduisant les coûts."
-        },
-        {
-          "source": "Le Monde Sciences",
-          "titre": "Des professionnels de santé décrivent les effets de la crise sociale sur la santé psychique : « un bruit de fond anxieux permanent »",
-          "resume": "Depuis le début des blocages lycéens, et encore plus depuis le 17 octobre, médecins généralistes, psychiatres et psychologues observent l’impact du climat anxiogène actuel sur certains de leurs patients, et tentent de leur proposer des clés pour se protéger."
+          "source": "Nature News",
+          "titre": "Even stupendous black holes can’t explain dark matter",
+          "resume": "Nature, Published online: 29 October 2026; doi:10.1038/d41586-026-03386-4 The theoretical objects would have left a larger imprint on cosmic radiation if they were a source of the invisible force pulling together the galaxies."
         },
         {
           "source": "Nature News",
-          "titre": "Clues about complex life come from freshly cultivated archaea",
-          "resume": "Nature, Published online: 28 October 2026; doi:10.1038/d41586-026-03294-7 Two archaeal strains that belong to a lineage closely related to the ancestor of eukaryotic cells (complex cells with membrane-bound organelles) have been brought into culture. Their simple internal organization, elaborate surface structures, microbial partnerships and protein-dependent lifestyle provide clues about how eukaryotic cells arose."
-        },
-        {
-          "source": "Nature News",
-          "titre": "Connectome simulations identify a central pattern generator for fly walking",
-          "resume": "Nature, Published online: 28 October 2026; doi:10.1038/s41586-026-11195-y Computational simulations of a neural network based on fly connectomes identify a three-neuron circuit that is organized to produce leg motor rhythms for walking."
+          "titre": "How the US mid-term elections could shake up science",
+          "resume": "Nature, Published online: 29 October 2026; doi:10.1038/d41586-026-03479-0 A Democratic victory in Congress could halt the Trump administration’s controversial grant-review plan and curb some of its funding actions."
         },
         {
           "source": "Wikipédia (fr)",
-          "titre": "Muscle squelettique",
-          "resume": "Les muscles squelettiques sont des muscles striés sous contrôle volontaire du système nerveux central. Ils constituent la partie active de l'appareil locomoteur.\nLe corps humain comprend environ 600 muscles squelettiques.\n\nStructure\nUn muscle squelettique est généralement constitué d'un ventre musculaire où se produit la contraction musculaire. C'est dans cette partie que se trouvent les cellules musculaires.\nLe ventre musculaire est relié par des tendons aux parties qu'il mobilise en général les os. Mais cela peut être la face profonde du derme, on parle alors de muscle cutané, ou encore des cartilages ou des organes dans le cas des muscles striés viscéraux.\nLe muscle peut comporter deux ventres reliés par un tendon intermédiaire pour constituer un muscle digastrique.\nLe ventre peut se diviser en plusieurs parties possédant des attaches distinctes constituant des chefs musculaires. Cette division intervient dans la terminologie :\n\nmuscle biceps : muscle possédant deux chefs musculaires,\nmuscle triceps : muscle possédant trois chefs musculaires,\nmuscle quadriceps : muscle possédant quatre chefs musculaires.\nLes muscles squelettiques peuvent être classés suivant l'organisation de leurs fibres :\n\nles muscles fusiformes en forme de fuseau avec un ventre plus large au centre comme le muscle biceps brachial ;\nles muscles droits (ou parallèles) présentent des faisceaux de fibres parallèles dans le grand axe du muscle et se terminant par des tendons plats aux deux extrémités comme le muscle droit de l'abdomen ;\nles muscles plats : minces et larges occupant une grande surface comme le muscle grand dorsal ;\nles muscles carrés qui sont des muscles plats de forme approximativement carrée comme le muscle carré des lombes ;\nles muscles triangulaires qui possèdent des faisceaux qui s’insèrent sur un ligne puis convergent vers un tendon comme le muscle deltoïde ;\nles muscles orbiculaires en forme d'anneau autour d'une ouverture comme le muscle orbiculaire de la bouche ;\nles muscles sphincters également à structure circulaire comme le muscle sphincter externe de l'anus ;\nles muscles dilatateurs qui agrandissent des ouvertures comme le muscle stylo-pharyngien ;\nles muscles pennés (ou penniformes) dont les fibres sont obliques par rapport au grand axe du muscle:\nles muscles unipennés dont les fibres se fixent obliquement sur une face latérale d'un tendon comme le muscle soléaire ;\nles muscles bipennés dont les fibres se fixent obliquement de part et d'autre d'un tendon central comme les muscles interosseux de la main ;\nles muscles multipennés dont les fibres se fixent obliquement de part et d'autre de plusieurs tendons comme le muscle semi-tendineux.\nIls peuvent également être classés en fonction de leur action :\n\nles muscles fléchisseurs provoquant la flexion d'un segment squelettique par rapport à un autre,\nles muscles extenseurs provoquant l'extension d'un segment squelettique par rapport à un autre,\nles muscles pronateurs provoquant la rotation d'un segment squelettique de dehors en dedans,\nles muscles supinateurs provoquant la rotation d'un segment squelettique de dedans en dehors,\nles muscles rotateurs provoquant la rotation d'un segment squelettique par rapport à un autre,\nles muscles sphincters à structure circulaire permettant de fermer un orifice comme le muscle sphincter externe de l'anus,\nles muscles adducteurs provoquant le rapprochement d'un segment squelettique vers un axe médian,\nles muscles abducteurs provoquant l'éloignement d'un segment squelettique un axe médian.\nPour ces deux dernières fonctions l'axe de référence est l'axe médian du corps, sauf pour les muscles des mains et des pieds où l'axe de référence est l'axe passant par les troisièmes phalanges en extension et le troisième métacarpien pour la main ou métatarsien pour le pied.\n\nInsertions musculaires\nLes insertions musculaires sont nommées en fonction de leur position :\n\nInsertion supérieure ou inférieure,\ninsertion médiale ou latérale,\ninsertion distale ou proximale.\nL'insertion qui ne bouge pas lors de la contraction musculaire (la proximale le plus souvent) est nommée origine du muscle, l'autre extrémité étant nommée insertion proprement dite.\n\nHistologie\n\nLes muscles striés squelettiques sont constitués de cellules musculaires : les rhabdomyocytes.\nCelles-ci sont regroupées en fascicules musculaires entourés par un tissu conjonctif : le périmysium. Au sein du fascicule chaque myocyte est gainé par un tissu conjonctif relié au périmysium : l'endomysium.\nL'ensemble du muscle est recouvert par un tissu conjonctif formant l'épimysium.\nAu sein des structures conjonctives les vaisseaux sanguins assurent l'apport des nutriments et les fibres nerveuses le contrôle des contractions et la sensibilité proprioceptive.\nLes structures conjonctives sont reliées entre elles et se regroupent pour former les tendons permettant l'ancrage des muscles sur les structures que ceux-ci mobilisent (os, peau, cartilages).\nLes neurones moteurs contrôlent la contraction ou le relâchement des cellules musculaires par le biais de la plaque motrice, c'est là que se fait la transmission neuromusculaire.\nCertaines cellules musculaires sont spécialisées en mécanorécepteurs au sein des fuseaux neuromusculaires permettant la proprioception.\n\nConstitution chimique\nLes muscles sont constitués principalement d'eau (75 %), d'éléments minéraux (sodium, potassium, calcium) et de protéines : la myoglobine et de deux protéines essentielles à la contraction : l'actine et la myosine."
+          "titre": "Photosynthèse",
+          "resume": "La photosynthèse (du grec φῶς phōs « lumière » et σύνθεσις sýnthesis « combinaison ») est le processus bioénergétique qui permet à des organismes de biosynthétiser de la matière organique en utilisant l'énergie lumineuse, l'eau et le dioxyde de carbone.\nLes molécules carbonées fabriquées par photosynthèse sont appelées photosynthétats ou assimilats.\nLa photosynthèse comprend en particulier la photosynthèse oxygénique, apparue il y a au moins 2,87 milliards d'années (Ga) et devenue importante quantitativement chez les cyanobactéries vers 2,45 Ga. Les cyanobactéries sont à l'origine de la Grande Oxydation (2,4–2 Ga), un bouleversement écologique majeur faisant évoluer l'atmosphère terrestre, d'abord riche en vapeur d'eau et en dioxyde de carbone (CO2), en l'atmosphère actuelle, composée essentiellement de diazote (78,08 %) et de dioxygène (20,95 %). Cette aptitude a été ensuite transmise aux eucaryotes photosynthétiques (algues, plantes, etc.) par endosymbioses successives. Des glucides, par exemple des oses tels que le D-glucose, sont synthétisés à partir du dioxyde de carbone CO2 et de l'eau H2O avec libération d'oxygène O2 comme sous-produit de l'oxydation de l'eau. C'est la photosynthèse oxygénique qui maintient constant le taux d'oxygène dans l'atmosphère terrestre et fournit toute la matière organique ainsi que l'essentiel de l'énergie utilisées par la vie sur Terre.\nTous les organismes photosynthétiques ne réalisent pas la photosynthèse de la même façon, mais ce processus commence toujours par l'absorption de l'énergie lumineuse par des protéines appelées centres réactionnels qui contiennent des pigments photosynthétiques appelés chlorophylles. Chez les plantes, ces protéines se trouvent dans la membrane des thylakoïdes, des structures incluses dans les chloroplastes, présents essentiellement dans les feuilles, tandis que chez les bactéries elles sont incluses dans la membrane plasmique. Au cours de ces réactions dépendantes de la lumière, une partie de l'énergie lumineuse sert à exciter des électrons d'une substance donneuse, le plus souvent de l'eau, électrons qui servent à leur tour à produire du dinucléotide nicotinamide-adénine phosphate réduit (NADPH) ainsi que de l'adénosine triphosphate (ATP).\nChez les plantes, les algues et les cyanobactéries, les glucides sont produits par une série de réactions indépendantes de la lumière appelées cycle de Calvin, mais certaines bactéries utilisent d'autres voies métaboliques pour réaliser la fixation du carbone, comme le cycle de Krebs inverse. Dans le cycle de Calvin, le dioxyde de carbone atmosphérique est fixé sur des composés organiques tels que le ribulose-1,5-bisphosphate. Les composés formés sont ensuite réduits et convertis par exemple en D-glucose à l'aide du NADPH et de l'ATP formés à la suite des réactions dépendantes de la lumière. La photosynthèse est ainsi la principale voie de transformation du carbone minéral en carbone organique. En tout, les organismes photosynthétiques assimilent chaque année entre 100 et 115 milliards de tonnes de carbone en biomasse.\n\nHistoire\nLes premiers organismes photosynthétiques sont probablement apparus très tôt au cours de l'évolution, il y a 3,8 milliards d'années. Ils devaient sans doute utiliser des réducteurs tels que l'hydrogène H2 et le sulfure d'hydrogène H2S au lieu de l'eau.\nLa production d'oxygène par des bactéries marines est démontrée dans trois plateformes carbonatées d'âge archéen des ceintures de roches vertes du nord-ouest du craton du Supérieur (Canada), datées à 2,87, 2,85 et 2,78 Ga par la méthode lanthane-cérium. Les cyanobactéries sont apparues plus tard, et l'excès d'oxygène alors libéré dans l'environnement aurait contribué à la « Grande Oxydation » il y a environ 2,4 milliards d'années, rendant possible l'évolution des êtres vivants vers des formes de vie plus complexes. Aujourd'hui, la puissance moyenne captée par la photosynthèse à l'échelle du globe avoisine 130 térawatts, ce qui équivaut à environ six fois la consommation énergétique de l'humanité.\n\nVue générale"
         }
       ],
-      "nb_mots_decouverte": 382,
-      "nb_mots_approfondi": 1434,
-      "sujet_id": "muscles",
+      "nb_mots_decouverte": 177,
+      "nb_mots_approfondi": 1773,
+      "sujet_id": "photosynthese",
       "origine": "encyclopedie"
     },
     "citation": {
-      "texte": "Patience et longueur de temps font plus que force ni que rage.",
-      "auteur": "Jean de La Fontaine",
-      "source": "Fables, « Le Lion et le Rat »",
-      "annee": 1668
+      "texte": "Hâtez-vous lentement, et sans perdre courage, vingt fois sur le métier remettez votre ouvrage.",
+      "auteur": "Nicolas Boileau",
+      "source": "L'Art poétique, chant I",
+      "annee": 1674
     },
     "meteo": {
       "villes_detail": [
         {
           "ville": "Antibes",
-          "temperature_actuelle": 14.2,
-          "temperature_max": 21.1,
-          "temperature_min": 14.1,
+          "temperature_actuelle": 15.4,
+          "temperature_max": 20.1,
+          "temperature_min": 14.6,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 3.2,
-          "vent_max_kmh": 8.7,
-          "rafales_max_kmh": 16.4,
-          "weather_code": 3,
-          "description": "couvert",
+          "vent_kmh": 5.9,
+          "vent_max_kmh": 12.2,
+          "rafales_max_kmh": 25.6,
+          "weather_code": 0,
+          "description": "ciel dégagé",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 14.2,
-              "temperature_max": 20.5,
+              "temperature_min": 15.4,
+              "temperature_max": 19.9,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 8,
+              "vent_max_kmh": 10,
               "weather_code": 0,
               "description": "ciel dégagé"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 19.9,
-              "temperature_max": 21.1,
+              "temperature_min": 19.3,
+              "temperature_max": 20.1,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 6,
-              "weather_code": 3,
-              "description": "couvert"
+              "vent_max_kmh": 12,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             },
             {
               "label": "Soir",
-              "temperature_min": 16.0,
-              "temperature_max": 19.4,
+              "temperature_min": 15.1,
+              "temperature_max": 19.0,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 8,
-              "weather_code": 3,
-              "description": "couvert"
+              "vent_max_kmh": 10,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Cannes",
-          "temperature_actuelle": 15.3,
-          "temperature_max": 21.1,
-          "temperature_min": 15.3,
+          "temperature_actuelle": 17.2,
+          "temperature_max": 19.8,
+          "temperature_min": 15.9,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 5.4,
-          "vent_max_kmh": 9.0,
-          "rafales_max_kmh": 18.4,
+          "vent_kmh": 6.6,
+          "vent_max_kmh": 12.5,
+          "rafales_max_kmh": 24.1,
           "weather_code": 0,
           "description": "ciel dégagé",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 15.3,
-              "temperature_max": 20.6,
+              "temperature_min": 17.2,
+              "temperature_max": 19.6,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 7,
+              "vent_max_kmh": 9,
               "weather_code": 0,
               "description": "ciel dégagé"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 19.7,
-              "temperature_max": 21.1,
+              "temperature_min": 18.9,
+              "temperature_max": 19.8,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 8,
-              "weather_code": 3,
-              "description": "couvert"
+              "vent_max_kmh": 12,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             },
             {
               "label": "Soir",
-              "temperature_min": 17.2,
-              "temperature_max": 19.1,
+              "temperature_min": 16.3,
+              "temperature_max": 18.5,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 7,
-              "weather_code": 3,
-              "description": "couvert"
+              "vent_max_kmh": 10,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Valbonne",
-          "temperature_actuelle": 12.6,
-          "temperature_max": 20.5,
-          "temperature_min": 12.3,
+          "temperature_actuelle": 12.9,
+          "temperature_max": 18.9,
+          "temperature_min": 12.4,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 5.8,
-          "vent_max_kmh": 8.4,
-          "rafales_max_kmh": 16.2,
-          "weather_code": 0,
-          "description": "ciel dégagé",
+          "vent_kmh": 8.0,
+          "vent_max_kmh": 8.7,
+          "rafales_max_kmh": 14.8,
+          "weather_code": 3,
+          "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 12.3,
-              "temperature_max": 18.6,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 6,
-              "weather_code": 1,
-              "description": "plutôt dégagé"
-            },
-            {
-              "label": "Après-midi",
-              "temperature_min": 17.8,
-              "temperature_max": 20.4,
+              "temperature_min": 12.9,
+              "temperature_max": 17.7,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 8,
-              "weather_code": 0,
-              "description": "ciel dégagé"
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 16.8,
+              "temperature_max": 18.9,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             },
             {
               "label": "Soir",
-              "temperature_min": 13.3,
-              "temperature_max": 16.0,
+              "temperature_min": 13.5,
+              "temperature_max": 15.4,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 7,
@@ -403,44 +413,44 @@
         },
         {
           "ville": "Grasse",
-          "temperature_actuelle": 11.9,
-          "temperature_max": 19.6,
-          "temperature_min": 11.6,
+          "temperature_actuelle": 12.7,
+          "temperature_max": 17.7,
+          "temperature_min": 11.8,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 7.1,
-          "vent_max_kmh": 9.6,
-          "rafales_max_kmh": 16.9,
-          "weather_code": 0,
-          "description": "ciel dégagé",
+          "vent_kmh": 8.4,
+          "vent_max_kmh": 9.0,
+          "rafales_max_kmh": 16.2,
+          "weather_code": 2,
+          "description": "partiellement nuageux",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 11.7,
-              "temperature_max": 17.6,
+              "temperature_min": 12.7,
+              "temperature_max": 17.0,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 8,
-              "weather_code": 0,
-              "description": "ciel dégagé"
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 16.9,
-              "temperature_max": 19.5,
-              "probabilite_pluie_pct": 0,
+              "temperature_min": 15.8,
+              "temperature_max": 17.7,
+              "probabilite_pluie_pct": 2,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 9,
-              "weather_code": 0,
-              "description": "ciel dégagé"
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             },
             {
               "label": "Soir",
-              "temperature_min": 12.6,
-              "temperature_max": 15.3,
+              "temperature_min": 13.0,
+              "temperature_max": 14.7,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 10,
+              "vent_max_kmh": 8,
               "weather_code": 2,
               "description": "partiellement nuageux"
             }
@@ -448,97 +458,105 @@
           "alertes": []
         }
       ],
-      "temperature_max_zone": 21.1,
-      "temperature_min_zone": 11.6,
+      "temperature_max_zone": 20.1,
+      "temperature_min_zone": 11.8,
       "probabilite_pluie_max_pct": 0,
-      "vent_max_kmh": 9.6,
+      "vent_max_kmh": 12.5,
       "description_dominante": "ciel dégagé",
       "periodes": [
         {
           "label": "Matin",
-          "temperature_min": 11.7,
-          "temperature_max": 20.6,
+          "temperature_min": 12.7,
+          "temperature_max": 19.9,
           "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
-          "vent_max_kmh": 8,
+          "vent_max_kmh": 10,
           "weather_code": 0,
           "description": "ciel dégagé"
         },
         {
           "label": "Après-midi",
-          "temperature_min": 16.9,
-          "temperature_max": 21.1,
-          "probabilite_pluie_pct": 0,
+          "temperature_min": 15.8,
+          "temperature_max": 20.1,
+          "probabilite_pluie_pct": 2,
           "precipitation_mm": 0.0,
-          "vent_max_kmh": 9,
-          "weather_code": 3,
-          "description": "couvert"
+          "vent_max_kmh": 12,
+          "weather_code": 0,
+          "description": "ciel dégagé"
         },
         {
           "label": "Soir",
-          "temperature_min": 12.6,
-          "temperature_max": 19.4,
+          "temperature_min": 13.0,
+          "temperature_max": 19.0,
           "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
           "vent_max_kmh": 10,
-          "weather_code": 3,
-          "description": "couvert"
+          "weather_code": 0,
+          "description": "ciel dégagé"
         }
       ],
       "alertes": [],
-      "resume": "Ciel dégagé le matin, couvert l'après-midi, couvert le soir, de 12° à 21°."
+      "resume": "Ciel dégagé toute la journée, de 12° à 20°."
     },
     "anglais": {
       "mode": "litterature",
-      "oeuvre": "Pride and Prejudice",
-      "auteur": "Jane Austen",
-      "annee": 1813,
+      "oeuvre": "Moby-Dick",
+      "auteur": "Herman Melville",
+      "annee": 1851,
       "segments": [
         {
-          "t": "It is a truth universally acknowledged",
-          "g": "reconnue de tous"
+          "t": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse",
+          "g": "la bourse, le porte-monnaie"
         },
         {
-          "t": ", that a single man in possession of a good fortune, must be in want of",
-          "g": "qui a besoin de"
+          "t": ", and nothing particular to interest me on shore",
+          "g": "à terre"
         },
         {
-          "t": " a wife. However little known",
-          "g": "Si peu connus soient"
+          "t": ", I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen",
+          "g": "la mauvaise humeur, le spleen"
         },
         {
-          "t": " the feelings or views of such a man may be on his first entering a neighbourhood",
-          "g": "le voisinage"
+          "t": " and regulating the circulation. Whenever I find myself growing grim",
+          "g": "sombre, renfrogné"
         },
         {
-          "t": ", this truth is so well fixed",
-          "g": "solidement ancrée"
+          "t": " about the mouth; whenever it is a damp, drizzly",
+          "g": "bruineux"
         },
         {
-          "t": " in the minds of the surrounding families, that he is considered the rightful property",
-          "g": "propriété légitime"
+          "t": " November in my soul; whenever I find myself involuntarily pausing before coffin warehouses",
+          "g": "entrepôts de cercueils"
         },
         {
-          "t": " of some one or other of their daughters. \"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last",
-          "g": "enfin louée"
+          "t": ", and bringing up the rear",
+          "g": "fermer la marche"
         },
         {
-          "t": "?\" Mr. Bennet replied that he had not. \"But it is,\" returned she",
-          "g": "répliqua-t-elle"
+          "t": " of every funeral I meet; and especially whenever my hypos",
+          "g": "idées noires"
         },
         {
-          "t": "; \"for Mrs. Long has just been here, and she told me all about it.\" Mr. Bennet made no answer",
-          "g": "ne répondit rien"
+          "t": " get such an upper hand",
+          "g": "le dessus"
         },
         {
-          "t": ".",
+          "t": " of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off",
+          "g": "faire voler le chapeau des passants"
+        },
+        {
+          "t": "—then, I account it high time",
+          "g": "juge qu'il est grand temps"
+        },
+        {
+          "t": " to get to sea as soon as I can.",
           "g": null
         }
       ],
-      "texte_glose": "It is a truth universally acknowledged (= reconnue de tous), that a single man in possession of a good fortune, must be in want of (= qui a besoin de) a wife. However little known (= Si peu connus soient) the feelings or views of such a man may be on his first entering a neighbourhood (= le voisinage), this truth is so well fixed (= solidement ancrée) in the minds of the surrounding families, that he is considered the rightful property (= propriété légitime) of some one or other of their daughters. \"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last (= enfin louée)?\" Mr. Bennet replied that he had not. \"But it is,\" returned she (= répliqua-t-elle); \"for Mrs. Long has just been here, and she told me all about it.\" Mr. Bennet made no answer (= ne répondit rien)."
+      "texte_glose": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse (= la bourse, le porte-monnaie), and nothing particular to interest me on shore (= à terre), I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen (= la mauvaise humeur, le spleen) and regulating the circulation. Whenever I find myself growing grim (= sombre, renfrogné) about the mouth; whenever it is a damp, drizzly (= bruineux) November in my soul; whenever I find myself involuntarily pausing before coffin warehouses (= entrepôts de cercueils), and bringing up the rear (= fermer la marche) of every funeral I meet; and especially whenever my hypos (= idées noires) get such an upper hand (= le dessus) of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off (= faire voler le chapeau des passants)—then, I account it high time (= juge qu'il est grand temps) to get to sea as soon as I can."
     },
     "meta": {
-      "resume_1_phrase": "À la une : Le candidat LR à la présidentielle Bruno Retailleau juge \"fantaisiste et ridicule\" l'organisation d'une \"grande primaire des démocrates\" proposée par son adversaire Gabriel Attal."
+      "resume_1_phrase": "À la une : Attentat raciste dans les Yvelines : le suspect, Kévin Tessier, a été mis en examen et placé en détention provisoire."
     },
     "_genere_par_llm": true,
     "_provider": "groq+mistral+nvidia",
@@ -576,9 +594,9 @@
       },
       "sport": {
         "genere_par_llm": true,
-        "provider": "nvidia",
+        "provider": "groq",
         "erreur": null,
-        "essais_echoues": 0
+        "essais_echoues": 1
       },
       "science_d": {
         "genere_par_llm": true,
@@ -603,5 +621,5 @@
       "erreur": null
     }
   },
-  "debut_run": "2026-10-29T06:10:42.525137+01:00"
+  "debut_run": "2026-10-30T06:10:43.565004+01:00"
 }
