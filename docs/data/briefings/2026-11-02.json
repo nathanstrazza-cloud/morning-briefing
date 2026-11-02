@@ -1,0 +1,589 @@
+{
+  "date": "2026-11-02",
+  "derniere_mise_a_jour": "2026-11-02T06:15:24.061389+01:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Edouard Philippe refuse une nouvelle fois de participer à une primaire de la droite et du centre, source de \"division\" et de \"confusion\"",
+          "resume": "Le maire du Havre a estimé, dimanche, au journal de 20 heures de TF1, que la primaire envisagée à droite et au centre en vue de la présidentielle de 2027 « n’aura[it] pas lieu » et « n’a pas beaucoup de sens ».",
+          "pourquoi_important": "Cette position remet en question l’organisation d’une primaire à droite et au centre pour l’élection de 2027.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France Info",
+            "Libération",
+            "France 24 International",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Jean-Pierre Chevènement apporte son soutien à Natacha Polony pour l'élection présidentielle",
+          "resume": "L'ancienne journaliste avait été membre de l'équipe de campagne de l'ancien ministre souverainiste quand il avait candidat à l'Elysée en 2002.",
+          "pourquoi_important": "Ce soutien peut influencer la visibilité de Natacha Polony dans la course présidentielle.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Deux hommes mis en examen et écroués après l'incendie d'un immeuble à Clermont-Ferrand ayant tué quatre personnes",
+          "resume": "Même si les circonstances exactes restent à déterminer, \"les premières constatations des enquêteurs laissent entrevoir une origine criminelle possible de l'incendie\", avait précisé le parquet dès vendredi.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Le Wegovy, médicament antiobésité, arrive en comprimé dans les pharmacies françaises",
+          "resume": "Le traitement développé par Novo Nordisk, jusqu’ici administré par injection en France, est désormais disponible sous forme orale, alors que le fabricant danois et son concurrent américain, Eli Lilly, rivalisent pour s’imposer sur un marché mondial en forte croissance.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Manifestations du 31 octobre : 779 personnes ont été interpellées dans toute la France selon un bilan définitif du ministère de l'Intérieur",
+          "resume": "Après un nouveau samedi de mobilisation avec une participation en légère baisse, de nouveaux rendez-vous sont prévus la semaine prochaine avec en point culminant la grève nationale annoncée le 5 novembre.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Présidentielle en Bulgarie : Iliana Iotova, partisane du dialogue avec Moscou, remporte l’élection",
+          "resume": "Iliana Iotova, ancienne journaliste et figure du Parti socialiste, est élue présidente de la Bulgarie avec 6,4 millions d’habitants.",
+          "pourquoi_important": "Première femme élue à ce poste, son élection intervient dans un contexte marqué par les tensions régionales et les défis économiques bulgares.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Libération",
+            "20 Minutes",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Midterms 2026 : les reniements de Donald Trump l’exposent à un vote sanction de la part des électeurs américains",
+          "resume": "Les électeurs américains pourraient sanctionner Donald Trump en raison de ses promesses non tenues sur l’inflation et l’engagement militaire extérieur, dans un contexte marqué par la guerre en Iran et la hausse du coût de la vie.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "En Israël, les soupçons d'irrégularités lors des législatives ne remettront pas en cause les résultats, assure le président de la commission électorale",
+          "resume": "Deux listes arabes sont accusées d’avoir reçu des fonds du Qatar pour acheter des voix, mais ces soupçons n’affecteront pas les résultats des législatives.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "En Ukraine, les habitants d’Olechky évacués : « Nous ne savons pas où aller, mais une chose est sûre : nous survivrons »",
+          "resume": "Environ 700 personnes ont été évacuées d’Olechky, une zone abandonnée en première ligne du conflit, grâce à un cessez-le-feu de six jours.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : Kiev et Moscou visés par des cyberattaques peu après la fin de la trêve à Olechky ; au moins trois personnes tuées dans des frappes russes dimanche",
+          "resume": "Selon des informations rapportées, l’Ukraine et la Russie ont subi des cyberattaques ciblant leurs systèmes d’alerte à la population, après la fin de la trêve humanitaire à Olechky.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Le crash d’un petit avion privé en Floride fait neuf morts, selon le ministre des transports américain",
+          "resume": "Le régulateur aérien américain a annoncé qu’il mènerait une enquête avec l’agence fédérale américaine de sécurité des transports pour faire la lumière sur cet accident mortel.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France Info",
+            "20 Minutes",
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon Le Monde International, Midterms 2026 : dans le Michigan, l’incroyable ralliement de l’opposante démocrate d’Abdul El-Sayed au candidat républicain",
+          "resume": "Haley Stevens a annoncé, dimanche, son soutien au républicain Mike Rogers dans la course au Sénat dans l’Etat du nord-est des Etats-Unis, rompant avec le candidat de son parti. Cette décision est l’aboutissement de plusieurs mois de tensions et pourrait entamer les chances démocrates de conquérir le Sénat.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon 20 Minutes, Guerre au Moyen-Orient : Se disant jusqu’à présent « gentil », Trump veut « donner un coup de massue » à l’Iran",
+          "resume": "Le Premier ministre israélien Netanyahou pousserait Trump à reprendre les frappes contre l’Iran dès la fin des midterms mardi aux États-Unis",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
+      "mouvements_notables": [
+        {
+          "nom": "S&P 500",
+          "variation_pct": -1.82,
+          "explication": null
+        },
+        {
+          "nom": "Nasdaq",
+          "variation_pct": -2.86,
+          "explication": null
+        },
+        {
+          "nom": "Euro Stoxx 50",
+          "variation_pct": -1.22,
+          "explication": null
+        },
+        {
+          "nom": "Pétrole (Brent)",
+          "variation_pct": -6.5,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "rugby",
+          "texte": "Les champions du monde, l'Australie, ont battu le Pays de Galles 124-6 lors de la Coupe du monde de rugby à XIII, marquant 21 essais, le plus grand score de l'histoire internationale."
+        },
+        {
+          "sport": "formule 1",
+          "texte": "Kimi Antonelli, 20 ans, est devenu le plus jeune champion du monde de l'histoire de la Formule 1 après avoir terminé troisième au Grand Prix du Mexique, tandis que Max Verstappen a remporté le Grand Prix."
+        },
+        {
+          "sport": "basketball",
+          "texte": "La Française Gabby Williams a marqué 30 points et a été MVP de la finale, menant les Golden State Valkyries à un premier titre WNBA après une victoire 68-63 contre l'Atlanta Dream."
+        },
+        {
+          "sport": "football",
+          "texte": "L'OM a remporté 2-0 contre Toulouse, marquant sa quatrième victoire consécutive en Ligue 1, et se trouve désormais sixième du classement. Les Lyonnais ont battu Angers 2-0 et partagent la troisième place avec le Paris FC, vainqueur de Monaco 3-1."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "Atlético Madrid – Bayern Munich",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-11-03T20:00:00+00:00",
+          "date_texte": "mardi 3 novembre à 21h00",
+          "sport": "football"
+        },
+        {
+          "affiche": "Los Angeles Lakers – Miami Heat",
+          "competition": "NBA",
+          "date_iso": "2026-11-03T03:00:00+00:00",
+          "date_texte": "mardi 3 novembre à 4h00",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "approfondi",
+      "titre": "La vaccination : principe, histoire et mécanismes immunitaires",
+      "contenu_markdown": "## Introduction\nLa vaccination est l’une des avancées médicales les plus importantes de l’histoire humaine. Elle repose sur un principe simple mais ingénieux : introduire dans l’organisme une version affaiblie ou modifiée d’un agent pathogène (virus, bactérie) pour déclencher une réponse immunitaire sans provoquer la maladie. Cette réponse permet au système de défense de \"mémoriser\" l’ennemi et de réagir plus efficacement en cas de véritable infection. Depuis les premières pratiques empiriques jusqu’aux vaccins modernes, cette méthode a sauvé des millions de vies en éradiquant ou en contrôlant des maladies autrefois dévastatrices.\n\n## Pourquoi la vaccination est-elle importante ?\nLes bénéfices de la vaccination sont à la fois individuels et collectifs. **Sur le plan individuel**, elle protège les personnes vaccinées en leur évitant des maladies potentiellement graves, comme la poliomyélite, la rougeole ou le tétanos. **Sur le plan collectif**, elle réduit la circulation des agents infectieux dans une population, un phénomène appelé *immunité de groupe*. Lorsque suffisamment de personnes sont immunisées, les pathogènes peinent à se propager, protégeant même ceux qui ne peuvent pas être vaccinés (nourrissons, personnes immunodéprimées).\n\nEn 2003 seule, elle aurait évité **plus de deux millions de décès** dus à des maladies comme la diphtérie, la coqueluche ou la tuberculose. Sans ces outils, des épidémies récurrentes continueraient de frapper les populations, avec des conséquences sanitaires et économiques catastrophiques.\n\n## Explication du phénomène : comment fonctionne un vaccin ?\nUn vaccin contient un **antigène**, c’est-à-dire une substance reconnue par le système immunitaire comme étrangère. Cet antigène peut prendre plusieurs formes :\n- Un **microbe atténué** (dont la capacité à provoquer la maladie est réduite, mais pas supprimée) ;\n- Un **microbe inactivé** (tué, mais conservant ses propriétés antigéniques) ;\n- Une **partie du microbe** (protéines, sucres ou fragments génétiques) ;\n- Ou encore un **antigène synthétique** reproduit en laboratoire.\n\nL’objectif est toujours le même : **stimuler les lymphocytes B et T**, deux types de cellules immunitaires clés. Les lymphocytes B produisent des **anticorps**, des molécules capables de neutraliser le microbe. Les lymphocytes T, quant à eux, coordonnent la réponse immunitaire et détruisent les cellules infectées. Lors de la **première exposition à l’antigène** (via le vaccin), le système immunitaire lance une réponse rapide mais modérée. En parallèle, il \"stocke\" des cellules mémoires, spécialisées dans la reconnaissance de cet antigène précis.\n\n## Fonctionnement et mécanismes : de l’injection à l’immunité\nLe processus se déroule en plusieurs étapes, une fois le vaccin administré (par injection ou voie orale) :\n\n1. **Présentation de l’antigène**.\n   Les cellules du système immunitaire (comme les macrophages ou les cellules dendritiques) capturent l’antigène du vaccin et le présentent aux lymphocytes T auxiliaires. Ces derniers activent alors les lymphocytes B et T cytotoxiques.\n\n2. **Production d’anticorps**.\n   Les lymphocytes B se différencient en **plasmocytes**, qui sécrètent des anticorps spécifiques contre l’antigène. Ces anticorps circulent dans le sang et les muqueuses, prêts à neutraliser le microbe en cas d’infection réelle.\n\n3. **Mémoire immunitaire**.\n   Une partie des lymphocytes B et T devient des **cellules mémoires**, capables de survivre des années, voire toute la vie. Leur rôle est crucial : si le même antigène réapparaît (via une infection naturelle), ces cellules mémoires déclenchent une réponse **plus rapide, plus intense et plus efficace**, limitant la maladie ou l’empêchant totalement.\n\n   L’immunité conférée par un vaccin varie selon les maladies. Certaines (comme la rougeole) offrent une protection à vie après une seule dose, tandis que d’autres (comme la grippe) nécessitent des rappels réguliers en raison des mutations du virus.\n\nLes mécanismes sous-jacents reposent sur l’**immunité adaptative**, un système sophistiqué qui distingue les menaces connues des éléments normaux de l’organisme.\n\n## Données et résultats scientifiques\n\nL’Organisation mondiale de la santé (OMS) considère la vaccination comme l’une des interventions sanitaires les plus efficaces et les plus économiques. Parmi les succès les plus marquants :  \n\n- l’éradication de la variole ;  \n- une réduction de 99 % de l’incidence mondiale de la poliomyélite ;  \n- une forte diminution de la morbidité, des incapacités et de la mortalité liées à la diphtérie, au tétanos, à la coqueluche, à la tuberculose et à la rougeole.  \n\nPour l’année 2003, les autorités sanitaires estiment que la vaccination a évité plus de deux millions de décès dans le monde.  \n\nCes chiffres sont issus des évaluations globales de l’OMS et reflètent l’impact cumulatif des programmes de vaccination sur plusieurs décennies. Les données chiffrées détaillées par maladie, région ou période sont disponibles dans les rapports de l’OMS et les publications scientifiques référencées.\n\n## Ce que les scientifiques savent\n\n- **Principe immunologique** : l’administration d’un agent antigénique atténué ou inactivé déclenche une réponse immunitaire primaire, suivie d’une mise en mémoire de l’antigène. Lors d’une exposition ultérieure au pathogène naturel, le système immunitaire réagit plus rapidement et plus fortement, conférant une protection adaptée.  \n- **Modes d’administration** : la vaccination s’effectue chez un individu sain, généralement par injection sous‑cutanée ou intramusculaire, ou par voie orale, selon les exigences du vaccin. Chaque acte de vaccination est habituellement consigné, par exemple dans un carnet de vaccination.  \n- **Historique des découvertes** : le concept moderne de vaccination repose sur les travaux d’Edward Jenner (inoculation de la « vaccine », variole des vaches, en 1796) et de Louis Pasteur (développement de vaccins atténués à la fin du XIXᵉ siècle). Ces pionniers ont montré que l’exposition contrôlée à un agent pathogène affaibli pouvait prévenir la maladie.  \n- **Efficacité démontrée** : les programmes de vaccination ont permis l’éradication de la variole et la quasi‑éradication de la poliomyélite, ainsi que des baisses spectaculaires de la mortalité pour de nombreuses maladies infectieuses, comme indiqué ci‑dessus.  \n\n## Ce qui reste incertain\n\n- **Durée de l’immunité** : si la plupart des vaccins confèrent une protection durable, la persistance exacte de la mémoire immunitaire varie selon le vaccin et la population. Certaines vaccinations nécessitent des rappels, mais les durées précises de protection restent l’objet d’études continues.  \n- **Réponses individuelles** : les facteurs génétiques, l’âge, l’état nutritionnel ou la présence de comorbidités peuvent influencer la réponse immunitaire à un vaccin. Les mécanismes détaillés de ces variations sont encore en cours d’investigation.  \n\n## Limites et controverses éventuelles\n\n- Les études épidémiologiques et les systèmes de pharmacovigilance sont les références pour caractériser ces risques, mais les informations détaillées ne sont pas présentes dans le texte de référence.  \n- **Débats sociétaux** : les controverses liées à la confiance du public, aux politiques de vaccination obligatoire ou aux mouvements anti‑vaccins ne sont pas abordées dans les sources encyclopédiques utilisées. Leur existence est reconnue dans la littérature, mais elles dépassent le cadre des faits scientifiques présentés ici.  \n- **Accès et couverture** : bien que l’efficacité des vaccins soit démontrée, les inégalités d’accès dans certaines régions du monde limitent la portée des programmes de vaccination. Les stratégies pour améliorer la couverture vaccinale restent un sujet de recherche et de politique publique.  \n\n## Conclusion\n\nLes résultats historiques, notamment l’éradication de la variole et la quasi‑éradication de la poliomyélite, attestent de l’efficacité et de l’impact sanitaire majeur des programmes vaccins.  \n\nLes limites liées aux données sur les effets indésirables rares, aux débats sociétaux et aux disparités d’accès soulignent la nécessité de recherches continues et d’efforts de santé publique pour optimiser la sécurité, l’acceptabilité et la diffusion des vaccins à l’échelle mondiale.\n\n## Sources\n- Wikipédia (fr) — Vaccination — https://fr.wikipedia.org/wiki/Vaccination\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 7,
+      "nb_mots": 1227,
+      "sujet_id": "vaccination",
+      "origine": "encyclopedie",
+      "matiere_source": "suffisante",
+      "textes_sources_audit": [
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Vaccination",
+          "resume": "La vaccination est l'administration d'un agent antigénique, le vaccin, dans le but de stimuler le système immunitaire d'un organisme vivant afin d'y développer une immunité adaptative contre un agent infectieux. La substance active d'un vaccin est un antigène dont la pathogénicité du porteur est atténuée afin de stimuler les défenses naturelles de l'organisme (son système immunitaire). La réaction immunitaire primaire permet en parallèle une mise en mémoire de l'antigène présenté pour qu'à l'avenir, lors d'une vraie contamination, l'immunité acquise puisse s'activer de façon plus rapide et plus forte.\nLa vaccination s'effectue sur un individu sain soit par injection sous-cutanée ou intramusculaire soit par voie orale, selon des pratiques le plus souvent réglementées. En général, chaque acte de vaccination est documenté (par exemple dans un carnet de vaccination).\nL'Organisation mondiale de la santé estime que la vaccination est l'une des interventions sanitaires les plus efficaces et les plus économiques. Elle a permis d'éradiquer la variole, de réduire de 99 % à ce jour l'incidence mondiale de la poliomyélite et de faire baisser de façon spectaculaire la morbidité, les incapacités et la mortalité dues à la diphtérie, au tétanos, à la coqueluche, à la tuberculose et à la rougeole. Pour la seule année 2003, les autorités sanitaires estiment que la vaccination a évité plus de deux millions de décès.\n\nHistoire\n\nDes méthodes empiriques de variolisation sont apparues très tôt dans l'histoire de l'humanité, grâce à l'observation du fait qu'une personne qui survit à la maladie est épargnée lors des épidémies suivantes. L'idée de prévenir le mal par le mal se concrétise dans des pratiques populaires sur les continents asiatique et africain. La pratique de l'inoculation était en tout cas connue en Afrique depuis plusieurs siècles et c'est de son esclave Onesimus que l'apprit le pasteur américain Cotton Mather. La première mention indiscutable de la variolisation apparaît en Chine au XVIe siècle. Il s'agissait d'inoculer une forme qu'on espérait peu virulente de la variole en mettant en contact la personne à immuniser avec le contenu de la substance qui suppure des vésicules d'un malade (le pus). Le risque n'était cependant pas négligeable : le taux de mortalité pouvait atteindre 1 ou 2 %. La pratique s'est progressivement diffusée le long de la route de la soie. Elle a été importée depuis Constantinople en Occident au début du XVIIIe siècle grâce à lady Mary Wortley Montagu. Voltaire lui consacre en 1734 sa XIe lettre philosophique, « Sur la petite vérole », où il la nomme inoculation, lui attribuant une origine circassienne et précisant qu'elle se pratique aussi en Angleterre : \n« Un évêque de Worcester a depuis peu prêché à Londres l'inoculation ; il a démontré en citoyen combien cette pratique avait conservé de sujets à l'État ; il l'a recommandée en pasteur charitable. On prêcherait à Paris contre cette invention salutaire comme on a écrit vingt ans contre les expériences de Newton ; tout prouve que les Anglais sont plus philosophes et plus hardis que nous. Il faut bien du temps pour qu'une certaine raison et un certain courage d'esprit franchissent le pas de Calais. »\n\n En 1760, Daniel Bernoulli démontra que, malgré les risques, la généralisation de cette pratique permettrait de gagner un peu plus de trois ans d'espérance de vie à la naissance. La pratique de l'inoculation de la variole a suscité de nombreux débats en France et ailleurs.\nPour la première fois, des années 1770 jusqu'en 1791, au moins six personnes ont testé, chacune de façon indépendante, la possibilité d'immuniser les humains de la variole en leur inoculant la variole des vaches, qui était présente sur les pis de la vache. Parmi les personnes qui ont fait les premiers essais figurent en 1774 un fermier anglais nommé Benjamin Jesty et, en 1791, un maître d'école allemand nommé Peter Plett. En 1796, le médecin anglais Edward Jenner fit la même découverte et se battit afin que l'on reconnaisse officiellement le bon résultat de l'immunisation. Le 14 mai 1796, il inocula au jeune James Phipps, âgé de 8 ans, du pus prélevé sur la main de Sarah Nelmes, une fermière infectée par la vaccine, ou variole des vaches. Trois mois plus tard, il inocula la variole à l'enfant, qui se révéla immunisé. Cette pratique se répandit progressivement dans toute l'Europe. Le mot vaccination vient du nom de la « variole des vaches », la vaccine, elle-même dérivée du latin : vacca qui signifie « vache ». Un auteur récent — reprenant en cela un débat ancien qui avait commencé dès Jenner — fait remarquer que la pratique aurait pu s'appeler « équination » vu l'origine équine de la vaccine. Il est par ailleurs attesté qu'en de multiples occasions, des lymphes vaccinales ont été produites à partir de chevaux (l'un de ses premiers biographes rapporte même que Jenner a inoculé son fils aîné, en 1789, avec des matières extraites d'un porc malade du swinepox).\nLe principe de la vaccination a été expliqué par Louis Pasteur et ses collaborateurs Roux et Duclaux, à la suite des travaux de Robert Koch mettant en relation les microbes et les maladies. Cette découverte lui permit de développer des techniques d'atténuation des germes. Sa première vaccination fut la vaccination d'un troupeau de moutons contre le charbon le 5 mai 1881. La première vaccination humaine (hormis la vaccination au sens originel de Jenner) fut celle d'un enfant contre la rage le 6 juillet 1885. Contrairement à la plupart des vaccinations, cette dernière fut effectuée après l'exposition au risque — ici, la morsure du jeune Joseph Meister par un chien enragé — et non avant (le virus de la rage ne progressant que lentement dans le système nerveux).\n\nAspects scientifiques"
+        }
+      ]
+    },
+    "citation": {
+      "texte": "Pour qu'on ne puisse abuser du pouvoir, il faut que, par la disposition des choses, le pouvoir arrête le pouvoir.",
+      "auteur": "Montesquieu",
+      "source": "De l'esprit des lois, livre XI, chapitre 4",
+      "annee": 1748
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 9.6,
+          "temperature_max": 18.2,
+          "temperature_min": 9.0,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 6.2,
+          "vent_max_kmh": 12.3,
+          "rafales_max_kmh": 24.8,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 9.6,
+              "temperature_max": 17.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 17.1,
+              "temperature_max": 18.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 12,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 12.2,
+              "temperature_max": 16.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 11.2,
+          "temperature_max": 17.9,
+          "temperature_min": 9.6,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 5.7,
+          "vent_max_kmh": 13.3,
+          "rafales_max_kmh": 20.5,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 10.7,
+              "temperature_max": 16.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 16.7,
+              "temperature_max": 17.9,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 13,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 12.3,
+              "temperature_max": 16.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 7.4,
+          "temperature_max": 16.6,
+          "temperature_min": 7.1,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 7.1,
+          "vent_max_kmh": 11.1,
+          "rafales_max_kmh": 20.5,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 7.1,
+              "temperature_max": 14.9,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 14.0,
+              "temperature_max": 16.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 11,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 9.5,
+              "temperature_max": 11.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 6.7,
+          "temperature_max": 15.4,
+          "temperature_min": 6.3,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 7.9,
+          "vent_max_kmh": 11.5,
+          "rafales_max_kmh": 21.2,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 6.4,
+              "temperature_max": 13.8,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 13.1,
+              "temperature_max": 15.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 12,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 9.2,
+              "temperature_max": 11.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 18.2,
+      "temperature_min_zone": 6.3,
+      "probabilite_pluie_max_pct": 0,
+      "vent_max_kmh": 13.3,
+      "description_dominante": "ciel dégagé",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 6.4,
+          "temperature_max": 17.4,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 8,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 13.1,
+          "temperature_max": 18.2,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 13,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 9.2,
+          "temperature_max": 16.1,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 10,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        }
+      ],
+      "alertes": [],
+      "resume": "Ciel dégagé toute la journée, de 6° à 18°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "Jane Eyre",
+      "auteur": "Charlotte Brontë",
+      "annee": 1847,
+      "segments": [
+        {
+          "t": "There was no possibility of taking a walk that day. We had been wandering",
+          "g": "errer"
+        },
+        {
+          "t": ", indeed, in the leafless",
+          "g": "dépouillé de ses feuilles"
+        },
+        {
+          "t": " shrubbery",
+          "g": "bosquet d'arbustes"
+        },
+        {
+          "t": " an hour in the morning; but since dinner (Mrs. Reed, when there was no company, dined early) the cold winter wind had brought with it clouds so sombre, and a rain so penetrating, that further out-door exercise was now out of the question",
+          "g": "hors de question"
+        },
+        {
+          "t": ". I was glad of it: I never liked long walks, especially on chilly",
+          "g": "frisquets"
+        },
+        {
+          "t": " afternoons: dreadful",
+          "g": "pénible, affreux"
+        },
+        {
+          "t": " to me was the coming home in the raw",
+          "g": "humide et glacial"
+        },
+        {
+          "t": " twilight",
+          "g": "le crépuscule"
+        },
+        {
+          "t": ", with nipped",
+          "g": "gelés"
+        },
+        {
+          "t": " fingers and toes, and a heart saddened by the chidings",
+          "g": "les réprimandes"
+        },
+        {
+          "t": " of Bessie, the nurse, and humbled",
+          "g": "humiliée"
+        },
+        {
+          "t": " by the consciousness of my physical inferiority to Eliza, John, and Georgiana Reed.",
+          "g": null
+        }
+      ],
+      "texte_glose": "There was no possibility of taking a walk that day. We had been wandering (= errer), indeed, in the leafless (= dépouillé de ses feuilles) shrubbery (= bosquet d'arbustes) an hour in the morning; but since dinner (Mrs. Reed, when there was no company, dined early) the cold winter wind had brought with it clouds so sombre, and a rain so penetrating, that further out-door exercise was now out of the question (= hors de question). I was glad of it: I never liked long walks, especially on chilly (= frisquets) afternoons: dreadful (= pénible, affreux) to me was the coming home in the raw (= humide et glacial) twilight (= le crépuscule), with nipped (= gelés) fingers and toes, and a heart saddened by the chidings (= les réprimandes) of Bessie, the nurse, and humbled (= humiliée) by the consciousness of my physical inferiority to Eliza, John, and Georgiana Reed."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Edouard Philippe refuse une nouvelle fois de participer à une primaire de la droite et du centre, source de \"division\" et de \"confusion\"."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral+nvidia",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral+nvidia",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-11-02T06:10:41.998537+01:00"
+}

@@ -1,12 +1,36 @@
 {
-  "date": "2026-10-30",
-  "derniere_mise_a_jour": "2026-10-30T06:15:21.702449+01:00",
+  "date": "2026-11-02",
+  "derniere_mise_a_jour": "2026-11-02T06:15:24.061389+01:00",
   "briefing": {
     "actualite": {
       "france": [
         {
-          "titre": "Attentat raciste dans les Yvelines : le suspect, Kévin Tessier, a été mis en examen et placé en détention provisoire",
-          "resume": "L'homme de 39 ans a reconnu être l'auteur de l'attentat raciste et a admis avoir \"spécifiquement\" ciblé des personnes \"de type musulman, africain ou nord-africain\", a annoncé le procureur du Pnat jeudi.",
+          "titre": "Edouard Philippe refuse une nouvelle fois de participer à une primaire de la droite et du centre, source de \"division\" et de \"confusion\"",
+          "resume": "Le maire du Havre a estimé, dimanche, au journal de 20 heures de TF1, que la primaire envisagée à droite et au centre en vue de la présidentielle de 2027 « n’aura[it] pas lieu » et « n’a pas beaucoup de sens ».",
+          "pourquoi_important": "Cette position remet en question l’organisation d’une primaire à droite et au centre pour l’élection de 2027.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France Info",
+            "Libération",
+            "France 24 International",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Jean-Pierre Chevènement apporte son soutien à Natacha Polony pour l'élection présidentielle",
+          "resume": "L'ancienne journaliste avait été membre de l'équipe de campagne de l'ancien ministre souverainiste quand il avait candidat à l'Elysée en 2002.",
+          "pourquoi_important": "Ce soutien peut influencer la visibilité de Natacha Polony dans la course présidentielle.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Deux hommes mis en examen et écroués après l'incendie d'un immeuble à Clermont-Ferrand ayant tué quatre personnes",
+          "resume": "Même si les circonstances exactes restent à déterminer, \"les premières constatations des enquêteurs laissent entrevoir une origine criminelle possible de l'incendie\", avait précisé le parquet dès vendredi.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
@@ -16,65 +40,77 @@
           ]
         },
         {
-          "titre": "Attentat raciste de Trappes : Kevin T., mis en examen pour « assassinat et tentatives d’assassinat terroriste », a reconnu avoir ciblé des personnes « de type musulman » ou « africain »",
-          "resume": "Le Parquet national antiterroriste a précisé, jeudi, que le diagnostic de schizophrénie, évoqué par le suspect, n’était pas confirmé par son médecin. Il a par ailleurs évoqué la découverte, à son domicile, de 30 autocollants confectionnés par Kevin T. portant la mention « Vive la France, RN, fier d’être français ».",
+          "titre": "Le Wegovy, médicament antiobésité, arrive en comprimé dans les pharmacies françaises",
+          "resume": "Le traitement développé par Novo Nordisk, jusqu’ici administré par injection en France, est désormais disponible sous forme orale, alors que le fabricant danois et son concurrent américain, Eli Lilly, rivalisent pour s’imposer sur un marché mondial en forte croissance.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "Le Monde",
-            "20 Minutes"
-          ]
-        },
-        {
-          "titre": "Attentat raciste de La Verrière et de Trappes : te dire, Ramatou, notre effroi, notre honte et notre solidarité",
-          "resume": "Lettre à la fillette de 11 ans qui a été gravement blessée dans l’attaque terroriste du 23 octobre, ciblée par celui qui voulait «tuer des noirs et des arabes».",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
             "Libération"
           ]
         },
         {
-          "titre": "Présidentielle 2027 : WhatsApp, invisibiliser le RN… LFI lance son « armée » sur les réseaux, pour faire « comme au Brésil »",
-          "resume": "Après la victoire de Lula, des militants LFI veulent s’inspirer de la méthode du député brésilien André Janones qui a accompagné le candidat du PT pour remporter l’élection présidentielle grâce, entre autres, à son « armée » sur WhatsApp",
+          "titre": "Manifestations du 31 octobre : 779 personnes ont été interpellées dans toute la France selon un bilan définitif du ministère de l'Intérieur",
+          "resume": "Après un nouveau samedi de mobilisation avec une participation en légère baisse, de nouveaux rendez-vous sont prévus la semaine prochaine avec en point culminant la grève nationale annoncée le 5 novembre.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
-            "20 Minutes"
-          ]
-        },
-        {
-          "titre": "\"Ce serait du suicide\" : la primaire proposée par Gabriel Attal en vue de la présidentielle ne convainc ni Edouard Philippe, ni Bruno Retailleau",
-          "resume": "Le candidat Renaissance, qui a peu convaincu par son appel à une primaire incluant la gauche sociale-démocrate, a recentré sa proposition. Il aimerait voir d’autres personnalités mettre la pression sur Edouard Philippe qui refuse de se plier à cette idée.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "France Info",
-            "Libération"
+            "France Info"
           ]
         }
       ],
       "monde": [
         {
-          "titre": "Législatives en Israël : le camp de Benyamin Nétanyahou arrive en tête mais sans majorité selon les résultats définitifs",
-          "resume": "Netanyahou arrive en tête des élections en Israël, mais sans majorité. Les partis arabes joueront un rôle décisif dans la formation d’une coalition.",
+          "titre": "Présidentielle en Bulgarie : Iliana Iotova, partisane du dialogue avec Moscou, remporte l’élection",
+          "resume": "Iliana Iotova, ancienne journaliste et figure du Parti socialiste, est élue présidente de la Bulgarie avec 6,4 millions d’habitants.",
+          "pourquoi_important": "Première femme élue à ce poste, son élection intervient dans un contexte marqué par les tensions régionales et les défis économiques bulgares.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Libération",
+            "20 Minutes",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Midterms 2026 : les reniements de Donald Trump l’exposent à un vote sanction de la part des électeurs américains",
+          "resume": "Les électeurs américains pourraient sanctionner Donald Trump en raison de ses promesses non tenues sur l’inflation et l’engagement militaire extérieur, dans un contexte marqué par la guerre en Iran et la hausse du coût de la vie.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "20 Minutes",
-            "Le Monde International",
-            "France 24 International"
+            "Le Monde",
+            "Le Monde International"
           ]
         },
         {
-          "titre": "Guerre en Ukraine : Kiev visée par une nouvelle salve de missiles balistiques russes",
-          "resume": "Une attaque russe a tué au moins une personne à Kiev. Un drone a fait 14 morts et 14 blessés à la gare de Dnipro, et d’autres frappes ont touché des zones résidentielles à Tchernihiv, Krementchouk et dans l’oblast de Zaporijia.",
+          "titre": "En Israël, les soupçons d'irrégularités lors des législatives ne remettront pas en cause les résultats, assure le président de la commission électorale",
+          "resume": "Deux listes arabes sont accusées d’avoir reçu des fonds du Qatar pour acheter des voix, mais ces soupçons n’affecteront pas les résultats des législatives.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "En Ukraine, les habitants d’Olechky évacués : « Nous ne savons pas où aller, mais une chose est sûre : nous survivrons »",
+          "resume": "Environ 700 personnes ont été évacuées d’Olechky, une zone abandonnée en première ligne du conflit, grâce à un cessez-le-feu de six jours.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : Kiev et Moscou visés par des cyberattaques peu après la fin de la trêve à Olechky ; au moins trois personnes tuées dans des frappes russes dimanche",
+          "resume": "Selon des informations rapportées, l’Ukraine et la Russie ont subi des cyberattaques ciblant leurs systèmes d’alerte à la population, après la fin de la trêve humanitaire à Olechky.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
@@ -83,139 +119,85 @@
           ]
         },
         {
-          "titre": "Nigeria’s Ebola Patient Evacuated as Investigators Press for Answers",
-          "resume": "Les enquêteurs cherchent des réponses sur la propagation de l’infection.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "New York Times World"
-          ]
-        },
-        {
-          "titre": "Soupçons de détournement de fonds publics : Édouard Philippe placé sous le statut de témoin assisté",
-          "resume": "Candidat à l'élection présidentielle, Édouard Philippe a été placé jeudi sous le statut de témoin assisté dans l'enquête ouverte pour détournement de fonds publics, favoritisme et harcèlement moral au sein de la communauté d'agglomération du Havre, dont il est maire, rapportent des sources proches du dossier. Il a été entendu par deux juges d'instruction financiers.",
+          "titre": "Le crash d’un petit avion privé en Floride fait neuf morts, selon le ministre des transports américain",
+          "resume": "Le régulateur aérien américain a annoncé qu’il mènerait une enquête avec l’agence fédérale américaine de sécurité des transports pour faire la lumière sur cet accident mortel.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "France 24 International",
             "Le Monde",
             "France Info",
-            "Libération",
-            "20 Minutes"
-          ],
-          "complete_par_code": true
-        },
-        {
-          "titre": "Midterms 2026 : deux Dan Sullivan pour un siège en Alaska, la manipulation des démocrates dévoilée",
-          "resume": "Le « New York Times » a révélé, mercredi 28 octobre, que le recrutement d’un homonyme du sénateur sortant républicain a été orchestré par l’entourage de la candidate démocrate, Mary Peltola.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
+            "20 Minutes",
             "Le Monde International"
           ],
           "complete_par_code": true
         },
         {
-          "titre": "Crise énergétique : onze pays de l’UE vont libérer 42,6 millions de barils de pétrole afin de stabiliser les prix du gazole avant l’hiver",
-          "resume": "Face à la flambée des prix, l’Union européenne va puiser dans ses réserves stratégiques, tout en assurant que la sécurité d’approvisionnement ne serait pas menacée cet hiver.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde International",
-            "Le Monde",
-            "Libération"
-          ],
-          "complete_par_code": true
-        },
-        {
-          "titre": "Union européenne : l’idée d’un Canada «membre associé» ravive les tensions entre Ursula von der Leyen et les Vingt-Sept",
-          "resume": "Réunis pour un sommet, jeudi et vendredi, Ursula von der Leyen, et Mark Carney ont maintenu l’idée qu’Ottawa devienne « membre associé » de l’UE, malgré les réserves claires formulées par l’Allemagne sur ce terme.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "Le Monde International",
-            "Libération"
-          ],
-          "complete_par_code": true
-        },
-        {
-          "titre": "Selon Le Monde International, Midterms 2026 : Donald Trump annule ses meetings du week-end dans le Kansas et l’Iowa",
-          "resume": "A cinq jours des élections de mi-mandat, le parti républicain a annoncé jeudi que deux meetings que devait animer Donald Trump ce week-end n’auront pas lieu, et que le président américain participerait à la place à « un grand nombre de meetings virtuels ».",
+          "titre": "Selon Le Monde International, Midterms 2026 : dans le Michigan, l’incroyable ralliement de l’opposante démocrate d’Abdul El-Sayed au candidat républicain",
+          "resume": "Haley Stevens a annoncé, dimanche, son soutien au républicain Mike Rogers dans la course au Sénat dans l’Etat du nord-est des Etats-Unis, rompant avec le candidat de son parti. Cette décision est l’aboutissement de plusieurs mois de tensions et pourrait entamer les chances démocrates de conquérir le Sénat.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
             "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon 20 Minutes, Guerre au Moyen-Orient : Se disant jusqu’à présent « gentil », Trump veut « donner un coup de massue » à l’Iran",
+          "resume": "Le Premier ministre israélien Netanyahou pousserait Trump à reprendre les frappes contre l’Iran dès la fin des midterms mardi aux États-Unis",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
           ],
           "complete_par_code": true
         }
       ]
     },
     "marches": {
-      "resume_court": "Les résultats de TotalEnergies et d'Amazon, ainsi que la libération de pétrole par l'UE, ont influencé ces mouvements.",
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
       "mouvements_notables": [
         {
-          "nom": "CAC 40",
-          "variation_pct": 1.05,
+          "nom": "S&P 500",
+          "variation_pct": -1.82,
           "explication": null
         },
         {
           "nom": "Nasdaq",
-          "variation_pct": -1.38,
-          "explication": "Résultats trimestriels inférieurs aux attentes d'Amazon"
+          "variation_pct": -2.86,
+          "explication": null
         },
         {
-          "nom": "DAX",
-          "variation_pct": 1.31,
+          "nom": "Euro Stoxx 50",
+          "variation_pct": -1.22,
           "explication": null
         },
         {
           "nom": "Pétrole (Brent)",
-          "variation_pct": -2.56,
-          "explication": "Crise énergétique: libération de 42,6 millions de barils de pétrole par l'UE"
+          "variation_pct": -6.5,
+          "explication": null
         }
       ]
     },
     "sport": {
       "items": [
         {
-          "sport": "football",
-          "texte": "Le Paris Saint‑Germain a fait match nul 1-1 contre Manchester City en phase de ligue de la Ligue des champions féminine."
+          "sport": "rugby",
+          "texte": "Les champions du monde, l'Australie, ont battu le Pays de Galles 124-6 lors de la Coupe du monde de rugby à XIII, marquant 21 essais, le plus grand score de l'histoire internationale."
         },
         {
-          "sport": "football",
-          "texte": "Le Paris Saint‑Germain a inscrit un but tardif pour obtenir le match nul 1-1 contre Manchester City en Ligue des champions féminine."
-        },
-        {
-          "sport": "football",
-          "texte": "Le Paris FC a été tenu en échec 1-1 par Häcken en Ligue des champions féminine."
-        },
-        {
-          "sport": "cyclisme",
-          "texte": "Tifany Huot‑Marchand et Alexandre Léauté ont remporté l’or du scratch aux championnats du monde de para‑cyclisme sur piste à Apeldoorn."
-        },
-        {
-          "sport": "tennis",
-          "texte": "Novak Djokovic a perdu en deuxième tour à Bâle contre Jan‑Lennard Struff, score 6‑7(4) 7‑5 7‑6(5)."
-        },
-        {
-          "sport": "tennis",
-          "texte": "Alexander Zverev s’est qualifié pour les quarts de finale de l’ATP 500 de Vienne en battant Tallon Griekspoor 6‑4, 7‑5."
-        },
-        {
-          "sport": "natation",
-          "texte": "Maxime Grousset, Béryl Gastaldello et Yohann Ndoye Brouard ont remporté leurs titres aux championnats de France, permettant à huit nageurs français de se qualifier pour les championnats du monde à Pékin."
+          "sport": "formule 1",
+          "texte": "Kimi Antonelli, 20 ans, est devenu le plus jeune champion du monde de l'histoire de la Formule 1 après avoir terminé troisième au Grand Prix du Mexique, tandis que Max Verstappen a remporté le Grand Prix."
         },
         {
           "sport": "basketball",
-          "texte": "Atlanta a battu le Dream, malgré les 26 points de la capitaine française, ramenant la série à 3‑3 avant le match décisif à San Francisco."
+          "texte": "La Française Gabby Williams a marqué 30 points et a été MVP de la finale, menant les Golden State Valkyries à un premier titre WNBA après une victoire 68-63 contre l'Atlanta Dream."
+        },
+        {
+          "sport": "football",
+          "texte": "L'OM a remporté 2-0 contre Toulouse, marquant sa quatrième victoire consécutive en Ligue 1, et se trouve désormais sixième du classement. Les Lyonnais ont battu Angers 2-0 et partagent la troisième place avec le Paris FC, vainqueur de Monaco 3-1."
         }
       ],
       "rien_a_signaler": false,
@@ -228,78 +210,66 @@
           "sport": "football"
         },
         {
-          "affiche": "Golden State Warriors – Los Angeles Lakers",
+          "affiche": "Los Angeles Lakers – Miami Heat",
           "competition": "NBA",
-          "date_iso": "2026-10-31T02:00:00+00:00",
-          "date_texte": "samedi 31 octobre à 3h00",
+          "date_iso": "2026-11-03T03:00:00+00:00",
+          "date_texte": "mardi 3 novembre à 4h00",
           "sport": "basketball"
         }
       ]
     },
     "science": {
-      "mode": "decouverte",
-      "titre": "Des trous noirs supermassifs ne peuvent expliquer la matière noire",
-      "contenu_markdown": "Une étude publiée dans *Nature* le 29 octobre 2026 écarte une hypothèse théorique selon laquelle des trous noirs d’une masse exceptionnelle pourraient constituer la matière noire. Cette dernière désigne la substance invisible dont on déduit l’existence par ses effets gravitationnels sur les galaxies, mais que l’on n’a jamais observée directement.\n\nLes chercheurs ont examiné si des trous noirs extrêmement massifs, bien plus lourds que ceux connus aujourd’hui, pourraient générer la force invisible qui maintient les galaxies assemblées. Leur contribution à la matière noire semble donc négligeable, voire inexistante.\n\nCette conclusion renforce l’idée que la matière noire doit être composée d’une autre forme de particules ou d’énergie, encore inconnue. Les détails des simulations et des observations utilisées pour cette exclusion sont disponibles dans l’article de *Nature News*. La nature exacte de la matière noire reste l’un des grands défis ouverts de la physique moderne.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03386-4\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Photosynthèse\n\n## Introduction\nLa photosynthèse est un processus fondamental qui permet à certains organismes vivants de transformer l’énergie lumineuse du soleil en matière organique, en utilisant du dioxyde de carbone et de l’eau. Ce mécanisme, apparu il y a des milliards d’années, est à la base de la chaîne alimentaire et de la composition de l’atmosphère terrestre. Sans lui, la vie telle que nous la connaissons n’existerait pas. Mais comment fonctionne-t-il exactement ? Et pourquoi est-il si crucial pour la planète ?\n\n---\n\n## Pourquoi la photosynthèse est-elle importante ?\nLa photosynthèse joue un rôle central dans l’équilibre des écosystèmes et la survie des espèces. Elle est responsable de plusieurs phénomènes clés :\n\n- **Production d’oxygène** : La photosynthèse oxygénique, apparue il y a au moins **2,87 milliards d’années**, libère du dioxygène (O₂) dans l’atmosphère. Ce processus a permis la **Grande Oxydation** (entre **2,4 et 2 milliards d’années**), un bouleversement écologique majeur qui a transformé une atmosphère riche en dioxyde de carbone (CO₂) et en vapeur d’eau en une atmosphère oxygénée, propice au développement de formes de vie complexes.\n- **Fixation du carbone** : Les organismes photosynthétiques (plantes, algues, cyanobactéries) captent le CO₂ atmosphérique et le transforment en molécules organiques, comme le **D-glucose**, une forme de sucre essentielle à leur croissance. Ce processus est la **principale voie de conversion du carbone minéral en carbone organique** sur Terre.\n- **Source d’énergie pour la biosphère** : Environ **100 à 115 milliards de tonnes de carbone** sont assimilées chaque année sous forme de biomasse grâce à la photosynthèse. Cette énergie est ensuite transmise aux herbivores, puis aux carnivores, formant ainsi le socle de la chaîne alimentaire.\n- **Régulation du climat** : En absorbant du CO₂, les plantes contribuent à limiter l’effet de serre naturel, jouant un rôle indirect dans la stabilité du climat terrestre.\n\nSans la photosynthèse, l’atmosphère serait dépourvue d’oxygène, et la plupart des écosystèmes actuels ne pourraient pas exister.\n\n---\n\n## Explication du phénomène : de quoi s’agit-il ?\nLa photosynthèse est un **processus bioénergétique** qui se déroule en deux grandes phases chez les plantes, les algues et les cyanobactéries :\n\n1. **Réactions dépendantes de la lumière**.\n   Ces réactions, appelées **réactions photochimiques**, ont lieu dans des structures spécialisées :\n   - Chez les plantes et les algues, elles se produisent dans les **thylakoïdes**, des membranes internes des **chloroplastes** (organites présents surtout dans les feuilles).\n   - Chez les bactéries, elles se déroulent directement dans la **membrane plasmique**.\n   L’énergie lumineuse est captée par des **protéines sensibles à la lumière**, les **centres réactionnels**, qui contiennent des **pigments photosynthétiques** comme les **chlorophylles** (le pigment vert caractéristique des plantes). Ces pigments absorbent principalement la lumière bleue et rouge, tandis que le vert est réfléchi, donnant leur couleur aux feuilles.\n\n   L’énergie captée permet d’**exciter des électrons** issus d’une molécule donneuse, généralement **l’eau (H₂O)**, qui est alors **oxydée** en libérant du dioxygène (O₂). Les électrons ainsi mobilisés servent à produire deux molécules riches en énergie :\n   - Le **NADPH** (un transporteur d’électrons et de protons).\n   - L’**ATP** (l’**adénosine triphosphate**, la \"monnaie énergétique\" de la cellule).\n\n2. **Réactions indépendantes de la lumière (cycle de Calvin)**.\n   Ces réactions, qui n’ont pas besoin de lumière directe, utilisent l’ATP et le NADPH produits précédemment pour **fixer le dioxyde de carbone (CO₂)** atmosphérique. Chez les plantes, les algues et les cyanobactéries, ce processus s’appelle le **cycle de Calvin** :\n   - Le CO₂ est incorporé dans une molécule organique simple, le **ribulose-1,5-bisphosphate** (un sucre à 5 atomes de carbone).\n   - Grâce à l’énergie de l’ATP et des électrons du NADPH, cette molécule est transformée en **glucides** (comme le **D-glucose**), qui serviront de source d’énergie et de matière première pour construire d’autres composés (amidon, cellulose, etc.).\n\nChez certaines bactéries, d’autres voies métaboliques, comme le **cycle de Krebs inverse**, permettent aussi de fixer le carbone, mais le cycle de Calvin reste le plus répandu chez les organismes photosynthétiques oxygénants.\n\n---\n## Fonctionnement et mécanismes : une machine biochimique complexe\n\nLe fonctionnement de la photosynthèse repose sur une **séquence précise de réactions chimiques**, orchestrée par des structures cellulaires spécialisées. Voici les étapes clés, décrites de manière simplifiée.\n\n## Capture de la lumière\nLes **chlorophylles** et autres pigments (comme les caroténoïdes) absorbent les photons lumineux. Ces pigments sont organisés en **complexes protéiques** au sein des membranes des thylakoïdes (chez les plantes) ou de la membrane plasmique (chez les bactéries). Lorsqu’un photon est absorbé, un électron du chlorophylles passe à un niveau d’énergie supérieur, devenant un **électron excité**.\n\n## Transport des électrons et production d’ATP\nLes électrons excités sont transférés à une chaîne de transporteurs d’électrons, déclenchant une série de réactions redox (oxydoréduction) :\n- **Oxydation de l’eau** : Dans les réactions dépendantes de la lumière, l’eau (H₂O) est cassée en **oxygène (O₂)**, en **protons (H⁺)** et en **électrons**. Ces électrons remplacent ceux perdus par les chlorophylles, maintenant le cycle en marche. L’oxygène libéré est un **sous-produit** de ce processus, mais il est vital pour la respiration des êtres vivants aérobies.\n- **Pompage de protons** : Le transport des électrons à travers la chaîne génère un **gradient de protons** (H⁺) entre l’intérieur et l’extérieur des thylakoïdes. L’ATP stockera cette énergie pour les réactions ultérieures.\n\n## Formation du NADPH\nCe dernier servira de **réducteur** dans les réactions indépendantes de la lumière, fournissant les électrons nécessaires à la fixation du carbone.\n\n## Fixation du carbone : le cycle de Calvin\nVoici les grandes étapes.\n\n## Stockage et utilisation des produits\nLes glucides produits (comme le glucose) peuvent être :\n- **Stockés** sous forme d’**amidon** (dans les racines, les tubercules, etc.) ou de **sucres** (comme le saccharose, transporté dans la plante).\n- **Utilisés immédiatement** pour fournir de l’énergie via la **respiration cellulaire** ou pour synthétiser d’autres molécules essentielles (lipides, acides aminés, etc.).\n\n## Un équilibre dynamique\nLa photosynthèse ne se limite pas à ces étapes : elle est **régulée finement** en fonction des conditions environnementales (intensité lumineuse, température, disponibilité en CO₂ et en eau).\n- En cas de **manque de lumière**, les réactions photochimiques ralentissent, limitant la production d’ATP et de NADPH, et donc la fixation du carbone.\n- En cas de **stress hydrique**, les stomates (petites ouvertures des feuilles) se ferment pour économiser l’eau, réduisant l’apport en CO₂ et affectant le cycle de Calvin.\n- Les plantes adaptent aussi leur **métabolisme** selon le type de lumière disponible (par exemple, en profondeur dans l’eau, où seule la lumière bleue et verte pénètre).\n\nCe processus, apparu il y a plus de **3,8 milliards d’années**, a évolué pour devenir l’un des mécanismes les plus efficaces de conversion d’énergie sur Terre. Aujourd’hui, la photosynthèse capte en moyenne **130 térawatts** d’énergie solaire par an, soit **six fois la consommation énergétique totale\n\n## Données et résultats scientifiques\n\n- La photosynthèse oxygénique est attestée dès **2,87 milliards d’années** (Ga) et devient quantitativement importante chez les cyanobactéries vers **2,45 Ga**.  \n- L’oxygénation de l’atmosphère, dite Grande Oxydation, s’est déroulée entre **2,4 et 2 Ga**.  \n- L’atmosphère actuelle est composée d’environ **78,08 % de diazote** et **20,95 % de dioxygène**.  \n- Au niveau planétaire, les organismes photosynthétiques assimilent chaque année entre **100 et 115 milliards de tonnes de carbone** sous forme de biomasse.  \n- La puissance moyenne captée par la photosynthèse à l’échelle du globe est d’environ **130 térawatts**, soit près de six fois la consommation énergétique de l’humanité.  \n\nCes valeurs proviennent d’estimations géochimiques et biogéographiques basées sur les archives fossiles, les isotopes et les bilans énergétiques globaux.\n\n## Ce que les scientifiques savent\n\n- **Origine évolutive** : les tout premiers organismes photosynthétiques, apparus il y a **3,8 Ga**, utilisaient probablement des réducteurs tels que l’hydrogène (H₂) ou le sulfure d’hydrogène (H₂S) plutôt que l’eau.  \n- **Mécanisme de base** : la lumière est absorbée par des pigments (chlorophylles) situés dans des centres réactionnels membranaires (thylakoïdes chez les plantes, membrane plasmique chez les bactéries). Cette absorption excite des électrons provenant généralement de l’eau, générant du **NADPH** et de l’**ATP**.  \n- **Fixation du carbone** : chez les plantes, algues et cyanobactéries, le **cycle de Calvin** fixe le CO₂ sur le ribulose‑1,5‑bisphosphate, puis, grâce au NADPH et à l’ATP, produit des glucides tels que le D‑glucose. D’autres micro‑organismes utilisent des voies alternatives (par ex. le cycle de Krebs inverse).  \n- **Impact global** : la photosynthèse oxygénique maintient le taux d’oxygène atmosphérique et constitue la principale voie de transformation du carbone minéral en carbone organique, soutenant la chaîne trophique terrestre.  \n\n## Ce qui reste incertain\n\n- **Chronologie précise** des tout premiers systèmes photosynthétiques : les preuves directes de la transition d’une chimiosynthèse à base de H₂/H₂S vers une oxygénique restent limitées, et les dates exactes d’émergence des premiers pigments photosynthétiques sont encore débattues.  \n- **Quantification détaillée** de la contribution relative des différents groupes (cyanobactéries, algues, plantes terrestres) à la capture globale de 130 térawatts : les modèles actuels offrent des estimations, mais la répartition exacte dépend de paramètres climatiques et biogéographiques complexes.  \n- **Mécanismes de régulation** de l’efficacité photosynthétique à l’échelle cellulaire et organique, notamment l’interaction entre les différents types de pigments et les variations d’intensité lumineuse, restent partiellement élucidés.  \n\n## Limites et controverses éventuelles\n\n- **Variabilité des estimations** : les chiffres d’assimilation annuelle de carbone (100–115 milliards de tonnes) et de puissance captée (130 térawatts) proviennent de modèles globaux qui intègrent des incertitudes liées aux mesures de productivité primaire, aux couvertures végétales et aux conditions climatiques.  \n- **Débat sur l’origine de la Grande Oxydation** : si les cyanobactéries sont largement reconnues comme responsables de l’augmentation d’O₂, la contribution exacte d’autres micro‑organismes et les mécanismes déclencheurs (par ex. changements géochimiques) font encore l’objet de discussions.  \n- **Limites méthodologiques** : les reconstructions géologiques (datation par lanthane‑cérium, isotopes) comportent des marges d’erreur qui peuvent affecter les âges attribués aux premières preuves de photosynthèse oxygénique.  \n\n## Conclusion\n\nLa photosynthèse, processus fondamental de conversion de l’énergie lumineuse en matière organique, a façonné l’atmosphère terrestre et soutient la quasi‑totalité de la vie actuelle. Les données géologiques montrent qu’elle est apparue très tôt dans l’histoire de la Terre, avec une évolution majeure vers la production d’oxygène il y a plus de deux milliards d’années. Aujourd’hui, elle capte une puissance globale de l’ordre de 130 térawatts et transforme chaque année plus d’un centième de milliard de tonnes de carbone. Malgré ces connaissances solides, des incertitudes subsistent quant aux premiers mécanismes, à la répartition précise des contributions entre les différents groupes d’organismes et aux détails de la régulation de l’efficacité photosynthétique. La poursuite des recherches en géochimie, en biologie évolutive et en modélisation climatique continuera d’affiner notre compréhension de ce processus vital.\n\n## Sources\n- Wikipédia (fr) — Photosynthèse — https://fr.wikipedia.org/wiki/Photosynth%C3%A8se\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
-      "phrases_retirees_garde_fou": 8,
-      "nb_mots": 1957,
-      "matiere_source": "fine",
+      "mode": "approfondi",
+      "titre": "La vaccination : principe, histoire et mécanismes immunitaires",
+      "contenu_markdown": "## Introduction\nLa vaccination est l’une des avancées médicales les plus importantes de l’histoire humaine. Elle repose sur un principe simple mais ingénieux : introduire dans l’organisme une version affaiblie ou modifiée d’un agent pathogène (virus, bactérie) pour déclencher une réponse immunitaire sans provoquer la maladie. Cette réponse permet au système de défense de \"mémoriser\" l’ennemi et de réagir plus efficacement en cas de véritable infection. Depuis les premières pratiques empiriques jusqu’aux vaccins modernes, cette méthode a sauvé des millions de vies en éradiquant ou en contrôlant des maladies autrefois dévastatrices.\n\n## Pourquoi la vaccination est-elle importante ?\nLes bénéfices de la vaccination sont à la fois individuels et collectifs. **Sur le plan individuel**, elle protège les personnes vaccinées en leur évitant des maladies potentiellement graves, comme la poliomyélite, la rougeole ou le tétanos. **Sur le plan collectif**, elle réduit la circulation des agents infectieux dans une population, un phénomène appelé *immunité de groupe*. Lorsque suffisamment de personnes sont immunisées, les pathogènes peinent à se propager, protégeant même ceux qui ne peuvent pas être vaccinés (nourrissons, personnes immunodéprimées).\n\nEn 2003 seule, elle aurait évité **plus de deux millions de décès** dus à des maladies comme la diphtérie, la coqueluche ou la tuberculose. Sans ces outils, des épidémies récurrentes continueraient de frapper les populations, avec des conséquences sanitaires et économiques catastrophiques.\n\n## Explication du phénomène : comment fonctionne un vaccin ?\nUn vaccin contient un **antigène**, c’est-à-dire une substance reconnue par le système immunitaire comme étrangère. Cet antigène peut prendre plusieurs formes :\n- Un **microbe atténué** (dont la capacité à provoquer la maladie est réduite, mais pas supprimée) ;\n- Un **microbe inactivé** (tué, mais conservant ses propriétés antigéniques) ;\n- Une **partie du microbe** (protéines, sucres ou fragments génétiques) ;\n- Ou encore un **antigène synthétique** reproduit en laboratoire.\n\nL’objectif est toujours le même : **stimuler les lymphocytes B et T**, deux types de cellules immunitaires clés. Les lymphocytes B produisent des **anticorps**, des molécules capables de neutraliser le microbe. Les lymphocytes T, quant à eux, coordonnent la réponse immunitaire et détruisent les cellules infectées. Lors de la **première exposition à l’antigène** (via le vaccin), le système immunitaire lance une réponse rapide mais modérée. En parallèle, il \"stocke\" des cellules mémoires, spécialisées dans la reconnaissance de cet antigène précis.\n\n## Fonctionnement et mécanismes : de l’injection à l’immunité\nLe processus se déroule en plusieurs étapes, une fois le vaccin administré (par injection ou voie orale) :\n\n1. **Présentation de l’antigène**.\n   Les cellules du système immunitaire (comme les macrophages ou les cellules dendritiques) capturent l’antigène du vaccin et le présentent aux lymphocytes T auxiliaires. Ces derniers activent alors les lymphocytes B et T cytotoxiques.\n\n2. **Production d’anticorps**.\n   Les lymphocytes B se différencient en **plasmocytes**, qui sécrètent des anticorps spécifiques contre l’antigène. Ces anticorps circulent dans le sang et les muqueuses, prêts à neutraliser le microbe en cas d’infection réelle.\n\n3. **Mémoire immunitaire**.\n   Une partie des lymphocytes B et T devient des **cellules mémoires**, capables de survivre des années, voire toute la vie. Leur rôle est crucial : si le même antigène réapparaît (via une infection naturelle), ces cellules mémoires déclenchent une réponse **plus rapide, plus intense et plus efficace**, limitant la maladie ou l’empêchant totalement.\n\n   L’immunité conférée par un vaccin varie selon les maladies. Certaines (comme la rougeole) offrent une protection à vie après une seule dose, tandis que d’autres (comme la grippe) nécessitent des rappels réguliers en raison des mutations du virus.\n\nLes mécanismes sous-jacents reposent sur l’**immunité adaptative**, un système sophistiqué qui distingue les menaces connues des éléments normaux de l’organisme.\n\n## Données et résultats scientifiques\n\nL’Organisation mondiale de la santé (OMS) considère la vaccination comme l’une des interventions sanitaires les plus efficaces et les plus économiques. Parmi les succès les plus marquants :  \n\n- l’éradication de la variole ;  \n- une réduction de 99 % de l’incidence mondiale de la poliomyélite ;  \n- une forte diminution de la morbidité, des incapacités et de la mortalité liées à la diphtérie, au tétanos, à la coqueluche, à la tuberculose et à la rougeole.  \n\nPour l’année 2003, les autorités sanitaires estiment que la vaccination a évité plus de deux millions de décès dans le monde.  \n\nCes chiffres sont issus des évaluations globales de l’OMS et reflètent l’impact cumulatif des programmes de vaccination sur plusieurs décennies. Les données chiffrées détaillées par maladie, région ou période sont disponibles dans les rapports de l’OMS et les publications scientifiques référencées.\n\n## Ce que les scientifiques savent\n\n- **Principe immunologique** : l’administration d’un agent antigénique atténué ou inactivé déclenche une réponse immunitaire primaire, suivie d’une mise en mémoire de l’antigène. Lors d’une exposition ultérieure au pathogène naturel, le système immunitaire réagit plus rapidement et plus fortement, conférant une protection adaptée.  \n- **Modes d’administration** : la vaccination s’effectue chez un individu sain, généralement par injection sous‑cutanée ou intramusculaire, ou par voie orale, selon les exigences du vaccin. Chaque acte de vaccination est habituellement consigné, par exemple dans un carnet de vaccination.  \n- **Historique des découvertes** : le concept moderne de vaccination repose sur les travaux d’Edward Jenner (inoculation de la « vaccine », variole des vaches, en 1796) et de Louis Pasteur (développement de vaccins atténués à la fin du XIXᵉ siècle). Ces pionniers ont montré que l’exposition contrôlée à un agent pathogène affaibli pouvait prévenir la maladie.  \n- **Efficacité démontrée** : les programmes de vaccination ont permis l’éradication de la variole et la quasi‑éradication de la poliomyélite, ainsi que des baisses spectaculaires de la mortalité pour de nombreuses maladies infectieuses, comme indiqué ci‑dessus.  \n\n## Ce qui reste incertain\n\n- **Durée de l’immunité** : si la plupart des vaccins confèrent une protection durable, la persistance exacte de la mémoire immunitaire varie selon le vaccin et la population. Certaines vaccinations nécessitent des rappels, mais les durées précises de protection restent l’objet d’études continues.  \n- **Réponses individuelles** : les facteurs génétiques, l’âge, l’état nutritionnel ou la présence de comorbidités peuvent influencer la réponse immunitaire à un vaccin. Les mécanismes détaillés de ces variations sont encore en cours d’investigation.  \n\n## Limites et controverses éventuelles\n\n- Les études épidémiologiques et les systèmes de pharmacovigilance sont les références pour caractériser ces risques, mais les informations détaillées ne sont pas présentes dans le texte de référence.  \n- **Débats sociétaux** : les controverses liées à la confiance du public, aux politiques de vaccination obligatoire ou aux mouvements anti‑vaccins ne sont pas abordées dans les sources encyclopédiques utilisées. Leur existence est reconnue dans la littérature, mais elles dépassent le cadre des faits scientifiques présentés ici.  \n- **Accès et couverture** : bien que l’efficacité des vaccins soit démontrée, les inégalités d’accès dans certaines régions du monde limitent la portée des programmes de vaccination. Les stratégies pour améliorer la couverture vaccinale restent un sujet de recherche et de politique publique.  \n\n## Conclusion\n\nLes résultats historiques, notamment l’éradication de la variole et la quasi‑éradication de la poliomyélite, attestent de l’efficacité et de l’impact sanitaire majeur des programmes vaccins.  \n\nLes limites liées aux données sur les effets indésirables rares, aux débats sociétaux et aux disparités d’accès soulignent la nécessité de recherches continues et d’efforts de santé publique pour optimiser la sécurité, l’acceptabilité et la diffusion des vaccins à l’échelle mondiale.\n\n## Sources\n- Wikipédia (fr) — Vaccination — https://fr.wikipedia.org/wiki/Vaccination\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 7,
+      "nb_mots": 1227,
+      "sujet_id": "vaccination",
+      "origine": "encyclopedie",
+      "matiere_source": "suffisante",
       "textes_sources_audit": [
         {
-          "source": "Nature News",
-          "titre": "Even stupendous black holes can’t explain dark matter",
-          "resume": "Nature, Published online: 29 October 2026; doi:10.1038/d41586-026-03386-4 The theoretical objects would have left a larger imprint on cosmic radiation if they were a source of the invisible force pulling together the galaxies."
-        },
-        {
-          "source": "Nature News",
-          "titre": "How the US mid-term elections could shake up science",
-          "resume": "Nature, Published online: 29 October 2026; doi:10.1038/d41586-026-03479-0 A Democratic victory in Congress could halt the Trump administration’s controversial grant-review plan and curb some of its funding actions."
-        },
-        {
           "source": "Wikipédia (fr)",
-          "titre": "Photosynthèse",
-          "resume": "La photosynthèse (du grec φῶς phōs « lumière » et σύνθεσις sýnthesis « combinaison ») est le processus bioénergétique qui permet à des organismes de biosynthétiser de la matière organique en utilisant l'énergie lumineuse, l'eau et le dioxyde de carbone.\nLes molécules carbonées fabriquées par photosynthèse sont appelées photosynthétats ou assimilats.\nLa photosynthèse comprend en particulier la photosynthèse oxygénique, apparue il y a au moins 2,87 milliards d'années (Ga) et devenue importante quantitativement chez les cyanobactéries vers 2,45 Ga. Les cyanobactéries sont à l'origine de la Grande Oxydation (2,4–2 Ga), un bouleversement écologique majeur faisant évoluer l'atmosphère terrestre, d'abord riche en vapeur d'eau et en dioxyde de carbone (CO2), en l'atmosphère actuelle, composée essentiellement de diazote (78,08 %) et de dioxygène (20,95 %). Cette aptitude a été ensuite transmise aux eucaryotes photosynthétiques (algues, plantes, etc.) par endosymbioses successives. Des glucides, par exemple des oses tels que le D-glucose, sont synthétisés à partir du dioxyde de carbone CO2 et de l'eau H2O avec libération d'oxygène O2 comme sous-produit de l'oxydation de l'eau. C'est la photosynthèse oxygénique qui maintient constant le taux d'oxygène dans l'atmosphère terrestre et fournit toute la matière organique ainsi que l'essentiel de l'énergie utilisées par la vie sur Terre.\nTous les organismes photosynthétiques ne réalisent pas la photosynthèse de la même façon, mais ce processus commence toujours par l'absorption de l'énergie lumineuse par des protéines appelées centres réactionnels qui contiennent des pigments photosynthétiques appelés chlorophylles. Chez les plantes, ces protéines se trouvent dans la membrane des thylakoïdes, des structures incluses dans les chloroplastes, présents essentiellement dans les feuilles, tandis que chez les bactéries elles sont incluses dans la membrane plasmique. Au cours de ces réactions dépendantes de la lumière, une partie de l'énergie lumineuse sert à exciter des électrons d'une substance donneuse, le plus souvent de l'eau, électrons qui servent à leur tour à produire du dinucléotide nicotinamide-adénine phosphate réduit (NADPH) ainsi que de l'adénosine triphosphate (ATP).\nChez les plantes, les algues et les cyanobactéries, les glucides sont produits par une série de réactions indépendantes de la lumière appelées cycle de Calvin, mais certaines bactéries utilisent d'autres voies métaboliques pour réaliser la fixation du carbone, comme le cycle de Krebs inverse. Dans le cycle de Calvin, le dioxyde de carbone atmosphérique est fixé sur des composés organiques tels que le ribulose-1,5-bisphosphate. Les composés formés sont ensuite réduits et convertis par exemple en D-glucose à l'aide du NADPH et de l'ATP formés à la suite des réactions dépendantes de la lumière. La photosynthèse est ainsi la principale voie de transformation du carbone minéral en carbone organique. En tout, les organismes photosynthétiques assimilent chaque année entre 100 et 115 milliards de tonnes de carbone en biomasse.\n\nHistoire\nLes premiers organismes photosynthétiques sont probablement apparus très tôt au cours de l'évolution, il y a 3,8 milliards d'années. Ils devaient sans doute utiliser des réducteurs tels que l'hydrogène H2 et le sulfure d'hydrogène H2S au lieu de l'eau.\nLa production d'oxygène par des bactéries marines est démontrée dans trois plateformes carbonatées d'âge archéen des ceintures de roches vertes du nord-ouest du craton du Supérieur (Canada), datées à 2,87, 2,85 et 2,78 Ga par la méthode lanthane-cérium. Les cyanobactéries sont apparues plus tard, et l'excès d'oxygène alors libéré dans l'environnement aurait contribué à la « Grande Oxydation » il y a environ 2,4 milliards d'années, rendant possible l'évolution des êtres vivants vers des formes de vie plus complexes. Aujourd'hui, la puissance moyenne captée par la photosynthèse à l'échelle du globe avoisine 130 térawatts, ce qui équivaut à environ six fois la consommation énergétique de l'humanité.\n\nVue générale"
+          "titre": "Vaccination",
+          "resume": "La vaccination est l'administration d'un agent antigénique, le vaccin, dans le but de stimuler le système immunitaire d'un organisme vivant afin d'y développer une immunité adaptative contre un agent infectieux. La substance active d'un vaccin est un antigène dont la pathogénicité du porteur est atténuée afin de stimuler les défenses naturelles de l'organisme (son système immunitaire). La réaction immunitaire primaire permet en parallèle une mise en mémoire de l'antigène présenté pour qu'à l'avenir, lors d'une vraie contamination, l'immunité acquise puisse s'activer de façon plus rapide et plus forte.\nLa vaccination s'effectue sur un individu sain soit par injection sous-cutanée ou intramusculaire soit par voie orale, selon des pratiques le plus souvent réglementées. En général, chaque acte de vaccination est documenté (par exemple dans un carnet de vaccination).\nL'Organisation mondiale de la santé estime que la vaccination est l'une des interventions sanitaires les plus efficaces et les plus économiques. Elle a permis d'éradiquer la variole, de réduire de 99 % à ce jour l'incidence mondiale de la poliomyélite et de faire baisser de façon spectaculaire la morbidité, les incapacités et la mortalité dues à la diphtérie, au tétanos, à la coqueluche, à la tuberculose et à la rougeole. Pour la seule année 2003, les autorités sanitaires estiment que la vaccination a évité plus de deux millions de décès.\n\nHistoire\n\nDes méthodes empiriques de variolisation sont apparues très tôt dans l'histoire de l'humanité, grâce à l'observation du fait qu'une personne qui survit à la maladie est épargnée lors des épidémies suivantes. L'idée de prévenir le mal par le mal se concrétise dans des pratiques populaires sur les continents asiatique et africain. La pratique de l'inoculation était en tout cas connue en Afrique depuis plusieurs siècles et c'est de son esclave Onesimus que l'apprit le pasteur américain Cotton Mather. La première mention indiscutable de la variolisation apparaît en Chine au XVIe siècle. Il s'agissait d'inoculer une forme qu'on espérait peu virulente de la variole en mettant en contact la personne à immuniser avec le contenu de la substance qui suppure des vésicules d'un malade (le pus). Le risque n'était cependant pas négligeable : le taux de mortalité pouvait atteindre 1 ou 2 %. La pratique s'est progressivement diffusée le long de la route de la soie. Elle a été importée depuis Constantinople en Occident au début du XVIIIe siècle grâce à lady Mary Wortley Montagu. Voltaire lui consacre en 1734 sa XIe lettre philosophique, « Sur la petite vérole », où il la nomme inoculation, lui attribuant une origine circassienne et précisant qu'elle se pratique aussi en Angleterre : \n« Un évêque de Worcester a depuis peu prêché à Londres l'inoculation ; il a démontré en citoyen combien cette pratique avait conservé de sujets à l'État ; il l'a recommandée en pasteur charitable. On prêcherait à Paris contre cette invention salutaire comme on a écrit vingt ans contre les expériences de Newton ; tout prouve que les Anglais sont plus philosophes et plus hardis que nous. Il faut bien du temps pour qu'une certaine raison et un certain courage d'esprit franchissent le pas de Calais. »\n\n En 1760, Daniel Bernoulli démontra que, malgré les risques, la généralisation de cette pratique permettrait de gagner un peu plus de trois ans d'espérance de vie à la naissance. La pratique de l'inoculation de la variole a suscité de nombreux débats en France et ailleurs.\nPour la première fois, des années 1770 jusqu'en 1791, au moins six personnes ont testé, chacune de façon indépendante, la possibilité d'immuniser les humains de la variole en leur inoculant la variole des vaches, qui était présente sur les pis de la vache. Parmi les personnes qui ont fait les premiers essais figurent en 1774 un fermier anglais nommé Benjamin Jesty et, en 1791, un maître d'école allemand nommé Peter Plett. En 1796, le médecin anglais Edward Jenner fit la même découverte et se battit afin que l'on reconnaisse officiellement le bon résultat de l'immunisation. Le 14 mai 1796, il inocula au jeune James Phipps, âgé de 8 ans, du pus prélevé sur la main de Sarah Nelmes, une fermière infectée par la vaccine, ou variole des vaches. Trois mois plus tard, il inocula la variole à l'enfant, qui se révéla immunisé. Cette pratique se répandit progressivement dans toute l'Europe. Le mot vaccination vient du nom de la « variole des vaches », la vaccine, elle-même dérivée du latin : vacca qui signifie « vache ». Un auteur récent — reprenant en cela un débat ancien qui avait commencé dès Jenner — fait remarquer que la pratique aurait pu s'appeler « équination » vu l'origine équine de la vaccine. Il est par ailleurs attesté qu'en de multiples occasions, des lymphes vaccinales ont été produites à partir de chevaux (l'un de ses premiers biographes rapporte même que Jenner a inoculé son fils aîné, en 1789, avec des matières extraites d'un porc malade du swinepox).\nLe principe de la vaccination a été expliqué par Louis Pasteur et ses collaborateurs Roux et Duclaux, à la suite des travaux de Robert Koch mettant en relation les microbes et les maladies. Cette découverte lui permit de développer des techniques d'atténuation des germes. Sa première vaccination fut la vaccination d'un troupeau de moutons contre le charbon le 5 mai 1881. La première vaccination humaine (hormis la vaccination au sens originel de Jenner) fut celle d'un enfant contre la rage le 6 juillet 1885. Contrairement à la plupart des vaccinations, cette dernière fut effectuée après l'exposition au risque — ici, la morsure du jeune Joseph Meister par un chien enragé — et non avant (le virus de la rage ne progressant que lentement dans le système nerveux).\n\nAspects scientifiques"
         }
-      ],
-      "nb_mots_decouverte": 177,
-      "nb_mots_approfondi": 1773,
-      "sujet_id": "photosynthese",
-      "origine": "encyclopedie"
+      ]
     },
     "citation": {
-      "texte": "Hâtez-vous lentement, et sans perdre courage, vingt fois sur le métier remettez votre ouvrage.",
-      "auteur": "Nicolas Boileau",
-      "source": "L'Art poétique, chant I",
-      "annee": 1674
+      "texte": "Pour qu'on ne puisse abuser du pouvoir, il faut que, par la disposition des choses, le pouvoir arrête le pouvoir.",
+      "auteur": "Montesquieu",
+      "source": "De l'esprit des lois, livre XI, chapitre 4",
+      "annee": 1748
     },
     "meteo": {
       "villes_detail": [
         {
           "ville": "Antibes",
-          "temperature_actuelle": 15.4,
-          "temperature_max": 20.1,
-          "temperature_min": 14.6,
+          "temperature_actuelle": 9.6,
+          "temperature_max": 18.2,
+          "temperature_min": 9.0,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 5.9,
-          "vent_max_kmh": 12.2,
-          "rafales_max_kmh": 25.6,
+          "vent_kmh": 6.2,
+          "vent_max_kmh": 12.3,
+          "rafales_max_kmh": 24.8,
           "weather_code": 0,
           "description": "ciel dégagé",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 15.4,
-              "temperature_max": 19.9,
+              "temperature_min": 9.6,
+              "temperature_max": 17.4,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 10,
+              "vent_max_kmh": 7,
               "weather_code": 0,
               "description": "ciel dégagé"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 19.3,
-              "temperature_max": 20.1,
+              "temperature_min": 17.1,
+              "temperature_max": 18.2,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 12,
@@ -308,11 +278,11 @@
             },
             {
               "label": "Soir",
-              "temperature_min": 15.1,
-              "temperature_max": 19.0,
+              "temperature_min": 12.2,
+              "temperature_max": 16.1,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 10,
+              "vent_max_kmh": 8,
               "weather_code": 0,
               "description": "ciel dégagé"
             }
@@ -321,44 +291,44 @@
         },
         {
           "ville": "Cannes",
-          "temperature_actuelle": 17.2,
-          "temperature_max": 19.8,
-          "temperature_min": 15.9,
+          "temperature_actuelle": 11.2,
+          "temperature_max": 17.9,
+          "temperature_min": 9.6,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 6.6,
-          "vent_max_kmh": 12.5,
-          "rafales_max_kmh": 24.1,
+          "vent_kmh": 5.7,
+          "vent_max_kmh": 13.3,
+          "rafales_max_kmh": 20.5,
           "weather_code": 0,
           "description": "ciel dégagé",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 17.2,
-              "temperature_max": 19.6,
+              "temperature_min": 10.7,
+              "temperature_max": 16.6,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 9,
+              "vent_max_kmh": 6,
               "weather_code": 0,
               "description": "ciel dégagé"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 18.9,
-              "temperature_max": 19.8,
+              "temperature_min": 16.7,
+              "temperature_max": 17.9,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 12,
+              "vent_max_kmh": 13,
               "weather_code": 0,
               "description": "ciel dégagé"
             },
             {
               "label": "Soir",
-              "temperature_min": 16.3,
-              "temperature_max": 18.5,
+              "temperature_min": 12.3,
+              "temperature_max": 16.1,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 10,
+              "vent_max_kmh": 9,
               "weather_code": 0,
               "description": "ciel dégagé"
             }
@@ -367,127 +337,127 @@
         },
         {
           "ville": "Valbonne",
-          "temperature_actuelle": 12.9,
-          "temperature_max": 18.9,
-          "temperature_min": 12.4,
+          "temperature_actuelle": 7.4,
+          "temperature_max": 16.6,
+          "temperature_min": 7.1,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 8.0,
-          "vent_max_kmh": 8.7,
-          "rafales_max_kmh": 14.8,
-          "weather_code": 3,
-          "description": "couvert",
+          "vent_kmh": 7.1,
+          "vent_max_kmh": 11.1,
+          "rafales_max_kmh": 20.5,
+          "weather_code": 0,
+          "description": "ciel dégagé",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 12.9,
-              "temperature_max": 17.7,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 8,
-              "weather_code": 3,
-              "description": "couvert"
-            },
-            {
-              "label": "Après-midi",
-              "temperature_min": 16.8,
-              "temperature_max": 18.9,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 9,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
-            },
-            {
-              "label": "Soir",
-              "temperature_min": 13.5,
-              "temperature_max": 15.4,
+              "temperature_min": 7.1,
+              "temperature_max": 14.9,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 7,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 14.0,
+              "temperature_max": 16.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 11,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 9.5,
+              "temperature_max": 11.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Grasse",
-          "temperature_actuelle": 12.7,
-          "temperature_max": 17.7,
-          "temperature_min": 11.8,
+          "temperature_actuelle": 6.7,
+          "temperature_max": 15.4,
+          "temperature_min": 6.3,
           "precipitation_mm": 0.0,
           "probabilite_pluie_pct": 0,
-          "vent_kmh": 8.4,
-          "vent_max_kmh": 9.0,
-          "rafales_max_kmh": 16.2,
-          "weather_code": 2,
-          "description": "partiellement nuageux",
+          "vent_kmh": 7.9,
+          "vent_max_kmh": 11.5,
+          "rafales_max_kmh": 21.2,
+          "weather_code": 0,
+          "description": "ciel dégagé",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 12.7,
-              "temperature_max": 17.0,
+              "temperature_min": 6.4,
+              "temperature_max": 13.8,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
               "vent_max_kmh": 8,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
+              "weather_code": 0,
+              "description": "ciel dégagé"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 15.8,
-              "temperature_max": 17.7,
-              "probabilite_pluie_pct": 2,
+              "temperature_min": 13.1,
+              "temperature_max": 15.4,
+              "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 9,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
+              "vent_max_kmh": 12,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             },
             {
               "label": "Soir",
-              "temperature_min": 13.0,
-              "temperature_max": 14.7,
+              "temperature_min": 9.2,
+              "temperature_max": 11.3,
               "probabilite_pluie_pct": 0,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 8,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
+              "vent_max_kmh": 10,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             }
           ],
           "alertes": []
         }
       ],
-      "temperature_max_zone": 20.1,
-      "temperature_min_zone": 11.8,
+      "temperature_max_zone": 18.2,
+      "temperature_min_zone": 6.3,
       "probabilite_pluie_max_pct": 0,
-      "vent_max_kmh": 12.5,
+      "vent_max_kmh": 13.3,
       "description_dominante": "ciel dégagé",
       "periodes": [
         {
           "label": "Matin",
-          "temperature_min": 12.7,
-          "temperature_max": 19.9,
+          "temperature_min": 6.4,
+          "temperature_max": 17.4,
           "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
-          "vent_max_kmh": 10,
+          "vent_max_kmh": 8,
           "weather_code": 0,
           "description": "ciel dégagé"
         },
         {
           "label": "Après-midi",
-          "temperature_min": 15.8,
-          "temperature_max": 20.1,
-          "probabilite_pluie_pct": 2,
+          "temperature_min": 13.1,
+          "temperature_max": 18.2,
+          "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
-          "vent_max_kmh": 12,
+          "vent_max_kmh": 13,
           "weather_code": 0,
           "description": "ciel dégagé"
         },
         {
           "label": "Soir",
-          "temperature_min": 13.0,
-          "temperature_max": 19.0,
+          "temperature_min": 9.2,
+          "temperature_max": 16.1,
           "probabilite_pluie_pct": 0,
           "precipitation_mm": 0.0,
           "vent_max_kmh": 10,
@@ -496,67 +466,67 @@
         }
       ],
       "alertes": [],
-      "resume": "Ciel dégagé toute la journée, de 12° à 20°."
+      "resume": "Ciel dégagé toute la journée, de 6° à 18°."
     },
     "anglais": {
       "mode": "litterature",
-      "oeuvre": "Moby-Dick",
-      "auteur": "Herman Melville",
-      "annee": 1851,
+      "oeuvre": "Jane Eyre",
+      "auteur": "Charlotte Brontë",
+      "annee": 1847,
       "segments": [
         {
-          "t": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse",
-          "g": "la bourse, le porte-monnaie"
+          "t": "There was no possibility of taking a walk that day. We had been wandering",
+          "g": "errer"
         },
         {
-          "t": ", and nothing particular to interest me on shore",
-          "g": "à terre"
+          "t": ", indeed, in the leafless",
+          "g": "dépouillé de ses feuilles"
         },
         {
-          "t": ", I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen",
-          "g": "la mauvaise humeur, le spleen"
+          "t": " shrubbery",
+          "g": "bosquet d'arbustes"
         },
         {
-          "t": " and regulating the circulation. Whenever I find myself growing grim",
-          "g": "sombre, renfrogné"
+          "t": " an hour in the morning; but since dinner (Mrs. Reed, when there was no company, dined early) the cold winter wind had brought with it clouds so sombre, and a rain so penetrating, that further out-door exercise was now out of the question",
+          "g": "hors de question"
         },
         {
-          "t": " about the mouth; whenever it is a damp, drizzly",
-          "g": "bruineux"
+          "t": ". I was glad of it: I never liked long walks, especially on chilly",
+          "g": "frisquets"
         },
         {
-          "t": " November in my soul; whenever I find myself involuntarily pausing before coffin warehouses",
-          "g": "entrepôts de cercueils"
+          "t": " afternoons: dreadful",
+          "g": "pénible, affreux"
         },
         {
-          "t": ", and bringing up the rear",
-          "g": "fermer la marche"
+          "t": " to me was the coming home in the raw",
+          "g": "humide et glacial"
         },
         {
-          "t": " of every funeral I meet; and especially whenever my hypos",
-          "g": "idées noires"
+          "t": " twilight",
+          "g": "le crépuscule"
         },
         {
-          "t": " get such an upper hand",
-          "g": "le dessus"
+          "t": ", with nipped",
+          "g": "gelés"
         },
         {
-          "t": " of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off",
-          "g": "faire voler le chapeau des passants"
+          "t": " fingers and toes, and a heart saddened by the chidings",
+          "g": "les réprimandes"
         },
         {
-          "t": "—then, I account it high time",
-          "g": "juge qu'il est grand temps"
+          "t": " of Bessie, the nurse, and humbled",
+          "g": "humiliée"
         },
         {
-          "t": " to get to sea as soon as I can.",
+          "t": " by the consciousness of my physical inferiority to Eliza, John, and Georgiana Reed.",
           "g": null
         }
       ],
-      "texte_glose": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse (= la bourse, le porte-monnaie), and nothing particular to interest me on shore (= à terre), I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen (= la mauvaise humeur, le spleen) and regulating the circulation. Whenever I find myself growing grim (= sombre, renfrogné) about the mouth; whenever it is a damp, drizzly (= bruineux) November in my soul; whenever I find myself involuntarily pausing before coffin warehouses (= entrepôts de cercueils), and bringing up the rear (= fermer la marche) of every funeral I meet; and especially whenever my hypos (= idées noires) get such an upper hand (= le dessus) of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off (= faire voler le chapeau des passants)—then, I account it high time (= juge qu'il est grand temps) to get to sea as soon as I can."
+      "texte_glose": "There was no possibility of taking a walk that day. We had been wandering (= errer), indeed, in the leafless (= dépouillé de ses feuilles) shrubbery (= bosquet d'arbustes) an hour in the morning; but since dinner (Mrs. Reed, when there was no company, dined early) the cold winter wind had brought with it clouds so sombre, and a rain so penetrating, that further out-door exercise was now out of the question (= hors de question). I was glad of it: I never liked long walks, especially on chilly (= frisquets) afternoons: dreadful (= pénible, affreux) to me was the coming home in the raw (= humide et glacial) twilight (= le crépuscule), with nipped (= gelés) fingers and toes, and a heart saddened by the chidings (= les réprimandes) of Bessie, the nurse, and humbled (= humiliée) by the consciousness of my physical inferiority to Eliza, John, and Georgiana Reed."
     },
     "meta": {
-      "resume_1_phrase": "À la une : Attentat raciste dans les Yvelines : le suspect, Kévin Tessier, a été mis en examen et placé en détention provisoire."
+      "resume_1_phrase": "À la une : Edouard Philippe refuse une nouvelle fois de participer à une primaire de la droite et du centre, source de \"division\" et de \"confusion\"."
     },
     "_genere_par_llm": true,
     "_provider": "groq+mistral+nvidia",
@@ -594,15 +564,9 @@
       },
       "sport": {
         "genere_par_llm": true,
-        "provider": "groq",
+        "provider": "nvidia",
         "erreur": null,
-        "essais_echoues": 1
-      },
-      "science_d": {
-        "genere_par_llm": true,
-        "provider": "mistral",
-        "erreur": null,
-        "essais_echoues": 1
+        "essais_echoues": 0
       }
     },
     "_bloc": {
@@ -621,5 +585,5 @@
       "erreur": null
     }
   },
-  "debut_run": "2026-10-30T06:10:43.565004+01:00"
+  "debut_run": "2026-11-02T06:10:41.998537+01:00"
 }
