@@ -1,0 +1,587 @@
+{
+  "date": "2026-11-03",
+  "derniere_mise_a_jour": "2026-11-03T06:21:43.207249+01:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "L’étrange campagne présidentielle, par Serge July",
+          "resume": "Percutée par le mouvement de la jeunesse qui essaime en Europe, les mobilisations contre la vie chère et autres grèves, la campagne électorale se trouve face au défi de parvenir à se nourrir de ces crises qui s’accumulent.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Malgré le refus d’Édouard Philippe, Attal n’en démord pas sur la primaire",
+          "resume": "Attal juge « inéluctable » une primaire pour éviter un duel entre Le Pen et Mélenchon. Mais Philippe n’en veut pas, Retailleau hésite et Lisnard est pour",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Après ses propos sur l’immigration, la gauche accuse Philippe de flirter avec l’extrême droite",
+          "resume": "Edouard Philippe est critiqué pour ses propos reliant immigration et pillages du 17 octobre. Le candidat à la présidentielle 2027 défend sa position, avec le soutien de Maud Bregeon",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Pour Gérald Darmanin, Jean-Luc Mélenchon et Marine Le Pen \"tueront l'Europe telle qu'elle existe\" en cas de victoire à la présidentielle",
+          "resume": "Le garde des Sceaux, qui soutient Edouard Philippe, estime que \"les projets des deux candidats sont extrêmement clairs et se construisent sur la fin de cette Europe\".",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Victoire de la liste étudiante en Serbie : «Ils ont gagné par leur présence sur le terrain et une mobilisation civique de masse»",
+          "resume": "Le succès du mouvement citoyen aux élections législatives du 25 octobre est le fruit d’une lutte populaire acharnée contre la corruption et pour le rétablissement de l’état de droit, explique le chercheur Aleksandar Matkovic.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Guerre en Ukraine : l’émissaire américain annonce des négociations entre Moscou et Kiev la semaine prochaine à Abou Dhabi, sous médiation de Washington",
+          "resume": "Des négociations prévues mardi 10 et mercredi 11 novembre porteront sur les dispositions de sécurité d’après-guerre, la désescalade, les efforts humanitaires et les prochaines étapes vers la paix. Des bombardements russes dans l’oblast de Zaporijia ont fait au moins 26 morts.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Iran : l’armée américaine a effectué des frappes sur l’île de Qeshm, selon le « Wall Street Journal »",
+          "resume": "Ces frappes secrètes interviennent à la veille des élections de mi-mandat aux États-Unis, alors que Donald Trump évoque un possible accord avec l’Iran.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Législatives en Israël : Benyamin Nétanyahou appelle à une large coalition, sous sa direction et sans les partis arabes ; l’opposition doit se réunir pour tenter de constituer une majorité",
+          "resume": "Les élections législatives du 27 octobre n’ont dégagé aucune majorité : le camp du Premier ministre sortant est arrivé devant le bloc principal de l'opposition, mais loin de la majorité pour garder le contrôle de la Knesset.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "A Gaza, des frappes israéliennes tuent cinq personnes, selon les services de secours palestiniens",
+          "resume": "L'armée israélienne dit avoir « frappé plusieurs terroristes » à divers endroits de l'enclave palestinienne.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Midterms 2026 : les Américains appelés aux urnes pour un vote à valeur de référendum pour Donald Trump",
+          "resume": "Le président républicain est confronté au risque d’une vague démocrate qui pourrait emporter le Congrès américain et entraver sérieusement sa marge de manœuvre pour les deux dernières années de son mandat.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Guerre en Iran : Trump affirme qu’un accord avec Téhéran « pourrait arriver », le prix du pétrole recule",
+          "resume": "Ce week-end, il s'était pourtant dit prêt à donner un \"coup de massue\" à l'Iran et avait déclaré qu'il lui restait à \"s'occuper\" d'un ou deux sites nucléaires iraniens.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "20 Minutes",
+            "France 24 International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon France Info, Alaska, Maine, Texas... Sept Etats où les résultats des midterms vont être particulièrement scrutés",
+          "resume": "Les Américains votent mardi pour renouveler la Chambre des représentants et une partie du Sénat. Le président Donald Trump pourrait perdre sa majorité au Congrès à l'occasion de ces élections de mi-mandat.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon 20 Minutes, Guerre en Ukraine : Pour Zelensky, « la Russie ne veut ni désescalade, ni véritable justice »",
+          "resume": "",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
+      "mouvements_notables": [
+        {
+          "nom": "Nasdaq",
+          "variation_pct": -1.07,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "football",
+          "texte": "Selon L'Équipe Football, Luis Enrique alignera une équipe proche du type habituel malgré l'absence de blessés, mais des incertitudes subsistent aux postes de latéral gauche et d'avant‑centre pour le déplacement à Villarreal en Ligue des champions."
+        },
+        {
+          "sport": "football",
+          "texte": "Selon BBC Sport, l'attaquant du Bayern Munich Harry Kane affirme qu'il échangerait son trophée du Ballon d'Or contre une médaille de vainqueur de la Ligue des champions."
+        },
+        {
+          "sport": "football",
+          "texte": "Selon L'Équipe Football, Michael Olise, touché au genou droit contre le Borussia Dortmund, a été convoqué dans le groupe du Bayern pour le match contre l'Atlético de Madrid en Ligue des champions."
+        },
+        {
+          "sport": "natation",
+          "texte": "Selon L'Équipe Natation, Léon Marchand, absent des Championnats de France en petit bassin, fait partie de la sélection française pour les championnats du monde en petit bassin de Pékin, aux côtés de Maxime Grousset et Béryl Gastaldello."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Selon L'Équipe Tennis, Kyrian Jacquet a été éliminé au premier tour du Rolex Paris Masters par Tomas Machac, qui affrontera ensuite Arthur Fils. Le Français Titouan Droguet, bénéficiaire d’une invitation, a perdu également au premier tour contre le Slovaque Alex Molcan."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Selon 20 Minutes, Moïse Kouame, classé 132e mondial, se prépare à affronter Davidovich Fokina à Paris après sa victoire au Challenger de Brest, déclarant ne ressentir aucune pression."
+        },
+        {
+          "sport": "autres",
+          "texte": "Selon BBC Sport, le flanker Jamie Ritchie des Glasgow Warriors et le pilier Elliot Millar Mills du Newcastle Red Bulls sont exclus de l’équipe de Scotland pour le Nations Championship après s’être blessés avec leurs clubs."
+        },
+        {
+          "sport": "autres",
+          "texte": "Selon BBC Sport, Kimi Antonelli est devenu le plus jeune champion du monde d’histoire en Formule 1, ce qui est décrit comme le début de quelque chose de spécial."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "Atlético Madrid – Bayern Munich",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-11-03T20:00:00+00:00",
+          "date_texte": "mardi 3 novembre à 21h00",
+          "sport": "football"
+        },
+        {
+          "affiche": "Boston Celtics – Milwaukee Bucks",
+          "competition": "NBA",
+          "date_iso": "2026-11-05T00:30:00+00:00",
+          "date_texte": "jeudi 5 novembre à 1h30",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "decouverte",
+      "titre": "Découverte du rôle clé d’un mécanisme cellulaire dans la sclérose tubéreuse",
+      "contenu_markdown": "Une étude publiée dans *Nature* le 2 novembre 2026 révèle un mécanisme fondamental dans la sclérose tubéreuse, une maladie génétique rare caractérisée par la formation de tumeurs bénignes dans plusieurs organes. Les chercheurs ont identifié que la **protéine mTORC1** (un complexe moléculaire impliqué dans la croissance et la division cellulaire) active directement les **astrocytes** – un type de cellule gliale du cerveau – de manière autonome, c’est-à-dire sans dépendre des signaux extérieurs. Cette réaction cellulaire, appelée *réactivité astrocytaire*, est un processus normal de réponse à des lésions ou des inflammations, mais son dysfonctionnement est associé à la progression de la maladie.\n\n**Pourquoi cette découverte est importante ?**\nJusqu’à présent, les traitements visaient surtout à contrôler les tumeurs. En ciblant spécifiquement le mécanisme mTORC1 dans les astrocytes, cette étude ouvre une piste pour développer des thérapies plus ciblées, potentiellement moins agressives que les approches actuelles. Elle suggère aussi que la réactivité astrocytaire pourrait jouer un rôle dans d’autres maladies neurodégénératives ou liées à des lésions cérébrales.\n\n**Ce qui reste à préciser**\nLes auteurs soulignent par ailleurs que cette découverte doit être validée dans des modèles animaux plus poussés avant toute application clinique.\n\n*Source : Nature (2026), doi:10.1038/s41586-026-11350-5*\n\n## Sources\n- Nature News — https://www.nature.com/articles/s41586-026-11350-5\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Insuline\n\n## Introduction\nL’insuline est une hormone protéique essentielle au bon fonctionnement de l’organisme. Découverte au début du XXe siècle, elle est produite naturellement par des cellules spécifiques du pancréas, les cellules β des îlots de Langerhans, ainsi que dans certains tissus de poissons. Son rôle principal consiste à réguler la concentration de glucose dans le sang, en favorisant son absorption par les cellules et son stockage sous forme d’énergie. Sans insuline, le métabolisme des glucides, des lipides et des protéines est profondément perturbé, entraînant des conséquences graves pour la santé.\n\n## Pourquoi le sujet est important\nL’insuline joue un rôle central dans la gestion de l’énergie au quotidien. Après un repas, par exemple, la digestion des aliments glucidiques libère du glucose dans le sang, ce qui déclenche la sécrétion d’insuline. Cette hormone permet alors aux cellules du foie, des muscles et des tissus adipeux d’absorber le glucose pour le convertir en glycogène (forme de stockage) ou en triglycérides (graisses). À l’inverse, en période de jeûne, une faible concentration d’insuline favorise la libération de glucose par le foie, maintenant ainsi un équilibre énergétique.\n\nSon importance dépasse le cadre biologique : les maladies liées à son dysfonctionnement, comme le diabète de type 1, illustrent son rôle vital. Sans traitement par insuline exogène, cette forme de diabète est mortelle en quelques mois en raison de l’hyperglycémie et de complications métaboliques graves. Aujourd’hui, les insulines synthétiques, produites par génie génétique, ont révolutionné la prise en charge de ces pathologies, évitant des complications autrefois fréquentes avec les insulines animales.\n\n## Explication du phénomène\nL’insuline agit comme un signal chimique qui module l’activité de nombreuses cellules. Son mécanisme repose sur deux effets principaux :\n1. **Réduction de la glycémie** : elle limite la libération de glucose par le foie et stimule son absorption par les tissus périphériques (muscles, graisses).\n2. **Stimulation de l’anabolisme** : elle favorise la construction de molécules complexes (glycogène, protéines, lipides) à partir de leurs composants de base, comme le glucose ou les acides aminés.\n\nSon action s’oppose à celle du glucagon, une autre hormone pancréatique qui, elle, augmente la glycémie en déclenchant la dégradation du glycogène hépatique. Chez les mammifères, l’insuline occupe une place prépondérante dans cette régulation, tandis que chez les oiseaux, c’est le glucagon qui domine.\n\n## Fonctionnement / mécanismes\nLa sécrétion d’insuline est déclenchée par plusieurs facteurs :\n- **L’élévation de la glycémie** : après un repas riche en glucides, la concentration de glucose dans le sang stimule directement les cellules β du pancréas.\n- **L’activité physique** : l’exercice modifie la sensibilité des tissus à l’insuline, optimisant son utilisation par les muscles.\n\nUne fois sécrétée, l’insuline se lie à des récepteurs spécifiques à la surface des cellules cibles (foie, muscles, adipocytes). Cette liaison active une cascade de réactions biochimiques qui :\n- **Facilite le transport du glucose** à l’intérieur des cellules via des protéines sensibles à l’insuline.\n- **Active des enzymes** permettant la conversion du glucose en glycogène (dans le foie et les muscles) ou en triglycérides (dans les tissus adipeux).\n- **Inhibe la production de glucose** par le foie, réduisant ainsi sa libération dans le sang.\n\nChez les individus en bonne santé, ce système de régulation maintient la glycémie dans une fourchette étroite, essentielle au fonctionnement cérébral et musculaire. En cas de déficit en insuline, comme dans le diabète de type 1, cette régulation est rompue, entraînant une accumulation de glucose dans le sang et des complications métaboliques sévères.\n\n## Données et résultats scientifiques\n\nL’insuline agit en favorisant l’entrée du glucose dans les cellules adipeuses, hépatiques et musculaires, ce qui conduit à une diminution du taux de glucose sanguin. Chez les mammifères, l’absence totale d’insuline entraîne une hyperglycémie sévère, une perte de masse musculaire et adipeuse, ainsi qu’une production incontrôlée de corps cétoniques, pouvant conduire à une acidocétose diabétique.  \n\nLes formes modernes d’insuline humaine obtenues par génie génétique présentent une stabilité supérieure à celle des préparations d’origine porcine. Depuis 2010, cette stabilité a permis de réduire le nombre de patients nécessitant des injections fréquentes et de diminuer certaines complications associées à d’autres traitements antidiabétiques.  \n\nLes données chiffrées détaillées concernant les effets métaboliques précis, les doses utilisées en pratique clinique ou les résultats d’essais cliniques spécifiques sont à consulter dans les publications scientifiques référencées.\n\n## Ce que les scientifiques savent\n\n- **Rôle métabolique** : L’insuline régule le métabolisme des glucides, des lipides et des protéines en stimulant l’absorption du glucose par les tissus cibles et en favorisant sa conversion en glycogène (dans le foie et les muscles) ou en triglycérides (dans le tissu adipeux).  \n- **Interaction avec le glucagon** : En partenariat avec le glucagon, l’insuline assure l’équilibre des substrats énergétiques. Chez les mammifères, l’insuline est l’hormone dominante pour la régulation de la glycémie, tandis que chez certaines espèces comme les oiseaux, le glucagon joue ce rôle principal.  \n- **Effet anabolisant** : Une concentration élevée d’insuline stimule l’anabolisme cellulaire, favorisant la synthèse de macromolécules, alors qu’une faible concentration favorise le catabolisme.  \n- **Traitement du diabète de type 1** : L’insuline administrée aux patients diabétiques de type 1 permet de contrôler la glycémie, d’éviter les complications aiguës comme l’acidocétose et de réduire la mortalité, notamment dans les pays où l’accès au médicament est assuré.  \n- **Production biotechnologique** : Les insulines humaines recombinantes sont plus stables que les préparations d’origine animale, ce qui améliore la gestion thérapeutique.\n\n## Ce qui reste incertain\n\n- **Variabilité inter‑individuelle** : Les réponses métaboliques à l’insuline peuvent varier selon l’âge, le poids, le niveau d’activité physique et la composition génétique, mais les mécanismes exacts de cette variabilité restent à préciser.  \n- **Rôle chez les espèces non‑mammifères** : Bien que le texte indique que le glucagon est l’hormone principale chez les oiseaux, les détails de la régulation hormonale chez d’autres classes d’animaux (poissons, reptiles) nécessitent davantage d’études.  \n- **Effets à long terme des nouvelles formulations** : Les améliorations de stabilité depuis 2010 sont reconnues, mais les impacts à très long terme sur la prévention de complications chroniques du diabète restent à confirmer par des études longitudinales.\n\n## Limites et controverses éventuelles\n\n- **Accès inégal à l’insuline** : Le texte souligne que dans plusieurs pays d’Afrique subsaharienne, l’insuline médicament fait souvent défaut, ce qui limite son efficacité thérapeutique et soulève des questions d’équité sanitaire.  \n- **Comparaison avec d’autres traitements** : Bien que l’insuline permette d’éviter certaines complications liées à la metformine en cas d’insuffisance rénale, la balance entre les bénéfices et les risques potentiels de chaque traitement doit être évaluée au cas par cas, et les recommandations peuvent diverger selon les autorités de santé.  \n- **Stabilité et dosage** : La stabilité accrue des insulines recombinantes est reconnue, mais les protocoles de dosage optimal pour différents profils de patients restent sujets à discussion parmi les cliniciens.\n\n## Conclusion\n\nL’insuline est une hormone centrale du métabolisme énergétique, assurant le transport du glucose vers les tissus et régulant l’équilibre entre anabolisme et catabolisme. Son rôle crucial dans la survie des mammifères, notamment chez les patients diabétiques de type 1, est bien établi, tout comme les avancées apportées par les formes recombinantes stables. Par ailleurs, l’accès inégal à ce traitement vital demeure un enjeu majeur de santé publique. Des recherches continues et des politiques d’accès équitable sont essentielles pour optimiser l’utilisation de l’insuline dans la prévention et le traitement du diabète.\n\n## Sources\n- Wikipédia (fr) — Insuline — https://fr.wikipedia.org/wiki/Insuline\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 4,
+      "nb_mots": 1481,
+      "matiere_source": "fine",
+      "textes_sources_audit": [
+        {
+          "source": "Nature News",
+          "titre": "Author Correction: mTORC1 drives cell-autonomous astrocyte reactivity in tuberous sclerosis",
+          "resume": "Nature, Published online: 02 November 2026; doi:10.1038/s41586-026-11350-5 Author Correction: mTORC1 drives cell-autonomous astrocyte reactivity in tuberous sclerosis"
+        },
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Insuline",
+          "resume": "L'insuline (du latin : insula « île ») est une hormone protéique sécrétée par les cellules β des îlots de Langerhans dans le pancréas, ainsi que dans les corps de Brockmann de certains poissons téléostéens. Elle a un effet important sur le métabolisme des glucides, des lipides et des protéines en favorisant l'absorption du glucose présent dans le sang par les cellules adipeuses, les cellules du foie et celles des muscles squelettiques. Le glucose absorbé par ces tissus est converti en glycogène ou en triglycérides, voire en les deux à la fois dans le cas du foie. La libération de glucose par le foie dans le sang est très fortement limitée par un taux sanguin élevé en insuline.\nCette hormone joue de ce fait, avec le glucagon, un rôle majeur dans la régulation des substrats énergétiques, dont les principaux sont le glucose, les acides gras et les corps cétoniques. Dans le couple que forment l'insuline et le glucagon, l'insuline a le rôle principal chez les mammifères : son absence est fatale dans un délai de quelques mois. Dans d'autres espèces, en particulier chez les oiseaux, c'est l'inverse : le glucagon est l'hormone principale.\nGlobalement, l'action de l'insuline est souvent résumée par son effet hypoglycémiant (baisse du taux de glucose dans le sang). Il est probablement plus juste de dire que l'insuline est sécrétée en fonction de l'état nutritionnel et de l'activité physique, de sorte qu'après les repas, sous l'influence de l'élévation de la glycémie (la concentration de glucose dans le sang), mais aussi sous l'influence directe de la présence des aliments dans le tube digestif, la sécrétion d'insuline est stimulée, ce qui permet le stockage du glucose, produit final de la digestion des aliments glucidiques. D'une manière générale, l'insuline sanguine a pour effet de stimuler l'anabolisme des cellules, ce qui en fait une hormone anabolisante ; à l'inverse, une faible concentration en insuline dans le sang favorise le catabolisme, c'est-à-dire la dégradation des macromolécules biologiques en molécules plus petites.\nLes diabètes sucrés sont des maladies de la sécrétion d'insuline. Dans sa forme la plus sévère, le diabète insulino-dépendant (ou diabète de type 1) est mortel en quelques mois en l'absence de traitement, dans un tableau caractérisé par l'hyperglycémie, la perte de muscle et de tissu adipeux, et la production massive et non régulée non seulement de glucose mais aussi de corps cétoniques : c'est l'acidocétose diabétique. En Occident, le diabète insulinodépendant est une maladie qui n'est que très rarement fatale, grâce à l'insuline, médicament que les diabétiques doivent s'injecter plusieurs fois par jour. Ce n'est pas le cas dans la plupart des pays de l'Afrique subsahélienne où l'insuline médicament fait souvent défaut.\nLes insulines humaines obtenues par génie génétique sont, contrairement aux anciennes insulines prélevées chez le porc, d'une stabilité telle que depuis 2010 beaucoup de patients insulinotraités ne sont pas des patients insulinodépendants : l'usage de l'insuline évite l'apparition de certaines complications liées à certains médicaments tels que la metformine en cas d'insuffisance rénale."
+        }
+      ],
+      "nb_mots_decouverte": 230,
+      "nb_mots_approfondi": 1244,
+      "sujet_id": "insuline",
+      "origine": "encyclopedie"
+    },
+    "citation": {
+      "texte": "Dans les champs de l'observation, le hasard ne favorise que les esprits préparés.",
+      "auteur": "Louis Pasteur",
+      "source": "Discours d'inauguration de la faculté des sciences de Lille, 7 décembre 1854",
+      "annee": 1854
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 11.7,
+          "temperature_max": 19.1,
+          "temperature_min": 9.6,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 5.8,
+          "vent_max_kmh": 30.3,
+          "rafales_max_kmh": 50.0,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 11.7,
+              "temperature_max": 17.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 18.2,
+              "temperature_max": 19.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 22,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 13.7,
+              "temperature_max": 18.0,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 30,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 13.1,
+          "temperature_max": 18.5,
+          "temperature_min": 11.9,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 11.3,
+          "vent_max_kmh": 23.9,
+          "rafales_max_kmh": 44.6,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 13.1,
+              "temperature_max": 17.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 11,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 17.7,
+              "temperature_max": 18.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 16,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 14.9,
+              "temperature_max": 17.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 24,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 9.9,
+          "temperature_max": 17.3,
+          "temperature_min": 9.7,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 7.2,
+          "vent_max_kmh": 10.0,
+          "rafales_max_kmh": 14.4,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 9.7,
+              "temperature_max": 16.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 14.5,
+              "temperature_max": 17.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 9.7,
+              "temperature_max": 12.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 9.6,
+          "temperature_max": 16.2,
+          "temperature_min": 9.4,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 9.6,
+          "vent_max_kmh": 11.4,
+          "rafales_max_kmh": 17.3,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 9.5,
+              "temperature_max": 15.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 13.3,
+              "temperature_max": 16.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 11,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 9.5,
+              "temperature_max": 11.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 19.1,
+      "temperature_min_zone": 9.4,
+      "probabilite_pluie_max_pct": 0,
+      "vent_max_kmh": 30.3,
+      "description_dominante": "ciel dégagé",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 9.5,
+          "temperature_max": 17.5,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 11,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 13.3,
+          "temperature_max": 19.1,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 22,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 9.5,
+          "temperature_max": 18.0,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 30,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        }
+      ],
+      "alertes": [],
+      "resume": "Ciel dégagé le matin, couvert l'après-midi, ciel dégagé le soir, de 9° à 19°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "The Great Gatsby",
+      "auteur": "F. Scott Fitzgerald",
+      "annee": 1925,
+      "segments": [
+        {
+          "t": "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind",
+          "g": "ruminer"
+        },
+        {
+          "t": " ever since. \"Whenever",
+          "g": "chaque fois que"
+        },
+        {
+          "t": " you feel like criticizing anyone,\" he told me, \"just remember that all the people in this world haven't had the advantages",
+          "g": "privilèges"
+        },
+        {
+          "t": " that you've had.\" He didn't say any more, but we've always been unusually communicative in a reserved way, and I understood that he meant a great deal more",
+          "g": "bien davantage"
+        },
+        {
+          "t": " than that. In consequence",
+          "g": "par conséquent"
+        },
+        {
+          "t": ", I'm inclined",
+          "g": "enclin"
+        },
+        {
+          "t": " to reserve all judgments",
+          "g": "suspendre tout jugement"
+        },
+        {
+          "t": ", a habit that has opened up many curious natures to me and also made me the victim of not a few",
+          "g": "pas mal de"
+        },
+        {
+          "t": " veteran bores",
+          "g": "vieux raseurs"
+        },
+        {
+          "t": ".",
+          "g": null
+        }
+      ],
+      "texte_glose": "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind (= ruminer) ever since. \"Whenever (= chaque fois que) you feel like criticizing anyone,\" he told me, \"just remember that all the people in this world haven't had the advantages (= privilèges) that you've had.\" He didn't say any more, but we've always been unusually communicative in a reserved way, and I understood that he meant a great deal more (= bien davantage) than that. In consequence (= par conséquent), I'm inclined (= enclin) to reserve all judgments (= suspendre tout jugement), a habit that has opened up many curious natures to me and also made me the victim of not a few (= pas mal de) veteran bores (= vieux raseurs)."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : L’étrange campagne présidentielle, par Serge July ; Guerre en Ukraine : l’émissaire américain annonce des négociations entre Moscou et Kiev la semaine prochaine à Abou Dhabi, sous médiation de Washington."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_d": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 1
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-11-03T06:10:44.296021+01:00"
+}
