@@ -1,0 +1,608 @@
+{
+  "date": "2026-11-04",
+  "derniere_mise_a_jour": "2026-11-04T06:20:18.302497+01:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Attentat raciste dans les Yvelines : le suspect Kevin Tessier a tenté de se suicider en détention",
+          "resume": "L'homme de 39 ans a tenté de mettre fin à ses jours dimanche, il a réintégré la prison quelques heures après sa prise en charge médicale, selon des sources proches du dossier",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "20 Minutes",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Le plafond du livret A sera relevé en février, dans une fourchette de 25 000 à 30 000 euros, annonce Sébastien Lecornu",
+          "resume": "Le plafond est actuellement de 22 950 euros. Le taux sera lui aussi relevé, a précisé le Premier ministre à l'Assemblée nationale mardi, sans livrer davantage de détails.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Retailleau estime qu’il « faudra une primaire sans doute en début d’année »",
+          "resume": "Bruno Retailleau a plaidé mardi soir pour une primaire de la droite et du centre avant la présidentielle 2027, malgré le refus d’Edouard Philippe",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : pourquoi les dates du scrutin virent au casse-tête constitutionnel",
+          "resume": "La controverse suscitée par le choix du 2 mai 2027 pour la tenue du second tour a pris une nouvelle ampleur à la suite des débordements survenus à l’occasion de la mobilisation du 17 octobre. Les marges de manœuvre constitutionnelles pour modifier le calendrier sont très étroites.",
+          "pourquoi_important": "Selon Le Monde, le choix de la date du second tour de la présidentielle 2027 pose un problème de conformité constitutionnelle.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Commission d’enquête sur le 17 octobre : Laurent Nuñez, un ministre face à «l’échec» du maintien de l’ordre",
+          "resume": "Interrogé à l’Assemblée nationale, mardi 3 novembre, le ministre de l’intérieur a regretté un « défaut d’anticipation » des forces de l’ordre « lié à la simultanéité des événements » lors des violences du 17 octobre.",
+          "pourquoi_important": "Le ministre de l’intérieur a reconnu un échec dans l'anticipation et le maintien de l'ordre lors des violences du 17 octobre.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Libération"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Espagne : le ministre des transports démissionne après la catastrophe ferroviaire meurtrière",
+          "resume": "Oscar Puente démissionne une semaine après la collision d’Urda, qui a fait au moins 69 morts.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Libération",
+            "20 Minutes",
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "RESULTATS. Les démocrates s'emparent du Sénat, les républicains de Donald Trump en grande difficulté aux midterms 2026",
+          "resume": "Les démocrates James Talarico et Adam Hamilton remportent des sièges au Sénat dans des États traditionnellement républicains, confirmant une vague démocrate.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France Info",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : au moins 33 morts au lendemain d’une attaque russe contre un centre de distribution d’aide humanitaire dans la région de Zaporijia",
+          "resume": "Volodymyr Zelensky estime que plus de 50 personnes pourraient encore être sous les décombres. L’ONU qualifie l’attaque de violation potentielle du droit international humanitaire.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "En Pologne, la crise autour du Tribunal constitutionnel préfigure une campagne virulente pour les prochaines élections législatives",
+          "resume": "L’assemblée générale du Tribunal constitutionnel oppose le gouvernement de Donald Tusk et l’opposition nationaliste, sans issue immédiate.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "En Afrique du Sud, la déconfiture annoncée de l’ANC, en perte de vitesse dans les grandes villes du pays",
+          "resume": "L’ANC, au pouvoir depuis 1994, est menacé par l’Alliance démocratique dans les scrutins municipaux, en raison de crises économiques et sociales.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : Merz « ne voit pas » Moscou négocier sérieusement la paix avec Kiev",
+          "resume": null,
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Midterms 2026 : le démocrate Jon Ossoff remporte la Géorgie et renforce sa stature de présidentiable",
+          "resume": "\"Le peuple américain a rejeté la dépravation, la corruption et l'incompétence\" de Donald Trump a réagi le candidat, lors de ces élections de mi-mandat décisives pour le locataire de la Maison Blanche.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Le Monde International",
+            "France 24 International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon France 24 International, Sénégal : le budget rectificatif rejeté par les députés",
+          "resume": "Dans cette édition, direction le Sénégal, où le rejet du projet de loi de finances par l’Assemblée nationale, malgré un nouveau passage en commission des finances, n’a pas convaincu les députés du Pastef. Une décision qui pourrait compromettre l’obtention d’un prêt de plus de deux milliards de dollars du FMI. En Afrique du Sud, à quelques heures de l’ouverture des bureaux de vote, les électeurs s’apprêtent à choisir leurs nouveaux élus locaux, dans un scrutin marqué par de nombreux défis et des…",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Les principaux indices européens ont clôturé en baisse, tandis que les indices américains ont progressé légèrement. Les matières premières affichent une hausse modeste.",
+      "mouvements_notables": []
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "football",
+          "texte": "Le PSG a battu Villarreal 6-0, consolidant ainsi la tête de la phase de ligue de la Ligue des champions."
+        },
+        {
+          "sport": "football",
+          "texte": "Le PSG a égalé le record de l'OL de 14 matches consécutifs sans défaite en Ligue des champions."
+        },
+        {
+          "sport": "football",
+          "texte": "Lille a obtenu un match nul 0-0 contre Bodö/Glimt en Norvège, inscrivant son premier point en Ligue des champions."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Strasbourg a battu Cibona Zagreb 95-70, prenant la tête du groupe B de la Ligue des champions."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Luka Doncic a inscrit 42 points et 13 passes décisives contre le Heat, tandis que Shai Gilgeous-Alexander a marqué 43 points contre Cleveland, record de la saison."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Rafael Jodar a perdu contre Casper Ruud 6-3, 6-4 au deuxième tour du Rolex Paris Masters, ne contrôlant plus son destin pour le Masters."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Benjamin Bonzi, issu des qualifications, a été battu par Taylor Fritz 3-6, 6-3, 6-4 au premier tour du Rolex Paris Masters."
+        },
+        {
+          "sport": "autres",
+          "texte": "Alex Mitchell a été exclu de la Nations Championship après une quatrième blessure aux ischio-jambiers de l'année."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "AEK Athens – Real Madrid",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-11-04T17:45:00+00:00",
+          "date_texte": "mercredi 4 novembre à 18h45",
+          "sport": "football"
+        },
+        {
+          "affiche": "Boston Celtics – Milwaukee Bucks",
+          "competition": "NBA",
+          "date_iso": "2026-11-05T00:30:00+00:00",
+          "date_texte": "jeudi 5 novembre à 1h30",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "decouverte",
+      "titre": "Un institut pour la pensée radicalement large",
+      "contenu_markdown": "Nature News a publié le 3 novembre 2026 un article intitulé « Why we’re setting up an institute for radically broad thinking » (doi : 10.1038/d41586-026-03397-1). L’article explique que la complexité des défis actuels exige une approche nouvelle qui dépasse les frontières disciplinaires. Pour répondre à cette exigence, un institut dédié à la pensée radicalement large est en cours de création. L’objectif est de fournir un espace où les chercheurs peuvent concevoir de nouvelles idées en intégrant des perspectives variées. L’importance de cette initiative réside dans la possibilité d’aborder les problèmes contemporains sous un angle inédit. Les modalités précises de fonctionnement de l’institut et son impact futur restent à détailler dans les publications à venir.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03397-1\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Cholestérol\n\n## Introduction\nLe cholestérol est une molécule souvent associée à des idées reçues, notamment celle d’un « mauvais » lipide responsable des maladies cardiovasculaires. Pourtant, il s’agit d’un composant fondamental du métabolisme animal, présent dans toutes les cellules. Découvert en 1758 sous forme solide dans les calculs biliaires, ce stérol joue un rôle clé dans la structure des membranes cellulaires et dans de nombreux processus biochimiques. Son histoire scientifique, marquée par des débats et des avancées majeures, illustre aussi comment la recherche a progressivement éclairci son double visage : essentiel à la vie, mais dont un déséquilibre peut devenir dangereux.\n\n## Pourquoi le sujet est important\nComprendre le cholestérol est crucial pour plusieurs raisons. D’abord, il est indispensable à la stabilité des membranes cellulaires : sa molécule plate et rigide module leur perméabilité, leur courbure et leur résistance mécanique. Ensuite, son transport dans le sang via deux types de lipoprotéines – les LDL (dites « mauvais cholestérol ») et les HDL (« bon cholestérol ») – influence directement le risque de maladies cardiovasculaires, première cause de mortalité dans les pays industrialisés. Aujourd’hui, les recommandations médicales reposent sur des seuils précis (cholestérol total < 2 g/l, LDL < 1,6 g/l), mais leur interprétation reste nuancée.\n\n## Explication du phénomène : qu’est-ce que le cholestérol ?\nLe cholestérol est un **lipide de la famille des stérols**, c’est-à-dire une molécule organique composée de quatre cycles carbonés fusionnés (appelés noyau cyclopentano-perhydro-phénanthrénique) et d’une chaîne latérale. Sa structure rigide et hydrophobe (qui repousse l’eau) lui permet de s’insérer entre les phospholipides des membranes cellulaires, où il :\n- **Rend les membranes moins fluides** à basse température (en limitant leur perméabilité),\n- **Favorise leur courbure** (essentielle pour la formation de vésicules ou de domaines spécialisés),\n- **Stabilise leur organisation** en régulant leur fluidité selon les besoins cellulaires.\n\nContrairement à une idée répandue, le cholestérol n’est **pas un déchet métabolique** : il est synthétisé par l’organisme (principalement dans le foie) et participe aussi à la production d’hormones stéroïdiennes (comme les hormones sexuelles ou le cortisol), de la vitamine D, et des sels biliaires nécessaires à la digestion des graisses.\n\n## Fonctionnement et mécanismes : transport et équilibre\nLe cholestérol ne circule pas librement dans le sang, car sa nature lipophile le rend insoluble dans le plasma aqueux. Il est donc **transporté par des lipoprotéines**, des particules sphériques composées d’un cœur lipidique (triglycérides et cholestérol estérifié) entouré d’une monocouche de phospholipides et de protéines. Deux types de lipoprotéines jouent un rôle central :\n\n1. **Les LDL (Low-Density Lipoproteins)** :\n   - Surnommées « mauvais cholestérol », elles transportent le cholestérol **du foie vers les tissus périphériques** (muscles, artères).\n   - Si leur taux est trop élevé, le cholestérol peut s’accumuler dans la paroi des artères, formant des plaques d’*athérome* (athérosclérose), un processus favorisé par des facteurs comme le tabac, le diabète ou une alimentation riche en graisses saturées.\n   - Leur taille et leur composition influencent leur potentiel athérogène : des LDL petites et denses sont plus dangereuses que des LDL grandes et légères.\n\n2. **Les HDL (High-Density Lipoproteins)** :\n   - Qualifiées de « bon cholestérol », elles assurent le **transport inverse** : du cholestérol des tissus vers le foie, où il est éliminé ou recyclé.\n   - Elles possèdent aussi des propriétés anti-inflammatoires et antioxydantes, protégeant les artères.\n\nL’équilibre entre ces deux types de lipoprotéines est régulé par :\n- **La synthèse hépatique** (le foie produit du cholestérol selon les besoins),\n- **Les récepteurs cellulaires** (comme les récepteurs LDL, qui captent les particules pour réduire leur taux sanguin),\n\nUn déséquilibre – par exemple, un excès de LDL ou un déficit en HDL – peut perturber ce système et contribuer à l’athérosclérose, maladie sous-jacente aux infarctus et aux accidents vasculaires cérébraux. Les mécanismes précis de cette pathologie (comme l’infiltration des macrophages dans la paroi artérielle) relèvent de processus inflammatoires complexes, encore étudiés aujourd’hui.\n\n## Données et résultats scientifiques\n\nLes valeurs de référence considérées comme normales en l’absence de facteurs de risque cardiovasculaire sont :  \n\n- Cholestérol total < 2 g / L  \n- LDL‑cholestérol < 1,6 g / L  \n- HDL‑cholestérol > 0,4 g / L  \n- Triglycérides < 1,5 g / L  \n\nCes seuils proviennent des recommandations basées sur les observations épidémiologiques et cliniques décrites dans les sources encyclopédiques.  \n\nL’étude de Framingham, initiée en 1948, a mis en évidence que, outre l’âge, le tabac, le diabète, l’hypertension artérielle et un régime riche en cholestérol augmentent le risque de maladie cardiovasculaire. En 1961, elle a suggéré un rôle particulier du LDL‑cholestérol.  \n\nL’étude des sept pays d’Ancel Keys a montré une corrélation entre le taux sanguin de cholestérol et les accidents cardiovasculaires, bien que cette corrélation soit sujette à des biais de comparaison et à des facteurs de confusion.  \n\nDes essais cliniques sur des populations d’anciens combattants américains soumis à un régime hypocholestérolémiant n’ont pas montré de réduction significative de la mortalité, remettant en question l’hypothèse lipidique telle qu’elle était formulée à l’époque.  \n\nLes essais cliniques menés par l’OMS sur 15 000 Européens évaluant le clofibrate (premier fibrate) n’ont pas démontré d’effet bénéfique sur la prévention de l’infarctus et ont même indiqué une prévalence plus élevée d’événements cardiovasculaires dans le groupe traité.  \n\nDans les années 1990, deux études portant sur la simvastatine et la pravastatine ont montré une réduction du risque d’événements cardiovasculaires chez des hommes présentant un taux élevé de cholestérol.  \n\n## Ce que les scientifiques savent\n\n- Le cholestérol est un composant essentiel des membranes cellulaires de presque tous les animaux, influençant leur rigidité, courbure et perméabilité.  \n- Le cholestérol circule dans le sang sous forme de lipoprotéines : les HDL (souvent appelées « bon cholestérol ») transportent le cholestérol des tissus périphériques vers le foie, tandis que les LDL (souvent appelées « mauvais cholestérol ») le délivrent aux tissus.  \n- Des taux élevés de LDL‑cholestérol sont associés à un risque accru d’athérosclérose et d’événements cardiovasculaires, tandis que des taux élevés de HDL‑cholestérol sont généralement protecteurs.  \n- Les statines, découvertes à partir de 1973, réduisent le taux de cholestérol sanguin et ont démontré, dans plusieurs études, une prévention des événements vasculaires.  \n- Les fibrates, dérivés du clofibrate, possèdent une activité hypolipémiante, mais les données d’efficacité sur la prévention des infarctus restent limitées.  \n\n## Ce qui reste incertain\n\n- Le lien de causalité direct entre la réduction du cholestérol (en particulier du LDL) et la diminution de la mortalité cardiovasculaire n’est pas totalement élucidé ; certaines études suggèrent que les bénéfices des statines pourraient résulter d’effets « pléiotropes » indépendants de la baisse du cholestérol.  \n- L’impact réel du régime alimentaire riche en cholestérol sur les taux sanguins et le risque cardiovasculaire demeure débattu, en partie à cause de variations individuelles de l’absorption et de la synthèse endogène.  \n- Le rôle exact de l’homocystéine, identifié en 1969 comme facteur potentiel d’athérosclérose, n’est pas encore clairement intégré dans les stratégies de prévention.  \n- Les effets à long terme des fibrates sur la prévention des événements cardiovasculaires restent incertains, l’essai de l’OMS n’ayant pas montré de bénéfice clair.  \n\n## Limites et controverses éventuelles\n\n- Les études épidémiologiques, comme celle d’Ancel Keys, sont sujettes à des biais de sélection et à des facteurs de confusion (par exemple, consommation de sucre, activité physique) qui peuvent influencer les corrélations observées.  \n- Certains chercheurs contestent la pertinence d’un « objectif de taux LDL » fixe, arguant que les essais cliniques ont souvent utilisé des doses fixes de statines sans ajuster le traitement en fonction du taux initial de cholestérol.  \n- Les financements industriels, notamment ceux de l’industrie sucrière dans les années 1960, ont pu orienter la recherche et les publications, soulevant des questions d’indépendance scientifique.  \n- Les données provenant d’essais historiques sur des populations spécifiques (anciens combattants, travailleurs agricoles) ne sont pas toujours généralisables à l’ensemble de la population.  \n\n## Conclusion\n\nLe cholestérol joue un rôle central tant au niveau structural des membranes cellulaires que dans la physiopathologie cardiovasculaire. Les connaissances actuelles établissent clairement que des déséquilibres entre les différentes fractions de lipoprotéines (LDL élevé, HDL faible) sont associés à un risque accru d’athérosclérose. Les interventions pharmacologiques, notamment les statines, ont démontré une réduction des événements cardiovasculaires, bien que le mécanisme exact de cet effet reste partiellement débattu.  \n\nCes zones d’ombre soulignent la nécessité de poursuivre les recherches cliniques et épidémiologiques, en veillant à la transparence des financements et à la prise en compte des facteurs de confusion, afin d’affiner les recommandations de prévention et de traitement.\n\n## Sources\n- Wikipédia (fr) — Cholestérol — https://fr.wikipedia.org/wiki/Cholest%C3%A9rol\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 4,
+      "nb_mots": 1590,
+      "matiere_source": "fine",
+      "textes_sources_audit": [
+        {
+          "source": "Nature News",
+          "titre": "Why we’re setting up an institute for radically broad thinking",
+          "resume": "Nature, Published online: 03 November 2026; doi:10.1038/d41586-026-03397-1 The scale of today’s challenges demands a fresh approach — across all disciplines. Here’s how we’re making space for researchers to generate new ideas."
+        },
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Cholestérol",
+          "resume": "Le cholestérol est un lipide de la famille des stérols. Sa molécule, plate et rigide, est un constituant essentiel de la membrane des cellules de presque tous les animaux, contrôlant ses propriétés physiques (rigidité, courbure, perméabilité). Le cholestérol joue un rôle central dans de nombreux processus biochimiques.\nLe mot cholestérol désigne une molécule unique. Les termes « bon cholestérol » (lipoprotéine de haute densité, HDL) et « mauvais cholestérol » (lipoprotéine de basse densité, LDL) désignent en réalité deux types de transporteurs du cholestérol dans le sang (voir notamment la teneur en cholestérol dans l'alimentation et l'athérosclérose).\nOn considère qu'en l'absence de facteurs de risque cardiovasculaire, les taux normaux de cholestérol sont les suivants :\n\ntaux de « cholestérol total » inférieur à 2 g/l ;\ntaux de LDL-cholestérol inférieur à 1,6 g/l ;\ntaux de HDL-cholestérol supérieur à 0,4 g/l ;\ntaux de triglycérides inférieur à 1,5 g/l.\n\nHistoire et étymologie\nLe cholestérol est découvert en 1758 par le chimiste français François Poulletier de La Salle, sous forme solide dans les calculs biliaires.\nIl est d'abord nommé cholestérine en 1814 par le chimiste français Michel-Eugène Chevreul, du grec ancien χολή / kholế (« bile ») et στερεός / stereós (« solide »). En 1929, il est renommé cholestérol en raison de sa structure chimique.\nAlors que les scientifiques pensaient que les maladies cardiovasculaires étaient principalement la conséquence de l'âge, l'étude de Framingham, qui débute en 1948, montre l'importance d'autres facteurs de risque : le tabac, le diabète, l'hypertension artérielle, un régime alimentaire riche en cholestérol (cette étude suggère en 1961 le rôle du LDL). En 1976 est élaboré à partir de cette étude un « score de risques » (amélioré en 1998) permettant de détecter les personnes les plus susceptibles de déclencher une maladie cardio-vasculaire en fonction de ces différents éléments.\nLe nutritionniste américain Ancel Keys réalise après la Seconde Guerre mondiale l'étude des sept pays (en) (ne prenant pas en compte la France ni la Finlande qui ne valident pas la courbe présentée pour ces sept pays), une étude épidémiologique sur plusieurs décennies qui met en évidence une corrélation entre le taux de cholestérol sanguin et les accidents cardiovasculaires. Ces résultats lui font émettre l'« hypothèse lipidique » selon laquelle le cholestérol est le facteur de risque majeur responsable de la forte mortalité cardiovasculaire, mais cette étude souffre de biais de comparaison ou de facteurs de confusion.\nÀ la suite de cette étude longitudinale, des essais cliniques sont menés sur des populations d'anciens combattants américains mis au régime hypocholestérolémiant, mais ces tentatives n'ont pas d'impact significatif sur leur mortalité ; l'« hypothèse lipidique » n'est donc pas validée.\nEn 1954, le chercheur français Jean Cottet découvre que des ouvriers agricoles intoxiqués par le pesticide qu'ils répandent dans les champs ont un taux de cholestérol qui s'est effondré. Un de ses amis chimiste de l'Imperial Chemical Industries (Michael Oliver) synthétise un médicament dérivé de ce pesticide, le clofibrate. Le test de cette molécule sur des rats puis des patients confirme son effet hypolipémiant. L'Organisation mondiale de la santé réalise un essai clinique sur 15 000 Européens pour évaluer l'effet du clofibrate sur la prévention de l'infarctus, mais cette étude est négative, l'essai devant même être arrêté prématurément, le groupe sous clofibrate ayant une prévalence plus élevée que le groupe sous effet placebo.\nMalgré cette étude réfutant le lien entre baisse du cholestérol et mortalité, la production d'une famille de molécules médicamenteuses hypolipémiantes dérivées de ce médicament, les fibrates, est lancée.\nAu milieu des années 1960, l'industrie sucrière nord-américaine, à travers son syndicat professionnel, la Sugar Research Foundation (en), finance des chercheurs de Harvard pour discréditer la validité des études scientifiques faisant la relation entre un régime riche en sucre et les maladies cardiovasculaires (une glycémie élevée due à l'ingestion de sucres rapides provoque un stress oxydatif et inflammatoire sur les parois artérielles).\nEn 1969, le chercheur Kilmer S. McCully (en) observe des taux élevés d'homocystéine dans le sang des sujets atteints d'affections cardiovasculaires. Récusant l'« hypothèse lipidique », il pense que cet acide aminé joue un rôle dans l'athérosclérose, ce qui lui coûte son poste à la Harvard Medical School et au Massachusetts General Hospital.\nEn 1973, le biochimiste Akira Endō découvre la première statine. Dans les années 1990, deux études sur la simvastatine et la pravastatine montrent leur effet de prévention sur des hommes ayant un taux de cholestérol élevé. Certains soulignent que les recommandations tendant à viser un taux optimal de cholestérol (plus particulièrement sa fraction LDL) ne sont en fait étayées par aucune étude, ces dernières ayant toujours été faites à des doses fixes de statines quel que soit le taux initial de cholestérol, la baisse de ce dernier n'étant pas un objectif. Il semblerait que les statines ont un effet de prévention vasculaire, mais sans lien avec le taux de cholestérol (effet pléiotrope).\n\nStructure\nLa molécule de cholestérol comprend quatre cycles carbonés notés A, B, C et D (noyau cyclopentano-perhydro-phénanthrénique), huit carbones asymétriques (les carbones 3, 8, 9, 10, 13, 14, 17 et 20), ce qui fait 28 soit 256 stéréoisomères dont un seul existe : le 3β-ol lévogyre. Le cholestérol possède un groupe hydroxyle -OH sur le carbone 3 (C3). Ce groupe constitue la tête polaire et donc la partie hydrophile du cholestérol. La fonction -OH du cholestérol peut être estérifiée par un acide gras qui rend la molécule totalement insoluble dans l'eau[réf. nécessaire]."
+        }
+      ],
+      "nb_mots_decouverte": 149,
+      "nb_mots_approfondi": 1434,
+      "sujet_id": "cholesterol",
+      "origine": "encyclopedie"
+    },
+    "citation": {
+      "texte": "Douter de tout ou tout croire, ce sont deux solutions également commodes, qui l'une et l'autre nous dispensent de réfléchir.",
+      "auteur": "Henri Poincaré",
+      "source": "La Science et l'Hypothèse",
+      "annee": 1902
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 15.5,
+          "temperature_max": 17.4,
+          "temperature_min": 12.3,
+          "precipitation_mm": 3.9,
+          "probabilite_pluie_pct": 65,
+          "vent_kmh": 16.1,
+          "vent_max_kmh": 41.7,
+          "rafales_max_kmh": 69.1,
+          "weather_code": 55,
+          "description": "bruine forte",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 15.5,
+              "temperature_max": 17.1,
+              "probabilite_pluie_pct": 60,
+              "precipitation_mm": 1.9,
+              "vent_max_kmh": 42,
+              "weather_code": 53,
+              "description": "bruine"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 15.3,
+              "temperature_max": 16.5,
+              "probabilite_pluie_pct": 33,
+              "precipitation_mm": 1.7,
+              "vent_max_kmh": 36,
+              "weather_code": 55,
+              "description": "bruine forte"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 16.3,
+              "temperature_max": 17.1,
+              "probabilite_pluie_pct": 65,
+              "precipitation_mm": 0.3,
+              "vent_max_kmh": 35,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": [
+            "Rafales jusqu'à 69 km/h"
+          ]
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 14.9,
+          "temperature_max": 16.6,
+          "temperature_min": 13.9,
+          "precipitation_mm": 4.6,
+          "probabilite_pluie_pct": 70,
+          "vent_kmh": 15.3,
+          "vent_max_kmh": 31.1,
+          "rafales_max_kmh": 63.0,
+          "weather_code": 55,
+          "description": "bruine forte",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 14.9,
+              "temperature_max": 16.6,
+              "probabilite_pluie_pct": 68,
+              "precipitation_mm": 3.5,
+              "vent_max_kmh": 31,
+              "weather_code": 55,
+              "description": "bruine forte"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 14.8,
+              "temperature_max": 16.0,
+              "probabilite_pluie_pct": 45,
+              "precipitation_mm": 1.0,
+              "vent_max_kmh": 29,
+              "weather_code": 53,
+              "description": "bruine"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 15.3,
+              "temperature_max": 16.0,
+              "probabilite_pluie_pct": 38,
+              "precipitation_mm": 0.1,
+              "vent_max_kmh": 29,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": [
+            "Rafales jusqu'à 63 km/h"
+          ]
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 10.9,
+          "temperature_max": 13.5,
+          "temperature_min": 10.0,
+          "precipitation_mm": 6.5,
+          "probabilite_pluie_pct": 65,
+          "vent_kmh": 7.6,
+          "vent_max_kmh": 13.4,
+          "rafales_max_kmh": 23.0,
+          "weather_code": 63,
+          "description": "pluie",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 10.7,
+              "temperature_max": 12.9,
+              "probabilite_pluie_pct": 60,
+              "precipitation_mm": 4.3,
+              "vent_max_kmh": 11,
+              "weather_code": 63,
+              "description": "pluie"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 12.7,
+              "temperature_max": 13.5,
+              "probabilite_pluie_pct": 33,
+              "precipitation_mm": 2.1,
+              "vent_max_kmh": 13,
+              "weather_code": 61,
+              "description": "pluie légère"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 12.4,
+              "temperature_max": 12.7,
+              "probabilite_pluie_pct": 34,
+              "precipitation_mm": 0.1,
+              "vent_max_kmh": 13,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 10.1,
+          "temperature_max": 12.5,
+          "temperature_min": 9.7,
+          "precipitation_mm": 5.0,
+          "probabilite_pluie_pct": 80,
+          "vent_kmh": 8.2,
+          "vent_max_kmh": 14.5,
+          "rafales_max_kmh": 25.6,
+          "weather_code": 63,
+          "description": "pluie",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 9.9,
+              "temperature_max": 11.9,
+              "probabilite_pluie_pct": 73,
+              "precipitation_mm": 4.1,
+              "vent_max_kmh": 11,
+              "weather_code": 63,
+              "description": "pluie"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 12.0,
+              "temperature_max": 12.4,
+              "probabilite_pluie_pct": 50,
+              "precipitation_mm": 0.9,
+              "vent_max_kmh": 13,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 11.5,
+              "temperature_max": 11.9,
+              "probabilite_pluie_pct": 42,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 14,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 17.4,
+      "temperature_min_zone": 9.7,
+      "probabilite_pluie_max_pct": 80,
+      "vent_max_kmh": 41.7,
+      "description_dominante": "pluie",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 9.9,
+          "temperature_max": 17.1,
+          "probabilite_pluie_pct": 73,
+          "precipitation_mm": 4.3,
+          "vent_max_kmh": 42,
+          "weather_code": 63,
+          "description": "pluie"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 12.0,
+          "temperature_max": 16.5,
+          "probabilite_pluie_pct": 50,
+          "precipitation_mm": 2.1,
+          "vent_max_kmh": 36,
+          "weather_code": 61,
+          "description": "pluie légère"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 11.5,
+          "temperature_max": 17.1,
+          "probabilite_pluie_pct": 65,
+          "precipitation_mm": 0.3,
+          "vent_max_kmh": 35,
+          "weather_code": 3,
+          "description": "couvert"
+        }
+      ],
+      "alertes": [
+        "Rafales jusqu'à 69 km/h",
+        "Rafales jusqu'à 63 km/h"
+      ],
+      "resume": "Pluie le matin, pluie légère l'après-midi, couvert le soir, de 10° à 17°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "The Fall of the House of Usher",
+      "auteur": "Edgar Allan Poe",
+      "annee": 1839,
+      "segments": [
+        {
+          "t": "During the whole of a dull",
+          "g": "terne"
+        },
+        {
+          "t": ", dark, and soundless",
+          "g": "sans un bruit"
+        },
+        {
+          "t": " day in the autumn of the year, when the clouds hung oppressively",
+          "g": "de façon oppressante"
+        },
+        {
+          "t": " low in the heavens, I had been passing alone, on horseback",
+          "g": "à cheval"
+        },
+        {
+          "t": ", through a singularly",
+          "g": "singulièrement"
+        },
+        {
+          "t": " dreary",
+          "g": "désolée"
+        },
+        {
+          "t": " tract",
+          "g": "l'étendue"
+        },
+        {
+          "t": " of country; and at length",
+          "g": "enfin"
+        },
+        {
+          "t": " found myself, as the shades of the evening drew on",
+          "g": "le crépuscule approchait"
+        },
+        {
+          "t": ", within view of the melancholy House of Usher. I know not how it was—but, with the first glimpse",
+          "g": "l'aperçu"
+        },
+        {
+          "t": " of the building, a sense of insufferable gloom",
+          "g": "la tristesse sombre"
+        },
+        {
+          "t": " pervaded",
+          "g": "envahissait"
+        },
+        {
+          "t": " my spirit.",
+          "g": null
+        }
+      ],
+      "texte_glose": "During the whole of a dull (= terne), dark, and soundless (= sans un bruit) day in the autumn of the year, when the clouds hung oppressively (= de façon oppressante) low in the heavens, I had been passing alone, on horseback (= à cheval), through a singularly (= singulièrement) dreary (= désolée) tract (= l'étendue) of country; and at length (= enfin) found myself, as the shades of the evening drew on (= le crépuscule approchait), within view of the melancholy House of Usher. I know not how it was—but, with the first glimpse (= l'aperçu) of the building, a sense of insufferable gloom (= la tristesse sombre) pervaded (= envahissait) my spirit."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Attentat raciste dans les Yvelines : le suspect Kevin Tessier a tenté de se suicider en détention ; Espagne : le ministre des transports démissionne après la catastrophe ferroviaire meurtrière."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral+nvidia",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_d": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral+nvidia",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-11-04T06:10:51.000052+01:00"
+}
