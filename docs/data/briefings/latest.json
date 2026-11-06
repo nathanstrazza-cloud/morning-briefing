@@ -1,37 +1,24 @@
 {
-  "date": "2026-11-05",
-  "derniere_mise_a_jour": "2026-11-05T06:21:42.351043+01:00",
+  "date": "2026-11-06",
+  "derniere_mise_a_jour": "2026-11-06T06:18:45.047942+01:00",
   "briefing": {
     "actualite": {
       "france": [
         {
-          "titre": "Mobilisation du 5 novembre : la justice valide l'interdiction de la manifestation parisienne entre Bastille et Concorde, la CGT accepte le parcours République-Nation",
-          "resume": "La préfecture de police de Paris appelle les manifestants à emprunter le parcours alternatif autorisé entre la place de la République et la place de la Nation.",
-          "pourquoi_important": null,
+          "titre": "Attentat raciste à Trappes : la mère et des sœurs de Pengo Bossio Wangi ont été reçues mardi par Emmanuel Macron",
+          "resume": "Un ami de la famille, également présent, a annoncé la nouvelle sur les réseaux sociaux.",
+          "pourquoi_important": "Rencontre du président avec la mère et les sœurs de la victime d'un attentat raciste.",
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "France Info",
-            "Libération",
-            "20 Minutes"
+            "Libération"
           ]
         },
         {
-          "titre": "Parcoursup : Sébastien Lecornu annonce une première réunion lundi pour réformer la plateforme d’orientation, sur fond de mobilisation lycéenne",
-          "resume": "Lycéens et enseignants seront réunis autour des ministres concernés, afin de présenter de « premières recommandations courant novembre », a déclaré le premier ministre.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "Libération",
-            "20 Minutes"
-          ]
-        },
-        {
-          "titre": "Présidentielle 2027 : Emmanuel Macron préconise une coalition de Glucksmann à Lisnard",
-          "resume": "Le chef de l’Etat estime que seule une large alliance au sein de l’espace central permettra d’éviter le duel Le Pen-Mélenchon au second tour de l’élection présidentielle.",
-          "pourquoi_important": null,
+          "titre": "Au procès de l’explosion de la rue de Trévise, la notion d’urgence des travaux à réaliser en question",
+          "resume": "D’anciens salariés du syndic Cipa ont été entendus comme témoins, jeudi, au tribunal judiciaire de Paris. Au cœur des interrogations, le fait que cette société n’avait pas recouru à la procédure d’urgence qui lui aurait permis de faire réparer des fuites ayant joué un rôle crucial dans la catastrophe de janvier 2019.",
+          "pourquoi_important": "Question de l'absence de procédure d'urgence dans les travaux liés à l'explosion de la rue de Trévise.",
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
@@ -39,86 +26,9 @@
           ]
         },
         {
-          "titre": "Midterms 2026 : le chef des députés républicains va se retirer, le démocrate Hakeem Jeffries en lice pour présider la Chambre des représentants",
-          "resume": "Les démocrates ont remporté la majorité absolue dans les deux chambres du Congrès américain mardi, lors des élections de mi-mandat.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "France Info"
-          ]
-        },
-        {
-          "titre": "Présidentielle : Retailleau réclame à son tour une primaire, la pression monte sur Philippe",
-          "resume": "Mardi, le candidat LR a plaidé, après Gabriel Attal, pour un départage des candidats de la droite et du centre. Une perspective que continue de rejeter le maire du Havre, dont la glissade se poursuit dans les enquêtes d’opinion.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Libération"
-          ]
-        }
-      ],
-      "monde": [
-        {
-          "titre": "Midterms 2026 : J. D. Vance, contrarié dans ses ambitions par la déroute de son camp, lance le débat interne chez les républicains",
-          "resume": "Le vice-président américain, qui a la désignation pour la présidentielle de 2028 en ligne de mire, a estimé, mercredi, que la guerre en Iran, déclenchée par Donald Trump, était la principale explication du raz-de-marée démocrate.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "Le Monde International"
-          ]
-        },
-        {
-          "titre": "Midterms 2026 : dans son premier discours après une défaite historique, Trump parle de sa salle de bal à la Maison-Blanche",
-          "resume": "Donald Trump a défendu la guerre en Iran et évoqué une future salle de bal à la Maison-Blanche, tout en mettant en garde contre une procédure de destitution des démocrates.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "20 Minutes",
-            "Le Monde International"
-          ]
-        },
-        {
-          "titre": "Législatives en Israël : Netanyahu assure qu'il existe de \"graves soupçons\" d'ingérence étrangère",
-          "resume": "C'est la première fois depuis le scrutin du 27 octobre que le Premier ministre sortant s'empare de ces allégations, non étayées à ce stade, en sa qualité de chef du gouvernement.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "France Info",
-            "France 24 International"
-          ]
-        },
-        {
-          "titre": "En RDC, l’OMS alerte sur la « pire épidémie de choléra depuis des décennies », avec 1 800 morts",
-          "resume": "Selon l’OMS, 2025 avait enregistré le nombre de cas signalés le plus élevé depuis plus de vingt-cinq ans, mais « l’année en cours s’annonce encore plus grave ».",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "Le Monde International"
-          ]
-        },
-        {
-          "titre": "Guerre en Ukraine : Volodymyr Zelensky s’est entretenu avec les émissaires américains Steve Witkoff et Jared Kushner",
-          "resume": "La Première dame des Etats-Unis a notamment été impliquée dans un récent cessez-le-feu localisé ayant permis l'évacuation de la ville ukrainienne d'Olechky.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "France Info",
-            "Le Monde International"
-          ]
-        },
-        {
-          "titre": "Guerre en Ukraine : La défaite de Trump interroge, le bilan du massacre à Komychouvakha s’alourdit encore",
-          "resume": "Selon *20 Minutes*, les résultats des élections américaines et le bilan humain de la frappe russe de lundi à Komychouvakha sont mis en avant.",
-          "pourquoi_important": null,
+          "titre": "Présidentielle 2027 : Les trois quarts des sympathisants de droite et du centre veulent une primaire",
+          "resume": "Selon un sondage Odoxa pour « Le Figaro » publié jeudi, 74 % des sympathisants de droite et du centre souhaitent une primaire pour désigner leur candidat à la présidentielle de 2027. Bruno Retailleau a leur préférence",
+          "pourquoi_important": "Indique un fort soutien à une primaire parmi les sympathisants de droite et du centre pour la présidentielle 2027.",
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
@@ -126,8 +36,87 @@
           ]
         },
         {
-          "titre": "Selon Le Monde International, Israël : des partis arabes dénoncent une « persécution » après la mise en cause d’un de leurs piliers",
-          "resume": "Le camp de Benyamin Nétanyahou accuse les partis arabes de fraudes massives lors des élections législatives le 27 octobre. L’opposition accuse en retour le premier ministre de vouloir discréditer un scrutin qu’il n’a pas remporté.",
+          "titre": "Présidentielle : Macron suggère une «coalition» allant de Glucksmann à Lisnard en passant par Philippe et Attal, qui passent leur tour",
+          "resume": "Refusant la perspective répétée d’un second tour entre Jean-Luc Mélenchon et Marine Le Pen, le Président appelle de ses voeux un très large arc politique regroupant le centre-gauche jusqu’à la droite libérale-conservatrice.",
+          "pourquoi_important": "Propose un large éventail politique pour éviter un second tour entre Mélenchon et Le Pen.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Matignon annonce la tenue d'une \"conférence sociale\" lundi en présence des syndicats et du patronat",
+          "resume": "L'objectif affiché est \"d'apporter des réponses aux questions de pouvoir d’achat et de salaires\", selon les services du Premier ministre.",
+          "pourquoi_important": "Visée de réponses aux questions de pouvoir d’achat et de salaires.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "20 Minutes"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Guerre en Ukraine : la trêve d’Olechky prouve que « quand Poutine le veut, les combats s’arrêtent », estime Volodymyr Zelensky",
+          "resume": "Le président ukrainien souligne que les pauses des combats dépendent de la volonté du président russe, évoquant aussi la libération de prisonniers et d’enfants enlevés par la Russie.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : Trump prédit un « grand accord » avec la Russie et même sur « toute l’Europe »",
+          "resume": "Le président américain annonce un futur accord global avec la Russie, alors que des pourparlers entre Russes et Ukrainiens sont prévus les 10 et 11 novembre à Abou Dhabi.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Gaza : cinq personnes, dont un enfant, tuées par des bombardements israéliens, selon les services de secours palestiniens",
+          "resume": "Les hôpitaux du centre et du sud de Gaza ont confirmé la mort de cinq civils, dont un enfant, lors de frappes israéliennes.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Midterms 2026 : après avoir accepté les résultats, Donald Trump dénonce à présent des élections « truquées »",
+          "resume": "Le président américain refuse d’assumer la défaite républicaine aux élections de mi-mandat et accuse le processus électoral d’être truqué.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération",
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Midterms 2026 : les démocrates s’interrogent sur leur stratégie et leur direction dans le prochain Congrès",
+          "resume": "Hakeem Jeffries et Chuck Schumer, pressentis pour diriger respectivement la Chambre des représentants et le Sénat, font face à des contestations internes sur leur leadership.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Selon Le Monde International, En Nouvelle-Zélande, les Maoris très critiques vis-à-vis du bilan du gouvernement : « En trois ans, il a détruit cinquante ans d’acquis »",
+          "resume": "Une large part de l’électorat maori, qui a vu ses droits remis en cause par le gouvernement libéral-conservateur dirigé par Christopher Luxon, entend sanctionner le pouvoir sortant lors des élections législatives du 7 novembre.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
@@ -137,49 +126,50 @@
           "complete_par_code": true
         },
         {
-          "titre": "Selon Libération, En Espagne, Pedro Sánchez perd son ministre des Transports en pleine campagne électorale",
-          "resume": "Les vives critiques après la catastrophe ferroviaire d’Urda ont fini par forcer au départ le véhément ministre espagnol des Transports, Oscar Puente, à quatre semaines d’élections législatives anticipées très mal engagées pour le Premier ministre socialiste.",
+          "titre": "Selon New York Times World, Everyone’s Talking About the ‘Blue Tsunami.’ In Japan, It’s Complicated.",
+          "resume": "The New York Post used a Hokusai work to depict Donald Trump being swept away by Democrats’ midterm election win. Some in Japan were bothered by the imagery.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
-            "Libération"
+            "New York Times World"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon France Info, Des milliers de cas confirmés, plusieurs morts en Pennsylvanie, une vaccination en recul... Ce que l'on sait de l'épidémie de rougeole aux Etats-Unis",
+          "resume": "Au 29 octobre, 4 852 cas confirmés de cette maladie grave et contagieuse avaient été décomptés dans le pays, soit déjà plus du double que sur toute l'année 2025. Entre 2020 et 2024, le nombre de cas ne dépassait pas quelques dizaines ou centaines.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
           ],
           "complete_par_code": true
         }
       ]
     },
     "marches": {
-      "resume_court": "Les marchés ont progressé après les résultats des élections de mi-mandat aux États-Unis, où les démocrates ont remporté la majorité, limitant les incertitudes politiques.",
+      "resume_court": "Les marchés ont connu des mouvements marquants, notamment une forte baisse des indices américains et une hausse modeste du pétrole.",
       "mouvements_notables": [
         {
-          "nom": "CAC 40",
-          "variation_pct": 1.96,
-          "explication": "Les résultats des midterms 2026 aux États-Unis, avec la victoire des démocrates, ont réduit les incertitudes politiques, soutenant les marchés."
-        },
-        {
           "nom": "S&P 500",
-          "variation_pct": 1.58,
-          "explication": "Les résultats des midterms 2026 aux États-Unis, avec la victoire des démocrates, ont réduit les incertitudes politiques, soutenant les marchés."
+          "variation_pct": -4.36,
+          "explication": "Les résultats des élections américaines de mi-mandat ont accentué la défiance envers les valeurs liées à l’IA."
         },
         {
           "nom": "Nasdaq",
-          "variation_pct": 1.44,
-          "explication": "Les résultats des midterms 2026 aux États-Unis, avec la victoire des démocrates, ont réduit les incertitudes politiques, soutenant les marchés."
+          "variation_pct": -5.52,
+          "explication": "Les résultats des élections américaines de mi-mandat ont accentué la défiance envers les valeurs liées à l’IA."
         },
         {
-          "nom": "DAX",
-          "variation_pct": 2.22,
-          "explication": "Les résultats des midterms 2026 aux États-Unis, avec la victoire des démocrates, ont réduit les incertitudes politiques, soutenant les marchés."
-        },
-        {
-          "nom": "Euro Stoxx 50",
-          "variation_pct": 1.97,
-          "explication": "Les résultats des midterms 2026 aux États-Unis, avec la victoire des démocrates, ont réduit les incertitudes politiques, soutenant les marchés."
+          "nom": "Pétrole (Brent)",
+          "variation_pct": 1.31,
+          "explication": null
         },
         {
           "nom": "Or",
-          "variation_pct": 1.83,
+          "variation_pct": -1.45,
           "explication": null
         }
       ]
@@ -187,383 +177,356 @@
     "sport": {
       "items": [
         {
-          "sport": "football",
-          "texte": "Selon L'Équipe Football, le RC Lens a été battu 9-1 par le Côme en Ligue des champions."
-        },
-        {
-          "sport": "football",
-          "texte": "Selon BBC Sport, Anastasios Douvikas a inscrit un triplé lors de la victoire 9-1 du Côme à Lens, établissant le plus grand score à l'extérieur de l'histoire de la Ligue des champions."
-        },
-        {
-          "sport": "football",
-          "texte": "Selon BBC Sport, Manchester United a renversé un déficit de deux buts pour battre la Roma en Ligue des champions à Old Trafford."
+          "sport": "tennis",
+          "texte": "Luca Van Assche se qualifie pour la première fois en quart de finale d'un Masters 1000 après la défaite de Lorenzo Musetti à Paris, tandis qu'Arthur Fils était déjà éliminé. Van Assche affrontera Rinky Hijikata en deuxième rotation."
         },
         {
           "sport": "tennis",
-          "texte": "Selon L'Équipe Tennis, Luca Van Assche a battu Learner Tien 7-6(4), 6-4 pour atteindre les huitièmes de finale du Rolex Paris Masters."
+          "texte": "Le lucky loser Nuno Borges bat Ignacio Buse 6-0, 6-2 pour atteindre son premier quart de finale au Rolex Paris Masters."
         },
         {
           "sport": "tennis",
-          "texte": "Selon L'Équipe Tennis, Arthur Fils s'est qualifié pour les Finales ATP à Turin, première qualification française depuis 2016."
-        },
-        {
-          "sport": "tennis",
-          "texte": "Selon L'Équipe Tennis, Arthur Fils a confirmé sa participation aux Finales ATP après la victoire de Quentin Halys sur Frances Tiafoe."
+          "texte": "Tommy Paul élimine Quentin Halys 7-6 (3), 6-4 et se qualifie pour les quarts de finale du Rolex Paris Masters, où il jouera contre le vainqueur du match Shelton-Rinderknech."
         },
         {
           "sport": "basketball",
-          "texte": "Selon L'Équipe Basket, le septième match de la finale a attiré 3,3 millions de téléspectateurs, établissant un record d'audience pour les play‑offs de la WNBA."
+          "texte": "Victor Wembanyama inscrit 52 points, menant les San Antonio Spurs à la victoire 112-111 contre les Dallas Mavericks."
+        },
+        {
+          "sport": "basketball",
+          "texte": "L'ASVEL perd 95-99 contre le Bayern Munich en Euroligue, malgré deux victoires consécutives, et se place à la 16e position du classement."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Paris Basketball bat l'Anadolu Efes Istanbul 95-90, enregistrant ainsi sa troisième victoire consécutive à l'extérieur en Euroligue."
+        },
+        {
+          "sport": "football",
+          "texte": "Randal Kolo Muani, passeur puis buteur, conduit la Juventus à la victoire 2-1 ; Sunderland s'incline 0-2 face au Dinamo Zagreb, tandis que Benfica l'emporte 3-1 contre le Lech Poznan."
         },
         {
           "sport": "rugby",
-          "texte": "Selon L'Équipe Rugby, Twickenham accueillera douze équipes pour six rencontres en trois jours lors du dernier week‑end du Championnat des nations."
+          "texte": "Les Fidji aligneront neuf titulaires issus du Top 14 contre la France lors du match du Championnat des nations à Lyon."
         }
       ],
       "rien_a_signaler": false,
       "prochains_matchs": [
         {
-          "affiche": "AZ Alkmaar – Juventus",
-          "competition": "Europa League",
-          "date_iso": "2026-11-05T20:00:00+00:00",
-          "date_texte": "jeudi 5 novembre à 21h00",
+          "affiche": "PSG – Troyes",
+          "competition": "Ligue 1",
+          "date_iso": "2026-11-07T20:05:00+00:00",
+          "date_texte": "samedi 7 novembre à 21h05",
           "sport": "football"
         },
         {
-          "affiche": "Golden State Warriors – Miami Heat",
+          "affiche": "Milwaukee Bucks – Boston Celtics",
           "competition": "NBA",
-          "date_iso": "2026-11-06T03:00:00+00:00",
-          "date_texte": "vendredi 6 novembre à 4h00",
+          "date_iso": "2026-11-09T01:00:00+00:00",
+          "date_texte": "lundi 9 novembre à 2h00",
           "sport": "basketball"
         }
       ]
     },
     "science": {
-      "mode": "decouverte",
-      "titre": "Une simulation montre que chaque minute compte lors d’une fuite face à un tsunami",
-      "contenu_markdown": "Une étude publiée dans *Nature* le 4 novembre 2026 met en lumière un résultat frappant : **attendre ne serait-ce que quelques minutes avant d’évacuer face à un tsunami peut faire la différence entre la survie et le danger**. Des simulations numériques ont été réalisées pour évaluer l’impact des délais d’action sur les populations côtières.\n\n## Pourquoi cette découverte est-elle importante ?\nLes systèmes d’alerte actuels, bien que rapides, laissent parfois une marge d’erreur dans l’estimation du temps disponible pour évacuer. Cette étude suggère que **même un retard de quelques minutes peut réduire significativement les chances de rejoindre un lieu sûr**, en raison de la rapidité avec laquelle l’eau peut submerger les zones basses.\n\n## Ce qui reste incertain\nLes simulations reposent sur des modèles théoriques et des données historiques, mais leur application concrète dépend de nombreux facteurs locaux : topographie des côtes, densité de population, efficacité des systèmes d’alerte, et comportement des individus. Les auteurs soulignent que ces résultats doivent être complétés par des études terrain pour affiner les recommandations d’évacuation.\n\nPour consulter les détails techniques des simulations et les scénarios testés, les données complètes sont disponibles dans l’article original de *Nature*.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03539-5\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Rythme circadien\n\n## Introduction\nChaque jour, notre corps suit un cycle invisible mais puissant : celui des rythmes circadiens. Ces processus biologiques, d’une durée d’environ 24 heures, orchestrent bien plus que notre alternance entre veille et sommeil. Ils régulent des fonctions essentielles, des variations de température corporelle à la production d’hormones, en passant par le métabolisme cellulaire. Découverts et nommés par le scientifique Franz Halberg, ces rythmes sont présents chez presque tous les êtres vivants, des plantes aux animaux, et même chez certains organismes unicellulaires. Leur étude, appelée chronobiologie, révèle comment notre organisme s’adapte aux cycles jour-nuit, mais aussi comment il conserve une certaine autonomie, même en l’absence de stimuli extérieurs.\n\n## Pourquoi le sujet est important\nComprendre les rythmes circadiens est crucial pour saisir comment fonctionne notre corps au quotidien. Ces cycles influencent directement notre santé : un décalage même léger (comme lors des voyages transmeridiens ou du travail de nuit) peut perturber la production d’hormones, le sommeil ou encore le métabolisme. Par exemple, des études montrent que les travailleurs postés, dont les horaires ne correspondent pas au cycle naturel jour-nuit, présentent un risque accru de troubles métaboliques ou cardiovasculaires. À l’inverse, aligner ses habitudes sur son rythme circadien naturel peut améliorer la qualité du sommeil, renforcer l’immunité et optimiser les performances cognitives. Enfin, ces rythmes jouent un rôle clé dans des pathologies comme les dépressions saisonnières, certaines formes de diabète ou des maladies neurodégénératives, soulignant leur importance en médecine préventive et thérapeutique.\n\n## Explication du phénomène\nUn rythme circadien est un cycle biologique endogène, c’est-à-dire produit par l’organisme lui-même, avec une périodicité d’environ 24 heures. Par exemple, dans des conditions expérimentales constantes (sans alternance jour-nuit), une personne conserve un rythme circadien d’environ 25 heures en moyenne, appelé *free running*. Cela prouve l’existence d’une **horloge biologique interne**, capable de maintenir une rythmicité proche de 24 heures, mais légèrement décalée sans repères environnementaux.\n\nChez les plantes, ces rythmes se manifestent par des mouvements comme l’ouverture ou la fermeture des pétales selon l’heure. Chez les animaux, ils régulent des fonctions vitales : la température corporelle (plus élevée le jour), la sécrétion d’hormones (comme le cortisol, pic le matin), ou encore la vigilance. Ces cycles sont aussi observés chez des organismes simples comme les cyanobactéries ou les moisissures, suggérant une origine évolutive ancienne.\n\n## Fonctionnement et mécanismes\nCette structure, située dans l’hypothalamus, agit comme un chef d’orchestre : elle synchronise les cycles de l’organisme avec les signaux extérieurs, notamment la lumière perçue par la rétine.\n\n## Les zeitgebers : les signaux environnementaux\nPour s’ajuster précisément à 24 heures, l’horloge interne utilise des indices environnementaux appelés *zeitgebers* (littéralement « donneurs d’heure » en allemand). À l’inverse, en absence totale de variations lumineuses, le rythme dérive vers 25 heures en moyenne. D’autres facteurs, comme les repas ou l’activité physique, jouent aussi un rôle de synchronisation.\n\n## Le cycle en trois phases\nUn rythme circadien se décompose en trois composantes :\n1. **L’acrophase** : le pic d’activité (par exemple, le pic de température corporelle en fin de matinée).\n2. **Le nadir** : le creux (comme la baisse de vigilance en fin de nuit).\n3. **Le mesor** : le niveau moyen autour duquel oscillent ces variations.\n\n## La mélatonine : l’hormone du sommeil\nUn biomarqueur clé est la sécrétion de **mélatonine**, une hormone produite par la glande pinéale en réponse à l’obscurité. Son apparition en début de nuit (*Dim Light Melatonin Onset*, ou DLMO) marque le début de la phase de sommeil. Des modèles animaux, comme la drosophile (*Drosophila melanogaster*) ou des souris génétiquement modifiées, permettent d’étudier comment des gènes spécifiques (comme *PER*, *CRY* ou *BMAL1*) régulent ces cycles au niveau cellulaire.\n\nEnfin, le rythme circadien n’est pas figé dès la naissance : chez les nouveau-nés, il n’existe pas de distinction jour-nuit. Ce n’est qu’autour de 8 semaines que les bébés commencent à développer un début de cycle, confirmant l’existence d’une horloge interne qui s’affine avec l’âge et les interactions avec l’environnement.\n\n## Données et résultats scientifiques\n\nLes études en chronobiologie ont mis en évidence plusieurs mesures objectives du rythme circadien. Le **Dim Light Melatonin Onset (DLMO)**, qui correspond au moment où la sécrétion de mélatonine augmente en l’absence de lumière, constitue un biomarqueur central pour évaluer le cycle veille‑sommeil. D’autres indicateurs fréquemment mesurés sont la température corporelle centrale, les variations du cortisol et les profils d’expression de certains gènes de l’horloge (parmi eux les gènes dits « PER », « CRY » et « BMAL1 »).  \n\nDes modèles animaux, notamment la souris génétiquement modifiée pour supprimer les gènes de l’horloge, ainsi que la drosophile, ont permis de démontrer que la perturbation de ces gènes entraîne des altérations du cycle de 24 heures, confirmant le rôle de ces composants génétiques dans la génération du rythme.  \n\n## Ce que les scientifiques savent\n\n- **Endogénité** : Le rythme circadien est produit par des horloges biologiques internes capables de fonctionner en l’absence totale de variations lumineuses ou de température, comme le montre le phénomène de « free running » observé en laboratoire.  \n- **Synchronisation externe** : Malgré son caractère endogène, le rythme s’ajuste quotidiennement aux signaux environnementaux, appelés **zeitgebers** (principalement la lumière du jour).  \n- **Multiplicité des processus** : Chez l’humain, le rythme circadien influence de nombreux paramètres physiologiques, dont le sommeil, la vigilance, la température corporelle, la circulation sanguine, la production d’urine et de selles, la sécrétion hormonale (croissance, cortisol), la pousse des cheveux, le métabolisme cellulaire et le niveau de potassium.  \n- **Développement** : Le rythme circadien n’est pas présent dès la naissance ; il apparaît progressivement autour de huit semaines, suggérant une maturation de l’horloge interne postnatale.  \n\n## Ce qui reste incertain\n\n- **Mécanismes exacts de la maturation** : Les processus précis par lesquels l’horloge interne se développe chez le nouveau‑né restent à préciser.  \n- **Variabilité interindividuelle** : Bien que la période moyenne en libre cours soit d’environ 25 heures, l’amplitude de cette variation d’un individu à l’autre n’est pas entièrement comprise.  \n- **Interaction avec d’autres rythmes** : La façon dont le rythme circadien interagit avec des rythmes plus courts (ultradiens) ou plus longs (infradiens) dans la régulation globale de la physiologie humaine nécessite davantage d’investigation.  \n- **Impact des facteurs non lumineux** : Le rôle exact d’autres zeitgebers, tels que les repas, l’activité physique ou les variations de température, dans la synchronisation de l’horloge interne n’est pas complètement élucidé.  \n\n## Limites et controverses éventuelles\n\n- **Méthodes de mesure** : Le DLMO nécessite des conditions de faible luminosité et des prélèvements répétés, ce qui peut limiter son utilisation en contexte clinique de routine.  \n- **Modèles animaux** : Bien que la souris et la drosophile offrent des informations précieuses, la transposition directe de leurs résultats à l’humain reste sujette à caution en raison de différences physiologiques.  \n- **Débat sur la périodicité** : Certains chercheurs soulignent que la période de 24 heures observée en conditions naturelles peut varier légèrement selon les individus et les environnements, ce qui alimente un débat sur la rigidité du concept de « période circadienne » strictement de 24 heures.  \n\n## Conclusion\n\nDe multiples biomarqueurs, dont le DLMO, la température corporelle et les profils hormonaux, permettent de quantifier ce rythme et d’observer son influence sur une large gamme de fonctions physiologiques. Si les bases de son endogénéité et de son rôle régulateur sont bien établies, plusieurs aspects restent à éclaircir, notamment les mécanismes de maturation postnatale, la variabilité interindividuelle et l’influence de facteurs externes autres que la lumière. Les recherches futures, tant chez l’humain que chez les modèles animaux, devront affiner la compréhension de ces incertitudes pour mieux exploiter le potentiel thérapeutique du ré‑entrainement circadien.\n\n## Sources\n- Wikipédia (fr) — Rythme circadien — https://fr.wikipedia.org/wiki/Rythme_circadien\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
-      "phrases_retirees_garde_fou": 8,
-      "nb_mots": 1528,
-      "matiere_source": "fine",
+      "mode": "approfondi",
+      "titre": "La tectonique des plaques : comment la Terre se recompose en permanence",
+      "contenu_markdown": "La tectonique des plaques est une théorie géologique fondamentale qui explique les mouvements de la surface terrestre. Elle décrit comment la lithosphère, cette couche rigide composée de la croûte terrestre et de la partie supérieure du manteau, est fragmentée en plusieurs plaques mobiles. Ce phénomène, bien que lent à l’échelle humaine, est à l’origine des séismes, des éruptions volcaniques, de la formation des montagnes et des fosses océaniques. Sans cette dynamique, le visage de notre planète serait radicalement différent.\n\n## Pourquoi la tectonique des plaques est-elle importante ?\n\nCette théorie n’est pas seulement un modèle explicatif : elle permet de comprendre l’évolution des continents, la répartition des ressources naturelles (comme les gisements minéraux ou les hydrocarbures), et même l’histoire climatique de la Terre. Par exemple, la séparation progressive de l’Amérique et de l’Eurasie a façonné l’océan Atlantique, tandis que la collision entre l’Inde et l’Eurasie a donné naissance à l’Himalaya. Sans ces mouvements, la Terre serait géologiquement inactive, privée de renouvellement de sa croûte et de recyclage des matériaux.\n\n## Explication du phénomène : une lithosphère en mouvement\n\nLa lithosphère, rigide et froide, repose sur une couche plus ductile appelée asthénosphère, partie supérieure du manteau terrestre. Cette dernière, bien que solide, se comporte comme un fluide sur des échelles de temps géologiques en raison des températures et pressions élevées. Les plaques lithosphériques, portées par cette couche ductile, peuvent ainsi se déplacer. Leur mobilité est liée à des courants de convection dans le manteau : la chaleur issue du noyau terrestre chauffe le manteau inférieur, qui monte vers la surface sous forme de panaches ascendants. En refroidissant, ces matériaux redescendent vers le manteau profond, créant un mouvement circulaire qui entraîne les plaques à leur surface, comme une tapis roulant géant.\n\n## Fonctionnement et mécanismes : trois types de frontières, une même énergie\n\nLes interactions entre plaques se manifestent selon trois configurations principales, chacune associée à des phénomènes géologiques distincts :\n\n1. **Les frontières divergentes** : deux plaques s’éloignent l’une de l’autre, permettant à du magma de remonter depuis l’asthénosphère. C’est le cas des dorsales océaniques, où la croûte océanique se forme en continu (expansion des fonds océaniques). Ces zones, comme la dorsale médio-atlantique, sont aussi des foyers de séismes de faible magnitude.\n\n2. **Les frontières convergentes** : une plaque plonge sous une autre (subduction) ou deux plaques continentales entrent en collision. La subduction, typique des fosses océaniques (comme celle des Kouriles), génère des séismes profonds et des volcans explosifs (arcs insulaires ou continentaux). La collision continentale, comme celle entre l’Inde et l’Eurasie, soulève des chaînes de montagnes sans subduction marquée.\n\n3. Ces zones, dépourvues de volcanisme, sont des lignes de fracture majeures.\n\nCes mécanismes, alimentés par la chaleur interne de la Terre, illustrent comment l’énergie thermique se transforme en énergie mécanique, façonnant en permanence la géographie de notre planète.\n\n## Données et résultats scientifiques\n\n- La lithosphère terrestre est découpée en **quinze plaques majeures** identifiées, auxquelles s’ajoutent **une cinquantaine de plaques mineures**.  \n- Les vitesses relatives de déplacement des plaques varient de **0 à 100 mm par an** selon les zones de bordure.  \n- Les frontières entre plaques se classent en trois types : convergentes, divergentes et transformantes.  \n- Les mouvements de ces plaques sont associés à des phénomènes géologiques observables : séismes, activité volcanique, formation de chaînes de montagnes et de fosses océaniques.  \n\nCes valeurs et classifications sont issues des observations géophysiques (géodésie, sismologie, cartographie des fonds océaniques) qui ont permis de quantifier les déplacements et de cartographier les limites des plaques.\n\n## Ce que les scientifiques savent\n\n- **Modèle de convection mantellique** : le mouvement des plaques repose sur la convection du manteau supérieur, où la partie ductile (asthénosphère) permet à la lithosphère rigide de glisser.  \n- **Relation cause‑effet** : la dynamique des plaques explique la répartition spatiale des séismes et des volcans, ainsi que la création des reliefs (orogenèse, dorsales médio‑océaniques, fosses de subduction).  \n- **Stabilité du cadre théorique** : depuis la fin des années 1960, la tectonique des plaques constitue le cadre unificateur accepté par la communauté géologique et géophysique internationale pour interpréter la dynamique globale de la Terre.  \n\n## Ce qui reste incertain\n\n- **Mécanismes détaillés de la convection mantellique** : la structure exacte des cellules de convection, leur profondeur et leur interaction avec les hétérogénéités chimiques du manteau ne sont pas entièrement résolues.  \n- **Définition des limites des plaques mineures** : certaines petites plaques présentent des frontières diffuses ou complexes, rendant leur délimitation moins précise.  \n- **Rôle des forces de traction et de poussée** : la contribution relative des forces de traction (tirant les plaques) et de poussée (poussant les plaques) varie selon les régions, mais les quantifications restent sujettes à débat.  \n\n## Limites et controverses éventuelles\n\n- **Modèles alternatifs** : bien que la tectonique des plaques soit largement acceptée, des propositions marginales (par exemple, des modèles de « plaque rigide flottante » ou de « déformation diffuse ») existent mais ne sont pas soutenues par des données suffisantes pour remettre en cause le paradigme dominant.  \n- **Interaction avec la théorie de la dérive des continents** : la tectonique des plaques ne s’appuie pas sur la théorie de la dérive des continents de Wegener, qui est considérée comme obsolète. Cette distinction peut parfois prêter à confusion dans les présentations populaires, mais les deux concepts sont historiquement distincts.  \n- **Limites de la résolution spatiale** : les mesures de vitesse et les cartes de frontières sont limitées par la densité des stations de suivi et la profondeur d’observation, ce qui laisse des incertitudes dans les zones peu couvertes (ex. régions océaniques profondes).  \n\n## Conclusion\n\nLa tectonique des plaques constitue aujourd’hui le socle explicatif de la dynamique de la lithosphère terrestre : elle décrit comment une dizaine et demie de plaques majeures et une cinquantaine de plaques mineures se déplacent à des vitesses de 0 à 100 mm/an, générant les principaux phénomènes géologiques observés à la surface de la Terre. Les observations géophysiques confirment la validité du modèle, tandis que les incertitudes persistent principalement autour des détails du processus de convection mantellique et de la délimitation précise des petites plaques. Malgré ces zones d’ombre, aucune alternative ne rivalise actuellement avec la robustesse des données qui soutiennent la théorie, faisant de la tectonique des plaques le cadre de référence incontournable pour comprendre la géodynamique planétaire.\n\n## Sources\n- Wikipédia (fr) — Tectonique des plaques — https://fr.wikipedia.org/wiki/Tectonique_des_plaques\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 4,
+      "nb_mots": 1083,
+      "sujet_id": "tectonique",
+      "origine": "encyclopedie",
+      "matiere_source": "suffisante",
       "textes_sources_audit": [
         {
-          "source": "Nature News",
-          "titre": "Why not to wait even a few minutes before fleeing a tsunami",
-          "resume": "Nature, Published online: 04 November 2026; doi:10.1038/d41586-026-03539-5 Simulation shows that hesitating can be the difference between making it to safety and not."
-        },
-        {
           "source": "Wikipédia (fr)",
-          "titre": "Rythme circadien",
-          "resume": "Le rythme circadien regroupe tous les processus biologiques cycliques d'une durée d'environ 24 heures.\n\nDéfinition générale\nUn rythme circadien est un rythme biologique d’une durée de 24 heures environ, qui possède au moins un cycle par période de 24 heures. Le terme « circadien », inventé par Franz Halberg, vient du latin circa, « autour », et dies, « jour », et signifie littéralement cycle qui dure « environ un jour ».\nLe rythme veille-sommeil marque de manière déterminante le quotidien d’une majorité d'animaux, des invertébrés aux humains. Le rythme circadien le plus visible chez les plantes concerne la position des feuilles et des pétales, qui se redressent ou s’ouvrent plus ou moins selon l’heure de la journée. Des rythmes circadiens peuvent aussi s’observer chez des organismes unicellulaires, comme des moisissures et des cyanobactéries.\nAu sens strict, les rythmes circadiens sont endogènes. Ils sont produits par des horloges biologiques, qualifiées elles aussi de circadiennes. Celles-ci opèrent même en absence de tout stimulus extérieur, dans des conditions parfaitement constantes de lumière et de température, pendant des semaines voire des mois. Ce cycle continuel est qualifié de free running. Dans des conditions constantes, ces rythmes endogènes permettent de maintenir la périodicité de 24 heures, mais des rythmes exogènes, causé par des stimuli, évoluent indépendamment de notre horloge biologique et ne se conforment pas à la période de 24 heures.\nPour décrire un rythme biologique qui se manifeste uniquement quand l’organisme est exposé à l’alternance jour-nuit, on parle plutôt de rythme nycthéméral.\nL’étude formelle des rythmes biologiques est appelée chronobiologie.\n\nPériode d'un cycle circadien\nLa période d'un cycle circadien se décompose en 3 parties : \n\nUn pic = acrophase ;\nUn creux = nadir ;\nUn niveau moyen = mesor.\n\nChez l'être humain\n\nLe rythme circadien, c’est-à-dire l’alternance de périodes d’une durée de 24 heures, joue sur de nombreux mécanismes biologiques, physiologiques et comportementaux de l'être humain.\nParmi ceux-ci, on peut trouver :\n\nle rythme veille/sommeil ;\nles variations de la vigilance ;\nla température corporelle ;\nla circulation sanguine ;\nla production des urines et selles ;\nle niveau de production hormonale, et notamment la production de l’hormone de croissance (GH) ;\nla pousse des cheveux ;\nle métabolisme cellulaire ;\nle niveau de cortisol ;\nle niveau de potassium.\nCette rythmicité provient à la fois de l’environnement, et à la fois de mécanismes cérébraux. En effet, les rythmes circadiens sont liés aux mouvements de rotation de la terre et aux variations lumineuses qui sont le fait des alternances jours/nuits. Si on expose des personnes pendant 10 heures à la lumière, et 10 autres heures à l’obscurité, leur cycle tend à s’ajuster à une durée de 20 heures au lieu des 24 heures naturelles. Il y a donc des repères issus de l’environnement qui sont appelés « zeitgebers » (en allemand : ce qui donne l’heure), et qui sont prélevés par l’organisme pour s’ajuster au rythme circadien.\nCependant, si on isole les personnes de toute variation lumineuse (c’est la méthode expérimentale des rythmes en libre cours), on observe qu’en supprimant l’alternance jours/nuits, on a à peu près le même rythme circadien conservé. Lavie en 2001 a montré que les périodes de libre cours se maintenaient à peu près à 25 heures en moyenne chez la plupart des êtres humains. De plus, le rythme circadien n'est pas présent dès la naissance, les nouveau-nés dorment autant le jour que la nuit. Vers huit semaines, la plupart d'entre eux commencent à établir un début de rythme circadien, ce qui tend à soutenir l’idée qu’il y aurait une horloge biologique interne à l’organisme.\nAinsi donc, pour soutenir ces deux types de faits, les scientifiques postulent l’idée qu’une horloge interne maintiendrait une rythmicité de nos fonctions, en s’ajustant aux repères/Zeitgebers fournis par l’environnement.\n\nLes biomarqueurs et modèles animaux du rythme circadien\nLes biomarqueurs du rythme circadien sont essentiels pour comprendre les cycles biologiques et leur régulation. Le Dim Light Melatonin Onset (DLMO) est un indicateur clé mesurant la sécrétion de mélatonine en absence de lumière, permettant d'évaluer les variations du cycle veille-sommeil. D'autres biomarqueurs incluent la température corporelle centrale, les expressions génétiques des gènes horloges (PER, CRY, BMAL1) et les niveaux de cortisol. Les modèles animaux, notamment les souris knock-out pour les gènes circadiens, permettent d'étudier les effets des mutations sur la régulation interne. La drosophile (*Drosophila melanogaster*) est également un modèle privilégié en raison de son horloge circadienne conservée. Ces études sont essentielles pour comprendre l'impact des rythmes biologiques sur la santé humaine, notamment dans les pathologies métaboliques et neurodégénératives."
+          "titre": "Tectonique des plaques",
+          "resume": "La tectonique des plaques (du latin tardif tectonicus, dérivé du grec τεκτονικός / tektonikós, « de construction ») est une théorie et un modèle scientifique expliquant la dynamique globale de la lithosphère terrestre. La théorie de la tectonique des plaques est forgée par la communauté géologique et géophysique internationale à la fin des années 1960, à la suite de la découverte de l'expansion des fonds océaniques.\nLa lithosphère, couche externe rigide de la Terre constituée de la croûte et d'une partie du manteau supérieur, est subdivisée en plaques, dites tectoniques ou lithosphériques. Quinze plaques majeures ont été identifiées, complétées par une cinquantaine de plaques mineures. Leurs mouvements relatifs variés génèrent divers types de frontières : convergentes, divergentes ou transformantes. Au niveau de ces frontières se produisent de nombreux phénomènes géologiques tels que les séismes, l'activité volcanique, la formation de chaînes de montagnes et celle de fosses océaniques. La vitesse du mouvement relatif de deux plaques voisines varie entre 0 et 100 mm/an.\nLes plaques tectoniques sont constituées d'une lithosphère océanique et/ou continentale, caractérisée par les croûtes des mêmes noms, sous lesquelles se trouve la zone rigide du manteau supérieur. Le mouvement de ces plaques est possible du fait que la lithosphère, rigide, repose sur l'asthénosphère sous-jacente, partie ductile du manteau supérieur. Cette mobilité lithosphérique résulte des mouvements de convection qui animent le manteau terrestre, mécanisme par lequel la Terre dissipe sa chaleur interne vers la surface.\nLa tectonique des plaques n'est pas affiliée à la théorie de la dérive des continents, développée par Alfred Wegener au début du XXe siècle,  réputée obsolète et qui ne propose ni le même modèle ni les mêmes mécanismes géologiques. \n\nHistoire\n\nDes continents mobiles ?\n\nRenaissance\n\nPendant plusieurs siècles, les sciences de la Terre ont été dominées par la théorie fixiste qui repose sur le constat de l'état solide de la quasi-totalité du globe terrestre et de la surface terrestre qui présente une géométrie immuable, stable[réf. souhaitée].\nDès 1596, dans son ouvrage Thesaurus geographicus, le cartographe anversois Abraham Ortelius remarque la ressemblance du tracé des côtes américaines et africaines. Il émet l’hypothèse que ces continents ont autrefois été réunis et qu’ils ont été séparés à la suite d'inondations et de séismes[réf. souhaitée]. Francis Bacon souligne également cette complémentarité en 1620[réf. souhaitée]. Dans la Corruption du grand et petit Monde (1668), le père François Placet affirme que la séparation de l'Amérique du reste des continents s'est produite pendant le déluge universel. En 1756, le théologien allemand Theodor Christoph Lilienthal (de) trouve la confirmation biblique de cette séparation en interprétant avec peu de vraisemblance un passage du livre de la Genèse.\n\nXIXe siècle\nUne première étape vers une vraie théorie de la dérive des continents est franchie en 1858 par le géographe Antonio Snider-Pellegrini dans son mémoire intitulé La Création et ses mystères dévoilés. Il propose une première ébauche d'explication de la complémentarité des côtes d'Europe et d'Amérique du Nord par la ressemblance des flores fossiles du Carbonifère dans ces deux continents. Pour Snider, un bloc primitif de roches en fusion aurait occupé une seule face de la Terre puis, refroidi, se serait rompu, créant l'Atlantique qui sépare les deux continents ; ceux-ci se seraient ensuite déplacés à la surface de la Terre. Cependant Snider, tenant de l'orthodoxie chrétienne, invoque encore la théorie du catastrophisme pour attribuer le phénomène du refroidissement au Déluge.\nLes hommes de science, imprégnés de la théorie de l'uniformitarisme qui s'est imposée à la fin du XIXe siècle, continuent à croire à la pérennité des mers et des continents. Pourtant, quelques tenants de la théorie mobiliste qui considère que d'importants mouvements horizontaux animent la Terre, se sont exprimés.\nJusqu'au début du XXe siècle, la mobilité verticale de la terre est admise (d'après l'observation des séismes, des volcans en formation) mais pas la mobilité horizontale[réf. souhaitée].\nLa théorie fixiste reste cependant dominante et seuls les déplacements verticaux demeurent expliqués. Le géologue Léonce Élie de Beaumont développe l'hypothèse de « systèmes de soulèvement » pour expliquer l'orogenèse. À la fin du XIXe siècle, Eduard Suess remplace l'hypothèse des « soulèvements » par celle des « affaissements » : adepte de la théorie de la contraction de la Terre, il propose que les montagnes résultent de plissements tandis que les océans proviennent de l'effondrement des ponts terrestres. Cependant, plusieurs contraintes (distribution bimodale des altitudes, quasi constance de la gravité à la surface du globe) rendent ces modèles fixistes inopérants."
         }
-      ],
-      "nb_mots_decouverte": 226,
-      "nb_mots_approfondi": 1294,
-      "sujet_id": "rythme-circadien",
-      "origine": "encyclopedie"
+      ]
     },
     "citation": {
-      "texte": "Rien n'est donné. Tout est construit.",
-      "auteur": "Gaston Bachelard",
-      "source": "La Formation de l'esprit scientifique",
-      "annee": 1938
+      "texte": "Le vent se lève !... Il faut tenter de vivre !",
+      "auteur": "Paul Valéry",
+      "source": "Le Cimetière marin",
+      "annee": 1920
     },
     "meteo": {
       "villes_detail": [
         {
           "ville": "Antibes",
-          "temperature_actuelle": 14.2,
-          "temperature_max": 17.6,
-          "temperature_min": 13.4,
-          "precipitation_mm": 5.9,
-          "probabilite_pluie_pct": 90,
-          "vent_kmh": 20.6,
-          "vent_max_kmh": 34.3,
-          "rafales_max_kmh": 61.2,
-          "weather_code": 61,
-          "description": "pluie légère",
+          "temperature_actuelle": 13.4,
+          "temperature_max": 15.6,
+          "temperature_min": 10.6,
+          "precipitation_mm": 1.9,
+          "probabilite_pluie_pct": 33,
+          "vent_kmh": 4.7,
+          "vent_max_kmh": 17.1,
+          "rafales_max_kmh": 34.2,
+          "weather_code": 53,
+          "description": "bruine",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 14.2,
-              "temperature_max": 17.4,
-              "probabilite_pluie_pct": 75,
-              "precipitation_mm": 1.0,
-              "vent_max_kmh": 34,
-              "weather_code": 61,
-              "description": "pluie légère"
-            },
-            {
-              "label": "Après-midi",
-              "temperature_min": 17.1,
-              "temperature_max": 17.5,
-              "probabilite_pluie_pct": 83,
-              "precipitation_mm": 0.1,
-              "vent_max_kmh": 33,
+              "temperature_min": 13.4,
+              "temperature_max": 15.2,
+              "probabilite_pluie_pct": 3,
+              "precipitation_mm": 0.4,
+              "vent_max_kmh": 8,
               "weather_code": 3,
               "description": "couvert"
             },
             {
+              "label": "Après-midi",
+              "temperature_min": 14.7,
+              "temperature_max": 15.5,
+              "probabilite_pluie_pct": 20,
+              "precipitation_mm": 1.5,
+              "vent_max_kmh": 10,
+              "weather_code": 53,
+              "description": "bruine"
+            },
+            {
               "label": "Soir",
-              "temperature_min": 14.5,
-              "temperature_max": 17.4,
-              "probabilite_pluie_pct": 88,
-              "precipitation_mm": 4.8,
-              "vent_max_kmh": 29,
-              "weather_code": 61,
-              "description": "pluie légère"
+              "temperature_min": 10.7,
+              "temperature_max": 14.6,
+              "probabilite_pluie_pct": 10,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             }
           ],
-          "alertes": [
-            "Rafales jusqu'à 61 km/h"
-          ]
+          "alertes": []
         },
         {
           "ville": "Cannes",
-          "temperature_actuelle": 13.5,
-          "temperature_max": 17.3,
-          "temperature_min": 12.6,
-          "precipitation_mm": 9.2,
-          "probabilite_pluie_pct": 93,
-          "vent_kmh": 25.7,
-          "vent_max_kmh": 28.2,
-          "rafales_max_kmh": 57.8,
-          "weather_code": 63,
-          "description": "pluie",
+          "temperature_actuelle": 13.3,
+          "temperature_max": 15.3,
+          "temperature_min": 11.0,
+          "precipitation_mm": 1.2,
+          "probabilite_pluie_pct": 30,
+          "vent_kmh": 6.4,
+          "vent_max_kmh": 15.8,
+          "rafales_max_kmh": 29.2,
+          "weather_code": 51,
+          "description": "bruine légère",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 13.5,
-              "temperature_max": 16.9,
-              "probabilite_pluie_pct": 85,
-              "precipitation_mm": 1.2,
-              "vent_max_kmh": 28,
-              "weather_code": 61,
-              "description": "pluie légère"
+              "temperature_min": 13.3,
+              "temperature_max": 14.9,
+              "probabilite_pluie_pct": 3,
+              "precipitation_mm": 0.4,
+              "vent_max_kmh": 10,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 16.7,
-              "temperature_max": 17.3,
-              "probabilite_pluie_pct": 89,
-              "precipitation_mm": 0.1,
-              "vent_max_kmh": 28,
+              "temperature_min": 14.3,
+              "temperature_max": 15.3,
+              "probabilite_pluie_pct": 30,
+              "precipitation_mm": 0.8,
+              "vent_max_kmh": 13,
               "weather_code": 3,
               "description": "couvert"
             },
             {
               "label": "Soir",
-              "temperature_min": 14.2,
-              "temperature_max": 16.8,
-              "probabilite_pluie_pct": 90,
-              "precipitation_mm": 7.9,
-              "vent_max_kmh": 24,
-              "weather_code": 63,
-              "description": "pluie"
+              "temperature_min": 11.3,
+              "temperature_max": 14.7,
+              "probabilite_pluie_pct": 2,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Valbonne",
-          "temperature_actuelle": 13.6,
-          "temperature_max": 14.3,
-          "temperature_min": 12.7,
-          "precipitation_mm": 5.1,
-          "probabilite_pluie_pct": 90,
-          "vent_kmh": 17.1,
-          "vent_max_kmh": 19.2,
-          "rafales_max_kmh": 34.2,
-          "weather_code": 61,
-          "description": "pluie légère",
+          "temperature_actuelle": 10.5,
+          "temperature_max": 15.2,
+          "temperature_min": 9.8,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 4,
+          "vent_kmh": 5.6,
+          "vent_max_kmh": 9.9,
+          "rafales_max_kmh": 17.6,
+          "weather_code": 2,
+          "description": "partiellement nuageux",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 13.5,
-              "temperature_max": 13.8,
-              "probabilite_pluie_pct": 75,
-              "precipitation_mm": 0.9,
-              "vent_max_kmh": 18,
+              "temperature_min": 10.2,
+              "temperature_max": 14.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 12.9,
+              "temperature_max": 15.2,
+              "probabilite_pluie_pct": 8,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
               "weather_code": 3,
               "description": "couvert"
             },
             {
-              "label": "Après-midi",
-              "temperature_min": 13.3,
-              "temperature_max": 14.3,
-              "probabilite_pluie_pct": 90,
-              "precipitation_mm": 1.7,
-              "vent_max_kmh": 14,
-              "weather_code": 61,
-              "description": "pluie légère"
-            },
-            {
               "label": "Soir",
-              "temperature_min": 12.9,
-              "temperature_max": 13.7,
-              "probabilite_pluie_pct": 88,
-              "precipitation_mm": 2.5,
-              "vent_max_kmh": 14,
-              "weather_code": 61,
-              "description": "pluie légère"
+              "temperature_min": 10.5,
+              "temperature_max": 11.9,
+              "probabilite_pluie_pct": 6,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Grasse",
-          "temperature_actuelle": 13.0,
-          "temperature_max": 13.4,
-          "temperature_min": 11.9,
-          "precipitation_mm": 4.5,
-          "probabilite_pluie_pct": 93,
-          "vent_kmh": 17.8,
-          "vent_max_kmh": 20.1,
-          "rafales_max_kmh": 35.3,
-          "weather_code": 61,
-          "description": "pluie légère",
+          "temperature_actuelle": 10.1,
+          "temperature_max": 14.1,
+          "temperature_min": 9.6,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 3,
+          "vent_kmh": 6.1,
+          "vent_max_kmh": 9.2,
+          "rafales_max_kmh": 16.6,
+          "weather_code": 2,
+          "description": "partiellement nuageux",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 12.8,
-              "temperature_max": 13.3,
-              "probabilite_pluie_pct": 90,
-              "precipitation_mm": 1.1,
-              "vent_max_kmh": 19,
-              "weather_code": 61,
-              "description": "pluie légère"
+              "temperature_min": 9.6,
+              "temperature_max": 13.8,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 12.4,
-              "temperature_max": 13.4,
-              "probabilite_pluie_pct": 93,
-              "precipitation_mm": 1.4,
-              "vent_max_kmh": 14,
-              "weather_code": 61,
-              "description": "pluie légère"
+              "temperature_min": 11.9,
+              "temperature_max": 14.1,
+              "probabilite_pluie_pct": 16,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Soir",
-              "temperature_min": 12.1,
-              "temperature_max": 12.7,
-              "probabilite_pluie_pct": 85,
-              "precipitation_mm": 2.0,
-              "vent_max_kmh": 12,
-              "weather_code": 61,
-              "description": "pluie légère"
+              "temperature_min": 10.3,
+              "temperature_max": 11.1,
+              "probabilite_pluie_pct": 2,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             }
           ],
           "alertes": []
         }
       ],
-      "temperature_max_zone": 17.6,
-      "temperature_min_zone": 11.9,
-      "probabilite_pluie_max_pct": 93,
-      "vent_max_kmh": 34.3,
-      "description_dominante": "pluie",
+      "temperature_max_zone": 15.6,
+      "temperature_min_zone": 9.6,
+      "probabilite_pluie_max_pct": 33,
+      "vent_max_kmh": 17.1,
+      "description_dominante": "bruine",
       "periodes": [
         {
           "label": "Matin",
-          "temperature_min": 12.8,
-          "temperature_max": 17.4,
-          "probabilite_pluie_pct": 90,
-          "precipitation_mm": 1.2,
-          "vent_max_kmh": 34,
-          "weather_code": 61,
-          "description": "pluie légère"
+          "temperature_min": 9.6,
+          "temperature_max": 15.2,
+          "probabilite_pluie_pct": 3,
+          "precipitation_mm": 0.4,
+          "vent_max_kmh": 10,
+          "weather_code": 3,
+          "description": "couvert"
         },
         {
           "label": "Après-midi",
-          "temperature_min": 12.4,
-          "temperature_max": 17.5,
-          "probabilite_pluie_pct": 93,
-          "precipitation_mm": 1.7,
-          "vent_max_kmh": 33,
-          "weather_code": 61,
-          "description": "pluie légère"
+          "temperature_min": 11.9,
+          "temperature_max": 15.5,
+          "probabilite_pluie_pct": 30,
+          "precipitation_mm": 1.5,
+          "vent_max_kmh": 13,
+          "weather_code": 3,
+          "description": "couvert"
         },
         {
           "label": "Soir",
-          "temperature_min": 12.1,
-          "temperature_max": 17.4,
-          "probabilite_pluie_pct": 90,
-          "precipitation_mm": 7.9,
-          "vent_max_kmh": 29,
-          "weather_code": 63,
-          "description": "pluie"
+          "temperature_min": 10.3,
+          "temperature_max": 14.7,
+          "probabilite_pluie_pct": 10,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 8,
+          "weather_code": 0,
+          "description": "ciel dégagé"
         }
       ],
-      "alertes": [
-        "Rafales jusqu'à 61 km/h"
-      ],
-      "resume": "Pluie légère le matin, pluie légère l'après-midi, pluie le soir, de 12° à 18°."
+      "alertes": [],
+      "resume": "Couvert le matin, couvert l'après-midi, ciel dégagé le soir, de 10° à 16°."
     },
     "anglais": {
       "mode": "litterature",
-      "oeuvre": "A Christmas Carol",
+      "oeuvre": "A Tale of Two Cities",
       "auteur": "Charles Dickens",
-      "annee": 1843,
+      "annee": 1859,
       "segments": [
         {
-          "t": "Marley was dead: to begin with",
-          "g": "pour commencer"
+          "t": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness",
+          "g": "la sottise"
         },
         {
-          "t": ". There is no doubt whatever about that. The register of his burial",
-          "g": "l'enterrement"
+          "t": ", it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct",
+          "g": "tout droit"
         },
         {
-          "t": " was signed by the clergyman",
-          "g": "le pasteur"
+          "t": " to Heaven, we were all going direct the other way – in short",
+          "g": "bref"
         },
         {
-          "t": ", the clerk, the undertaker",
-          "g": "le croque-mort"
+          "t": ", the period was so far like",
+          "g": "si semblable à"
         },
         {
-          "t": ", and the chief mourner",
-          "g": "le principal parent en deuil"
+          "t": " the present period, that some of its noisiest",
+          "g": "les plus bruyants"
         },
         {
-          "t": ". Scrooge signed it: and Scrooge's name was good upon 'Change",
-          "g": "la Bourse"
+          "t": " authorities insisted on",
+          "g": "exigeaient que"
         },
         {
-          "t": ", for anything he chose to put his hand to",
-          "g": "apposer sa signature à"
+          "t": " its being received",
+          "g": "accueillie, admise"
         },
         {
-          "t": ". Old Marley was as dead as a door-nail",
-          "g": "bel et bien mort"
+          "t": ", for good or for evil",
+          "g": "pour le meilleur ou pour le pire"
         },
         {
-          "t": ". Mind! I don't mean to say that I know, of my own knowledge, what there is particularly dead about a door-nail. I might have been inclined, myself, to regard a coffin-nail as the deadest piece of ironmongery",
-          "g": "la quincaillerie"
-        },
-        {
-          "t": " in the trade. But the wisdom of our ancestors is in the simile",
-          "g": "la comparaison"
-        },
-        {
-          "t": "; and my unhallowed",
-          "g": "profanes"
-        },
-        {
-          "t": " hands shall not disturb it, or the Country's done for",
-          "g": "fichu"
-        },
-        {
-          "t": ".",
+          "t": ", in the superlative degree of comparison only.",
           "g": null
         }
       ],
-      "texte_glose": "Marley was dead: to begin with (= pour commencer). There is no doubt whatever about that. The register of his burial (= l'enterrement) was signed by the clergyman (= le pasteur), the clerk, the undertaker (= le croque-mort), and the chief mourner (= le principal parent en deuil). Scrooge signed it: and Scrooge's name was good upon 'Change (= la Bourse), for anything he chose to put his hand to (= apposer sa signature à). Old Marley was as dead as a door-nail (= bel et bien mort). Mind! I don't mean to say that I know, of my own knowledge, what there is particularly dead about a door-nail. I might have been inclined, myself, to regard a coffin-nail as the deadest piece of ironmongery (= la quincaillerie) in the trade. But the wisdom of our ancestors is in the simile (= la comparaison); and my unhallowed (= profanes) hands shall not disturb it, or the Country's done for (= fichu)."
+      "texte_glose": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness (= la sottise), it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct (= tout droit) to Heaven, we were all going direct the other way – in short (= bref), the period was so far like (= si semblable à) the present period, that some of its noisiest (= les plus bruyants) authorities insisted on (= exigeaient que) its being received (= accueillie, admise), for good or for evil (= pour le meilleur ou pour le pire), in the superlative degree of comparison only."
     },
     "meta": {
-      "resume_1_phrase": "À la une : Mobilisation du 5 novembre : la justice valide l'interdiction de la manifestation parisienne entre Bastille et Concorde, la CGT accepte le parcours République-Nation."
+      "resume_1_phrase": "À la une : Attentat raciste à Trappes : la mère et des sœurs de Pengo Bossio Wangi ont été reçues mardi par Emmanuel Macron."
     },
     "_genere_par_llm": true,
-    "_provider": "groq+mistral",
+    "_provider": "groq+mistral+nvidia",
     "_erreur_llm": null,
     "_parts": {
       "actu_france": {
@@ -580,9 +543,9 @@
       },
       "marches": {
         "genere_par_llm": true,
-        "provider": "groq",
+        "provider": "nvidia",
         "erreur": null,
-        "essais_echoues": 1
+        "essais_echoues": 0
       },
       "science_a": {
         "genere_par_llm": true,
@@ -601,17 +564,11 @@
         "provider": "groq",
         "erreur": null,
         "essais_echoues": 1
-      },
-      "science_d": {
-        "genere_par_llm": true,
-        "provider": "mistral",
-        "erreur": null,
-        "essais_echoues": 1
       }
     },
     "_bloc": {
       "genere_par_llm": true,
-      "provider": "groq+mistral",
+      "provider": "groq+mistral+nvidia",
       "erreur": null
     },
     "_science": {
@@ -625,5 +582,5 @@
       "erreur": null
     }
   },
-  "debut_run": "2026-11-05T06:10:45.190749+01:00"
+  "debut_run": "2026-11-06T06:10:35.461846+01:00"
 }

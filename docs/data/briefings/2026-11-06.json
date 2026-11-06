@@ -1,0 +1,586 @@
+{
+  "date": "2026-11-06",
+  "derniere_mise_a_jour": "2026-11-06T06:18:45.047942+01:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Attentat raciste à Trappes : la mère et des sœurs de Pengo Bossio Wangi ont été reçues mardi par Emmanuel Macron",
+          "resume": "Un ami de la famille, également présent, a annoncé la nouvelle sur les réseaux sociaux.",
+          "pourquoi_important": "Rencontre du président avec la mère et les sœurs de la victime d'un attentat raciste.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Au procès de l’explosion de la rue de Trévise, la notion d’urgence des travaux à réaliser en question",
+          "resume": "D’anciens salariés du syndic Cipa ont été entendus comme témoins, jeudi, au tribunal judiciaire de Paris. Au cœur des interrogations, le fait que cette société n’avait pas recouru à la procédure d’urgence qui lui aurait permis de faire réparer des fuites ayant joué un rôle crucial dans la catastrophe de janvier 2019.",
+          "pourquoi_important": "Question de l'absence de procédure d'urgence dans les travaux liés à l'explosion de la rue de Trévise.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Les trois quarts des sympathisants de droite et du centre veulent une primaire",
+          "resume": "Selon un sondage Odoxa pour « Le Figaro » publié jeudi, 74 % des sympathisants de droite et du centre souhaitent une primaire pour désigner leur candidat à la présidentielle de 2027. Bruno Retailleau a leur préférence",
+          "pourquoi_important": "Indique un fort soutien à une primaire parmi les sympathisants de droite et du centre pour la présidentielle 2027.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Présidentielle : Macron suggère une «coalition» allant de Glucksmann à Lisnard en passant par Philippe et Attal, qui passent leur tour",
+          "resume": "Refusant la perspective répétée d’un second tour entre Jean-Luc Mélenchon et Marine Le Pen, le Président appelle de ses voeux un très large arc politique regroupant le centre-gauche jusqu’à la droite libérale-conservatrice.",
+          "pourquoi_important": "Propose un large éventail politique pour éviter un second tour entre Mélenchon et Le Pen.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Matignon annonce la tenue d'une \"conférence sociale\" lundi en présence des syndicats et du patronat",
+          "resume": "L'objectif affiché est \"d'apporter des réponses aux questions de pouvoir d’achat et de salaires\", selon les services du Premier ministre.",
+          "pourquoi_important": "Visée de réponses aux questions de pouvoir d’achat et de salaires.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "20 Minutes"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Guerre en Ukraine : la trêve d’Olechky prouve que « quand Poutine le veut, les combats s’arrêtent », estime Volodymyr Zelensky",
+          "resume": "Le président ukrainien souligne que les pauses des combats dépendent de la volonté du président russe, évoquant aussi la libération de prisonniers et d’enfants enlevés par la Russie.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : Trump prédit un « grand accord » avec la Russie et même sur « toute l’Europe »",
+          "resume": "Le président américain annonce un futur accord global avec la Russie, alors que des pourparlers entre Russes et Ukrainiens sont prévus les 10 et 11 novembre à Abou Dhabi.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Gaza : cinq personnes, dont un enfant, tuées par des bombardements israéliens, selon les services de secours palestiniens",
+          "resume": "Les hôpitaux du centre et du sud de Gaza ont confirmé la mort de cinq civils, dont un enfant, lors de frappes israéliennes.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Midterms 2026 : après avoir accepté les résultats, Donald Trump dénonce à présent des élections « truquées »",
+          "resume": "Le président américain refuse d’assumer la défaite républicaine aux élections de mi-mandat et accuse le processus électoral d’être truqué.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération",
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Midterms 2026 : les démocrates s’interrogent sur leur stratégie et leur direction dans le prochain Congrès",
+          "resume": "Hakeem Jeffries et Chuck Schumer, pressentis pour diriger respectivement la Chambre des représentants et le Sénat, font face à des contestations internes sur leur leadership.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Selon Le Monde International, En Nouvelle-Zélande, les Maoris très critiques vis-à-vis du bilan du gouvernement : « En trois ans, il a détruit cinquante ans d’acquis »",
+          "resume": "Une large part de l’électorat maori, qui a vu ses droits remis en cause par le gouvernement libéral-conservateur dirigé par Christopher Luxon, entend sanctionner le pouvoir sortant lors des élections législatives du 7 novembre.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon New York Times World, Everyone’s Talking About the ‘Blue Tsunami.’ In Japan, It’s Complicated.",
+          "resume": "The New York Post used a Hokusai work to depict Donald Trump being swept away by Democrats’ midterm election win. Some in Japan were bothered by the imagery.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "New York Times World"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon France Info, Des milliers de cas confirmés, plusieurs morts en Pennsylvanie, une vaccination en recul... Ce que l'on sait de l'épidémie de rougeole aux Etats-Unis",
+          "resume": "Au 29 octobre, 4 852 cas confirmés de cette maladie grave et contagieuse avaient été décomptés dans le pays, soit déjà plus du double que sur toute l'année 2025. Entre 2020 et 2024, le nombre de cas ne dépassait pas quelques dizaines ou centaines.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Les marchés ont connu des mouvements marquants, notamment une forte baisse des indices américains et une hausse modeste du pétrole.",
+      "mouvements_notables": [
+        {
+          "nom": "S&P 500",
+          "variation_pct": -4.36,
+          "explication": "Les résultats des élections américaines de mi-mandat ont accentué la défiance envers les valeurs liées à l’IA."
+        },
+        {
+          "nom": "Nasdaq",
+          "variation_pct": -5.52,
+          "explication": "Les résultats des élections américaines de mi-mandat ont accentué la défiance envers les valeurs liées à l’IA."
+        },
+        {
+          "nom": "Pétrole (Brent)",
+          "variation_pct": 1.31,
+          "explication": null
+        },
+        {
+          "nom": "Or",
+          "variation_pct": -1.45,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "tennis",
+          "texte": "Luca Van Assche se qualifie pour la première fois en quart de finale d'un Masters 1000 après la défaite de Lorenzo Musetti à Paris, tandis qu'Arthur Fils était déjà éliminé. Van Assche affrontera Rinky Hijikata en deuxième rotation."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Le lucky loser Nuno Borges bat Ignacio Buse 6-0, 6-2 pour atteindre son premier quart de finale au Rolex Paris Masters."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Tommy Paul élimine Quentin Halys 7-6 (3), 6-4 et se qualifie pour les quarts de finale du Rolex Paris Masters, où il jouera contre le vainqueur du match Shelton-Rinderknech."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Victor Wembanyama inscrit 52 points, menant les San Antonio Spurs à la victoire 112-111 contre les Dallas Mavericks."
+        },
+        {
+          "sport": "basketball",
+          "texte": "L'ASVEL perd 95-99 contre le Bayern Munich en Euroligue, malgré deux victoires consécutives, et se place à la 16e position du classement."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Paris Basketball bat l'Anadolu Efes Istanbul 95-90, enregistrant ainsi sa troisième victoire consécutive à l'extérieur en Euroligue."
+        },
+        {
+          "sport": "football",
+          "texte": "Randal Kolo Muani, passeur puis buteur, conduit la Juventus à la victoire 2-1 ; Sunderland s'incline 0-2 face au Dinamo Zagreb, tandis que Benfica l'emporte 3-1 contre le Lech Poznan."
+        },
+        {
+          "sport": "rugby",
+          "texte": "Les Fidji aligneront neuf titulaires issus du Top 14 contre la France lors du match du Championnat des nations à Lyon."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "PSG – Troyes",
+          "competition": "Ligue 1",
+          "date_iso": "2026-11-07T20:05:00+00:00",
+          "date_texte": "samedi 7 novembre à 21h05",
+          "sport": "football"
+        },
+        {
+          "affiche": "Milwaukee Bucks – Boston Celtics",
+          "competition": "NBA",
+          "date_iso": "2026-11-09T01:00:00+00:00",
+          "date_texte": "lundi 9 novembre à 2h00",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "approfondi",
+      "titre": "La tectonique des plaques : comment la Terre se recompose en permanence",
+      "contenu_markdown": "La tectonique des plaques est une théorie géologique fondamentale qui explique les mouvements de la surface terrestre. Elle décrit comment la lithosphère, cette couche rigide composée de la croûte terrestre et de la partie supérieure du manteau, est fragmentée en plusieurs plaques mobiles. Ce phénomène, bien que lent à l’échelle humaine, est à l’origine des séismes, des éruptions volcaniques, de la formation des montagnes et des fosses océaniques. Sans cette dynamique, le visage de notre planète serait radicalement différent.\n\n## Pourquoi la tectonique des plaques est-elle importante ?\n\nCette théorie n’est pas seulement un modèle explicatif : elle permet de comprendre l’évolution des continents, la répartition des ressources naturelles (comme les gisements minéraux ou les hydrocarbures), et même l’histoire climatique de la Terre. Par exemple, la séparation progressive de l’Amérique et de l’Eurasie a façonné l’océan Atlantique, tandis que la collision entre l’Inde et l’Eurasie a donné naissance à l’Himalaya. Sans ces mouvements, la Terre serait géologiquement inactive, privée de renouvellement de sa croûte et de recyclage des matériaux.\n\n## Explication du phénomène : une lithosphère en mouvement\n\nLa lithosphère, rigide et froide, repose sur une couche plus ductile appelée asthénosphère, partie supérieure du manteau terrestre. Cette dernière, bien que solide, se comporte comme un fluide sur des échelles de temps géologiques en raison des températures et pressions élevées. Les plaques lithosphériques, portées par cette couche ductile, peuvent ainsi se déplacer. Leur mobilité est liée à des courants de convection dans le manteau : la chaleur issue du noyau terrestre chauffe le manteau inférieur, qui monte vers la surface sous forme de panaches ascendants. En refroidissant, ces matériaux redescendent vers le manteau profond, créant un mouvement circulaire qui entraîne les plaques à leur surface, comme une tapis roulant géant.\n\n## Fonctionnement et mécanismes : trois types de frontières, une même énergie\n\nLes interactions entre plaques se manifestent selon trois configurations principales, chacune associée à des phénomènes géologiques distincts :\n\n1. **Les frontières divergentes** : deux plaques s’éloignent l’une de l’autre, permettant à du magma de remonter depuis l’asthénosphère. C’est le cas des dorsales océaniques, où la croûte océanique se forme en continu (expansion des fonds océaniques). Ces zones, comme la dorsale médio-atlantique, sont aussi des foyers de séismes de faible magnitude.\n\n2. **Les frontières convergentes** : une plaque plonge sous une autre (subduction) ou deux plaques continentales entrent en collision. La subduction, typique des fosses océaniques (comme celle des Kouriles), génère des séismes profonds et des volcans explosifs (arcs insulaires ou continentaux). La collision continentale, comme celle entre l’Inde et l’Eurasie, soulève des chaînes de montagnes sans subduction marquée.\n\n3. Ces zones, dépourvues de volcanisme, sont des lignes de fracture majeures.\n\nCes mécanismes, alimentés par la chaleur interne de la Terre, illustrent comment l’énergie thermique se transforme en énergie mécanique, façonnant en permanence la géographie de notre planète.\n\n## Données et résultats scientifiques\n\n- La lithosphère terrestre est découpée en **quinze plaques majeures** identifiées, auxquelles s’ajoutent **une cinquantaine de plaques mineures**.  \n- Les vitesses relatives de déplacement des plaques varient de **0 à 100 mm par an** selon les zones de bordure.  \n- Les frontières entre plaques se classent en trois types : convergentes, divergentes et transformantes.  \n- Les mouvements de ces plaques sont associés à des phénomènes géologiques observables : séismes, activité volcanique, formation de chaînes de montagnes et de fosses océaniques.  \n\nCes valeurs et classifications sont issues des observations géophysiques (géodésie, sismologie, cartographie des fonds océaniques) qui ont permis de quantifier les déplacements et de cartographier les limites des plaques.\n\n## Ce que les scientifiques savent\n\n- **Modèle de convection mantellique** : le mouvement des plaques repose sur la convection du manteau supérieur, où la partie ductile (asthénosphère) permet à la lithosphère rigide de glisser.  \n- **Relation cause‑effet** : la dynamique des plaques explique la répartition spatiale des séismes et des volcans, ainsi que la création des reliefs (orogenèse, dorsales médio‑océaniques, fosses de subduction).  \n- **Stabilité du cadre théorique** : depuis la fin des années 1960, la tectonique des plaques constitue le cadre unificateur accepté par la communauté géologique et géophysique internationale pour interpréter la dynamique globale de la Terre.  \n\n## Ce qui reste incertain\n\n- **Mécanismes détaillés de la convection mantellique** : la structure exacte des cellules de convection, leur profondeur et leur interaction avec les hétérogénéités chimiques du manteau ne sont pas entièrement résolues.  \n- **Définition des limites des plaques mineures** : certaines petites plaques présentent des frontières diffuses ou complexes, rendant leur délimitation moins précise.  \n- **Rôle des forces de traction et de poussée** : la contribution relative des forces de traction (tirant les plaques) et de poussée (poussant les plaques) varie selon les régions, mais les quantifications restent sujettes à débat.  \n\n## Limites et controverses éventuelles\n\n- **Modèles alternatifs** : bien que la tectonique des plaques soit largement acceptée, des propositions marginales (par exemple, des modèles de « plaque rigide flottante » ou de « déformation diffuse ») existent mais ne sont pas soutenues par des données suffisantes pour remettre en cause le paradigme dominant.  \n- **Interaction avec la théorie de la dérive des continents** : la tectonique des plaques ne s’appuie pas sur la théorie de la dérive des continents de Wegener, qui est considérée comme obsolète. Cette distinction peut parfois prêter à confusion dans les présentations populaires, mais les deux concepts sont historiquement distincts.  \n- **Limites de la résolution spatiale** : les mesures de vitesse et les cartes de frontières sont limitées par la densité des stations de suivi et la profondeur d’observation, ce qui laisse des incertitudes dans les zones peu couvertes (ex. régions océaniques profondes).  \n\n## Conclusion\n\nLa tectonique des plaques constitue aujourd’hui le socle explicatif de la dynamique de la lithosphère terrestre : elle décrit comment une dizaine et demie de plaques majeures et une cinquantaine de plaques mineures se déplacent à des vitesses de 0 à 100 mm/an, générant les principaux phénomènes géologiques observés à la surface de la Terre. Les observations géophysiques confirment la validité du modèle, tandis que les incertitudes persistent principalement autour des détails du processus de convection mantellique et de la délimitation précise des petites plaques. Malgré ces zones d’ombre, aucune alternative ne rivalise actuellement avec la robustesse des données qui soutiennent la théorie, faisant de la tectonique des plaques le cadre de référence incontournable pour comprendre la géodynamique planétaire.\n\n## Sources\n- Wikipédia (fr) — Tectonique des plaques — https://fr.wikipedia.org/wiki/Tectonique_des_plaques\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 4,
+      "nb_mots": 1083,
+      "sujet_id": "tectonique",
+      "origine": "encyclopedie",
+      "matiere_source": "suffisante",
+      "textes_sources_audit": [
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Tectonique des plaques",
+          "resume": "La tectonique des plaques (du latin tardif tectonicus, dérivé du grec τεκτονικός / tektonikós, « de construction ») est une théorie et un modèle scientifique expliquant la dynamique globale de la lithosphère terrestre. La théorie de la tectonique des plaques est forgée par la communauté géologique et géophysique internationale à la fin des années 1960, à la suite de la découverte de l'expansion des fonds océaniques.\nLa lithosphère, couche externe rigide de la Terre constituée de la croûte et d'une partie du manteau supérieur, est subdivisée en plaques, dites tectoniques ou lithosphériques. Quinze plaques majeures ont été identifiées, complétées par une cinquantaine de plaques mineures. Leurs mouvements relatifs variés génèrent divers types de frontières : convergentes, divergentes ou transformantes. Au niveau de ces frontières se produisent de nombreux phénomènes géologiques tels que les séismes, l'activité volcanique, la formation de chaînes de montagnes et celle de fosses océaniques. La vitesse du mouvement relatif de deux plaques voisines varie entre 0 et 100 mm/an.\nLes plaques tectoniques sont constituées d'une lithosphère océanique et/ou continentale, caractérisée par les croûtes des mêmes noms, sous lesquelles se trouve la zone rigide du manteau supérieur. Le mouvement de ces plaques est possible du fait que la lithosphère, rigide, repose sur l'asthénosphère sous-jacente, partie ductile du manteau supérieur. Cette mobilité lithosphérique résulte des mouvements de convection qui animent le manteau terrestre, mécanisme par lequel la Terre dissipe sa chaleur interne vers la surface.\nLa tectonique des plaques n'est pas affiliée à la théorie de la dérive des continents, développée par Alfred Wegener au début du XXe siècle,  réputée obsolète et qui ne propose ni le même modèle ni les mêmes mécanismes géologiques. \n\nHistoire\n\nDes continents mobiles ?\n\nRenaissance\n\nPendant plusieurs siècles, les sciences de la Terre ont été dominées par la théorie fixiste qui repose sur le constat de l'état solide de la quasi-totalité du globe terrestre et de la surface terrestre qui présente une géométrie immuable, stable[réf. souhaitée].\nDès 1596, dans son ouvrage Thesaurus geographicus, le cartographe anversois Abraham Ortelius remarque la ressemblance du tracé des côtes américaines et africaines. Il émet l’hypothèse que ces continents ont autrefois été réunis et qu’ils ont été séparés à la suite d'inondations et de séismes[réf. souhaitée]. Francis Bacon souligne également cette complémentarité en 1620[réf. souhaitée]. Dans la Corruption du grand et petit Monde (1668), le père François Placet affirme que la séparation de l'Amérique du reste des continents s'est produite pendant le déluge universel. En 1756, le théologien allemand Theodor Christoph Lilienthal (de) trouve la confirmation biblique de cette séparation en interprétant avec peu de vraisemblance un passage du livre de la Genèse.\n\nXIXe siècle\nUne première étape vers une vraie théorie de la dérive des continents est franchie en 1858 par le géographe Antonio Snider-Pellegrini dans son mémoire intitulé La Création et ses mystères dévoilés. Il propose une première ébauche d'explication de la complémentarité des côtes d'Europe et d'Amérique du Nord par la ressemblance des flores fossiles du Carbonifère dans ces deux continents. Pour Snider, un bloc primitif de roches en fusion aurait occupé une seule face de la Terre puis, refroidi, se serait rompu, créant l'Atlantique qui sépare les deux continents ; ceux-ci se seraient ensuite déplacés à la surface de la Terre. Cependant Snider, tenant de l'orthodoxie chrétienne, invoque encore la théorie du catastrophisme pour attribuer le phénomène du refroidissement au Déluge.\nLes hommes de science, imprégnés de la théorie de l'uniformitarisme qui s'est imposée à la fin du XIXe siècle, continuent à croire à la pérennité des mers et des continents. Pourtant, quelques tenants de la théorie mobiliste qui considère que d'importants mouvements horizontaux animent la Terre, se sont exprimés.\nJusqu'au début du XXe siècle, la mobilité verticale de la terre est admise (d'après l'observation des séismes, des volcans en formation) mais pas la mobilité horizontale[réf. souhaitée].\nLa théorie fixiste reste cependant dominante et seuls les déplacements verticaux demeurent expliqués. Le géologue Léonce Élie de Beaumont développe l'hypothèse de « systèmes de soulèvement » pour expliquer l'orogenèse. À la fin du XIXe siècle, Eduard Suess remplace l'hypothèse des « soulèvements » par celle des « affaissements » : adepte de la théorie de la contraction de la Terre, il propose que les montagnes résultent de plissements tandis que les océans proviennent de l'effondrement des ponts terrestres. Cependant, plusieurs contraintes (distribution bimodale des altitudes, quasi constance de la gravité à la surface du globe) rendent ces modèles fixistes inopérants."
+        }
+      ]
+    },
+    "citation": {
+      "texte": "Le vent se lève !... Il faut tenter de vivre !",
+      "auteur": "Paul Valéry",
+      "source": "Le Cimetière marin",
+      "annee": 1920
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 13.4,
+          "temperature_max": 15.6,
+          "temperature_min": 10.6,
+          "precipitation_mm": 1.9,
+          "probabilite_pluie_pct": 33,
+          "vent_kmh": 4.7,
+          "vent_max_kmh": 17.1,
+          "rafales_max_kmh": 34.2,
+          "weather_code": 53,
+          "description": "bruine",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 13.4,
+              "temperature_max": 15.2,
+              "probabilite_pluie_pct": 3,
+              "precipitation_mm": 0.4,
+              "vent_max_kmh": 8,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 14.7,
+              "temperature_max": 15.5,
+              "probabilite_pluie_pct": 20,
+              "precipitation_mm": 1.5,
+              "vent_max_kmh": 10,
+              "weather_code": 53,
+              "description": "bruine"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 10.7,
+              "temperature_max": 14.6,
+              "probabilite_pluie_pct": 10,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 13.3,
+          "temperature_max": 15.3,
+          "temperature_min": 11.0,
+          "precipitation_mm": 1.2,
+          "probabilite_pluie_pct": 30,
+          "vent_kmh": 6.4,
+          "vent_max_kmh": 15.8,
+          "rafales_max_kmh": 29.2,
+          "weather_code": 51,
+          "description": "bruine légère",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 13.3,
+              "temperature_max": 14.9,
+              "probabilite_pluie_pct": 3,
+              "precipitation_mm": 0.4,
+              "vent_max_kmh": 10,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 14.3,
+              "temperature_max": 15.3,
+              "probabilite_pluie_pct": 30,
+              "precipitation_mm": 0.8,
+              "vent_max_kmh": 13,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 11.3,
+              "temperature_max": 14.7,
+              "probabilite_pluie_pct": 2,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 10.5,
+          "temperature_max": 15.2,
+          "temperature_min": 9.8,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 4,
+          "vent_kmh": 5.6,
+          "vent_max_kmh": 9.9,
+          "rafales_max_kmh": 17.6,
+          "weather_code": 2,
+          "description": "partiellement nuageux",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 10.2,
+              "temperature_max": 14.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 12.9,
+              "temperature_max": 15.2,
+              "probabilite_pluie_pct": 8,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 10.5,
+              "temperature_max": 11.9,
+              "probabilite_pluie_pct": 6,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 10.1,
+          "temperature_max": 14.1,
+          "temperature_min": 9.6,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 3,
+          "vent_kmh": 6.1,
+          "vent_max_kmh": 9.2,
+          "rafales_max_kmh": 16.6,
+          "weather_code": 2,
+          "description": "partiellement nuageux",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 9.6,
+              "temperature_max": 13.8,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 11.9,
+              "temperature_max": 14.1,
+              "probabilite_pluie_pct": 16,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 10.3,
+              "temperature_max": 11.1,
+              "probabilite_pluie_pct": 2,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 15.6,
+      "temperature_min_zone": 9.6,
+      "probabilite_pluie_max_pct": 33,
+      "vent_max_kmh": 17.1,
+      "description_dominante": "bruine",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 9.6,
+          "temperature_max": 15.2,
+          "probabilite_pluie_pct": 3,
+          "precipitation_mm": 0.4,
+          "vent_max_kmh": 10,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 11.9,
+          "temperature_max": 15.5,
+          "probabilite_pluie_pct": 30,
+          "precipitation_mm": 1.5,
+          "vent_max_kmh": 13,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 10.3,
+          "temperature_max": 14.7,
+          "probabilite_pluie_pct": 10,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 8,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        }
+      ],
+      "alertes": [],
+      "resume": "Couvert le matin, couvert l'après-midi, ciel dégagé le soir, de 10° à 16°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "A Tale of Two Cities",
+      "auteur": "Charles Dickens",
+      "annee": 1859,
+      "segments": [
+        {
+          "t": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness",
+          "g": "la sottise"
+        },
+        {
+          "t": ", it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct",
+          "g": "tout droit"
+        },
+        {
+          "t": " to Heaven, we were all going direct the other way – in short",
+          "g": "bref"
+        },
+        {
+          "t": ", the period was so far like",
+          "g": "si semblable à"
+        },
+        {
+          "t": " the present period, that some of its noisiest",
+          "g": "les plus bruyants"
+        },
+        {
+          "t": " authorities insisted on",
+          "g": "exigeaient que"
+        },
+        {
+          "t": " its being received",
+          "g": "accueillie, admise"
+        },
+        {
+          "t": ", for good or for evil",
+          "g": "pour le meilleur ou pour le pire"
+        },
+        {
+          "t": ", in the superlative degree of comparison only.",
+          "g": null
+        }
+      ],
+      "texte_glose": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness (= la sottise), it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct (= tout droit) to Heaven, we were all going direct the other way – in short (= bref), the period was so far like (= si semblable à) the present period, that some of its noisiest (= les plus bruyants) authorities insisted on (= exigeaient que) its being received (= accueillie, admise), for good or for evil (= pour le meilleur ou pour le pire), in the superlative degree of comparison only."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Attentat raciste à Trappes : la mère et des sœurs de Pengo Bossio Wangi ont été reçues mardi par Emmanuel Macron."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral+nvidia",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral+nvidia",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-11-06T06:10:35.461846+01:00"
+}
