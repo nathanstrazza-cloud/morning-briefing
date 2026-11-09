@@ -1,44 +1,35 @@
 {
-  "date": "2026-11-06",
-  "derniere_mise_a_jour": "2026-11-06T06:18:45.047942+01:00",
+  "date": "2026-11-09",
+  "derniere_mise_a_jour": "2026-11-09T06:18:40.115246+01:00",
   "briefing": {
     "actualite": {
       "france": [
         {
-          "titre": "Attentat raciste à Trappes : la mère et des sœurs de Pengo Bossio Wangi ont été reçues mardi par Emmanuel Macron",
-          "resume": "Un ami de la famille, également présent, a annoncé la nouvelle sur les réseaux sociaux.",
-          "pourquoi_important": "Rencontre du président avec la mère et les sœurs de la victime d'un attentat raciste.",
+          "titre": "Présidentielle 2027 : Fabien Roussel ira « jusqu’au bout », malgré le ralliement de députés communistes à Mélenchon",
+          "resume": "Crédité de 2 % à 3 % des intentions de vote, le patron du Parti communiste français « regrette » le choix de neuf députés de son groupe et assure que le chef de file de La France Insoumise « ne gagnera jamais ».",
+          "pourquoi_important": "Le positionnement du Parti communiste français face à la candidature de La France Insoumise influence les dynamiques électorales de la présidentielle 2027.",
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "France Info",
+            "Le Monde",
             "Libération"
           ]
         },
         {
-          "titre": "Au procès de l’explosion de la rue de Trévise, la notion d’urgence des travaux à réaliser en question",
-          "resume": "D’anciens salariés du syndic Cipa ont été entendus comme témoins, jeudi, au tribunal judiciaire de Paris. Au cœur des interrogations, le fait que cette société n’avait pas recouru à la procédure d’urgence qui lui aurait permis de faire réparer des fuites ayant joué un rôle crucial dans la catastrophe de janvier 2019.",
-          "pourquoi_important": "Question de l'absence de procédure d'urgence dans les travaux liés à l'explosion de la rue de Trévise.",
+          "titre": "Présidentielle 2027 : Raphaël Glucksmann affirme avoir refusé Matignon après la dissolution de 2024",
+          "resume": "Accusé par ses adversaires de proximité avec le macronisme, le candidat social-démocrate a énuméré ses divergences avec Emmanuel Macron, de « l’individualisme triomphant » à la suppression de l’ISF.",
+          "pourquoi_important": "Les déclarations de Raphaël Glucksmann sur son refus de Matignon et ses critiques d’Emmanuel Macron peuvent affecter son image et son positionnement dans la course présidentielle.",
           "consequences": null,
-          "statut": "information_rapportee",
+          "statut": "fait_confirme",
           "sources": [
-            "Le Monde"
+            "Le Monde",
+            "Libération"
           ]
         },
         {
-          "titre": "Présidentielle 2027 : Les trois quarts des sympathisants de droite et du centre veulent une primaire",
-          "resume": "Selon un sondage Odoxa pour « Le Figaro » publié jeudi, 74 % des sympathisants de droite et du centre souhaitent une primaire pour désigner leur candidat à la présidentielle de 2027. Bruno Retailleau a leur préférence",
-          "pourquoi_important": "Indique un fort soutien à une primaire parmi les sympathisants de droite et du centre pour la présidentielle 2027.",
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "20 Minutes"
-          ]
-        },
-        {
-          "titre": "Présidentielle : Macron suggère une «coalition» allant de Glucksmann à Lisnard en passant par Philippe et Attal, qui passent leur tour",
-          "resume": "Refusant la perspective répétée d’un second tour entre Jean-Luc Mélenchon et Marine Le Pen, le Président appelle de ses voeux un très large arc politique regroupant le centre-gauche jusqu’à la droite libérale-conservatrice.",
-          "pourquoi_important": "Propose un large éventail politique pour éviter un second tour entre Mélenchon et Le Pen.",
+          "titre": "Manifestations en comité réduit, meeting XXL de Jean-Luc Mélenchon, attentat à Cracovie… L’actu de ce week-end des 7 et 8 novembre",
+          "resume": "La rédaction de «Libération» récapitule les principales actualités de ce week-end.",
+          "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
@@ -46,66 +37,64 @@
           ]
         },
         {
-          "titre": "Matignon annonce la tenue d'une \"conférence sociale\" lundi en présence des syndicats et du patronat",
-          "resume": "L'objectif affiché est \"d'apporter des réponses aux questions de pouvoir d’achat et de salaires\", selon les services du Premier ministre.",
-          "pourquoi_important": "Visée de réponses aux questions de pouvoir d’achat et de salaires.",
+          "titre": "Présidentielle 2027 : les insoumis se disent prêts à gouverner par décrets s’ils arrivent au pouvoir, au nom de «l’état d’urgence sociale»",
+          "resume": "Au lendemain du meeting du Bourget, Manuel Bompard et Clémence Guetté ont détaillé ce qu’un gouvernement LFI ferait dans les jours suivant l’élection. Le Parlement aura cependant «un droit de regard» sur ces «décrets d’urgence».",
+          "pourquoi_important": null,
           "consequences": null,
-          "statut": "fait_confirme",
+          "statut": "information_rapportee",
           "sources": [
-            "France Info",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : « La France avant les égos »… Ils signent pour une primaire contre « les extrêmes »",
+          "resume": "Dans une tribune publiée ce week-end dans « La Tribune Dimanche », plus de soixante parlementaires plaident pour une « primaire des démocrates et des républicains »",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
             "20 Minutes"
           ]
         }
       ],
       "monde": [
         {
-          "titre": "Guerre en Ukraine : la trêve d’Olechky prouve que « quand Poutine le veut, les combats s’arrêtent », estime Volodymyr Zelensky",
-          "resume": "Le président ukrainien souligne que les pauses des combats dépendent de la volonté du président russe, évoquant aussi la libération de prisonniers et d’enfants enlevés par la Russie.",
+          "titre": "Guerre en Ukraine : Des centaines de milliers d’habitants privés d’électricité après des frappes russes",
+          "resume": "Les autorités recensent plus de 600 000 personnes touchées dans la région de Dnipropetrovsk et 250 000 dans celle de Kharkiv, après des attaques de drones et de missiles sur le réseau électrique.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "Le Monde",
-            "Le Monde International"
-          ]
-        },
-        {
-          "titre": "Guerre en Ukraine : Trump prédit un « grand accord » avec la Russie et même sur « toute l’Europe »",
-          "resume": "Le président américain annonce un futur accord global avec la Russie, alors que des pourparlers entre Russes et Ukrainiens sont prévus les 10 et 11 novembre à Abou Dhabi.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "France Info",
+            "Libération",
             "20 Minutes"
           ]
         },
         {
-          "titre": "Gaza : cinq personnes, dont un enfant, tuées par des bombardements israéliens, selon les services de secours palestiniens",
-          "resume": "Les hôpitaux du centre et du sud de Gaza ont confirmé la mort de cinq civils, dont un enfant, lors de frappes israéliennes.",
+          "titre": "Pologne : enquête ouverte pour terrorisme, des corps retrouvés chez le tireur, fascination pour l’extrême droite… Ce que l’on sait après l’attentat mortel de Cracovie",
+          "resume": "Le tireur, agissant seul, aurait des liens avec des idéologies extrémistes.",
           "pourquoi_important": null,
           "consequences": null,
-          "statut": "information_rapportee",
+          "statut": "fait_confirme",
           "sources": [
-            "Le Monde International"
+            "Libération",
+            "20 Minutes"
           ]
         },
         {
-          "titre": "Midterms 2026 : après avoir accepté les résultats, Donald Trump dénonce à présent des élections « truquées »",
-          "resume": "Le président américain refuse d’assumer la défaite républicaine aux élections de mi-mandat et accuse le processus électoral d’être truqué.",
+          "titre": "Israël : Gadi Eisenkot, officiellement chargé de former un nouveau gouvernement, invite le Likoud de Benyamin Nétanyahou à participer à une coalition",
+          "resume": "Le président israélien a confié à Gadi Eisenkot, chef du principal bloc d’opposition, la mission de former le prochain gouvernement, incluant une offre de coalition au Likoud.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "France Info",
-            "Libération",
             "Le Monde International",
             "France 24 International"
           ]
         },
         {
-          "titre": "Midterms 2026 : les démocrates s’interrogent sur leur stratégie et leur direction dans le prochain Congrès",
-          "resume": "Hakeem Jeffries et Chuck Schumer, pressentis pour diriger respectivement la Chambre des représentants et le Sénat, font face à des contestations internes sur leur leadership.",
+          "titre": "Italie : le ministre des affaires étrangères dit être visé par une fuite de données, Giorgia Meloni dénonce des « hackers prorusses »",
+          "resume": "Antonio Tajani a révélé une fuite de ses données personnelles sur le dark Web, attribuée à des cyberattaques prorusses visant à influencer les prochaines élections législatives de 2027.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
@@ -115,30 +104,31 @@
           ]
         },
         {
-          "titre": "Selon Le Monde International, En Nouvelle-Zélande, les Maoris très critiques vis-à-vis du bilan du gouvernement : « En trois ans, il a détruit cinquante ans d’acquis »",
-          "resume": "Une large part de l’électorat maori, qui a vu ses droits remis en cause par le gouvernement libéral-conservateur dirigé par Christopher Luxon, entend sanctionner le pouvoir sortant lors des élections législatives du 7 novembre.",
+          "titre": "Guerre en Ukraine : Marco Rubio fait état de progrès pour l'« architecture de sécurité » après la guerre",
+          "resume": "Le secrétaire d’État américain annonce des avancées dans les négociations pour une future « architecture de sécurité » en Ukraine, lors d’un sommet du G7 à Paris, avec des discussions prévues mardi et mercredi à Abou Dhabi sous médiation américaine.",
           "pourquoi_important": null,
           "consequences": null,
-          "statut": "information_rapportee",
+          "statut": "fait_confirme",
           "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Midterms 2026 : Donald Trump estime que « l’Amérique a fait un gigantesque pas en arrière dans l’histoire » avec la victoire des démocrates",
+          "resume": "Les élections de mi-mandat ont été marquées par une vague bleue, dont l'ampleur a sidéré les observateurs et assommé les républicains.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
             "Le Monde International"
           ],
           "complete_par_code": true
         },
         {
-          "titre": "Selon New York Times World, Everyone’s Talking About the ‘Blue Tsunami.’ In Japan, It’s Complicated.",
-          "resume": "The New York Post used a Hokusai work to depict Donald Trump being swept away by Democrats’ midterm election win. Some in Japan were bothered by the imagery.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "New York Times World"
-          ],
-          "complete_par_code": true
-        },
-        {
-          "titre": "Selon France Info, Des milliers de cas confirmés, plusieurs morts en Pennsylvanie, une vaccination en recul... Ce que l'on sait de l'épidémie de rougeole aux Etats-Unis",
-          "resume": "Au 29 octobre, 4 852 cas confirmés de cette maladie grave et contagieuse avaient été décomptés dans le pays, soit déjà plus du double que sur toute l'année 2025. Entre 2020 et 2024, le nombre de cas ne dépassait pas quelques dizaines ou centaines.",
+          "titre": "Selon France Info, Attentat en Pologne : \"J'ai vu des personnes tomber à un mètre de moi\", une témoin raconte",
+          "resume": "Samedi 7 novembre, un homme a ouvert le feu à Cracovie en Pologne. Six personnes ont été tuées et 15 autres blessées. Parmi les victimes se trouvent plusieurs touristes étrangers. L'enquête a révélé plusieurs éléments sur le parcours du tueur.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
@@ -146,30 +136,36 @@
             "France Info"
           ],
           "complete_par_code": true
+        },
+        {
+          "titre": "Selon Le Monde International, En Espagne, Pedro Sanchez tente de relancer sa campagne après la catastrophe ferroviaire d’Urda",
+          "resume": "Après avoir misé sur une campagne optimiste placée sous le signe de la « force de l’amour », le premier ministre socialiste, fragilisé par la tragédie qui a fait 69 morts, fin octobre, cherche à remobiliser son électorat en présentant l’Espagne comme un rempart contre la montée de l’extrême droite dans le monde.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ],
+          "complete_par_code": true
         }
       ]
     },
     "marches": {
-      "resume_court": "Les marchés ont connu des mouvements marquants, notamment une forte baisse des indices américains et une hausse modeste du pétrole.",
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
       "mouvements_notables": [
         {
-          "nom": "S&P 500",
-          "variation_pct": -4.36,
-          "explication": "Les résultats des élections américaines de mi-mandat ont accentué la défiance envers les valeurs liées à l’IA."
-        },
-        {
           "nom": "Nasdaq",
-          "variation_pct": -5.52,
-          "explication": "Les résultats des élections américaines de mi-mandat ont accentué la défiance envers les valeurs liées à l’IA."
+          "variation_pct": 1.09,
+          "explication": null
         },
         {
-          "nom": "Pétrole (Brent)",
-          "variation_pct": 1.31,
+          "nom": "DAX",
+          "variation_pct": -1.92,
           "explication": null
         },
         {
           "nom": "Or",
-          "variation_pct": -1.45,
+          "variation_pct": 1.39,
           "explication": null
         }
       ]
@@ -178,355 +174,355 @@
       "items": [
         {
           "sport": "tennis",
-          "texte": "Luca Van Assche se qualifie pour la première fois en quart de finale d'un Masters 1000 après la défaite de Lorenzo Musetti à Paris, tandis qu'Arthur Fils était déjà éliminé. Van Assche affrontera Rinky Hijikata en deuxième rotation."
+          "texte": "Carlos Alcaraz a remporté le Masters 1000 de Paris, première victoire à Paris, et Arthur Fils s’est qualifié pour les ATP Finals en assurant sa place aux Masters de fin de saison."
         },
         {
           "sport": "tennis",
-          "texte": "Le lucky loser Nuno Borges bat Ignacio Buse 6-0, 6-2 pour atteindre son premier quart de finale au Rolex Paris Masters."
+          "texte": "Matteo Martineau a remporté son premier titre Challenger à Tarante, Italie, en battant Kilian Feldbausch (6-3, 6-2), ce qui lui permet de se rapprocher du top 200 et de disputer les qualifications de l’Open d’Australie."
         },
         {
           "sport": "tennis",
-          "texte": "Tommy Paul élimine Quentin Halys 7-6 (3), 6-4 et se qualifie pour les quarts de finale du Rolex Paris Masters, où il jouera contre le vainqueur du match Shelton-Rinderknech."
+          "texte": "Carlos Alcaraz a battu Ben Shelton en finale du Paris Masters, remportant ainsi le titre."
         },
         {
-          "sport": "basketball",
-          "texte": "Victor Wembanyama inscrit 52 points, menant les San Antonio Spurs à la victoire 112-111 contre les Dallas Mavericks."
+          "sport": "golf",
+          "texte": "Matthieu Pavon a terminé 13e (-9) au World Wide Technology Championship après un deuxième tour difficile, nécessitant un exploit le week‑end pour marquer de gros points."
         },
         {
-          "sport": "basketball",
-          "texte": "L'ASVEL perd 95-99 contre le Bayern Munich en Euroligue, malgré deux victoires consécutives, et se place à la 16e position du classement."
+          "sport": "golf",
+          "texte": "Jon Rahm a gagné le tournoi d’Abu Dhabi avec -23, son sixième Rolex Series, devançant Tyrrell Hatton et Rory McIlroy; plusieurs Français seront en finale à Dubaï."
         },
         {
-          "sport": "basketball",
-          "texte": "Paris Basketball bat l'Anadolu Efes Istanbul 95-90, enregistrant ainsi sa troisième victoire consécutive à l'extérieur en Euroligue."
+          "sport": "formule 1",
+          "texte": "Lando Norris a remporté le Grand Prix de São Paulo, tandis que Mercedes a assuré le championnat des constructeurs 2026."
         },
         {
           "sport": "football",
-          "texte": "Randal Kolo Muani, passeur puis buteur, conduit la Juventus à la victoire 2-1 ; Sunderland s'incline 0-2 face au Dinamo Zagreb, tandis que Benfica l'emporte 3-1 contre le Lech Poznan."
+          "texte": "Le FC Barcelone a battu l’Atlético de Madrid 2-1 grâce à un doublé de Fermin Lopez, maintenant trois points d’avance sur le Real et cinq sur l’Atlético."
         },
         {
-          "sport": "rugby",
-          "texte": "Les Fidji aligneront neuf titulaires issus du Top 14 contre la France lors du match du Championnat des nations à Lyon."
+          "sport": "cyclisme",
+          "texte": "Célia Géry a remporté le titre européen U23, devançant Lison Desprez et Amandine Muller."
         }
       ],
       "rien_a_signaler": false,
       "prochains_matchs": [
         {
-          "affiche": "PSG – Troyes",
+          "affiche": "Nice – PSG",
           "competition": "Ligue 1",
-          "date_iso": "2026-11-07T20:05:00+00:00",
-          "date_texte": "samedi 7 novembre à 21h05",
+          "date_iso": "2026-11-21T16:15:00+00:00",
+          "date_texte": "samedi 21 novembre à 17h15",
           "sport": "football"
         },
         {
-          "affiche": "Milwaukee Bucks – Boston Celtics",
+          "affiche": "New York Knicks – Milwaukee Bucks",
           "competition": "NBA",
-          "date_iso": "2026-11-09T01:00:00+00:00",
-          "date_texte": "lundi 9 novembre à 2h00",
+          "date_iso": "2026-11-11T00:30:00+00:00",
+          "date_texte": "mercredi 11 novembre à 1h30",
           "sport": "basketball"
         }
       ]
     },
     "science": {
       "mode": "approfondi",
-      "titre": "La tectonique des plaques : comment la Terre se recompose en permanence",
-      "contenu_markdown": "La tectonique des plaques est une théorie géologique fondamentale qui explique les mouvements de la surface terrestre. Elle décrit comment la lithosphère, cette couche rigide composée de la croûte terrestre et de la partie supérieure du manteau, est fragmentée en plusieurs plaques mobiles. Ce phénomène, bien que lent à l’échelle humaine, est à l’origine des séismes, des éruptions volcaniques, de la formation des montagnes et des fosses océaniques. Sans cette dynamique, le visage de notre planète serait radicalement différent.\n\n## Pourquoi la tectonique des plaques est-elle importante ?\n\nCette théorie n’est pas seulement un modèle explicatif : elle permet de comprendre l’évolution des continents, la répartition des ressources naturelles (comme les gisements minéraux ou les hydrocarbures), et même l’histoire climatique de la Terre. Par exemple, la séparation progressive de l’Amérique et de l’Eurasie a façonné l’océan Atlantique, tandis que la collision entre l’Inde et l’Eurasie a donné naissance à l’Himalaya. Sans ces mouvements, la Terre serait géologiquement inactive, privée de renouvellement de sa croûte et de recyclage des matériaux.\n\n## Explication du phénomène : une lithosphère en mouvement\n\nLa lithosphère, rigide et froide, repose sur une couche plus ductile appelée asthénosphère, partie supérieure du manteau terrestre. Cette dernière, bien que solide, se comporte comme un fluide sur des échelles de temps géologiques en raison des températures et pressions élevées. Les plaques lithosphériques, portées par cette couche ductile, peuvent ainsi se déplacer. Leur mobilité est liée à des courants de convection dans le manteau : la chaleur issue du noyau terrestre chauffe le manteau inférieur, qui monte vers la surface sous forme de panaches ascendants. En refroidissant, ces matériaux redescendent vers le manteau profond, créant un mouvement circulaire qui entraîne les plaques à leur surface, comme une tapis roulant géant.\n\n## Fonctionnement et mécanismes : trois types de frontières, une même énergie\n\nLes interactions entre plaques se manifestent selon trois configurations principales, chacune associée à des phénomènes géologiques distincts :\n\n1. **Les frontières divergentes** : deux plaques s’éloignent l’une de l’autre, permettant à du magma de remonter depuis l’asthénosphère. C’est le cas des dorsales océaniques, où la croûte océanique se forme en continu (expansion des fonds océaniques). Ces zones, comme la dorsale médio-atlantique, sont aussi des foyers de séismes de faible magnitude.\n\n2. **Les frontières convergentes** : une plaque plonge sous une autre (subduction) ou deux plaques continentales entrent en collision. La subduction, typique des fosses océaniques (comme celle des Kouriles), génère des séismes profonds et des volcans explosifs (arcs insulaires ou continentaux). La collision continentale, comme celle entre l’Inde et l’Eurasie, soulève des chaînes de montagnes sans subduction marquée.\n\n3. Ces zones, dépourvues de volcanisme, sont des lignes de fracture majeures.\n\nCes mécanismes, alimentés par la chaleur interne de la Terre, illustrent comment l’énergie thermique se transforme en énergie mécanique, façonnant en permanence la géographie de notre planète.\n\n## Données et résultats scientifiques\n\n- La lithosphère terrestre est découpée en **quinze plaques majeures** identifiées, auxquelles s’ajoutent **une cinquantaine de plaques mineures**.  \n- Les vitesses relatives de déplacement des plaques varient de **0 à 100 mm par an** selon les zones de bordure.  \n- Les frontières entre plaques se classent en trois types : convergentes, divergentes et transformantes.  \n- Les mouvements de ces plaques sont associés à des phénomènes géologiques observables : séismes, activité volcanique, formation de chaînes de montagnes et de fosses océaniques.  \n\nCes valeurs et classifications sont issues des observations géophysiques (géodésie, sismologie, cartographie des fonds océaniques) qui ont permis de quantifier les déplacements et de cartographier les limites des plaques.\n\n## Ce que les scientifiques savent\n\n- **Modèle de convection mantellique** : le mouvement des plaques repose sur la convection du manteau supérieur, où la partie ductile (asthénosphère) permet à la lithosphère rigide de glisser.  \n- **Relation cause‑effet** : la dynamique des plaques explique la répartition spatiale des séismes et des volcans, ainsi que la création des reliefs (orogenèse, dorsales médio‑océaniques, fosses de subduction).  \n- **Stabilité du cadre théorique** : depuis la fin des années 1960, la tectonique des plaques constitue le cadre unificateur accepté par la communauté géologique et géophysique internationale pour interpréter la dynamique globale de la Terre.  \n\n## Ce qui reste incertain\n\n- **Mécanismes détaillés de la convection mantellique** : la structure exacte des cellules de convection, leur profondeur et leur interaction avec les hétérogénéités chimiques du manteau ne sont pas entièrement résolues.  \n- **Définition des limites des plaques mineures** : certaines petites plaques présentent des frontières diffuses ou complexes, rendant leur délimitation moins précise.  \n- **Rôle des forces de traction et de poussée** : la contribution relative des forces de traction (tirant les plaques) et de poussée (poussant les plaques) varie selon les régions, mais les quantifications restent sujettes à débat.  \n\n## Limites et controverses éventuelles\n\n- **Modèles alternatifs** : bien que la tectonique des plaques soit largement acceptée, des propositions marginales (par exemple, des modèles de « plaque rigide flottante » ou de « déformation diffuse ») existent mais ne sont pas soutenues par des données suffisantes pour remettre en cause le paradigme dominant.  \n- **Interaction avec la théorie de la dérive des continents** : la tectonique des plaques ne s’appuie pas sur la théorie de la dérive des continents de Wegener, qui est considérée comme obsolète. Cette distinction peut parfois prêter à confusion dans les présentations populaires, mais les deux concepts sont historiquement distincts.  \n- **Limites de la résolution spatiale** : les mesures de vitesse et les cartes de frontières sont limitées par la densité des stations de suivi et la profondeur d’observation, ce qui laisse des incertitudes dans les zones peu couvertes (ex. régions océaniques profondes).  \n\n## Conclusion\n\nLa tectonique des plaques constitue aujourd’hui le socle explicatif de la dynamique de la lithosphère terrestre : elle décrit comment une dizaine et demie de plaques majeures et une cinquantaine de plaques mineures se déplacent à des vitesses de 0 à 100 mm/an, générant les principaux phénomènes géologiques observés à la surface de la Terre. Les observations géophysiques confirment la validité du modèle, tandis que les incertitudes persistent principalement autour des détails du processus de convection mantellique et de la délimitation précise des petites plaques. Malgré ces zones d’ombre, aucune alternative ne rivalise actuellement avec la robustesse des données qui soutiennent la théorie, faisant de la tectonique des plaques le cadre de référence incontournable pour comprendre la géodynamique planétaire.\n\n## Sources\n- Wikipédia (fr) — Tectonique des plaques — https://fr.wikipedia.org/wiki/Tectonique_des_plaques\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
-      "phrases_retirees_garde_fou": 4,
-      "nb_mots": 1083,
-      "sujet_id": "tectonique",
+      "titre": "Les exoplanètes : une révolution astronomique",
+      "contenu_markdown": "## Introduction\nUne exoplanète, ou planète extrasolaire, est une planète située en dehors de notre Système solaire, gravitant autour d’une autre étoile. Leur existence, évoquée dès le XVIe siècle, n’a pu être confirmée scientifiquement qu’à partir des années 1990, marquant un tournant dans l’astronomie. En février 2026, plus de 8 000 exoplanètes ont été identifiées, révélant une diversité insoupçonnée de mondes au-delà de notre système. Ces découvertes ont non seulement élargi notre compréhension de l’Univers, mais aussi posé de nouvelles questions sur la formation des planètes et la possibilité de vie ailleurs.\n\n## Pourquoi le sujet est important\nL’étude des exoplanètes est cruciale pour plusieurs raisons. D’abord, elle permet de tester et d’affiner les modèles de formation des systèmes planétaires, initialement basés uniquement sur l’observation de notre propre Système solaire. Les découvertes récentes, comme l’abondance de *Jupiter chauds* (des géantes gazeuses orbitant très près de leur étoile), ont montré que ces modèles devaient être revisités. Ensuite, la recherche d’exoplanètes similaires à la Terre, situées dans la *zone habitable* (où l’eau liquide pourrait exister), ouvre des perspectives majeures pour l’astrobiologie. Enfin, ces observations élargissent notre vision de la place de la Terre dans l’Univers, interrogeant la rareté ou la généralité des conditions propices à la vie.\n\n## Explication du phénomène\nUne exoplanète est un objet céleste qui, comme les planètes de notre système, orbite autour d’une étoile. Contrairement aux planètes classiques, elle n’est pas visible directement à l’œil nu en raison de sa faible luminosité par rapport à son étoile hôte. Sa détection repose donc sur des méthodes indirectes, exploitant des effets gravitationnels ou optiques. Par exemple, une planète exerce une attraction gravitationnelle sur son étoile, provoquant un léger mouvement de celle-ci. Ce phénomène, appelé *vitesses radiales*, permet de déduire la présence de la planète en analysant les variations périodiques de la lumière de l’étoile. Une autre méthode, celle du *transit*, consiste à mesurer l’affaiblissement de la lumière de l’étoile lorsque la planète passe devant elle, bloquant une infime partie de cette lumière.\n\n## Fonctionnement / mécanismes\nLes techniques de détection des exoplanètes reposent sur des principes physiques bien établis. La méthode des vitesses radiales utilise l’*effet Doppler* : lorsque l’étoile se rapproche ou s’éloigne de l’observateur en raison de l’influence gravitationnelle de sa planète, la longueur d’onde de sa lumière varie légèrement. Les astronomes mesurent ces variations pour estimer la masse et l’orbite de la planète. La méthode du transit, quant à elle, exploite la géométrie du système : lorsque la planète passe devant son étoile, elle occulte une partie de sa lumière, provoquant une baisse régulière de son intensité lumineuse. En analysant ces diminutions, les scientifiques peuvent déterminer la taille de la planète et, combinée à d’autres données, sa densité. Ces méthodes, couplées à des observations directes depuis les années 2000, ont permis de cartographier des milliers de systèmes planétaires, révélant une diversité de tailles, de compositions et d’orbites bien plus grande que celle observée dans notre Système solaire.\n\n## Données et résultats scientifiques\n\nEn février 2026, plus de 8 000 exoplanètes sont répertoriées. Au 26 juin 2025, le nombre officiel de planètes confirmées s’élevait à 5 988, réparties dans 4 491 systèmes planétaires, dont 987 systèmes comportent plusieurs planètes. Environ 9 151 candidates supplémentaires, détectées par des télescopes terrestres ou spatiaux tels que Kepler et TESS, attendent encore confirmation.  \n\nLa majorité des exoplanètes découvertes orbitent autour d’étoiles situées à moins de 400 parsecs (≈ 1 300 années‑lumière) du Soleil. Les deux méthodes de détection les plus utilisées sont :  \n\n* **Vitesse radiale** – mesure les variations de la vitesse de l’étoile causées par l’attraction gravitationnelle de la planète.  \n* **Transit** – détecte la diminution de la luminosité de l’étoile lorsqu’une planète la traverse.  \n\nCes techniques ont révélé une grande diversité de mondes, notamment une abondance de « Jupiters chauds », c’est‑à‑dire des géantes gazeuses très proches de leur étoile hôte, ainsi que des planètes de petite taille situées dans la zone habitable de leurs étoiles.  \n\nEn extrapolant à partir des découvertes actuelles, les astronomes estiment qu’il existerait au moins cent milliards de planètes dans la Voie lactée.\n\n## Ce que les scientifiques savent\n\n* **Existence massive** – Les observations confirment que les planètes existent en grand nombre autour d’étoiles autres que le Soleil.  \n* **Variété des propriétés** – Les exoplanètes présentent une gamme très large de masses, de tailles et d’orbites, incluant des mondes très différents du système solaire.  \n* **Méthodes de détection fiables** – Les techniques de vitesse radiale et de transit permettent d’obtenir des mesures précises de la masse minimale (via la vitesse radiale) et du rayon (via le transit) d’une planète.  \n* **Statistiques galactiques** – Les données accumulées suggèrent que la plupart des étoiles de la galaxie possèdent au moins une planète, ce qui rend les systèmes planétaires courants.  \n* **Zone habitable** – Des planètes de taille comparable à la Terre ont été identifiées dans la zone où l’eau liquide pourrait exister, ouvrant la voie à des études d’habitabilité.\n\n## Ce qui reste incertain\n\n* **Composition atmosphérique** – Si certaines atmosphères ont été étudiées par spectroscopie, la composition détaillée de la majorité des exoplanètes reste inconnue.  \n* **Fréquence des planètes semblables à la Terre** – Bien que des candidates dans la zone habitable aient été repérées, la proportion exacte de planètes réellement habitables n’est pas encore déterminée.  \n* **Formation des Jupiters chauds** – L’abondance de géantes gazeuses très proches de leur étoile remet en question les modèles classiques de formation planétaire ; les mécanismes exacts (migration, formation in situ…) sont encore débattus.  \n* **Population des planètes lointaines** – Les méthodes actuelles sont moins sensibles aux planètes situées loin de leur étoile, ce qui laisse incertaine la distribution des mondes analogues à Jupiter ou Saturne dans les systèmes lointains.  \n\n## Limites et controverses éventuelles\n\n* **Biais de détection** – Les techniques de vitesse radiale et de transit favorisent la découverte de planètes massives et proches de leur étoile ; les petites planètes à grande distance sont sous‑représentées, ce qui biaise les statistiques globales.  \n* **Confirmation des candidates** – Des milliers de corps détectés restent en attente de confirmation ; la distinction entre vraie exoplanète et faux positif (par exemple, activité stellaire) peut être difficile.  \n* **Définition de « planète »** – L’Union astronomique internationale n’a pas de définition officielle applicable aux exoplanètes, ce qui peut entraîner des divergences de classification entre chercheurs.  \n* **Modèles de formation** – L’apparition de types de planètes inattendus (Jupiters chauds, super‑Terres) a conduit à des révisions des modèles de formation, mais aucun consensus complet n’a encore été atteint.  \n\n## Conclusion\n\nLes découvertes d’exoplanètes ont transformé notre compréhension de l’univers : elles montrent que les systèmes planétaires sont la norme plutôt que l’exception, et qu’ils peuvent être très différents du nôtre. Les méthodes de vitesse radiale et de transit ont permis de cataloguer plusieurs milliers de mondes, révélant une diversité impressionnante, des géantes gazeuses brûlantes aux petites planètes potentiellement habitables. Malgré ces avancées, de nombreuses questions subsistent, notamment sur la composition des atmosphères, la fréquence réelle des planètes semblables à la Terre et les processus de formation des configurations les plus surprenantes. Les futures missions spatiales et les améliorations des techniques d’observation devraient progressivement combler ces lacunes, affinant notre portrait de la population planétaire de la Voie lactée.\n\n## Sources\n- Wikipédia (fr) — Exoplanète — https://fr.wikipedia.org/wiki/Exoplan%C3%A8te\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 0,
+      "nb_mots": 1241,
+      "sujet_id": "exoplanete",
       "origine": "encyclopedie",
       "matiere_source": "suffisante",
       "textes_sources_audit": [
         {
           "source": "Wikipédia (fr)",
-          "titre": "Tectonique des plaques",
-          "resume": "La tectonique des plaques (du latin tardif tectonicus, dérivé du grec τεκτονικός / tektonikós, « de construction ») est une théorie et un modèle scientifique expliquant la dynamique globale de la lithosphère terrestre. La théorie de la tectonique des plaques est forgée par la communauté géologique et géophysique internationale à la fin des années 1960, à la suite de la découverte de l'expansion des fonds océaniques.\nLa lithosphère, couche externe rigide de la Terre constituée de la croûte et d'une partie du manteau supérieur, est subdivisée en plaques, dites tectoniques ou lithosphériques. Quinze plaques majeures ont été identifiées, complétées par une cinquantaine de plaques mineures. Leurs mouvements relatifs variés génèrent divers types de frontières : convergentes, divergentes ou transformantes. Au niveau de ces frontières se produisent de nombreux phénomènes géologiques tels que les séismes, l'activité volcanique, la formation de chaînes de montagnes et celle de fosses océaniques. La vitesse du mouvement relatif de deux plaques voisines varie entre 0 et 100 mm/an.\nLes plaques tectoniques sont constituées d'une lithosphère océanique et/ou continentale, caractérisée par les croûtes des mêmes noms, sous lesquelles se trouve la zone rigide du manteau supérieur. Le mouvement de ces plaques est possible du fait que la lithosphère, rigide, repose sur l'asthénosphère sous-jacente, partie ductile du manteau supérieur. Cette mobilité lithosphérique résulte des mouvements de convection qui animent le manteau terrestre, mécanisme par lequel la Terre dissipe sa chaleur interne vers la surface.\nLa tectonique des plaques n'est pas affiliée à la théorie de la dérive des continents, développée par Alfred Wegener au début du XXe siècle,  réputée obsolète et qui ne propose ni le même modèle ni les mêmes mécanismes géologiques. \n\nHistoire\n\nDes continents mobiles ?\n\nRenaissance\n\nPendant plusieurs siècles, les sciences de la Terre ont été dominées par la théorie fixiste qui repose sur le constat de l'état solide de la quasi-totalité du globe terrestre et de la surface terrestre qui présente une géométrie immuable, stable[réf. souhaitée].\nDès 1596, dans son ouvrage Thesaurus geographicus, le cartographe anversois Abraham Ortelius remarque la ressemblance du tracé des côtes américaines et africaines. Il émet l’hypothèse que ces continents ont autrefois été réunis et qu’ils ont été séparés à la suite d'inondations et de séismes[réf. souhaitée]. Francis Bacon souligne également cette complémentarité en 1620[réf. souhaitée]. Dans la Corruption du grand et petit Monde (1668), le père François Placet affirme que la séparation de l'Amérique du reste des continents s'est produite pendant le déluge universel. En 1756, le théologien allemand Theodor Christoph Lilienthal (de) trouve la confirmation biblique de cette séparation en interprétant avec peu de vraisemblance un passage du livre de la Genèse.\n\nXIXe siècle\nUne première étape vers une vraie théorie de la dérive des continents est franchie en 1858 par le géographe Antonio Snider-Pellegrini dans son mémoire intitulé La Création et ses mystères dévoilés. Il propose une première ébauche d'explication de la complémentarité des côtes d'Europe et d'Amérique du Nord par la ressemblance des flores fossiles du Carbonifère dans ces deux continents. Pour Snider, un bloc primitif de roches en fusion aurait occupé une seule face de la Terre puis, refroidi, se serait rompu, créant l'Atlantique qui sépare les deux continents ; ceux-ci se seraient ensuite déplacés à la surface de la Terre. Cependant Snider, tenant de l'orthodoxie chrétienne, invoque encore la théorie du catastrophisme pour attribuer le phénomène du refroidissement au Déluge.\nLes hommes de science, imprégnés de la théorie de l'uniformitarisme qui s'est imposée à la fin du XIXe siècle, continuent à croire à la pérennité des mers et des continents. Pourtant, quelques tenants de la théorie mobiliste qui considère que d'importants mouvements horizontaux animent la Terre, se sont exprimés.\nJusqu'au début du XXe siècle, la mobilité verticale de la terre est admise (d'après l'observation des séismes, des volcans en formation) mais pas la mobilité horizontale[réf. souhaitée].\nLa théorie fixiste reste cependant dominante et seuls les déplacements verticaux demeurent expliqués. Le géologue Léonce Élie de Beaumont développe l'hypothèse de « systèmes de soulèvement » pour expliquer l'orogenèse. À la fin du XIXe siècle, Eduard Suess remplace l'hypothèse des « soulèvements » par celle des « affaissements » : adepte de la théorie de la contraction de la Terre, il propose que les montagnes résultent de plissements tandis que les océans proviennent de l'effondrement des ponts terrestres. Cependant, plusieurs contraintes (distribution bimodale des altitudes, quasi constance de la gravité à la surface du globe) rendent ces modèles fixistes inopérants."
+          "titre": "Exoplanète",
+          "resume": "Une exoplanète, ou planète extrasolaire, est une planète située en dehors du Système solaire. En février 2026, on en connaît plus de 8000.\nL'existence de planètes situées en dehors du Système solaire est évoquée dès le XVIe siècle. Au cours du XIXe siècle, les exoplanètes deviennent l'objet de recherches scientifiques. Beaucoup d'astronomes supposent qu'elles peuvent exister, mais aucun moyen technique observationnel ne permet alors de prouver leur existence ; la distance et le manque de luminosité de ces objets célestes, si petits par rapport aux étoiles autour desquelles ils orbitent, rendent leur détection impossible. Ce n'est que dans les années 1990 que les premières exoplanètes sont détectées, de manière indirecte, puis, depuis 2004, de manière directe.\nLa plupart des exoplanètes découvertes à ce jour orbitent autour d'étoiles situées à moins de 400 pc (1 300 années-lumière) du Système solaire. Au 26 juin 2025, il y a 5 988 exoplanètes confirmées dans 4 491 systèmes planétaires, dont 987 systèmes comprenant plus d'une planète. Plusieurs milliers (près de 9 151 exoplanètes) supplémentaires découvertes au moyen de télescopes terrestres ou d'observatoires spatiaux, dont Kepler ou TESS, sont en attente de confirmation. En extrapolant à partir des découvertes déjà effectuées, il existerait au moins cent milliards de planètes rien que dans notre galaxie.\nLes méthodes de détection utilisées sont principalement celle des vitesses radiales, qui déduit la présence d'une planète à travers l'incidence de son attraction gravitationnelle sur la vitesse radiale de son étoile et la méthode du transit, qui identifie une planète lorsque celle-ci passe devant son étoile en mesurant l'affaiblissement de l'intensité lumineuse de l'astre. Ces méthodes ont abouti à la détection d'une majorité de planètes aux caractéristiques très différentes de celles présentes dans le Système solaire, en particulier à une abondance de Jupiter chauds, des planètes gazeuses très proches de leur étoile hôte. Ces nouveaux types de planète ont néanmoins entraîné une remise en cause radicale des modèles de formation des systèmes planétaires qui avaient été élaborés en considérant le seul Système solaire. Depuis que les méthodes de détection se sont améliorées, les études visent également à mettre en évidence des planètes aux caractéristiques proches de celles de la Terre orbitant dans la zone habitable de leur étoile.\n\nTerminologie\nLe terme exoplanète a été enregistré dans Le Petit Robert dès 1998 comme calque français de l'anglais exoplanet dont l'emploi, dès 1992, est attesté par Antoine Labeyrie et Bernard F. Burke.\nD'après Christina Nicolae et Valérie Delavigne, le premier organisme scientifique à l'avoir employé serait le Centre national de la recherche scientifique (CNRS) dans un communiqué de presse du 21 avril 2004. Antérieurement, il avait fait son apparition dans des revues de vulgarisation scientifique telles que Science et Vie — première occurrence en janvier 2000 — et La Recherche — première occurrence en décembre 2002 — ainsi que des publications de sociétés savantes telles que Ciel et Terre — première occurrence en décembre 2001 — de la Société royale belge d'astronomie, de météorologie et de physique du globe et L'Astronomie — première occurrence en 2003 — de la Société astronomique de France.\nEn France, depuis fin décembre 2007, son usage est recommandé par la délégation générale à la langue française et aux langues de France du ministère de la Culture et de la Communication et il est recensé sur la base de données terminologiques FranceTerme.\n\nDéfinition\nCommunément, on appelle « planète extrasolaire » toute planète orbitant autour d'une autre étoile que le Soleil. La définition officielle d'une planète adoptée en août 2006 par l'Union astronomique internationale (UAI) ne concerne que les objets du Système solaire et ne s'applique pas aux exoplanètes. À l'heure actuelle, la seule définition de l'UAI qui concerne les exoplanètes est une définition de travail donnée en 2002 et modifiée en 2003.\nCette définition, plus générale et qui concerne toutes les planètes, y compris celles du Système solaire, contient les critères suivants :"
         }
       ]
     },
     "citation": {
-      "texte": "Le vent se lève !... Il faut tenter de vivre !",
-      "auteur": "Paul Valéry",
-      "source": "Le Cimetière marin",
-      "annee": 1920
+      "texte": "Sapere aude ! Aie le courage de te servir de ton propre entendement.",
+      "auteur": "Emmanuel Kant",
+      "source": "Qu'est-ce que les Lumières ?",
+      "annee": 1784
     },
     "meteo": {
       "villes_detail": [
         {
           "ville": "Antibes",
-          "temperature_actuelle": 13.4,
-          "temperature_max": 15.6,
-          "temperature_min": 10.6,
-          "precipitation_mm": 1.9,
-          "probabilite_pluie_pct": 33,
-          "vent_kmh": 4.7,
-          "vent_max_kmh": 17.1,
-          "rafales_max_kmh": 34.2,
-          "weather_code": 53,
-          "description": "bruine",
+          "temperature_actuelle": 14.4,
+          "temperature_max": 16.8,
+          "temperature_min": 13.5,
+          "precipitation_mm": 0.7,
+          "probabilite_pluie_pct": 80,
+          "vent_kmh": 9.1,
+          "vent_max_kmh": 14.1,
+          "rafales_max_kmh": 25.9,
+          "weather_code": 3,
+          "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 13.4,
-              "temperature_max": 15.2,
-              "probabilite_pluie_pct": 3,
-              "precipitation_mm": 0.4,
-              "vent_max_kmh": 8,
+              "temperature_min": 14.4,
+              "temperature_max": 16.2,
+              "probabilite_pluie_pct": 60,
+              "precipitation_mm": 0.5,
+              "vent_max_kmh": 14,
               "weather_code": 3,
               "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 14.7,
-              "temperature_max": 15.5,
-              "probabilite_pluie_pct": 20,
-              "precipitation_mm": 1.5,
-              "vent_max_kmh": 10,
-              "weather_code": 53,
-              "description": "bruine"
-            },
-            {
-              "label": "Soir",
-              "temperature_min": 10.7,
-              "temperature_max": 14.6,
-              "probabilite_pluie_pct": 10,
+              "temperature_min": 16.1,
+              "temperature_max": 16.8,
+              "probabilite_pluie_pct": 5,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 8,
-              "weather_code": 0,
-              "description": "ciel dégagé"
-            }
-          ],
-          "alertes": []
-        },
-        {
-          "ville": "Cannes",
-          "temperature_actuelle": 13.3,
-          "temperature_max": 15.3,
-          "temperature_min": 11.0,
-          "precipitation_mm": 1.2,
-          "probabilite_pluie_pct": 30,
-          "vent_kmh": 6.4,
-          "vent_max_kmh": 15.8,
-          "rafales_max_kmh": 29.2,
-          "weather_code": 51,
-          "description": "bruine légère",
-          "periodes": [
-            {
-              "label": "Matin",
-              "temperature_min": 13.3,
-              "temperature_max": 14.9,
-              "probabilite_pluie_pct": 3,
-              "precipitation_mm": 0.4,
-              "vent_max_kmh": 10,
-              "weather_code": 3,
-              "description": "couvert"
-            },
-            {
-              "label": "Après-midi",
-              "temperature_min": 14.3,
-              "temperature_max": 15.3,
-              "probabilite_pluie_pct": 30,
-              "precipitation_mm": 0.8,
               "vent_max_kmh": 13,
               "weather_code": 3,
               "description": "couvert"
             },
             {
               "label": "Soir",
-              "temperature_min": 11.3,
-              "temperature_max": 14.7,
-              "probabilite_pluie_pct": 2,
+              "temperature_min": 15.6,
+              "temperature_max": 16.6,
+              "probabilite_pluie_pct": 80,
+              "precipitation_mm": 0.2,
+              "vent_max_kmh": 13,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 14.6,
+          "temperature_max": 16.8,
+          "temperature_min": 14.2,
+          "precipitation_mm": 0.3,
+          "probabilite_pluie_pct": 93,
+          "vent_kmh": 10.0,
+          "vent_max_kmh": 14.1,
+          "rafales_max_kmh": 29.6,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 14.6,
+              "temperature_max": 15.8,
+              "probabilite_pluie_pct": 32,
+              "precipitation_mm": 0.1,
+              "vent_max_kmh": 14,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 15.9,
+              "temperature_max": 16.7,
+              "probabilite_pluie_pct": 4,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 8,
-              "weather_code": 0,
-              "description": "ciel dégagé"
+              "vent_max_kmh": 14,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 15.3,
+              "temperature_max": 16.3,
+              "probabilite_pluie_pct": 93,
+              "precipitation_mm": 0.2,
+              "vent_max_kmh": 11,
+              "weather_code": 3,
+              "description": "couvert"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Valbonne",
-          "temperature_actuelle": 10.5,
-          "temperature_max": 15.2,
-          "temperature_min": 9.8,
-          "precipitation_mm": 0.0,
-          "probabilite_pluie_pct": 4,
-          "vent_kmh": 5.6,
-          "vent_max_kmh": 9.9,
-          "rafales_max_kmh": 17.6,
-          "weather_code": 2,
-          "description": "partiellement nuageux",
+          "temperature_actuelle": 12.0,
+          "temperature_max": 14.8,
+          "temperature_min": 11.0,
+          "precipitation_mm": 2.1,
+          "probabilite_pluie_pct": 78,
+          "vent_kmh": 4.0,
+          "vent_max_kmh": 5.8,
+          "rafales_max_kmh": 11.2,
+          "weather_code": 3,
+          "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 10.2,
-              "temperature_max": 14.7,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 7,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
+              "temperature_min": 12.0,
+              "temperature_max": 14.3,
+              "probabilite_pluie_pct": 60,
+              "precipitation_mm": 0.2,
+              "vent_max_kmh": 4,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 12.9,
-              "temperature_max": 15.2,
-              "probabilite_pluie_pct": 8,
+              "temperature_min": 14.0,
+              "temperature_max": 14.8,
+              "probabilite_pluie_pct": 5,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 10,
+              "vent_max_kmh": 6,
               "weather_code": 3,
               "description": "couvert"
             },
             {
               "label": "Soir",
-              "temperature_min": 10.5,
-              "temperature_max": 11.9,
-              "probabilite_pluie_pct": 6,
-              "precipitation_mm": 0.0,
+              "temperature_min": 13.0,
+              "temperature_max": 13.5,
+              "probabilite_pluie_pct": 78,
+              "precipitation_mm": 1.9,
               "vent_max_kmh": 6,
-              "weather_code": 3,
-              "description": "couvert"
+              "weather_code": 61,
+              "description": "pluie légère"
             }
           ],
           "alertes": []
         },
         {
           "ville": "Grasse",
-          "temperature_actuelle": 10.1,
-          "temperature_max": 14.1,
-          "temperature_min": 9.6,
-          "precipitation_mm": 0.0,
-          "probabilite_pluie_pct": 3,
-          "vent_kmh": 6.1,
-          "vent_max_kmh": 9.2,
-          "rafales_max_kmh": 16.6,
-          "weather_code": 2,
-          "description": "partiellement nuageux",
+          "temperature_actuelle": 11.7,
+          "temperature_max": 13.9,
+          "temperature_min": 10.9,
+          "precipitation_mm": 2.4,
+          "probabilite_pluie_pct": 95,
+          "vent_kmh": 4.7,
+          "vent_max_kmh": 7.3,
+          "rafales_max_kmh": 13.0,
+          "weather_code": 3,
+          "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 9.6,
-              "temperature_max": 13.8,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 8,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
+              "temperature_min": 11.7,
+              "temperature_max": 13.4,
+              "probabilite_pluie_pct": 60,
+              "precipitation_mm": 0.3,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 11.9,
-              "temperature_max": 14.1,
-              "probabilite_pluie_pct": 16,
+              "temperature_min": 13.0,
+              "temperature_max": 13.9,
+              "probabilite_pluie_pct": 10,
               "precipitation_mm": 0.0,
-              "vent_max_kmh": 9,
+              "vent_max_kmh": 5,
               "weather_code": 3,
               "description": "couvert"
             },
             {
               "label": "Soir",
-              "temperature_min": 10.3,
-              "temperature_max": 11.1,
-              "probabilite_pluie_pct": 2,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 6,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
+              "temperature_min": 12.2,
+              "temperature_max": 12.7,
+              "probabilite_pluie_pct": 95,
+              "precipitation_mm": 2.1,
+              "vent_max_kmh": 7,
+              "weather_code": 61,
+              "description": "pluie légère"
             }
           ],
           "alertes": []
         }
       ],
-      "temperature_max_zone": 15.6,
-      "temperature_min_zone": 9.6,
-      "probabilite_pluie_max_pct": 33,
-      "vent_max_kmh": 17.1,
-      "description_dominante": "bruine",
+      "temperature_max_zone": 16.8,
+      "temperature_min_zone": 10.9,
+      "probabilite_pluie_max_pct": 95,
+      "vent_max_kmh": 14.1,
+      "description_dominante": "couvert",
       "periodes": [
         {
           "label": "Matin",
-          "temperature_min": 9.6,
-          "temperature_max": 15.2,
-          "probabilite_pluie_pct": 3,
-          "precipitation_mm": 0.4,
-          "vent_max_kmh": 10,
+          "temperature_min": 11.7,
+          "temperature_max": 16.2,
+          "probabilite_pluie_pct": 60,
+          "precipitation_mm": 0.5,
+          "vent_max_kmh": 14,
           "weather_code": 3,
           "description": "couvert"
         },
         {
           "label": "Après-midi",
-          "temperature_min": 11.9,
-          "temperature_max": 15.5,
-          "probabilite_pluie_pct": 30,
-          "precipitation_mm": 1.5,
-          "vent_max_kmh": 13,
+          "temperature_min": 13.0,
+          "temperature_max": 16.8,
+          "probabilite_pluie_pct": 10,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 14,
           "weather_code": 3,
           "description": "couvert"
         },
         {
           "label": "Soir",
-          "temperature_min": 10.3,
-          "temperature_max": 14.7,
-          "probabilite_pluie_pct": 10,
-          "precipitation_mm": 0.0,
-          "vent_max_kmh": 8,
-          "weather_code": 0,
-          "description": "ciel dégagé"
+          "temperature_min": 12.2,
+          "temperature_max": 16.6,
+          "probabilite_pluie_pct": 95,
+          "precipitation_mm": 2.1,
+          "vent_max_kmh": 13,
+          "weather_code": 61,
+          "description": "pluie légère"
         }
       ],
       "alertes": [],
-      "resume": "Couvert le matin, couvert l'après-midi, ciel dégagé le soir, de 10° à 16°."
+      "resume": "Couvert le matin, couvert l'après-midi, pluie légère le soir, de 11° à 17°."
     },
     "anglais": {
       "mode": "litterature",
-      "oeuvre": "A Tale of Two Cities",
-      "auteur": "Charles Dickens",
-      "annee": 1859,
+      "oeuvre": "Alice's Adventures in Wonderland",
+      "auteur": "Lewis Carroll",
+      "annee": 1865,
       "segments": [
         {
-          "t": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness",
-          "g": "la sottise"
+          "t": "Alice was beginning to get very tired of sitting by her sister on the bank",
+          "g": "la berge"
         },
         {
-          "t": ", it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct",
-          "g": "tout droit"
+          "t": ", and of having nothing to do: once or twice she had peeped into",
+          "g": "jeté un coup d'œil dans"
         },
         {
-          "t": " to Heaven, we were all going direct the other way – in short",
-          "g": "bref"
+          "t": " the book her sister was reading, but it had no pictures or conversations in it, \"and what is the use of",
+          "g": "à quoi bon"
         },
         {
-          "t": ", the period was so far like",
-          "g": "si semblable à"
+          "t": " a book,\" thought Alice \"without pictures or conversations?\" So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid",
+          "g": "hébétée"
         },
         {
-          "t": " the present period, that some of its noisiest",
-          "g": "les plus bruyants"
+          "t": "), whether the pleasure of making a daisy-chain",
+          "g": "collier de pâquerettes"
         },
         {
-          "t": " authorities insisted on",
-          "g": "exigeaient que"
+          "t": " would be worth the trouble",
+          "g": "valoir la peine"
         },
         {
-          "t": " its being received",
-          "g": "accueillie, admise"
+          "t": " of getting up and picking",
+          "g": "cueillir"
         },
         {
-          "t": ", for good or for evil",
-          "g": "pour le meilleur ou pour le pire"
+          "t": " the daisies, when suddenly a White Rabbit with pink eyes ran close by",
+          "g": "tout près de"
         },
         {
-          "t": ", in the superlative degree of comparison only.",
+          "t": " her.",
           "g": null
         }
       ],
-      "texte_glose": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness (= la sottise), it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct (= tout droit) to Heaven, we were all going direct the other way – in short (= bref), the period was so far like (= si semblable à) the present period, that some of its noisiest (= les plus bruyants) authorities insisted on (= exigeaient que) its being received (= accueillie, admise), for good or for evil (= pour le meilleur ou pour le pire), in the superlative degree of comparison only."
+      "texte_glose": "Alice was beginning to get very tired of sitting by her sister on the bank (= la berge), and of having nothing to do: once or twice she had peeped into (= jeté un coup d'œil dans) the book her sister was reading, but it had no pictures or conversations in it, \"and what is the use of (= à quoi bon) a book,\" thought Alice \"without pictures or conversations?\" So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid (= hébétée)), whether the pleasure of making a daisy-chain (= collier de pâquerettes) would be worth the trouble (= valoir la peine) of getting up and picking (= cueillir) the daisies, when suddenly a White Rabbit with pink eyes ran close by (= tout près de) her."
     },
     "meta": {
-      "resume_1_phrase": "À la une : Attentat raciste à Trappes : la mère et des sœurs de Pengo Bossio Wangi ont été reçues mardi par Emmanuel Macron."
+      "resume_1_phrase": "À la une : Présidentielle 2027 : Fabien Roussel ira « jusqu’au bout », malgré le ralliement de députés communistes à Mélenchon."
     },
     "_genere_par_llm": true,
-    "_provider": "groq+mistral+nvidia",
+    "_provider": "groq+mistral",
     "_erreur_llm": null,
     "_parts": {
       "actu_france": {
@@ -543,9 +539,9 @@
       },
       "marches": {
         "genere_par_llm": true,
-        "provider": "nvidia",
+        "provider": "groq",
         "erreur": null,
-        "essais_echoues": 0
+        "essais_echoues": 1
       },
       "science_a": {
         "genere_par_llm": true,
@@ -568,7 +564,7 @@
     },
     "_bloc": {
       "genere_par_llm": true,
-      "provider": "groq+mistral+nvidia",
+      "provider": "groq+mistral",
       "erreur": null
     },
     "_science": {
@@ -582,5 +578,5 @@
       "erreur": null
     }
   },
-  "debut_run": "2026-11-06T06:10:35.461846+01:00"
+  "debut_run": "2026-11-09T06:10:37.692227+01:00"
 }

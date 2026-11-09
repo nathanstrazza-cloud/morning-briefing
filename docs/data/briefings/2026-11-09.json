@@ -1,0 +1,582 @@
+{
+  "date": "2026-11-09",
+  "derniere_mise_a_jour": "2026-11-09T06:18:40.115246+01:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Présidentielle 2027 : Fabien Roussel ira « jusqu’au bout », malgré le ralliement de députés communistes à Mélenchon",
+          "resume": "Crédité de 2 % à 3 % des intentions de vote, le patron du Parti communiste français « regrette » le choix de neuf députés de son groupe et assure que le chef de file de La France Insoumise « ne gagnera jamais ».",
+          "pourquoi_important": "Le positionnement du Parti communiste français face à la candidature de La France Insoumise influence les dynamiques électorales de la présidentielle 2027.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Raphaël Glucksmann affirme avoir refusé Matignon après la dissolution de 2024",
+          "resume": "Accusé par ses adversaires de proximité avec le macronisme, le candidat social-démocrate a énuméré ses divergences avec Emmanuel Macron, de « l’individualisme triomphant » à la suppression de l’ISF.",
+          "pourquoi_important": "Les déclarations de Raphaël Glucksmann sur son refus de Matignon et ses critiques d’Emmanuel Macron peuvent affecter son image et son positionnement dans la course présidentielle.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Manifestations en comité réduit, meeting XXL de Jean-Luc Mélenchon, attentat à Cracovie… L’actu de ce week-end des 7 et 8 novembre",
+          "resume": "La rédaction de «Libération» récapitule les principales actualités de ce week-end.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : les insoumis se disent prêts à gouverner par décrets s’ils arrivent au pouvoir, au nom de «l’état d’urgence sociale»",
+          "resume": "Au lendemain du meeting du Bourget, Manuel Bompard et Clémence Guetté ont détaillé ce qu’un gouvernement LFI ferait dans les jours suivant l’élection. Le Parlement aura cependant «un droit de regard» sur ces «décrets d’urgence».",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : « La France avant les égos »… Ils signent pour une primaire contre « les extrêmes »",
+          "resume": "Dans une tribune publiée ce week-end dans « La Tribune Dimanche », plus de soixante parlementaires plaident pour une « primaire des démocrates et des républicains »",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Guerre en Ukraine : Des centaines de milliers d’habitants privés d’électricité après des frappes russes",
+          "resume": "Les autorités recensent plus de 600 000 personnes touchées dans la région de Dnipropetrovsk et 250 000 dans celle de Kharkiv, après des attaques de drones et de missiles sur le réseau électrique.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Libération",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Pologne : enquête ouverte pour terrorisme, des corps retrouvés chez le tireur, fascination pour l’extrême droite… Ce que l’on sait après l’attentat mortel de Cracovie",
+          "resume": "Le tireur, agissant seul, aurait des liens avec des idéologies extrémistes.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Libération",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Israël : Gadi Eisenkot, officiellement chargé de former un nouveau gouvernement, invite le Likoud de Benyamin Nétanyahou à participer à une coalition",
+          "resume": "Le président israélien a confié à Gadi Eisenkot, chef du principal bloc d’opposition, la mission de former le prochain gouvernement, incluant une offre de coalition au Likoud.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Italie : le ministre des affaires étrangères dit être visé par une fuite de données, Giorgia Meloni dénonce des « hackers prorusses »",
+          "resume": "Antonio Tajani a révélé une fuite de ses données personnelles sur le dark Web, attribuée à des cyberattaques prorusses visant à influencer les prochaines élections législatives de 2027.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : Marco Rubio fait état de progrès pour l'« architecture de sécurité » après la guerre",
+          "resume": "Le secrétaire d’État américain annonce des avancées dans les négociations pour une future « architecture de sécurité » en Ukraine, lors d’un sommet du G7 à Paris, avec des discussions prévues mardi et mercredi à Abou Dhabi sous médiation américaine.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Midterms 2026 : Donald Trump estime que « l’Amérique a fait un gigantesque pas en arrière dans l’histoire » avec la victoire des démocrates",
+          "resume": "Les élections de mi-mandat ont été marquées par une vague bleue, dont l'ampleur a sidéré les observateurs et assommé les républicains.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon France Info, Attentat en Pologne : \"J'ai vu des personnes tomber à un mètre de moi\", une témoin raconte",
+          "resume": "Samedi 7 novembre, un homme a ouvert le feu à Cracovie en Pologne. Six personnes ont été tuées et 15 autres blessées. Parmi les victimes se trouvent plusieurs touristes étrangers. L'enquête a révélé plusieurs éléments sur le parcours du tueur.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon Le Monde International, En Espagne, Pedro Sanchez tente de relancer sa campagne après la catastrophe ferroviaire d’Urda",
+          "resume": "Après avoir misé sur une campagne optimiste placée sous le signe de la « force de l’amour », le premier ministre socialiste, fragilisé par la tragédie qui a fait 69 morts, fin octobre, cherche à remobiliser son électorat en présentant l’Espagne comme un rempart contre la montée de l’extrême droite dans le monde.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
+      "mouvements_notables": [
+        {
+          "nom": "Nasdaq",
+          "variation_pct": 1.09,
+          "explication": null
+        },
+        {
+          "nom": "DAX",
+          "variation_pct": -1.92,
+          "explication": null
+        },
+        {
+          "nom": "Or",
+          "variation_pct": 1.39,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "tennis",
+          "texte": "Carlos Alcaraz a remporté le Masters 1000 de Paris, première victoire à Paris, et Arthur Fils s’est qualifié pour les ATP Finals en assurant sa place aux Masters de fin de saison."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Matteo Martineau a remporté son premier titre Challenger à Tarante, Italie, en battant Kilian Feldbausch (6-3, 6-2), ce qui lui permet de se rapprocher du top 200 et de disputer les qualifications de l’Open d’Australie."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Carlos Alcaraz a battu Ben Shelton en finale du Paris Masters, remportant ainsi le titre."
+        },
+        {
+          "sport": "golf",
+          "texte": "Matthieu Pavon a terminé 13e (-9) au World Wide Technology Championship après un deuxième tour difficile, nécessitant un exploit le week‑end pour marquer de gros points."
+        },
+        {
+          "sport": "golf",
+          "texte": "Jon Rahm a gagné le tournoi d’Abu Dhabi avec -23, son sixième Rolex Series, devançant Tyrrell Hatton et Rory McIlroy; plusieurs Français seront en finale à Dubaï."
+        },
+        {
+          "sport": "formule 1",
+          "texte": "Lando Norris a remporté le Grand Prix de São Paulo, tandis que Mercedes a assuré le championnat des constructeurs 2026."
+        },
+        {
+          "sport": "football",
+          "texte": "Le FC Barcelone a battu l’Atlético de Madrid 2-1 grâce à un doublé de Fermin Lopez, maintenant trois points d’avance sur le Real et cinq sur l’Atlético."
+        },
+        {
+          "sport": "cyclisme",
+          "texte": "Célia Géry a remporté le titre européen U23, devançant Lison Desprez et Amandine Muller."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "Nice – PSG",
+          "competition": "Ligue 1",
+          "date_iso": "2026-11-21T16:15:00+00:00",
+          "date_texte": "samedi 21 novembre à 17h15",
+          "sport": "football"
+        },
+        {
+          "affiche": "New York Knicks – Milwaukee Bucks",
+          "competition": "NBA",
+          "date_iso": "2026-11-11T00:30:00+00:00",
+          "date_texte": "mercredi 11 novembre à 1h30",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "approfondi",
+      "titre": "Les exoplanètes : une révolution astronomique",
+      "contenu_markdown": "## Introduction\nUne exoplanète, ou planète extrasolaire, est une planète située en dehors de notre Système solaire, gravitant autour d’une autre étoile. Leur existence, évoquée dès le XVIe siècle, n’a pu être confirmée scientifiquement qu’à partir des années 1990, marquant un tournant dans l’astronomie. En février 2026, plus de 8 000 exoplanètes ont été identifiées, révélant une diversité insoupçonnée de mondes au-delà de notre système. Ces découvertes ont non seulement élargi notre compréhension de l’Univers, mais aussi posé de nouvelles questions sur la formation des planètes et la possibilité de vie ailleurs.\n\n## Pourquoi le sujet est important\nL’étude des exoplanètes est cruciale pour plusieurs raisons. D’abord, elle permet de tester et d’affiner les modèles de formation des systèmes planétaires, initialement basés uniquement sur l’observation de notre propre Système solaire. Les découvertes récentes, comme l’abondance de *Jupiter chauds* (des géantes gazeuses orbitant très près de leur étoile), ont montré que ces modèles devaient être revisités. Ensuite, la recherche d’exoplanètes similaires à la Terre, situées dans la *zone habitable* (où l’eau liquide pourrait exister), ouvre des perspectives majeures pour l’astrobiologie. Enfin, ces observations élargissent notre vision de la place de la Terre dans l’Univers, interrogeant la rareté ou la généralité des conditions propices à la vie.\n\n## Explication du phénomène\nUne exoplanète est un objet céleste qui, comme les planètes de notre système, orbite autour d’une étoile. Contrairement aux planètes classiques, elle n’est pas visible directement à l’œil nu en raison de sa faible luminosité par rapport à son étoile hôte. Sa détection repose donc sur des méthodes indirectes, exploitant des effets gravitationnels ou optiques. Par exemple, une planète exerce une attraction gravitationnelle sur son étoile, provoquant un léger mouvement de celle-ci. Ce phénomène, appelé *vitesses radiales*, permet de déduire la présence de la planète en analysant les variations périodiques de la lumière de l’étoile. Une autre méthode, celle du *transit*, consiste à mesurer l’affaiblissement de la lumière de l’étoile lorsque la planète passe devant elle, bloquant une infime partie de cette lumière.\n\n## Fonctionnement / mécanismes\nLes techniques de détection des exoplanètes reposent sur des principes physiques bien établis. La méthode des vitesses radiales utilise l’*effet Doppler* : lorsque l’étoile se rapproche ou s’éloigne de l’observateur en raison de l’influence gravitationnelle de sa planète, la longueur d’onde de sa lumière varie légèrement. Les astronomes mesurent ces variations pour estimer la masse et l’orbite de la planète. La méthode du transit, quant à elle, exploite la géométrie du système : lorsque la planète passe devant son étoile, elle occulte une partie de sa lumière, provoquant une baisse régulière de son intensité lumineuse. En analysant ces diminutions, les scientifiques peuvent déterminer la taille de la planète et, combinée à d’autres données, sa densité. Ces méthodes, couplées à des observations directes depuis les années 2000, ont permis de cartographier des milliers de systèmes planétaires, révélant une diversité de tailles, de compositions et d’orbites bien plus grande que celle observée dans notre Système solaire.\n\n## Données et résultats scientifiques\n\nEn février 2026, plus de 8 000 exoplanètes sont répertoriées. Au 26 juin 2025, le nombre officiel de planètes confirmées s’élevait à 5 988, réparties dans 4 491 systèmes planétaires, dont 987 systèmes comportent plusieurs planètes. Environ 9 151 candidates supplémentaires, détectées par des télescopes terrestres ou spatiaux tels que Kepler et TESS, attendent encore confirmation.  \n\nLa majorité des exoplanètes découvertes orbitent autour d’étoiles situées à moins de 400 parsecs (≈ 1 300 années‑lumière) du Soleil. Les deux méthodes de détection les plus utilisées sont :  \n\n* **Vitesse radiale** – mesure les variations de la vitesse de l’étoile causées par l’attraction gravitationnelle de la planète.  \n* **Transit** – détecte la diminution de la luminosité de l’étoile lorsqu’une planète la traverse.  \n\nCes techniques ont révélé une grande diversité de mondes, notamment une abondance de « Jupiters chauds », c’est‑à‑dire des géantes gazeuses très proches de leur étoile hôte, ainsi que des planètes de petite taille situées dans la zone habitable de leurs étoiles.  \n\nEn extrapolant à partir des découvertes actuelles, les astronomes estiment qu’il existerait au moins cent milliards de planètes dans la Voie lactée.\n\n## Ce que les scientifiques savent\n\n* **Existence massive** – Les observations confirment que les planètes existent en grand nombre autour d’étoiles autres que le Soleil.  \n* **Variété des propriétés** – Les exoplanètes présentent une gamme très large de masses, de tailles et d’orbites, incluant des mondes très différents du système solaire.  \n* **Méthodes de détection fiables** – Les techniques de vitesse radiale et de transit permettent d’obtenir des mesures précises de la masse minimale (via la vitesse radiale) et du rayon (via le transit) d’une planète.  \n* **Statistiques galactiques** – Les données accumulées suggèrent que la plupart des étoiles de la galaxie possèdent au moins une planète, ce qui rend les systèmes planétaires courants.  \n* **Zone habitable** – Des planètes de taille comparable à la Terre ont été identifiées dans la zone où l’eau liquide pourrait exister, ouvrant la voie à des études d’habitabilité.\n\n## Ce qui reste incertain\n\n* **Composition atmosphérique** – Si certaines atmosphères ont été étudiées par spectroscopie, la composition détaillée de la majorité des exoplanètes reste inconnue.  \n* **Fréquence des planètes semblables à la Terre** – Bien que des candidates dans la zone habitable aient été repérées, la proportion exacte de planètes réellement habitables n’est pas encore déterminée.  \n* **Formation des Jupiters chauds** – L’abondance de géantes gazeuses très proches de leur étoile remet en question les modèles classiques de formation planétaire ; les mécanismes exacts (migration, formation in situ…) sont encore débattus.  \n* **Population des planètes lointaines** – Les méthodes actuelles sont moins sensibles aux planètes situées loin de leur étoile, ce qui laisse incertaine la distribution des mondes analogues à Jupiter ou Saturne dans les systèmes lointains.  \n\n## Limites et controverses éventuelles\n\n* **Biais de détection** – Les techniques de vitesse radiale et de transit favorisent la découverte de planètes massives et proches de leur étoile ; les petites planètes à grande distance sont sous‑représentées, ce qui biaise les statistiques globales.  \n* **Confirmation des candidates** – Des milliers de corps détectés restent en attente de confirmation ; la distinction entre vraie exoplanète et faux positif (par exemple, activité stellaire) peut être difficile.  \n* **Définition de « planète »** – L’Union astronomique internationale n’a pas de définition officielle applicable aux exoplanètes, ce qui peut entraîner des divergences de classification entre chercheurs.  \n* **Modèles de formation** – L’apparition de types de planètes inattendus (Jupiters chauds, super‑Terres) a conduit à des révisions des modèles de formation, mais aucun consensus complet n’a encore été atteint.  \n\n## Conclusion\n\nLes découvertes d’exoplanètes ont transformé notre compréhension de l’univers : elles montrent que les systèmes planétaires sont la norme plutôt que l’exception, et qu’ils peuvent être très différents du nôtre. Les méthodes de vitesse radiale et de transit ont permis de cataloguer plusieurs milliers de mondes, révélant une diversité impressionnante, des géantes gazeuses brûlantes aux petites planètes potentiellement habitables. Malgré ces avancées, de nombreuses questions subsistent, notamment sur la composition des atmosphères, la fréquence réelle des planètes semblables à la Terre et les processus de formation des configurations les plus surprenantes. Les futures missions spatiales et les améliorations des techniques d’observation devraient progressivement combler ces lacunes, affinant notre portrait de la population planétaire de la Voie lactée.\n\n## Sources\n- Wikipédia (fr) — Exoplanète — https://fr.wikipedia.org/wiki/Exoplan%C3%A8te\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 0,
+      "nb_mots": 1241,
+      "sujet_id": "exoplanete",
+      "origine": "encyclopedie",
+      "matiere_source": "suffisante",
+      "textes_sources_audit": [
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Exoplanète",
+          "resume": "Une exoplanète, ou planète extrasolaire, est une planète située en dehors du Système solaire. En février 2026, on en connaît plus de 8000.\nL'existence de planètes situées en dehors du Système solaire est évoquée dès le XVIe siècle. Au cours du XIXe siècle, les exoplanètes deviennent l'objet de recherches scientifiques. Beaucoup d'astronomes supposent qu'elles peuvent exister, mais aucun moyen technique observationnel ne permet alors de prouver leur existence ; la distance et le manque de luminosité de ces objets célestes, si petits par rapport aux étoiles autour desquelles ils orbitent, rendent leur détection impossible. Ce n'est que dans les années 1990 que les premières exoplanètes sont détectées, de manière indirecte, puis, depuis 2004, de manière directe.\nLa plupart des exoplanètes découvertes à ce jour orbitent autour d'étoiles situées à moins de 400 pc (1 300 années-lumière) du Système solaire. Au 26 juin 2025, il y a 5 988 exoplanètes confirmées dans 4 491 systèmes planétaires, dont 987 systèmes comprenant plus d'une planète. Plusieurs milliers (près de 9 151 exoplanètes) supplémentaires découvertes au moyen de télescopes terrestres ou d'observatoires spatiaux, dont Kepler ou TESS, sont en attente de confirmation. En extrapolant à partir des découvertes déjà effectuées, il existerait au moins cent milliards de planètes rien que dans notre galaxie.\nLes méthodes de détection utilisées sont principalement celle des vitesses radiales, qui déduit la présence d'une planète à travers l'incidence de son attraction gravitationnelle sur la vitesse radiale de son étoile et la méthode du transit, qui identifie une planète lorsque celle-ci passe devant son étoile en mesurant l'affaiblissement de l'intensité lumineuse de l'astre. Ces méthodes ont abouti à la détection d'une majorité de planètes aux caractéristiques très différentes de celles présentes dans le Système solaire, en particulier à une abondance de Jupiter chauds, des planètes gazeuses très proches de leur étoile hôte. Ces nouveaux types de planète ont néanmoins entraîné une remise en cause radicale des modèles de formation des systèmes planétaires qui avaient été élaborés en considérant le seul Système solaire. Depuis que les méthodes de détection se sont améliorées, les études visent également à mettre en évidence des planètes aux caractéristiques proches de celles de la Terre orbitant dans la zone habitable de leur étoile.\n\nTerminologie\nLe terme exoplanète a été enregistré dans Le Petit Robert dès 1998 comme calque français de l'anglais exoplanet dont l'emploi, dès 1992, est attesté par Antoine Labeyrie et Bernard F. Burke.\nD'après Christina Nicolae et Valérie Delavigne, le premier organisme scientifique à l'avoir employé serait le Centre national de la recherche scientifique (CNRS) dans un communiqué de presse du 21 avril 2004. Antérieurement, il avait fait son apparition dans des revues de vulgarisation scientifique telles que Science et Vie — première occurrence en janvier 2000 — et La Recherche — première occurrence en décembre 2002 — ainsi que des publications de sociétés savantes telles que Ciel et Terre — première occurrence en décembre 2001 — de la Société royale belge d'astronomie, de météorologie et de physique du globe et L'Astronomie — première occurrence en 2003 — de la Société astronomique de France.\nEn France, depuis fin décembre 2007, son usage est recommandé par la délégation générale à la langue française et aux langues de France du ministère de la Culture et de la Communication et il est recensé sur la base de données terminologiques FranceTerme.\n\nDéfinition\nCommunément, on appelle « planète extrasolaire » toute planète orbitant autour d'une autre étoile que le Soleil. La définition officielle d'une planète adoptée en août 2006 par l'Union astronomique internationale (UAI) ne concerne que les objets du Système solaire et ne s'applique pas aux exoplanètes. À l'heure actuelle, la seule définition de l'UAI qui concerne les exoplanètes est une définition de travail donnée en 2002 et modifiée en 2003.\nCette définition, plus générale et qui concerne toutes les planètes, y compris celles du Système solaire, contient les critères suivants :"
+        }
+      ]
+    },
+    "citation": {
+      "texte": "Sapere aude ! Aie le courage de te servir de ton propre entendement.",
+      "auteur": "Emmanuel Kant",
+      "source": "Qu'est-ce que les Lumières ?",
+      "annee": 1784
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 14.4,
+          "temperature_max": 16.8,
+          "temperature_min": 13.5,
+          "precipitation_mm": 0.7,
+          "probabilite_pluie_pct": 80,
+          "vent_kmh": 9.1,
+          "vent_max_kmh": 14.1,
+          "rafales_max_kmh": 25.9,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 14.4,
+              "temperature_max": 16.2,
+              "probabilite_pluie_pct": 60,
+              "precipitation_mm": 0.5,
+              "vent_max_kmh": 14,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 16.1,
+              "temperature_max": 16.8,
+              "probabilite_pluie_pct": 5,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 13,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 15.6,
+              "temperature_max": 16.6,
+              "probabilite_pluie_pct": 80,
+              "precipitation_mm": 0.2,
+              "vent_max_kmh": 13,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 14.6,
+          "temperature_max": 16.8,
+          "temperature_min": 14.2,
+          "precipitation_mm": 0.3,
+          "probabilite_pluie_pct": 93,
+          "vent_kmh": 10.0,
+          "vent_max_kmh": 14.1,
+          "rafales_max_kmh": 29.6,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 14.6,
+              "temperature_max": 15.8,
+              "probabilite_pluie_pct": 32,
+              "precipitation_mm": 0.1,
+              "vent_max_kmh": 14,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 15.9,
+              "temperature_max": 16.7,
+              "probabilite_pluie_pct": 4,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 14,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 15.3,
+              "temperature_max": 16.3,
+              "probabilite_pluie_pct": 93,
+              "precipitation_mm": 0.2,
+              "vent_max_kmh": 11,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 12.0,
+          "temperature_max": 14.8,
+          "temperature_min": 11.0,
+          "precipitation_mm": 2.1,
+          "probabilite_pluie_pct": 78,
+          "vent_kmh": 4.0,
+          "vent_max_kmh": 5.8,
+          "rafales_max_kmh": 11.2,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 12.0,
+              "temperature_max": 14.3,
+              "probabilite_pluie_pct": 60,
+              "precipitation_mm": 0.2,
+              "vent_max_kmh": 4,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 14.0,
+              "temperature_max": 14.8,
+              "probabilite_pluie_pct": 5,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 13.0,
+              "temperature_max": 13.5,
+              "probabilite_pluie_pct": 78,
+              "precipitation_mm": 1.9,
+              "vent_max_kmh": 6,
+              "weather_code": 61,
+              "description": "pluie légère"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 11.7,
+          "temperature_max": 13.9,
+          "temperature_min": 10.9,
+          "precipitation_mm": 2.4,
+          "probabilite_pluie_pct": 95,
+          "vent_kmh": 4.7,
+          "vent_max_kmh": 7.3,
+          "rafales_max_kmh": 13.0,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 11.7,
+              "temperature_max": 13.4,
+              "probabilite_pluie_pct": 60,
+              "precipitation_mm": 0.3,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 13.0,
+              "temperature_max": 13.9,
+              "probabilite_pluie_pct": 10,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 5,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 12.2,
+              "temperature_max": 12.7,
+              "probabilite_pluie_pct": 95,
+              "precipitation_mm": 2.1,
+              "vent_max_kmh": 7,
+              "weather_code": 61,
+              "description": "pluie légère"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 16.8,
+      "temperature_min_zone": 10.9,
+      "probabilite_pluie_max_pct": 95,
+      "vent_max_kmh": 14.1,
+      "description_dominante": "couvert",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 11.7,
+          "temperature_max": 16.2,
+          "probabilite_pluie_pct": 60,
+          "precipitation_mm": 0.5,
+          "vent_max_kmh": 14,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 13.0,
+          "temperature_max": 16.8,
+          "probabilite_pluie_pct": 10,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 14,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 12.2,
+          "temperature_max": 16.6,
+          "probabilite_pluie_pct": 95,
+          "precipitation_mm": 2.1,
+          "vent_max_kmh": 13,
+          "weather_code": 61,
+          "description": "pluie légère"
+        }
+      ],
+      "alertes": [],
+      "resume": "Couvert le matin, couvert l'après-midi, pluie légère le soir, de 11° à 17°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "Alice's Adventures in Wonderland",
+      "auteur": "Lewis Carroll",
+      "annee": 1865,
+      "segments": [
+        {
+          "t": "Alice was beginning to get very tired of sitting by her sister on the bank",
+          "g": "la berge"
+        },
+        {
+          "t": ", and of having nothing to do: once or twice she had peeped into",
+          "g": "jeté un coup d'œil dans"
+        },
+        {
+          "t": " the book her sister was reading, but it had no pictures or conversations in it, \"and what is the use of",
+          "g": "à quoi bon"
+        },
+        {
+          "t": " a book,\" thought Alice \"without pictures or conversations?\" So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid",
+          "g": "hébétée"
+        },
+        {
+          "t": "), whether the pleasure of making a daisy-chain",
+          "g": "collier de pâquerettes"
+        },
+        {
+          "t": " would be worth the trouble",
+          "g": "valoir la peine"
+        },
+        {
+          "t": " of getting up and picking",
+          "g": "cueillir"
+        },
+        {
+          "t": " the daisies, when suddenly a White Rabbit with pink eyes ran close by",
+          "g": "tout près de"
+        },
+        {
+          "t": " her.",
+          "g": null
+        }
+      ],
+      "texte_glose": "Alice was beginning to get very tired of sitting by her sister on the bank (= la berge), and of having nothing to do: once or twice she had peeped into (= jeté un coup d'œil dans) the book her sister was reading, but it had no pictures or conversations in it, \"and what is the use of (= à quoi bon) a book,\" thought Alice \"without pictures or conversations?\" So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid (= hébétée)), whether the pleasure of making a daisy-chain (= collier de pâquerettes) would be worth the trouble (= valoir la peine) of getting up and picking (= cueillir) the daisies, when suddenly a White Rabbit with pink eyes ran close by (= tout près de) her."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Présidentielle 2027 : Fabien Roussel ira « jusqu’au bout », malgré le ralliement de députés communistes à Mélenchon."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-11-09T06:10:37.692227+01:00"
+}
