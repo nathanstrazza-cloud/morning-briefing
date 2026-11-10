@@ -1,0 +1,622 @@
+{
+  "date": "2026-11-10",
+  "derniere_mise_a_jour": "2026-11-10T06:19:01.656878+01:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Ni la guerre, ni une pandémie : en France, le dérèglement climatique perçue comme la première menace",
+          "resume": "Après un été 2026 marqué par des canicules, des sécheresses et des incendies, une étude du laboratoire d'idées Destin Commun révèle que l'aggravation du dérèglement climatique est désormais la menace extérieure qui préoccupe le plus les Français, avant le terrorisme, une crise économique ou encore un conflit armé.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : « Cela ne peut qu’apporter au pays »… Macron salue la candidature de Teddy Riner",
+          "resume": "Le chef de l’État s’est dit « très heureux » de voir le quintuple champion olympique se lancer dans la course à la présidentielle de 2027",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Face à «une explosion du nombre de personnes à la rue», le Revers milite pour un «choc de solidarité»",
+          "resume": "Réquisitions des logements vides, régulariser les personnes sans titre de séjour et financer le secteur des solidarités… Avec la campagne présidentielle dans le viseur, le collectif né pendant les JO présente ce lundi 9 novembre sa feuille de route pour endiguer le sans-abrisme.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Présidentielle : la question ukrainienne est au cœur de la campagne, que les candidats le veuillent ou non",
+          "resume": "L’évolution inquiétante du conflit dans l’est de l’Europe devrait préoccuper beaucoup plus les prétendants à l’Elysée qui, comme tous les cinq ans, laissent entendre que la France, seule, pourrait peser face aux grandes puissances.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Sécurité de l’IA : l’Elysée fait signer un « appel de Paris » à huit pays ainsi qu’à Sam Altman, Dario Amodei et Arthur Mensch",
+          "resume": "A la veille du Forum de Paris sur la paix, Emmanuel Macron a organisé une déclaration plaidant pour des standards communs de classement des incidents liés à l’intelligence artificielle et à des évaluations indépendantes.",
+          "pourquoi_important": "Le fait confirmé montre que l’Élysée a obtenu la signature d’un appel de Paris visant à établir des standards communs pour la sécurité de l’IA, impliquant huit pays et des dirigeants du secteur.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Guerre en Ukraine : reprise mardi des négociations entre l’Ukraine et la Russie à Abou Dhabi, Kiev insistera sur les échanges de prisonniers",
+          "resume": "Les négociations entre l’Ukraine et la Russie à Abou Dhabi porteront sur la dimension humanitaire, notamment les échanges de prisonniers. Les deux parties ont montré une « souplesse » en privé, selon un responsable américain.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "20 Minutes",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Cyberattaques contre des frigos de supermarchés : la France accuse l'Iran",
+          "resume": "La France attribue à l'Iran la cyberattaque contre des réfrigateurs de supermarchés en octobre, impliquant une unité cyber du Corps des Gardiens de la révolution. Des juges d'instruction ont été désignés pour enquêter.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France 24 International",
+            "France Info",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Donald Trump évoque un « élan positif » vers un accord de paix avec l’Iran après sa rencontre avec le premier ministre du Qatar",
+          "resume": "Le président américain a ajouté sur son réseau Truth Social que si une reprise des frappes contre l’Iran était « peu probable », les Etats-Unis restaient « prêts à intervenir ».",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Depuis le G7 à Paris, l’Europe s’inquiète des plans américains pour l’Ukraine",
+          "resume": "Les ministres européens du G7, réunis à Paris, craignent que Donald Trump ne s’aligne sur les positions du Kremlin pour obtenir un accord de paix avec l’Ukraine, sans consulter ses alliés.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Cameroun : après des reports, le président, Paul Biya, convoque des élections législatives et municipales le 7 février",
+          "resume": "Les élections législatives et municipales au Cameroun, initialement reportées, sont fixées au 7 février, après la réélection contestée de Paul Biya en octobre 2025.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Pete Hegseth, secrétaire à la défense de Donald Trump, visé par une procédure de destitution déclenchée par un élu républicain",
+          "resume": "Le député Thomas Massie dénonce notamment la guerre en Iran et la manière dont Pete Hegseth l'a menée.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération",
+            "20 Minutes",
+            "Le Monde International",
+            "France 24 International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Infidélité, espionnage chinois, Singapour et Megaspeed : les liaisons dangereuses de Jensen Huang, patron de Nvidia",
+          "resume": "Le PDG du géant de la tech a reconnu avoir trompé sa femme avec Alice Huang, accusée d’espionnage pour Pékin. Derrière l’affaire de mœurs, la guerre technologique fait rage, entre montage financier et détournement de puces.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Libération",
+            "France 24 International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon Le Monde International, Les midterms aux Etats-Unis, miroir des élections législatives en Israël",
+          "resume": "Le scrutin législatif du 27 octobre a sanctionné la politique de Benyamin Nétanyahou, en Israël. Huit jours plus tard, l’image dégradée de l’Etat hébreu aux Etats-Unis, son allié historique, a joué en faveur des démocrates dans les élections de mi-mandat.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
+      "mouvements_notables": [
+        {
+          "nom": "CAC 40",
+          "variation_pct": 1.16,
+          "explication": null
+        },
+        {
+          "nom": "S&P 500",
+          "variation_pct": 2.35,
+          "explication": null
+        },
+        {
+          "nom": "Nasdaq",
+          "variation_pct": 2.74,
+          "explication": null
+        },
+        {
+          "nom": "DAX",
+          "variation_pct": 1.73,
+          "explication": null
+        },
+        {
+          "nom": "Euro Stoxx 50",
+          "variation_pct": 1.94,
+          "explication": null
+        },
+        {
+          "nom": "Pétrole (Brent)",
+          "variation_pct": -1.05,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "tennis",
+          "texte": "Aryna Sabalenka a battu Karolina Muchova 7-6 (2), 7-5 lors de la première journée des Finales WTA à Indian Wells."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Luca Van Assche, demi‑finaliste du Rolex Paris Masters, atteint la 34e place du classement ATP, son meilleur classement, tandis que Carlos Alcaraz renforce sa place sur le podium."
+        },
+        {
+          "sport": "football",
+          "texte": "Pau Cubarsi a été sacré Golden Boy 2026, deuxième meilleur jeune talent masculin derrière Lamine Yamal au Ballon d’Or 2026."
+        },
+        {
+          "sport": "football",
+          "texte": "Virgil Van Dijk et Brian Brobbey ont déclaré forfait avec les Pays‑Bas et manqueront les matchs contre la Grèce et l’Allemagne en Ligue des Nations."
+        },
+        {
+          "sport": "football",
+          "texte": "Fermin Lopez a marqué deux buts et le FC Barcelone a renversé l’Atletico Madrid pour conserver son avance en tête du classement de La Liga."
+        },
+        {
+          "sport": "formule 1",
+          "texte": "Mercedes a remporté le titre de champion du monde des constructeurs, son neuvième dans l’histoire."
+        },
+        {
+          "sport": "boxe et combat",
+          "texte": "Immanuel Feyi‑Waboso, ailier de l’Angleterre, est exclu du reste du Nations Championship en raison d’une blessure."
+        },
+        {
+          "sport": "rugby",
+          "texte": "La France est championne du monde des blessures."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "Arsenal – Borussia Dortmund",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-11-24T20:00:00+00:00",
+          "date_texte": "mardi 24 novembre à 21h00",
+          "sport": "football"
+        },
+        {
+          "affiche": "New York Knicks – Milwaukee Bucks",
+          "competition": "NBA",
+          "date_iso": "2026-11-11T00:30:00+00:00",
+          "date_texte": "mercredi 11 novembre à 1h30",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "decouverte",
+      "titre": "How to make failure your friend and teacher in science",
+      "contenu_markdown": "Les apprentis acquièrent leur expertise en effectuant des tâches monotones à plusieurs reprises et en tirant des leçons de leurs erreurs. Ruth Morgan, dans un article publié en novembre 2026 dans *Nature*, soutient que les scientifiques suivent le même parcours. En répétant des expériences et en analysant les échecs, ils affinent leurs compétences et développent une compréhension plus profonde de leurs domaines de recherche.\n\nCette observation souligne l’importance de l’expérience pratique et de la résilience dans la formation des chercheurs. Elle suggère que les programmes de formation scientifique pourraient bénéficier d’une structure qui encourage la répétition et l’analyse critique des résultats négatifs, plutôt que de les considérer uniquement comme des obstacles.\n\nIl reste à déterminer comment ces principes peuvent être intégrés de façon systématique dans divers environnements de recherche, et dans quelle mesure ils s’appliquent à des disciplines très différentes. Les futures études devront explorer l’efficacité de ces approches dans la promotion de l’expertise scientifique.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03654-3\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Acidification des océans\n\n## Pourquoi l’acidification des océans est-elle un enjeu majeur ?\n\nL’acidification des océans désigne la baisse progressive du pH des eaux marines, un phénomène qui s’accélère depuis le milieu du XXe siècle. Entre 1950 et 2021, le pH des océans en surface est passé de **8,15 à 8,05**, une variation apparente mineure mais significative : l’eau de mer étant naturellement légèrement basique (pH > 7), cette diminution marque une perte d’alcalinité. Ce processus, souvent qualifié d’*« autre problème »* lié aux émissions de dioxyde de carbone (CO₂), est directement lié aux activités humaines et représente une menace pour les écosystèmes marins et, indirectement, pour le climat mondial.\n\nSon importance réside dans trois mécanismes clés :\n1. **Un effet amplificateur du dérèglement climatique** : les océans absorbent environ **un quart des émissions de CO₂ d’origine humaine** (soit près de **22 millions de tonnes par jour**), ce qui limite temporairement la concentration atmosphérique de ce gaz à effet de serre. Cependant, cette absorption modifie la chimie marine, réduisant progressivement la capacité des océans à jouer ce rôle de *pomme à carbone*.\n2. **Des répercussions écologiques majeures** : les changements biogéochimiques affectent déjà les récifs coralliens, les coquillages et les organismes calcifiants, dont la survie dépend de l’équilibre chimique de l’eau. Les modèles prévoient des perturbations croissantes dans la plupart des milieux aquatiques.\n\nEn 2025, ce phénomène est même classé parmi les **sept limites planétaires franchies** par l’humanité, selon le *Stockholm Resilience Centre*, soulignant son caractère critique pour la stabilité des systèmes terrestres.\n\n---\n\n## Comment se produit l’acidification des océans ?\n\nLe mécanisme central repose sur la **réaction chimique entre le CO₂ atmosphérique et l’eau de mer**. Lorsque le dioxyde de carbone se dissout dans l’océan, il réagit avec l’eau pour former de l’*acide carbonique* (H₂CO₃), une molécule instable qui se décompose ensuite en **ions hydrogène (H⁺)** et **ions bicarbonate (HCO₃⁻)**. L’augmentation de la concentration en ions hydrogène réduit le pH de l’eau, la rendant plus acide.\n\nCe processus s’accompagne d’une **réduction de la concentration en ions carbonate (CO₃²⁻)**, essentiels à la formation des structures calcaires (coquilles, squelettes d’organismes marins). À mesure que le pH baisse, la disponibilité de ces ions diminue, compliquant la calcification pour les espèces dépendantes, comme les coraux, les mollusques ou le plancton.\n\nTrois causes anthropiques principales accélèrent ce phénomène :\n1. **L’absorption directe du CO₂ atmosphérique** : c’est la source dominante, liée à la combustion des énergies fossiles (charbon, pétrole, gaz) et à la déforestation. Environ **4 kg de CO₂ par personne et par jour** sont ainsi absorbés par les océans, soit **70 % de moins qu’à l’ère préindustrielle** en raison de la saturation progressive des puits de carbone marins.\n2. **Les pluies et ruissellements acidifiés** : les activités agricoles (engrais azotés), les transports et le chauffage rejettent des **oxydes d’azote**, qui se transforment en acides nitreux et nitrique dans l’atmosphère. Ces composés, lessivés par les précipitations, acidifient davantage les eaux côtières, où les impacts sont **10 à 50 % plus marqués** que dans l’océan ouvert.\n3. **Les émissions de soufre** : la combustion des combustibles fossiles libère du **dioxyde de soufre (SO₂)**, qui se convertit en acides sulfureux et sulfurique. Les navires utilisant des carburants lourds sont une source majeure de ces polluants, particulièrement dans les zones de trafic maritime intense.\n\nCes trois facteurs agissent de manière **synergique**, avec des effets amplifiés dans les **zones côtières et les estuaires**, où la biodiversité et les activités humaines (pêche, tourisme) sont les plus concentrées.\n\n---\n\n## Les mécanismes chimiques : ce qui se passe dans l’eau de mer\n\nLa dissolution du CO₂ dans l’eau de mer déclenche une série de réactions chimiques bien documentées, décrites par l’*équilibre carbonaté* :\n\n1. **Dissolution du CO₂**.\n   \\[\n   \\text{CO}_2 (\\text{atmosphère}) \\rightarrow \\text{CO}_2 (\\text{dissous dans l'eau})\n   \\]\n\n2. **Formation d’acide carbonique** (réaction rapide).\n   \\[\n   \\text{CO}_2 + \\text{H}_2\\text{O} \\rightarrow \\text{H}_2\\text{CO}_3\n   \\]\n\n3. **Dissociation de l’acide carbonique** (réaction partielle).\n   \\[\n   \\]\n   \\[\n   \\]\n\nL’augmentation des ions **H⁺** (responsables de l’acidité) réduit simultanément la concentration en **ions carbonate (CO₃²⁻)**, cruciaux pour la précipitation du calcium sous forme de carbonate de calcium (CaCO₃), matériau de base des coquilles et des squelettes marins. Ce déséquilibre affecte particulièrement :\n- **Les organismes calcifiants** (coraux, moules, huîtres, plancton à coquille), dont la croissance et la survie dépendent de la disponibilité en carbonate.\n- **La saturation des eaux en aragonite et calcite** : ces deux formes de carbonate de calcium deviennent moins stables à mesure que le pH baisse, limitant la capacité des organismes à construire leurs structures.\n\nUn autre mécanisme aggravant est la **réduction de la capacité tampon des océans** : les eaux marines contiennent naturellement des minéraux (comme les ions calcium et magnésium) qui neutralisent partiellement l’acidité. Cependant, cette capacité est **dégradée par le réchauffement climatique**, qui diminue la solubilité du CO₂ et perturbe les cycles biogéochimiques des nutriments.\n\nEnfin, dans certains cas (comme le **drainage minier acide**), l’acidification peut s’**auto-entretenir** : les réactions chimiques libèrent davantage d’ions métalliques ou de sulfates, qui acidifient à leur tour l’eau, créant un cercle vicieux localisé.\n\n---\n## Fonctionnement global : un système en déséquilibre\n\nL’acidification des océans ne se limite pas à une simple baisse de pH : elle réorganise l’ensemble des **cycles biogéochimiques marins**, avec des conséquences en cascade. Voici les principaux mécanismes à l’œuvre :\n\n1. **Altération de la calcification**.\n   Les organismes marins dépensent davantage d’énergie pour synthétiser leurs structures calcaires dans un environnement moins saturé en carbonate. Chez les coraux, cela se traduit par une **croissance ralentie** et une fragilité accrue face aux stress environnementaux (réchauffement, pollution). Les données montrent que certaines espèces pourraient disparaître si le pH continue de baisser, perturbant les écosystèmes entiers.\n\n2. **Modification des chaînes trophiques**.\n   Le plancton calcifiant (comme les coccolithophores) joue un rôle clé dans le cycle du carbone et comme base de la chaîne alimentaire. Son déclin affecterait les poissons, les mammifères marins et, in fine, les pêcheries humaines. Les modèles suggèrent que ces effets pourraient être **plus marqués dans les régions polaires**, où le CO₂ est plus soluble et où les eaux sont naturellement plus acides.\n\n3. **Impact sur les écosystèmes côtiers**.\n   Les zones littorales, déjà soumises à la pression humaine, subissent une acidification **jusqu’à deux fois plus rapide** que l’océan ouvert en raison des apports en azote et soufre. Cela menace les **herbiers de posidonie**, les mangroves et les récifs coralliens, qui protègent les côtes contre l’érosion et les tempêtes.\n\n4. **Rétroaction climatique**.\n   L’océan agit comme un régulateur du climat en absorbant le CO₂. Cependant, l’acidification et le réchauffement **réduisent son efficacité** : la production de carbonate diminue, limitant la formation de coquilles et de squelettes, qui piègent normalement le carbone sur le long terme. Selon l’**Organisation météorologique mondiale (OMM)**, cette capacité de pompage pourrait chuter à **20 % de son niveau préindustriel d’ici 2100**, aggravant l’accumulation de CO₂ dans l’atmosphère.\n\n5. **Effets indirects sur les cycles biogéochimiques**.\n   L’acidification modifie aussi la disponibilité des nutriments (comme le fer ou le zinc), essentiels à la photosynthèse du phytoplancton. Une étude citée dans les sources souligne que ces carences pourraient **réduire la productivité primaire océanique**,\n\n## Données et résultats scientifiques\n\n- Entre 1950 et 2021, le pH moyen des eaux superficielles des océans est passé de **8,15 à 8,05**.  \n- L’océan mondial absorbe environ **un quart des émissions anthropiques de CO₂**, soit **≈ 4 kg de CO₂ par jour et par personne**, ce qui représente **≈ 22 millions de tonnes de CO₂ par jour** à l’échelle globale.  \n- Selon l’Organisation météorologique mondiale (OMM), le « pompage » océanique du carbone était déjà réduit en 2013 à **70 %** de son niveau au début de l’ère industrielle et pourrait chuter jusqu’à **20 %** d’ici **2100**.  \n- Le rapport du GIEC de 2014 et les évaluations de l’OMM prévoient une diminution du pH d’environ **0,3 unité** d’ici la fin du siècle, ce qui correspond à une **doublure de l’acidité** (le pH étant une échelle logarithmique).  \n- En 2025, l’acidification des océans était classée **septième** parmi les neuf limites planétaires franchies, selon le Stockholm Resilience Centre.  \n\n## Ce que les scientifiques savent\n\n- L’absorption du CO₂ atmosphérique par les océans est le principal moteur de l’acidification ; le CO₂ dissous forme de l’acide carbonique, qui diminue le pH.  \n- Les modèles biogéochimiques prévoient d’importants changements dans la chimie et la biochimie marines, ainsi que des impacts négatifs sur les écosystèmes, notamment les récifs coralliens.  \n- Les effets de l’acidification ne se limitent pas aux coraux ; ils sont attendus dans la plupart des milieux aquatiques, y compris les zones côtières et les plateaux continentaux.  \n- Les océans ont historiquement joué un rôle majeur de puits de carbone, mais cette capacité diminue sous l’effet combiné du réchauffement climatique et de l’acidification.  \n\n## Ce qui reste incertain\n\n- L’ampleur exacte des impacts sur les différents groupes d’organismes marins (au‑delà des coraux) demeure partiellement inconnue et dépend de facteurs locaux (température, nutriments, etc.).  \n- La contribution relative des apports d’azote réactif et de composés soufrés à l’acidification côtière, ainsi que leurs interactions synergiques avec le CO₂, nécessite davantage de recherches.  \n- Les projections futures du « pompage » océanique du carbone, notamment la trajectoire précise de sa réduction jusqu’en 2100, restent soumises à des incertitudes liées aux scénarios d’émissions et aux réponses biologiques des systèmes marins.  \n\n## Limites et controverses éventuelles\n\n- Les estimations du taux d’absorption du CO₂ par les océans (≈ 4 kg/jour/personne) reposent sur des mesures globales et peuvent varier localement ; les incertitudes méthodologiques sont mentionnées dans les rapports de l’OMM.  \n- Certains modèles antérieurs sous‑estimaient la vitesse d’acidification des eaux côtières, notamment parce qu’ils ne prenaient pas pleinement en compte les apports d’azote et de soufre d’origine anthropique.  \n- Le rôle exact des estuaires et des zones mortes comme puits ou sources de carbone reste débattu, ainsi que la possibilité d’auto‑entretenance de l’acidification dans des contextes spécifiques (par ex. drainage minier acide).  \n\n## Conclusion\n\nL’acidification des océans, mesurée par une baisse du pH de 8,15 à 8,05 entre 1950 et 2021, constitue une composante majeure du changement climatique induit par les activités humaines. Les océans absorbent une part significative du CO₂ anthropique, mais cette capacité diminue, ce qui accentue les risques pour les écosystèmes marins et la régulation du climat. Si les mécanismes de base (absorption du CO₂, formation d’acide carbonique) sont bien établis, de nombreuses incertitudes subsistent quant aux impacts écologiques détaillés, aux contributions des polluants azotés et soufrés, et aux projections à long terme du puits de carbone océanique. Une meilleure compréhension de ces aspects est indispensable pour orienter les politiques de mitigation et de protection des milieux marins.\n\n## Sources\n- Wikipédia (fr) — Acidification des océans — https://fr.wikipedia.org/wiki/Acidification_des_oc%C3%A9ans\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 3,
+      "nb_mots": 1994,
+      "matiere_source": "fine",
+      "textes_sources_audit": [
+        {
+          "source": "Nature News",
+          "titre": "How to make failure your friend and teacher in science",
+          "resume": "Nature, Published online: 09 November 2026; doi:10.1038/d41586-026-03654-3 Apprentices develop expertise after doing monotonous tasks repeatedly and learning from their mistakes. Scientists are no different, argues Ruth Morgan."
+        },
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Acidification des océans",
+          "resume": "L'acidification des océans est la diminution progressive du pH des océans. Il a été estimé que de 1950 à 2021, le pH des eaux superficielles des océans a diminué, passant de 8,15 à 8,05 — l'eau de mer est légèrement basique (c'est-à-dire pH > 7) et on parle d'acidification des océans dès lors que le pH devient moins basique. C'est « l'autre problème » induit par l'augmentation des émissions de dioxyde de carbone (CO2) d'origine anthropique dans l'atmosphère.\nSelon les modèles biogéochimiques disponibles, d'importants changements dans la chimie et la biochimie océaniques sont à attendre, de même que des impacts délétères sur les écosystèmes. Les effets sur les récifs coralliens sont très étudiés (dont en mésocosmes) et les plus médiatisés, mais d'autres effets existent et sont attendus dans la plupart des milieux aquatiques. Selon l'Organisation météorologique mondiale (OMM), cette acidification pourrait en partie expliquer l'augmentation annuelle record du taux de CO2 dans l'atmosphère mesurée en 2013, et donc contribuer au dérèglement climatique. Selon les données réunies par l’OMM en 2013-2014, l'océan mondial absorbe actuellement un quart environ des émissions anthropiques de CO2, soit environ 4 kg de CO2 par jour et par personne (c'est-à-dire près de 22 millions de tonnes de CO2 absorbée par jour de manière globalisée). Cet effet « pompe à carbone » contribue fortement à réduire la quantité de CO2 de l’atmosphère, dont le CO2 issu des combustibles fossiles, mais cette capacité semble se dégrader en raison des effets combinés du réchauffement et de l'acidification qui affectent la production et la fixation de carbonates marins (principal puits de carbone planétaire). Selon l'OMM, le pompage océanique du carbone est déjà réduit en 2013 à 70 % de ce qu'il était au début de l'ère industrielle et il pourrait s'affaiblir jusqu'à 20 % d'ici 2100, tandis que, selon les données paléoenvironnementales disponibles, l'acidification des océans suit actuellement un rythme inédit durant les trois-cents derniers millions d'années et ne pourra qu'accélérer encore jusque 2050 (et au-delà si d'importants efforts de mitigation ne sont pas entrepris).\nLe rapport 2014 du GIEC puis celui de l'OMM ne décèlent d'ailleurs pas d'amélioration en tendance de la concentration croissante du CO2 dans l'air, et « le scénario retenu par la plupart des scientifiques conduit à une diminution du pH, d'ici la fin du siècle, de 0,3. Si a priori ce chiffre semble faible, il ne faut pas oublier qu'il s'agit d'une grandeur logarithmique, soit une acidité multipliée par deux ».\nEn 2025, l'acidification des océans est la septième des neuf limites planétaires à être franchie d'après les travaux du Stockholm Resilience Centre.\n\nCauses\nCette acidification a au moins trois causes anthropiques identifiées :\n\nl'absorption de dioxyde de carbone atmosphérique dont le taux augmente (cette augmentation est en grande partie d'origine anthropique). C'est la première cause identifiée, et probablement la plus importante ;\nl'absorption par l'océan de pluies ou d'eaux météoriques ou de ruissellement acidifiées par divers composés azotés anthropiques dits azote réactif. Ces composés sont notamment issus (directement ou indirectement par photochimie) de la circulation motorisée, de l'agriculture et du chauffage qui dégagent des oxydes d'azote, source d'acide nitreux et d'acide nitrique qui contaminent l'atmosphère puis les mers via les pluies et les cours d'eau. Les analyses isotopiques montrent que l'humain a plus que doublé la quantité d'azote réactif (Nr) annuellement entrant dans la biosphère, essentiellement à partir de 1895 ± 10 ans (± 1 pour l'écart-type) avec une forte augmentation dans les années 1960 à 2010, principalement dans l'hémisphère Nord ;\nl'absorption de composés soufrés issus des combustibles fossiles (pétrole, charbon, gaz). Le soufre, lors de la combustion se transforme en effet en dioxyde de soufre, source d'acide sulfureux et d'acide sulfurique. La plupart des navires de marine marchande et de marine de guerre utilisent encore des combustibles lourds très polluants et notamment sources d'aérosols soufrés. Ils sont une source importante d'aérosols atmosphériques.\nCes trois facteurs associés pourraient avoir des effets environnementaux synergiques, et acidifient les eaux côtières plus rapidement que ne le prévoyaient les premières modélisations.\nEnviron six téramoles d'azote actif (et deux téramoles de soufre) seraient annuellement injectées dans l’atmosphère, ce qui est bien moins que les 700 téramoles de CO2, selon une étude[réf. nécessaire] récente pilotée par Scott Doney (en) (Institut océanographique de Woods Hole, Massachusetts, USA). Cet azote aurait sur certains littoraux un impact équivalent à 10 à 50 % de celui du CO2. L'océan lointain est moins touché, mais les zones côtières et proches du plateau continental sont largement les plus importantes pour l'Homme (pêche, activité économique et touristique)[réf. nécessaire].\nIl semble de plus que les estuaires et les zones mortes ne remplissent plus leur rôle de puits de carbone, et que l'acidification est un phénomène qui puisse — parfois (comme dans le cas du drainage minier acide) et dans une certaine mesure — s'autoentretenir[réf. nécessaire]."
+        }
+      ],
+      "nb_mots_decouverte": 189,
+      "nb_mots_approfondi": 1796,
+      "sujet_id": "acidification-oceans",
+      "origine": "encyclopedie"
+    },
+    "citation": {
+      "texte": "Il n'y a pas de vent favorable pour celui qui ne sait pas dans quel port il va.",
+      "auteur": "Sénèque",
+      "source": "Lettres à Lucilius, 71",
+      "annee": 65
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 15.5,
+          "temperature_max": 18.7,
+          "temperature_min": 14.3,
+          "precipitation_mm": 0.7,
+          "probabilite_pluie_pct": 100,
+          "vent_kmh": 10.6,
+          "vent_max_kmh": 15.1,
+          "rafales_max_kmh": 27.0,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 15.5,
+              "temperature_max": 17.2,
+              "probabilite_pluie_pct": 100,
+              "precipitation_mm": 0.7,
+              "vent_max_kmh": 14,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 17.7,
+              "temperature_max": 18.7,
+              "probabilite_pluie_pct": 5,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 11,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 15.5,
+              "temperature_max": 17.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 5,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 15.7,
+          "temperature_max": 18.7,
+          "temperature_min": 14.9,
+          "precipitation_mm": 0.6,
+          "probabilite_pluie_pct": 95,
+          "vent_kmh": 13.2,
+          "vent_max_kmh": 15.5,
+          "rafales_max_kmh": 26.6,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 15.5,
+              "temperature_max": 17.1,
+              "probabilite_pluie_pct": 95,
+              "precipitation_mm": 0.6,
+              "vent_max_kmh": 13,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 17.5,
+              "temperature_max": 18.7,
+              "probabilite_pluie_pct": 2,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 15.9,
+              "temperature_max": 17.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 5,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 13.8,
+          "temperature_max": 15.2,
+          "temperature_min": 13.1,
+          "precipitation_mm": 1.6,
+          "probabilite_pluie_pct": 95,
+          "vent_kmh": 5.2,
+          "vent_max_kmh": 6.2,
+          "rafales_max_kmh": 11.2,
+          "weather_code": 80,
+          "description": "averses légères",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 13.6,
+              "temperature_max": 14.4,
+              "probabilite_pluie_pct": 95,
+              "precipitation_mm": 1.0,
+              "vent_max_kmh": 5,
+              "weather_code": 80,
+              "description": "averses légères"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 14.3,
+              "temperature_max": 15.2,
+              "probabilite_pluie_pct": 30,
+              "precipitation_mm": 0.2,
+              "vent_max_kmh": 5,
+              "weather_code": 45,
+              "description": "brouillard"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 14.1,
+              "temperature_max": 14.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.4,
+              "vent_max_kmh": 4,
+              "weather_code": 45,
+              "description": "brouillard"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 13.1,
+          "temperature_max": 15.2,
+          "temperature_min": 12.2,
+          "precipitation_mm": 0.6,
+          "probabilite_pluie_pct": 98,
+          "vent_kmh": 6.6,
+          "vent_max_kmh": 7.6,
+          "rafales_max_kmh": 13.7,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 12.7,
+              "temperature_max": 13.5,
+              "probabilite_pluie_pct": 98,
+              "precipitation_mm": 0.5,
+              "vent_max_kmh": 7,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 14.1,
+              "temperature_max": 15.2,
+              "probabilite_pluie_pct": 2,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 5,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 13.1,
+              "temperature_max": 13.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.1,
+              "vent_max_kmh": 4,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 18.7,
+      "temperature_min_zone": 12.2,
+      "probabilite_pluie_max_pct": 100,
+      "vent_max_kmh": 15.5,
+      "description_dominante": "couvert",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 12.7,
+          "temperature_max": 17.2,
+          "probabilite_pluie_pct": 100,
+          "precipitation_mm": 1.0,
+          "vent_max_kmh": 14,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 14.1,
+          "temperature_max": 18.7,
+          "probabilite_pluie_pct": 30,
+          "precipitation_mm": 0.2,
+          "vent_max_kmh": 11,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 13.1,
+          "temperature_max": 17.5,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.4,
+          "vent_max_kmh": 5,
+          "weather_code": 3,
+          "description": "couvert"
+        }
+      ],
+      "alertes": [],
+      "resume": "Couvert toute la journée, de 12° à 19°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "A Scandal in Bohemia",
+      "auteur": "Arthur Conan Doyle",
+      "annee": 1891,
+      "segments": [
+        {
+          "t": "To Sherlock Holmes she is always the woman. I have seldom",
+          "g": "rarement"
+        },
+        {
+          "t": " heard him mention her under any other name. In his eyes she eclipses",
+          "g": "éclipse"
+        },
+        {
+          "t": " and predominates",
+          "g": "domine"
+        },
+        {
+          "t": " the whole of her sex. It was not that he felt any emotion akin to",
+          "g": "apparenté à"
+        },
+        {
+          "t": " love for Irene Adler. All emotions, and that one particularly, were abhorrent",
+          "g": "odieuses"
+        },
+        {
+          "t": " to his cold, precise but admirably balanced mind. He was, I take it",
+          "g": "je suppose"
+        },
+        {
+          "t": ", the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position",
+          "g": "position déplacée"
+        },
+        {
+          "t": ". He never spoke of the softer passions, save with",
+          "g": "sauf avec"
+        },
+        {
+          "t": " a gibe",
+          "g": "la raillerie"
+        },
+        {
+          "t": " and a sneer",
+          "g": "le ricanement"
+        },
+        {
+          "t": ".",
+          "g": null
+        }
+      ],
+      "texte_glose": "To Sherlock Holmes she is always the woman. I have seldom (= rarement) heard him mention her under any other name. In his eyes she eclipses (= éclipse) and predominates (= domine) the whole of her sex. It was not that he felt any emotion akin to (= apparenté à) love for Irene Adler. All emotions, and that one particularly, were abhorrent (= odieuses) to his cold, precise but admirably balanced mind. He was, I take it (= je suppose), the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position (= position déplacée). He never spoke of the softer passions, save with (= sauf avec) a gibe (= la raillerie) and a sneer (= le ricanement)."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Ni la guerre, ni une pandémie : en France, le dérèglement climatique perçue comme la première menace."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral+nvidia",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_d": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral+nvidia",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-11-10T06:10:38.481563+01:00"
+}

@@ -1,6 +1,6 @@
 {
-  "derniere_execution": "2026-11-09T06:18:40.115246+01:00",
-  "date_visee": "2026-11-09",
+  "derniere_execution": "2026-11-10T06:19:01.656878+01:00",
+  "date_visee": "2026-11-10",
   "succes": true,
   "erreur": null,
   "synthese_llm": true,
@@ -12,7 +12,7 @@
   },
   "llm_science": {
     "genere_par_llm": true,
-    "provider": "groq+mistral",
+    "provider": "groq+mistral+nvidia",
     "erreur": null
   },
   "llm_anglais": {
@@ -49,14 +49,14 @@
   "sources_marches_en_erreur": [],
   "funnel_actualite": {
     "france": {
-      "bruts": 87,
-      "evenements_uniques": 70,
-      "retenus_apres_seuil": 30
+      "bruts": 100,
+      "evenements_uniques": 81,
+      "retenus_apres_seuil": 41
     },
     "monde": {
-      "bruts": 111,
-      "evenements_uniques": 87,
-      "retenus_apres_seuil": 35
+      "bruts": 84,
+      "evenements_uniques": 66,
+      "retenus_apres_seuil": 34
     }
   }
 }
