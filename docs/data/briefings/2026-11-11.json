@@ -1,0 +1,602 @@
+{
+  "date": "2026-11-11",
+  "derniere_mise_a_jour": "2026-11-11T06:21:06.448834+01:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Eric Zemmour, leader du parti d'extrême droite Reconquête, officialise sa candidature à l'élection présidentielle de 2027",
+          "resume": "Déjà en lice en 2022, le polémiste plusieurs fois condamné avait fini quatrième du premier tour de l'élection présidentielle, avec 7% des voix. Il avait déjà fait un grand pas vers une candidature en septembre.",
+          "pourquoi_important": "Sa candidature influence la dynamique de la présidentielle 2027.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "20 Minutes",
+            "Libération",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Retailleau soumet à Philippe, Attal et Lisnard des dates pour une primaire",
+          "resume": "Bruno Retailleau a écrit à Édouard Philippe, Gabriel Attal et David Lisnard pour leur proposer d’organiser une primaire de la droite et du centre les 31 janvier et 7 février",
+          "pourquoi_important": "La proposition de primaire pourrait structurer la droite et le centre en vue de la présidentielle 2027.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Le RN a obtenu un pré-accord de deux banques européennes pour financer sa campagne pour la présidentielle",
+          "resume": "Le Rassemblement national espère obtenir ce prêt d'ici fin novembre. Le parti a besoin de plus de 10 millions d'euros pour financer sa campagne.",
+          "pourquoi_important": "Le financement est crucial pour la campagne du parti à la présidentielle.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        },
+        {
+          "titre": "\"Il en avait parlé\" : pourquoi la candidature de Teddy Riner à l'élection présidentielle n'est pas une si grande surprise",
+          "resume": "Si la décision du quintuple champion olympique de judo étonne, à moins de deux ans des Jeux de Los Angeles, elle repose sur des prises de position répétées sur la situation en France.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "La disparition à 104 ans de Solange Alexandre, une des rares résistantes à avoir dirigé des maquisards",
+          "resume": "Agente de liaison, espionne et cheffe de maquis en Touraine, Solange Alexandre est entrée en résistance à 18 ans pour défendre la liberté pendant la Seconde Guerre mondiale. Un engagement qu'elle a transmis aux jeunes générations jusqu'à la fin de sa vie.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Guerre en Ukraine : à Abu Dhabi, les pourparlers russo-ukrainiens condamnés à l’impasse",
+          "resume": "Le président Zelensky a qualifié les échanges de « constructifs » après la rencontre du 10 novembre, tandis que la partie russe n’a pas réagi à l’idée d’un cessez-le-feu. L’administration Trump a salué la tenue de la réunion malgré huit mois de blocage.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Israël : devant la Knesset, Gadi Eisenkot promet des réformes législatives rapides avant même la formation du gouvernement",
+          "resume": "L’Assemblée israélienne pourrait adopter des lois, dont la création d’une commission d’enquête sur les événements du 7 octobre 2023 et la responsabilité personnelle de Benyamin Nétanyahou, avant même la formation d’un gouvernement.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "La justice américaine inculpe trois « agents iraniens » après l’incident près d’une base aérienne anglaise",
+          "resume": "Trois hommes sont inculpés pour des attaques en Europe, dont un projet d’attentat terroriste en septembre contre la base de Fairford.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Un militaire américain arrêté en Angleterre, soupçonné d’espionnage au profit de la Russie",
+          "resume": "Un Américain de 41 ans est soupçonné d’avoir divulgué des informations protégées à un service de renseignement étranger, selon la loi britannique de 2023 sur la sécurité nationale.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Trinité-et-Tobago : la justice dépénalise l’homosexualité",
+          "resume": "Les peines pour « sodomie » (jusqu’à cinq ans d’emprisonnement) et « indécence grave » (jusqu’à deux ans) sont supprimées par la loi.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "Le Monde",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Etats-Unis : Pete Hegseth, défiant et offensif, échappe à une tentative de destitution au Congrès",
+          "resume": "Mis en cause par le républicain Thomas Massie pour huit motifs, dont la guerre en Iran et les exécutions extrajudiciaires dans les Caraïbes, le secrétaire à la défense a vivement contre-attaqué, dans un avant-goût de la bataille qu’entend lui livrer la future majorité démocrate.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Libération",
+            "Le Monde International",
+            "France 24 International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Au Brésil, Meta condamnée à une lourde amende pour un traitement jugé inégal entre Lula et Flavio Bolsonaro durant la présidentielle",
+          "resume": "Au cours de la campagne, l’équipe de Lula avait accusé la maison mère de Facebook, d’Instagram et de WhatsApp de s’être livrée à une « manipulation algorithmique » destinée à avantager son rival de droite.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International",
+            "France 24 International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Comment Nvidia s’est retrouvé au cœur d’un scandale international, entre espionne chinoise, guerre des puces et indifférence de Donald Trump",
+          "resume": "L’affaire qui entoure la liaison extra-conjugale de Jensen Huang, PDG du géant de la tech américaine, remet en lumière les méthodes de Pékin. Paul Charon, spécialiste du renseignement et de la Chine, décrypte pour «Libé» les stratégies des services chinois.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Libération",
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "",
+      "mouvements_notables": []
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "football",
+          "texte": "Après la performance historique du RC Lens en Ligue des champions, l’entraîneur Yannick Cahuzac a été licencié. C’est le deuxième changement de coach en deux mois pour le club, qui a enregistré quatre défaites en cinq matchs."
+        },
+        {
+          "sport": "football",
+          "texte": "Manchester City a renversé Inter Milan pour remporter leur première victoire en Ligue des champions de la saison."
+        },
+        {
+          "sport": "football",
+          "texte": "La France affrontera l'Italie à Milan avec l’objectif de se qualifier pour les quarts de finale de la Ligue des nations."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Les Warriors ont battu les Pelicans avec un écart de 138 à 87, établissant le plus grand différentiel de points de la saison."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Aminata Gueye, vice-championne du monde et championne WNBA, affrontera la Grande-Bretagne avec les Bleues en qualifications pour l'Euro 2027."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Cholet a perdu 73 à 75 contre le Spartak Subotica grâce à un « game-winner » d'Igor Drobnjak."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Linda Noskova a battu Coco Gauff 6-3, 6-3 aux Finales WTA à Indian Wells, se qualifiant pour les demi-finales."
+        },
+        {
+          "sport": "rugby",
+          "texte": "L'équipe de France de para-rugby à XIII a dominé l'Irlande 82-26 en demi-finale de la Coupe du monde, se qualifiant pour la finale contre l'Angleterre."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "Arsenal – Borussia Dortmund",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-11-24T20:00:00+00:00",
+          "date_texte": "mardi 24 novembre à 21h00",
+          "sport": "football"
+        },
+        {
+          "affiche": "Milwaukee Bucks – Los Angeles Lakers",
+          "competition": "NBA",
+          "date_iso": "2026-11-12T01:00:00+00:00",
+          "date_texte": "jeudi 12 novembre à 2h00",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "decouverte",
+      "titre": "La Californie alloue 8,4 milliards de dollars à la recherche médicale, un record historique",
+      "contenu_markdown": "Les électeurs californiens ont approuvé, lors d’un vote public, un financement sans précédent de **8,4 milliards de dollars** dédié à la recherche médicale, et plus précisément aux **études sur l’immunologie**.\n\nCette décision, publiée dans *Nature* le **10 novembre 2026**, suscite à la fois de l’enthousiasme et des critiques. Les défenseurs soulignent son potentiel pour accélérer les découvertes dans un champ scientifique essentiel, tandis que certains pointent des questions sur la **priorisation des projets** ou la **transparence** dans l’utilisation de ces fonds. Les détails sur la répartition exacte des financements et les critères de sélection des recherches soutenues restent à préciser dans les publications officielles.\n\nCette initiative s’inscrit dans une dynamique plus large de mobilisation publique pour la science, mais son impact dépendra de sa mise en œuvre et de son intégration dans les politiques de santé existantes. Les résultats concrets et les avancées attendues ne pourront être évalués qu’à moyen terme.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03635-6\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Circulation thermohaline\n\n## Introduction\nLa circulation thermohaline est un système océanique majeur, souvent décrit comme une \"chaîne de montage\" invisible qui régule le climat de la planète. Contrairement aux courants de surface, visibles et influencés par les vents, cette circulation agit en profondeur, transportant des masses d’eau froide et salée sur des milliers de kilomètres. Son nom, composé des termes *thermo* (température) et *halin* (salinité), résume son principe : les variations de densité de l’eau, liées à ces deux paramètres, déclenchent des mouvements verticaux et horizontaux à l’échelle mondiale. Sans elle, les régions tempérées comme l’Europe verraient leurs hivers s’assombrir, et les écosystèmes marins s’équilibreraient différemment. Pourtant, ce mécanisme, bien que crucial, reste partiellement mystérieux pour les scientifiques.\n\n---\n\n## Pourquoi le sujet est important\nLa circulation thermohaline joue un rôle clé dans la redistribution de la chaleur à la surface du globe. En transportant des eaux chaudes des tropiques vers les pôles et des eaux froides des régions polaires vers l’équateur, elle atténue les contrastes thermiques qui existeraient sans elle. Elle influence également la disponibilité des nutriments en surface, soutenant la productivité biologique des océans, et participe au cycle du carbone en enfouissant une partie du CO₂ atmosphérique dans les profondeurs.\n\nSon importance climatique est telle que les scientifiques surveillent ses variations, car un ralentissement ou une perturbation de cette circulation pourrait avoir des conséquences majeures.\n\n---\n\n## Explication du phénomène\nLa circulation thermohaline repose sur un principe physique simple : **l’eau froide est plus dense que l’eau chaude, et l’eau salée est plus dense que l’eau douce**. Ces différences de densité créent des mouvements verticaux et horizontaux qui structurent les océans en trois couches distinctes :\n- **La couche profonde** (au-delà de 1 500 m), constituée d’eaux très froides et salées, formées près des pôles.\n\nLe moteur de la circulation se situe aux **hautes latitudes**, où l’eau de mer se refroidit et gagne en salinité (par évaporation ou rejet de glace). Dans l’Atlantique Nord, près du Groenland et de la Norvège, cette eau devient si dense qu’elle **plonge vers les fonds marins**, formant ce qu’on appelle l’**eau profonde nord-atlantique**. Dans l’océan Austral, un processus similaire se produit dans les mers de Ross et de Weddell, où se forment des eaux encore plus denses, dites **eaux de fond**.\n\n---\n## Fonctionnement / mécanismes\nLa circulation thermohaline ne se limite pas à ces descentes polaires : elle forme une **boucle géante** qui relie les océans du globe. Voici ses étapes clés :\n\n1. **Formation des eaux denses**.\n   Aux pôles, le refroidissement intense de l’eau et la rejection de la saumure (lors de la formation de glace) augmentent sa densité. Cette eau, plus lourde, coule verticalement, créant des courants descendants. Dans l’Atlantique Nord, ce processus génère l’**eau profonde nord-atlantique**, tandis que dans l’Antarctique, les **eaux de fond** (les plus denses de l’océan) se forment et glissent le long des fonds marins.\n\n2. **Transport vers les basses latitudes**.\n   Une fois en profondeur, ces eaux froides et salées migrent lentement vers l’équateur, suivant les bassins océaniques. Dans l’Atlantique, ce courant profond se déplace vers le sud, contournant l’Afrique avant de remonter partiellement en surface dans l’océan Indien et le Pacifique, via l’océan Austral.\n\n3. **Remontée et fermeture des cellules**.\n   La remontée des eaux profondes vers la surface se fait principalement par **mélange turbulent**, un processus stimulé par les vents et les marées. Dans l’océan Austral, cette remontée est particulièrement active près de la **divergence antarctique**, une zone où les courants s’écartent, permettant à l’eau froide de remonter. Une partie de ces eaux rejoint ensuite les courants de surface, complétant la boucle.\n\n4. **Rôle des autres océans**.\n   Bien que l’Atlantique Nord soit le principal moteur de la circulation thermohaline, l’océan Austral joue un rôle de **carrefour** : c’est là que les eaux profondes de l’Atlantique, du Pacifique et de l’Indien se mélangent avant de remonter ou de continuer leur trajet vers le nord.\n\n**Un cycle lent mais puissant**.\nLe temps nécessaire pour qu’une molécule d’eau parcoure l’intégralité de cette boucle est estimé à **1 000 à 1 500 ans**, ce qui illustre la lenteur de ce système par rapport aux courants de surface. Pourtant, son impact sur le climat est immédiat, car il régule les échanges de chaleur entre les pôles et l’équateur.\n\n---\n*Note : La suite de l’article abordera les données mesurées par les scientifiques, les incertitudes persistantes sur son évolution future, ainsi que les limites des modèles utilisés pour la simuler.*\n\n## Données et résultats scientifiques\n\nLes observations et les mesures réalisées depuis plusieurs décennies permettent d’estimer les débits associés à la circulation méridienne de retournement Atlantique (AMOC). À la latitude de 26,5 ° N, les débits moyens des deux cellules convectives qui composent l’AMOC sont évalués à :\n\n- **Cellule inférieure** : 2 ± 0,5 Sv  \n\nCes valeurs proviennent d’estimations basées sur l’intégration de la composante méridienne de la vitesse de courant sur la largeur du bassin atlantique, incluant l’ensemble des processus physiques (vent, marées, gradients de densité). Elles illustrent l’importance du transport d’eau profonde du Nord‑Atlantique vers le Sud et la contribution plus modeste de la seconde cellule convective.\n\nPar ailleurs, les études indiquent qu’une molécule d’eau parcourt le circuit complet de la circulation thermohaline en **environ 1 000 à 1 500 ans**. Cette durée reflète la lenteur du transport vertical et du retour des eaux profondes à la surface, notamment par mélange turbulent.\n\n## Ce que les scientifiques savent\n\n- **Mécanisme de base** : La circulation thermohaline est entraînée par les différences de densité de l’eau de mer, elles‑mêmes liées aux variations de température et de salinité. Dans les hautes latitudes de l’Atlantique Nord, l’eau refroidie et salée devient plus dense, plonge entre 1 et 3 km de profondeur et forme l’eau profonde nord‑atlantique.  \n- **Rôle du vent et des marées** : Les forçages thermiques et halins ne suffisent pas à expliquer la totalité du mouvement d’eau. Le mélange turbulent induit par le vent et les marées joue un rôle crucial, surtout dans la remontée des eaux profondes.  \n- **Définition de la MOC** : La circulation méridienne de retournement (MOC) est une fonction de courant obtenue en intégrant la composante méridienne de la vitesse sur la longitude et la profondeur. Elle est exprimée en Sverdrup et inclut tous les processus physiques, ce qui la rend plus précise et calculable que la notion plus vague de « circulation thermohaline ».  \n- **Structure de l’AMOC** : L’AMOC comprend deux cellules convectives. La première transporte les eaux de surface chaudes et salées vers le nord, où elles se densifient et plongent. La seconde cellule implique la formation d’eau profonde dans l’océan Austral (mers de Ross, de Weddell) et son transport vers le bassin atlantique.  \n\nCes connaissances reposent sur des observations in situ (bouées, stations de mesure), des relevés satellitaires et des modèles numériques d’océan qui reproduisent les champs de température, de salinité et de vitesse.\n\n## Ce qui reste incertain\n\n- **Quantification précise du transport** : Bien que les débits moyens à 26,5 ° N soient estimés, la variabilité interannuelle et les incertitudes liées aux méthodes d’intégration (choix de la zone longitudinale, profondeur de référence) restent importantes.  \n- **Contribution relative des forçages** : La part exacte du vent, des marées et des gradients de densité dans le maintien de la circulation profonde n’est pas encore totalement résolue. Les modèles suggèrent une interaction complexe, mais les mesures directes restent limitées.  \n- **Impact climatique** : Les conséquences de la circulation thermohaline sur le climat global sont décrites comme « encore mal estimées ». La façon dont des variations de l’AMOC pourraient influencer les températures régionales, les précipitations ou les événements climatiques extrêmes nécessite davantage d’études.  \n- **Temps de réponse** : La durée de 1 000 à 1 500 ans pour le circuit complet d’une molécule d’eau indique une lenteur intrinsèque, mais la réponse de la circulation à des perturbations rapides (ex. fonte des glaces) n’est pas clairement définie.\n\n## Limites et controverses éventuelles\n\n- **Définition de la circulation thermohaline** : Le terme même de « circulation thermohaline » est jugé imprécis, car il ne rend pas compte du rôle majeur du vent et des marées. Cette imprécision a conduit à la préférence pour la notion de MOC, mais certains travaux continuent d’utiliser l’ancienne terminologie, ce qui peut créer des ambiguïtés dans la littérature.  \n- **Séparation des processus** : Dans la réalité océanique, il est difficile de dissocier les mouvements induits uniquement par les gradients de densité de ceux générés par d’autres forces. Cette difficulté limite la capacité à attribuer des changements observés à un facteur spécifique.  \n- **Modélisation** : Les modèles numériques, bien qu’utiles pour calculer la MOC, simplifient certains processus (par ex. le mélange turbulent) et peuvent donc sous‑ou sur‑estimer certains aspects du transport. La validation de ces modèles repose sur des observations qui restent spatialement et temporellement incomplètes.  \n\n## Conclusion\n\nLa circulation thermohaline, ou plus précisément la circulation méridienne de retournement, constitue un pilier du système climatique mondial en redistribuant chaleur et masses d’eau à l’échelle planétaire. Les mesures actuelles montrent un transport important de l’eau profonde nord‑atlantique vers le Sud, avec des débits bien caractérisés à certaines latitudes, et une durée de cycle de l’ordre du millénaire. Cependant, la complexité des interactions entre les forçages thermiques, halins, éoliens et marées laisse plusieurs questions ouvertes, notamment quant à la précision des estimations de transport, à l’impact climatique exact et à la réponse du système face à des changements rapides. La poursuite des observations in situ, l’amélioration des réseaux de mesure et le raffinement des modèles numériques sont essentiels pour réduire ces incertitudes et mieux comprendre le rôle de la circulation profonde dans le climat futur.\n\n## Sources\n- Wikipédia (fr) — Circulation thermohaline — https://fr.wikipedia.org/wiki/Circulation_thermohaline\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 7,
+      "nb_mots": 1831,
+      "matiere_source": "fine",
+      "textes_sources_audit": [
+        {
+          "source": "Nature News",
+          "titre": "California votes to give record $8.4 billion to medical research",
+          "resume": "Nature, Published online: 10 November 2026; doi:10.1038/d41586-026-03635-6 The cash infusion, earmarked for immunology studies, is the largest ever for science authorized by a US public vote — but it has drawn criticism."
+        },
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Circulation thermohaline",
+          "resume": "La circulation thermohaline, appelée aussi circulation océanique profonde, est la circulation océanique engendrée par les différences de densité (masse volumique) de l'eau de mer, à l'origine de courants marins de profondeur. Ces différences de densité proviennent des écarts de température et de salinité des masses d'eau, d'où le terme de thermo — pour température — et halin — pour salinité.\nÀ l'échelle de la Terre, la circulation océanique de surface et la circulation océanique profonde forment une immense boucle de circulation que l’on nomme boucle thermohaline à l'origine d'un grand cycle qui brasse les eaux et convoie la chaleur à l'échelle du globe.\n\nCaractéristiques\nTempérature, salinité et densité sont reliées par la fonction d'état de l'eau de mer. Les eaux refroidies et salées plongent au niveau des hautes latitudes dans l'Atlantique-Nord (Norvège, Groenland, et mer du Labrador) et descendent vers le sud, à des profondeurs comprises entre 1 et 3 km, formant l'eau profonde Nord-Atlantique. La remontée de ces eaux se fait principalement par mélange vertical dans tout l'océan. Les scientifiques estiment qu'une molécule d'eau fait ce circuit entier en environ 1 000 à 1 500 ans. Il existe également des zones de formation d'eau dense dans l'océan Austral, au niveau des mers de Ross et de Weddell. Dans la réalité, il est difficile de séparer la circulation engendrée par les gradients de densité seuls des autres sources de mouvement des masses d'eau, telles que le vent ou les marées. Pour étudier cette circulation à grande échelle, les scientifiques préfèrent donc utiliser une notion mieux définie : la circulation méridienne de retournement (CMR ou MOC pour Meridional Overturning Circulation).\nLa circulation thermohaline a des conséquences encore mal estimées aujourd'hui sur le climat.\n\nCirculation méridienne de retournement\nLa notion de circulation thermohaline est imprécise et il en existe plusieurs définitions. Si elle est majoritairement vue comme la circulation liée aux forçages thermique et halin qui lui donnent son nom, il est maintenant établi que ces seuls forçages ne sont pas suffisants pour maintenir cette circulation et que le mélange turbulent lié au vent et aux marées joue un rôle primordial, notamment dans la remontée des eaux profondes. Progressivement, la notion de circulation méridienne de retournement, ou MOC, s'est substituée à celle de circulation thermohaline.\n\nDéfinition\nLa MOC correspond à la fonction de courant méridien. Elle s'obtient en intégrant la composante méridienne de la vitesse de courant suivant la longitude et la profondeur :\nΨ(y,z,t)=∫z0dz∫ouestestv(x,y,z,t)dx\noù Ψ désigne la fonction de courant, x la longitude, y la latitude, z la profondeur et t le temps. Son unité est le Sverdrup (i.e. 106 m3/s).\nContrairement à la circulation thermohaline, elle correspond à l'intégration de la vitesse, tous processus physiques confondus, et par conséquent, inclut la circulation liée au vent. L'intégration suivant la longitude peut être globale, ou être restreinte à un bassin, comme c'est le cas pour la circulation méridienne de retournement Atlantique, ou AMOC pour Atlantic Meridional Overturning Circulation. Elle peut également être définie comme la valeur maximale de la fonction de courant, ou la valeur maximale à une latitude donnée. Ces définitions permettent de réduire l'information à une simple série temporelle, mais suppriment toute information sur la structure méridienne et verticale de cette circulation. L'utilisation de l'une ou l'autre définition dépend du problème posé. La MOC est beaucoup utilisée dans la communauté scientifique, car elle est bien définie et facilement calculable par les modèles d'océan.\n\nCirculation méridienne de retournement Atlantique (AMOC)\nLorsque l'intégration zonale de la vitesse se limite au bassin atlantique, on parle d'AMOC pour « Atlantic MOC ».\nC'est dans l'océan Atlantique que la circulation méridienne de retournement est la plus intense et la plus étudiée. Elle est constituée de deux cellules convectives. Dans la cellule supérieure, les eaux chaudes et salées de surface sont transportées vers le nord, où elles se densifient sous l'effet de leur refroidissement. La perte de flottabilité de ce flux d'eau l'amène alors à plonger pour devenir l'eau profonde nord-atlantique (en). Cette eau profonde est transportée vers le sud à une profondeur comprise entre 1 et 4 km. Une partie finit par remonter en surface dans l'océan Austral, fermant ainsi la cellule. Le transport vers le sud de l'eau profonde nord-atlantique et sa remontée au niveau de la divergence antarctique forment également la branche supérieure de la seconde cellule convective. Cette cellule est alors fermée par la formation d'eau profonde et d'eau de fond au niveau de la mer de Weddell, qui tapissent le fond de l'océan Atlantique.\nÀ 26,5° N, les débits moyens des cellules supérieure et inférieure sont estimés à 18,7 ± 2,1 Sv et 2 ± 0,5 Sv respectivement."
+        }
+      ],
+      "nb_mots_decouverte": 185,
+      "nb_mots_approfondi": 1638,
+      "sujet_id": "circulation-thermohaline",
+      "origine": "encyclopedie"
+    },
+    "citation": {
+      "texte": "Ce n'est pas parce que les choses sont difficiles que nous n'osons pas ; c'est parce que nous n'osons pas qu'elles sont difficiles.",
+      "auteur": "Sénèque",
+      "source": "Lettres à Lucilius, 104",
+      "annee": 65
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 15.4,
+          "temperature_max": 18.2,
+          "temperature_min": 15.3,
+          "precipitation_mm": 10.2,
+          "probabilite_pluie_pct": 93,
+          "vent_kmh": 5.8,
+          "vent_max_kmh": 10.0,
+          "rafales_max_kmh": 20.9,
+          "weather_code": 63,
+          "description": "pluie",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 15.4,
+              "temperature_max": 17.1,
+              "probabilite_pluie_pct": 90,
+              "precipitation_mm": 5.2,
+              "vent_max_kmh": 10,
+              "weather_code": 51,
+              "description": "bruine légère"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 17.2,
+              "temperature_max": 18.1,
+              "probabilite_pluie_pct": 93,
+              "precipitation_mm": 5.0,
+              "vent_max_kmh": 6,
+              "weather_code": 63,
+              "description": "pluie"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 16.7,
+              "temperature_max": 17.7,
+              "probabilite_pluie_pct": 4,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 15.7,
+          "temperature_max": 18.3,
+          "temperature_min": 15.7,
+          "precipitation_mm": 10.8,
+          "probabilite_pluie_pct": 78,
+          "vent_kmh": 6.7,
+          "vent_max_kmh": 13.7,
+          "rafales_max_kmh": 24.4,
+          "weather_code": 63,
+          "description": "pluie",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 15.7,
+              "temperature_max": 17.7,
+              "probabilite_pluie_pct": 78,
+              "precipitation_mm": 7.1,
+              "vent_max_kmh": 14,
+              "weather_code": 63,
+              "description": "pluie"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 17.1,
+              "temperature_max": 18.3,
+              "probabilite_pluie_pct": 68,
+              "precipitation_mm": 3.7,
+              "vent_max_kmh": 8,
+              "weather_code": 63,
+              "description": "pluie"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 16.9,
+              "temperature_max": 17.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 13.3,
+          "temperature_max": 16.7,
+          "temperature_min": 12.6,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 6,
+          "vent_kmh": 4.7,
+          "vent_max_kmh": 5.6,
+          "rafales_max_kmh": 9.4,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 13.3,
+              "temperature_max": 15.1,
+              "probabilite_pluie_pct": 32,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 5,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 15.4,
+              "temperature_max": 16.6,
+              "probabilite_pluie_pct": 19,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 4,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 15.0,
+              "temperature_max": 15.2,
+              "probabilite_pluie_pct": 3,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 4,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 12.4,
+          "temperature_max": 16.1,
+          "temperature_min": 11.6,
+          "precipitation_mm": 0.1,
+          "probabilite_pluie_pct": 8,
+          "vent_kmh": 5.5,
+          "vent_max_kmh": 7.9,
+          "rafales_max_kmh": 13.7,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 12.4,
+              "temperature_max": 14.6,
+              "probabilite_pluie_pct": 33,
+              "precipitation_mm": 0.1,
+              "vent_max_kmh": 7,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 15.0,
+              "temperature_max": 16.1,
+              "probabilite_pluie_pct": 15,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 14.2,
+              "temperature_max": 14.7,
+              "probabilite_pluie_pct": 2,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 5,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 18.3,
+      "temperature_min_zone": 11.6,
+      "probabilite_pluie_max_pct": 93,
+      "vent_max_kmh": 13.7,
+      "description_dominante": "pluie",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 12.4,
+          "temperature_max": 17.7,
+          "probabilite_pluie_pct": 90,
+          "precipitation_mm": 7.1,
+          "vent_max_kmh": 14,
+          "weather_code": 63,
+          "description": "pluie"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 15.0,
+          "temperature_max": 18.3,
+          "probabilite_pluie_pct": 93,
+          "precipitation_mm": 5.0,
+          "vent_max_kmh": 8,
+          "weather_code": 63,
+          "description": "pluie"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 14.2,
+          "temperature_max": 17.7,
+          "probabilite_pluie_pct": 4,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 9,
+          "weather_code": 3,
+          "description": "couvert"
+        }
+      ],
+      "alertes": [],
+      "resume": "Pluie le matin, pluie l'après-midi, couvert le soir, de 12° à 18°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "Jane Eyre",
+      "auteur": "Charlotte Brontë",
+      "annee": 1847,
+      "segments": [
+        {
+          "t": "There was no possibility of taking a walk that day. We had been wandering",
+          "g": "errer"
+        },
+        {
+          "t": ", indeed, in the leafless",
+          "g": "dépouillé de ses feuilles"
+        },
+        {
+          "t": " shrubbery",
+          "g": "bosquet d'arbustes"
+        },
+        {
+          "t": " an hour in the morning; but since dinner (Mrs. Reed, when there was no company, dined early) the cold winter wind had brought with it clouds so sombre, and a rain so penetrating, that further out-door exercise was now out of the question",
+          "g": "hors de question"
+        },
+        {
+          "t": ". I was glad of it: I never liked long walks, especially on chilly",
+          "g": "frisquets"
+        },
+        {
+          "t": " afternoons: dreadful",
+          "g": "pénible, affreux"
+        },
+        {
+          "t": " to me was the coming home in the raw",
+          "g": "humide et glacial"
+        },
+        {
+          "t": " twilight",
+          "g": "le crépuscule"
+        },
+        {
+          "t": ", with nipped",
+          "g": "gelés"
+        },
+        {
+          "t": " fingers and toes, and a heart saddened by the chidings",
+          "g": "les réprimandes"
+        },
+        {
+          "t": " of Bessie, the nurse, and humbled",
+          "g": "humiliée"
+        },
+        {
+          "t": " by the consciousness of my physical inferiority to Eliza, John, and Georgiana Reed.",
+          "g": null
+        }
+      ],
+      "texte_glose": "There was no possibility of taking a walk that day. We had been wandering (= errer), indeed, in the leafless (= dépouillé de ses feuilles) shrubbery (= bosquet d'arbustes) an hour in the morning; but since dinner (Mrs. Reed, when there was no company, dined early) the cold winter wind had brought with it clouds so sombre, and a rain so penetrating, that further out-door exercise was now out of the question (= hors de question). I was glad of it: I never liked long walks, especially on chilly (= frisquets) afternoons: dreadful (= pénible, affreux) to me was the coming home in the raw (= humide et glacial) twilight (= le crépuscule), with nipped (= gelés) fingers and toes, and a heart saddened by the chidings (= les réprimandes) of Bessie, the nurse, and humbled (= humiliée) by the consciousness of my physical inferiority to Eliza, John, and Georgiana Reed."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Eric Zemmour, leader du parti d'extrême droite Reconquête, officialise sa candidature à l'élection présidentielle de 2027."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_d": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 1
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-11-11T06:10:40.864880+01:00"
+}
