@@ -1,19 +1,19 @@
 {
-  "derniere_execution": "2026-11-11T06:21:06.448834+01:00",
-  "date_visee": "2026-11-11",
+  "derniere_execution": "2026-11-12T06:23:31.441570+01:00",
+  "date_visee": "2026-11-12",
   "succes": true,
   "erreur": null,
   "synthese_llm": true,
-  "erreur_llm": null,
+  "erreur_llm": "science_d[nvidia: HTTPSConnectionPool(host='integrate.api.nvidia.com', port=443): Read timed out. (read timeout=150) | mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | groq: article trop court (60 mots, minimum 80) | openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"me]",
   "llm_bloc": {
     "genere_par_llm": true,
-    "provider": "groq+mistral",
+    "provider": "groq",
     "erreur": null
   },
   "llm_science": {
     "genere_par_llm": true,
     "provider": "groq+mistral",
-    "erreur": null
+    "erreur": "science_d[nvidia: HTTPSConnectionPool(host='integrate.api.nvidia.com', port=443): Read timed out. (read timeout=150) | mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | groq: article trop court (60 mots, minimum 80) | openrouter: 429 Too Many Requests (provider=openrouter): {\"e"
   },
   "llm_anglais": {
     "genere_par_llm": false,
@@ -49,14 +49,14 @@
   "sources_marches_en_erreur": [],
   "funnel_actualite": {
     "france": {
-      "bruts": 92,
-      "evenements_uniques": 72,
-      "retenus_apres_seuil": 22
+      "bruts": 84,
+      "evenements_uniques": 68,
+      "retenus_apres_seuil": 32
     },
     "monde": {
-      "bruts": 104,
-      "evenements_uniques": 84,
-      "retenus_apres_seuil": 36
+      "bruts": 100,
+      "evenements_uniques": 78,
+      "retenus_apres_seuil": 38
     }
   }
 }

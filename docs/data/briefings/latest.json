@@ -1,69 +1,68 @@
 {
-  "date": "2026-11-11",
-  "derniere_mise_a_jour": "2026-11-11T06:21:06.448834+01:00",
+  "date": "2026-11-12",
+  "derniere_mise_a_jour": "2026-11-12T06:23:31.441570+01:00",
   "briefing": {
     "actualite": {
       "france": [
         {
-          "titre": "Eric Zemmour, leader du parti d'extrême droite Reconquête, officialise sa candidature à l'élection présidentielle de 2027",
-          "resume": "Déjà en lice en 2022, le polémiste plusieurs fois condamné avait fini quatrième du premier tour de l'élection présidentielle, avec 7% des voix. Il avait déjà fait un grand pas vers une candidature en septembre.",
-          "pourquoi_important": "Sa candidature influence la dynamique de la présidentielle 2027.",
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "France Info",
-            "20 Minutes",
-            "Libération",
-            "France 24 International"
-          ]
-        },
-        {
-          "titre": "Présidentielle 2027 : Retailleau soumet à Philippe, Attal et Lisnard des dates pour une primaire",
-          "resume": "Bruno Retailleau a écrit à Édouard Philippe, Gabriel Attal et David Lisnard pour leur proposer d’organiser une primaire de la droite et du centre les 31 janvier et 7 février",
-          "pourquoi_important": "La proposition de primaire pourrait structurer la droite et le centre en vue de la présidentielle 2027.",
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "20 Minutes"
-          ]
-        },
-        {
-          "titre": "Le RN a obtenu un pré-accord de deux banques européennes pour financer sa campagne pour la présidentielle",
-          "resume": "Le Rassemblement national espère obtenir ce prêt d'ici fin novembre. Le parti a besoin de plus de 10 millions d'euros pour financer sa campagne.",
-          "pourquoi_important": "Le financement est crucial pour la campagne du parti à la présidentielle.",
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "France Info"
-          ]
-        },
-        {
-          "titre": "\"Il en avait parlé\" : pourquoi la candidature de Teddy Riner à l'élection présidentielle n'est pas une si grande surprise",
-          "resume": "Si la décision du quintuple champion olympique de judo étonne, à moins de deux ans des Jeux de Los Angeles, elle repose sur des prises de position répétées sur la situation en France.",
+          "titre": "Plus de cent constitutionnalistes critiquent le référendum pour changer la Constitution tel que proposé par Marine Le Pen",
+          "resume": "Tout comme le président du Conseil constitutionnel Richard Ferrand mi-octobre, ils estiment irrégulière la proposition phare du programme du RN.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "France Info",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Bruno Retailleau propose un calendrier pour la primaire et accentue la pression sur Edouard Philippe",
+          "resume": "Le candidat Les Républicains propose de départager les postulants à l’Elysée les 31 janvier et 7 février. Une première réunion doit avoir lieu mardi pour fixer les modalités. Si Gabriel Attal et David Lisnard seront représentés par leurs directeurs de campagne, le siège du représentant Horizons restera vide.",
+          "pourquoi_important": "Le calendrier proposé structure la primaire pour la présidentielle 2027.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Le suspect de l'attentat raciste de Trappes et La Verrière avait dressé une liste de personnalités de gauche et d'extrême gauche",
+          "resume": "Lors de la perquisition à son domicile, les enquêteurs ont découvert sur un post-it une liste de quatre personnalités de gauche et d'extrême gauche, ainsi que leurs numéros de téléphone.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Mélenchon chambre la droite sur la candidature de Riner à l’Élysée",
+          "resume": "L’arrivée dans la campagne du judoka a été saluée par Edouard Philippe et Gabriel Attal. Mais cette candidature pourrait vite les embarrasser tant ses premières positions sonnent très macronistes.",
+          "pourquoi_important": "La candidature de Riner crée des tensions entre la droite et la campagne.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
             "Libération",
             "20 Minutes"
           ]
         },
         {
-          "titre": "La disparition à 104 ans de Solange Alexandre, une des rares résistantes à avoir dirigé des maquisards",
-          "resume": "Agente de liaison, espionne et cheffe de maquis en Touraine, Solange Alexandre est entrée en résistance à 18 ans pour défendre la liberté pendant la Seconde Guerre mondiale. Un engagement qu'elle a transmis aux jeunes générations jusqu'à la fin de sa vie.",
-          "pourquoi_important": null,
+          "titre": "Présidentielle 2027 : Sans être candidate à l’Élysée, Lagarde fait mieux que Philippe dans un sondage",
+          "resume": "Alors qu’elle quittera la présidence de la BCE en février, Christine Lagarde recueille 14 % des intentions de vote si elle se lance dans la course présidentielle",
+          "pourquoi_important": "Le sondage indique une popularité notable de Lagarde pour la présidentielle.",
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
-            "France Info"
+            "20 Minutes"
           ]
         }
       ],
       "monde": [
         {
-          "titre": "Guerre en Ukraine : à Abu Dhabi, les pourparlers russo-ukrainiens condamnés à l’impasse",
-          "resume": "Le président Zelensky a qualifié les échanges de « constructifs » après la rencontre du 10 novembre, tandis que la partie russe n’a pas réagi à l’idée d’un cessez-le-feu. L’administration Trump a salué la tenue de la réunion malgré huit mois de blocage.",
+          "titre": "Guerre en Ukraine : Volodymyr Zelensky juge une avancée possible avant la fin de l’année dans les pourparlers de paix",
+          "resume": "« Aujourd’hui, cette fenêtre d’opportunité existe réellement, où tous les participants actuellement engagés dans le processus de négociation souhaitent véritablement obtenir un résultat avant 2027 », a estimé mercredi le président ukrainien. En visite en Irlande, il doit s’entretenir jeudi avec les émissaires américains, Jared Kushner et Steve Witkoff, qui auront au préalable rencontré son homologue russe Vladimir Poutine.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
@@ -74,130 +73,150 @@
           ]
         },
         {
-          "titre": "Israël : devant la Knesset, Gadi Eisenkot promet des réformes législatives rapides avant même la formation du gouvernement",
-          "resume": "L’Assemblée israélienne pourrait adopter des lois, dont la création d’une commission d’enquête sur les événements du 7 octobre 2023 et la responsabilité personnelle de Benyamin Nétanyahou, avant même la formation d’un gouvernement.",
+          "titre": "Présidentielle 2027 : Jean-Luc Mélenchon, critiqué pour ses propositions sur l’Ukraine, accuse les médias d’avoir « truqué ses paroles »",
+          "resume": "Le candidat « insoumis » a, lors de son meeting du 7 novembre, évoqué la possibilité d’un référendum sur la cession du Donbass à la Russie pour résoudre le conflit. Le chef de file de La France insoumise a vivement répondu aux critiques mercredi 11 novembre dans un « discours sur la paix ».",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Paraguay : la Banque centrale rembourse en partie tous les clients de Ueno Bank dont l’effondrement a provoqué la chute du président",
+          "resume": "L’institution a partiellement remboursé des fonds à plus de 1,8 million d’épargnants de cette banque en ligne placée sous administration judiciaire début novembre en raison de problèmes de solvabilité. Les plus gros déposants devront patienter pour espérer récupérer l’intégralité de leurs fonds.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "France 24 International",
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Un représentant des colonies juives en Cisjordanie refoulé à son arrivée en France, Israël dénonce une mesure « inacceptable »",
+          "resume": "Cet incident intervient dans un climat de tensions entre l’Etat hébreu et les pays européens. « Israël va exiger des explications au gouvernement français et envisagera les suites à donner en conséquence », a réagi, mercredi, le ministère des affaires étrangères israélien.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "Le Monde",
-            "Le Monde International",
-            "Libération"
-          ]
-        },
-        {
-          "titre": "La justice américaine inculpe trois « agents iraniens » après l’incident près d’une base aérienne anglaise",
-          "resume": "Trois hommes sont inculpés pour des attaques en Europe, dont un projet d’attentat terroriste en septembre contre la base de Fairford.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
             "Le Monde International",
             "France 24 International"
           ]
         },
         {
-          "titre": "Un militaire américain arrêté en Angleterre, soupçonné d’espionnage au profit de la Russie",
-          "resume": "Un Américain de 41 ans est soupçonné d’avoir divulgué des informations protégées à un service de renseignement étranger, selon la loi britannique de 2023 sur la sécurité nationale.",
+          "titre": "L'Iran menace de frapper des bases américaines en Europe si elles servent à lancer des attaques",
+          "resume": "Plus de huit mois après le début de la guerre entre Téhéran et Washington, les efforts diplomatiques se poursuivent pour tenter de mettre fin aux hostilités, sans avancées visibles.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "Le Monde",
-            "Le Monde International",
-            "France 24 International"
-          ]
-        },
-        {
-          "titre": "Trinité-et-Tobago : la justice dépénalise l’homosexualité",
-          "resume": "Les peines pour « sodomie » (jusqu’à cinq ans d’emprisonnement) et « indécence grave » (jusqu’à deux ans) sont supprimées par la loi.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde International",
-            "Le Monde",
+            "France Info",
+            "France 24 International",
             "20 Minutes"
           ]
         },
         {
-          "titre": "Etats-Unis : Pete Hegseth, défiant et offensif, échappe à une tentative de destitution au Congrès",
-          "resume": "Mis en cause par le républicain Thomas Massie pour huit motifs, dont la guerre en Iran et les exécutions extrajudiciaires dans les Caraïbes, le secrétaire à la défense a vivement contre-attaqué, dans un avant-goût de la bataille qu’entend lui livrer la future majorité démocrate.",
+          "titre": "En RDC, Félix Tshisekedi promulgue une loi controversée qui lui ouvre la voie à un troisième mandat",
+          "resume": "Le 9 novembre, un texte qui permet de soumettre une nouvelle Constitution au référendum est entré en vigueur en République démocratique du Congo. Une disposition technique qui permet au président d’assouvir son ambition de maintien au pouvoir au-delà de la fin officielle de son mandat, en 2028. L’opposition est vent debout mais peine à peser sur le jeu politique.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "Le Monde",
-            "Libération",
-            "Le Monde International",
-            "France 24 International"
-          ],
-          "complete_par_code": true
-        },
-        {
-          "titre": "Au Brésil, Meta condamnée à une lourde amende pour un traitement jugé inégal entre Lula et Flavio Bolsonaro durant la présidentielle",
-          "resume": "Au cours de la campagne, l’équipe de Lula avait accusé la maison mère de Facebook, d’Instagram et de WhatsApp de s’être livrée à une « manipulation algorithmique » destinée à avantager son rival de droite.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "Le Monde International",
-            "France 24 International"
-          ],
-          "complete_par_code": true
-        },
-        {
-          "titre": "Comment Nvidia s’est retrouvé au cœur d’un scandale international, entre espionne chinoise, guerre des puces et indifférence de Donald Trump",
-          "resume": "L’affaire qui entoure la liaison extra-conjugale de Jensen Huang, PDG du géant de la tech américaine, remet en lumière les méthodes de Pékin. Paul Charon, spécialiste du renseignement et de la Chine, décrypte pour «Libé» les stratégies des services chinois.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Libération",
             "Le Monde International"
-          ],
-          "complete_par_code": true
+          ]
+        },
+        {
+          "titre": "Les élus démocrates veulent lancer des enquêtes tous azimuts contre l’administration Trump",
+          "resume": "Après leur éclatante victoire aux midterms, les démocrates préparent une longue liste de sujets possibles d’investigation, de l’enrichissement personnel du président aux abus systémiques des agents de l’ICE en passant par les suites de l’affaire Epstein. Au risque que l’administration Trump refuse de répondre aux assignations à comparaître.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Les écoles italiennes, irlandaises et écossaises visées par des alertes à la bombe",
+          "resume": "Des courriers électroniques menaçants ont été envoyés à des milliers d’établissements scolaires, mercredi 11 novembre. Les autorités de Belfast, de Dublin et d’Edimbourg ont minimisé le danger, mais en Italie le gouvernement voudrait quand même sensibiliser davantage les citoyens aux risques de la guerre hybride.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "Le Monde"
+          ]
         }
       ]
     },
     "marches": {
       "resume_court": "",
-      "mouvements_notables": []
+      "mouvements_notables": [
+        {
+          "nom": "S&P 500",
+          "variation_pct": 1.31,
+          "explication": null
+        },
+        {
+          "nom": "Nasdaq",
+          "variation_pct": 1.6,
+          "explication": null
+        },
+        {
+          "nom": "DAX",
+          "variation_pct": 1.2,
+          "explication": "Selon BFM Business, les résultats de Siemens Energy ont soutenu les marchés européens."
+        },
+        {
+          "nom": "Euro Stoxx 50",
+          "variation_pct": 1.04,
+          "explication": "Selon BFM Business, les résultats de Siemens Energy ont soutenu les marchés européens."
+        },
+        {
+          "nom": "Pétrole (Brent)",
+          "variation_pct": -1.6,
+          "explication": null
+        }
+      ]
     },
     "sport": {
       "items": [
         {
           "sport": "football",
-          "texte": "Après la performance historique du RC Lens en Ligue des champions, l’entraîneur Yannick Cahuzac a été licencié. C’est le deuxième changement de coach en deux mois pour le club, qui a enregistré quatre défaites en cinq matchs."
+          "texte": "Wendie Renard a marqué le sixième but de Lyon contre la Juventus Turin (6-0) en Ligue des champions, après avoir d'abord manqué une panenka puis conclu sur un ballon relâché par la gardienne."
         },
         {
           "sport": "football",
-          "texte": "Manchester City a renversé Inter Milan pour remporter leur première victoire en Ligue des champions de la saison."
+          "texte": "Lyon a remporté une victoire de 6-0 contre la Juventus Turin en Ligue des champions, poursuivant une série de six victoires avant de se rendre en Italie."
         },
         {
           "sport": "football",
-          "texte": "La France affrontera l'Italie à Milan avec l’objectif de se qualifier pour les quarts de finale de la Ligue des nations."
+          "texte": "Liverpool a perdu 0-1 contre Arsenal à Anfield en Premier League le 1er novembre ; le Comité des incidents clés du match a jugé que Liverpool aurait dû bénéficier d'un penalty après un tirage de maillot sur Alexander Isak."
         },
         {
           "sport": "basketball",
-          "texte": "Les Warriors ont battu les Pelicans avec un écart de 138 à 87, établissant le plus grand différentiel de points de la saison."
+          "texte": "Nanterre a perdu 102-82 contre le Rytas Vilnius en Ligue des champions, restant à la dernière place du groupe A."
         },
         {
           "sport": "basketball",
-          "texte": "Aminata Gueye, vice-championne du monde et championne WNBA, affrontera la Grande-Bretagne avec les Bleues en qualifications pour l'Euro 2027."
+          "texte": "L'équipe de France a battu la Grande-Bretagne 104-57 lors des qualifications pour l'Eurobasket 2027, avec le retour en sélection de Marine Fauthoux, la première de Coline Franchelin et la présence d'Aminata Gueye."
         },
         {
           "sport": "basketball",
-          "texte": "Cholet a perdu 73 à 75 contre le Spartak Subotica grâce à un « game-winner » d'Igor Drobnjak."
+          "texte": "Aminata Gueye, vice-championne du monde en septembre et championne WNBA en octobre, affronte la Grande-Bretagne avec les Bleues en qualifications pour l'Euro 2027."
         },
         {
           "sport": "tennis",
-          "texte": "Linda Noskova a battu Coco Gauff 6-3, 6-3 aux Finales WTA à Indian Wells, se qualifiant pour les demi-finales."
+          "texte": "Linda Noskova a battu Coco Gauff 6-3, 6-3 lors de la deuxième journée du groupe A des Finales WTA à Indian Wells, se qualifiant pour les demi-finales."
         },
         {
-          "sport": "rugby",
-          "texte": "L'équipe de France de para-rugby à XIII a dominé l'Irlande 82-26 en demi-finale de la Coupe du monde, se qualifiant pour la finale contre l'Angleterre."
+          "sport": "autres",
+          "texte": "Harry Kane, depuis son but 79 secondes après ses débuts à 21 ans, approche le record d’apparitions de sa nation, selon BBC Sport."
         }
       ],
       "rien_a_signaler": false,
@@ -210,334 +229,335 @@
           "sport": "football"
         },
         {
-          "affiche": "Milwaukee Bucks – Los Angeles Lakers",
+          "affiche": "Miami Heat – Milwaukee Bucks",
           "competition": "NBA",
-          "date_iso": "2026-11-12T01:00:00+00:00",
-          "date_texte": "jeudi 12 novembre à 2h00",
+          "date_iso": "2026-11-19T00:00:00+00:00",
+          "date_texte": "jeudi 19 novembre à 1h00",
           "sport": "basketball"
         }
       ]
     },
     "science": {
-      "mode": "decouverte",
-      "titre": "La Californie alloue 8,4 milliards de dollars à la recherche médicale, un record historique",
-      "contenu_markdown": "Les électeurs californiens ont approuvé, lors d’un vote public, un financement sans précédent de **8,4 milliards de dollars** dédié à la recherche médicale, et plus précisément aux **études sur l’immunologie**.\n\nCette décision, publiée dans *Nature* le **10 novembre 2026**, suscite à la fois de l’enthousiasme et des critiques. Les défenseurs soulignent son potentiel pour accélérer les découvertes dans un champ scientifique essentiel, tandis que certains pointent des questions sur la **priorisation des projets** ou la **transparence** dans l’utilisation de ces fonds. Les détails sur la répartition exacte des financements et les critères de sélection des recherches soutenues restent à préciser dans les publications officielles.\n\nCette initiative s’inscrit dans une dynamique plus large de mobilisation publique pour la science, mais son impact dépendra de sa mise en œuvre et de son intégration dans les politiques de santé existantes. Les résultats concrets et les avancées attendues ne pourront être évalués qu’à moyen terme.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03635-6\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Circulation thermohaline\n\n## Introduction\nLa circulation thermohaline est un système océanique majeur, souvent décrit comme une \"chaîne de montage\" invisible qui régule le climat de la planète. Contrairement aux courants de surface, visibles et influencés par les vents, cette circulation agit en profondeur, transportant des masses d’eau froide et salée sur des milliers de kilomètres. Son nom, composé des termes *thermo* (température) et *halin* (salinité), résume son principe : les variations de densité de l’eau, liées à ces deux paramètres, déclenchent des mouvements verticaux et horizontaux à l’échelle mondiale. Sans elle, les régions tempérées comme l’Europe verraient leurs hivers s’assombrir, et les écosystèmes marins s’équilibreraient différemment. Pourtant, ce mécanisme, bien que crucial, reste partiellement mystérieux pour les scientifiques.\n\n---\n\n## Pourquoi le sujet est important\nLa circulation thermohaline joue un rôle clé dans la redistribution de la chaleur à la surface du globe. En transportant des eaux chaudes des tropiques vers les pôles et des eaux froides des régions polaires vers l’équateur, elle atténue les contrastes thermiques qui existeraient sans elle. Elle influence également la disponibilité des nutriments en surface, soutenant la productivité biologique des océans, et participe au cycle du carbone en enfouissant une partie du CO₂ atmosphérique dans les profondeurs.\n\nSon importance climatique est telle que les scientifiques surveillent ses variations, car un ralentissement ou une perturbation de cette circulation pourrait avoir des conséquences majeures.\n\n---\n\n## Explication du phénomène\nLa circulation thermohaline repose sur un principe physique simple : **l’eau froide est plus dense que l’eau chaude, et l’eau salée est plus dense que l’eau douce**. Ces différences de densité créent des mouvements verticaux et horizontaux qui structurent les océans en trois couches distinctes :\n- **La couche profonde** (au-delà de 1 500 m), constituée d’eaux très froides et salées, formées près des pôles.\n\nLe moteur de la circulation se situe aux **hautes latitudes**, où l’eau de mer se refroidit et gagne en salinité (par évaporation ou rejet de glace). Dans l’Atlantique Nord, près du Groenland et de la Norvège, cette eau devient si dense qu’elle **plonge vers les fonds marins**, formant ce qu’on appelle l’**eau profonde nord-atlantique**. Dans l’océan Austral, un processus similaire se produit dans les mers de Ross et de Weddell, où se forment des eaux encore plus denses, dites **eaux de fond**.\n\n---\n## Fonctionnement / mécanismes\nLa circulation thermohaline ne se limite pas à ces descentes polaires : elle forme une **boucle géante** qui relie les océans du globe. Voici ses étapes clés :\n\n1. **Formation des eaux denses**.\n   Aux pôles, le refroidissement intense de l’eau et la rejection de la saumure (lors de la formation de glace) augmentent sa densité. Cette eau, plus lourde, coule verticalement, créant des courants descendants. Dans l’Atlantique Nord, ce processus génère l’**eau profonde nord-atlantique**, tandis que dans l’Antarctique, les **eaux de fond** (les plus denses de l’océan) se forment et glissent le long des fonds marins.\n\n2. **Transport vers les basses latitudes**.\n   Une fois en profondeur, ces eaux froides et salées migrent lentement vers l’équateur, suivant les bassins océaniques. Dans l’Atlantique, ce courant profond se déplace vers le sud, contournant l’Afrique avant de remonter partiellement en surface dans l’océan Indien et le Pacifique, via l’océan Austral.\n\n3. **Remontée et fermeture des cellules**.\n   La remontée des eaux profondes vers la surface se fait principalement par **mélange turbulent**, un processus stimulé par les vents et les marées. Dans l’océan Austral, cette remontée est particulièrement active près de la **divergence antarctique**, une zone où les courants s’écartent, permettant à l’eau froide de remonter. Une partie de ces eaux rejoint ensuite les courants de surface, complétant la boucle.\n\n4. **Rôle des autres océans**.\n   Bien que l’Atlantique Nord soit le principal moteur de la circulation thermohaline, l’océan Austral joue un rôle de **carrefour** : c’est là que les eaux profondes de l’Atlantique, du Pacifique et de l’Indien se mélangent avant de remonter ou de continuer leur trajet vers le nord.\n\n**Un cycle lent mais puissant**.\nLe temps nécessaire pour qu’une molécule d’eau parcoure l’intégralité de cette boucle est estimé à **1 000 à 1 500 ans**, ce qui illustre la lenteur de ce système par rapport aux courants de surface. Pourtant, son impact sur le climat est immédiat, car il régule les échanges de chaleur entre les pôles et l’équateur.\n\n---\n*Note : La suite de l’article abordera les données mesurées par les scientifiques, les incertitudes persistantes sur son évolution future, ainsi que les limites des modèles utilisés pour la simuler.*\n\n## Données et résultats scientifiques\n\nLes observations et les mesures réalisées depuis plusieurs décennies permettent d’estimer les débits associés à la circulation méridienne de retournement Atlantique (AMOC). À la latitude de 26,5 ° N, les débits moyens des deux cellules convectives qui composent l’AMOC sont évalués à :\n\n- **Cellule inférieure** : 2 ± 0,5 Sv  \n\nCes valeurs proviennent d’estimations basées sur l’intégration de la composante méridienne de la vitesse de courant sur la largeur du bassin atlantique, incluant l’ensemble des processus physiques (vent, marées, gradients de densité). Elles illustrent l’importance du transport d’eau profonde du Nord‑Atlantique vers le Sud et la contribution plus modeste de la seconde cellule convective.\n\nPar ailleurs, les études indiquent qu’une molécule d’eau parcourt le circuit complet de la circulation thermohaline en **environ 1 000 à 1 500 ans**. Cette durée reflète la lenteur du transport vertical et du retour des eaux profondes à la surface, notamment par mélange turbulent.\n\n## Ce que les scientifiques savent\n\n- **Mécanisme de base** : La circulation thermohaline est entraînée par les différences de densité de l’eau de mer, elles‑mêmes liées aux variations de température et de salinité. Dans les hautes latitudes de l’Atlantique Nord, l’eau refroidie et salée devient plus dense, plonge entre 1 et 3 km de profondeur et forme l’eau profonde nord‑atlantique.  \n- **Rôle du vent et des marées** : Les forçages thermiques et halins ne suffisent pas à expliquer la totalité du mouvement d’eau. Le mélange turbulent induit par le vent et les marées joue un rôle crucial, surtout dans la remontée des eaux profondes.  \n- **Définition de la MOC** : La circulation méridienne de retournement (MOC) est une fonction de courant obtenue en intégrant la composante méridienne de la vitesse sur la longitude et la profondeur. Elle est exprimée en Sverdrup et inclut tous les processus physiques, ce qui la rend plus précise et calculable que la notion plus vague de « circulation thermohaline ».  \n- **Structure de l’AMOC** : L’AMOC comprend deux cellules convectives. La première transporte les eaux de surface chaudes et salées vers le nord, où elles se densifient et plongent. La seconde cellule implique la formation d’eau profonde dans l’océan Austral (mers de Ross, de Weddell) et son transport vers le bassin atlantique.  \n\nCes connaissances reposent sur des observations in situ (bouées, stations de mesure), des relevés satellitaires et des modèles numériques d’océan qui reproduisent les champs de température, de salinité et de vitesse.\n\n## Ce qui reste incertain\n\n- **Quantification précise du transport** : Bien que les débits moyens à 26,5 ° N soient estimés, la variabilité interannuelle et les incertitudes liées aux méthodes d’intégration (choix de la zone longitudinale, profondeur de référence) restent importantes.  \n- **Contribution relative des forçages** : La part exacte du vent, des marées et des gradients de densité dans le maintien de la circulation profonde n’est pas encore totalement résolue. Les modèles suggèrent une interaction complexe, mais les mesures directes restent limitées.  \n- **Impact climatique** : Les conséquences de la circulation thermohaline sur le climat global sont décrites comme « encore mal estimées ». La façon dont des variations de l’AMOC pourraient influencer les températures régionales, les précipitations ou les événements climatiques extrêmes nécessite davantage d’études.  \n- **Temps de réponse** : La durée de 1 000 à 1 500 ans pour le circuit complet d’une molécule d’eau indique une lenteur intrinsèque, mais la réponse de la circulation à des perturbations rapides (ex. fonte des glaces) n’est pas clairement définie.\n\n## Limites et controverses éventuelles\n\n- **Définition de la circulation thermohaline** : Le terme même de « circulation thermohaline » est jugé imprécis, car il ne rend pas compte du rôle majeur du vent et des marées. Cette imprécision a conduit à la préférence pour la notion de MOC, mais certains travaux continuent d’utiliser l’ancienne terminologie, ce qui peut créer des ambiguïtés dans la littérature.  \n- **Séparation des processus** : Dans la réalité océanique, il est difficile de dissocier les mouvements induits uniquement par les gradients de densité de ceux générés par d’autres forces. Cette difficulté limite la capacité à attribuer des changements observés à un facteur spécifique.  \n- **Modélisation** : Les modèles numériques, bien qu’utiles pour calculer la MOC, simplifient certains processus (par ex. le mélange turbulent) et peuvent donc sous‑ou sur‑estimer certains aspects du transport. La validation de ces modèles repose sur des observations qui restent spatialement et temporellement incomplètes.  \n\n## Conclusion\n\nLa circulation thermohaline, ou plus précisément la circulation méridienne de retournement, constitue un pilier du système climatique mondial en redistribuant chaleur et masses d’eau à l’échelle planétaire. Les mesures actuelles montrent un transport important de l’eau profonde nord‑atlantique vers le Sud, avec des débits bien caractérisés à certaines latitudes, et une durée de cycle de l’ordre du millénaire. Cependant, la complexité des interactions entre les forçages thermiques, halins, éoliens et marées laisse plusieurs questions ouvertes, notamment quant à la précision des estimations de transport, à l’impact climatique exact et à la réponse du système face à des changements rapides. La poursuite des observations in situ, l’amélioration des réseaux de mesure et le raffinement des modèles numériques sont essentiels pour réduire ces incertitudes et mieux comprendre le rôle de la circulation profonde dans le climat futur.\n\n## Sources\n- Wikipédia (fr) — Circulation thermohaline — https://fr.wikipedia.org/wiki/Circulation_thermohaline\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
-      "phrases_retirees_garde_fou": 7,
-      "nb_mots": 1831,
-      "matiere_source": "fine",
+      "mode": "approfondi",
+      "titre": "La supraconductivité : un phénomène révolutionnaire aux applications stratégiques",
+      "contenu_markdown": "## Introduction\nLa supraconductivité est un phénomène physique fascinant, découvert au début du XXe siècle, qui défie les lois classiques de l’électricité. Elle se manifeste par deux propriétés remarquables : l’**absence totale de résistance électrique** dans certains matériaux, et l’**expulsion du champ magnétique** (effet Meissner) lorsqu’ils sont refroidis en dessous d’une température critique. Ces caractéristiques ouvrent la voie à des applications révolutionnaires, comme le transport d’électricité sans perte d’énergie ou le développement d’aimants ultra-puissants pour les machines d’imagerie médicale (IRM). Pourtant, malgré des progrès majeurs, ce phénomène reste partiellement mystérieux, notamment pour les matériaux dits « non conventionnels ».\n\n## Pourquoi ce sujet est-il important ?\nLa supraconductivité est un domaine clé de la physique moderne, à la fois pour ses implications fondamentales et ses applications technologiques. **Sans perte d’énergie lors du transport du courant électrique**, elle pourrait transformer les réseaux énergétiques, réduire la consommation mondiale et limiter les émissions de gaz à effet de serre. Par ailleurs, les supraconducteurs permettent de créer des **champs magnétiques extrêmement intenses**, utiles en médecine (IRM), en recherche (accélérateurs de particules) ou même dans les trains à sustentation magnétique (Maglev).\n\nHistoriquement, la découverte de ce phénomène en 1911 par le physicien néerlandais **Heike Kamerlingh Onnes** (prix Nobel en 1913) a marqué un tournant. Plus tard, la mise au jour des **cuprates** en 1986 – des matériaux supraconducteurs à des températures bien plus élevées que les précédents – a relancé l’intérêt scientifique, même si ces températures restent très basses (jusqu’à −140 °C). Aujourd’hui, la supraconductivité reste un enjeu majeur pour les physiciens, car elle interroge les lois quantiques de la matière et pourrait, à terme, permettre des avancées dans des domaines aussi variés que l’informatique quantique ou l’énergie propre.\n\n## Explication du phénomène\nLa supraconductivité repose sur des mécanismes **quantiques** qui modifient radicalement le comportement des électrons dans certains matériaux. Dans un conducteur classique (comme un fil de cuivre), les électrons se déplacent en rencontrant des obstacles (atomes du réseau cristallin), ce qui génère de la résistance et de la chaleur. En revanche, dans un supraconducteur, **les électrons s’associent par paires**, appelées **paires de Cooper**, grâce à des interactions complexes avec les atomes du matériau.\n\nCes paires se comportent comme des **bosons** (des particules qui peuvent occuper le même état quantique), et forment un **superfluide** : elles circulent sans aucune résistance, comme si le matériau était un « fluide parfait » pour le courant électrique. Parallèlement, l’**effet Meissner** montre que le supraconducteur expulse les champs magnétiques de son intérieur, un phénomène lié à la formation de courants de surface qui annulent tout champ appliqué.\n\n## Fonctionnement et mécanismes\nDeux grandes catégories de supraconducteurs existent, avec des mécanismes distincts :\n\n1. **Les supraconducteurs conventionnels** (découverts dès 1911).\n   Dans ces matériaux, les électrons forment des paires grâce à une interaction indirecte médiée par les **phonons** (vibrations du réseau cristallin).\n\n2. **Les supraconducteurs non conventionnels**.\n   Découverts plus tard, notamment les **cuprates** (à base de cuivre et d’oxygène), ils présentent une supraconductivité à des températures bien plus élevées (jusqu’à 133 K, soit −140 °C), mais leur mécanisme reste mal compris. Contrairement aux supraconducteurs conventionnels, l’appariement des électrons ne semble pas lié aux phonons. Plusieurs théories sont proposées, comme l’**échange de fluctuations de spin**, mais aucune ne fait consensus. Ces matériaux pourraient offrir des pistes pour atteindre la supraconductivité à température ambiante, un Graal scientifique encore hors de portée.\n\nLa superfluidité, phénomène apparenté, illustre aussi ce comportement quantique : dans certains liquides comme l’hélium, les atomes s’écoulent sans viscosité, comme les paires de Cooper dans un supraconducteur. Ces mécanismes soulignent l’importance des **états quantiques macroscopiques** dans la supraconductivité, où des milliards d’électrons ou d’atomes agissent de manière coordonnée.\n\n## Données et résultats scientifiques\n\nLes premières mesures de supraconductivité ont montré que la résistivité du mercure chute à zéro en dessous d’une température critique d’environ **4,2 K**. Cette température, notée Tc, marque le passage du métal à l’état supraconducteur.  \n\nDans la catégorie des supraconducteurs dits « à haute température critique », les cuprates découvertes en 1986 affichent des températures critiques nettement supérieures. Le maximum observé à ce jour est de **133 K** (soit −140 °C). Certaines de ces phases restent supraconductrices au-dessus de la température de liquéfaction de l’azote liquide (77 K, −196 °C).  \n\nLes expériences sur les supraconducteurs conventionnels ont confirmé la formation de paires d’électrons (paires de Cooper) qui se comportent comme des bosons et se condensent dans un même état quantique, conduisant à l’absence de résistance électrique et à l’effet Meissner (expulsion du champ magnétique).  \n\n## Ce que les scientifiques savent\n\n- **Mécanisme BCS** : pour les supraconducteurs conventionnels, la théorie de Bardeen‑Cooper‑Schrieffer explique l’appariement des électrons via l’interaction avec le réseau cristallin, conduisant à la formation de paires de Cooper et à la condensation en un superfluide.  \n- **Effet Meissner** : la transition supraconductrice s’accompagne toujours de l’expulsion du champ magnétique du volume du matériau, caractéristique mesurable expérimentalement.  \n- **Classification** : on distingue les supraconducteurs conventionnels (explained by BCS) et les supraconducteurs non conventionnels, dont les cuprates et certains composés à base de fer, qui ne sont pas décrits par la théorie BCS.  \n- **Températures critiques** : les matériaux classiques ont des Tc proches du zéro absolu, tandis que les cuprates atteignent jusqu’à 133 K, bien que cela reste très inférieur aux températures ambiantes.  \n\n## Ce qui reste incertain\n\n- **Mécanisme des supraconducteurs non conventionnels** : aucune théorie unique ne décrit de façon satisfaisante la supraconductivité des cuprates et des matériaux à base de fer. La théorie des fluctuations de spin est l’une des approches les plus prometteuses, mais le consensus scientifique n’est pas établi.  \n- **Nature exacte de l’appariement** : dans les matériaux non conventionnels, le processus d’appariement des électrons (par échange de fluctuations de spin ou d’autres interactions) demeure débattu.  \n- **Limites de la température critique** : il n’est pas encore clair quels facteurs matériels ou structuraux pourraient permettre d’atteindre des températures critiques encore plus élevées, proches de la température ambiante.  \n\n## Limites et controverses éventuelles\n\n- **Absence de théorie unifiée** : la diversité des comportements observés dans les supraconducteurs non conventionnels entraîne des divergences d’interprétation parmi les physiciens.  \n- **Défis technologiques** : bien que la supraconductivité permette le transport d’électricité sans perte, les exigences de refroidissement à des températures très basses (quelques kelvins) limitent actuellement les applications pratiques à grande échelle.  \n- **Controverses historiques** : la découverte initiale en 1911 a suscité des débats quant à la contribution exacte des membres de l’équipe d’onnes, bien que les archives indiquent que Heike Kamerlingh Onnes dirigeait l’expérience.  \n\n## Conclusion\n\nLa supraconductivité représente un phénomène quantique remarquable, caractérisé par l’absence de résistance électrique et l’expulsion du champ magnétique. Les découvertes historiques ont établi les bases expérimentales (Tc ≈ 4,2 K pour le mercure) et la théorie BCS explique les matériaux conventionnels. Cependant, les supraconducteurs non conventionnels, notamment les cuprates, restent partiellement incompris : aucune théorie consensuelle ne rend compte de leurs températures critiques élevées, et les mécanismes d’appariement des électrons font encore l’objet de recherches actives. Les avancées futures dépendront de la capacité à élucider ces mécanismes et à développer des matériaux fonctionnant à des températures plus élevées, ouvrant ainsi la voie à des applications technologiques plus accessibles.\n\n## Sources\n- Wikipédia (fr) — Supraconductivité — https://fr.wikipedia.org/wiki/Supraconductivit%C3%A9\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 2,
+      "nb_mots": 1226,
+      "sujet_id": "supraconductivite",
+      "origine": "encyclopedie",
+      "matiere_source": "suffisante",
       "textes_sources_audit": [
         {
-          "source": "Nature News",
-          "titre": "California votes to give record $8.4 billion to medical research",
-          "resume": "Nature, Published online: 10 November 2026; doi:10.1038/d41586-026-03635-6 The cash infusion, earmarked for immunology studies, is the largest ever for science authorized by a US public vote — but it has drawn criticism."
-        },
-        {
           "source": "Wikipédia (fr)",
-          "titre": "Circulation thermohaline",
-          "resume": "La circulation thermohaline, appelée aussi circulation océanique profonde, est la circulation océanique engendrée par les différences de densité (masse volumique) de l'eau de mer, à l'origine de courants marins de profondeur. Ces différences de densité proviennent des écarts de température et de salinité des masses d'eau, d'où le terme de thermo — pour température — et halin — pour salinité.\nÀ l'échelle de la Terre, la circulation océanique de surface et la circulation océanique profonde forment une immense boucle de circulation que l’on nomme boucle thermohaline à l'origine d'un grand cycle qui brasse les eaux et convoie la chaleur à l'échelle du globe.\n\nCaractéristiques\nTempérature, salinité et densité sont reliées par la fonction d'état de l'eau de mer. Les eaux refroidies et salées plongent au niveau des hautes latitudes dans l'Atlantique-Nord (Norvège, Groenland, et mer du Labrador) et descendent vers le sud, à des profondeurs comprises entre 1 et 3 km, formant l'eau profonde Nord-Atlantique. La remontée de ces eaux se fait principalement par mélange vertical dans tout l'océan. Les scientifiques estiment qu'une molécule d'eau fait ce circuit entier en environ 1 000 à 1 500 ans. Il existe également des zones de formation d'eau dense dans l'océan Austral, au niveau des mers de Ross et de Weddell. Dans la réalité, il est difficile de séparer la circulation engendrée par les gradients de densité seuls des autres sources de mouvement des masses d'eau, telles que le vent ou les marées. Pour étudier cette circulation à grande échelle, les scientifiques préfèrent donc utiliser une notion mieux définie : la circulation méridienne de retournement (CMR ou MOC pour Meridional Overturning Circulation).\nLa circulation thermohaline a des conséquences encore mal estimées aujourd'hui sur le climat.\n\nCirculation méridienne de retournement\nLa notion de circulation thermohaline est imprécise et il en existe plusieurs définitions. Si elle est majoritairement vue comme la circulation liée aux forçages thermique et halin qui lui donnent son nom, il est maintenant établi que ces seuls forçages ne sont pas suffisants pour maintenir cette circulation et que le mélange turbulent lié au vent et aux marées joue un rôle primordial, notamment dans la remontée des eaux profondes. Progressivement, la notion de circulation méridienne de retournement, ou MOC, s'est substituée à celle de circulation thermohaline.\n\nDéfinition\nLa MOC correspond à la fonction de courant méridien. Elle s'obtient en intégrant la composante méridienne de la vitesse de courant suivant la longitude et la profondeur :\nΨ(y,z,t)=∫z0dz∫ouestestv(x,y,z,t)dx\noù Ψ désigne la fonction de courant, x la longitude, y la latitude, z la profondeur et t le temps. Son unité est le Sverdrup (i.e. 106 m3/s).\nContrairement à la circulation thermohaline, elle correspond à l'intégration de la vitesse, tous processus physiques confondus, et par conséquent, inclut la circulation liée au vent. L'intégration suivant la longitude peut être globale, ou être restreinte à un bassin, comme c'est le cas pour la circulation méridienne de retournement Atlantique, ou AMOC pour Atlantic Meridional Overturning Circulation. Elle peut également être définie comme la valeur maximale de la fonction de courant, ou la valeur maximale à une latitude donnée. Ces définitions permettent de réduire l'information à une simple série temporelle, mais suppriment toute information sur la structure méridienne et verticale de cette circulation. L'utilisation de l'une ou l'autre définition dépend du problème posé. La MOC est beaucoup utilisée dans la communauté scientifique, car elle est bien définie et facilement calculable par les modèles d'océan.\n\nCirculation méridienne de retournement Atlantique (AMOC)\nLorsque l'intégration zonale de la vitesse se limite au bassin atlantique, on parle d'AMOC pour « Atlantic MOC ».\nC'est dans l'océan Atlantique que la circulation méridienne de retournement est la plus intense et la plus étudiée. Elle est constituée de deux cellules convectives. Dans la cellule supérieure, les eaux chaudes et salées de surface sont transportées vers le nord, où elles se densifient sous l'effet de leur refroidissement. La perte de flottabilité de ce flux d'eau l'amène alors à plonger pour devenir l'eau profonde nord-atlantique (en). Cette eau profonde est transportée vers le sud à une profondeur comprise entre 1 et 4 km. Une partie finit par remonter en surface dans l'océan Austral, fermant ainsi la cellule. Le transport vers le sud de l'eau profonde nord-atlantique et sa remontée au niveau de la divergence antarctique forment également la branche supérieure de la seconde cellule convective. Cette cellule est alors fermée par la formation d'eau profonde et d'eau de fond au niveau de la mer de Weddell, qui tapissent le fond de l'océan Atlantique.\nÀ 26,5° N, les débits moyens des cellules supérieure et inférieure sont estimés à 18,7 ± 2,1 Sv et 2 ± 0,5 Sv respectivement."
+          "titre": "Supraconductivité",
+          "resume": "La supraconductivité, ou supraconduction, est un phénomène physique caractérisé par l'absence de résistance électrique et l'expulsion du champ magnétique — l'effet Meissner — à l'intérieur de certains matériaux dits supraconducteurs.\nLa supraconductivité découverte historiquement en premier, et que l'on nomme communément supraconductivité conventionnelle, se manifeste à des températures très basses, proches du zéro absolu (−273,15 °C). La supraconductivité permet notamment de transporter de l'électricité sans perte d'énergie. Ses applications potentielles sont stratégiques.\nDans les supraconducteurs conventionnels, des interactions complexes se produisent entre les atomes et les électrons libres et conduisent à l'apparition de paires liées d'électrons, appelées paires de Cooper. L'explication de la supraconductivité est intimement liée aux caractéristiques quantiques de la matière. Alors que les électrons sont des fermions, les paires d'électrons se comportent comme des bosons de spin égal à 0 nommé singulet, et sont « condensées » dans un seul état quantique, sous la forme d'un superfluide de paires de Cooper.\nUn effet similaire de la supraconductivité est la superfluidité, caractérisant un écoulement sans aucune résistance, c'est-à-dire qu'une petite perturbation que l'on soumet à ce type de liquide ne s'arrête jamais, de la même façon que les paires de Cooper se déplacent sans aucune résistance dans un supraconducteur.\nIl existe également d'autres classes de matériaux, collectivement appelés « supraconducteurs non conventionnels » (par opposition à la dénomination de supraconductivité conventionnelle), dont les propriétés ne sont pas expliquées par la théorie BCS. En particulier, la classe des cuprates (ou « supraconducteurs à haute température critique »), découverte en 1986, présente des propriétés supraconductrices à des températures bien plus élevées que les supraconducteurs conventionnels. Toutefois, ce que les physiciens nomment « haute température » reste extrêmement bas comparativement aux températures à la surface de la Terre (le maximum est 133 K, soit −140 °C), mais sont parfois au-dessus de la température de liquéfaction de l'azote en azote liquide à 77 K (−196 °C).\nBien que ce sujet soit, depuis le début des années 1990, l'un des plus étudiés de la physique du solide, en 2010 aucune théorie unique ne décrit de façon satisfaisante le phénomène de la supraconductivité non conventionnelle. La théorie des fluctuations de spin est une des plus prometteuses et permet de reproduire beaucoup des propriétés de l'hélium 3, des fermions lourds ainsi que des cuprates. Dans cette théorie, l'appariement se fait par échange de fluctuations de spin ; toutefois, aucun consensus n'est à ce jour établi. Cette théorie pourrait également permettre d'expliquer la supraconductivité des supraconducteurs à base de fer[Passage à actualiser].\n\nHistorique\n\nLe phénomène est découvert en 1911 par le physicien néerlandais Heike Kamerlingh Onnes et son équipe composée de Gilles Holst, Cornelis Dorsman et Gerit Flim. Kamerlingh Onnes avait réussi à liquéfier pour la première fois de l'hélium en 1908, ce qui lui avait permis de mener des mesures physiques jusqu'à des températures de 1,5 K (−271,6 °C). Il avait alors entrepris un programme de mesures systématiques des propriétés de la matière à très basse température, en particulier la mesure de la résistance électrique des métaux. Le 8 avril 1911, l'équipe mesure que la résistivité électrique (ou résistance électrique) du mercure devient nulle en dessous d’une certaine température appelée température critique Tc, de l'ordre de 4,2 K pour le mercure. C'est la première observation d'un état supraconducteur, bien qu'à cette époque on pût le confondre avec un conducteur idéal. Une rumeur attribue le mérite de la découverte au seul Gilles Holst (un étudiant de K. Onnes), mais le cahier d'expérience découvert ensuite, écrit de la main même de Kamerlingh Onnes, montre que ce dernier était bien aux commandes de l'expérience ce jour-là, Gilles Holst mesurant la résistance électrique avec un pont de Wheatstone, Cornelis Dorsman et Gerit Flim s'occupant des aspects de cryogénie. Pour l'ensemble de son travail sur la liquéfaction de l'hélium et l'utilisation de l'hélium liquide, Kamerlingh Onnes reçoit le prix Nobel de physique en 1913."
         }
-      ],
-      "nb_mots_decouverte": 185,
-      "nb_mots_approfondi": 1638,
-      "sujet_id": "circulation-thermohaline",
-      "origine": "encyclopedie"
+      ]
     },
     "citation": {
-      "texte": "Ce n'est pas parce que les choses sont difficiles que nous n'osons pas ; c'est parce que nous n'osons pas qu'elles sont difficiles.",
-      "auteur": "Sénèque",
-      "source": "Lettres à Lucilius, 104",
-      "annee": 65
+      "texte": "Ce qui ne me tue pas me rend plus fort.",
+      "auteur": "Friedrich Nietzsche",
+      "source": "Crépuscule des idoles, « Maximes et pointes », 8",
+      "annee": 1888
     },
     "meteo": {
       "villes_detail": [
         {
           "ville": "Antibes",
-          "temperature_actuelle": 15.4,
-          "temperature_max": 18.2,
-          "temperature_min": 15.3,
-          "precipitation_mm": 10.2,
-          "probabilite_pluie_pct": 93,
-          "vent_kmh": 5.8,
-          "vent_max_kmh": 10.0,
-          "rafales_max_kmh": 20.9,
-          "weather_code": 63,
-          "description": "pluie",
+          "temperature_actuelle": 17.5,
+          "temperature_max": 17.7,
+          "temperature_min": 16.3,
+          "precipitation_mm": 67.2,
+          "probabilite_pluie_pct": 100,
+          "vent_kmh": 18.2,
+          "vent_max_kmh": 34.0,
+          "rafales_max_kmh": 60.8,
+          "weather_code": 65,
+          "description": "forte pluie",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 15.4,
-              "temperature_max": 17.1,
-              "probabilite_pluie_pct": 90,
-              "precipitation_mm": 5.2,
-              "vent_max_kmh": 10,
-              "weather_code": 51,
-              "description": "bruine légère"
+              "temperature_min": 17.0,
+              "temperature_max": 17.5,
+              "probabilite_pluie_pct": 100,
+              "precipitation_mm": 50.6,
+              "vent_max_kmh": 28,
+              "weather_code": 65,
+              "description": "forte pluie"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 17.2,
-              "temperature_max": 18.1,
-              "probabilite_pluie_pct": 93,
-              "precipitation_mm": 5.0,
-              "vent_max_kmh": 6,
-              "weather_code": 63,
-              "description": "pluie"
+              "temperature_min": 16.9,
+              "temperature_max": 17.7,
+              "probabilite_pluie_pct": 100,
+              "precipitation_mm": 14.7,
+              "vent_max_kmh": 34,
+              "weather_code": 65,
+              "description": "forte pluie"
             },
             {
               "label": "Soir",
-              "temperature_min": 16.7,
-              "temperature_max": 17.7,
-              "probabilite_pluie_pct": 4,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 6,
-              "weather_code": 3,
-              "description": "couvert"
+              "temperature_min": 16.4,
+              "temperature_max": 17.1,
+              "probabilite_pluie_pct": 88,
+              "precipitation_mm": 1.9,
+              "vent_max_kmh": 18,
+              "weather_code": 55,
+              "description": "bruine forte"
             }
           ],
-          "alertes": []
+          "alertes": [
+            "Rafales jusqu'à 61 km/h",
+            "Pluie abondante (67 mm sur la journée)"
+          ]
         },
         {
           "ville": "Cannes",
-          "temperature_actuelle": 15.7,
-          "temperature_max": 18.3,
-          "temperature_min": 15.7,
-          "precipitation_mm": 10.8,
-          "probabilite_pluie_pct": 78,
-          "vent_kmh": 6.7,
-          "vent_max_kmh": 13.7,
-          "rafales_max_kmh": 24.4,
-          "weather_code": 63,
-          "description": "pluie",
+          "temperature_actuelle": 16.6,
+          "temperature_max": 17.5,
+          "temperature_min": 16.6,
+          "precipitation_mm": 72.4,
+          "probabilite_pluie_pct": 100,
+          "vent_kmh": 16.1,
+          "vent_max_kmh": 24.6,
+          "rafales_max_kmh": 60.5,
+          "weather_code": 65,
+          "description": "forte pluie",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 15.7,
-              "temperature_max": 17.7,
-              "probabilite_pluie_pct": 78,
-              "precipitation_mm": 7.1,
-              "vent_max_kmh": 14,
-              "weather_code": 63,
-              "description": "pluie"
+              "temperature_min": 16.6,
+              "temperature_max": 17.5,
+              "probabilite_pluie_pct": 100,
+              "precipitation_mm": 54.2,
+              "vent_max_kmh": 25,
+              "weather_code": 65,
+              "description": "forte pluie"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 17.1,
-              "temperature_max": 18.3,
-              "probabilite_pluie_pct": 68,
-              "precipitation_mm": 3.7,
-              "vent_max_kmh": 8,
-              "weather_code": 63,
-              "description": "pluie"
+              "temperature_min": 16.7,
+              "temperature_max": 17.4,
+              "probabilite_pluie_pct": 100,
+              "precipitation_mm": 17.5,
+              "vent_max_kmh": 20,
+              "weather_code": 65,
+              "description": "forte pluie"
             },
             {
               "label": "Soir",
               "temperature_min": 16.9,
-              "temperature_max": 17.7,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 9,
+              "temperature_max": 17.2,
+              "probabilite_pluie_pct": 75,
+              "precipitation_mm": 0.7,
+              "vent_max_kmh": 16,
               "weather_code": 3,
               "description": "couvert"
             }
           ],
-          "alertes": []
+          "alertes": [
+            "Rafales jusqu'à 60 km/h",
+            "Pluie abondante (72 mm sur la journée)"
+          ]
         },
         {
           "ville": "Valbonne",
-          "temperature_actuelle": 13.3,
-          "temperature_max": 16.7,
-          "temperature_min": 12.6,
-          "precipitation_mm": 0.0,
-          "probabilite_pluie_pct": 6,
-          "vent_kmh": 4.7,
-          "vent_max_kmh": 5.6,
-          "rafales_max_kmh": 9.4,
-          "weather_code": 3,
-          "description": "couvert",
+          "temperature_actuelle": 14.8,
+          "temperature_max": 15.6,
+          "temperature_min": 13.7,
+          "precipitation_mm": 66.9,
+          "probabilite_pluie_pct": 100,
+          "vent_kmh": 7.9,
+          "vent_max_kmh": 15.6,
+          "rafales_max_kmh": 27.0,
+          "weather_code": 65,
+          "description": "forte pluie",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 13.3,
+              "temperature_min": 14.8,
               "temperature_max": 15.1,
-              "probabilite_pluie_pct": 32,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 5,
-              "weather_code": 3,
-              "description": "couvert"
+              "probabilite_pluie_pct": 100,
+              "precipitation_mm": 30.1,
+              "vent_max_kmh": 12,
+              "weather_code": 63,
+              "description": "pluie"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 15.4,
-              "temperature_max": 16.6,
-              "probabilite_pluie_pct": 19,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 4,
-              "weather_code": 3,
-              "description": "couvert"
+              "temperature_min": 15.0,
+              "temperature_max": 15.6,
+              "probabilite_pluie_pct": 100,
+              "precipitation_mm": 36.2,
+              "vent_max_kmh": 16,
+              "weather_code": 65,
+              "description": "forte pluie"
             },
             {
               "label": "Soir",
-              "temperature_min": 15.0,
-              "temperature_max": 15.2,
-              "probabilite_pluie_pct": 3,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 4,
-              "weather_code": 3,
-              "description": "couvert"
-            }
-          ],
-          "alertes": []
-        },
-        {
-          "ville": "Grasse",
-          "temperature_actuelle": 12.4,
-          "temperature_max": 16.1,
-          "temperature_min": 11.6,
-          "precipitation_mm": 0.1,
-          "probabilite_pluie_pct": 8,
-          "vent_kmh": 5.5,
-          "vent_max_kmh": 7.9,
-          "rafales_max_kmh": 13.7,
-          "weather_code": 3,
-          "description": "couvert",
-          "periodes": [
-            {
-              "label": "Matin",
-              "temperature_min": 12.4,
-              "temperature_max": 14.6,
-              "probabilite_pluie_pct": 33,
-              "precipitation_mm": 0.1,
+              "temperature_min": 13.9,
+              "temperature_max": 14.8,
+              "probabilite_pluie_pct": 78,
+              "precipitation_mm": 0.6,
               "vent_max_kmh": 7,
               "weather_code": 3,
               "description": "couvert"
+            }
+          ],
+          "alertes": [
+            "Pluie abondante (67 mm sur la journée)"
+          ]
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 14.0,
+          "temperature_max": 15.0,
+          "temperature_min": 13.1,
+          "precipitation_mm": 48.1,
+          "probabilite_pluie_pct": 100,
+          "vent_kmh": 8.6,
+          "vent_max_kmh": 13.0,
+          "rafales_max_kmh": 23.0,
+          "weather_code": 63,
+          "description": "pluie",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 13.8,
+              "temperature_max": 14.3,
+              "probabilite_pluie_pct": 100,
+              "precipitation_mm": 24.3,
+              "vent_max_kmh": 11,
+              "weather_code": 63,
+              "description": "pluie"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 15.0,
-              "temperature_max": 16.1,
-              "probabilite_pluie_pct": 15,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 6,
-              "weather_code": 3,
-              "description": "couvert"
+              "temperature_min": 14.2,
+              "temperature_max": 15.0,
+              "probabilite_pluie_pct": 100,
+              "precipitation_mm": 23.0,
+              "vent_max_kmh": 13,
+              "weather_code": 63,
+              "description": "pluie"
             },
             {
               "label": "Soir",
-              "temperature_min": 14.2,
-              "temperature_max": 14.7,
-              "probabilite_pluie_pct": 2,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 5,
+              "temperature_min": 13.1,
+              "temperature_max": 14.2,
+              "probabilite_pluie_pct": 78,
+              "precipitation_mm": 0.8,
+              "vent_max_kmh": 6,
               "weather_code": 3,
               "description": "couvert"
             }
           ],
-          "alertes": []
+          "alertes": [
+            "Pluie abondante (48 mm sur la journée)"
+          ]
         }
       ],
-      "temperature_max_zone": 18.3,
-      "temperature_min_zone": 11.6,
-      "probabilite_pluie_max_pct": 93,
-      "vent_max_kmh": 13.7,
-      "description_dominante": "pluie",
+      "temperature_max_zone": 17.7,
+      "temperature_min_zone": 13.1,
+      "probabilite_pluie_max_pct": 100,
+      "vent_max_kmh": 34.0,
+      "description_dominante": "forte pluie",
       "periodes": [
         {
           "label": "Matin",
-          "temperature_min": 12.4,
-          "temperature_max": 17.7,
-          "probabilite_pluie_pct": 90,
-          "precipitation_mm": 7.1,
-          "vent_max_kmh": 14,
-          "weather_code": 63,
-          "description": "pluie"
+          "temperature_min": 13.8,
+          "temperature_max": 17.5,
+          "probabilite_pluie_pct": 100,
+          "precipitation_mm": 54.2,
+          "vent_max_kmh": 28,
+          "weather_code": 65,
+          "description": "forte pluie"
         },
         {
           "label": "Après-midi",
-          "temperature_min": 15.0,
-          "temperature_max": 18.3,
-          "probabilite_pluie_pct": 93,
-          "precipitation_mm": 5.0,
-          "vent_max_kmh": 8,
-          "weather_code": 63,
-          "description": "pluie"
+          "temperature_min": 14.2,
+          "temperature_max": 17.7,
+          "probabilite_pluie_pct": 100,
+          "precipitation_mm": 36.2,
+          "vent_max_kmh": 34,
+          "weather_code": 65,
+          "description": "forte pluie"
         },
         {
           "label": "Soir",
-          "temperature_min": 14.2,
-          "temperature_max": 17.7,
-          "probabilite_pluie_pct": 4,
-          "precipitation_mm": 0.0,
-          "vent_max_kmh": 9,
+          "temperature_min": 13.1,
+          "temperature_max": 17.2,
+          "probabilite_pluie_pct": 88,
+          "precipitation_mm": 1.9,
+          "vent_max_kmh": 18,
           "weather_code": 3,
           "description": "couvert"
         }
       ],
-      "alertes": [],
-      "resume": "Pluie le matin, pluie l'après-midi, couvert le soir, de 12° à 18°."
+      "alertes": [
+        "Rafales jusqu'à 61 km/h",
+        "Pluie abondante (67 mm sur la journée)",
+        "Rafales jusqu'à 60 km/h",
+        "Pluie abondante (72 mm sur la journée)",
+        "Pluie abondante (48 mm sur la journée)"
+      ],
+      "resume": "Forte pluie le matin, forte pluie l'après-midi, couvert le soir, de 13° à 18°."
     },
     "anglais": {
       "mode": "litterature",
-      "oeuvre": "Jane Eyre",
-      "auteur": "Charlotte Brontë",
-      "annee": 1847,
+      "oeuvre": "The Great Gatsby",
+      "auteur": "F. Scott Fitzgerald",
+      "annee": 1925,
       "segments": [
         {
-          "t": "There was no possibility of taking a walk that day. We had been wandering",
-          "g": "errer"
+          "t": "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind",
+          "g": "ruminer"
         },
         {
-          "t": ", indeed, in the leafless",
-          "g": "dépouillé de ses feuilles"
+          "t": " ever since. \"Whenever",
+          "g": "chaque fois que"
         },
         {
-          "t": " shrubbery",
-          "g": "bosquet d'arbustes"
+          "t": " you feel like criticizing anyone,\" he told me, \"just remember that all the people in this world haven't had the advantages",
+          "g": "privilèges"
         },
         {
-          "t": " an hour in the morning; but since dinner (Mrs. Reed, when there was no company, dined early) the cold winter wind had brought with it clouds so sombre, and a rain so penetrating, that further out-door exercise was now out of the question",
-          "g": "hors de question"
+          "t": " that you've had.\" He didn't say any more, but we've always been unusually communicative in a reserved way, and I understood that he meant a great deal more",
+          "g": "bien davantage"
         },
         {
-          "t": ". I was glad of it: I never liked long walks, especially on chilly",
-          "g": "frisquets"
+          "t": " than that. In consequence",
+          "g": "par conséquent"
         },
         {
-          "t": " afternoons: dreadful",
-          "g": "pénible, affreux"
+          "t": ", I'm inclined",
+          "g": "enclin"
         },
         {
-          "t": " to me was the coming home in the raw",
-          "g": "humide et glacial"
+          "t": " to reserve all judgments",
+          "g": "suspendre tout jugement"
         },
         {
-          "t": " twilight",
-          "g": "le crépuscule"
+          "t": ", a habit that has opened up many curious natures to me and also made me the victim of not a few",
+          "g": "pas mal de"
         },
         {
-          "t": ", with nipped",
-          "g": "gelés"
+          "t": " veteran bores",
+          "g": "vieux raseurs"
         },
         {
-          "t": " fingers and toes, and a heart saddened by the chidings",
-          "g": "les réprimandes"
-        },
-        {
-          "t": " of Bessie, the nurse, and humbled",
-          "g": "humiliée"
-        },
-        {
-          "t": " by the consciousness of my physical inferiority to Eliza, John, and Georgiana Reed.",
+          "t": ".",
           "g": null
         }
       ],
-      "texte_glose": "There was no possibility of taking a walk that day. We had been wandering (= errer), indeed, in the leafless (= dépouillé de ses feuilles) shrubbery (= bosquet d'arbustes) an hour in the morning; but since dinner (Mrs. Reed, when there was no company, dined early) the cold winter wind had brought with it clouds so sombre, and a rain so penetrating, that further out-door exercise was now out of the question (= hors de question). I was glad of it: I never liked long walks, especially on chilly (= frisquets) afternoons: dreadful (= pénible, affreux) to me was the coming home in the raw (= humide et glacial) twilight (= le crépuscule), with nipped (= gelés) fingers and toes, and a heart saddened by the chidings (= les réprimandes) of Bessie, the nurse, and humbled (= humiliée) by the consciousness of my physical inferiority to Eliza, John, and Georgiana Reed."
+      "texte_glose": "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind (= ruminer) ever since. \"Whenever (= chaque fois que) you feel like criticizing anyone,\" he told me, \"just remember that all the people in this world haven't had the advantages (= privilèges) that you've had.\" He didn't say any more, but we've always been unusually communicative in a reserved way, and I understood that he meant a great deal more (= bien davantage) than that. In consequence (= par conséquent), I'm inclined (= enclin) to reserve all judgments (= suspendre tout jugement), a habit that has opened up many curious natures to me and also made me the victim of not a few (= pas mal de) veteran bores (= vieux raseurs)."
     },
     "meta": {
-      "resume_1_phrase": "À la une : Eric Zemmour, leader du parti d'extrême droite Reconquête, officialise sa candidature à l'élection présidentielle de 2027."
+      "resume_1_phrase": "À la une : Plus de cent constitutionnalistes critiquent le référendum pour changer la Constitution tel que proposé par Marine Le Pen."
     },
     "_genere_par_llm": true,
     "_provider": "groq+mistral",
-    "_erreur_llm": null,
+    "_erreur_llm": "science_d[nvidia: HTTPSConnectionPool(host='integrate.api.nvidia.com', port=443): Read timed out. (read timeout=150) | mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | groq: article trop court (60 mots, minimum 80) | openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"me]",
     "_parts": {
       "actu_france": {
         "genere_par_llm": true,
@@ -547,9 +567,9 @@
       },
       "actu_monde": {
         "genere_par_llm": true,
-        "provider": "mistral",
+        "provider": "groq",
         "erreur": null,
-        "essais_echoues": 0
+        "essais_echoues": 2
       },
       "marches": {
         "genere_par_llm": true,
@@ -576,21 +596,21 @@
         "essais_echoues": 1
       },
       "science_d": {
-        "genere_par_llm": true,
-        "provider": "mistral",
-        "erreur": null,
-        "essais_echoues": 1
+        "genere_par_llm": false,
+        "provider": null,
+        "erreur": "nvidia: HTTPSConnectionPool(host='integrate.api.nvidia.com', port=443): Read timed out. (read timeout=150) | mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | groq: article trop court (60 mots, minimum 80) | openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"me",
+        "essais_echoues": 4
       }
     },
     "_bloc": {
       "genere_par_llm": true,
-      "provider": "groq+mistral",
+      "provider": "groq",
       "erreur": null
     },
     "_science": {
       "genere_par_llm": true,
       "provider": "groq+mistral",
-      "erreur": null
+      "erreur": "science_d[nvidia: HTTPSConnectionPool(host='integrate.api.nvidia.com', port=443): Read timed out. (read timeout=150) | mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | groq: article trop court (60 mots, minimum 80) | openrouter: 429 Too Many Requests (provider=openrouter): {\"e"
     },
     "_anglais": {
       "genere_par_llm": false,
@@ -598,5 +618,5 @@
       "erreur": null
     }
   },
-  "debut_run": "2026-11-11T06:10:40.864880+01:00"
+  "debut_run": "2026-11-12T06:10:39.046308+01:00"
 }
