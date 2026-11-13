@@ -1,0 +1,598 @@
+{
+  "date": "2026-11-13",
+  "derniere_mise_a_jour": "2026-11-13T06:19:18.116986+01:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Présidentielle 2027 : l’offensive illibérale de Marine Le Pen",
+          "resume": "Associations, syndicats, magistrats, journalistes : les dirigeants du Rassemblement national multiplient les attaques publiques contre les corps intermédiaires, les institutions et les organisations civiles susceptibles de les critiquer.",
+          "pourquoi_important": "Selon Le Monde, ces attaques visent à affaiblir les contre-pouvoirs et à préparer le terrain pour la présidentielle de 2027.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Au procès de l’explosion de la rue de Trévise, à Paris, les vies brisées des victimes",
+          "resume": "Blessés physiques et psychologiques ont raconté l’explosion du 12 janvier 2019 et ses conséquences sur leurs vies près de huit ans après. Delphine Bürkli, la maire du 9ᵉ arrondissement, qui s’est battue pour qu’ils soient correctement indemnisés, a dénoncé la « survictimisation » dont ils ont fait l’objet.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Attentat raciste des Yvelines : Kévin Tessier avait déjà fait l’objet d’une plainte pour violences en 2024, selon «Mediapart»",
+          "resume": "Un Français d’origine tunisienne avait mis en cause Kevin Tessier deux ans avant l’attentat meurtrier, révèle le média ce jeudi 12 novembre. «L’enquête est en cours» et aucune garde à vue n’a eu lieu, explique le parquet de Nanterre.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : pour Bruno Retailleau, une primaire de la droite doit se faire même sans Edouard Philippe",
+          "resume": "Alors que les candidats passaient à tour de rôle ce jeudi 12 novembre sur France Info pour parler des services publics, le candidat Les Républicains en a profité pour mettre encore une fois la pression sur le président d’Horizons.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Après l’attentat raciste et islamophobe à Trappes et La Verrière, l’effarant retour à la normale",
+          "resume": "Trois semaines après l’attaque terroriste meurtrière dans les Yvelines, le racisme a repris ses aises dans le débat public. L’introspection, en particulier dans les chaînes d’info en continu, fut très courte, pour ne pas dire invisible.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Guerre en Ukraine : la présence des Européens dans les prochaines négociations de paix annoncée par Volodymyr Zelensky et les émissaires américains",
+          "resume": "Jared Kushner et Steve Witkoff, émissaires des États-Unis, ont rencontré Volodymyr Zelensky à Dublin après des entretiens à Moscou avec Vladimir Poutine.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France Info",
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Des frappes israéliennes tuent au moins 11 personnes dans la bande de Gaza, le jour le plus meurtrier depuis les élections en Israël",
+          "resume": "Une frappe a ciblé l’hôpital Nasser à Khan Younès, faisant six morts selon la défense civile gazaouie. L’armée israélienne affirme avoir visé un haut responsable du Hamas.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "La Finlande annonce bloquer les visas des athlètes russes, la Norvège prévoit une mesure similaire",
+          "resume": "La Finlande et la Norvège justifient cette décision par les liens du sport russe avec les autorités, incompatible avec la guerre en Ukraine.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "En Moldavie, la mémoire retrouvée de la grande famine planifiée par l’URSS en 1946-1947",
+          "resume": "Un projet de loi vise à reconnaître cette famine, ayant causé entre 120 000 et 200 000 morts, comme un crime contre l’humanité organisé par le régime stalinien.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Au Liban, derrière le silence du Hezbollah, une stratégie et des inquiétudes",
+          "resume": "Le Hezbollah évite de riposter aux frappes israéliennes, tout en misant sur une relance des négociations entre Washington et Téhéran et en réorganisant ses forces.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Jean-Luc Mélenchon a été interdit d’entrée en Israël en raison de la « position extrêmement hostile » de LFI",
+          "resume": "L’Etat hébreu interdira l’accès à son territoire à toute personne « agissant contre ses intérêts et incitant à la haine contre ses citoyens », a prévenu la diplomatie israélienne.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "Le Monde",
+            "France Info",
+            "Libération",
+            "20 Minutes"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Au Brésil, le « beau gosse de la Paulista » redonne à la gauche son pouvoir de séduction",
+          "resume": "Dans l’entre-deux-tours de la présidentielle, dont Lula est sorti vainqueur, les militants ont fait preuve d’une grande créativité pour parvenir à cet exploit. L’irruption de la sensualité dans la campagne a contribué à rafraîchir l’image du président sortant.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon 20 Minutes, Guerre en Ukraine : Jared Kushner optimiste malgré « d’importantes divergences » entre Kiev et Moscou",
+          "resume": "",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Les principaux indices européens ont légèrement progressé, tandis que les marchés américains ont enregistré une légère baisse.",
+      "mouvements_notables": []
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "football",
+          "texte": "L'Angleterre a battu la Croatie 2-1 à Wembley, se qualifiant pour les quarts de finale de la Ligue des nations. Harry Kane est devenu le nouveau recordman des capes de l'équipe et a marqué le second but."
+        },
+        {
+          "sport": "football",
+          "texte": "Le FC Barcelone a terminé 1-1 contre Arsenal à domicile, perdant la tête de la phase de ligue de la Ligue des champions au profit de Lyon."
+        },
+        {
+          "sport": "football",
+          "texte": "Arsenal a obtenu un match nul 1-1 contre Barcelona en Ligue des champions féminine, prolongeant son invincibilité à quatre matchs."
+        },
+        {
+          "sport": "football",
+          "texte": "Harry Kane a été présenté comme un leader, modèle et extraordinaire, avec un parcours de 21 ans, 79 secondes de son premier but et un record de capes pour son pays."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Jessica Pegula a sauvé un point de match pour battre Linda Noskova et atteindre les quarts de finale des WTA Finals, au détriment de Coco Gauff."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Ugo Humbert a perdu contre Lorenzo Musetti en quarts de finale de l'ATP 250 de Stockholm, après un duel serré."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Coco Gauff a battu Marta Kostyuk 6-4, 7-5, après avoir mené 5-1 dans le deuxième set, et pourrait se qualifier pour les demi-finales des WTA Finals si Linda Noskova réussit."
+        },
+        {
+          "sport": "rugby",
+          "texte": "Les Pumas ont apporté cinq changements, dont Matera capitaine et Delguy à l'arrière, pour affronter l'Italie en Championnat des nations à Gênes."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "Arsenal – Borussia Dortmund",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-11-24T20:00:00+00:00",
+          "date_texte": "mardi 24 novembre à 21h00",
+          "sport": "football"
+        },
+        {
+          "affiche": "Miami Heat – Milwaukee Bucks",
+          "competition": "NBA",
+          "date_iso": "2026-11-19T00:00:00+00:00",
+          "date_texte": "jeudi 19 novembre à 1h00",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "decouverte",
+      "titre": "Comment les données mobiles ont révélé la propagation précoce d’une épidémie d’Ebola",
+      "contenu_markdown": "Une étude publiée dans *Nature* le 12 novembre 2026 montre que la souche du virus **Bundibugyo** (une variante d’Ebola) circulait depuis plusieurs semaines avant d’être officiellement détectée en mai. Grâce à l’analyse de **données anonymisées de téléphones portables**, des chercheurs ont pu reconstituer les premiers mouvements de l’épidémie, mettant en lumière des **failles majeures dans la surveillance sanitaire** : lacunes dans les tests, réductions de financement et systèmes d’alerte défaillants.\n\nCette découverte souligne l’importance des **outils numériques** pour traquer les épidémies en temps réel, surtout dans des régions où les infrastructures médicales sont limitées. Elle confirme aussi que les épidémies peuvent échapper aux réseaux de détection classiques, retardant les réponses sanitaires cruciales.\n\nLes détails sur les méthodes précises d’analyse des données, ainsi que les limites de cette approche, sont à consulter dans l’article original. La question des **facteurs humains** (sous-déclaration, accès aux soins) reste un sujet d’étude complémentaire.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03666-z\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Fusion nucléaire\n\n## Introduction\nLa fusion nucléaire est une réaction où deux noyaux atomiques s’assemblent pour former un noyau plus lourd, libérant une énergie colossale. Contrairement à la fission, utilisée dans les centrales nucléaires actuelles, elle reproduit le processus naturel qui alimente les étoiles, dont le Soleil. Depuis les années 1950, les scientifiques tentent de maîtriser cette réaction pour en faire une source d’énergie propre et quasi illimitée. Pourtant, malgré des avancées majeures, son application industrielle reste un défi technique et scientifique.\n\n## Pourquoi la fusion nucléaire est-elle importante ?\nLa fusion nucléaire présente deux avantages majeurs qui en font un enjeu stratégique pour l’avenir énergétique de la planète :\n- **Des ressources quasi inépuisables** : les combustibles utilisés, comme le deutérium (un isotope de l’hydrogène présent dans l’eau des océans) et le tritium (produit à partir de lithium), sont disponibles en quantités bien supérieures aux réserves de combustibles fossiles ou d’uranium.\n- **Une production d’énergie propre** : les produits directs de la fusion (principalement de l’hélium) ne sont pas radioactifs. Les seuls déchets radioactifs proviennent des matériaux internes du réacteur, comme les parois exposées aux neutrons, et leur durée de vie radioactive est bien plus courte que celle des déchets de fission.\n\nEn comparaison avec les énergies fossiles ou même la fission, la fusion pourrait offrir une solution durable pour répondre à la demande croissante en électricité tout en limitant les émissions de gaz à effet de serre.\n\n## Explication du phénomène : comment fonctionne la fusion ?\nLa fusion repose sur un principe simple mais extrême : **fusionner deux noyaux légers pour en former un plus lourd**, ce qui libère une énergie considérable. Cette énergie provient d’une différence de masse entre les noyaux initiaux et le noyau résultant, transformée en énergie selon la célèbre équation d’Einstein, *E = mc²*.\n\nPour que cette réaction se produise, il faut surmonter une force naturelle : la **répulsion électrostatique** entre les noyaux, tous deux chargés positivement. Dans les étoiles, la gravité extrême permet de comprimer suffisamment la matière pour que les noyaux se rapprochent et fusionnent.\n\n## Fonctionnement et mécanismes : confiner et contrôler le plasma\nLe défi principal réside dans le **confinement** de ce plasma à haute température pendant un temps suffisant pour que la fusion se produise efficacement. Plusieurs méthodes sont explorées, mais la plus étudiée est la **fusion magnétique**, utilisant des champs magnétiques intenses pour maintenir le plasma à l’écart des parois du réacteur.\n\n## Le principe du tokamak\nLe **tokamak** (acronyme russe pour *chambre toroïdale avec bobines magnétiques*) est le dispositif le plus répandu pour confiner le plasma. Cette configuration permet de limiter les pertes d’énergie et d’éviter que le plasma ne touche les parois, ce qui les endommagerait.\n\n## Les réactions de fusion les plus étudiées\nDeux réactions sont particulièrement étudiées :\n1. Elle est donc la plus prometteuse pour une application industrielle.\n2. **La réaction deutérium-deutérium (D-D)** : elle ne produit pas de tritium, mais libère moins d’énergie et nécessite des températures plus élevées. Elle est moins utilisée pour la production d’électricité, mais pourrait servir de \"réaction de démarrage\" dans certains réacteurs.\n\n## L’équilibre énergétique : le critère de Lawson\nPour qu’un réacteur à fusion soit viable, il doit produire plus d’énergie qu’il n’en consomme. Ce seuil est défini par le **critère de Lawson**, qui dépend de la température, de la densité du plasma et du temps de confinement. En pratique, cela signifie que le plasma doit rester stable et confiné pendant plusieurs secondes, avec une densité et une température suffisantes pour que les réactions de fusion dégagent plus d’énergie que celle nécessaire pour chauffer et maintenir le plasma.\n\n## Données et résultats scientifiques\n\nLes expériences menées depuis les années 1950 ont permis d’établir plusieurs repères quantitatifs.  \n* Les premiers tokamaks russes, T3 et TM3 (1968), ont atteint une température de plasma d’environ dix millions de degrés Celsius pendant vingt millisecondes.  \n* Aucun dispositif expérimental n’a encore produit un « gain net » d’énergie, c’est‑à‑dire que la puissance thermique dégagée par la fusion n’a pas dépassé la puissance injectée pour chauffer le plasma.  \n* Les réactions de fusion les plus étudiées sur Terre utilisent le mélange deutérium‑tritium. Le deutérium est abondant dans les océans, le tritium pouvant être généré à partir du lithium‑6.  \n\nLes données chiffrées détaillées sur les performances des différents réacteurs (puissance de chauffage, durée de confinement, densité du plasma, etc.) sont présentées dans les publications techniques de chaque programme, mais aucune de ces expériences n’a encore abouti à une production d’électricité commercialement viable.\n\n## Ce que les scientifiques savent\n\n* **Principe énergétique** : la masse des produits de fusion est inférieure à la somme des masses des noyaux initiaux ; la différence se convertit en énergie selon la relation d’Einstein E = mc².  \n* **Sources de combustible** : le deutérium est présent en grande quantité dans les eaux océaniques ; le tritium peut être produit par irradiation neutronique du lithium‑6, dont les réserves mondiales pourraient soutenir plus d’un million d’années de fonctionnement théorique.  \n* **Produits de la réaction** : la fusion deutérium‑tritium génère principalement de l’hélium‑4, un gaz non radioactif. Les seuls déchets radioactifs proviennent des matériaux structurels du réacteur qui sont activés par les neutrons rapides.  \n* **Méthodes de confinement** : le confinement magnétique, notamment dans les tokamaks (chambre toroïdale à bobines magnétiques), est la voie la plus étudiée depuis les années 1950.  \n\nCes points constituent le socle consensuel de la communauté de recherche sur la fusion nucléaire.\n\n## Ce qui reste incertain\n\n* **Bilan énergétique positif** : aucune installation n’a encore démontré de façon reproducible un gain net d’énergie (Q > 1). La condition Q > 1 reste donc un objectif expérimental non atteint.  \n* **Durée de confinement** : les temps de confinement obtenus (de l’ordre de dizaines de millisecondes) sont bien inférieurs aux durées nécessaires pour une production continue d’énergie. Les mécanismes exacts qui limitent le confinement stable sur de longues périodes ne sont pas totalement compris.  \n\nCes incertitudes constituent les principaux obstacles à la mise en œuvre d’un réacteur de fusion commercial.\n\n## Limites et controverses éventuelles\n\n* **Coût et financement** : depuis les années 1970, les programmes de recherche ont mobilisé des budgets très importants (par exemple, plusieurs centaines de millions de dollars par an aux États-Unis). Certains observateurs questionnent la rentabilité relative de ces investissements face à d’autres sources d’énergie renouvelable.  \n* **Débat sur les approches** : bien que le tokamak soit la configuration dominante, d’autres concepts (stellarator, confinement inertiel par laser) sont développés parallèlement. La communauté ne s’accorde pas encore sur la voie la plus prometteuse à long terme.  \n* **Risques perçus** : malgré le caractère « propre » des produits de fusion, la production de tritium et l’activation des matériaux suscitent des discussions sur la gestion sécuritaire des matières radioactives.  \n\nCes points de discussion reflètent des aspects techniques, économiques et sociétaux qui restent à clarifier.\n\n## Conclusion\n\nLa fusion nucléaire représente une source d’énergie potentiellement quasi illimitée, reposant sur des principes physiques bien établis et sur des ressources abondantes. Les incertitudes liées au confinement prolongé, à la résistance des matériaux et aux coûts de développement continuent d’alimenter le débat scientifique et politique. La poursuite des expérimentations, notamment dans les grands projets internationaux, reste indispensable pour déterminer si la fusion pourra un jour devenir une composante majeure du mix énergétique mondial.\n\n## Sources\n- Wikipédia (fr) — Fusion nucléaire — https://fr.wikipedia.org/wiki/Fusion_nucl%C3%A9aire\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 7,
+      "nb_mots": 1439,
+      "matiere_source": "fine",
+      "textes_sources_audit": [
+        {
+          "source": "Nature News",
+          "titre": "Record-breaking Ebola outbreak: phone data reconstruct first weeks of spread",
+          "resume": "Nature, Published online: 12 November 2026; doi:10.1038/d41586-026-03666-z The Bundibugyo virus strain was circulating for weeks before its detection in May, but was missed owing to surveillance failures, testing gaps and funding cuts, researchers say."
+        },
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Fusion nucléaire",
+          "resume": "La fusion nucléaire (ou thermonucléaire) est une réaction nucléaire dans laquelle deux noyaux atomiques s’assemblent pour former un noyau plus lourd. Cette réaction est à l’œuvre de manière naturelle dans le Soleil et la plupart des étoiles de l'Univers, dans lesquelles sont créés tous les éléments chimiques autres que l'hydrogène et la majeure partie de l'hélium. Elle est, avec la fission nucléaire, l’un des deux principaux types de réactions nucléaires appliquées.\nLa fusion nucléaire dégage une quantité d’énergie colossale par unité de masse, provenant de l’attraction entre les nucléons due à l’interaction forte (voir énergie de liaison nucléaire). La masse du ou des produits d'une réaction de fusion étant inférieure à la somme des masses des noyaux fusionnés, la différence est transformée en énergie cinétique (puis en chaleur) selon la formule d'Einstein E = mc2.\nLa fusion nucléaire est utilisée dans les bombes H et, de façon plus anecdotique, dans les générateurs de neutrons. Elle pourrait être utilisée pour la production d'électricité, pour laquelle elle présente deux intérêts majeurs :\n\nla disponibilité de son « combustible » :\nle deutérium, présent à l'état naturel en quantités importantes dans les océans,\nle tritium (pour la réaction de fusion « deutérium + tritium »), qui peut être produit par bombardement neutronique du lithium 6. Les réserves mondiales en minerai de lithium suffiraient théoriquement à garantir plus d'un million d'années de fonctionnement ;\nson caractère essentiellement « propre » de la réaction de fusion : les produits de la fusion eux-mêmes (principalement de l’hélium 4) ne sont pas radioactifs. Les déchets radioactifs se limitent aux matériaux environnants (les plaques de l'enveloppe protectrice interne du Tokamak, qui, exposée aux neutrons rapides, en les capturant deviennent radioactifs.\nEn dépit de travaux de recherche réalisés dans le monde entier depuis les années 1950, aucune application industrielle de la fusion à la production d’énergie n’a encore abouti. Les ingénieurs se heurtent à la difficulté de créer et de maintenir une température de plusieurs millions de degrés dans un espace confiné.\nLa fusion nucléaire n'a rien à voir avec la fusion du cœur d'un réacteur nucléaire, qui est un accident nucléaire au cours duquel le combustible nucléaire se liquéfie du fait des températures atteintes.\n\nHistoire\nLa découverte des réactions de fusion date du début du XXe siècle. Après quelques expériences, l'astrophysicien Arthur Eddington suggère en 1920 que l'énergie des étoiles est due à la fusion de noyaux d'hydrogène en hélium.\nEn 1934, Ernest Rutherford réalise la première réaction de fusion en laboratoire (entre atomes de deutérium).\nEn 1938, les travaux de Hans Bethe et Carl Friedrich von Weizsäcker aboutissent à la formule de Weizsäcker, qui donne une valeur approximative de l'énergie de liaison entre les nucléons dans le noyau atomique. À partir de cette formule, ils imaginent les réactions qui se produisent à l'intérieur des étoiles. En 1950, George Gamow étudie celles qui ont pu avoir lieu juste après le Big Bang. Il analyse notamment l'effet tunnel quantique comme permettant d'expliquer la fréquence des réactions de fusions de nucléons se produisant dans les étoiles.\nDans les années 1940, ces études montrent que les éléments produits dans une réaction de fusion sont beaucoup moins nombreux et ont une période radioactive nettement plus courte que les déchets générés par la fission nucléaire, sans compter que les ressources naturelles permettant la fusion sont disponibles en quantités gigantesques. La fusion créée dans les étoiles grâce à la très forte gravité est alors envisagée sur Terre à l'aide de champs magnétiques, procédé appelé fusion magnétique.\nEn 1946, les physiciens britanniques George Paget Thomson et Moses Blackman déposent le premier brevet de réacteur à fusion nucléaire. Ils proposent une chambre à vide de forme torique pour confiner un plasma. Inventé au début des années 1950 par les physiciens soviétiques Igor Tamm et Andreï Sakharov sur une idée originale du physicien Oleg Lavrentiev, l’acronyme tokamak vient du russe et se traduit par « chambre toroïdale avec bobines magnétiques ».\nDu fait de la guerre froide, plusieurs pays lancent leurs recherches isolément et dans le plus grand secret (États-Unis, URSS, Angleterre, France, Allemagne et Japon).\nEn janvier 1958, les Anglais annoncent avoir obtenu des neutrons issus de réactions de fusion : les vérifications montrent que ces neutrons viennent en fait de l'instabilité du plasma. Cet échec provoque la mutualisation des recherches au niveau mondial, annoncée en septembre de la même année à Genève, pendant le congrès du programme Atoms for Peace (« Atomes pour la paix »).\nEn 1968, deux tokamaks russes, T3 et TM3, permettent à un plasma de dépasser la température de dix millions de degrés Celsius pendant 20 millisecondes. Cette voie de recherche est dès lors considérée comme la plus prometteuse.\nLa perspective d'une source d'énergie quasiment inépuisable attise les convoitises alors que le premier choc pétrolier et la prospective démographique démontrent la précarité des ressources eu égard aux besoins énergétiques croissants. Les années 1970-1980 sont le théâtre d'une course effrénée à la recherche expérimentale et des sommes considérables sont dépensées sans que l'objectif d'obtenir un bilan énergétique positif soit atteint ; les États-Unis dépensent jusqu'à 500 millions de dollars par an dans ce cadre. La plupart des crédits sont destinés au développement de tokamaks de plus en plus puissants. D'autres domaines de recherche sont explorés."
+        }
+      ],
+      "nb_mots_decouverte": 182,
+      "nb_mots_approfondi": 1249,
+      "sujet_id": "fusion-nucleaire",
+      "origine": "encyclopedie"
+    },
+    "citation": {
+      "texte": "Je pense, donc je suis.",
+      "auteur": "René Descartes",
+      "source": "Discours de la méthode (4e partie)",
+      "annee": 1637
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 15.9,
+          "temperature_max": 19.9,
+          "temperature_min": 15.1,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 19.6,
+          "vent_max_kmh": 23.4,
+          "rafales_max_kmh": 43.6,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 15.9,
+              "temperature_max": 18.0,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 23,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 18.3,
+              "temperature_max": 19.8,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 11,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 15.7,
+              "temperature_max": 18.0,
+              "probabilite_pluie_pct": 2,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 15.9,
+          "temperature_max": 19.5,
+          "temperature_min": 15.4,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 21.3,
+          "vent_max_kmh": 30.0,
+          "rafales_max_kmh": 38.2,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 15.4,
+              "temperature_max": 18.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 23,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 18.6,
+              "temperature_max": 19.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 16.6,
+              "temperature_max": 17.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 12.8,
+          "temperature_max": 18.3,
+          "temperature_min": 12.3,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 5.4,
+          "vent_max_kmh": 12.6,
+          "rafales_max_kmh": 23.4,
+          "weather_code": 2,
+          "description": "partiellement nuageux",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 12.4,
+              "temperature_max": 17.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 16.6,
+              "temperature_max": 18.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 13.9,
+              "temperature_max": 15.1,
+              "probabilite_pluie_pct": 3,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 12.6,
+          "temperature_max": 17.3,
+          "temperature_min": 11.3,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 6.4,
+          "vent_max_kmh": 12.4,
+          "rafales_max_kmh": 22.3,
+          "weather_code": 2,
+          "description": "partiellement nuageux",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 11.4,
+              "temperature_max": 16.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 15.6,
+              "temperature_max": 17.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 13.2,
+              "temperature_max": 14.4,
+              "probabilite_pluie_pct": 2,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 19.9,
+      "temperature_min_zone": 11.3,
+      "probabilite_pluie_max_pct": 0,
+      "vent_max_kmh": 30.0,
+      "description_dominante": "couvert",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 11.4,
+          "temperature_max": 18.3,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 23,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 15.6,
+          "temperature_max": 19.8,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 11,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 13.2,
+          "temperature_max": 18.0,
+          "probabilite_pluie_pct": 3,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 10,
+          "weather_code": 2,
+          "description": "partiellement nuageux"
+        }
+      ],
+      "alertes": [],
+      "resume": "Couvert le matin, couvert l'après-midi, partiellement nuageux le soir, de 11° à 20°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "The Fall of the House of Usher",
+      "auteur": "Edgar Allan Poe",
+      "annee": 1839,
+      "segments": [
+        {
+          "t": "During the whole of a dull",
+          "g": "terne"
+        },
+        {
+          "t": ", dark, and soundless",
+          "g": "sans un bruit"
+        },
+        {
+          "t": " day in the autumn of the year, when the clouds hung oppressively",
+          "g": "de façon oppressante"
+        },
+        {
+          "t": " low in the heavens, I had been passing alone, on horseback",
+          "g": "à cheval"
+        },
+        {
+          "t": ", through a singularly",
+          "g": "singulièrement"
+        },
+        {
+          "t": " dreary",
+          "g": "désolée"
+        },
+        {
+          "t": " tract",
+          "g": "l'étendue"
+        },
+        {
+          "t": " of country; and at length",
+          "g": "enfin"
+        },
+        {
+          "t": " found myself, as the shades of the evening drew on",
+          "g": "le crépuscule approchait"
+        },
+        {
+          "t": ", within view of the melancholy House of Usher. I know not how it was—but, with the first glimpse",
+          "g": "l'aperçu"
+        },
+        {
+          "t": " of the building, a sense of insufferable gloom",
+          "g": "la tristesse sombre"
+        },
+        {
+          "t": " pervaded",
+          "g": "envahissait"
+        },
+        {
+          "t": " my spirit.",
+          "g": null
+        }
+      ],
+      "texte_glose": "During the whole of a dull (= terne), dark, and soundless (= sans un bruit) day in the autumn of the year, when the clouds hung oppressively (= de façon oppressante) low in the heavens, I had been passing alone, on horseback (= à cheval), through a singularly (= singulièrement) dreary (= désolée) tract (= l'étendue) of country; and at length (= enfin) found myself, as the shades of the evening drew on (= le crépuscule approchait), within view of the melancholy House of Usher. I know not how it was—but, with the first glimpse (= l'aperçu) of the building, a sense of insufferable gloom (= la tristesse sombre) pervaded (= envahissait) my spirit."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Présidentielle 2027 : l’offensive illibérale de Marine Le Pen."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral+nvidia",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_d": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 1
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral+nvidia",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-11-13T06:10:36.886795+01:00"
+}

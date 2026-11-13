@@ -1,149 +1,100 @@
 {
-  "date": "2026-11-12",
-  "derniere_mise_a_jour": "2026-11-12T06:23:31.441570+01:00",
+  "date": "2026-11-13",
+  "derniere_mise_a_jour": "2026-11-13T06:19:18.116986+01:00",
   "briefing": {
     "actualite": {
       "france": [
         {
-          "titre": "Plus de cent constitutionnalistes critiquent le référendum pour changer la Constitution tel que proposé par Marine Le Pen",
-          "resume": "Tout comme le président du Conseil constitutionnel Richard Ferrand mi-octobre, ils estiment irrégulière la proposition phare du programme du RN.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "France Info",
-            "Libération"
-          ]
-        },
-        {
-          "titre": "Présidentielle 2027 : Bruno Retailleau propose un calendrier pour la primaire et accentue la pression sur Edouard Philippe",
-          "resume": "Le candidat Les Républicains propose de départager les postulants à l’Elysée les 31 janvier et 7 février. Une première réunion doit avoir lieu mardi pour fixer les modalités. Si Gabriel Attal et David Lisnard seront représentés par leurs directeurs de campagne, le siège du représentant Horizons restera vide.",
-          "pourquoi_important": "Le calendrier proposé structure la primaire pour la présidentielle 2027.",
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "Libération"
-          ]
-        },
-        {
-          "titre": "Le suspect de l'attentat raciste de Trappes et La Verrière avait dressé une liste de personnalités de gauche et d'extrême gauche",
-          "resume": "Lors de la perquisition à son domicile, les enquêteurs ont découvert sur un post-it une liste de quatre personnalités de gauche et d'extrême gauche, ainsi que leurs numéros de téléphone.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "France Info",
-            "20 Minutes"
-          ]
-        },
-        {
-          "titre": "Présidentielle 2027 : Mélenchon chambre la droite sur la candidature de Riner à l’Élysée",
-          "resume": "L’arrivée dans la campagne du judoka a été saluée par Edouard Philippe et Gabriel Attal. Mais cette candidature pourrait vite les embarrasser tant ses premières positions sonnent très macronistes.",
-          "pourquoi_important": "La candidature de Riner crée des tensions entre la droite et la campagne.",
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Libération",
-            "20 Minutes"
-          ]
-        },
-        {
-          "titre": "Présidentielle 2027 : Sans être candidate à l’Élysée, Lagarde fait mieux que Philippe dans un sondage",
-          "resume": "Alors qu’elle quittera la présidence de la BCE en février, Christine Lagarde recueille 14 % des intentions de vote si elle se lance dans la course présidentielle",
-          "pourquoi_important": "Le sondage indique une popularité notable de Lagarde pour la présidentielle.",
+          "titre": "Présidentielle 2027 : l’offensive illibérale de Marine Le Pen",
+          "resume": "Associations, syndicats, magistrats, journalistes : les dirigeants du Rassemblement national multiplient les attaques publiques contre les corps intermédiaires, les institutions et les organisations civiles susceptibles de les critiquer.",
+          "pourquoi_important": "Selon Le Monde, ces attaques visent à affaiblir les contre-pouvoirs et à préparer le terrain pour la présidentielle de 2027.",
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
-            "20 Minutes"
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Au procès de l’explosion de la rue de Trévise, à Paris, les vies brisées des victimes",
+          "resume": "Blessés physiques et psychologiques ont raconté l’explosion du 12 janvier 2019 et ses conséquences sur leurs vies près de huit ans après. Delphine Bürkli, la maire du 9ᵉ arrondissement, qui s’est battue pour qu’ils soient correctement indemnisés, a dénoncé la « survictimisation » dont ils ont fait l’objet.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Attentat raciste des Yvelines : Kévin Tessier avait déjà fait l’objet d’une plainte pour violences en 2024, selon «Mediapart»",
+          "resume": "Un Français d’origine tunisienne avait mis en cause Kevin Tessier deux ans avant l’attentat meurtrier, révèle le média ce jeudi 12 novembre. «L’enquête est en cours» et aucune garde à vue n’a eu lieu, explique le parquet de Nanterre.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : pour Bruno Retailleau, une primaire de la droite doit se faire même sans Edouard Philippe",
+          "resume": "Alors que les candidats passaient à tour de rôle ce jeudi 12 novembre sur France Info pour parler des services publics, le candidat Les Républicains en a profité pour mettre encore une fois la pression sur le président d’Horizons.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Après l’attentat raciste et islamophobe à Trappes et La Verrière, l’effarant retour à la normale",
+          "resume": "Trois semaines après l’attaque terroriste meurtrière dans les Yvelines, le racisme a repris ses aises dans le débat public. L’introspection, en particulier dans les chaînes d’info en continu, fut très courte, pour ne pas dire invisible.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
           ]
         }
       ],
       "monde": [
         {
-          "titre": "Guerre en Ukraine : Volodymyr Zelensky juge une avancée possible avant la fin de l’année dans les pourparlers de paix",
-          "resume": "« Aujourd’hui, cette fenêtre d’opportunité existe réellement, où tous les participants actuellement engagés dans le processus de négociation souhaitent véritablement obtenir un résultat avant 2027 », a estimé mercredi le président ukrainien. En visite en Irlande, il doit s’entretenir jeudi avec les émissaires américains, Jared Kushner et Steve Witkoff, qui auront au préalable rencontré son homologue russe Vladimir Poutine.",
+          "titre": "Guerre en Ukraine : la présence des Européens dans les prochaines négociations de paix annoncée par Volodymyr Zelensky et les émissaires américains",
+          "resume": "Jared Kushner et Steve Witkoff, émissaires des États-Unis, ont rencontré Volodymyr Zelensky à Dublin après des entretiens à Moscou avec Vladimir Poutine.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "Le Monde",
+            "France Info",
             "Le Monde International",
             "France 24 International"
           ]
         },
         {
-          "titre": "Présidentielle 2027 : Jean-Luc Mélenchon, critiqué pour ses propositions sur l’Ukraine, accuse les médias d’avoir « truqué ses paroles »",
-          "resume": "Le candidat « insoumis » a, lors de son meeting du 7 novembre, évoqué la possibilité d’un référendum sur la cession du Donbass à la Russie pour résoudre le conflit. Le chef de file de La France insoumise a vivement répondu aux critiques mercredi 11 novembre dans un « discours sur la paix ».",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde International",
-            "Le Monde"
-          ]
-        },
-        {
-          "titre": "Paraguay : la Banque centrale rembourse en partie tous les clients de Ueno Bank dont l’effondrement a provoqué la chute du président",
-          "resume": "L’institution a partiellement remboursé des fonds à plus de 1,8 million d’épargnants de cette banque en ligne placée sous administration judiciaire début novembre en raison de problèmes de solvabilité. Les plus gros déposants devront patienter pour espérer récupérer l’intégralité de leurs fonds.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde International",
-            "France 24 International",
-            "Le Monde"
-          ]
-        },
-        {
-          "titre": "Un représentant des colonies juives en Cisjordanie refoulé à son arrivée en France, Israël dénonce une mesure « inacceptable »",
-          "resume": "Cet incident intervient dans un climat de tensions entre l’Etat hébreu et les pays européens. « Israël va exiger des explications au gouvernement français et envisagera les suites à donner en conséquence », a réagi, mercredi, le ministère des affaires étrangères israélien.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "Le Monde International",
-            "France 24 International"
-          ]
-        },
-        {
-          "titre": "L'Iran menace de frapper des bases américaines en Europe si elles servent à lancer des attaques",
-          "resume": "Plus de huit mois après le début de la guerre entre Téhéran et Washington, les efforts diplomatiques se poursuivent pour tenter de mettre fin aux hostilités, sans avancées visibles.",
+          "titre": "Des frappes israéliennes tuent au moins 11 personnes dans la bande de Gaza, le jour le plus meurtrier depuis les élections en Israël",
+          "resume": "Une frappe a ciblé l’hôpital Nasser à Khan Younès, faisant six morts selon la défense civile gazaouie. L’armée israélienne affirme avoir visé un haut responsable du Hamas.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "France Info",
-            "France 24 International",
-            "20 Minutes"
+            "Libération"
           ]
         },
         {
-          "titre": "En RDC, Félix Tshisekedi promulgue une loi controversée qui lui ouvre la voie à un troisième mandat",
-          "resume": "Le 9 novembre, un texte qui permet de soumettre une nouvelle Constitution au référendum est entré en vigueur en République démocratique du Congo. Une disposition technique qui permet au président d’assouvir son ambition de maintien au pouvoir au-delà de la fin officielle de son mandat, en 2028. L’opposition est vent debout mais peine à peser sur le jeu politique.",
+          "titre": "La Finlande annonce bloquer les visas des athlètes russes, la Norvège prévoit une mesure similaire",
+          "resume": "La Finlande et la Norvège justifient cette décision par les liens du sport russe avec les autorités, incompatible avec la guerre en Ukraine.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "Le Monde",
+            "France Info",
+            "Libération",
             "Le Monde International"
           ]
         },
         {
-          "titre": "Les élus démocrates veulent lancer des enquêtes tous azimuts contre l’administration Trump",
-          "resume": "Après leur éclatante victoire aux midterms, les démocrates préparent une longue liste de sujets possibles d’investigation, de l’enrichissement personnel du président aux abus systémiques des agents de l’ICE en passant par les suites de l’affaire Epstein. Au risque que l’administration Trump refuse de répondre aux assignations à comparaître.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
-            "Le Monde International"
-          ]
-        },
-        {
-          "titre": "Les écoles italiennes, irlandaises et écossaises visées par des alertes à la bombe",
-          "resume": "Des courriers électroniques menaçants ont été envoyés à des milliers d’établissements scolaires, mercredi 11 novembre. Les autorités de Belfast, de Dublin et d’Edimbourg ont minimisé le danger, mais en Italie le gouvernement voudrait quand même sensibiliser davantage les citoyens aux risques de la guerre hybride.",
+          "titre": "En Moldavie, la mémoire retrouvée de la grande famine planifiée par l’URSS en 1946-1947",
+          "resume": "Un projet de loi vise à reconnaître cette famine, ayant causé entre 120 000 et 200 000 morts, comme un crime contre l’humanité organisé par le régime stalinien.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
@@ -151,72 +102,94 @@
             "Le Monde International",
             "Le Monde"
           ]
+        },
+        {
+          "titre": "Au Liban, derrière le silence du Hezbollah, une stratégie et des inquiétudes",
+          "resume": "Le Hezbollah évite de riposter aux frappes israéliennes, tout en misant sur une relance des négociations entre Washington et Téhéran et en réorganisant ses forces.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Jean-Luc Mélenchon a été interdit d’entrée en Israël en raison de la « position extrêmement hostile » de LFI",
+          "resume": "L’Etat hébreu interdira l’accès à son territoire à toute personne « agissant contre ses intérêts et incitant à la haine contre ses citoyens », a prévenu la diplomatie israélienne.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "Le Monde",
+            "France Info",
+            "Libération",
+            "20 Minutes"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Au Brésil, le « beau gosse de la Paulista » redonne à la gauche son pouvoir de séduction",
+          "resume": "Dans l’entre-deux-tours de la présidentielle, dont Lula est sorti vainqueur, les militants ont fait preuve d’une grande créativité pour parvenir à cet exploit. L’irruption de la sensualité dans la campagne a contribué à rafraîchir l’image du président sortant.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon 20 Minutes, Guerre en Ukraine : Jared Kushner optimiste malgré « d’importantes divergences » entre Kiev et Moscou",
+          "resume": "",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ],
+          "complete_par_code": true
         }
       ]
     },
     "marches": {
-      "resume_court": "",
-      "mouvements_notables": [
-        {
-          "nom": "S&P 500",
-          "variation_pct": 1.31,
-          "explication": null
-        },
-        {
-          "nom": "Nasdaq",
-          "variation_pct": 1.6,
-          "explication": null
-        },
-        {
-          "nom": "DAX",
-          "variation_pct": 1.2,
-          "explication": "Selon BFM Business, les résultats de Siemens Energy ont soutenu les marchés européens."
-        },
-        {
-          "nom": "Euro Stoxx 50",
-          "variation_pct": 1.04,
-          "explication": "Selon BFM Business, les résultats de Siemens Energy ont soutenu les marchés européens."
-        },
-        {
-          "nom": "Pétrole (Brent)",
-          "variation_pct": -1.6,
-          "explication": null
-        }
-      ]
+      "resume_court": "Les principaux indices européens ont légèrement progressé, tandis que les marchés américains ont enregistré une légère baisse.",
+      "mouvements_notables": []
     },
     "sport": {
       "items": [
         {
           "sport": "football",
-          "texte": "Wendie Renard a marqué le sixième but de Lyon contre la Juventus Turin (6-0) en Ligue des champions, après avoir d'abord manqué une panenka puis conclu sur un ballon relâché par la gardienne."
+          "texte": "L'Angleterre a battu la Croatie 2-1 à Wembley, se qualifiant pour les quarts de finale de la Ligue des nations. Harry Kane est devenu le nouveau recordman des capes de l'équipe et a marqué le second but."
         },
         {
           "sport": "football",
-          "texte": "Lyon a remporté une victoire de 6-0 contre la Juventus Turin en Ligue des champions, poursuivant une série de six victoires avant de se rendre en Italie."
+          "texte": "Le FC Barcelone a terminé 1-1 contre Arsenal à domicile, perdant la tête de la phase de ligue de la Ligue des champions au profit de Lyon."
         },
         {
           "sport": "football",
-          "texte": "Liverpool a perdu 0-1 contre Arsenal à Anfield en Premier League le 1er novembre ; le Comité des incidents clés du match a jugé que Liverpool aurait dû bénéficier d'un penalty après un tirage de maillot sur Alexander Isak."
+          "texte": "Arsenal a obtenu un match nul 1-1 contre Barcelona en Ligue des champions féminine, prolongeant son invincibilité à quatre matchs."
         },
         {
-          "sport": "basketball",
-          "texte": "Nanterre a perdu 102-82 contre le Rytas Vilnius en Ligue des champions, restant à la dernière place du groupe A."
-        },
-        {
-          "sport": "basketball",
-          "texte": "L'équipe de France a battu la Grande-Bretagne 104-57 lors des qualifications pour l'Eurobasket 2027, avec le retour en sélection de Marine Fauthoux, la première de Coline Franchelin et la présence d'Aminata Gueye."
-        },
-        {
-          "sport": "basketball",
-          "texte": "Aminata Gueye, vice-championne du monde en septembre et championne WNBA en octobre, affronte la Grande-Bretagne avec les Bleues en qualifications pour l'Euro 2027."
+          "sport": "football",
+          "texte": "Harry Kane a été présenté comme un leader, modèle et extraordinaire, avec un parcours de 21 ans, 79 secondes de son premier but et un record de capes pour son pays."
         },
         {
           "sport": "tennis",
-          "texte": "Linda Noskova a battu Coco Gauff 6-3, 6-3 lors de la deuxième journée du groupe A des Finales WTA à Indian Wells, se qualifiant pour les demi-finales."
+          "texte": "Jessica Pegula a sauvé un point de match pour battre Linda Noskova et atteindre les quarts de finale des WTA Finals, au détriment de Coco Gauff."
         },
         {
-          "sport": "autres",
-          "texte": "Harry Kane, depuis son but 79 secondes après ses débuts à 21 ans, approche le record d’apparitions de sa nation, selon BBC Sport."
+          "sport": "tennis",
+          "texte": "Ugo Humbert a perdu contre Lorenzo Musetti en quarts de finale de l'ATP 250 de Stockholm, après un duel serré."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Coco Gauff a battu Marta Kostyuk 6-4, 7-5, après avoir mené 5-1 dans le deuxième set, et pourrait se qualifier pour les demi-finales des WTA Finals si Linda Noskova réussit."
+        },
+        {
+          "sport": "rugby",
+          "texte": "Les Pumas ont apporté cinq changements, dont Matera capitaine et Delguy à l'arrière, pour affronter l'Italie en Championnat des nations à Gênes."
         }
       ],
       "rien_a_signaler": false,
@@ -238,326 +211,329 @@
       ]
     },
     "science": {
-      "mode": "approfondi",
-      "titre": "La supraconductivité : un phénomène révolutionnaire aux applications stratégiques",
-      "contenu_markdown": "## Introduction\nLa supraconductivité est un phénomène physique fascinant, découvert au début du XXe siècle, qui défie les lois classiques de l’électricité. Elle se manifeste par deux propriétés remarquables : l’**absence totale de résistance électrique** dans certains matériaux, et l’**expulsion du champ magnétique** (effet Meissner) lorsqu’ils sont refroidis en dessous d’une température critique. Ces caractéristiques ouvrent la voie à des applications révolutionnaires, comme le transport d’électricité sans perte d’énergie ou le développement d’aimants ultra-puissants pour les machines d’imagerie médicale (IRM). Pourtant, malgré des progrès majeurs, ce phénomène reste partiellement mystérieux, notamment pour les matériaux dits « non conventionnels ».\n\n## Pourquoi ce sujet est-il important ?\nLa supraconductivité est un domaine clé de la physique moderne, à la fois pour ses implications fondamentales et ses applications technologiques. **Sans perte d’énergie lors du transport du courant électrique**, elle pourrait transformer les réseaux énergétiques, réduire la consommation mondiale et limiter les émissions de gaz à effet de serre. Par ailleurs, les supraconducteurs permettent de créer des **champs magnétiques extrêmement intenses**, utiles en médecine (IRM), en recherche (accélérateurs de particules) ou même dans les trains à sustentation magnétique (Maglev).\n\nHistoriquement, la découverte de ce phénomène en 1911 par le physicien néerlandais **Heike Kamerlingh Onnes** (prix Nobel en 1913) a marqué un tournant. Plus tard, la mise au jour des **cuprates** en 1986 – des matériaux supraconducteurs à des températures bien plus élevées que les précédents – a relancé l’intérêt scientifique, même si ces températures restent très basses (jusqu’à −140 °C). Aujourd’hui, la supraconductivité reste un enjeu majeur pour les physiciens, car elle interroge les lois quantiques de la matière et pourrait, à terme, permettre des avancées dans des domaines aussi variés que l’informatique quantique ou l’énergie propre.\n\n## Explication du phénomène\nLa supraconductivité repose sur des mécanismes **quantiques** qui modifient radicalement le comportement des électrons dans certains matériaux. Dans un conducteur classique (comme un fil de cuivre), les électrons se déplacent en rencontrant des obstacles (atomes du réseau cristallin), ce qui génère de la résistance et de la chaleur. En revanche, dans un supraconducteur, **les électrons s’associent par paires**, appelées **paires de Cooper**, grâce à des interactions complexes avec les atomes du matériau.\n\nCes paires se comportent comme des **bosons** (des particules qui peuvent occuper le même état quantique), et forment un **superfluide** : elles circulent sans aucune résistance, comme si le matériau était un « fluide parfait » pour le courant électrique. Parallèlement, l’**effet Meissner** montre que le supraconducteur expulse les champs magnétiques de son intérieur, un phénomène lié à la formation de courants de surface qui annulent tout champ appliqué.\n\n## Fonctionnement et mécanismes\nDeux grandes catégories de supraconducteurs existent, avec des mécanismes distincts :\n\n1. **Les supraconducteurs conventionnels** (découverts dès 1911).\n   Dans ces matériaux, les électrons forment des paires grâce à une interaction indirecte médiée par les **phonons** (vibrations du réseau cristallin).\n\n2. **Les supraconducteurs non conventionnels**.\n   Découverts plus tard, notamment les **cuprates** (à base de cuivre et d’oxygène), ils présentent une supraconductivité à des températures bien plus élevées (jusqu’à 133 K, soit −140 °C), mais leur mécanisme reste mal compris. Contrairement aux supraconducteurs conventionnels, l’appariement des électrons ne semble pas lié aux phonons. Plusieurs théories sont proposées, comme l’**échange de fluctuations de spin**, mais aucune ne fait consensus. Ces matériaux pourraient offrir des pistes pour atteindre la supraconductivité à température ambiante, un Graal scientifique encore hors de portée.\n\nLa superfluidité, phénomène apparenté, illustre aussi ce comportement quantique : dans certains liquides comme l’hélium, les atomes s’écoulent sans viscosité, comme les paires de Cooper dans un supraconducteur. Ces mécanismes soulignent l’importance des **états quantiques macroscopiques** dans la supraconductivité, où des milliards d’électrons ou d’atomes agissent de manière coordonnée.\n\n## Données et résultats scientifiques\n\nLes premières mesures de supraconductivité ont montré que la résistivité du mercure chute à zéro en dessous d’une température critique d’environ **4,2 K**. Cette température, notée Tc, marque le passage du métal à l’état supraconducteur.  \n\nDans la catégorie des supraconducteurs dits « à haute température critique », les cuprates découvertes en 1986 affichent des températures critiques nettement supérieures. Le maximum observé à ce jour est de **133 K** (soit −140 °C). Certaines de ces phases restent supraconductrices au-dessus de la température de liquéfaction de l’azote liquide (77 K, −196 °C).  \n\nLes expériences sur les supraconducteurs conventionnels ont confirmé la formation de paires d’électrons (paires de Cooper) qui se comportent comme des bosons et se condensent dans un même état quantique, conduisant à l’absence de résistance électrique et à l’effet Meissner (expulsion du champ magnétique).  \n\n## Ce que les scientifiques savent\n\n- **Mécanisme BCS** : pour les supraconducteurs conventionnels, la théorie de Bardeen‑Cooper‑Schrieffer explique l’appariement des électrons via l’interaction avec le réseau cristallin, conduisant à la formation de paires de Cooper et à la condensation en un superfluide.  \n- **Effet Meissner** : la transition supraconductrice s’accompagne toujours de l’expulsion du champ magnétique du volume du matériau, caractéristique mesurable expérimentalement.  \n- **Classification** : on distingue les supraconducteurs conventionnels (explained by BCS) et les supraconducteurs non conventionnels, dont les cuprates et certains composés à base de fer, qui ne sont pas décrits par la théorie BCS.  \n- **Températures critiques** : les matériaux classiques ont des Tc proches du zéro absolu, tandis que les cuprates atteignent jusqu’à 133 K, bien que cela reste très inférieur aux températures ambiantes.  \n\n## Ce qui reste incertain\n\n- **Mécanisme des supraconducteurs non conventionnels** : aucune théorie unique ne décrit de façon satisfaisante la supraconductivité des cuprates et des matériaux à base de fer. La théorie des fluctuations de spin est l’une des approches les plus prometteuses, mais le consensus scientifique n’est pas établi.  \n- **Nature exacte de l’appariement** : dans les matériaux non conventionnels, le processus d’appariement des électrons (par échange de fluctuations de spin ou d’autres interactions) demeure débattu.  \n- **Limites de la température critique** : il n’est pas encore clair quels facteurs matériels ou structuraux pourraient permettre d’atteindre des températures critiques encore plus élevées, proches de la température ambiante.  \n\n## Limites et controverses éventuelles\n\n- **Absence de théorie unifiée** : la diversité des comportements observés dans les supraconducteurs non conventionnels entraîne des divergences d’interprétation parmi les physiciens.  \n- **Défis technologiques** : bien que la supraconductivité permette le transport d’électricité sans perte, les exigences de refroidissement à des températures très basses (quelques kelvins) limitent actuellement les applications pratiques à grande échelle.  \n- **Controverses historiques** : la découverte initiale en 1911 a suscité des débats quant à la contribution exacte des membres de l’équipe d’onnes, bien que les archives indiquent que Heike Kamerlingh Onnes dirigeait l’expérience.  \n\n## Conclusion\n\nLa supraconductivité représente un phénomène quantique remarquable, caractérisé par l’absence de résistance électrique et l’expulsion du champ magnétique. Les découvertes historiques ont établi les bases expérimentales (Tc ≈ 4,2 K pour le mercure) et la théorie BCS explique les matériaux conventionnels. Cependant, les supraconducteurs non conventionnels, notamment les cuprates, restent partiellement incompris : aucune théorie consensuelle ne rend compte de leurs températures critiques élevées, et les mécanismes d’appariement des électrons font encore l’objet de recherches actives. Les avancées futures dépendront de la capacité à élucider ces mécanismes et à développer des matériaux fonctionnant à des températures plus élevées, ouvrant ainsi la voie à des applications technologiques plus accessibles.\n\n## Sources\n- Wikipédia (fr) — Supraconductivité — https://fr.wikipedia.org/wiki/Supraconductivit%C3%A9\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
-      "phrases_retirees_garde_fou": 2,
-      "nb_mots": 1226,
-      "sujet_id": "supraconductivite",
-      "origine": "encyclopedie",
-      "matiere_source": "suffisante",
+      "mode": "decouverte",
+      "titre": "Comment les données mobiles ont révélé la propagation précoce d’une épidémie d’Ebola",
+      "contenu_markdown": "Une étude publiée dans *Nature* le 12 novembre 2026 montre que la souche du virus **Bundibugyo** (une variante d’Ebola) circulait depuis plusieurs semaines avant d’être officiellement détectée en mai. Grâce à l’analyse de **données anonymisées de téléphones portables**, des chercheurs ont pu reconstituer les premiers mouvements de l’épidémie, mettant en lumière des **failles majeures dans la surveillance sanitaire** : lacunes dans les tests, réductions de financement et systèmes d’alerte défaillants.\n\nCette découverte souligne l’importance des **outils numériques** pour traquer les épidémies en temps réel, surtout dans des régions où les infrastructures médicales sont limitées. Elle confirme aussi que les épidémies peuvent échapper aux réseaux de détection classiques, retardant les réponses sanitaires cruciales.\n\nLes détails sur les méthodes précises d’analyse des données, ainsi que les limites de cette approche, sont à consulter dans l’article original. La question des **facteurs humains** (sous-déclaration, accès aux soins) reste un sujet d’étude complémentaire.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03666-z\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Fusion nucléaire\n\n## Introduction\nLa fusion nucléaire est une réaction où deux noyaux atomiques s’assemblent pour former un noyau plus lourd, libérant une énergie colossale. Contrairement à la fission, utilisée dans les centrales nucléaires actuelles, elle reproduit le processus naturel qui alimente les étoiles, dont le Soleil. Depuis les années 1950, les scientifiques tentent de maîtriser cette réaction pour en faire une source d’énergie propre et quasi illimitée. Pourtant, malgré des avancées majeures, son application industrielle reste un défi technique et scientifique.\n\n## Pourquoi la fusion nucléaire est-elle importante ?\nLa fusion nucléaire présente deux avantages majeurs qui en font un enjeu stratégique pour l’avenir énergétique de la planète :\n- **Des ressources quasi inépuisables** : les combustibles utilisés, comme le deutérium (un isotope de l’hydrogène présent dans l’eau des océans) et le tritium (produit à partir de lithium), sont disponibles en quantités bien supérieures aux réserves de combustibles fossiles ou d’uranium.\n- **Une production d’énergie propre** : les produits directs de la fusion (principalement de l’hélium) ne sont pas radioactifs. Les seuls déchets radioactifs proviennent des matériaux internes du réacteur, comme les parois exposées aux neutrons, et leur durée de vie radioactive est bien plus courte que celle des déchets de fission.\n\nEn comparaison avec les énergies fossiles ou même la fission, la fusion pourrait offrir une solution durable pour répondre à la demande croissante en électricité tout en limitant les émissions de gaz à effet de serre.\n\n## Explication du phénomène : comment fonctionne la fusion ?\nLa fusion repose sur un principe simple mais extrême : **fusionner deux noyaux légers pour en former un plus lourd**, ce qui libère une énergie considérable. Cette énergie provient d’une différence de masse entre les noyaux initiaux et le noyau résultant, transformée en énergie selon la célèbre équation d’Einstein, *E = mc²*.\n\nPour que cette réaction se produise, il faut surmonter une force naturelle : la **répulsion électrostatique** entre les noyaux, tous deux chargés positivement. Dans les étoiles, la gravité extrême permet de comprimer suffisamment la matière pour que les noyaux se rapprochent et fusionnent.\n\n## Fonctionnement et mécanismes : confiner et contrôler le plasma\nLe défi principal réside dans le **confinement** de ce plasma à haute température pendant un temps suffisant pour que la fusion se produise efficacement. Plusieurs méthodes sont explorées, mais la plus étudiée est la **fusion magnétique**, utilisant des champs magnétiques intenses pour maintenir le plasma à l’écart des parois du réacteur.\n\n## Le principe du tokamak\nLe **tokamak** (acronyme russe pour *chambre toroïdale avec bobines magnétiques*) est le dispositif le plus répandu pour confiner le plasma. Cette configuration permet de limiter les pertes d’énergie et d’éviter que le plasma ne touche les parois, ce qui les endommagerait.\n\n## Les réactions de fusion les plus étudiées\nDeux réactions sont particulièrement étudiées :\n1. Elle est donc la plus prometteuse pour une application industrielle.\n2. **La réaction deutérium-deutérium (D-D)** : elle ne produit pas de tritium, mais libère moins d’énergie et nécessite des températures plus élevées. Elle est moins utilisée pour la production d’électricité, mais pourrait servir de \"réaction de démarrage\" dans certains réacteurs.\n\n## L’équilibre énergétique : le critère de Lawson\nPour qu’un réacteur à fusion soit viable, il doit produire plus d’énergie qu’il n’en consomme. Ce seuil est défini par le **critère de Lawson**, qui dépend de la température, de la densité du plasma et du temps de confinement. En pratique, cela signifie que le plasma doit rester stable et confiné pendant plusieurs secondes, avec une densité et une température suffisantes pour que les réactions de fusion dégagent plus d’énergie que celle nécessaire pour chauffer et maintenir le plasma.\n\n## Données et résultats scientifiques\n\nLes expériences menées depuis les années 1950 ont permis d’établir plusieurs repères quantitatifs.  \n* Les premiers tokamaks russes, T3 et TM3 (1968), ont atteint une température de plasma d’environ dix millions de degrés Celsius pendant vingt millisecondes.  \n* Aucun dispositif expérimental n’a encore produit un « gain net » d’énergie, c’est‑à‑dire que la puissance thermique dégagée par la fusion n’a pas dépassé la puissance injectée pour chauffer le plasma.  \n* Les réactions de fusion les plus étudiées sur Terre utilisent le mélange deutérium‑tritium. Le deutérium est abondant dans les océans, le tritium pouvant être généré à partir du lithium‑6.  \n\nLes données chiffrées détaillées sur les performances des différents réacteurs (puissance de chauffage, durée de confinement, densité du plasma, etc.) sont présentées dans les publications techniques de chaque programme, mais aucune de ces expériences n’a encore abouti à une production d’électricité commercialement viable.\n\n## Ce que les scientifiques savent\n\n* **Principe énergétique** : la masse des produits de fusion est inférieure à la somme des masses des noyaux initiaux ; la différence se convertit en énergie selon la relation d’Einstein E = mc².  \n* **Sources de combustible** : le deutérium est présent en grande quantité dans les eaux océaniques ; le tritium peut être produit par irradiation neutronique du lithium‑6, dont les réserves mondiales pourraient soutenir plus d’un million d’années de fonctionnement théorique.  \n* **Produits de la réaction** : la fusion deutérium‑tritium génère principalement de l’hélium‑4, un gaz non radioactif. Les seuls déchets radioactifs proviennent des matériaux structurels du réacteur qui sont activés par les neutrons rapides.  \n* **Méthodes de confinement** : le confinement magnétique, notamment dans les tokamaks (chambre toroïdale à bobines magnétiques), est la voie la plus étudiée depuis les années 1950.  \n\nCes points constituent le socle consensuel de la communauté de recherche sur la fusion nucléaire.\n\n## Ce qui reste incertain\n\n* **Bilan énergétique positif** : aucune installation n’a encore démontré de façon reproducible un gain net d’énergie (Q > 1). La condition Q > 1 reste donc un objectif expérimental non atteint.  \n* **Durée de confinement** : les temps de confinement obtenus (de l’ordre de dizaines de millisecondes) sont bien inférieurs aux durées nécessaires pour une production continue d’énergie. Les mécanismes exacts qui limitent le confinement stable sur de longues périodes ne sont pas totalement compris.  \n\nCes incertitudes constituent les principaux obstacles à la mise en œuvre d’un réacteur de fusion commercial.\n\n## Limites et controverses éventuelles\n\n* **Coût et financement** : depuis les années 1970, les programmes de recherche ont mobilisé des budgets très importants (par exemple, plusieurs centaines de millions de dollars par an aux États-Unis). Certains observateurs questionnent la rentabilité relative de ces investissements face à d’autres sources d’énergie renouvelable.  \n* **Débat sur les approches** : bien que le tokamak soit la configuration dominante, d’autres concepts (stellarator, confinement inertiel par laser) sont développés parallèlement. La communauté ne s’accorde pas encore sur la voie la plus prometteuse à long terme.  \n* **Risques perçus** : malgré le caractère « propre » des produits de fusion, la production de tritium et l’activation des matériaux suscitent des discussions sur la gestion sécuritaire des matières radioactives.  \n\nCes points de discussion reflètent des aspects techniques, économiques et sociétaux qui restent à clarifier.\n\n## Conclusion\n\nLa fusion nucléaire représente une source d’énergie potentiellement quasi illimitée, reposant sur des principes physiques bien établis et sur des ressources abondantes. Les incertitudes liées au confinement prolongé, à la résistance des matériaux et aux coûts de développement continuent d’alimenter le débat scientifique et politique. La poursuite des expérimentations, notamment dans les grands projets internationaux, reste indispensable pour déterminer si la fusion pourra un jour devenir une composante majeure du mix énergétique mondial.\n\n## Sources\n- Wikipédia (fr) — Fusion nucléaire — https://fr.wikipedia.org/wiki/Fusion_nucl%C3%A9aire\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 7,
+      "nb_mots": 1439,
+      "matiere_source": "fine",
       "textes_sources_audit": [
         {
+          "source": "Nature News",
+          "titre": "Record-breaking Ebola outbreak: phone data reconstruct first weeks of spread",
+          "resume": "Nature, Published online: 12 November 2026; doi:10.1038/d41586-026-03666-z The Bundibugyo virus strain was circulating for weeks before its detection in May, but was missed owing to surveillance failures, testing gaps and funding cuts, researchers say."
+        },
+        {
           "source": "Wikipédia (fr)",
-          "titre": "Supraconductivité",
-          "resume": "La supraconductivité, ou supraconduction, est un phénomène physique caractérisé par l'absence de résistance électrique et l'expulsion du champ magnétique — l'effet Meissner — à l'intérieur de certains matériaux dits supraconducteurs.\nLa supraconductivité découverte historiquement en premier, et que l'on nomme communément supraconductivité conventionnelle, se manifeste à des températures très basses, proches du zéro absolu (−273,15 °C). La supraconductivité permet notamment de transporter de l'électricité sans perte d'énergie. Ses applications potentielles sont stratégiques.\nDans les supraconducteurs conventionnels, des interactions complexes se produisent entre les atomes et les électrons libres et conduisent à l'apparition de paires liées d'électrons, appelées paires de Cooper. L'explication de la supraconductivité est intimement liée aux caractéristiques quantiques de la matière. Alors que les électrons sont des fermions, les paires d'électrons se comportent comme des bosons de spin égal à 0 nommé singulet, et sont « condensées » dans un seul état quantique, sous la forme d'un superfluide de paires de Cooper.\nUn effet similaire de la supraconductivité est la superfluidité, caractérisant un écoulement sans aucune résistance, c'est-à-dire qu'une petite perturbation que l'on soumet à ce type de liquide ne s'arrête jamais, de la même façon que les paires de Cooper se déplacent sans aucune résistance dans un supraconducteur.\nIl existe également d'autres classes de matériaux, collectivement appelés « supraconducteurs non conventionnels » (par opposition à la dénomination de supraconductivité conventionnelle), dont les propriétés ne sont pas expliquées par la théorie BCS. En particulier, la classe des cuprates (ou « supraconducteurs à haute température critique »), découverte en 1986, présente des propriétés supraconductrices à des températures bien plus élevées que les supraconducteurs conventionnels. Toutefois, ce que les physiciens nomment « haute température » reste extrêmement bas comparativement aux températures à la surface de la Terre (le maximum est 133 K, soit −140 °C), mais sont parfois au-dessus de la température de liquéfaction de l'azote en azote liquide à 77 K (−196 °C).\nBien que ce sujet soit, depuis le début des années 1990, l'un des plus étudiés de la physique du solide, en 2010 aucune théorie unique ne décrit de façon satisfaisante le phénomène de la supraconductivité non conventionnelle. La théorie des fluctuations de spin est une des plus prometteuses et permet de reproduire beaucoup des propriétés de l'hélium 3, des fermions lourds ainsi que des cuprates. Dans cette théorie, l'appariement se fait par échange de fluctuations de spin ; toutefois, aucun consensus n'est à ce jour établi. Cette théorie pourrait également permettre d'expliquer la supraconductivité des supraconducteurs à base de fer[Passage à actualiser].\n\nHistorique\n\nLe phénomène est découvert en 1911 par le physicien néerlandais Heike Kamerlingh Onnes et son équipe composée de Gilles Holst, Cornelis Dorsman et Gerit Flim. Kamerlingh Onnes avait réussi à liquéfier pour la première fois de l'hélium en 1908, ce qui lui avait permis de mener des mesures physiques jusqu'à des températures de 1,5 K (−271,6 °C). Il avait alors entrepris un programme de mesures systématiques des propriétés de la matière à très basse température, en particulier la mesure de la résistance électrique des métaux. Le 8 avril 1911, l'équipe mesure que la résistivité électrique (ou résistance électrique) du mercure devient nulle en dessous d’une certaine température appelée température critique Tc, de l'ordre de 4,2 K pour le mercure. C'est la première observation d'un état supraconducteur, bien qu'à cette époque on pût le confondre avec un conducteur idéal. Une rumeur attribue le mérite de la découverte au seul Gilles Holst (un étudiant de K. Onnes), mais le cahier d'expérience découvert ensuite, écrit de la main même de Kamerlingh Onnes, montre que ce dernier était bien aux commandes de l'expérience ce jour-là, Gilles Holst mesurant la résistance électrique avec un pont de Wheatstone, Cornelis Dorsman et Gerit Flim s'occupant des aspects de cryogénie. Pour l'ensemble de son travail sur la liquéfaction de l'hélium et l'utilisation de l'hélium liquide, Kamerlingh Onnes reçoit le prix Nobel de physique en 1913."
+          "titre": "Fusion nucléaire",
+          "resume": "La fusion nucléaire (ou thermonucléaire) est une réaction nucléaire dans laquelle deux noyaux atomiques s’assemblent pour former un noyau plus lourd. Cette réaction est à l’œuvre de manière naturelle dans le Soleil et la plupart des étoiles de l'Univers, dans lesquelles sont créés tous les éléments chimiques autres que l'hydrogène et la majeure partie de l'hélium. Elle est, avec la fission nucléaire, l’un des deux principaux types de réactions nucléaires appliquées.\nLa fusion nucléaire dégage une quantité d’énergie colossale par unité de masse, provenant de l’attraction entre les nucléons due à l’interaction forte (voir énergie de liaison nucléaire). La masse du ou des produits d'une réaction de fusion étant inférieure à la somme des masses des noyaux fusionnés, la différence est transformée en énergie cinétique (puis en chaleur) selon la formule d'Einstein E = mc2.\nLa fusion nucléaire est utilisée dans les bombes H et, de façon plus anecdotique, dans les générateurs de neutrons. Elle pourrait être utilisée pour la production d'électricité, pour laquelle elle présente deux intérêts majeurs :\n\nla disponibilité de son « combustible » :\nle deutérium, présent à l'état naturel en quantités importantes dans les océans,\nle tritium (pour la réaction de fusion « deutérium + tritium »), qui peut être produit par bombardement neutronique du lithium 6. Les réserves mondiales en minerai de lithium suffiraient théoriquement à garantir plus d'un million d'années de fonctionnement ;\nson caractère essentiellement « propre » de la réaction de fusion : les produits de la fusion eux-mêmes (principalement de l’hélium 4) ne sont pas radioactifs. Les déchets radioactifs se limitent aux matériaux environnants (les plaques de l'enveloppe protectrice interne du Tokamak, qui, exposée aux neutrons rapides, en les capturant deviennent radioactifs.\nEn dépit de travaux de recherche réalisés dans le monde entier depuis les années 1950, aucune application industrielle de la fusion à la production d’énergie n’a encore abouti. Les ingénieurs se heurtent à la difficulté de créer et de maintenir une température de plusieurs millions de degrés dans un espace confiné.\nLa fusion nucléaire n'a rien à voir avec la fusion du cœur d'un réacteur nucléaire, qui est un accident nucléaire au cours duquel le combustible nucléaire se liquéfie du fait des températures atteintes.\n\nHistoire\nLa découverte des réactions de fusion date du début du XXe siècle. Après quelques expériences, l'astrophysicien Arthur Eddington suggère en 1920 que l'énergie des étoiles est due à la fusion de noyaux d'hydrogène en hélium.\nEn 1934, Ernest Rutherford réalise la première réaction de fusion en laboratoire (entre atomes de deutérium).\nEn 1938, les travaux de Hans Bethe et Carl Friedrich von Weizsäcker aboutissent à la formule de Weizsäcker, qui donne une valeur approximative de l'énergie de liaison entre les nucléons dans le noyau atomique. À partir de cette formule, ils imaginent les réactions qui se produisent à l'intérieur des étoiles. En 1950, George Gamow étudie celles qui ont pu avoir lieu juste après le Big Bang. Il analyse notamment l'effet tunnel quantique comme permettant d'expliquer la fréquence des réactions de fusions de nucléons se produisant dans les étoiles.\nDans les années 1940, ces études montrent que les éléments produits dans une réaction de fusion sont beaucoup moins nombreux et ont une période radioactive nettement plus courte que les déchets générés par la fission nucléaire, sans compter que les ressources naturelles permettant la fusion sont disponibles en quantités gigantesques. La fusion créée dans les étoiles grâce à la très forte gravité est alors envisagée sur Terre à l'aide de champs magnétiques, procédé appelé fusion magnétique.\nEn 1946, les physiciens britanniques George Paget Thomson et Moses Blackman déposent le premier brevet de réacteur à fusion nucléaire. Ils proposent une chambre à vide de forme torique pour confiner un plasma. Inventé au début des années 1950 par les physiciens soviétiques Igor Tamm et Andreï Sakharov sur une idée originale du physicien Oleg Lavrentiev, l’acronyme tokamak vient du russe et se traduit par « chambre toroïdale avec bobines magnétiques ».\nDu fait de la guerre froide, plusieurs pays lancent leurs recherches isolément et dans le plus grand secret (États-Unis, URSS, Angleterre, France, Allemagne et Japon).\nEn janvier 1958, les Anglais annoncent avoir obtenu des neutrons issus de réactions de fusion : les vérifications montrent que ces neutrons viennent en fait de l'instabilité du plasma. Cet échec provoque la mutualisation des recherches au niveau mondial, annoncée en septembre de la même année à Genève, pendant le congrès du programme Atoms for Peace (« Atomes pour la paix »).\nEn 1968, deux tokamaks russes, T3 et TM3, permettent à un plasma de dépasser la température de dix millions de degrés Celsius pendant 20 millisecondes. Cette voie de recherche est dès lors considérée comme la plus prometteuse.\nLa perspective d'une source d'énergie quasiment inépuisable attise les convoitises alors que le premier choc pétrolier et la prospective démographique démontrent la précarité des ressources eu égard aux besoins énergétiques croissants. Les années 1970-1980 sont le théâtre d'une course effrénée à la recherche expérimentale et des sommes considérables sont dépensées sans que l'objectif d'obtenir un bilan énergétique positif soit atteint ; les États-Unis dépensent jusqu'à 500 millions de dollars par an dans ce cadre. La plupart des crédits sont destinés au développement de tokamaks de plus en plus puissants. D'autres domaines de recherche sont explorés."
         }
-      ]
+      ],
+      "nb_mots_decouverte": 182,
+      "nb_mots_approfondi": 1249,
+      "sujet_id": "fusion-nucleaire",
+      "origine": "encyclopedie"
     },
     "citation": {
-      "texte": "Ce qui ne me tue pas me rend plus fort.",
-      "auteur": "Friedrich Nietzsche",
-      "source": "Crépuscule des idoles, « Maximes et pointes », 8",
-      "annee": 1888
+      "texte": "Je pense, donc je suis.",
+      "auteur": "René Descartes",
+      "source": "Discours de la méthode (4e partie)",
+      "annee": 1637
     },
     "meteo": {
       "villes_detail": [
         {
           "ville": "Antibes",
-          "temperature_actuelle": 17.5,
-          "temperature_max": 17.7,
-          "temperature_min": 16.3,
-          "precipitation_mm": 67.2,
-          "probabilite_pluie_pct": 100,
-          "vent_kmh": 18.2,
-          "vent_max_kmh": 34.0,
-          "rafales_max_kmh": 60.8,
-          "weather_code": 65,
-          "description": "forte pluie",
+          "temperature_actuelle": 15.9,
+          "temperature_max": 19.9,
+          "temperature_min": 15.1,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 19.6,
+          "vent_max_kmh": 23.4,
+          "rafales_max_kmh": 43.6,
+          "weather_code": 3,
+          "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 17.0,
-              "temperature_max": 17.5,
-              "probabilite_pluie_pct": 100,
-              "precipitation_mm": 50.6,
-              "vent_max_kmh": 28,
-              "weather_code": 65,
-              "description": "forte pluie"
+              "temperature_min": 15.9,
+              "temperature_max": 18.0,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 23,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 16.9,
-              "temperature_max": 17.7,
-              "probabilite_pluie_pct": 100,
-              "precipitation_mm": 14.7,
-              "vent_max_kmh": 34,
-              "weather_code": 65,
-              "description": "forte pluie"
+              "temperature_min": 18.3,
+              "temperature_max": 19.8,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 11,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Soir",
-              "temperature_min": 16.4,
-              "temperature_max": 17.1,
-              "probabilite_pluie_pct": 88,
-              "precipitation_mm": 1.9,
-              "vent_max_kmh": 18,
-              "weather_code": 55,
-              "description": "bruine forte"
+              "temperature_min": 15.7,
+              "temperature_max": 18.0,
+              "probabilite_pluie_pct": 2,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             }
           ],
-          "alertes": [
-            "Rafales jusqu'à 61 km/h",
-            "Pluie abondante (67 mm sur la journée)"
-          ]
+          "alertes": []
         },
         {
           "ville": "Cannes",
-          "temperature_actuelle": 16.6,
-          "temperature_max": 17.5,
-          "temperature_min": 16.6,
-          "precipitation_mm": 72.4,
-          "probabilite_pluie_pct": 100,
-          "vent_kmh": 16.1,
-          "vent_max_kmh": 24.6,
-          "rafales_max_kmh": 60.5,
-          "weather_code": 65,
-          "description": "forte pluie",
+          "temperature_actuelle": 15.9,
+          "temperature_max": 19.5,
+          "temperature_min": 15.4,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 21.3,
+          "vent_max_kmh": 30.0,
+          "rafales_max_kmh": 38.2,
+          "weather_code": 3,
+          "description": "couvert",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 16.6,
-              "temperature_max": 17.5,
-              "probabilite_pluie_pct": 100,
-              "precipitation_mm": 54.2,
-              "vent_max_kmh": 25,
-              "weather_code": 65,
-              "description": "forte pluie"
+              "temperature_min": 15.4,
+              "temperature_max": 18.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 23,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 16.7,
-              "temperature_max": 17.4,
-              "probabilite_pluie_pct": 100,
-              "precipitation_mm": 17.5,
-              "vent_max_kmh": 20,
-              "weather_code": 65,
-              "description": "forte pluie"
+              "temperature_min": 18.6,
+              "temperature_max": 19.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 3,
+              "description": "couvert"
             },
             {
               "label": "Soir",
-              "temperature_min": 16.9,
-              "temperature_max": 17.2,
-              "probabilite_pluie_pct": 75,
-              "precipitation_mm": 0.7,
-              "vent_max_kmh": 16,
+              "temperature_min": 16.6,
+              "temperature_max": 17.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
               "weather_code": 3,
               "description": "couvert"
             }
           ],
-          "alertes": [
-            "Rafales jusqu'à 60 km/h",
-            "Pluie abondante (72 mm sur la journée)"
-          ]
+          "alertes": []
         },
         {
           "ville": "Valbonne",
-          "temperature_actuelle": 14.8,
-          "temperature_max": 15.6,
-          "temperature_min": 13.7,
-          "precipitation_mm": 66.9,
-          "probabilite_pluie_pct": 100,
-          "vent_kmh": 7.9,
-          "vent_max_kmh": 15.6,
-          "rafales_max_kmh": 27.0,
-          "weather_code": 65,
-          "description": "forte pluie",
+          "temperature_actuelle": 12.8,
+          "temperature_max": 18.3,
+          "temperature_min": 12.3,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 5.4,
+          "vent_max_kmh": 12.6,
+          "rafales_max_kmh": 23.4,
+          "weather_code": 2,
+          "description": "partiellement nuageux",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 14.8,
-              "temperature_max": 15.1,
-              "probabilite_pluie_pct": 100,
-              "precipitation_mm": 30.1,
-              "vent_max_kmh": 12,
-              "weather_code": 63,
-              "description": "pluie"
+              "temperature_min": 12.4,
+              "temperature_max": 17.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 15.0,
-              "temperature_max": 15.6,
-              "probabilite_pluie_pct": 100,
-              "precipitation_mm": 36.2,
-              "vent_max_kmh": 16,
-              "weather_code": 65,
-              "description": "forte pluie"
+              "temperature_min": 16.6,
+              "temperature_max": 18.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             },
             {
               "label": "Soir",
               "temperature_min": 13.9,
-              "temperature_max": 14.8,
-              "probabilite_pluie_pct": 78,
-              "precipitation_mm": 0.6,
+              "temperature_max": 15.1,
+              "probabilite_pluie_pct": 3,
+              "precipitation_mm": 0.0,
               "vent_max_kmh": 7,
-              "weather_code": 3,
-              "description": "couvert"
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             }
           ],
-          "alertes": [
-            "Pluie abondante (67 mm sur la journée)"
-          ]
+          "alertes": []
         },
         {
           "ville": "Grasse",
-          "temperature_actuelle": 14.0,
-          "temperature_max": 15.0,
-          "temperature_min": 13.1,
-          "precipitation_mm": 48.1,
-          "probabilite_pluie_pct": 100,
-          "vent_kmh": 8.6,
-          "vent_max_kmh": 13.0,
-          "rafales_max_kmh": 23.0,
-          "weather_code": 63,
-          "description": "pluie",
+          "temperature_actuelle": 12.6,
+          "temperature_max": 17.3,
+          "temperature_min": 11.3,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 6.4,
+          "vent_max_kmh": 12.4,
+          "rafales_max_kmh": 22.3,
+          "weather_code": 2,
+          "description": "partiellement nuageux",
           "periodes": [
             {
               "label": "Matin",
-              "temperature_min": 13.8,
-              "temperature_max": 14.3,
-              "probabilite_pluie_pct": 100,
-              "precipitation_mm": 24.3,
-              "vent_max_kmh": 11,
-              "weather_code": 63,
-              "description": "pluie"
+              "temperature_min": 11.4,
+              "temperature_max": 16.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 0,
+              "description": "ciel dégagé"
             },
             {
               "label": "Après-midi",
-              "temperature_min": 14.2,
-              "temperature_max": 15.0,
-              "probabilite_pluie_pct": 100,
-              "precipitation_mm": 23.0,
-              "vent_max_kmh": 13,
-              "weather_code": 63,
-              "description": "pluie"
+              "temperature_min": 15.6,
+              "temperature_max": 17.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             },
             {
               "label": "Soir",
-              "temperature_min": 13.1,
-              "temperature_max": 14.2,
-              "probabilite_pluie_pct": 78,
-              "precipitation_mm": 0.8,
-              "vent_max_kmh": 6,
-              "weather_code": 3,
-              "description": "couvert"
+              "temperature_min": 13.2,
+              "temperature_max": 14.4,
+              "probabilite_pluie_pct": 2,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
             }
           ],
-          "alertes": [
-            "Pluie abondante (48 mm sur la journée)"
-          ]
+          "alertes": []
         }
       ],
-      "temperature_max_zone": 17.7,
-      "temperature_min_zone": 13.1,
-      "probabilite_pluie_max_pct": 100,
-      "vent_max_kmh": 34.0,
-      "description_dominante": "forte pluie",
+      "temperature_max_zone": 19.9,
+      "temperature_min_zone": 11.3,
+      "probabilite_pluie_max_pct": 0,
+      "vent_max_kmh": 30.0,
+      "description_dominante": "couvert",
       "periodes": [
         {
           "label": "Matin",
-          "temperature_min": 13.8,
-          "temperature_max": 17.5,
-          "probabilite_pluie_pct": 100,
-          "precipitation_mm": 54.2,
-          "vent_max_kmh": 28,
-          "weather_code": 65,
-          "description": "forte pluie"
+          "temperature_min": 11.4,
+          "temperature_max": 18.3,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 23,
+          "weather_code": 3,
+          "description": "couvert"
         },
         {
           "label": "Après-midi",
-          "temperature_min": 14.2,
-          "temperature_max": 17.7,
-          "probabilite_pluie_pct": 100,
-          "precipitation_mm": 36.2,
-          "vent_max_kmh": 34,
-          "weather_code": 65,
-          "description": "forte pluie"
+          "temperature_min": 15.6,
+          "temperature_max": 19.8,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 11,
+          "weather_code": 3,
+          "description": "couvert"
         },
         {
           "label": "Soir",
-          "temperature_min": 13.1,
-          "temperature_max": 17.2,
-          "probabilite_pluie_pct": 88,
-          "precipitation_mm": 1.9,
-          "vent_max_kmh": 18,
-          "weather_code": 3,
-          "description": "couvert"
+          "temperature_min": 13.2,
+          "temperature_max": 18.0,
+          "probabilite_pluie_pct": 3,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 10,
+          "weather_code": 2,
+          "description": "partiellement nuageux"
         }
       ],
-      "alertes": [
-        "Rafales jusqu'à 61 km/h",
-        "Pluie abondante (67 mm sur la journée)",
-        "Rafales jusqu'à 60 km/h",
-        "Pluie abondante (72 mm sur la journée)",
-        "Pluie abondante (48 mm sur la journée)"
-      ],
-      "resume": "Forte pluie le matin, forte pluie l'après-midi, couvert le soir, de 13° à 18°."
+      "alertes": [],
+      "resume": "Couvert le matin, couvert l'après-midi, partiellement nuageux le soir, de 11° à 20°."
     },
     "anglais": {
       "mode": "litterature",
-      "oeuvre": "The Great Gatsby",
-      "auteur": "F. Scott Fitzgerald",
-      "annee": 1925,
+      "oeuvre": "The Fall of the House of Usher",
+      "auteur": "Edgar Allan Poe",
+      "annee": 1839,
       "segments": [
         {
-          "t": "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind",
-          "g": "ruminer"
+          "t": "During the whole of a dull",
+          "g": "terne"
         },
         {
-          "t": " ever since. \"Whenever",
-          "g": "chaque fois que"
+          "t": ", dark, and soundless",
+          "g": "sans un bruit"
         },
         {
-          "t": " you feel like criticizing anyone,\" he told me, \"just remember that all the people in this world haven't had the advantages",
-          "g": "privilèges"
+          "t": " day in the autumn of the year, when the clouds hung oppressively",
+          "g": "de façon oppressante"
         },
         {
-          "t": " that you've had.\" He didn't say any more, but we've always been unusually communicative in a reserved way, and I understood that he meant a great deal more",
-          "g": "bien davantage"
+          "t": " low in the heavens, I had been passing alone, on horseback",
+          "g": "à cheval"
         },
         {
-          "t": " than that. In consequence",
-          "g": "par conséquent"
+          "t": ", through a singularly",
+          "g": "singulièrement"
         },
         {
-          "t": ", I'm inclined",
-          "g": "enclin"
+          "t": " dreary",
+          "g": "désolée"
         },
         {
-          "t": " to reserve all judgments",
-          "g": "suspendre tout jugement"
+          "t": " tract",
+          "g": "l'étendue"
         },
         {
-          "t": ", a habit that has opened up many curious natures to me and also made me the victim of not a few",
-          "g": "pas mal de"
+          "t": " of country; and at length",
+          "g": "enfin"
         },
         {
-          "t": " veteran bores",
-          "g": "vieux raseurs"
+          "t": " found myself, as the shades of the evening drew on",
+          "g": "le crépuscule approchait"
         },
         {
-          "t": ".",
+          "t": ", within view of the melancholy House of Usher. I know not how it was—but, with the first glimpse",
+          "g": "l'aperçu"
+        },
+        {
+          "t": " of the building, a sense of insufferable gloom",
+          "g": "la tristesse sombre"
+        },
+        {
+          "t": " pervaded",
+          "g": "envahissait"
+        },
+        {
+          "t": " my spirit.",
           "g": null
         }
       ],
-      "texte_glose": "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind (= ruminer) ever since. \"Whenever (= chaque fois que) you feel like criticizing anyone,\" he told me, \"just remember that all the people in this world haven't had the advantages (= privilèges) that you've had.\" He didn't say any more, but we've always been unusually communicative in a reserved way, and I understood that he meant a great deal more (= bien davantage) than that. In consequence (= par conséquent), I'm inclined (= enclin) to reserve all judgments (= suspendre tout jugement), a habit that has opened up many curious natures to me and also made me the victim of not a few (= pas mal de) veteran bores (= vieux raseurs)."
+      "texte_glose": "During the whole of a dull (= terne), dark, and soundless (= sans un bruit) day in the autumn of the year, when the clouds hung oppressively (= de façon oppressante) low in the heavens, I had been passing alone, on horseback (= à cheval), through a singularly (= singulièrement) dreary (= désolée) tract (= l'étendue) of country; and at length (= enfin) found myself, as the shades of the evening drew on (= le crépuscule approchait), within view of the melancholy House of Usher. I know not how it was—but, with the first glimpse (= l'aperçu) of the building, a sense of insufferable gloom (= la tristesse sombre) pervaded (= envahissait) my spirit."
     },
     "meta": {
-      "resume_1_phrase": "À la une : Plus de cent constitutionnalistes critiquent le référendum pour changer la Constitution tel que proposé par Marine Le Pen."
+      "resume_1_phrase": "À la une : Présidentielle 2027 : l’offensive illibérale de Marine Le Pen."
     },
     "_genere_par_llm": true,
-    "_provider": "groq+mistral",
-    "_erreur_llm": "science_d[nvidia: HTTPSConnectionPool(host='integrate.api.nvidia.com', port=443): Read timed out. (read timeout=150) | mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | groq: article trop court (60 mots, minimum 80) | openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"me]",
+    "_provider": "groq+mistral+nvidia",
+    "_erreur_llm": null,
     "_parts": {
       "actu_france": {
         "genere_par_llm": true,
@@ -567,15 +543,15 @@
       },
       "actu_monde": {
         "genere_par_llm": true,
-        "provider": "groq",
+        "provider": "mistral",
         "erreur": null,
-        "essais_echoues": 2
+        "essais_echoues": 0
       },
       "marches": {
         "genere_par_llm": true,
-        "provider": "groq",
+        "provider": "nvidia",
         "erreur": null,
-        "essais_echoues": 1
+        "essais_echoues": 0
       },
       "science_a": {
         "genere_par_llm": true,
@@ -591,26 +567,26 @@
       },
       "sport": {
         "genere_par_llm": true,
-        "provider": "groq",
+        "provider": "nvidia",
         "erreur": null,
-        "essais_echoues": 1
+        "essais_echoues": 0
       },
       "science_d": {
-        "genere_par_llm": false,
-        "provider": null,
-        "erreur": "nvidia: HTTPSConnectionPool(host='integrate.api.nvidia.com', port=443): Read timed out. (read timeout=150) | mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | groq: article trop court (60 mots, minimum 80) | openrouter: 429 Too Many Requests (provider=openrouter): {\"error\":{\"me",
-        "essais_echoues": 4
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 1
       }
     },
     "_bloc": {
       "genere_par_llm": true,
-      "provider": "groq",
+      "provider": "groq+mistral+nvidia",
       "erreur": null
     },
     "_science": {
       "genere_par_llm": true,
       "provider": "groq+mistral",
-      "erreur": "science_d[nvidia: HTTPSConnectionPool(host='integrate.api.nvidia.com', port=443): Read timed out. (read timeout=150) | mistral: 429 Too Many Requests (provider=mistral): {\"object\":\"error\",\"message\":\"Not enough capacity available for this request, please retry later.\",\"type\":\"backend_out_ | groq: article trop court (60 mots, minimum 80) | openrouter: 429 Too Many Requests (provider=openrouter): {\"e"
+      "erreur": null
     },
     "_anglais": {
       "genere_par_llm": false,
@@ -618,5 +594,5 @@
       "erreur": null
     }
   },
-  "debut_run": "2026-11-12T06:10:39.046308+01:00"
+  "debut_run": "2026-11-13T06:10:36.886795+01:00"
 }
