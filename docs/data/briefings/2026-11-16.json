@@ -1,0 +1,571 @@
+{
+  "date": "2026-11-16",
+  "derniere_mise_a_jour": "2026-11-16T06:18:32.060304+01:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Après l'attentat raciste à Trappes, Sandrine Rousseau accuse le gouvernement de \"sous-estimer la menace venant de l'extrême droite\"",
+          "resume": "La députée écologiste de Paris a demandé dimanche à l'exécutif \"d'arrêter\" la \"complaisance\" vis-à-vis \"des violences issues du camp de l'extrême droite\", sur BFMTV.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Guerre de territoire, \"barbarie\", aveux surprises... Ce que l'on a appris au procès de l'assassinat du frère d'Amine Kessaci",
+          "resume": "Cinq hommes sont poursuivis pour avoir participé à un triple homicide en 2020, dans une guerre entre trafiquants de drogue. Parmi les trois victimes figurait Brahim Chabane, le frère aîné d'Amine Kessaci, figure de la lutte contre le narcotrafic.",
+          "pourquoi_important": "Le procès révèle des aveux sur une guerre de territoire entre trafiquants de drogue.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Marine Le Pen assume sa volonté d’abandonner l’Ukraine en mettant fin aux aides françaises",
+          "resume": "La candidate du RN n’a pas répondu à l’invitation du président ukrainien, Volodymyr Zelensky, mais doit rencontrer l’ambassadeur de Kiev, lundi, dans un lieu tenu secret. Samedi, Emmanuel Macron avait critiqué ceux qui « souhaitent obliger » l’Ukraine à une « paix injuste ».",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : la pauvreté requiert des \"solutions structurelles\", selon les Restos du Coeur",
+          "resume": "\"La réponse que Les Restos du coeur apportent à la précarité en France est essentielle, mais elle atteint ses limites\", affirme leur président, Jean-Michel Richard.",
+          "pourquoi_important": "Les Restos du Coeur soulignent la nécessité de solutions structurelles face à la précarité.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Elections législatives : le chantier sans cesse repoussé du redécoupage électoral",
+          "resume": "Si des élections législatives sont organisées en 2027 après la présidentielle, elles reposeront sur une carte électorale qui n’a plus été retouchée depuis 2009. Alors que les autorités politiques tardent à se lancer dans ce chantier à haut risque, une commission dédiée s’est remise au travail.",
+          "pourquoi_important": "Le retard du redécoupage électoral peut affecter la tenue des élections législatives de 2027.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "José María Neves réélu président du Cap-Vert, selon des résultats provisoires",
+          "resume": "José María Neves a remporté le premier tour de l'élection présidentielle avec plus de 63 % des voix.",
+          "pourquoi_important": "Ce résultat confirme la stabilité démocratique de cet archipel lusophone et son ancrage politique.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "France 24 International",
+            "Le Monde",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : Volodymyr Zelensky annonce la préparation d’une réunion de la coalition des volontaires, « qui pourrait s’avérer historique »",
+          "resume": "Volodymyr Zelensky prépare une réunion pour définir la position européenne dans d’éventuels pourparlers avec Moscou. L’Estonie fermera ses frontières avec la Russie à partir du 1er décembre après un sabotage.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Aden, au Yémen, se barricade face à l'offensive des Houthis",
+          "resume": "Les forces gouvernementales yéménites renforcent leurs positions autour d’Aden, menacée par l’avancée des Houthis.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Libération",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Benyamin Nétanyahou ne peut pas rester « une minute de plus » à la tête du gouvernement israélien, estime Gadi Eisenkot",
+          "resume": "Gadi Eisenkot, chef de cabinet de Benyamin Nétanyahou, a transmis une plainte infondée contre des militants du parti Raam avant les législatives.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : Plus de 100 drones visant Moscou interceptés dans la nuit",
+          "resume": "Selon des sources, plus de 100 drones ont été interceptés en direction de Moscou dans la nuit.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Ebola en RDC : 55 471 décès pour 11 197 cas cumulés ont été recensés en six mois",
+          "resume": "En RD Congo, six mois que sévit l’épidémie d’Ebola. Déclarée officiellement le 15 mai dernier, cette 17ᵉ épidémie est devenue, en quelques mois, la plus meurtrière de l’histoire du pays, qui compte plus de 100 millions d’habitants. Selon le dernier bilan des autorités sanitaires, 5 471 décès pour 11 197 cas cumulés ont été recensés.",
+          "pourquoi_important": "Cette épidémie est la plus meurtrière de l’histoire du pays, nécessitant une réponse sanitaire internationale urgente.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Au Yémen, le camp gouvernemental redéploie des renforts autour d’Aden, menacée par les houthistes",
+          "resume": "Le gouvernement internationalement reconnu s'est replié à Aden après la prise, en 2014 par les Houthis, de la capitale Sanaa et de grands pans du nord du pays, les plus peuplés.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Le Monde International",
+            "France 24 International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon France 24 International, Adama Barrow brigue un troisième mandat face à quatre adversaires en Gambie",
+          "resume": "La Gambie se prépare à une nouvelle élection présidentielle avec cinq candidats en lice. Le président sortant Adama Barrow brigue un troisième mandat, face à quatre adversaires qui espèrent lui ravir le pouvoir. Un scrutin suivi de près dans un pays encore marqué par les années de régime de Yahya Jammeh. Récit d'Olivia Bizot.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "",
+      "mouvements_notables": []
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "rugby",
+          "texte": "La Nouvelle-Zélande perd 35-28 contre le Pays de Galles, mais reste en ballottage favorable pour la finale du Championnat des nations."
+        },
+        {
+          "sport": "rugby",
+          "texte": "L'Australie bat la Nouvelle-Zélande 34-10 grâce à un triplé de Jamie Chapman, remportant la Coupe du monde féminine de rugby à XIII, son quatrième titre consécutif."
+        },
+        {
+          "sport": "rugby",
+          "texte": "L'Australie bat la Nouvelle-Zélande 32-12 avec six essais, remportant la Coupe du monde masculine de rugby à XIII, son quatrième titre d'affilée et son neuvième sur dix tournois."
+        },
+        {
+          "sport": "football",
+          "texte": "Jürgen Klopp et Xavi, anciens sélectionneurs de l'Allemagne et des Pays-Bas, se retrouvent lundi soir avec une qualification en quarts de finale de la Ligue des nations en jeu."
+        },
+        {
+          "sport": "football",
+          "texte": "L'Angleterre bat l'Espagne 3-2 en Ligue des nations, mettant fin à une série de 43 matchs sans défaite de la Roja."
+        },
+        {
+          "sport": "football",
+          "texte": "La France bat la Turquie 2-1 à Bordeaux, assure la première place de son groupe et sa qualification pour les quarts de finale de la Ligue des nations."
+        },
+        {
+          "sport": "golf",
+          "texte": "Lindy Duncan remporte son premier titre sur le LPGA Tour au tournoi The Annika, après une lutte avec Hye‑Jin Choi."
+        },
+        {
+          "sport": "golf",
+          "texte": "Rory McIlroy termine deuxième au DP World Tour Championship, devance Eugenio Chacarra et remporte le titre Race to Dubai pour la huitième fois, égalant le record."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "Arsenal – Borussia Dortmund",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-11-24T20:00:00+00:00",
+          "date_texte": "mardi 24 novembre à 21h00",
+          "sport": "football"
+        },
+        {
+          "affiche": "Miami Heat – Milwaukee Bucks",
+          "competition": "NBA",
+          "date_iso": "2026-11-19T00:00:00+00:00",
+          "date_texte": "jeudi 19 novembre à 1h00",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "approfondi",
+      "titre": "L’ordinateur quantique : une révolution en marche grâce aux lois de la physique quantique",
+      "contenu_markdown": "## Introduction\nL’ordinateur quantique est une machine qui exploite les propriétés fondamentales de la physique quantique pour traiter l’information d’une manière radicalement différente des ordinateurs classiques. Alors que ces derniers utilisent des bits (0 ou 1) pour effectuer des calculs, les ordinateurs quantiques reposent sur des **qubits** (bits quantiques), capables d’exister dans plusieurs états simultanément grâce à deux phénomènes clés : la **superposition** et l’**intrication**. Ces propriétés, observées à l’échelle des particules, permettent d’envisager des performances inégalées pour certains types de calculs, notamment ceux impliquant une complexité combinatoire extrême. Pourtant, leur développement reste un défi technologique majeur, marqué par des obstacles comme la **décohérence**, qui limite la stabilité des états quantiques à grande échelle.\n\n## Pourquoi le sujet est important\nLes ordinateurs quantiques pourraient bouleverser des domaines entiers, notamment en **cryptographie**, où l’algorithme de Shor (conçu pour un ordinateur classique mais exploitable sur une unité quantique) menace de rendre obsolètes les méthodes de chiffrement actuelles en factorisant rapidement de très grands nombres. Ils ouvrent aussi des perspectives dans la **recherche opérationnelle** (optimisation de logistiques complexes), la **bio-informatique** (modélisation de molécules) ou la simulation de systèmes quantiques. Leur potentiel est tel que des acteurs majeurs comme des gouvernements, des entreprises (dont Amazon, qui propose déjà un accès à des processeurs quantiques via le cloud) et des laboratoires universitaires investissent massivement dans ce domaine.\n\nPar ailleurs, les limites physiques des transistors classiques (approchant la taille d’un atome) rendent les ordinateurs quantiques une piste pour contourner les blocages de la **loi de Moore**, qui prédisait une miniaturisation continue des composants électroniques. Si leur déploiement à grande échelle reste incertain, leur impact sur les sciences et l’industrie pourrait être comparable à celui de l’invention de l’ordinateur classique au XXe siècle.\n\n## Explication du phénomène : superposition et intrication\nPour comprendre le fonctionnement d’un ordinateur quantique, il faut saisir deux concepts quantiques fondamentaux :\n\n1. **La superposition**.\n   Contrairement à un bit classique, figé dans un état binaire (0 ou 1), un qubit peut se trouver dans une **combinaison linéaire** de ces deux états. Mathématiquement, son état est décrit par une fonction d’onde, notée *α|0⟩ + β|1⟩*, où *α* et *β* sont des nombres complexes représentant les probabilités d’observer 0 ou 1 lors d’une mesure. Cela signifie qu’un qubit peut être \"0\", \"1\" ou les deux **en même temps**, jusqu’à ce qu’une mesure ne \"colapse\" son état. Avec *n* qubits, un ordinateur quantique peut donc explorer **2ⁿ états simultanément**, contre un seul à la fois pour un ordinateur classique.\n\n2. **L’intrication**.\n   Ce phénomène, qualifié par Einstein de \"action fantôme à distance\", lie deux qubits (ou plus) de telle sorte que l’état de l’un détermine instantanément celui de l’autre, quelle que soit la distance qui les sépare. Cette propriété permet des calculs parallèles d’une efficacité inégalée, car elle autorise des corrélations entre qubits qui ne pourraient exister dans un système classique.\n\nCes deux mécanismes sont au cœur de la puissance des ordinateurs quantiques, mais leur exploitation nécessite de maintenir les qubits dans un état quantique stable, ce qui est extrêmement fragile.\n\n## Fonctionnement et mécanismes : de la théorie à la réalisation physique\nLa réalisation concrète d’un ordinateur quantique repose sur la maîtrise de **qubits physiques**, dont l’état quantique est encodé dans des systèmes variés :\n- **Électrons dans des circuits supraconducteurs** : comme dans le processeur développé en 2009 à l’université Yale, où deux qubits sont portés par des milliards d’atomes d’aluminium sur un support supraconducteur (un matériau conduisant l’électricité sans résistance à très basse température).\n- **Defauts dans des cristaux** (comme les centres NV dans le diamant) ou **photons** (particules de lumière), parmi d’autres approches.\n\n## Le défi de la décohérence\nLe principal obstacle à la scalabilité des ordinateurs quantiques est la **décohérence** : les qubits, extrêmement sensibles à leur environnement (chaleur, vibrations, interactions électromagnétiques), perdent rapidement leurs propriétés quantiques en interagissant avec le monde macroscopique. Cela limite la taille et la durée des calculs. Jusqu’en 2008, la difficulté majeure résidait précisément dans la création de qubits stables. Aujourd’hui, des progrès ont été réalisés, mais des machines fiables à plus de 300 qubits (considéré comme un seuil pour des applications pratiques) restent hors de portée.\n\n## Architecture et hybridation\nUn ordinateur quantique ne fonctionne pas seul : il est généralement couplé à un **ordinateur classique externe**, qui gère la séquence des opérations et interprète les résultats. Les algorithmes quantiques, comme celui de Shor, exploitent des techniques de **calcul parallèle massif** en combinant superposition et intrication. Cependant, leur utilisation impose une reprogrammation fondamentale des méthodes de traitement de l’information. Par exemple, un résultat de taille *2ⁿ* ne peut être obtenu qu’en répétant le calcul *n* fois, car chaque mesure détruit l’état quantique du système.\n\n## Applications ciblées\nLes ordinateurs quantiques ne sont pas conçus pour remplacer les ordinateurs classiques dans les tâches quotidiennes (navigation web, traitement de texte), mais pour résoudre des problèmes spécifiques où leur puissance combinatoire excelle :\n- **Factorisation de grands nombres** : un défi exponentiel pour les ordinateurs classiques, mais potentiellement polynomial pour un ordinateur quantique.\n- **Optimisation complexe** : ordonnancement de ressources, logistique, ou modélisation de systèmes chimiques (comme la conception de médicaments).\n- **Simulation quantique** : reproduction des comportements de particules ou de matériaux à l’échelle atomique, inaccessible aux supercalculateurs actuels.\n\nLeur déploiement commercial initial pourrait donc se concentrer sur des **services cloud** accessibles à distance, comme le propose déjà Amazon, plutôt que sur des appareils grand public.\n\n## Données et résultats scientifiques\n\nLes premiers prototypes de calculateurs quantiques ont été réalisés à partir des années 1990.  \nUn jalon notable est le processeur quantique développé en 2009 à l’université de Yale : il comporte deux qubits, chaque qubit étant porté par un milliard d’atomes d’aluminium déposés sur un support supraconducteur.  \n\nDepuis, plusieurs plateformes (supraconductrices, piégeage d’ions, photons, etc.) ont permis la mise en œuvre de circuits quantiques contenant de quelques dizaines à plusieurs centaines de qubits. Les expériences démontrent la réalisation d’algorithmes simples, comme la factorisation de petits nombres ou la recherche dans des bases de données, confirmant que les phénomènes de superposition et d’intrication peuvent être exploités pour effectuer des opérations parallèles sur des états quantiques.  \n\nLes performances mesurées restent limitées par le taux d’erreurs des portes quantiques et par la décohérence, qui entraîne la perte rapide de la cohérence quantique. Les données chiffrées détaillées sur les taux d’erreur, les temps de cohérence et les vitesses de calcul sont disponibles dans les publications scientifiques spécialisées.\n\n## Ce que les scientifiques savent\n\n- **Principe de fonctionnement** : un ordinateur quantique manipule des qubits dont l’état quantique peut représenter simultanément plusieurs possibilités grâce à la superposition. L’intrication permet d’établir des corrélations entre qubits qui ne peuvent être reproduites par des bits classiques.  \n- **Avantages théoriques** : pour certains problèmes combinatoires, comme la factorisation de grands nombres ou la recherche dans des espaces d’états exponentiels, les algorithmes quantiques (par exemple l’algorithme de Shor) offrent une complexité polynomialement croissante, alors que les algorithmes classiques connaissent une croissance exponentielle.  \n- **État actuel de la technologie** : des processeurs quantiques de quelques dizaines à plusieurs centaines de qubits existent, et des services en ligne (par exemple via des fournisseurs cloud) permettent à des chercheurs d’exécuter des circuits quantiques sur ces machines.  \n- **Enjeux économiques et stratégiques** : plusieurs gouvernements, entreprises et organisations financent la recherche quantique, motivés par le potentiel de rupture dans les domaines de la cryptographie, de la chimie computationnelle et de l’optimisation.\n\n## Ce qui reste incertain\n\n- **Scalabilité** : il n’est pas encore démontré que l’on puisse construire des calculateurs quantiques contenant plusieurs milliers voire des millions de qubits tout en maintenant des taux d’erreur suffisamment faibles pour réaliser des calculs utiles.  \n- **Supériorité pratique** : bien que les algorithmes quantiques offrent des gains théoriques, il reste à prouver expérimentalement que des machines de taille intermédiaire (quelques centaines de qubits) surpassent les supercalculateurs classiques sur des tâches concrètes.  \n- **Correction d’erreurs quantiques** : les protocoles de correction d’erreurs nécessitent un nombre important de qubits physiques pour chaque qubit logique, et leur implémentation à grande échelle demeure un défi ouvert.  \n- **Impact sur la cryptographie** : la capacité réelle des futurs ordinateurs quantiques à casser les schémas cryptographiques actuels dépendra de la taille et de la fiabilité des machines qui seront finalement disponibles.\n\n## Limites et controverses éventuelles\n\n- **Débat sur la « supériorité quantique »** : certains chercheurs estiment que les expériences démontrant la supériorité quantique (exécution d’un problème spécifique plus rapidement qu’un ordinateur classique) ne constituent pas encore une preuve de pertinence pour des applications pratiques, tandis que d’autres y voient la première étape vers des usages réels.  \n- **Coût et accessibilité** : la fabrication et le maintien d’un environnement cryogénique nécessaire à la plupart des plateformes actuelles sont très onéreux, ce qui soulève des questions sur la viabilité économique d’une diffusion large de la technologie.  \n\n## Conclusion\n\nLes ordinateurs quantiques représentent une avancée conceptuelle majeure, reposant sur des phénomènes quantiques tels que la superposition et l’intrication. Les réalisations expérimentales depuis les années 1990, dont le processeur à deux qubits de Yale en 2009, ont confirmé la faisabilité de manipuler des qubits et d’exécuter des algorithmes quantiques simples.  \n\nLes avantages théoriques sur des problèmes combinatoires sont bien établis, mais la concrétisation d’une supériorité pratique dépendra de la résolution de défis techniques cruciaux : maîtrise de la décohérence, mise en place de la correction d’erreurs à grande échelle, et construction de machines suffisamment grandes et fiables.  \n\nEn attendant, les ordinateurs quantiques trouvent déjà des applications limitées dans la recherche, notamment via des services cloud qui offrent un accès à des processeurs quantiques de petite taille. Le futur du calcul quantique repose sur la capacité de la communauté scientifique et industrielle à transformer ces prototypes en systèmes robustes capables de résoudre des problèmes inaccessibles aux ordinateurs classiques.\n\n## Sources\n- Wikipédia (fr) — Ordinateur quantique — https://fr.wikipedia.org/wiki/Ordinateur_quantique\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 3,
+      "nb_mots": 1661,
+      "sujet_id": "ordinateur-quantique",
+      "origine": "encyclopedie",
+      "matiere_source": "suffisante",
+      "textes_sources_audit": [
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Ordinateur quantique",
+          "resume": "Un ordinateur quantique, calculateur quantique, processeur quantique ou système informatique quantique, utilise les propriétés quantiques de la matière, telles que la superposition et l'intrication, afin d'effectuer des opérations sur des données. À la différence d'un ordinateur classique basé sur des transistors travaillant sur des données binaires (codées sur des bits, valant 0 ou 1), l'ordinateur quantique travaille sur des qubits dont l'état quantique peut posséder plusieurs valeurs, ou plus précisément une valeur quantique comportant plusieurs possibilités simultanées.\nDe petits calculateurs quantiques ont été construits à partir des années 1990. Jusqu'en 2008, la difficulté majeure concerne la réalisation physique de l'élément de base : le qubit. Le phénomène de décohérence (perte des effets quantiques en passant à l'échelle macroscopique) freine le développement des calculateurs quantiques.\nLe processeur quantique, unité dont les études et recherches sont en cours, est pour la première fois développé en 2009 à l'université Yale : il comporte deux qubits portés chacun par un milliard d'atomes d'aluminium posés sur un support supraconducteur.\nCe domaine est soutenu financièrement par plusieurs organisations, entreprises ou gouvernements en raison de l'importance de l'enjeu : au moins un algorithme conçu pour utiliser un circuit quantique, l'algorithme de Shor, rendrait possible de nombreux calculs combinatoires hors de portée d'un ordinateur classique en l'état actuel des connaissances. La possibilité de casser les méthodes cryptographiques classiques est souvent mise en avant. L'algorithme lui-même n'est pas quantique, il est porté par un ordinateur classique, la partie quantique ne concernant que l'unité de calcul.\n\nIntérêt des ordinateurs quantiques\nL'empirique loi de Moore estimait que la taille des transistors approcherait celle de l'atome à l'horizon 2020. Dès 2015, Intel s'est heurté à des difficultés inattendues lui faisant retarder de six mois sa série Skylake gravée en 14 nanomètres, premier retard constaté sur la célèbre loi. Sous les 8 nanomètres, des effets quantiques étaient censés perturber le fonctionnement des composants électroniques, bien que des circuits présentés comme de 7 nanomètres soient annoncés chez des concurrents d'Intel en 2020.\nLa construction (éventuelle) de grands calculateurs quantiques (plus de 300 qubits) permettrait selon David Deutsch de faire certains calculs plus vite qu'un ordinateur classique qui serait aussi grand que l’Univers observable lui-même.\nLes calculateurs quantiques demandent des techniques de calcul différentes de programmation, mais utilisent beaucoup l'algèbre linéaire classique pour conditionner et traiter simultanément des ensembles de données liées, plus un petit ordinateur classique externe juste pour enchaîner les opérations.\nQue la réalisation de calculateurs quantiques de taille intéressante soit possible ou non à terme, leur premier avenir commercial ne serait probablement pas dans des applications grand public : le calcul quantique ne sait traiter que peu d’entrées et peu de sorties, avec autant de complexité que souhaité. Il se prête donc a priori très bien aux calculs dont la complexité réside dans la combinatoire. On trouve ces problèmes dans l’ordonnancement et les autres calculs de recherche opérationnelle, en bio-informatique, et en cryptographie. Le faible volume des entrées-sorties par rapport à celui du traitement rend par ailleurs possible et même indiqué leur usage à distance à travers le réseau Internet. Certains sont ainsi mis à disposition de chercheurs via la société Amazon.\nLa combinatoire constitue le domaine d'application privilégié des futurs processeurs de calcul quantique. Ainsi il peut être très difficile de trouver tous les facteurs premiers d’un grand nombre (par exemple de 1 000 chiffres). Ce problème de factorisation est difficile pour un ordinateur ordinaire à cause de l’explosion combinatoire. Un circuit de calcul quantique pourrait résoudre ce problème en un temps polynomial, c’est-à-dire que pour l’ordinateur quantique, la difficulté augmenterait polynomialement au lieu d’augmenter exponentiellement.\nUne analogie possible est de se représenter un calculateur quantique comme un processeur SIMD (carte graphique, par exemple) dont le nombre de pipelines serait 2N fois le nombre N de qubits. L’analogie s’arrête là, un calculateur quantique ne pouvant fournir qu’un bit de résultat à la fois (l’état quantique étant détruit par l’observation), après quoi le calcul doit être recommencé pour demander le bit suivant. Un résultat de taille 2N ne demande donc qu'un temps en O(N log(N)), ce qui est considérablement plus rapide que de la combinatoire classique à mesure que la valeur de N devient grande, même si ce n'est que de l'ordre du milliard. De même que l'on parle d'APU pour un processeur parallèle comme une carte graphique, on voit apparaître depuis 2021 la notion de QPU pour désigner un processeur quantique."
+        }
+      ]
+    },
+    "citation": {
+      "texte": "Il faut imaginer Sisyphe heureux.",
+      "auteur": "Albert Camus",
+      "source": "Le Mythe de Sisyphe",
+      "annee": 1942
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 9.9,
+          "temperature_max": 17.9,
+          "temperature_min": 9.7,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 5.4,
+          "vent_max_kmh": 24.5,
+          "rafales_max_kmh": 51.5,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 9.9,
+              "temperature_max": 16.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 17,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 16.2,
+              "temperature_max": 17.9,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 24,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 14.3,
+              "temperature_max": 15.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 24,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 14.1,
+          "temperature_max": 17.1,
+          "temperature_min": 12.2,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 17.0,
+          "vent_max_kmh": 33.7,
+          "rafales_max_kmh": 50.4,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 13.5,
+              "temperature_max": 15.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 30,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 16.1,
+              "temperature_max": 17.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 32,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 14.4,
+              "temperature_max": 15.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 34,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 7.5,
+          "temperature_max": 17.3,
+          "temperature_min": 7.5,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 4.9,
+          "vent_max_kmh": 14.5,
+          "rafales_max_kmh": 25.2,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 7.5,
+              "temperature_max": 13.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 5,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 13.9,
+              "temperature_max": 17.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 14,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 11.1,
+              "temperature_max": 13.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 13,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 8.2,
+          "temperature_max": 16.5,
+          "temperature_min": 7.4,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 6.1,
+          "vent_max_kmh": 13.8,
+          "rafales_max_kmh": 25.6,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 7.6,
+              "temperature_max": 14.0,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 7,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 13.3,
+              "temperature_max": 16.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 14,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 10.9,
+              "temperature_max": 12.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 17.9,
+      "temperature_min_zone": 7.4,
+      "probabilite_pluie_max_pct": 0,
+      "vent_max_kmh": 33.7,
+      "description_dominante": "couvert",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 7.5,
+          "temperature_max": 16.1,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 30,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 13.3,
+          "temperature_max": 17.9,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 32,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 10.9,
+          "temperature_max": 15.6,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 34,
+          "weather_code": 3,
+          "description": "couvert"
+        }
+      ],
+      "alertes": [],
+      "resume": "Couvert toute la journée, de 7° à 18°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "Pride and Prejudice",
+      "auteur": "Jane Austen",
+      "annee": 1813,
+      "segments": [
+        {
+          "t": "It is a truth universally acknowledged",
+          "g": "reconnue de tous"
+        },
+        {
+          "t": ", that a single man in possession of a good fortune, must be in want of",
+          "g": "qui a besoin de"
+        },
+        {
+          "t": " a wife. However little known",
+          "g": "Si peu connus soient"
+        },
+        {
+          "t": " the feelings or views of such a man may be on his first entering a neighbourhood",
+          "g": "le voisinage"
+        },
+        {
+          "t": ", this truth is so well fixed",
+          "g": "solidement ancrée"
+        },
+        {
+          "t": " in the minds of the surrounding families, that he is considered the rightful property",
+          "g": "propriété légitime"
+        },
+        {
+          "t": " of some one or other of their daughters. \"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last",
+          "g": "enfin louée"
+        },
+        {
+          "t": "?\" Mr. Bennet replied that he had not. \"But it is,\" returned she",
+          "g": "répliqua-t-elle"
+        },
+        {
+          "t": "; \"for Mrs. Long has just been here, and she told me all about it.\" Mr. Bennet made no answer",
+          "g": "ne répondit rien"
+        },
+        {
+          "t": ".",
+          "g": null
+        }
+      ],
+      "texte_glose": "It is a truth universally acknowledged (= reconnue de tous), that a single man in possession of a good fortune, must be in want of (= qui a besoin de) a wife. However little known (= Si peu connus soient) the feelings or views of such a man may be on his first entering a neighbourhood (= le voisinage), this truth is so well fixed (= solidement ancrée) in the minds of the surrounding families, that he is considered the rightful property (= propriété légitime) of some one or other of their daughters. \"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last (= enfin louée)?\" Mr. Bennet replied that he had not. \"But it is,\" returned she (= répliqua-t-elle); \"for Mrs. Long has just been here, and she told me all about it.\" Mr. Bennet made no answer (= ne répondit rien)."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Après l'attentat raciste à Trappes, Sandrine Rousseau accuse le gouvernement de \"sous-estimer la menace venant de l'extrême droite\"."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-11-16T06:10:37.784280+01:00"
+}
