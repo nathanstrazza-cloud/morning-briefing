@@ -1,0 +1,605 @@
+{
+  "date": "2026-11-17",
+  "derniere_mise_a_jour": "2026-11-17T06:20:50.190048+01:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Impôts, logement, Smic... les candidats à la présidentielle débattent de leurs propositions",
+          "resume": "Gabriel Attal, Raphaël Glucksmann, Marine Le Pen, Jean-Luc Mélenchon et Bruno Retailleau ont échangé, lundi, pendant un peu moins de trois heures, sur la vie chère et le pouvoir dâ€™achat, préoccupation majeure des Françaises et Français, lors dâ€™un débat organisé sur TF1 puis LCI.",
+          "pourquoi_important": "Le débat porte sur la vie chère et le pouvoir dâ€™achat, sujets clés pour les électeurs.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Le Pen confirme que la France lâchera financièrement l’Ukraine si elle est élue",
+          "resume": "La candidate du RN a répété à l’ambassadeur d’Ukraine à Paris que si elle accédait à l’Élysée « l’état des finances publiques de la France ne permett(rait) plus d’aider financièrement l’Ukraine » face à la Russie",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "20 Minutes",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : les moments forts du débat entre Mélenchon, Glucksmann, Le Pen, Attal et Retailleau",
+          "resume": "Travailleurs précaires, crise du logement, associations en difficulté ou lutte contre les retraités pauvres, les cinq candidats, interrogés par des bénéficiaires des Restos du coeur, ont pu exposer, parfois dans la cacophonie, les principaux traits de leur programme lundi 16 novembre.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Libération",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Marine Le Pen critiquée en plein débat de la présidentielle pour sa volonté de couper les subventions des associations \"politisées\"",
+          "resume": "Sur LCI, un front allant de Jean-Luc Mélenchon à Gabriel Attal et passant par Raphaël Glucksmann s'est dressé face à la candidate RN.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Clash, « magicien », grand perdant… Ce qu’il faut retenir du débat TF1-LCI",
+          "resume": "Marine Le Pen, Jean-Luc Mélenchon, Raphaël Glucksmann, Bruno Retailleau et Gabriel Attal ont débattu sur TF1 et LCI ce lundi soir sur le pouvoir d’achat",
+          "pourquoi_important": "Le débat a mis en avant les positions des candidats sur le pouvoir d’achat.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Guerre en Ukraine : des frappes russes ont touché deux importants ponts de Kiev, annonce le maire, Vitali Klitschko",
+          "resume": "Des frappes russes ont endommagé les ponts Nord et Sud de Kiev, touchant des systèmes d’infrastructures critiques.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Marine Le Pen assure auprès de l’ambassadeur ukrainien que la France ne pourrait « plus aider financièrement » Kiev si elle est élue présidente de la République",
+          "resume": "Volodymyr Zelensky a averti qu’un arrêt de l’aide française réduirait les chances de l’Ukraine de tenir face à la Russie.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "A Gaza, les récentes inondations relancent les appels internationaux pour qu'Israël laisse passer l'aide humanitaire \"sans entrave\"",
+          "resume": "Des pluies diluviennes ont endommagé plusieurs dizaines de milliers d’abris à Gaza, poussant plusieurs pays à demander un accès humanitaire immédiat.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Le XXᵉ Sommet de la francophonie paralysé par les tensions diplomatiques",
+          "resume": "Les 53 États membres de l’Organisation internationale de la francophonie ont reporté d’un an la désignation de leur secrétaire général en raison d’un manque de consensus, notamment entre Kinshasa et Kigali.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Selon 20 Minutes, Guerre en Ukraine : Des soldats français déployés, le Kremlin temporise et Le Pen confirme ses intentions",
+          "resume": "« 20 Minutes » fait le point pour vous tous les soirs sur le conflit. Ce lundi, on a appris que des soldats français opéraient sur le sol ukrainien, tandis que le Kremlin ne se réjouit pas encore pour le Donbass",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Le gouvernement britannique gracie les femmes condamnées pour avoir avorté, après l'entrée en vigueur d'une loi dépénalisant l'IVG hors délai",
+          "resume": "Jusqu'à récemment, les femmes pouvaient être jugées et emprisonnées si elles mettaient fin à leur grossesse après 24 semaines ou sans approbation médicale.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon Le Monde International, Polluants éternels : comment le lobby des fluoropolymères manœuvre pour sauver ses PFAS d’une interdiction européenne",
+          "resume": "Dans un rapport publié mardi 17 novembre, Corporate Europe Observatory s’inquiète des reculs de la Commission européenne sur le projet de restriction universelle des PFAS, les polluants éternels. L’organisation non gouvernementale détaille l’offensive du lobby des fluoropolymères pour obtenir une exemption totale.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon France 24 International, Francophonie : face à l'impasse, l'élection du secrétaire général repoussée d'un an",
+          "resume": "L'élection du secrétaire général de l'Organisation internationale de la Francophonie (OIF), au coeur d'un bras de fer entre République démocratique du Congo et Rwanda, a été reportée d'un an lundi faute de consensus, un \"compromis\" diversement accueilli. La sortante rwandaise Louise Mushikiwabo, qui a dénoncé des \"pressions nombreuses et fortes\" à son encontre, restera en place jusqu'à la tenue du nouveau scrutin, auquel le Rwanda ne présentera pas de candidat.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
+      "mouvements_notables": [
+        {
+          "nom": "S&P 500",
+          "variation_pct": -1.92,
+          "explication": null
+        },
+        {
+          "nom": "Nasdaq",
+          "variation_pct": -2.49,
+          "explication": null
+        },
+        {
+          "nom": "Pétrole (Brent)",
+          "variation_pct": -4.28,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "basketball",
+          "texte": "Le sélectionneur des Bleus a appelé Sylvain Francisco (Panathinaïkos) et Neal Sako (Valence) pour remplacer Nadir Hifi (Paris) et Mathias Lessort (Panathinaïkos) lors des deux matches de qualifications à la Coupe du monde 2027, prévus les 27 et 30 novembre en Estonie."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Alex Sarr a inscrit 25 points et Zaccharie Risacher 18 points, mais leurs équipes ont subi de lourdes défaites : Washington a perdu contre Houston (147-119) et Dallas contre Boston (131-94)."
+        },
+        {
+          "sport": "rugby",
+          "texte": "Le troisième ligne Jamie Hannah et le centre Quinn Tupaea sont blessés et indisponibles pour la fin du Championnat des nations, ils seront remplacés par Sam Darry et Billy Proctor."
+        },
+        {
+          "sport": "rugby",
+          "texte": "Matthieu Jalibert, de retour de blessure après deux mois, devrait débuter à l'ouverture du Championnat des nations face à l'Argentine le samedi."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Alejandro Davidovich Fokina, vainqueur du Masters 1000 de Shanghai, renonce à la phase finale de la Coupe Davis qui se déroulera à Bologne du 24 au 29 novembre."
+        },
+        {
+          "sport": "autres",
+          "texte": "Après avoir battu la Nouvelle-Zélande à Cardiff, le Pays de Galles doit se préparer à affronter l'Australie au Championnat des nations."
+        },
+        {
+          "sport": "football",
+          "texte": "Le match de Ligue 2 entre le FC Nantes et Grenoble, initialement prévu le samedi 21 novembre, est reporté au lundi 23 novembre à 20h45."
+        },
+        {
+          "sport": "football",
+          "texte": "Strasbourg s'intéresse à Vitor Matos, entraîneur de Swansea, en cas de départ de Hugo Oliveira, le club étant 13e de Ligue 1 après dix journées."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "Arsenal – Borussia Dortmund",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-11-24T20:00:00+00:00",
+          "date_texte": "mardi 24 novembre à 21h00",
+          "sport": "football"
+        },
+        {
+          "affiche": "Miami Heat – Milwaukee Bucks",
+          "competition": "NBA",
+          "date_iso": "2026-11-19T00:00:00+00:00",
+          "date_texte": "jeudi 19 novembre à 1h00",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "decouverte",
+      "titre": "La montée d'El Niño exige des études sur les vagues de chaleur marine",
+      "contenu_markdown": "Les observations récentes indiquent que la phase d'El Niño se renforce, ce qui augmente la fréquence et l'intensité des vagues de chaleur marine. Les données recueillies permettront d'élaborer des stratégies pour soutenir les pêcheries et les communautés qui dépendent de ces ressources. L'appel à l'action souligne que les études sur les vagues de chaleur marine doivent commencer dès maintenant afin de préparer des réponses adaptées aux changements climatiques actuels.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03715-7\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Résistance aux antibiotiques\n\n## Introduction\nLes antibiotiques ont révolutionné la médecine au XXe siècle en permettant de soigner des infections autrefois mortelles. Pourtant, leur efficacité est aujourd’hui menacée par un phénomène naturel mais alarmant : la résistance aux antibiotiques. Il s’agit de la capacité qu’ont certaines bactéries à survivre malgré l’action de ces médicaments, les rendant incapables de les détruire. Ce mécanisme, bien documenté depuis les années 1940, s’inscrit dans une dynamique plus large : celle de l’adaptation des microorganismes à leur environnement, y compris face à des substances toxiques produites par d’autres organismes ou synthétisées par l’homme.\n\n## Pourquoi ce sujet est-il important ?\nLa résistance aux antibiotiques n’est pas un problème médical isolé : elle touche la santé humaine, animale et même végétale. Les antibiotiques, souvent issus de molécules naturelles produites par des bactéries, champignons ou plantes, sont largement utilisés en médecine, mais aussi en élevage et en agriculture pour traiter ou prévenir les infections. Ces dernières peuvent se propager dans les hôpitaux, les élevages ou même l’environnement (eaux usées, sols), compliquant les traitements et augmentant les risques d’infections incurables.\n\nLes conséquences sont déjà mesurables : en Europe, près de 25 000 décès par an sont attribués à des infections résistantes, selon des estimations de 2016. Les volailles, par exemple, sont souvent porteuses de bactéries résistantes, reflétant une contamination diffuse. Sans action coordonnée, ce phénomène pourrait aggraver les crises sanitaires, rendant certaines infections – comme les pneumonies ou les infections nosocomiales – plus difficiles à soigner.\n\n## Explication du phénomène\nLa résistance aux antibiotiques repose sur des mécanismes évolutifs bien compris. Les bactéries, comme tous les êtres vivants, sont soumises à la **sélection naturelle** : parmi elles, certaines possèdent naturellement des variations génétiques (mutations) qui les rendent moins sensibles à un antibiotique. Lorsqu’un antibiotique est administré, les bactéries sensibles sont éliminées, tandis que les résistantes survivent et se multiplient. Ce processus, appelé **sélection artificielle**, favorise la propagation des gènes de résistance au sein de la population bactérienne.\n\nUn autre mécanisme clé est l’**échange horizontal de gènes** : certaines bactéries peuvent transférer des segments d’ADN contenant des gènes de résistance à d’autres bactéries, même d’espèces différentes. Ce phénomène, qui ne nécessite pas de reproduction, accélère la diffusion de la résistance dans des milieux variés (hôpitaux, élevages, environnement). Par exemple, une bactérie résistante dans un élevage peut contaminer un humain via la chaîne alimentaire.\n\nEnfin, les bactéries disposent de stratégies spécifiques pour neutraliser les antibiotiques :\n- **Renforcement de la barrière cellulaire** : certaines modifient leur membrane pour empêcher l’antibiotique de pénétrer.\n- **Destruction enzymatique** : des enzymes produites par la bactérie dégradent la molécule antibiotique avant qu’elle n’agisse.\n- **Modification de la cible** : la bactérie altère la structure moléculaire visée par l’antibiotique, rendant ce dernier inefficace.\n- **Phase de sporulation** : certaines bactéries entrent en état de dormance (spores), devenant temporairement insensibles aux antibiotiques.\n\nCes adaptations ne sont pas nouvelles : les bactéries développent des résistances depuis des millions d’années face à des molécules toxiques présentes dans leur environnement (métaux lourds, substances produites par d’autres organismes). Cependant, l’usage massif et répété d’antibiotiques par l’homme a créé une pression sélective sans précédent, accélérant l’émergence de résistances.\n\n## Fonctionnement et mécanismes\nL’acquisition d’une résistance par une bactérie suit généralement un calendrier prévisible. Après l’introduction d’un nouvel antibiotique sur le marché, il faut en moyenne **une dizaine d’années** avant que des souches résistantes n’apparaissent cliniquement. Ce délai s’explique par le temps nécessaire à la sélection des mutations favorables et à leur propagation dans la population bactérienne.\n\nPlusieurs niveaux de résistance existent, reflétant la gravité du phénomène :\n- **Résistance naturelle** : certaines bactéries sont intrinsèquement résistantes à un antibiotique en raison de leur structure cellulaire (ex. : absence de la cible moléculaire).\n- **Résistance habituelle** : acquise par mutation ou transfert génétique, elle concerne des antibiotiques couramment utilisés.\n- **Multirésistance (BMR)** : la bactérie porte plusieurs gènes de résistance, la rendant insensible à plusieurs classes d’antibiotiques.\n- **Haute résistance (BHR)** ou **ultra-résistance (BUR)** : la bactérie résiste à presque tous les antibiotiques disponibles.\n- **Pan-résistance (BPR ou BTR)** : la bactérie ne répond à aucun antibiotique connu.\n\nCes niveaux illustrent l’escalade progressive de la résistance, souvent liée à l’usage excessif ou inapproprié des antibiotiques. Par exemple, en milieu hospitalier, l’exposition répétée à des antibiotiques large spectre favorise l’émergence de bactéries multirésistantes, comme certaines souches de *Staphylococcus aureus* ou d’*Entérobactéries*. Dans les élevages, l’utilisation systématique d’antibiotiques comme promoteurs de croissance (pratique aujourd’hui restreinte en Europe) a contribué à la diffusion de résistances chez les animaux et, par extension, chez l’homme via la consommation de viande ou d’œufs contaminés.\n\nLes mécanismes d’échange génétique jouent un rôle majeur dans la dissémination de la résistance. Trois voies principales permettent aux bactéries de partager des gènes de résistance :\n1. **Transformation** : absorption directe d’ADN libre dans l’environnement.\n2. **Transduction** : transfert de gènes par l’intermédiaire de virus bactériophages.\n3. **Conjugaison** : contact direct entre bactéries via des structures appelées pili, permettant le transfert de plasmides (petits fragments d’ADN circulaire) contenant des gènes de résistance.\n\nCes échanges sont particulièrement efficaces dans des milieux où les antibiotiques sont présents en permanence, comme les stations d’épuration, les hôpitaux ou les bassins d’élevage. Ainsi, une résistance acquise dans un contexte agricole peut se retrouver chez des bactéries pathogènes pour l’homme, créant un cercle vicieux difficile à briser.\n\n## Données et résultats scientifiques\n\nLes études européennes ont estimé que l’antibiorésistance est responsable d’environ 25 000 décès chaque année en Europe.\n\nLes observations épidémiologiques montrent que la généralisation d’une résistance au sein d’une population bactérienne survient souvent après une exposition prolongée à l’antibiotique concerné. Les données indiquent également que l’acquisition d’une résistance apparaît généralement une dizaine d’années après l’introduction d’un nouvel antibiotique.  \n\n## Ce que les scientifiques savent\n\n- **Mécanismes de résistance** : les bactéries peuvent renforcer leur perméabilité cellulaire, produire des enzymes qui dégradent l’antibiotique, ou entrer dans une phase de sporulation.  \n- **Transmission génétique** : les gènes de résistance se propagent par des échanges horizontaux (transformation, transduction), permettant à des bactéries non exposées directement à l’antibiotique d’acquérir la résistance.  \n- **Niveaux de résistance** : on distingue plusieurs catégories, de la résistance naturelle (systématique) à la pan‑résistance (ou toto‑résistance), en passant par la multirésistance (portant plusieurs gènes de résistance).  \n- **Origine des molécules** : la plupart des antibiotiques proviennent ou s’inspirent de substances produites naturellement par des plantes, bactéries ou champignons, ce qui explique en partie la capacité des microbes à développer des mécanismes de défense.  \n- **Impact environnemental** : les biocides synthétiques utilisés dans l’industrie et l’agro‑industrie favorisent également l’émergence de résistances, affectant la santé animale, l’agriculture et la santé publique.  \n\n## Ce qui reste incertain\n\n- **Évolution future** : la vitesse à laquelle de nouvelles résistances apparaîtront en réponse à de nouveaux antibiotiques reste difficile à prévoir.  \n- **Contribution exacte des biocides** : bien que les biocides soient suspectés de favoriser la résistance, l’ampleur précise de leur impact comparée à celle des antibiotiques cliniques n’est pas encore quantifiée.  \n- **Interactions écologiques** : les mécanismes par lesquels les résistances se diffusent entre milieux (humain, animal, environnement) nécessitent davantage d’études pour établir des modèles prédictifs fiables.  \n\n## Limites et controverses éventuelles\n\n- **Données de mortalité** : les estimations de décès liés à l’antibiorésistance reposent sur des modèles épidémiologiques qui peuvent varier selon les critères de définition de « décès attribués à la résistance ».  \n\n## Conclusion\n\nL’antibiorésistance constitue un défi majeur de santé publique, alimenté par des mécanismes biologiques bien compris (modifications cellulaires, échanges génétiques) et par des facteurs environnementaux et d’usage intensif d’antibiotiques. Les données disponibles montrent un impact significatif en termes de mortalité et de propagation dans les milieux humains, vétérinaires et environnementaux. Cependant, des incertitudes subsistent quant à l’évolution future du phénomène, à l’influence exacte des biocides et aux meilleures stratégies pour limiter la diffusion des résistances. Une recherche continue et une surveillance renforcée restent essentielles pour affiner notre compréhension et orienter les politiques de santé.\n\n## Sources\n- Wikipédia (fr) — Résistance aux antibiotiques — https://fr.wikipedia.org/wiki/R%C3%A9sistance_aux_antibiotiques\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 6,
+      "nb_mots": 1465,
+      "matiere_source": "fine",
+      "textes_sources_audit": [
+        {
+          "source": "Nature News",
+          "titre": "As El Niño builds, studies of extreme marine heatwaves must start now",
+          "resume": "Nature, Published online: 16 November 2026; doi:10.1038/d41586-026-03715-7 Researchers must track warming oceans and use the knowledge gained to inform strategies for sustaining fisheries and communities that depend on them."
+        },
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Résistance aux antibiotiques",
+          "resume": "La résistance aux antibiotiques ou antibiorésistance est la capacité d'une bactérie à résister aux effets des antibiotiques. C'est l'une des formes de la pharmacorésistance, différente du phénomène de tolérance aux antibiotiques.\n\nLa sélection naturelle a doté les bactéries de mécanismes de résistance ou d'adaptation face à certains stress (rayonnement UV, chaleur, froid, etc.) et face à des molécules toxiques auxquelles elles sont confrontées dans leur environnement (métaux lourds, substances antibiotiques sécrétées par des animaux, plantes, bactéries ou champignons pour leur propre défense, etc.). Or, la plupart des médicaments antibiotiques proviennent de ces mêmes plantes, bactéries ou champignons ou s'en inspirent. Des biocides synthétiques industriels et agroindustriels suscitent aussi des résistances virales et bactériennes susceptibles d'affecter l'agriculture (culture de plantes ou de champignons), la santé animale (santé des animaux sauvages, d'élevage, d'aquaculture ou domestiques) et la santé publique.\nOn suppose que l'adaptation naît généralement de mutations génétiques aléatoires, ou fait suite à des échanges de gènes de résistance entre des bactéries (transformation génétique, transduction). La résistance provient souvent d'une perméabilité cellulaire sélectivement renforcée pour l'antibiotique, d'une activité enzymatique détruisant la molécule biocide, ou encore de l'entrée dans une phase de sporulation du microorganisme. Certaines bactéries stressées échangent spontanément des gènes de résistances avec d'autres bactéries proches (échanges dits « horizontaux », car ne nécessitant pas de transmission descendante de mère à fille). L'acquisition de cette résistance apparaît en général une dizaine d'années après l'introduction de l'antibiotique.\nIl existe plusieurs niveaux de résistance aux antibiotiques : résistance naturelle (systématique), résistance habituelle ou courante, multirésistance (BMR : bactéries multirésistantes aux antibiotiques, porteuses de plusieurs gènes de résistance pour différents antibiotiques), haute résistance (BHR : bactéries hautement résistantes), ultra-résistance (BUR) et pan-résistance ou toto-résistance (BPR ou BTR).\nLa généralisation d'une résistance au sein d'une population de bactéries s'explique souvent par une exposition prolongée de cette population à l'antibiotique. La forte consommation humaine et vétérinaire d'antibiotiques en France en fait l'un des pays les plus touchés par l'antibiorésistance.\nSelon un rapport AESA-ECDC publié début 2016, l'antibiorésistance tue environ 25 000 personnes par an en Europe, et un grand nombre de volailles sont encore, en 2015, contaminées par des antibiotiques et porteuses de bactéries résistantes (poulets et dindes étant les plus concernés). Les antibiorésistances sont de plus en plus fréquentes, dont en milieu d'élevage et dans l'environnement hospitalier.\n\nHistoire\nLe romancier Alphonse Allais avait imaginé en 1893 dans L'anti-filtre du Captain Cap que la sélection naturelle empêcherait un jour la destruction des microbes à force de les combattre. De fait, des antibiorésistances ont été identifiées dès les années 1940, mais comme de nouveaux antibiotiques étaient alors régulièrement découverts, à un rythme soutenu, l'antibiorésistance n'a pas, dans ce premier temps, attiré l'attention du public ou de l'industrie pharmaceutique. Le tableau suivant indique les dates d'introduction des grandes familles d'antibiotiques dans l'arsenal thérapeutique et les dates d'apparition des premières résistances sur des souches cliniques."
+        }
+      ],
+      "nb_mots_decouverte": 103,
+      "nb_mots_approfondi": 1353,
+      "sujet_id": "resistance-antibiotiques",
+      "origine": "encyclopedie"
+    },
+    "citation": {
+      "texte": "Au milieu de l'hiver, j'apprenais enfin qu'il y avait en moi un invincible été.",
+      "auteur": "Albert Camus",
+      "source": "« Retour à Tipasa », dans L'Été",
+      "annee": 1954
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 15.6,
+          "temperature_max": 18.2,
+          "temperature_min": 14.6,
+          "precipitation_mm": 0.6,
+          "probabilite_pluie_pct": 63,
+          "vent_kmh": 12.9,
+          "vent_max_kmh": 25.5,
+          "rafales_max_kmh": 49.7,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 15.6,
+              "temperature_max": 17.9,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 13,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 17.6,
+              "temperature_max": 18.2,
+              "probabilite_pluie_pct": 42,
+              "precipitation_mm": 0.1,
+              "vent_max_kmh": 14,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 16.2,
+              "temperature_max": 17.2,
+              "probabilite_pluie_pct": 15,
+              "precipitation_mm": 0.5,
+              "vent_max_kmh": 26,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 15.8,
+          "temperature_max": 18.2,
+          "temperature_min": 14.6,
+          "precipitation_mm": 0.7,
+          "probabilite_pluie_pct": 65,
+          "vent_kmh": 11.3,
+          "vent_max_kmh": 30.1,
+          "rafales_max_kmh": 47.2,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 15.2,
+              "temperature_max": 17.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 11,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 17.4,
+              "temperature_max": 18.2,
+              "probabilite_pluie_pct": 46,
+              "precipitation_mm": 0.1,
+              "vent_max_kmh": 14,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 16.0,
+              "temperature_max": 17.2,
+              "probabilite_pluie_pct": 18,
+              "precipitation_mm": 0.6,
+              "vent_max_kmh": 30,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 10.9,
+          "temperature_max": 16.9,
+          "temperature_min": 10.4,
+          "precipitation_mm": 0.4,
+          "probabilite_pluie_pct": 63,
+          "vent_kmh": 6.2,
+          "vent_max_kmh": 13.5,
+          "rafales_max_kmh": 25.6,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 10.6,
+              "temperature_max": 16.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 14.8,
+              "temperature_max": 16.8,
+              "probabilite_pluie_pct": 63,
+              "precipitation_mm": 0.4,
+              "vent_max_kmh": 9,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 14.1,
+              "temperature_max": 16.4,
+              "probabilite_pluie_pct": 8,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 14,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 10.8,
+          "temperature_max": 16.6,
+          "temperature_min": 10.7,
+          "precipitation_mm": 0.2,
+          "probabilite_pluie_pct": 70,
+          "vent_kmh": 8.9,
+          "vent_max_kmh": 16.3,
+          "rafales_max_kmh": 29.9,
+          "weather_code": 3,
+          "description": "couvert",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 10.7,
+              "temperature_max": 16.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 14.4,
+              "temperature_max": 16.4,
+              "probabilite_pluie_pct": 70,
+              "precipitation_mm": 0.2,
+              "vent_max_kmh": 6,
+              "weather_code": 3,
+              "description": "couvert"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 13.4,
+              "temperature_max": 16.5,
+              "probabilite_pluie_pct": 6,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 16,
+              "weather_code": 2,
+              "description": "partiellement nuageux"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 18.2,
+      "temperature_min_zone": 10.4,
+      "probabilite_pluie_max_pct": 70,
+      "vent_max_kmh": 30.1,
+      "description_dominante": "couvert",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 10.6,
+          "temperature_max": 17.9,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 13,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 14.4,
+          "temperature_max": 18.2,
+          "probabilite_pluie_pct": 70,
+          "precipitation_mm": 0.4,
+          "vent_max_kmh": 14,
+          "weather_code": 3,
+          "description": "couvert"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 13.4,
+          "temperature_max": 17.2,
+          "probabilite_pluie_pct": 18,
+          "precipitation_mm": 0.6,
+          "vent_max_kmh": 30,
+          "weather_code": 3,
+          "description": "couvert"
+        }
+      ],
+      "alertes": [],
+      "resume": "Couvert toute la journée, de 10° à 18°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "Moby-Dick",
+      "auteur": "Herman Melville",
+      "annee": 1851,
+      "segments": [
+        {
+          "t": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse",
+          "g": "la bourse, le porte-monnaie"
+        },
+        {
+          "t": ", and nothing particular to interest me on shore",
+          "g": "à terre"
+        },
+        {
+          "t": ", I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen",
+          "g": "la mauvaise humeur, le spleen"
+        },
+        {
+          "t": " and regulating the circulation. Whenever I find myself growing grim",
+          "g": "sombre, renfrogné"
+        },
+        {
+          "t": " about the mouth; whenever it is a damp, drizzly",
+          "g": "bruineux"
+        },
+        {
+          "t": " November in my soul; whenever I find myself involuntarily pausing before coffin warehouses",
+          "g": "entrepôts de cercueils"
+        },
+        {
+          "t": ", and bringing up the rear",
+          "g": "fermer la marche"
+        },
+        {
+          "t": " of every funeral I meet; and especially whenever my hypos",
+          "g": "idées noires"
+        },
+        {
+          "t": " get such an upper hand",
+          "g": "le dessus"
+        },
+        {
+          "t": " of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off",
+          "g": "faire voler le chapeau des passants"
+        },
+        {
+          "t": "—then, I account it high time",
+          "g": "juge qu'il est grand temps"
+        },
+        {
+          "t": " to get to sea as soon as I can.",
+          "g": null
+        }
+      ],
+      "texte_glose": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse (= la bourse, le porte-monnaie), and nothing particular to interest me on shore (= à terre), I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen (= la mauvaise humeur, le spleen) and regulating the circulation. Whenever I find myself growing grim (= sombre, renfrogné) about the mouth; whenever it is a damp, drizzly (= bruineux) November in my soul; whenever I find myself involuntarily pausing before coffin warehouses (= entrepôts de cercueils), and bringing up the rear (= fermer la marche) of every funeral I meet; and especially whenever my hypos (= idées noires) get such an upper hand (= le dessus) of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off (= faire voler le chapeau des passants)—then, I account it high time (= juge qu'il est grand temps) to get to sea as soon as I can."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Impôts, logement, Smic... les candidats à la présidentielle débattent de leurs propositions ; Guerre en Ukraine : des frappes russes ont touché deux importants ponts de Kiev, annonce le maire, Vitali Klitschko."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral+nvidia",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_d": {
+        "genere_par_llm": true,
+        "provider": "nvidia",
+        "erreur": null,
+        "essais_echoues": 0
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral+nvidia",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-11-17T06:10:40.242369+01:00"
+}
