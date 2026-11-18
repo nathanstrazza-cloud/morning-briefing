@@ -1,6 +1,68 @@
 {
   "entries": [
     {
+      "derniere_execution": "2026-11-18T06:21:53.873271+01:00",
+      "date_visee": "2026-11-18",
+      "succes": true,
+      "erreur": null,
+      "synthese_llm": true,
+      "erreur_llm": null,
+      "llm_bloc": {
+        "genere_par_llm": true,
+        "provider": "groq+mistral",
+        "erreur": null
+      },
+      "llm_science": {
+        "genere_par_llm": true,
+        "provider": "groq+mistral",
+        "erreur": null
+      },
+      "llm_anglais": {
+        "genere_par_llm": false,
+        "provider": null,
+        "erreur": null
+      },
+      "sources_rss_en_erreur": [
+        {
+          "source": "L'Équipe Hand",
+          "categorie": "sport",
+          "statut": "vide",
+          "detail": null
+        },
+        {
+          "source": "L'Équipe Volley",
+          "categorie": "sport",
+          "statut": "vide",
+          "detail": null
+        },
+        {
+          "source": "ESPN NBA News",
+          "categorie": "sport",
+          "statut": "vide",
+          "detail": null
+        },
+        {
+          "source": "ESPN Top Headlines",
+          "categorie": "sport",
+          "statut": "vide",
+          "detail": null
+        }
+      ],
+      "sources_marches_en_erreur": [],
+      "funnel_actualite": {
+        "france": {
+          "bruts": 93,
+          "evenements_uniques": 74,
+          "retenus_apres_seuil": 27
+        },
+        "monde": {
+          "bruts": 112,
+          "evenements_uniques": 89,
+          "retenus_apres_seuil": 38
+        }
+      }
+    },
+    {
       "derniere_execution": "2026-11-17T06:20:50.190048+01:00",
       "date_visee": "2026-11-17",
       "succes": true,
@@ -2881,14 +2943,6 @@
         }
       ],
       "sources_marches_en_erreur": []
-    },
-    {
-      "derniere_execution": "2026-09-19T20:44:26.942314+02:00",
-      "date_visee": "2026-09-19",
-      "succes": true,
-      "erreur": null,
-      "synthese_llm": true,
-      "erreur_llm": null
     }
   ]
 }

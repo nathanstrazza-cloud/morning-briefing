@@ -1,0 +1,606 @@
+{
+  "date": "2026-11-18",
+  "derniere_mise_a_jour": "2026-11-18T06:21:53.873271+01:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Présidentielle 2027 : Gérald Darmanin appelle Bruno Retailleau et Gabriel Attal à s’effacer derrière Edouard Philippe, pour barrer la route à Jean-Luc Mélenchon",
+          "resume": "« Si M. Mélenchon est au second tour face à Mme Le Pen, je pense que ce sera un choc immense dans notre pays », a déclaré mardi le ministre de la justice, estimant que le candidat « insoumis » l’emporterait dans une telle configuration.",
+          "pourquoi_important": "Gérald Darmanin incite des responsables à se placer derrière Edouard Philippe afin de bloquer la progression de Jean‑Luc Mélenchon à l’élection présidentielle de 2027.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "20 Minutes",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Candidat à la présidentielle, Teddy Riner ne peut plus être ambassadeur de l’Unicef",
+          "resume": "Le député de Guadeloupe a annoncé, ce mardi 17 novembre, qu'il parrainerait Teddy Riner pour l'élection présidentielle de 2027. Il explique vouloir permettre au champion olympique de défendre ses idées devant les Français.",
+          "pourquoi_important": "Un député de Guadeloupe annonce son parrainage de Teddy Riner pour la présidentielle 2027, montrant le soutien d’une personnalité sportive à la vie politique.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Manifestations du 17 novembre : de Paris à Lyon, un mouvement qui regarde vers la présidentielle, « on envoie un message au prochain locataire de l’Elysée »",
+          "resume": "Mardi, les cortèges ont rassemblé 146 000 personnes dans différentes villes de France, selon le ministère de l’intérieur, plus de 500 000 selon la CGT. Alors que la mobilisation semble s’essouffler, les regards se tournent peu à peu vers le scrutin présidentiel d’avril 2027.",
+          "pourquoi_important": "Les manifestations du 17 novembre mobilisent des centaines de milliers de personnes et orientent le débat public vers l’élection présidentielle de 2027.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : le RN propose une avantageuse réforme des retraites mais sacrifie les précaires et la politique du logement pour la financer",
+          "resume": "Marine Le Pen, candidate à l’élection présidentielle, promet que l’avancée de l’âge de départ ne coûtera pas un euro en jouant sur d’autres paramètres, rendant plus difficile l’acquisition de trimestres et le départ à la retraite. Elle instaure une part de capitalisation en prenant, notamment, l’argent du Fonds national d’aide au logement.",
+          "pourquoi_important": "Selon Le Monde, le RN propose une réforme des retraites financée par le Fonds national d’aide au logement, ce qui pourrait réduire les aides au logement pour les ménages précaires.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Au procès de l’explosion de la rue de Trévise, le « combat acharné » des associations de victimes face à la « maltraitance institutionnelle »",
+          "resume": "Linda Zaourar, présidente de l’association des Victimes et rescapés de l’explosion de la rue de Trévise, et Dominique Paris, de Trévise Ensemble, ont exposé à la barre, mardi 17 novembre, leur lutte pour une juste indemnisation des victimes.",
+          "pourquoi_important": "Selon Le Monde, des associations de victimes dénoncent une maltraitance institutionnelle dans leur quête d’indemnisation suite à l’explosion de la rue de Trévise.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "En Israël, la police et le renseignement intérieur accusés d’avoir servi le clan Nétanyahou pour contester les résultats des législatives",
+          "resume": "Trois semaines après les élections, aucun élément concret ne vient étayer les accusations de « fraude massive » portées par Benyamin Nétanyahou et relayées par la police et le Shin Bet contre les listes arabes. Ces allégations avaient conduit à des perquisitions et des placements en garde à vue.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France Info",
+            "France 24 International",
+            "New York Times World"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : Vladimir Poutine s’attend à un sommet « d’une grande utilité » avec Donald Trump et Xi Jinping en Chine",
+          "resume": "La Chine organise un sommet réunissant Donald Trump et Vladimir Poutine les 18 et 19 novembre à Shenzhen, dans le cadre de la Coopération économique pour l’Asie-Pacifique, pour afficher son rôle de médiatrice et limiter les tensions directes entre les parties.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Midterms 2026 : malgré la polémique, les démocrates s’imposent en Alaska et parachèvent le basculement du Sénat américain",
+          "resume": "Mary Peltola remporte le siège en Alaska, malgré une confusion sur les candidats, permettant aux démocrates de contrôler 56 sièges contre 44 pour les républicains au Sénat.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : Un pont symbolique attaqué, la Russie menace la France et le Pentagone critique",
+          "resume": "L’Ukraine a attaqué un pont en Crimée, provoquant une réaction négative de la Russie envers les soldats français déployés en Ukraine, tandis que le Pentagone a exprimé une critique.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "20 Minutes",
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Seize pêcheurs équatoriens poursuivent les États-Unis en justice pour le bombardement de leur embarcation",
+          "resume": "L’administration Trump nie sa responsabilité dans le bombardement d’une embarcation équatorienne en 2025, malgré les accusations de crimes et les plus de 200 morts dans des opérations similaires depuis fin 2025.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Rougeole : les États-Unis perdent leur statut de pays ayant éliminé la maladie",
+          "resume": "Les États-Unis, en raison d’une couverture vaccinale en baisse et de la défiance de l’administration Trump envers les vaccins, font face à une épidémie de rougeole, avec 12 morts depuis le début de l’année.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Libération",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "En RDC, Ebola tue massivement les enfants : « Je ne peux même pas le prendre dans mes bras pour le réconforter »",
+          "resume": "Près des trois quarts des enfants de moins de 5 ans contaminés par Ebola en RDC n’y survivent pas, avec plus de 2 280 orphelins dans les zones épidémiques de Bunia et Beni.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Selon 20 Minutes, Présidentielle 2027 : Salve de ministres contre Mélenchon, accusé d’être un « relais » du Kremlin",
+          "resume": "Le gouvernement estime que le leader de LFI est le « porte-parole » de la « propagande » de la Russie de Poutine sur la guerre en Ukraine",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
+      "mouvements_notables": [
+        {
+          "nom": "CAC 40",
+          "variation_pct": -1.62,
+          "explication": null
+        },
+        {
+          "nom": "S&P 500",
+          "variation_pct": -1.03,
+          "explication": null
+        },
+        {
+          "nom": "DAX",
+          "variation_pct": -2.08,
+          "explication": null
+        },
+        {
+          "nom": "Euro Stoxx 50",
+          "variation_pct": -2.15,
+          "explication": null
+        },
+        {
+          "nom": "Or",
+          "variation_pct": -1.98,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "rugby",
+          "texte": "Le capitaine Sione Tuipulotu, Ben White, Jack Dempsey et Scott Cummings sont exclus du dernier match du groupe Nations Championship de l'Écosse contre le Japon."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Alexander Zverev a battu Ben Shelton (6-2, 7-6 [4]) et s'est qualifié pour les demi-finales des Finales ATP à Turin."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Théo Arribagé et Albano Olivetti ont vaincu Orlando Luz et Rafael Matos (6-4, 7-6 [4]) et restent en lice pour les demi-finales des Finales ATP."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Arthur Fils vise une qualification en demi-finales des Finales ATP de Turin après sa première victoire française en 15 ans."
+        },
+        {
+          "sport": "football",
+          "texte": "Le Sénégal, leader de son groupe après quatre journées, est déjà assuré de se qualifier pour la CAN 2027."
+        },
+        {
+          "sport": "football",
+          "texte": "L'Algérie a perdu 0-3 contre le Togo à Lomé lors de la quatrième journée des qualifications à la CAN."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Joël Ayayi remplace son frère Gérald Ayayi, blessé à la cheville, dans l'équipe de France pour les qualifications à la Coupe du monde 2027."
+        },
+        {
+          "sport": "basketball",
+          "texte": "L'équipe de France a battu l'Ukraine 108-60 lors des qualifications à l'Euro 2027, enregistrant son troisième succès consécutif."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "Arsenal – Borussia Dortmund",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-11-24T20:00:00+00:00",
+          "date_texte": "mardi 24 novembre à 21h00",
+          "sport": "football"
+        },
+        {
+          "affiche": "Miami Heat – Milwaukee Bucks",
+          "competition": "NBA",
+          "date_iso": "2026-11-19T00:00:00+00:00",
+          "date_texte": "jeudi 19 novembre à 1h00",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "decouverte",
+      "titre": "Deux trous noirs superlumineux observés peu après le Big Bang",
+      "contenu_markdown": "Des astronomes ont identifié un système rare composé de deux trous noirs extrêmement brillants, actifs moins d’un milliard d’années après le Big Bang. Ces objets, qualifiés de *« corps célestes de ténèbres insondables »* dans leur étude, absorbent de grandes quantités de gaz, ce qui les rend visibles malgré leur nature intrinsèquement sombre.\n\nCette découverte, publiée le **17 novembre 2026** dans *Nature*, offre un aperçu inédit des premières phases de l’univers. Les trous noirs supermassifs, bien que communs dans les galaxies actuelles, sont rarement observés si tôt dans l’histoire cosmique. Leur détection permet d’étudier comment ces structures se forment et évoluent, ainsi que leur rôle dans la régulation de la croissance des galaxies.\n\nLes détails sur leur masse exacte, leur distance précise ou les instruments utilisés pour cette observation restent à consulter dans les articles scientifiques. Les incertitudes portent notamment sur la fréquence de tels systèmes et leur contribution à la réionisation de l’univers primitif.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03750-4\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Foudre\n\nLa foudre est l’un des spectacles les plus impressionnants de la nature, mais aussi l’un des plus dangereux. Ce phénomène électrostatique, bien que familier, recèle des mécanismes complexes et des implications biologiques, climatiques et historiques majeures. Pour mieux le comprendre, il faut d’abord saisir son importance, puis décomposer les processus physiques qui le rendent possible.\n\n## Pourquoi la foudre est-elle un sujet important ?\n\nLa foudre n’est pas qu’un simple phénomène météorologique spectaculaire : elle joue un rôle clé dans l’équilibre des écosystèmes et même dans l’histoire de la vie sur Terre. Dès les origines de la planète, il y a plus de trois milliards d’années, les décharges électriques auraient contribué à la formation des premières molécules organiques, comme les acides aminés, essentiels à l’émergence des premières formes de vie. Aujourd’hui encore, elle participe activement au cycle de l’azote en transformant l’azote atmosphérique en nitrites et nitrates, des composés indispensables à la croissance des plantes.\n\nChaque année, elle cause des morts et des blessures dans le monde entier, malgré l’utilisation de paratonnerres pour protéger les bâtiments et les infrastructures électriques. Enfin, son étude permet de mieux comprendre les mécanismes des orages et leur impact sur le climat, notamment en contribuant à la purification de l’atmosphère via la production de radicaux hydroxyles, qui capturent des gaz à effet de serre comme le méthane.\n\n## Explication du phénomène : une décharge électrostatique géante\n\nLa foudre est une décharge électrique brutale qui se produit entre deux régions de l’atmosphère chargées différemment. Ces différences de charge s’accumulent principalement dans les nuages d’orage, appelés **cumulonimbus**, où des courants ascendants et descendants séparent les particules chargées positivement (ions) et négativement (électrons). Le bas du nuage devient généralement négatif, tandis que le sommet et les zones environnantes prennent une charge positive.\n\nLorsque la tension électrique entre ces régions dépasse un seuil critique (de l’ordre de plusieurs dizaines de millions de volts), l’air, normalement isolant, devient conducteur. Un canal ionisé se forme alors, permettant le passage d’un courant électrique intense, allant de 1 000 à 100 000 ampères.\n\n## Fonctionnement et mécanismes de la foudre\n\nTrois types de décharges sont principalement observés :\n1. **Les décharges intra-nuageuses** : les plus fréquentes, elles se produisent à l’intérieur d’un même nuage, entre ses régions positivement et négativement chargées.\n2. **Les décharges inter-nuageuses** : elles relient deux nuages distincts, souvent lorsque des cumulonimbus se rapprochent.\n3. **Les décharges nuage-sol** : bien que moins fréquentes, elles sont les plus dangereuses pour l’homme, car elles touchent directement le sol. Elles peuvent se diriger vers le sol (nuage-sol) ou remonter depuis une structure élevée (sol-nuage).\n\nLe mécanisme de déclenchement reste en partie mystérieux, mais il implique une combinaison de facteurs : la séparation des charges dans le nuage, la présence d’un conducteur (comme un arbre ou un paratonnerre) et les variations locales du champ électrique. Certaines formes rares, comme la **foudre en boule**, dont la nature exacte n’est pas encore élucidée, ajoutent une dimension énigmatique à ce phénomène.\n\nLa foudre peut aussi survenir dans des contextes autres que les orages classiques, comme lors d’éruptions volcaniques, d’explosions nucléaires ou même de tempêtes de sable, où des particules en mouvement génèrent des charges électriques. Enfin, des méthodes artificielles permettent de reproduire des éclairs en laboratoire pour étudier leurs effets, tandis que des observations ont confirmé l’existence de foudre sur d’autres planètes, comme Jupiter et Saturne.\n\n## Données et résultats scientifiques\n\nLes études décrites dans les références indiquent que la foudre implique des différences de potentiel de l’ordre de plusieurs dizaines de millions de volts et des courants compris entre 1 000 et 100 000 ampères. Ces valeurs sont observées tant pour les décharges intra‑nuageuses que pour les décharges nuage‑sol.  \n\nLes éclairs se manifestent le plus souvent dans les zones tropicales, où les orages sont fréquents, et sont associés à des nuages de type cumulonimbus. La plupart des décharges observées sont de type intra‑nuageux ou inter‑nuageux, tandis que les décharges nuage‑sol, bien que moins fréquentes, sont les plus dangereuses pour les êtres humains et les infrastructures.  \n\nDes mesures atmosphériques montrent que la foudre contribue à la production de radicaux hydroxyles dans la partie supérieure des nuages orageux. Cette production participe à l’oxydation de composés tels que le monoxyde de carbone et le méthane, apportant entre 2 % et 16 % de la capacité oxydante totale de l’atmosphère terrestre.  \n\nDes observations de foudre sur d’autres planètes, notamment Jupiter et Saturne, confirment que des processus similaires de décharge électrostatique existent dans des environnements très différents de celui de la Terre.  \n\n## Ce que les scientifiques savent\n\n- **Nature électrostatique** : La foudre est une décharge électrostatique de grande intensité qui se produit entre des régions chargées de l’atmosphère.  \n- **Types de décharges** : Trois configurations principales sont reconnues : intra‑nuageuse (à l’intérieur d’un même nuage), inter‑nuageuse (entre plusieurs nuages) et nuage‑sol (entre un nuage et le sol).  \n- **Accompagnement** : Chaque décharge s’accompagne d’un éclair (émission lumineuse dans le spectre visible) et du tonnerre (onde sonore).  \n- **Intensité** : Les tensions atteignent typiquement plusieurs dizaines de millions de volts et les courants varient de 1 000 à 100 000 ampères.  \n- **Rôle biogéochimique** : La foudre est la principale source naturelle de nitrites et nitrates, composés indispensables au cycle de l’azote utilisable par les plantes.  \n- **Impact climatique** : La production de radicaux hydroxyles par la foudre participe à l’oxydation de gaz à effet de serre, jouant un rôle non négligeable dans le nettoyage de l’atmosphère.  \n- **Occurrences planétaires** : Des phénomènes analogues ont été détectés sur Jupiter et Saturne, montrant que la décharge électrostatique est un processus universel dans les atmosphères planétaires.  \n\n## Ce qui reste incertain\n\n- **Nature de la foudre en boule** : Bien que décrite comme un phénomène rare, la nature exacte de la foudre en boule n’est pas encore comprise et fait l’objet de recherches limitées.  \n- **Quantification précise de l’impact oxydant** : Les estimations de la contribution de la foudre à la capacité oxydante de l’atmosphère (entre 2 % et 16 %) varient selon les modèles et les méthodes de mesure ; la valeur exacte demeure incertaine.  \n- **Fréquence exacte des décharges nuage‑sol** : Les données globales sur la proportion précise des décharges nuage‑sol par rapport aux autres types de décharges restent approximatives, surtout dans les régions peu surveillées.  \n- **Rôle historique dans l’émergence de la vie** : Les hypothèses selon lesquelles les décharges électriques auraient été fondamentales pour la formation des premières molécules organiques restent théoriques et ne sont pas confirmées par des preuves directes.  \n\n## Limites et controverses éventuelles\n\n- **Détection et mesure** : La mesure précise des paramètres de la foudre (tension, courant, durée) dépend de réseaux de capteurs qui ne couvrent pas uniformément la surface terrestre, ce qui limite la représentativité des données.  \n- **Ball lightning** : L’existence et la nature de la foudre en boule suscitent encore des débats ; certaines observations sont anecdotiques et les explications proposées divergent.  \n- **Effets climatiques** : Bien que la foudre participe à l’oxydation de certains gaz, l’importance relative de ce processus dans le bilan climatique global fait l’objet de discussions parmi les climatologues.  \n- **Protection humaine** : Malgré l’existence de paratonnerres et de systèmes de mise à la terre, la foudre continue de causer des décès et des blessures ; l’efficacité des mesures de protection varie selon les contextes géographiques et technologiques.  \n\n## Conclusion\n\nLa foudre constitue un phénomène naturel d’une intensité électrostatique remarquable, présent dans toutes les régions du globe et même sur d’autres planètes. Les connaissances actuelles permettent de caractériser ses principaux paramètres (tensions de plusieurs dizaines de millions de volts, courants de 1 000 à 100 000 ampères) et de comprendre son rôle essentiel dans le cycle de l’azote ainsi que dans la chimie atmosphérique, notamment par la génération de radicaux hydroxyles.  \n\nCependant, plusieurs aspects restent à éclaircir : la nature exacte de la foudre en boule, la précision des contributions oxydantes, et l’impact historique sur l’apparition de la vie. Les limites des réseaux de mesure et les débats autour de certains effets climatiques soulignent la nécessité de poursuivre les observations et les modélisations. En consolidant ces connaissances, la communauté scientifique pourra améliorer les stratégies de protection contre les dangers de la foudre tout en approfondissant notre compréhension de son rôle dans les processus planétaires.\n\n## Sources\n- Wikipédia (fr) — Foudre — https://fr.wikipedia.org/wiki/Foudre\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 2,
+      "nb_mots": 1608,
+      "matiere_source": "fine",
+      "textes_sources_audit": [
+        {
+          "source": "Nature News",
+          "titre": "Meet the ‘celestial bodies of fathomless powerful darkness’",
+          "resume": "Nature, Published online: 17 November 2026; doi:10.1038/d41586-026-03750-4 Astronomers report a rare pair of extremely bright black holes that were gobbling gas less than one billion years after the Big Bang."
+        },
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Foudre",
+          "resume": "La foudre est un phénomène naturel de décharge électrostatique de grande intensité qui se produit dans l'atmosphère, entre des régions chargées électriquement, et peut se produire soit à l'intérieur d'un nuage (décharge intra-nuageuse), soit entre plusieurs nuages (inter-nuageuse), soit entre un nuage et le sol (nuage-sol ou sol-nuage). La foudre est toujours accompagnée d'un ou plusieurs éclairs (émission intense de rayonnement électromagnétique, dont les composantes se situent dans la partie visible du spectre), et du tonnerre (émission d'ondes sonores), en plus d'autres phénomènes associés. Bien que les décharges intra-nuageuses et inter-nuageuses soient plus fréquentes, les décharges nuage-sol présentent un plus grand danger pour l'homme. La plupart des éclairs se produisent dans la zone tropicale de la planète et principalement sur tous les continents. Ils sont associés à des phénomènes convectifs, généralement des orages provoqués par les cumulonimbus.\nCertaines théories scientifiques considèrent que ces décharges électriques peuvent avoir été fondamentales dans l'émergence de la vie, en plus d'avoir contribué à son maintien. Dans l'histoire de l'humanité, la foudre a peut-être été la première source de feu, fondamentale pour le développement technique. Ainsi, les éclairs ont éveillé la fascination, étant incorporés dans d'innombrables légendes et mythes représentant le pouvoir des dieux. Des recherches scientifiques ultérieures ont révélé leur nature électrique et, depuis lors, les décharges ont fait l'objet d'une surveillance constante, en raison de leur relation avec les systèmes orageux.\nEn raison de la grande amplitude des tensions (typiquement, plusieurs dizaines de millions de volts) et des courants électriques (de 1 000 à 100 000 ampères) qu'elle propage, la foudre est toujours dangereuse. Ainsi, les bâtiments et les réseaux électriques ont besoin de paratonnerres, des systèmes de protection. Cependant, même avec ces protections, la foudre cause toujours des morts et des lésions dues à la foudre dans le monde entier.\nEn tant que phénomène de haute énergie, la foudre se manifeste généralement par un chemin extrêmement lumineux qui parcourt de longues distances, parfois avec des branches. Cependant, il existe des formes rares, comme la foudre en boule, dont la nature est inconnue. La grande variation du champ électrique causée par des décharges dans la troposphère peut donner lieu à des phénomènes lumineux transitoires dans la haute atmosphère. La foudre peut trouver son origine dans d'autres événements, tels que les éruptions volcaniques, les explosions nucléaires et les tempêtes de sable. Des méthodes artificielles sont utilisées pour créer des éclairs à des fins scientifiques. La foudre se produit également sur d'autres planètes du Système solaire, en particulier Jupiter et Saturne.\n\nHistoire\nLa foudre est probablement apparue sur Terre bien avant la vie, il y a plus de trois milliards d'années. De plus, les éclairs ont probablement été fondamentaux pour la formation des premières molécules organiques, essentielles à l'apparition des premières formes de vie. Depuis le début de l'histoire écrite, les éclairs fascinent les êtres humains. Le feu que les éclairs produisent lorsqu'ils touchent le sol sert à ceux-ci pour se réchauffer pendant la nuit, en plus de tenir les animaux sauvages à l'écart. L'homme primitif a donc cherché des réponses pour expliquer ce phénomène, créant des superstitions et des mythes qui ont été incorporés dans les premières religions.\n\nImportance biologique\n\nDès la formation de la Terre, les températures élevées de la croûte terrestre sont responsables de la formation de tempêtes importantes, violentes et permanentes, donnant naissance aux océans. L'eau, au cours de son cycle, transporte avec elle des éléments chimiques, tels que le carbone et l'azote, qui s'accumulent dans les mers primitives. Les rayons ultraviolets et la foudre ont peut-être grandement aidé le processus de combinaison de ces composés inorganiques ainsi qu'à leur transformation en acides aminés, composants essentiels pour l'émergence de la vie.\nLes décharges électriques sont la principale source de nitrites et de nitrates, essentiels à la vie des plantes. Les plantes ne sont pas en mesure d'utiliser directement l'azote atmosphérique, elles doivent donc être transformées en d'autres composés azotés. La foudre est responsable de ces réactions chimiques, ce qui maintient le cycle de l'azote.\nLes feux de forêt déclenchés par la foudre jouent un rôle essentiel dans l'évolution des plantes, car la consommation de matière sèche et l'élimination d'éventuels ravageurs par le feu sont bénéfiques pour l'environnement. Le processus d'évolution de la vie végétale semble être étroitement lié à l'apparition des incendies, qui favorisent l'émergence de nouveaux gènes. Il est possible que les incendies provoqués par la foudre aient été la première source de feu utilisée par les hommes primitifs, ce qui aurait été l'une des étapes importantes qui ont conduit à l'évolution et à la domination de celui-ci sur son environnement.\nUne étude météorologique démontre aussi que la foudre contribue à nettoyer l'atmosphère en produisant des radicaux hydroxyles au sommet du cumulonimbus. Ceux-ci réagissent avec d'autres molécules présentes dans l'air en les oxydant. Le processus capture des composés toxiques dans l'atmosphère, tels que le monoxyde de carbone et le méthane, qui sont considérés comme des gaz jouant un rôle majeur dans le réchauffement climatique et la destruction de la couche d'ozone. Ceci apporte entre 2 % et 16 % de la capacité oxydante de l'atmosphère terrestre.\n\nRecherche scientifique"
+        }
+      ],
+      "nb_mots_decouverte": 189,
+      "nb_mots_approfondi": 1412,
+      "sujet_id": "foudre",
+      "origine": "encyclopedie"
+    },
+    "citation": {
+      "texte": "Le cœur a ses raisons que la raison ne connaît point.",
+      "auteur": "Blaise Pascal",
+      "source": "Pensées",
+      "annee": 1670
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 17.2,
+          "temperature_max": 20.2,
+          "temperature_min": 14.5,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 19.0,
+          "vent_max_kmh": 26.0,
+          "rafales_max_kmh": 52.9,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 16.3,
+              "temperature_max": 19.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 25,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 17.8,
+              "temperature_max": 20.1,
+              "probabilite_pluie_pct": 2,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 26,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 14.9,
+              "temperature_max": 17.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 23,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 17.9,
+          "temperature_max": 19.5,
+          "temperature_min": 14.6,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 23.5,
+          "vent_max_kmh": 32.6,
+          "rafales_max_kmh": 54.4,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 16.5,
+              "temperature_max": 18.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 32,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 17.6,
+              "temperature_max": 19.5,
+              "probabilite_pluie_pct": 4,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 33,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 14.8,
+              "temperature_max": 17.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 26,
+              "weather_code": 3,
+              "description": "couvert"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 13.7,
+          "temperature_max": 19.1,
+          "temperature_min": 8.9,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 12.0,
+          "vent_max_kmh": 27.5,
+          "rafales_max_kmh": 49.7,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 13.7,
+              "temperature_max": 18.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 28,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 16.0,
+              "temperature_max": 19.1,
+              "probabilite_pluie_pct": 2,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 26,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 9.4,
+              "temperature_max": 14.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 12,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 14.9,
+          "temperature_max": 17.9,
+          "temperature_min": 9.8,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 11.9,
+          "vent_max_kmh": 24.0,
+          "rafales_max_kmh": 44.3,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 14.8,
+              "temperature_max": 17.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 24,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 15.4,
+              "temperature_max": 17.9,
+              "probabilite_pluie_pct": 13,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 23,
+              "weather_code": 1,
+              "description": "plutôt dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 10.3,
+              "temperature_max": 14.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 20.2,
+      "temperature_min_zone": 8.9,
+      "probabilite_pluie_max_pct": 0,
+      "vent_max_kmh": 32.6,
+      "description_dominante": "ciel dégagé",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 13.7,
+          "temperature_max": 19.1,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 32,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 15.4,
+          "temperature_max": 20.1,
+          "probabilite_pluie_pct": 13,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 33,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 9.4,
+          "temperature_max": 17.1,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 26,
+          "weather_code": 3,
+          "description": "couvert"
+        }
+      ],
+      "alertes": [],
+      "resume": "Ciel dégagé le matin, ciel dégagé l'après-midi, couvert le soir, de 9° à 20°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "Alice's Adventures in Wonderland",
+      "auteur": "Lewis Carroll",
+      "annee": 1865,
+      "segments": [
+        {
+          "t": "Alice was beginning to get very tired of sitting by her sister on the bank",
+          "g": "la berge"
+        },
+        {
+          "t": ", and of having nothing to do: once or twice she had peeped into",
+          "g": "jeté un coup d'œil dans"
+        },
+        {
+          "t": " the book her sister was reading, but it had no pictures or conversations in it, \"and what is the use of",
+          "g": "à quoi bon"
+        },
+        {
+          "t": " a book,\" thought Alice \"without pictures or conversations?\" So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid",
+          "g": "hébétée"
+        },
+        {
+          "t": "), whether the pleasure of making a daisy-chain",
+          "g": "collier de pâquerettes"
+        },
+        {
+          "t": " would be worth the trouble",
+          "g": "valoir la peine"
+        },
+        {
+          "t": " of getting up and picking",
+          "g": "cueillir"
+        },
+        {
+          "t": " the daisies, when suddenly a White Rabbit with pink eyes ran close by",
+          "g": "tout près de"
+        },
+        {
+          "t": " her.",
+          "g": null
+        }
+      ],
+      "texte_glose": "Alice was beginning to get very tired of sitting by her sister on the bank (= la berge), and of having nothing to do: once or twice she had peeped into (= jeté un coup d'œil dans) the book her sister was reading, but it had no pictures or conversations in it, \"and what is the use of (= à quoi bon) a book,\" thought Alice \"without pictures or conversations?\" So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid (= hébétée)), whether the pleasure of making a daisy-chain (= collier de pâquerettes) would be worth the trouble (= valoir la peine) of getting up and picking (= cueillir) the daisies, when suddenly a White Rabbit with pink eyes ran close by (= tout près de) her."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Présidentielle 2027 : Gérald Darmanin appelle Bruno Retailleau et Gabriel Attal à s’effacer derrière Edouard Philippe, pour barrer la route à Jean-Luc Mélenchon."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_d": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 1
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-11-18T06:10:35.169341+01:00"
+}
