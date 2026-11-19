@@ -1,6 +1,6 @@
 {
-  "derniere_execution": "2026-11-18T06:21:53.873271+01:00",
-  "date_visee": "2026-11-18",
+  "derniere_execution": "2026-11-19T06:14:35.329056+01:00",
+  "date_visee": "2026-11-19",
   "succes": true,
   "erreur": null,
   "synthese_llm": true,
@@ -49,14 +49,14 @@
   "sources_marches_en_erreur": [],
   "funnel_actualite": {
     "france": {
-      "bruts": 93,
-      "evenements_uniques": 74,
-      "retenus_apres_seuil": 27
+      "bruts": 109,
+      "evenements_uniques": 90,
+      "retenus_apres_seuil": 35
     },
     "monde": {
-      "bruts": 112,
-      "evenements_uniques": 89,
-      "retenus_apres_seuil": 38
+      "bruts": 107,
+      "evenements_uniques": 94,
+      "retenus_apres_seuil": 33
     }
   }
 }

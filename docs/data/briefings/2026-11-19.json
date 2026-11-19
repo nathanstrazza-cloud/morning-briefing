@@ -1,0 +1,391 @@
+{
+  "date": "2026-11-19",
+  "derniere_mise_a_jour": "2026-11-19T06:14:35.329056+01:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "L'écologiste Marine Tondelier se dit \"prête à travailler à une coalition autour de la candidature de Jean-Luc Mélenchon\" pour la présidentielle 2027",
+          "resume": "Sur France 2, la secrétaire nationale des Ecologistes a ouvert la voie à son retrait de la présidentielle, alors que le parti ne s’est pas encore prononcé sur une candidature propre, une alliance avec La France insoumise ou un rapprochement avec Raphaël Glucksmann.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France Info",
+            "Libération",
+            "20 Minutes",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Interdire le commerce avec les colonies israéliennes : des députés veulent placer la France face à ses engagements",
+          "resume": "Une proposition de loi du Parti socialiste, examinée jeudi 19 novembre à l’Assemblée, veut interdire le commerce avec les colonies israéliennes, y compris les services financiers, alors que deux mois après avoir annoncé des sanctions, le gouvernement n’agit pas.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Trois \"revenantes\" françaises condamnées à des peines de cinq à douze ans de prison pour avoir rejoint l'organisation Etat islamique en Syrie",
+          "resume": "Deux ex-épouses d'Adrien Guihal, haut cadre de l'EI qui avait revendiqué en 2016 les attentats de Nice et de Magnanville, ont notamment été condamnées par la cour d'assises spéciale de Paris.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Au procès de l’explosion de la rue de Trévise, le patron du syndic de copropriété « ne voit pas la faute »",
+          "resume": "Le tribunal a interrogé mercredi le dirigeant de la société Cipa, poursuivie en tant que personne morale pour ne pas avoir eu recours à une procédure d’urgence afin de réparer une fuite sur un collecteur d’eaux usées. Fuite qui, selon les expertises, serait à l’origine du processus ayant entraîné l’explosion du 12 janvier 2019.",
+          "pourquoi_important": "L'affaire concerne la responsabilité d'un syndic dans une explosion.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Longtemps fervent partisan de la primaire, Lisnard semble désormais la torpiller",
+          "resume": "David Lisnard pose maintenant des conditions quasi irréalisables pour une primaire : les participations d’Édouard Philippe et d’Éric Zemmour",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Guerre en Ukraine : le pont de Crimée de nouveau touché, deux jours après des frappes ukrainiennes ayant sérieusement endommagé l’infrastructure",
+          "resume": "La circulation sur le pont reliant la Crimée annexée à la Russie est temporairement interrompue.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Sommet de Shenzhen : début d'une rencontre Trump-Poutine avant une réunion trilatérale historique",
+          "resume": "Xi Jinping, Donald Trump et Vladimir Poutine se rencontrent en marge du sommet de l’Apec, chacun avec des objectifs distincts.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Israël lance une opération militaire terrestre à Gaza dans une zone contrôlée par le Hamas, en dépit du cessez-le-feu",
+          "resume": "L’armée israélienne a déployé des troupes au sol dans le centre de Gaza, accusant le Hamas de violations de la trêve, forçant des déplacements de familles palestiniennes.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Violences post-électorales au Mozambique : l’opposant Venâncio Mondlane face à la justice",
+          "resume": "Venâncio Mondlane est poursuivi pour « incitation au terrorisme » après avoir contesté les résultats de l’élection présidentielle d’octobre 2024.",
+          "pourquoi_important": "Ce procès pourrait exacerber les tensions politiques et les violences post-électorales dans le pays.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Vladimir Poutine savoure son retour au cœur de la diplomatie mondiale, aux côtés de Donald Trump et Xi Jinping à Shenzhen",
+          "resume": "Le président russe doit rencontrer ses homologues chinois et américain, jeudi, en marge du sommet de la Coopération économique pour l’Asie-Pacifique. Alors que le chef du Kremlin est visé par un mandat d’arrêt de la Cour pénale internationale, ce sommet fait craindre que l’avenir de l’Ukraine soit discuté entre les trois hommes, sans considération pour les intérêts des Européens.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International",
+            "France 24 International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon Le Monde International, Un demi-milliard de dollars dépensé pour les midterms 2026 : Elon Musk avoue se sentir « un peu idiot » après la victoire écrasante des démocrates",
+          "resume": "Le multimilliardaire a notamment déboursé plus de 220 millions de dollars en faveur du sénateur sortant du Texas, Ken Paxton, finalement battu. Il a expliqué que son engagement avait pour but « d’avoir un certain équilibre des pouvoirs ».",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon 20 Minutes, Guerre en Ukraine : Musk s’en prend encore à Zelensky sur Starshield en l’accusant de « mentir »",
+          "resume": "Le patron de SpaceX et le président ukrainien s’écharpent au sujet du système de communication satellitaire Starshield nécessaire pour l’Ukraine face aux attaques de la Russie",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Au Danemark, la première ministre sociale-démocrate, Mette Frederiksen, franchit un nouveau pas vers l’extrême droite en parlant de « grand remplacement »",
+          "resume": "Dans un podcast, mardi 17 novembre, la cheffe du gouvernement danois a évoqué cette théorie complotiste, se livrant à une surenchère supplémentaire dans le domaine de l’immigration. Ses propos ont été salués par l’extrême droite européenne.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "Le Monde"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
+      "mouvements_notables": [
+        {
+          "nom": "DAX",
+          "variation_pct": -1.19,
+          "explication": null
+        },
+        {
+          "nom": "Pétrole (Brent)",
+          "variation_pct": -2.78,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "rugby",
+          "texte": "Jasper Wiese a été suspendu quatre semaines après avoir reçu un carton rouge contre la France, ce qui l’empêche de jouer contre l’Irlande et lors de la finale ou du match de classement du Championnat des nations."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Strasbourg a perdu 101-79 face au Cibona Zagreb lors de la 4e journée de la Ligue des champions, ce qui place toutes les équipes du groupe B à égalité de points."
+        },
+        {
+          "sport": "football",
+          "texte": "Veerle Buurman a inscrit le but à la 87e minute, offrant à Chelsea une victoire 1-0 contre le Paris Saint‑Germain en Ligue des champions féminine et la plaçant en tête du tableau."
+        },
+        {
+          "sport": "football",
+          "texte": "Les remplaçantes Lauren Hemp et Khadija Shaw ont marqué, permettant à Manchester City de s’imposer 2-0 contre le club suédois Hacken en Ligue des champions."
+        },
+        {
+          "sport": "football",
+          "texte": "La Turquie quitte la Ligue A, la Géorgie reste en sursis et la Ligue D est supprimée, selon le récapitulatif des qualifiés et relégués en Ligue des nations après la phase de groupes."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Frances Tiafoe a battu Flavio Cobolli 7-6(6), 6-0 aux Finales ATP de Turin, ce qui qualifie automatiquement Carlos Alcaraz pour les demi-finales du tournoi."
+        },
+        {
+          "sport": "autres",
+          "texte": "Carla Ward, entraîneure de la République d’Irlande, indique être proche d’un nouveau contrat tout en nommant son équipe pour la finale du play‑off mondial."
+        },
+        {
+          "sport": "autres",
+          "texte": "Le procès d’Ivan Toney, accusé d’agression qu’il nie, est prévu pendant le tournoi Euro 2028."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "Arsenal – Borussia Dortmund",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-11-24T20:00:00+00:00",
+          "date_texte": "mardi 24 novembre à 21h00",
+          "sport": "football"
+        },
+        {
+          "affiche": "Golden State Warriors – Boston Celtics",
+          "competition": "NBA",
+          "date_iso": "2026-11-23T01:30:00+00:00",
+          "date_texte": "lundi 23 novembre à 2h30",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "decouverte",
+      "titre": "L’intensification agricole à Sumatra menace la biodiversité à toutes les échelles",
+      "contenu_markdown": "Une étude publiée dans *Nature* révèle les impacts profonds de l’agriculture intensive sur la biodiversité en Sumatra, l’une des régions les plus riches en espèces au monde. En analysant près de **40 000 espèces** – allant des micro-organismes du sol aux vertébrés –, les chercheurs montrent que cette pression modifie non seulement les populations locales, mais aussi la composition des communautés à différentes échelles spatiales.\n\n## Une menace documentée sur le terrain\nL’étude, menée sur des zones agricoles en expansion, confirme que l’intensification des cultures entraîne :\n- **La disparition d’espèces**, certaines plus vulnérables que d’autres.\n- **Des changements dans la structure des écosystèmes**, avec des espèces remplacées par d’autres mieux adaptées aux milieux transformés.\n\nCes résultats soulignent que les effets ne se limitent pas à des pertes locales, mais affectent aussi les interactions entre espèces à plus grande échelle.\n\n## Pourquoi cette découverte est-elle importante ?\nSumatra abrite une biodiversité exceptionnelle, mais son maintien dépend de la préservation des habitats naturels. Les données recueillies permettent d’évaluer plus précisément comment les pratiques agricoles influencent ces écosystèmes, un enjeu crucial pour les politiques de conservation.\n\n## Ce qui reste à explorer\nLes mécanismes exacts par lesquels certaines espèces disparaissent ou dominent dans ces nouveaux paysages agricoles nécessitent des recherches complémentaires. Par ailleurs, les auteurs soulignent que ces observations doivent être approfondies dans d’autres régions tropicales pour généraliser les conclusions.\n\n*Pour consulter les détails méthodologiques et les données chiffrées, se reporter à l’article original dans *Nature* (doi: [10.1038/d41586-026-03602-1](https://www.nature.com/articles/d41586-026-03602-1)).*\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03602-1\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Tsunami\n\n## Introduction\nUn tsunami est une série d’ondes géantes qui se propagent à travers les océans, les mers ou même les grands lacs, souvent déclenchées par un mouvement brutal des eaux. Contrairement aux vagues classiques, ces ondes sont caractérisées par leur période extrêmement longue – plusieurs dizaines de minutes entre chaque crête – et leur capacité à parcourir des milliers de kilomètres sans perdre beaucoup d’énergie. Leur danger réside dans leur transformation à l’approche des côtes : là où elles ne dépassent parfois que quelques décimètres en pleine mer, elles peuvent atteindre des hauteurs vertigineuses, dépassant 30 mètres, et submerger les terres sur des kilomètres, causant des destructions massives.\n\nLe terme *tsunami*, d’origine japonaise, signifie littéralement « vague de port ». Il a été adopté par la communauté scientifique internationale en 1963 pour désigner spécifiquement ces phénomènes, distincts des raz-de-marée ou des ondes de tempête, bien que ces derniers puissent parfois provoquer des effets similaires.\n\n---\n\n## Pourquoi le sujet est important\nLes tsunamis figurent parmi les catastrophes naturelles les plus dévastatrices de l’histoire. Sur les quatre derniers millénaires, ils ont causé la mort de plus de 600 000 personnes à travers au moins 279 événements répertoriés. Leur puissance destructrice tient à leur capacité à inonder les zones côtières sur des distances inattendues, emportant tout sur leur passage dans une succession de flux et de reflux.\n\nComprendre leur formation, leur propagation et leur impact est crucial pour développer des systèmes d’alerte précoce et des plans d’évacuation efficaces.\n\n---\n\n## Explication du phénomène\nUn tsunami naît d’un déplacement brutal d’un grand volume d’eau, généralement provoqué par :\n- **un séisme sous-marin** : lorsque les plaques tectoniques se déplacent soudainement, elles peuvent soulever ou enfoncer le fond marin, déformant la colonne d’eau au-dessus ;\n- **un glissement de terrain sous-marin** : l’effondrement d’une pente océanique peut déplacer massivement l’eau ;\n- **une éruption volcanique** : l’effondrement d’un volcan ou une explosion sous-marine peut générer une onde de choc.\n\nContrairement aux vagues classiques, un tsunami en eau profonde se manifeste par une élévation ou une dépression de la surface de l’eau, presque imperceptible pour les navires en mer. Sa vitesse de propagation dépend de la profondeur des eaux : plus l’océan est profond, plus le tsunami est rapide (jusqu’à 800 km/h). En revanche, sa hauteur reste faible, souvent inférieure à un mètre, ce qui explique pourquoi les bateaux en pleine mer ne ressentent généralement rien.\n\nC’est à l’approche des côtes que le phénomène change radicalement. En arrivant dans les eaux peu profondes, le tsunami ralentit et son énergie se concentre verticalement, faisant gonfler son amplitude. La période entre les vagues (le temps séparant deux crêtes successives) peut atteindre une demi-heure ou plus, ce qui permet parfois d’observer un retrait anormal de la mer avant l’arrivée du premier flux destructeur – un signe avant-coureur souvent décrit par les témoins.\n\n---\n\n## Fonctionnement / mécanismes\nLe mécanisme d’un tsunami repose sur deux principes physiques clés : la **conservation de l’énergie** et la **relation entre profondeur et vitesse des ondes**.\n\n1. **En eau profonde** :\n   - Plus l’océan est profond, plus l’onde se propage rapidement.\n   - L’énergie totale (proportionnelle à *H² × L*) reste constante, mais elle est « étalée » sur une surface immense.\n\n2. **À l’approche des côtes** :\n   - Lorsque le tsunami entre dans des eaux moins profondes, sa vitesse diminue et sa longueur d’onde se raccourcit. L’énergie, toujours la même, se concentre alors verticalement, augmentant brusquement la hauteur des vagues.\n   - Le fond marin joue un rôle clé : les baies, les canyons sous-marins ou les récifs peuvent amplifier ou focaliser l’onde, multipliant localement sa hauteur. Par exemple, certaines configurations géologiques peuvent transformer un tsunami de 5 mètres en une vague de 30 mètres en quelques minutes.\n\n3. **Comportement à terre** :\n   - Les premières vagues ne sont pas toujours les plus hautes.\n   - L’inondation peut s’étendre bien au-delà de la ligne de côte habituelle, parfois sur plusieurs kilomètres, en raison de l’effet combiné de la hauteur des vagues et de la montée du niveau de la mer. Les dégâts sont aggravés par les débris entraînés et les courants de retour, tout aussi dangereux que les flux initiaux.\n\nLes tsunamis peuvent également être générés par des causes non sismiques, comme les **météotsunamis** (ou *rissagas*), des ondes provoquées par des changements rapides de pression atmosphérique (tempêtes, fronts froids) qui résonnent dans certaines baies. Ces phénomènes, bien que moins puissants, peuvent causer des dégâts locaux importants, notamment en Méditerranée.\n\n## Données et résultats scientifiques\n\n- En eau profonde, les ondes de tsunami ont une période de l’ordre de dizaines de minutes et peuvent atteindre une vitesse supérieure à **800 km/h**.  \n- Leur hauteur en haute mer ne dépasse généralement que quelques décimètres.  \n- À l’approche du littoral, la période et la vitesse diminuent tandis que l’amplitude augmente ; la hauteur de la vague peut alors dépasser **30 m**.  \n- Sur les quatre derniers millénaires, plus de **600 000 victimes** ont été recensées lors d’au moins **279 événements** de tsunami.  \n- Le tsunami de l’océan Indien en 2004 a fait plus de **250 000 décès**, constituant la catastrophe la plus meurtrière des trente dernières années.  \n\n## Ce que les scientifiques savent\n\n- Un tsunami résulte du déplacement brutal d’un grand volume d’eau, le plus souvent provoqué par un séisme, un glissement de terrain sous‑marin ou une explosion volcanique.  \n- La propagation en haute mer se caractérise par de très longues longueurs d’onde et de faibles hauteurs, ce qui rend les tsunamis difficilement détectables à la surface.  \n- Lorsqu’ils rencontrent le fond marin qui s’élève, l’énergie de l’onde se concentre, la vitesse diminue et la hauteur augmente, entraînant des vagues destructrices sur le rivage.  \n- Le terme « tsunami » a été officialisé en **1963** pour désigner les ondes d’origine géologique, distinguées des phénomènes d’origine météorologique (raz‑de‑marée, ondes de tempête).  \n- Les archives historiques et géologiques permettent d’identifier plus de deux‑cent soixante‑dix‑neuf tsunamis majeurs, offrant ainsi un cadre statistique pour l’évaluation du risque.  \n\n## Ce qui reste incertain\n\n- La prévision précise de l’amplitude locale d’un tsunami reste limitée : la topographie du littoral, la bathymétrie et la forme des baies influencent fortement la hauteur finale, mais ces paramètres sont souvent mal connus.  \n- La fréquence exacte des tsunamis de petite à moyenne magnitude est difficile à établir, car de nombreux événements en haute mer ne laissent aucune trace visible.  \n- Les mécanismes exacts de génération pour certains types de glissements de terrain sous‑marins ou d’explosions volcaniques restent à affiner, notamment dans les zones où les données sismiques sont rares.  \n\n## Limites et controverses éventuelles\n\n- Les scientifiques insistent depuis la conférence de 1963 pour réserver « tsunami » aux phénomènes d’origine géologique.  \n- **Détection en haute mer** : les systèmes de surveillance actuels (bouées, satellites) ne permettent pas toujours de détecter les ondes de faible hauteur, ce qui limite la capacité d’alerte précoce.  \n- **Modélisation** : les modèles numériques reproduisent globalement la propagation en haute mer, mais les simulations de l’interaction avec les côtes restent sensibles aux hypothèses sur la topographie sous‑marine, ce qui peut entraîner des écarts entre les prévisions et les observations réelles.  \n\n## Conclusion\n\nLes tsunamis sont des phénomènes océaniques d’une énergie colossale, capables de parcourir des milliers de kilomètres à très grande vitesse avant de se transformer en vagues dévastatrices lorsqu’ils atteignent les côtes. Les connaissances établies décrivent clairement leurs causes géologiques, leurs caractéristiques de propagation en haute mer et l’ampleur de leurs impacts historiques. Néanmoins, la prévision locale précise, la détection précoce en haute mer et la compréhension détaillée de certains mécanismes de génération demeurent des défis scientifiques. Une meilleure maîtrise de ces incertitudes, ainsi qu’une communication claire de la terminologie, sont essentielles pour renforcer la résilience des populations côtières face à ces catastrophes naturelles.\n\n## Sources\n- Wikipédia (fr) — Tsunami — https://fr.wikipedia.org/wiki/Tsunami\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 7,
+      "nb_mots": 1617,
+      "matiere_source": "suffisante",
+      "textes_sources_audit": [
+        {
+          "source": "Nature News",
+          "titre": "Tropical land-use intensification reshapes biodiversity in expected and unexpected ways",
+          "resume": "Nature, Published online: 18 November 2026; doi:10.1038/d41586-026-03602-1 Global agricultural demand has increased over the past few decades, driving land-use intensification in some of the world’s most biodiverse regions. An assessment of some 40,000 species, from soil microorganisms to vertebrates, in Sumatra, Indonesia, reveals that agricultural intensification threatens biodiversity through species loss and changes in community composition across different spatial scales."
+        },
+        {
+          "source": "Nature News",
+          "titre": "Rethinking corporate climate targets for real-world transitions",
+          "resume": "Nature, Published online: 18 November 2026; doi:10.1038/s41586-026-11100-7 Frameworks for corporate greenhouse gas reduction targets should place greater emphasis on systemic changes in business models, technologies and value chains; the scientific community has a role in developing robust, actionable frameworks for corporate decarbonization."
+        },
+        {
+          "source": "Nature News",
+          "titre": "Global patterns and drivers of bee richness and endemism on islands",
+          "resume": "Nature, Published online: 18 November 2026; doi:10.1038/s41586-026-11325-6 Gobal analysis of bee species across 305 islands reveals that islands account for 20% of global bee diversity, with more than 4,100 species and high levels of endemism, and shows that richness is shaped by island size, isolation and evolutionary diversification."
+        },
+        {
+          "source": "Nature News",
+          "titre": "Structural and regulatory evolution across the genus <i>Hordeum</i>",
+          "resume": "Nature, Published online: 18 November 2026; doi:10.1038/s41586-026-11332-7 Chromosome-scale pangenomics across diploid Hordeum species reveals extensive structural variation, hybridization, introgression, horizontal gene transfer and regulatory evolution, revealing adaptive trait diversification and providing genomic resources for barley improvement."
+        },
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Tsunami",
+          "resume": "Un tsunami (en japonais 津波, litt. « vague du port ») est une série d'ondes de très grandes période et longueur d'onde se propageant à travers un milieu aquatique (océan, mer ou lac), issues du brusque mouvement d'un grand volume d'eau, provoqué généralement par un séisme, un glissement de terrain sous-marin ou une explosion volcanique, et pouvant se transformer, en atteignant les côtes, en vagues destructrices déferlantes de très grande hauteur.\nEn eau profonde, les vagues du tsunami ont une période (temps séparant chaque crête) se comptant en dizaines de minutes, et peuvent voyager à plus de 800 km/h, tout en ne dépassant pas quelques décimètres de hauteur. Mais à l'approche des côtes, leur période et leur vitesse diminuent, tandis que leur amplitude augmente, leur hauteur pouvant dépasser 30 m. Elles peuvent alors submerger le rivage, inondant les terrains bas, pénétrant profondément dans les terres, en emportant tout sur leur passage, dans une succession de flux et de reflux.\nLes tsunamis font partie des catastrophes les plus destructrices de l'histoire. Sur les quatre derniers millénaires, ils totalisent plus de 600 000 victimes, à travers au moins 279 événements répertoriés. Le tsunami de 2004 dans l'océan Indien est la catastrophe la plus meurtrière des 30 dernières années, avec plus de 250 000 victimes.\nEn français, le terme de raz-de-marée était précédemment couramment employé pour désigner les tsunamis. C'est toutefois un terme imprécis, car il regroupe sous la même appellation les tsunamis et d'autres phénomènes de submersion marine. Les scientifiques ont donc officialisé en 1963 le terme « tsunami », sujet de cet article.\n\nÉtymologie\n\nTsunami\n\nLe terme tsunami (津波) est un mot japonais composé de tsu (津), « port », « gué », et de nami (波), « vague(s) » ; il signifie littéralement « vague portuaire » ou « vague de port ». Elle serait nommée ainsi par les pêcheurs qui, n'ayant rien perçu d'anormal au large, retrouvaient leur ville portuaire ravagée. Le mot intraduisible a été employé en anglais pour la première fois en 1896, au mois de décembre, par la géographe américaine Eliza Ruhamah Scidmore qui, à la suite d'un voyage au Japon, décrit dans National Geographic Society le séisme de Meiji-Sanriku (en) qui se produit le 15 juin 1896. Il est francisé depuis 1914 par les géographes et journalistes, il prend donc un s au pluriel (des tsunamis). L'emploi véritablement popularisé et médiatisé de ce premier terme scientifique ou à usage restreint date du séisme du 26 décembre 2004 dans l'océan Indien.\nBien que souvent utilisée en illustration des tsunamis, La Grande Vague de Kanagawa ne représente pas un tsunami mais une vague scélérate.\n\nRaz-de-marée\nDans le composé raz-de-marée, le terme raz (ou ras) désigne un courant rapide. C'est un mot d'origine norroise rás qui aurait été importé lors de l'établissement de populations anglo-scandinaves en Normandie. Il est attesté en français pour la première fois chez Jean Froissart, à la fin du XIVe siècle au sens de « courant marin violent, qui se fait sentir dans un passage étroit ». Cependant, son attestation dans la toponymie normande est plus ancienne, ainsi le raz de Barfleur est-il mentionné sous la forme Ras de Catte en 1120 et Cataras en 1149. Le mot anglais race « course » partage la même étymologie et avait autrefois également le sens du mot français. Il a servi à qualifier différents endroits, outre celui cité plus haut, comme le raz Blanchard, le Gros-du-Raz, le Raz-de-Bannes ou le raz de la Percée en Normandie, ainsi que la pointe du Raz en Bretagne (breton Beg-ar-Raz) ou le raz de Sein, où le terme normand a été adopté probablement par les marins.\nL'utilisation du terme marée, un phénomène provoqué par l'attraction de la Lune et du Soleil, est trompeur car le « raz-de-marée » est provoqué par des événements d'origine terrestre uniquement. L'association avec les marées est en fait une référence à son apparence, comme une hausse extrêmement rapide du niveau de la mer, plutôt que comme une vague sismique géante.\nIl peut donc être parfois confondu avec une onde de tempête ou surcote. Cette dernière est due à l'effet des vents associés à la dépression d'une tempête. Par exemple, le passage d'un cyclone tropical élève le niveau de l'eau d'un à plusieurs mètres et provoque des inondations similaires au raz-de marée comme avec l'ouragan Katrina à La Nouvelle-Orléans.\nCertaines baies ou certains ports ayant une configuration particulière peuvent aussi réagir au passage d'une onde créée par une « marche barométrique » : cette onde, ou météotsunami (rissaga en catalan) entraîne des phénomènes de résonance dans certains ports, qui vont alors se vider ou se remplir rapidement du fait de l'oscillation de résonance, phénomène assez fréquent en mer Méditerranée (Baléares, mer Adriatique) et qui peut entraîner des dégâts.\nAlors que le terme tsunami est popularisé dans la littérature scientifique à la suite du séisme sur les îles Aléoutiennes en 1946 (en) et du séisme de 1960 au Chili, les scientifiques des années 1950-1960 ne se contentent plus de décrire ce phénomène mais recherchent leurs causes. La communauté scientifique s'accorde alors pour désigner les débordements de mer par tsunami lorsque la cause est géologique (séisme, éruption volcanique, instabilités gravitaires, glissements de terrain), raz-de-marée lorsque l'origine est météorologique (tempêtes, accidents atmosphériques majeurs).\nCependant les médias entretiennent la confusion entre ces deux termes et font l'association fausse des raz-de-marée avec les marées (le terme raz-de-marée étant passé par ailleurs dans la langue courante en 1915), mêlant même la cause et l'effet dans le terme météotsunami. Ces confusions et imprécisions poussent les scientifiques à abandonner le terme de raz-de-marée et officialiser le terme tsunami lors d'une conférence internationale en 1963.\n\nDescription\n\nGénération"
+        }
+      ],
+      "nb_mots_decouverte": 280,
+      "nb_mots_approfondi": 1330,
+      "sujet_id": "tsunami",
+      "origine": "encyclopedie"
+    },
+    "citation": {
+      "texte": "Que sais-je ?",
+      "auteur": "Michel de Montaigne",
+      "source": "Essais, livre II, chapitre 12",
+      "annee": 1580
+    },
+    "meteo": null,
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "A Scandal in Bohemia",
+      "auteur": "Arthur Conan Doyle",
+      "annee": 1891,
+      "segments": [
+        {
+          "t": "To Sherlock Holmes she is always the woman. I have seldom",
+          "g": "rarement"
+        },
+        {
+          "t": " heard him mention her under any other name. In his eyes she eclipses",
+          "g": "éclipse"
+        },
+        {
+          "t": " and predominates",
+          "g": "domine"
+        },
+        {
+          "t": " the whole of her sex. It was not that he felt any emotion akin to",
+          "g": "apparenté à"
+        },
+        {
+          "t": " love for Irene Adler. All emotions, and that one particularly, were abhorrent",
+          "g": "odieuses"
+        },
+        {
+          "t": " to his cold, precise but admirably balanced mind. He was, I take it",
+          "g": "je suppose"
+        },
+        {
+          "t": ", the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position",
+          "g": "position déplacée"
+        },
+        {
+          "t": ". He never spoke of the softer passions, save with",
+          "g": "sauf avec"
+        },
+        {
+          "t": " a gibe",
+          "g": "la raillerie"
+        },
+        {
+          "t": " and a sneer",
+          "g": "le ricanement"
+        },
+        {
+          "t": ".",
+          "g": null
+        }
+      ],
+      "texte_glose": "To Sherlock Holmes she is always the woman. I have seldom (= rarement) heard him mention her under any other name. In his eyes she eclipses (= éclipse) and predominates (= domine) the whole of her sex. It was not that he felt any emotion akin to (= apparenté à) love for Irene Adler. All emotions, and that one particularly, were abhorrent (= odieuses) to his cold, precise but admirably balanced mind. He was, I take it (= je suppose), the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position (= position déplacée). He never spoke of the softer passions, save with (= sauf avec) a gibe (= la raillerie) and a sneer (= le ricanement)."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : L'écologiste Marine Tondelier se dit \"prête à travailler à une coalition autour de la candidature de Jean-Luc Mélenchon\" pour la présidentielle 2027."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_d": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 1
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-11-19T06:10:37.523145+01:00"
+}
