@@ -1,49 +1,49 @@
 {
-  "date": "2026-11-19",
-  "derniere_mise_a_jour": "2026-11-19T06:14:35.329056+01:00",
+  "date": "2026-11-20",
+  "derniere_mise_a_jour": "2026-11-20T06:13:55.110442+01:00",
   "briefing": {
     "actualite": {
       "france": [
         {
-          "titre": "L'écologiste Marine Tondelier se dit \"prête à travailler à une coalition autour de la candidature de Jean-Luc Mélenchon\" pour la présidentielle 2027",
-          "resume": "Sur France 2, la secrétaire nationale des Ecologistes a ouvert la voie à son retrait de la présidentielle, alors que le parti ne s’est pas encore prononcé sur une candidature propre, une alliance avec La France insoumise ou un rapprochement avec Raphaël Glucksmann.",
-          "pourquoi_important": null,
+          "titre": "Présidentielle 2027 : le Parti socialiste stoppe les discussions avec les Ecologistes après le ralliement de Tondelier à Mélenchon",
+          "resume": "Raphaël Glucksmann, le candidat du Parti socialiste et de Place publique, a accusé, jeudi 19 novembre, la secrétaire nationale des Ecologistes d’avoir « tourné le dos » à la « tradition profondément proeuropéenne » de sa formation politique. Yannick Jadot et d’autres annoncent quitter les Ecologistes.",
+          "pourquoi_important": "Cette rupture affecte les alliances potentielles entre le Parti socialiste et les Ecologistes pour l’élection présidentielle de 2027.",
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "Le Monde",
-            "France Info",
+            "Libération",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Sommet à Shenzhen : la déclaration Trump‑Xi‑Poutine «ne conduit pas à une réorganisation du monde», assure Emmanuel Macron",
+          "resume": "S’exprimant après un sommet à Berlin réunissant ce jeudi une trentaine d’alliés de l’Ukraine contre la Russie, le président français a également appelé tous les alliés de Kyiv à faire le «maximum» pour aider le pays en guerre à se défendre.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
             "Libération",
             "20 Minutes",
-            "France 24 International"
-          ]
-        },
-        {
-          "titre": "Interdire le commerce avec les colonies israéliennes : des députés veulent placer la France face à ses engagements",
-          "resume": "Une proposition de loi du Parti socialiste, examinée jeudi 19 novembre à l’Assemblée, veut interdire le commerce avec les colonies israéliennes, y compris les services financiers, alors que deux mois après avoir annoncé des sanctions, le gouvernement n’agit pas.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "Le Monde",
             "Le Monde International"
           ]
         },
         {
-          "titre": "Trois \"revenantes\" françaises condamnées à des peines de cinq à douze ans de prison pour avoir rejoint l'organisation Etat islamique en Syrie",
-          "resume": "Deux ex-épouses d'Adrien Guihal, haut cadre de l'EI qui avait revendiqué en 2016 les attentats de Nice et de Magnanville, ont notamment été condamnées par la cour d'assises spéciale de Paris.",
+          "titre": "Cyberattaques : \"On est sur un niveau de menace particulièrement grave et inédit\", prévient le Premier ministre Sébastien Lecornu",
+          "resume": "\"Ça va s'intensifier, le niveau de la menace va croître en volume\", a ajouté Vincent Strubel, le directeur de l'Agence nationale de la sécurité des systèmes d'information (Anssi).",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "France Info",
-            "Le Monde International"
+            "Libération",
+            "20 Minutes"
           ]
         },
         {
-          "titre": "Au procès de l’explosion de la rue de Trévise, le patron du syndic de copropriété « ne voit pas la faute »",
-          "resume": "Le tribunal a interrogé mercredi le dirigeant de la société Cipa, poursuivie en tant que personne morale pour ne pas avoir eu recours à une procédure d’urgence afin de réparer une fuite sur un collecteur d’eaux usées. Fuite qui, selon les expertises, serait à l’origine du processus ayant entraîné l’explosion du 12 janvier 2019.",
-          "pourquoi_important": "L'affaire concerne la responsabilité d'un syndic dans une explosion.",
+          "titre": "Le procès de l’explosion de la rue de Trévise met au jour un fonctionnement informel et peu rigoureux des services de la Mairie de Paris",
+          "resume": "Les auditions des responsables des services de la voirie et de la propreté et de l’eau ont révélé des lacunes de traçabilité dans l’administration et une absence de culture de l’écrit pour rendre compte des interventions.",
+          "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
@@ -51,8 +51,8 @@
           ]
         },
         {
-          "titre": "Présidentielle 2027 : Longtemps fervent partisan de la primaire, Lisnard semble désormais la torpiller",
-          "resume": "David Lisnard pose maintenant des conditions quasi irréalisables pour une primaire : les participations d’Édouard Philippe et d’Éric Zemmour",
+          "titre": "Présidentielle 2027 : Mélenchon ne pense pas que les grands patrons soient passés « du côté du RN »",
+          "resume": "Jean‑Luc Mélenchon est revenu jeudi sur son dîner avec treize grands patrons. Malgré leurs désaccords, le candidat LFI s’est dit rassuré sur un point. Il n’a pas eu le sentiment que les convives étaient tous « passés du côté du RN »",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
@@ -63,92 +63,95 @@
       ],
       "monde": [
         {
-          "titre": "Guerre en Ukraine : le pont de Crimée de nouveau touché, deux jours après des frappes ukrainiennes ayant sérieusement endommagé l’infrastructure",
-          "resume": "La circulation sur le pont reliant la Crimée annexée à la Russie est temporairement interrompue.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "France Info",
-            "Le Monde International"
-          ]
-        },
-        {
-          "titre": "Sommet de Shenzhen : début d'une rencontre Trump-Poutine avant une réunion trilatérale historique",
-          "resume": "Xi Jinping, Donald Trump et Vladimir Poutine se rencontrent en marge du sommet de l’Apec, chacun avec des objectifs distincts.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "fait_confirme",
-          "sources": [
-            "France Info",
-            "Libération",
-            "France 24 International"
-          ]
-        },
-        {
-          "titre": "Israël lance une opération militaire terrestre à Gaza dans une zone contrôlée par le Hamas, en dépit du cessez-le-feu",
-          "resume": "L’armée israélienne a déployé des troupes au sol dans le centre de Gaza, accusant le Hamas de violations de la trêve, forçant des déplacements de familles palestiniennes.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Libération"
-          ]
-        },
-        {
-          "titre": "Violences post-électorales au Mozambique : l’opposant Venâncio Mondlane face à la justice",
-          "resume": "Venâncio Mondlane est poursuivi pour « incitation au terrorisme » après avoir contesté les résultats de l’élection présidentielle d’octobre 2024.",
-          "pourquoi_important": "Ce procès pourrait exacerber les tensions politiques et les violences post-électorales dans le pays.",
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Libération"
-          ]
-        },
-        {
-          "titre": "Vladimir Poutine savoure son retour au cœur de la diplomatie mondiale, aux côtés de Donald Trump et Xi Jinping à Shenzhen",
-          "resume": "Le président russe doit rencontrer ses homologues chinois et américain, jeudi, en marge du sommet de la Coopération économique pour l’Asie-Pacifique. Alors que le chef du Kremlin est visé par un mandat d’arrêt de la Cour pénale internationale, ce sommet fait craindre que l’avenir de l’Ukraine soit discuté entre les trois hommes, sans considération pour les intérêts des Européens.",
+          "titre": "Guerre en Ukraine : à Berlin, la réunion des alliés de Kiev, miroir inversé de la rencontre de Shenzhen entre Xi, Trump et Poutine",
+          "resume": "Les membres de la coalition des volontaires, réunis jeudi en Allemagne, se sont engagés à honorer l’intégralité de l’aide promise en 2026 et à maintenir ce soutien en 2027, quand le président russe a mis en scène, en Chine, l’« amitié » que lui porte le chef de la Maison Blanche.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "589 millions d’enfants dans le monde vivent dans une zone de guerre, un chiffre « record », selon l’ONG Save the Children",
+          "resume": "L’Afrique subsaharienne, le Mexique, le Yémen, l’Ukraine, la Birmanie, l’Afghanistan, l’Irak et la Syrie comptent parmi les régions où ces enfants sont exposés à des conflits armés.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Xi Jinping plus chaleureux avec Trump qu’avec Poutine ? « Quand on invite un proche, pas besoin d’un protocole voyant »",
+          "resume": "À l’occasion du sommet entre les trois dirigeants, le président chinois a accueilli Donald Trump en grande pompe, mais ne s’est même pas déplacé pour Vladimir Poutine. Il ne faut pourtant pas y voir une marque d’hostilité",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "20 Minutes",
             "Le Monde International",
             "France 24 International"
-          ],
-          "complete_par_code": true
+          ]
         },
         {
-          "titre": "Selon Le Monde International, Un demi-milliard de dollars dépensé pour les midterms 2026 : Elon Musk avoue se sentir « un peu idiot » après la victoire écrasante des démocrates",
-          "resume": "Le multimilliardaire a notamment déboursé plus de 220 millions de dollars en faveur du sénateur sortant du Texas, Ken Paxton, finalement battu. Il a expliqué que son engagement avait pour but « d’avoir un certain équilibre des pouvoirs ».",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Le Monde International"
-          ],
-          "complete_par_code": true
-        },
-        {
-          "titre": "Selon 20 Minutes, Guerre en Ukraine : Musk s’en prend encore à Zelensky sur Starshield en l’accusant de « mentir »",
-          "resume": "Le patron de SpaceX et le président ukrainien s’écharpent au sujet du système de communication satellitaire Starshield nécessaire pour l’Ukraine face aux attaques de la Russie",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "20 Minutes"
-          ],
-          "complete_par_code": true
-        },
-        {
-          "titre": "Au Danemark, la première ministre sociale-démocrate, Mette Frederiksen, franchit un nouveau pas vers l’extrême droite en parlant de « grand remplacement »",
-          "resume": "Dans un podcast, mardi 17 novembre, la cheffe du gouvernement danois a évoqué cette théorie complotiste, se livrant à une surenchère supplémentaire dans le domaine de l’immigration. Ses propos ont été salués par l’extrême droite européenne.",
+          "titre": "Salvador : le président Bukele profite de sa réforme constitutionnelle pour se présenter à un troisième mandat",
+          "resume": "Nayib Bukele a officialisé sa candidature après une modification constitutionnelle en 2025 lui permettant de briguer un nouveau mandat lors de l’élection de février 2027.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
             "Le Monde International",
             "Le Monde"
+          ]
+        },
+        {
+          "titre": "Présidentielle : les créateurs de contenus sommés de respecter le pluralisme par l'Arcom",
+          "resume": "Créateurs de contenus et influenceurs devront pour la première fois respecter les règles du pluralisme pendant la campagne de la présidentielle 2027, au même titre que la radio et la télévision, a annoncé jeudi le régulateur de l'audiovisuel et du numérique. En cas de manquements répétés, l'Arcom pourra décider de sanctions financières.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France 24 International",
+            "Libération"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Espagne : En vue des élections, Sánchez et Feijóo s’affrontent sur le pouvoir d’achat et l’immigration",
+          "resume": "A dix jours des législatives du 29 novembre en Espagne, Pedro Sánchez et Alberto Núñez Feijóo se sont opposés, jeudi, sur le pouvoir d’achat, le logement et l’immigration lors de leur unique débat télévisé",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "20 Minutes",
+            "France 24 International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Au Royaume-Uni, Andy Burnham ravive le débat sur le Brexit, plus de cinq ans après sa mise en œuvre effective",
+          "resume": "Alors que les Européens et le Royaume-Uni doivent discuter de leur relation, vendredi 20 novembre, le sujet reste complexe outre-Manche. S’il martèle vouloir resserrer les liens avec l’Union, le premier ministre britannique entretient le flou sur la nature du rapprochement qu’il envisage.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Le Brésil reconnaît le territoire ancestral du chef indigène Raoni",
+          "resume": "Le président brésilien a rendu visite au chef indigène Raoni Metuktire, 94 ans, avant d’assister à une cérémonie pour attribuer de façon permanente son territoire, Kapot Nhinore, aux peuples qui y vivent.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
           ],
           "complete_par_code": true
         }
@@ -158,13 +161,28 @@
       "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
       "mouvements_notables": [
         {
+          "nom": "S&P 500",
+          "variation_pct": -2.02,
+          "explication": null
+        },
+        {
+          "nom": "Nasdaq",
+          "variation_pct": -2.25,
+          "explication": null
+        },
+        {
           "nom": "DAX",
-          "variation_pct": -1.19,
+          "variation_pct": -1.06,
           "explication": null
         },
         {
           "nom": "Pétrole (Brent)",
-          "variation_pct": -2.78,
+          "variation_pct": -2.07,
+          "explication": null
+        },
+        {
+          "nom": "Or",
+          "variation_pct": -4.24,
           "explication": null
         }
       ]
@@ -172,36 +190,36 @@
     "sport": {
       "items": [
         {
-          "sport": "rugby",
-          "texte": "Jasper Wiese a été suspendu quatre semaines après avoir reçu un carton rouge contre la France, ce qui l’empêche de jouer contre l’Irlande et lors de la finale ou du match de classement du Championnat des nations."
-        },
-        {
-          "sport": "basketball",
-          "texte": "Strasbourg a perdu 101-79 face au Cibona Zagreb lors de la 4e journée de la Ligue des champions, ce qui place toutes les équipes du groupe B à égalité de points."
+          "sport": "football",
+          "texte": "OL Lyonnes ont battu Arsenal et se sont qualifiées directement pour les quarts de finale de la Ligue des champions féminine."
         },
         {
           "sport": "football",
-          "texte": "Veerle Buurman a inscrit le but à la 87e minute, offrant à Chelsea une victoire 1-0 contre le Paris Saint‑Germain en Ligue des champions féminine et la plaçant en tête du tableau."
+          "texte": "Lyon a vaincu Arsenal 2-0 en Ligue des champions féminine, réduisant les chances d'Arsenal de se qualifier automatiquement pour les quarts."
         },
         {
           "sport": "football",
-          "texte": "Les remplaçantes Lauren Hemp et Khadija Shaw ont marqué, permettant à Manchester City de s’imposer 2-0 contre le club suédois Hacken en Ligue des champions."
-        },
-        {
-          "sport": "football",
-          "texte": "La Turquie quitte la Ligue A, la Géorgie reste en sursis et la Ligue D est supprimée, selon le récapitulatif des qualifiés et relégués en Ligue des nations après la phase de groupes."
+          "texte": "Paris FC a remporté le match contre HB Köge 2-1 dans le temps additionnel, obtenant sa première victoire en cinq matches de Ligue des champions et maintenant l'espoir d'une qualification en play‑offs."
         },
         {
           "sport": "tennis",
-          "texte": "Frances Tiafoe a battu Flavio Cobolli 7-6(6), 6-0 aux Finales ATP de Turin, ce qui qualifie automatiquement Carlos Alcaraz pour les demi-finales du tournoi."
+          "texte": "Albano Olivetti et Théo Arribagé ont atteint les demi‑finales des Finales ATP à Turin après leur victoire contre la meilleure paire mondiale."
         },
         {
-          "sport": "autres",
-          "texte": "Carla Ward, entraîneure de la République d’Irlande, indique être proche d’un nouveau contrat tout en nommant son équipe pour la finale du play‑off mondial."
+          "sport": "tennis",
+          "texte": "Ben Shelton a battu Rafael Jodar en deux sets, compliquant la qualification d'Arthur Fils qui doit gagner contre Alexander Zverev."
         },
         {
-          "sport": "autres",
-          "texte": "Le procès d’Ivan Toney, accusé d’agression qu’il nie, est prévu pendant le tournoi Euro 2028."
+          "sport": "tennis",
+          "texte": "Carlos Alcaraz a passé une IRM à Turin et a annulé son entraînement, laissant incertaine la suite de son parcours aux Finales ATP."
+        },
+        {
+          "sport": "rugby",
+          "texte": "Le Pays de Galles a battu la Nouvelle‑Zélande 35-28, ce qui a entraîné une forte demande de maillots et des ventes quadruplées."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Les Lakers ont perdu contre le Jazz 97-109 à domicile, mettant fin à leur série de neuf victoires consécutives."
         }
       ],
       "rien_a_signaler": false,
@@ -224,105 +242,326 @@
     },
     "science": {
       "mode": "decouverte",
-      "titre": "L’intensification agricole à Sumatra menace la biodiversité à toutes les échelles",
-      "contenu_markdown": "Une étude publiée dans *Nature* révèle les impacts profonds de l’agriculture intensive sur la biodiversité en Sumatra, l’une des régions les plus riches en espèces au monde. En analysant près de **40 000 espèces** – allant des micro-organismes du sol aux vertébrés –, les chercheurs montrent que cette pression modifie non seulement les populations locales, mais aussi la composition des communautés à différentes échelles spatiales.\n\n## Une menace documentée sur le terrain\nL’étude, menée sur des zones agricoles en expansion, confirme que l’intensification des cultures entraîne :\n- **La disparition d’espèces**, certaines plus vulnérables que d’autres.\n- **Des changements dans la structure des écosystèmes**, avec des espèces remplacées par d’autres mieux adaptées aux milieux transformés.\n\nCes résultats soulignent que les effets ne se limitent pas à des pertes locales, mais affectent aussi les interactions entre espèces à plus grande échelle.\n\n## Pourquoi cette découverte est-elle importante ?\nSumatra abrite une biodiversité exceptionnelle, mais son maintien dépend de la préservation des habitats naturels. Les données recueillies permettent d’évaluer plus précisément comment les pratiques agricoles influencent ces écosystèmes, un enjeu crucial pour les politiques de conservation.\n\n## Ce qui reste à explorer\nLes mécanismes exacts par lesquels certaines espèces disparaissent ou dominent dans ces nouveaux paysages agricoles nécessitent des recherches complémentaires. Par ailleurs, les auteurs soulignent que ces observations doivent être approfondies dans d’autres régions tropicales pour généraliser les conclusions.\n\n*Pour consulter les détails méthodologiques et les données chiffrées, se reporter à l’article original dans *Nature* (doi: [10.1038/d41586-026-03602-1](https://www.nature.com/articles/d41586-026-03602-1)).*\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03602-1\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Tsunami\n\n## Introduction\nUn tsunami est une série d’ondes géantes qui se propagent à travers les océans, les mers ou même les grands lacs, souvent déclenchées par un mouvement brutal des eaux. Contrairement aux vagues classiques, ces ondes sont caractérisées par leur période extrêmement longue – plusieurs dizaines de minutes entre chaque crête – et leur capacité à parcourir des milliers de kilomètres sans perdre beaucoup d’énergie. Leur danger réside dans leur transformation à l’approche des côtes : là où elles ne dépassent parfois que quelques décimètres en pleine mer, elles peuvent atteindre des hauteurs vertigineuses, dépassant 30 mètres, et submerger les terres sur des kilomètres, causant des destructions massives.\n\nLe terme *tsunami*, d’origine japonaise, signifie littéralement « vague de port ». Il a été adopté par la communauté scientifique internationale en 1963 pour désigner spécifiquement ces phénomènes, distincts des raz-de-marée ou des ondes de tempête, bien que ces derniers puissent parfois provoquer des effets similaires.\n\n---\n\n## Pourquoi le sujet est important\nLes tsunamis figurent parmi les catastrophes naturelles les plus dévastatrices de l’histoire. Sur les quatre derniers millénaires, ils ont causé la mort de plus de 600 000 personnes à travers au moins 279 événements répertoriés. Leur puissance destructrice tient à leur capacité à inonder les zones côtières sur des distances inattendues, emportant tout sur leur passage dans une succession de flux et de reflux.\n\nComprendre leur formation, leur propagation et leur impact est crucial pour développer des systèmes d’alerte précoce et des plans d’évacuation efficaces.\n\n---\n\n## Explication du phénomène\nUn tsunami naît d’un déplacement brutal d’un grand volume d’eau, généralement provoqué par :\n- **un séisme sous-marin** : lorsque les plaques tectoniques se déplacent soudainement, elles peuvent soulever ou enfoncer le fond marin, déformant la colonne d’eau au-dessus ;\n- **un glissement de terrain sous-marin** : l’effondrement d’une pente océanique peut déplacer massivement l’eau ;\n- **une éruption volcanique** : l’effondrement d’un volcan ou une explosion sous-marine peut générer une onde de choc.\n\nContrairement aux vagues classiques, un tsunami en eau profonde se manifeste par une élévation ou une dépression de la surface de l’eau, presque imperceptible pour les navires en mer. Sa vitesse de propagation dépend de la profondeur des eaux : plus l’océan est profond, plus le tsunami est rapide (jusqu’à 800 km/h). En revanche, sa hauteur reste faible, souvent inférieure à un mètre, ce qui explique pourquoi les bateaux en pleine mer ne ressentent généralement rien.\n\nC’est à l’approche des côtes que le phénomène change radicalement. En arrivant dans les eaux peu profondes, le tsunami ralentit et son énergie se concentre verticalement, faisant gonfler son amplitude. La période entre les vagues (le temps séparant deux crêtes successives) peut atteindre une demi-heure ou plus, ce qui permet parfois d’observer un retrait anormal de la mer avant l’arrivée du premier flux destructeur – un signe avant-coureur souvent décrit par les témoins.\n\n---\n\n## Fonctionnement / mécanismes\nLe mécanisme d’un tsunami repose sur deux principes physiques clés : la **conservation de l’énergie** et la **relation entre profondeur et vitesse des ondes**.\n\n1. **En eau profonde** :\n   - Plus l’océan est profond, plus l’onde se propage rapidement.\n   - L’énergie totale (proportionnelle à *H² × L*) reste constante, mais elle est « étalée » sur une surface immense.\n\n2. **À l’approche des côtes** :\n   - Lorsque le tsunami entre dans des eaux moins profondes, sa vitesse diminue et sa longueur d’onde se raccourcit. L’énergie, toujours la même, se concentre alors verticalement, augmentant brusquement la hauteur des vagues.\n   - Le fond marin joue un rôle clé : les baies, les canyons sous-marins ou les récifs peuvent amplifier ou focaliser l’onde, multipliant localement sa hauteur. Par exemple, certaines configurations géologiques peuvent transformer un tsunami de 5 mètres en une vague de 30 mètres en quelques minutes.\n\n3. **Comportement à terre** :\n   - Les premières vagues ne sont pas toujours les plus hautes.\n   - L’inondation peut s’étendre bien au-delà de la ligne de côte habituelle, parfois sur plusieurs kilomètres, en raison de l’effet combiné de la hauteur des vagues et de la montée du niveau de la mer. Les dégâts sont aggravés par les débris entraînés et les courants de retour, tout aussi dangereux que les flux initiaux.\n\nLes tsunamis peuvent également être générés par des causes non sismiques, comme les **météotsunamis** (ou *rissagas*), des ondes provoquées par des changements rapides de pression atmosphérique (tempêtes, fronts froids) qui résonnent dans certaines baies. Ces phénomènes, bien que moins puissants, peuvent causer des dégâts locaux importants, notamment en Méditerranée.\n\n## Données et résultats scientifiques\n\n- En eau profonde, les ondes de tsunami ont une période de l’ordre de dizaines de minutes et peuvent atteindre une vitesse supérieure à **800 km/h**.  \n- Leur hauteur en haute mer ne dépasse généralement que quelques décimètres.  \n- À l’approche du littoral, la période et la vitesse diminuent tandis que l’amplitude augmente ; la hauteur de la vague peut alors dépasser **30 m**.  \n- Sur les quatre derniers millénaires, plus de **600 000 victimes** ont été recensées lors d’au moins **279 événements** de tsunami.  \n- Le tsunami de l’océan Indien en 2004 a fait plus de **250 000 décès**, constituant la catastrophe la plus meurtrière des trente dernières années.  \n\n## Ce que les scientifiques savent\n\n- Un tsunami résulte du déplacement brutal d’un grand volume d’eau, le plus souvent provoqué par un séisme, un glissement de terrain sous‑marin ou une explosion volcanique.  \n- La propagation en haute mer se caractérise par de très longues longueurs d’onde et de faibles hauteurs, ce qui rend les tsunamis difficilement détectables à la surface.  \n- Lorsqu’ils rencontrent le fond marin qui s’élève, l’énergie de l’onde se concentre, la vitesse diminue et la hauteur augmente, entraînant des vagues destructrices sur le rivage.  \n- Le terme « tsunami » a été officialisé en **1963** pour désigner les ondes d’origine géologique, distinguées des phénomènes d’origine météorologique (raz‑de‑marée, ondes de tempête).  \n- Les archives historiques et géologiques permettent d’identifier plus de deux‑cent soixante‑dix‑neuf tsunamis majeurs, offrant ainsi un cadre statistique pour l’évaluation du risque.  \n\n## Ce qui reste incertain\n\n- La prévision précise de l’amplitude locale d’un tsunami reste limitée : la topographie du littoral, la bathymétrie et la forme des baies influencent fortement la hauteur finale, mais ces paramètres sont souvent mal connus.  \n- La fréquence exacte des tsunamis de petite à moyenne magnitude est difficile à établir, car de nombreux événements en haute mer ne laissent aucune trace visible.  \n- Les mécanismes exacts de génération pour certains types de glissements de terrain sous‑marins ou d’explosions volcaniques restent à affiner, notamment dans les zones où les données sismiques sont rares.  \n\n## Limites et controverses éventuelles\n\n- Les scientifiques insistent depuis la conférence de 1963 pour réserver « tsunami » aux phénomènes d’origine géologique.  \n- **Détection en haute mer** : les systèmes de surveillance actuels (bouées, satellites) ne permettent pas toujours de détecter les ondes de faible hauteur, ce qui limite la capacité d’alerte précoce.  \n- **Modélisation** : les modèles numériques reproduisent globalement la propagation en haute mer, mais les simulations de l’interaction avec les côtes restent sensibles aux hypothèses sur la topographie sous‑marine, ce qui peut entraîner des écarts entre les prévisions et les observations réelles.  \n\n## Conclusion\n\nLes tsunamis sont des phénomènes océaniques d’une énergie colossale, capables de parcourir des milliers de kilomètres à très grande vitesse avant de se transformer en vagues dévastatrices lorsqu’ils atteignent les côtes. Les connaissances établies décrivent clairement leurs causes géologiques, leurs caractéristiques de propagation en haute mer et l’ampleur de leurs impacts historiques. Néanmoins, la prévision locale précise, la détection précoce en haute mer et la compréhension détaillée de certains mécanismes de génération demeurent des défis scientifiques. Une meilleure maîtrise de ces incertitudes, ainsi qu’une communication claire de la terminologie, sont essentielles pour renforcer la résilience des populations côtières face à ces catastrophes naturelles.\n\n## Sources\n- Wikipédia (fr) — Tsunami — https://fr.wikipedia.org/wiki/Tsunami\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
-      "phrases_retirees_garde_fou": 7,
-      "nb_mots": 1617,
-      "matiere_source": "suffisante",
+      "titre": "Une étude révèle des similitudes génétiques communes à 42 types de cancers",
+      "contenu_markdown": "Une analyse publiée dans *Nature* le 19 novembre 2026 révèle que 42 types de cancers partagent des motifs similaires d’activité génétique dans leur environnement immédiat, appelé *microenvironnement tumoral*. Ces résultats, obtenus en étudiant les gènes actifs dans les tissus entourant les tumeurs, pourraient ouvrir la voie à des traitements plus universels, efficaces contre plusieurs formes de cancer plutôt que contre une seule.\n\n## Des mécanismes communs malgré la diversité des cancers\nChaque cancer est généralement traité comme une maladie distincte, en raison de ses caractéristiques propres. Pourtant, cette étude montre que les cellules qui composent le microenvironment des tumeurs – comme les cellules immunitaires, les vaisseaux sanguins ou les tissus conjonctifs – présentent des schémas d’activation génétique surprenamment comparables, indépendamment du type de cancer. Ces similitudes pourraient expliquer pourquoi certaines approches thérapeutiques, comme l’immunothérapie, fonctionnent parfois sur des cancers très différents.\n\n## Vers des thérapies plus larges ?\nL’identification de ces motifs partagés suggère que des médicaments ciblant spécifiquement ces mécanismes communs pourraient être développés. Cependant, cette piste reste à explorer : les détails des gènes et des voies biologiques impliqués, ainsi que leur rôle précis dans la progression tumorale, devront être précisés dans des recherches complémentaires. Les auteurs soulignent que ces résultats ne remplacent pas les traitements personnalisés existants, mais pourraient les compléter en offrant des options supplémentaires.\n\n## Des limites à préciser\nL’étude ne fournit pas encore de données sur l’efficacité potentielle de tels traitements, ni sur les éventuels effets secondaires. Les mécanismes exacts par lesquels ces motifs génétiques influencent la croissance des tumeurs restent également à élucider. Les chercheurs invitent la communauté scientifique à approfondir ces observations pour confirmer leur pertinence clinique.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03379-3\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Séisme\n\n## Introduction\nUn séisme, ou tremblement de terre, est un phénomène naturel qui se manifeste par des secousses brutales du sol. Ces mouvements, souvent imprévisibles, résultent de la libération soudaine d’une énergie accumulée dans les roches de la croûte terrestre. Bien que la plupart des séismes passent inaperçus, certains peuvent causer des dégâts majeurs, voire des catastrophes. Leur étude, appelée **sismologie**, permet de mieux comprendre leur fonctionnement et d’améliorer la prévention des risques.\n\n---\n\n## Pourquoi le sujet est important\nLes séismes représentent l’un des dangers naturels les plus dévastateurs pour les populations et les infrastructures. Chaque année, environ **cent mille séismes** sont enregistrés dans le monde, mais seuls une infime partie d’entre eux sont ressentis par les humains. Leur impact varie selon leur puissance, leur localisation et la vulnérabilité des zones habitées. Par exemple, les séismes les plus puissants modifient même la rotation de la Terre, raccourcissant légèrement la durée d’une journée (de l’ordre de la **microseconde**).\n\nAu-delà des risques humains, les séismes jouent un rôle clé dans la dynamique de la planète. Ils participent à la **tectonique des plaques**, un mécanisme fondamental qui façonne les continents et les océans sur des millions d’années. Comprendre leur origine et leur fonctionnement est donc essentiel pour anticiper les zones à risque et protéger les sociétés.\n\n---\n\n## Explication du phénomène\nUn séisme naît de la **rupture brutale des roches** sous l’effet de contraintes accumulées. Cette rupture se produit généralement le long d’une **faille**, une fracture préexistante dans la croûte terrestre. Le point de départ de la rupture, situé en profondeur, est appelé le **foyer** du séisme. Sa projection verticale à la surface du globe définit l’**épicentre**, souvent le lieu où les secousses sont les plus violentes.\n\nLors de la rupture, les roches glissent brusquement l’une par rapport à l’autre, libérant une immense quantité d’énergie sous forme d’**ondes sismiques**. Ces ondes se propagent dans toutes les directions, traversant le globe et provoquant les vibrations ressenties en surface. Le frottement intense généré lors du glissement peut aussi dégager une telle chaleur que les roches fondent localement, formant des **pseudotachylites**, un verre naturel issu de la fusion partielle.\n\n---\n## Fonctionnement / mécanismes\nLe mécanisme des séismes repose sur un **cycle de déformation et de relâchement des contraintes** dans la croûte terrestre. Deux théories majeures, développées au fil du temps, éclairent ce processus :\n\n1. **La théorie du rebond élastique** (proposée en 1910 par Harry Fielding Reid).\n   Les roches de part et d’autre d’une faille subissent des contraintes qui les déforment lentement, comme un ressort qui se tend. Lorsque la résistance maximale des roches est atteinte, elles cèdent brutalement, provoquant un **glissement soudain** le long de la faille. Ce relâchement libère l’énergie accumulée et engendre le séisme. Après l’événement, les roches se \"ressoudent\" progressivement, et le cycle recommence.\n\n   Les propriétés de friction entre les deux blocs de roche influencent la régularité des séismes. Certains facteurs, comme la présence de **fluides** (eau, gaz) ou des **glissements lents** (déformations asismiques), peuvent modifier le comportement des failles. Ces variations expliquent pourquoi les séismes ne se produisent pas à intervalles strictement réguliers, comme le suggérait le premier modèle.\n\nLes séismes peuvent aussi survenir dans des contextes autres que la tectonique des plaques :\n- **Séismes volcaniques** : liés à l’intrusion de magma ou à son dégazage.\n- **Séismes d’origine artificielle** : provoqués par des explosions ou des activités humaines (barrages, forages).\n- **Séismes polaires** : associés au mouvement des calottes glaciaires.\n\n- La **ceinture de feu du Pacifique** (80 % de l’énergie sismique mondiale).\n- La **ceinture alpine** (15 %).\n- Les **dorsales océaniques** (5 %).\n\nCes régions correspondent aux limites des **plaques tectoniques**, où les mouvements relatifs des blocs rigides de la lithosphère génèrent des contraintes suffisantes pour déclencher des ruptures.\n\n## Données et résultats scientifiques\n\n- Environ cent mille séismes sont enregistrés chaque année sur la planète.  \n- La répartition géographique de l’activité sismique suit trois grandes ceintures : la ceinture de feu du Pacifique, qui libère près de 80 % de l’énergie sismique annuelle, la ceinture alpine (environ 15 %) et les dorsales océaniques (environ 5 %).  \n- Les séismes les plus puissants peuvent modifier la période de rotation de la Terre, entraînant une variation de la durée d’une journée de l’ordre de la microseconde.  \n- Les enregistrements sismiques sont obtenus grâce aux réseaux de stations sismiques équipées de sismomètres, de numériseurs, d’enregistreurs et d’antennes GPS pour le positionnement et l’horodatage.  \n\nLes chiffres détaillés (magnitude moyenne, distribution des profondeurs, évolution temporelle) sont disponibles dans les bases de données sismologiques internationales.\n\n## Ce que les scientifiques savent\n\n- **Mécanisme de libération d’énergie** : la rupture et le glissement le long d’une faille préexistante sont à l’origine de la plupart des séismes. La contrainte accumulée par la déformation élastique des roches se libère brusquement lorsque la résistance maximale de la faille est dépassée.  \n- **Classification** : la majorité des séismes sont interplaques, c’est‑à‑dire situés à la limite entre deux plaques tectoniques. Des séismes intraplaques, volcaniques, polaires ou d’origine artificielle existent également, mais restent moins fréquents.  \n- **Propagation des ondes** : le mouvement des roches près du foyer génère des ondes sismiques qui se propagent à travers le globe sous forme de paquets d’ondes élastiques.  \n- **Cycle de charge‑décharge** : le modèle de « cycle sismique » décrit une phase de chargement (accumulation de contraintes) suivie d’une décharge brutale (rupture), puis d’une période post‑sismique de réajustement.  \n- **Influence de la friction** : les variations de la friction le long des failles, liées à des facteurs tels que la présence de fluides ou le couplage des blocs, modulent la fréquence et la magnitude des séismes.  \n\n## Ce qui reste incertain\n\n- **Récurrence irrégulière** : malgré le modèle de charge‑décharge, les intervalles entre deux séismes sur une même faille ne sont pas toujours réguliers. Les causes précises de ces irrégularités (par ex. variations locales de friction, processus de glissement lent) demeurent partiellement comprises.  \n- **Prévision précise** : il n’existe actuellement aucun moyen fiable de prédire la date, le lieu exact ou la magnitude d’un futur séisme.\n- **Rôle des fluides** : la contribution exacte des fluides (eau, gaz) dans la réduction de la friction et le déclenchement des ruptures reste un sujet de recherche active.  \n\n## Limites et controverses éventuelles\n\n- **Détection des petits séismes** : le réseau de stations sismiques ne capte pas les secousses de très faible magnitude, ce qui entraîne une sous‑estimation du nombre total de séismes quotidiens.  \n- **Modélisation de la friction** : plusieurs lois de friction ont été proposées depuis les années 1970. Leur application à grande échelle nécessite des paramètres qui ne sont pas toujours mesurables directement, ce qui alimente des débats sur la meilleure formulation à utiliser.  \n- **Impact des séismes sur la rotation terrestre** : la modification de la durée du jour de l’ordre de la microseconde est bien documentée, mais la quantification précise de cet effet pour chaque séisme majeur fait encore l’objet d’études.  \n\n## Conclusion\n\nLes séismes sont le résultat d’une libération soudaine d’énergie accumulée le long de failles géologiques. Les observations montrent qu’environ cent mille séismes sont enregistrés chaque année, avec une concentration majeure le long des trois ceintures sismiques mondiales. Le cadre théorique du cycle de charge‑décharge, enrichi par la prise en compte de la friction et des fluides, explique la plupart des phénomènes observés, mais des incertitudes subsistent quant à la régularité des récurrences et à la capacité de prédiction précise. Les limites du réseau de détection et les débats autour des modèles de friction soulignent la nécessité de poursuivre les recherches, notamment en améliorant la couverture sismologique et en affinant les lois physiques qui régissent le glissement des failles.\n\n## Sources\n- Wikipédia (fr) — Séisme — https://fr.wikipedia.org/wiki/S%C3%A9isme\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 3,
+      "nb_mots": 1624,
+      "matiere_source": "fine",
       "textes_sources_audit": [
         {
           "source": "Nature News",
-          "titre": "Tropical land-use intensification reshapes biodiversity in expected and unexpected ways",
-          "resume": "Nature, Published online: 18 November 2026; doi:10.1038/d41586-026-03602-1 Global agricultural demand has increased over the past few decades, driving land-use intensification in some of the world’s most biodiverse regions. An assessment of some 40,000 species, from soil microorganisms to vertebrates, in Sumatra, Indonesia, reveals that agricultural intensification threatens biodiversity through species loss and changes in community composition across different spatial scales."
-        },
-        {
-          "source": "Nature News",
-          "titre": "Rethinking corporate climate targets for real-world transitions",
-          "resume": "Nature, Published online: 18 November 2026; doi:10.1038/s41586-026-11100-7 Frameworks for corporate greenhouse gas reduction targets should place greater emphasis on systemic changes in business models, technologies and value chains; the scientific community has a role in developing robust, actionable frameworks for corporate decarbonization."
-        },
-        {
-          "source": "Nature News",
-          "titre": "Global patterns and drivers of bee richness and endemism on islands",
-          "resume": "Nature, Published online: 18 November 2026; doi:10.1038/s41586-026-11325-6 Gobal analysis of bee species across 305 islands reveals that islands account for 20% of global bee diversity, with more than 4,100 species and high levels of endemism, and shows that richness is shaped by island size, isolation and evolutionary diversification."
-        },
-        {
-          "source": "Nature News",
-          "titre": "Structural and regulatory evolution across the genus <i>Hordeum</i>",
-          "resume": "Nature, Published online: 18 November 2026; doi:10.1038/s41586-026-11332-7 Chromosome-scale pangenomics across diploid Hordeum species reveals extensive structural variation, hybridization, introgression, horizontal gene transfer and regulatory evolution, revealing adaptive trait diversification and providing genomic resources for barley improvement."
+          "titre": "What do various cancers have in common?",
+          "resume": "Nature, Published online: 19 November 2026; doi:10.1038/d41586-026-03379-3 An analysis of 42 cancer types reveals shared patterns of gene activity in the tumour microenvironment, which might point to treatments that work across a range of cancers."
         },
         {
           "source": "Wikipédia (fr)",
-          "titre": "Tsunami",
-          "resume": "Un tsunami (en japonais 津波, litt. « vague du port ») est une série d'ondes de très grandes période et longueur d'onde se propageant à travers un milieu aquatique (océan, mer ou lac), issues du brusque mouvement d'un grand volume d'eau, provoqué généralement par un séisme, un glissement de terrain sous-marin ou une explosion volcanique, et pouvant se transformer, en atteignant les côtes, en vagues destructrices déferlantes de très grande hauteur.\nEn eau profonde, les vagues du tsunami ont une période (temps séparant chaque crête) se comptant en dizaines de minutes, et peuvent voyager à plus de 800 km/h, tout en ne dépassant pas quelques décimètres de hauteur. Mais à l'approche des côtes, leur période et leur vitesse diminuent, tandis que leur amplitude augmente, leur hauteur pouvant dépasser 30 m. Elles peuvent alors submerger le rivage, inondant les terrains bas, pénétrant profondément dans les terres, en emportant tout sur leur passage, dans une succession de flux et de reflux.\nLes tsunamis font partie des catastrophes les plus destructrices de l'histoire. Sur les quatre derniers millénaires, ils totalisent plus de 600 000 victimes, à travers au moins 279 événements répertoriés. Le tsunami de 2004 dans l'océan Indien est la catastrophe la plus meurtrière des 30 dernières années, avec plus de 250 000 victimes.\nEn français, le terme de raz-de-marée était précédemment couramment employé pour désigner les tsunamis. C'est toutefois un terme imprécis, car il regroupe sous la même appellation les tsunamis et d'autres phénomènes de submersion marine. Les scientifiques ont donc officialisé en 1963 le terme « tsunami », sujet de cet article.\n\nÉtymologie\n\nTsunami\n\nLe terme tsunami (津波) est un mot japonais composé de tsu (津), « port », « gué », et de nami (波), « vague(s) » ; il signifie littéralement « vague portuaire » ou « vague de port ». Elle serait nommée ainsi par les pêcheurs qui, n'ayant rien perçu d'anormal au large, retrouvaient leur ville portuaire ravagée. Le mot intraduisible a été employé en anglais pour la première fois en 1896, au mois de décembre, par la géographe américaine Eliza Ruhamah Scidmore qui, à la suite d'un voyage au Japon, décrit dans National Geographic Society le séisme de Meiji-Sanriku (en) qui se produit le 15 juin 1896. Il est francisé depuis 1914 par les géographes et journalistes, il prend donc un s au pluriel (des tsunamis). L'emploi véritablement popularisé et médiatisé de ce premier terme scientifique ou à usage restreint date du séisme du 26 décembre 2004 dans l'océan Indien.\nBien que souvent utilisée en illustration des tsunamis, La Grande Vague de Kanagawa ne représente pas un tsunami mais une vague scélérate.\n\nRaz-de-marée\nDans le composé raz-de-marée, le terme raz (ou ras) désigne un courant rapide. C'est un mot d'origine norroise rás qui aurait été importé lors de l'établissement de populations anglo-scandinaves en Normandie. Il est attesté en français pour la première fois chez Jean Froissart, à la fin du XIVe siècle au sens de « courant marin violent, qui se fait sentir dans un passage étroit ». Cependant, son attestation dans la toponymie normande est plus ancienne, ainsi le raz de Barfleur est-il mentionné sous la forme Ras de Catte en 1120 et Cataras en 1149. Le mot anglais race « course » partage la même étymologie et avait autrefois également le sens du mot français. Il a servi à qualifier différents endroits, outre celui cité plus haut, comme le raz Blanchard, le Gros-du-Raz, le Raz-de-Bannes ou le raz de la Percée en Normandie, ainsi que la pointe du Raz en Bretagne (breton Beg-ar-Raz) ou le raz de Sein, où le terme normand a été adopté probablement par les marins.\nL'utilisation du terme marée, un phénomène provoqué par l'attraction de la Lune et du Soleil, est trompeur car le « raz-de-marée » est provoqué par des événements d'origine terrestre uniquement. L'association avec les marées est en fait une référence à son apparence, comme une hausse extrêmement rapide du niveau de la mer, plutôt que comme une vague sismique géante.\nIl peut donc être parfois confondu avec une onde de tempête ou surcote. Cette dernière est due à l'effet des vents associés à la dépression d'une tempête. Par exemple, le passage d'un cyclone tropical élève le niveau de l'eau d'un à plusieurs mètres et provoque des inondations similaires au raz-de marée comme avec l'ouragan Katrina à La Nouvelle-Orléans.\nCertaines baies ou certains ports ayant une configuration particulière peuvent aussi réagir au passage d'une onde créée par une « marche barométrique » : cette onde, ou météotsunami (rissaga en catalan) entraîne des phénomènes de résonance dans certains ports, qui vont alors se vider ou se remplir rapidement du fait de l'oscillation de résonance, phénomène assez fréquent en mer Méditerranée (Baléares, mer Adriatique) et qui peut entraîner des dégâts.\nAlors que le terme tsunami est popularisé dans la littérature scientifique à la suite du séisme sur les îles Aléoutiennes en 1946 (en) et du séisme de 1960 au Chili, les scientifiques des années 1950-1960 ne se contentent plus de décrire ce phénomène mais recherchent leurs causes. La communauté scientifique s'accorde alors pour désigner les débordements de mer par tsunami lorsque la cause est géologique (séisme, éruption volcanique, instabilités gravitaires, glissements de terrain), raz-de-marée lorsque l'origine est météorologique (tempêtes, accidents atmosphériques majeurs).\nCependant les médias entretiennent la confusion entre ces deux termes et font l'association fausse des raz-de-marée avec les marées (le terme raz-de-marée étant passé par ailleurs dans la langue courante en 1915), mêlant même la cause et l'effet dans le terme météotsunami. Ces confusions et imprécisions poussent les scientifiques à abandonner le terme de raz-de-marée et officialiser le terme tsunami lors d'une conférence internationale en 1963.\n\nDescription\n\nGénération"
+          "titre": "Séisme",
+          "resume": "Un séisme ou tremblement de terre est une succession de secousses du sol résultant de la libération brusque d'énergie accumulée par les contraintes exercées sur les roches. Cette libération d'énergie se fait par rupture puis glissement le long d'une faille, généralement préexistante. Plus rares sont les séismes dus à l'activité volcanique ou d'origine artificielle (explosions par exemple). Le lieu de la rupture des roches en profondeur se nomme le foyer. La projection du foyer à la surface est l'épicentre du séisme. Le mouvement des roches près du foyer engendre des vibrations élastiques qui se propagent, sous la forme de paquets d'ondes sismiques, autour et au travers du globe terrestre. Il produit aussi un dégagement de chaleur par frottement, au point de parfois fondre les roches le long de la faille (pseudotachylites).\nIl se produit de très nombreux séismes tous les jours, mais la plupart ne sont pas ressentis par les humains. Environ cent mille séismes sont enregistrés chaque année sur la planète. Les plus puissants d'entre eux comptent parmi les catastrophes naturelles les plus destructrices. Les séismes les plus importants modifient la période de rotation de la Terre et donc la durée d’une journée (de l'ordre de la microseconde).\nLa majorité des séismes se produisent à la limite entre les plaques tectoniques (séismes interplaques) de la Terre, mais il peut aussi y avoir des séismes à l'intérieur des plaques (séismes intraplaques). La tectonique des plaques rend compte convenablement de la répartition des ceintures de sismicité à la surface du globe : les grandes ceintures sismiques du globe, caractérisées par la densité géographique des séismes, sont la ceinture de feu du Pacifique (80 % de l'énergie sismique libérée chaque année), la ceinture alpine (15 % de l'énergie annuelle) et les dorsales dans les océans (5 % de l'énergie annuelle).\nLa science qui étudie ces phénomènes est la sismologie, pratiquée par les sismologues, et son instrument de mesure principal est le sismomètre, qui enregistre les données sous forme de sismogrammes. L'acquisition et l'enregistrement du signal s'obtiennent dans une station sismique regroupant, outre les capteurs eux-mêmes, des numériseurs, des enregistreurs et antennes GPS, pour le positionnement géographique et l'horodatage des données.\n\nHistoire\n\nSi le séisme de 1755 à Lisbonne est à l'origine de la naissance de la sismologie, le débat qu'il suscite ne fait pas progresser la connaissance de la genèse des séismes.\nLa simultanéité entre rupture de faille et tremblement de terre est observée et décrite dès le XIXe siècle par les scientifiques qui lient la formation des principaux séismes à un brusque glissement le long d'une faille au sein de la croûte terrestre et/ou dans la lithosphère sous-jacente. Mais les théories ne parviennent pas à décider lequel des phénomènes est à l'origine de l'autre et ne peuvent expliquer le mécanisme. En 1884, le géologue américain Grove Karl Gilbert propose le premier modèle de « cycle sismique » linéaire et régulier, postulant que les séismes les plus importants ont l'intervalle de récurrence le plus fort. C'est en 1910, après le séisme de 1906 à San Francisco, qu'un géodésien californien, Harry Fielding Reid (en), émet la théorie du rebond élastique. Selon cette théorie, les contraintes déforment élastiquement la croûte terrestre de part et d'autre de la faille, provoquant le déplacement asismique des deux blocs séparés par cette zone de rupture potentielle (la faille est alors inactive ou bloquée, et prend du retard par rapport à celles qui l'entourent, le séisme lui permettant de rattraper ce retard selon le rythme de son fonctionnement conçu comme régulier). Ce glissement est bloqué durant les périodes inter-sismiques (entre les séismes), l'énergie s'accumulant par la déformation élastique des roches. Lorsque leur résistance maximale est atteinte (phase cosismique), l'énergie est brusquement libérée et la rupture se produit par le brusque relâchement de contraintes élastiques préalablement accumulées par une lente déformation du sous-sol, ce qui provoque un jeu de la faille. Après un épisode sismique (phase post-sismique caractérisée par des répliques et des réajustements visco-élastiques), les roches broyées de la faille se ressoudent au cours du temps et la faille acquiert une nouvelle résistance. Le dispositif se réarme : la faille « se charge » puis se décharge brusquement par relaxation de contrainte. Reid explique ainsi le cycle sismique (cycle de chargement/déchargement) complété par les différentes périodes sismiques de Wayne Thatcher. Si ce modèle théorique de l'origine des tremblements de terre est encore couramment accepté par la communauté scientifique, il n'explique pas les récurrences sismiques irrégulières comme le révèle les traces laissées par les séismes (géomorphologie, paléosismologie, lichénométrie, dendrochronologie).\nCette théorie est complétée en 1966 en prenant en compte le processus de friction. Les variations des propriétés de friction sur les failles, dues à plusieurs facteurs (faible couplage des deux blocs, déformation asismique, phénomènes transitoires de glissement lent, rôle de fluides, etc.), expliquent les cycles sismiques irréguliers. Une loi de friction spécifique pour la modélisation des transferts de contrainte, dépendant de la vitesse et du temps de contact entre les deux surfaces, est proposée à la fin des années 1970.\n\nOrigine\n\nUn tremblement de terre est une secousse plus ou moins violente du sol qui peut avoir quatre origines : rupture d'une faille ou d'un segment de faille (séismes tectoniques) ; intrusion et dégazage d'un magma (séismes volcaniques) ; « craquements » des calottes glaciaires se répercutant dans la croûte terrestre (séismes polaires) ; explosion, effondrement d'une cavité (séismes d'origine naturelle ou dus à l'activité humaine). En pratique, on classe les séismes en quatre catégories selon les phénomènes qui les ont engendrés :"
         }
       ],
-      "nb_mots_decouverte": 280,
-      "nb_mots_approfondi": 1330,
-      "sujet_id": "tsunami",
+      "nb_mots_decouverte": 309,
+      "nb_mots_approfondi": 1308,
+      "sujet_id": "seisme",
       "origine": "encyclopedie"
     },
     "citation": {
-      "texte": "Que sais-je ?",
+      "texte": "La plus grande chose du monde, c'est de savoir être à soi.",
       "auteur": "Michel de Montaigne",
-      "source": "Essais, livre II, chapitre 12",
+      "source": "Essais, livre I, chapitre 39",
       "annee": 1580
     },
-    "meteo": null,
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 14.0,
+          "temperature_max": 18.9,
+          "temperature_min": 13.5,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 26.0,
+          "vent_max_kmh": 33.5,
+          "rafales_max_kmh": 63.4,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 13.6,
+              "temperature_max": 17.0,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 27,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 16.5,
+              "temperature_max": 18.9,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 34,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 15.4,
+              "temperature_max": 16.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 32,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": [
+            "Rafales jusqu'à 63 km/h"
+          ]
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 14.1,
+          "temperature_max": 18.3,
+          "temperature_min": 13.7,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 32.4,
+          "vent_max_kmh": 38.1,
+          "rafales_max_kmh": 63.0,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 13.7,
+              "temperature_max": 16.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 35,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 16.2,
+              "temperature_max": 18.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 38,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 15.5,
+              "temperature_max": 16.0,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 31,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": [
+            "Rafales jusqu'à 63 km/h"
+          ]
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 11.5,
+          "temperature_max": 16.9,
+          "temperature_min": 10.6,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 14.7,
+          "vent_max_kmh": 28.4,
+          "rafales_max_kmh": 51.5,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 11.1,
+              "temperature_max": 15.9,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 24,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 14.9,
+              "temperature_max": 16.9,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 28,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 12.7,
+              "temperature_max": 14.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 23,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 11.3,
+          "temperature_max": 15.7,
+          "temperature_min": 10.9,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 14.1,
+          "vent_max_kmh": 26.4,
+          "rafales_max_kmh": 49.3,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 10.9,
+              "temperature_max": 14.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 22,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 13.9,
+              "temperature_max": 15.7,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 26,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 12.9,
+              "temperature_max": 13.5,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 20,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 18.9,
+      "temperature_min_zone": 10.6,
+      "probabilite_pluie_max_pct": 0,
+      "vent_max_kmh": 38.1,
+      "description_dominante": "ciel dégagé",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 10.9,
+          "temperature_max": 17.0,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 35,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 13.9,
+          "temperature_max": 18.9,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 38,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 12.7,
+          "temperature_max": 16.3,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 32,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        }
+      ],
+      "alertes": [
+        "Rafales jusqu'à 63 km/h"
+      ],
+      "resume": "Ciel dégagé toute la journée, de 11° à 19°."
+    },
     "anglais": {
       "mode": "litterature",
-      "oeuvre": "A Scandal in Bohemia",
-      "auteur": "Arthur Conan Doyle",
-      "annee": 1891,
+      "oeuvre": "Jane Eyre",
+      "auteur": "Charlotte Brontë",
+      "annee": 1847,
       "segments": [
         {
-          "t": "To Sherlock Holmes she is always the woman. I have seldom",
-          "g": "rarement"
+          "t": "There was no possibility of taking a walk that day. We had been wandering",
+          "g": "errer"
         },
         {
-          "t": " heard him mention her under any other name. In his eyes she eclipses",
-          "g": "éclipse"
+          "t": ", indeed, in the leafless",
+          "g": "dépouillé de ses feuilles"
         },
         {
-          "t": " and predominates",
-          "g": "domine"
+          "t": " shrubbery",
+          "g": "bosquet d'arbustes"
         },
         {
-          "t": " the whole of her sex. It was not that he felt any emotion akin to",
-          "g": "apparenté à"
+          "t": " an hour in the morning; but since dinner (Mrs. Reed, when there was no company, dined early) the cold winter wind had brought with it clouds so sombre, and a rain so penetrating, that further out-door exercise was now out of the question",
+          "g": "hors de question"
         },
         {
-          "t": " love for Irene Adler. All emotions, and that one particularly, were abhorrent",
-          "g": "odieuses"
+          "t": ". I was glad of it: I never liked long walks, especially on chilly",
+          "g": "frisquets"
         },
         {
-          "t": " to his cold, precise but admirably balanced mind. He was, I take it",
-          "g": "je suppose"
+          "t": " afternoons: dreadful",
+          "g": "pénible, affreux"
         },
         {
-          "t": ", the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position",
-          "g": "position déplacée"
+          "t": " to me was the coming home in the raw",
+          "g": "humide et glacial"
         },
         {
-          "t": ". He never spoke of the softer passions, save with",
-          "g": "sauf avec"
+          "t": " twilight",
+          "g": "le crépuscule"
         },
         {
-          "t": " a gibe",
-          "g": "la raillerie"
+          "t": ", with nipped",
+          "g": "gelés"
         },
         {
-          "t": " and a sneer",
-          "g": "le ricanement"
+          "t": " fingers and toes, and a heart saddened by the chidings",
+          "g": "les réprimandes"
         },
         {
-          "t": ".",
+          "t": " of Bessie, the nurse, and humbled",
+          "g": "humiliée"
+        },
+        {
+          "t": " by the consciousness of my physical inferiority to Eliza, John, and Georgiana Reed.",
           "g": null
         }
       ],
-      "texte_glose": "To Sherlock Holmes she is always the woman. I have seldom (= rarement) heard him mention her under any other name. In his eyes she eclipses (= éclipse) and predominates (= domine) the whole of her sex. It was not that he felt any emotion akin to (= apparenté à) love for Irene Adler. All emotions, and that one particularly, were abhorrent (= odieuses) to his cold, precise but admirably balanced mind. He was, I take it (= je suppose), the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position (= position déplacée). He never spoke of the softer passions, save with (= sauf avec) a gibe (= la raillerie) and a sneer (= le ricanement)."
+      "texte_glose": "There was no possibility of taking a walk that day. We had been wandering (= errer), indeed, in the leafless (= dépouillé de ses feuilles) shrubbery (= bosquet d'arbustes) an hour in the morning; but since dinner (Mrs. Reed, when there was no company, dined early) the cold winter wind had brought with it clouds so sombre, and a rain so penetrating, that further out-door exercise was now out of the question (= hors de question). I was glad of it: I never liked long walks, especially on chilly (= frisquets) afternoons: dreadful (= pénible, affreux) to me was the coming home in the raw (= humide et glacial) twilight (= le crépuscule), with nipped (= gelés) fingers and toes, and a heart saddened by the chidings (= les réprimandes) of Bessie, the nurse, and humbled (= humiliée) by the consciousness of my physical inferiority to Eliza, John, and Georgiana Reed."
     },
     "meta": {
-      "resume_1_phrase": "À la une : L'écologiste Marine Tondelier se dit \"prête à travailler à une coalition autour de la candidature de Jean-Luc Mélenchon\" pour la présidentielle 2027."
+      "resume_1_phrase": "À la une : Présidentielle 2027 : le Parti socialiste stoppe les discussions avec les Ecologistes après le ralliement de Tondelier à Mélenchon."
     },
     "_genere_par_llm": true,
     "_provider": "groq+mistral",
@@ -387,5 +626,5 @@
       "erreur": null
     }
   },
-  "debut_run": "2026-11-19T06:10:37.523145+01:00"
+  "debut_run": "2026-11-20T06:10:36.550002+01:00"
 }

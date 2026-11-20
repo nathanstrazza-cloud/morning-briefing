@@ -1,6 +1,68 @@
 {
   "entries": [
     {
+      "derniere_execution": "2026-11-20T06:13:55.110442+01:00",
+      "date_visee": "2026-11-20",
+      "succes": true,
+      "erreur": null,
+      "synthese_llm": true,
+      "erreur_llm": null,
+      "llm_bloc": {
+        "genere_par_llm": true,
+        "provider": "groq+mistral",
+        "erreur": null
+      },
+      "llm_science": {
+        "genere_par_llm": true,
+        "provider": "groq+mistral",
+        "erreur": null
+      },
+      "llm_anglais": {
+        "genere_par_llm": false,
+        "provider": null,
+        "erreur": null
+      },
+      "sources_rss_en_erreur": [
+        {
+          "source": "L'Équipe Hand",
+          "categorie": "sport",
+          "statut": "vide",
+          "detail": null
+        },
+        {
+          "source": "L'Équipe Volley",
+          "categorie": "sport",
+          "statut": "vide",
+          "detail": null
+        },
+        {
+          "source": "ESPN NBA News",
+          "categorie": "sport",
+          "statut": "vide",
+          "detail": null
+        },
+        {
+          "source": "ESPN Top Headlines",
+          "categorie": "sport",
+          "statut": "vide",
+          "detail": null
+        }
+      ],
+      "sources_marches_en_erreur": [],
+      "funnel_actualite": {
+        "france": {
+          "bruts": 104,
+          "evenements_uniques": 84,
+          "retenus_apres_seuil": 41
+        },
+        "monde": {
+          "bruts": 108,
+          "evenements_uniques": 93,
+          "retenus_apres_seuil": 21
+        }
+      }
+    },
+    {
       "derniere_execution": "2026-11-19T06:14:35.329056+01:00",
       "date_visee": "2026-11-19",
       "succes": true,
@@ -2950,29 +3012,6 @@
           "categorie": "sciences",
           "statut": "erreur",
           "detail": "<unknown>:15:231: not well-formed (invalid token)"
-        },
-        {
-          "source": "L'Équipe Tous Sports",
-          "categorie": "sport_autres",
-          "statut": "vide",
-          "detail": null
-        }
-      ],
-      "sources_marches_en_erreur": []
-    },
-    {
-      "derniere_execution": "2026-09-21T12:05:29.250906+02:00",
-      "date_visee": "2026-09-21",
-      "succes": true,
-      "erreur": null,
-      "synthese_llm": true,
-      "erreur_llm": null,
-      "sources_rss_en_erreur": [
-        {
-          "source": "CNRS Actualités",
-          "categorie": "sciences",
-          "statut": "erreur",
-          "detail": "<unknown>:14:420: not well-formed (invalid token)"
         },
         {
           "source": "L'Équipe Tous Sports",
