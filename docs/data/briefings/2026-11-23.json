@@ -1,0 +1,639 @@
+{
+  "date": "2026-11-23",
+  "derniere_mise_a_jour": "2026-11-23T06:13:45.329596+01:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Présidentielle 2027 : Marine Le Pen couperait les subventions du Planning familial s'il continue « à faire de la politique »",
+          "resume": "La candidate du Rassemblement national à l’Elysée, déclarée le soir même d’une condamnation pour détournements de fonds publics, ne fait aucun cas des multiples affaires et soupçons d’atteinte à la probité visant son parti, misant sur l’indifférence présumée des électeurs pour les dossiers judiciaires.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "On vous explique les débats autour de la retraite par capitalisation, que plusieurs candidats à la présidentielle proposent d'introduire pour financer les pensions",
+          "resume": "Certains prétendants à l'Elysée souhaitent que les actifs financent une partie de leur retraite avec des cotisations placées durant leur carrière, alors que le système actuel repose sur la solidarité intergénérationnelle.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : \"La dynamique de vote utile s'exprime de manière très anticipée\"",
+          "resume": "Au menu de Présidentielle 2027 : Jean-Luc Mélenchon continue de rallier à gauche, Dominique de Villepin et David Lisnard bousculent le jeu à droite, et le RN fragilisé par les affaires. Avec Frédéric Micheau, Directeur général adjoint de l'institut de sondages OpinionWay, et Richard Werly, éditorialiste politique et journaliste pour le media suisse en ligne Blick.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Tenir le deuxième tour de la présidentielle \"au lendemain d'un 1er mai est une erreur\", estime Raphaël Glucksmann, qui demande d'avancer le scrutin",
+          "resume": "Le candidat PS-Place publique propose d'organiser les deux scrutins les 11 et 25 avril, afin de ne pas \"prendre des risques avec cette élection\".",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Un mois après l’attentat de Trappes, les sœurs de Pengo Bossio Wangi témoignent : «Je suis fière d’être française, mais j’ai peur de vivre ici désormais»",
+          "resume": "Le 23 octobre, à Trappes, l’homme de 26 ans était tué dans un attentat raciste. Ritsia et Tiffany Brou, qui racontent n’avoir pas vécu de discriminations par le passé, partagent leur sidération et leur volonté d’entretenir la mémoire de leur frère.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Guerre en Ukraine : des frappes russes dans la région de Kiev font au moins 14 morts",
+          "resume": "Les secours ont extrait vivants un enfant et une femme de 79 ans des décombres.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "En Colombie, dix ans après la signature de l’accord historique, le bilan amer de la paix avec les FARC",
+          "resume": "Les résultats de l'accord de 2016, incluant réparation aux victimes et redistribution des terres, restent décevants, avec un risque accru de violences sous le nouveau gouvernement d’extrême droite.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Cisjordanie : enquête ouverte par les autorités israéliennes après des attaques de colons ; Gadi Eisenkot dénonce un « terrorisme juif »",
+          "resume": "Gadi Eisenkot, chargé de former un gouvernement, qualifie les attaques de colons en Cisjordanie de « terrorisme juif » et souligne leur impact sur la stabilité régionale.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Gaza : les bombardements israéliens ont pollué durablement la quasi-totalité de l’enclave, selon plusieurs ONG",
+          "resume": "Un rapport d'Oxfam et de l’Observatoire des conflits et de l’environnement révèle une contamination de l’air, de l’eau et des sols à Gaza, avec des effets potentiellement durables.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Scandale de triche à l’IA en Corée du Sud : sous pression, le ministre de l’éducation démissionne",
+          "resume": "Les révélations d’un candidat ayant admis avoir utilisé l’intelligence artificielle pour réussir un concours créent des remous jusqu’au sommet de l’Etat, alors que les jeunes Sud-Coréens viennent de passer le Suneung, un examen draconien pour entrer à l’université.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Libération",
+            "Le Monde International",
+            "France 24 International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Aux Etats-Unis, Melat Kiros, 29 ans, démocrate, socialiste et première femme de la génération Z à entrer au Congrès",
+          "resume": "Née en Ethiopie et élue à la Chambre des représentants lors des midterms dans le Colorado, cette ex-avocate incarne une jeune génération de parlementaires qui renouvellent aussi bien la forme que le fond de leurs messages.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon 20 Minutes, Guerre en Ukraine : Réunion de l’Otan pour parler des répercussions du conflit en Europe",
+          "resume": "",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ],
+          "complete_par_code": true
+        },
+        {
+          "titre": "Selon Libération, Guerre Russie-Ukraine : la «zone grise» rétrécit pour les pays de l’Otan",
+          "resume": "Des drones ukrainiens dans le golfe de Finlande samedi 21 novembre aux missiles russes en Pologne vendredi, la guerre déborde sur le territoire et dans les eaux de l’Otan. Moscou crie à la cobelligérance.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
+      "mouvements_notables": [
+        {
+          "nom": "CAC 40",
+          "variation_pct": -1.89,
+          "explication": null
+        },
+        {
+          "nom": "S&P 500",
+          "variation_pct": -3.7,
+          "explication": null
+        },
+        {
+          "nom": "Nasdaq",
+          "variation_pct": -5.28,
+          "explication": null
+        },
+        {
+          "nom": "DAX",
+          "variation_pct": -2.6,
+          "explication": null
+        },
+        {
+          "nom": "Euro Stoxx 50",
+          "variation_pct": -2.81,
+          "explication": null
+        },
+        {
+          "nom": "Pétrole (Brent)",
+          "variation_pct": -2.77,
+          "explication": null
+        },
+        {
+          "nom": "Or",
+          "variation_pct": 2.55,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "autres",
+          "texte": "Selon BBC Sport, l’Angleterre a enregistré une victoire record contre la Nouvelle-Zélande et Matt Dawson a commenté la performance de Steve Borthwick."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Les Français Albano Olivetti et Théo Arribagé se sont qualifiés pour la finale du Masters de double à Turin après avoir remporté le super tie‑break contre les Allemands Tim Puetz et Kevin Krawietz (7‑6[4], 6‑7[6], 12‑10)."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Carlos Alcaraz a remporté le titre des Finales ATP de Turin en battant Alexander Zverev (6‑2, 7‑6[7])."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Selon L’Équipe Tennis, Alexander Zverev, numéro 1 mondial et vainqueur de deux titres du Grand Chelem, ne parvient plus à battre Jannik Sinner et Carlos Alcaraz."
+        },
+        {
+          "sport": "rugby",
+          "texte": "Thomas Ramos, absent depuis près de deux mois pour une blessure musculaire, a été sélectionné parmi les 42 joueurs des Bleus en vue de la finale du Championnat des nations contre l’Afrique du Sud."
+        },
+        {
+          "sport": "golf",
+          "texte": "Jeeno Thitikul, numéro deux mondial, a réalisé une ronde finale de 65, sept sous le par, pour remporter son troisième titre consécutif au CME Group Tour Championship."
+        },
+        {
+          "sport": "football",
+          "texte": "Flick a commenté la victoire du Barça contre Villarreal, et Lucas Bretelle, milieu du Mans, s’est exprimé après la victoire de son équipe à Marseille (3‑2)."
+        },
+        {
+          "sport": "sports mécaniques",
+          "texte": "Marc Marquez a remporté son huitième titre de champion du MotoGP, égalant le record de Giacomo Agostini."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "Arsenal – Borussia Dortmund",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-11-24T20:00:00+00:00",
+          "date_texte": "mardi 24 novembre à 21h00",
+          "sport": "football"
+        },
+        {
+          "affiche": "New York Knicks – Miami Heat",
+          "competition": "NBA",
+          "date_iso": "2026-11-28T00:00:00+00:00",
+          "date_texte": "samedi 28 novembre à 1h00",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "decouverte",
+      "titre": "BepiColombo : deux sondes en orbite autour de Mercure pour percer ses secrets",
+      "contenu_markdown": "Ce succès marque une étape clé pour étudier cette planète méconnue, la plus proche du Soleil, dont les caractéristiques défient encore les modèles scientifiques actuels.\n\n## Une planète aux propriétés paradoxales\nMercure intrigue les astronomes depuis des décennies. Les sondes de BepiColombo, qui emprunteront des trajectoires distinctes, devraient analyser sa **surface**, son **champ magnétique** et son **environnement spatial** pour expliquer ces anomalies.\n\n## Pourquoi cette mission est-elle cruciale ?\nMercure offre un laboratoire naturel pour comprendre :\n- **La formation des planètes telluriques** (comme la Terre) et l’évolution des systèmes planétaires.\n- **L’interaction entre le vent solaire et une planète sans atmosphère dense**, un phénomène rare dans le Système solaire.\n- **Les mécanismes de refroidissement interne** d’une planète de petite taille, dont le noyau représente une proportion anormalement grande de son volume.\n\nLes données recueillies pourraient aussi éclairer des questions sur **l’origine des champs magnétiques planétaires** et les processus géologiques extrêmes liés à la proximité d’une étoile.\n\n## Des réponses attendues, mais des incertitudes persistent\nBien que les instruments des sondes soient conçus pour cartographier Mercure avec une précision inédite, plusieurs énigmes restent entières :\n- **L’origine de son champ magnétique** (plus intense que prévu pour une planète de cette taille).\n- **La nature exacte de sa croûte et de son noyau**, notamment la présence possible d’un océan de magma sous sa surface.\n- **Les mécanismes de perte atmosphérique**, accélérés par le vent solaire.\n\nLes premières observations, prévues pour les mois à venir, devraient affiner ces connaissances, mais certaines réponses pourraient nécessiter des années d’analyse. Les détails techniques des instruments et les résultats préliminaires sont à consulter dans les publications des équipes scientifiques.\n\n## Sources\n- Le Monde Sciences — https://www.lemonde.fr/sciences/article/2026/11/21/les-mysteres-de-mercure-l-etrange-planete-du-systeme-solaire-que-la-mission-bepicolombo-devrait-lever_6814059_1650684.html\n- Nature News — https://www.nature.com/articles/d41586-026-03803-8\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Hémoglobine\n\nL'hémoglobine est une protéine essentielle au fonctionnement de l'organisme, présente principalement dans les globules rouges du sang des vertébrés. Son rôle central consiste à transporter l'oxygène depuis les poumons ou les branchies vers les tissus, où il est utilisé pour produire de l'énergie. Sans elle, la respiration cellulaire aérobie – processus vital pour la plupart des cellules – ne pourrait pas avoir lieu efficacement. Mesurée lors d'un hémogramme, sa concentration reflète aussi l'état de santé de l'individu.\n\n## Pourquoi l'hémoglobine est-elle un sujet important ?\n\nL'hémoglobine est indispensable à la vie, car elle permet aux cellules de recevoir l'oxygène nécessaire à leur métabolisme. Une carence ou un dysfonctionnement de cette protéine peut entraîner des troubles graves, comme l'anémie (manque d'hémoglobine) ou des maladies génétiques affectant sa structure. De plus, sa capacité à fixer et libérer l'oxygène en fonction des besoins tissulaires en fait un modèle d'étude pour comprendre les mécanismes de transport des gaz dans les organismes vivants. Enfin, sa présence dans d'autres tissus, comme les neurones ou les reins, révèle des rôles supplémentaires, notamment dans la régulation du fer et la protection contre les radicaux libres.\n\n## Explication du phénomène : une protéine adaptée au transport de l'oxygène\n\nL'hémoglobine est une **hémoprotéine**, c'est-à-dire une protéine associée à un groupe prosthétique contenant du fer : l'**hème**. Chaque molécule d'hémoglobine peut fixer jusqu'à **quatre molécules d'oxygène**, grâce à ses quatre sous-unités protéiques. Cette propriété lui permet de transporter **70 fois plus d'oxygène** que le sang seul, sans hémoglobine. Chez l'adulte humain, la forme la plus répandue, l'**hémoglobine A (HbA)**, est composée de deux chaînes α et deux chaînes β, tandis que chez le fœtus, une variante spécifique (**hémoglobine F, HbF**) facilite le transfert d'oxygène depuis la mère.\n\n## Fonctionnement et mécanismes : une structure complexe pour une efficacité optimale\n\nLa structure de l'hémoglobine repose sur un **repliement globulaire** caractéristique, stabilisé par des liaisons chimiques (hydrogène, ioniques et hydrophobes). Chaque sous-unité contient une molécule d'hème, où le fer se lie réversiblement à l'oxygène. Ce mécanisme permet à l'hémoglobine de :\n- **Se charger en oxygène** dans les poumons, où la pression en O₂ est élevée.\n- **Le libérer** dans les tissus, où la pression en O₂ est plus faible, grâce à un phénomène coopératif : la fixation d'une première molécule d'oxygène facilite l'affinité pour les trois suivantes.\n\nEn plus de l'oxygène, l'hémoglobine transporte aussi du **dioxyde de carbone (CO₂)** et du **monoxyde d'azote (NO)**, ce dernier jouant un rôle dans la régulation vasculaire. Sa présence dans d'autres cellules, comme les macrophages ou les neurones, suggère aussi des fonctions antioxydantes et métaboliques.\n\n## Données et résultats scientifiques\n\nLes données chiffrées disponibles dans les sources indiquent que chaque molécule d'hémoglobine peut fixer jusqu’à quatre molécules d’oxygène O₂. Le sang humain contenant de l’hémoglobine peut transporter 1,34 mL d’O₂ par gramme de protéine, ce qui représente une capacité de transport environ 70 fois supérieure à celle de l’O₂ dissous dans le plasma. Chez les mammifères, l’hémoglobine constitue près de 96 % de la masse sèche des globules rouges et environ 35 % de leur contenu total, incluant l’eau. La forme majoritaire chez l’adulte humain, l’hémoglobine A (HbA), représente environ 95 % des molécules d’hémoglobine, avec une masse moléculaire totale d’environ 64 kDa (64 458 g·mol⁻¹).\n\n## Ce que les scientifiques savent\n\n- **Fonction principale** : L’hémoglobine transporte l’oxygène des poumons (ou des branchies) vers les tissus, où il est libéré pour la respiration cellulaire aérobie.  \n- **Transport d’autres gaz** : Elle participe également au transport d’une partie du dioxyde de carbone (CO₂) et du monoxyde d’azote (NO), ce dernier étant libéré simultanément avec l’O₂.  \n- **Distribution tissulaire** : Bien que la majorité de l’hémoglobine se trouve dans les globules rouges, on en trouve aussi dans certains neurones dopaminergiques, macrophages, cellules alvéolaires et cellules rénales, où elle agit comme antioxydant et régulateur du métabolisme du fer.  \n- **Variabilité interspécifique** : Chez de nombreux invertébrés, champignons et plantes, l’hémoglobine peut remplir des fonctions similaires ou supplémentaires, comme le transport de sulfure d’hydrogène ou d’anions sulfure.  \n- **Structure** : L’hémoglobine humaine adulte est une protéine hétérotétramérique (α₂β₂) composée de deux chaînes α (141 résidus) et deux chaînes β (146 résidus), chaque sous‑unité étant associée à un groupe hème contenant un ion fer.  \n\n## Ce qui reste incertain\n\n- **Rôle exact hors des globules rouges** : Bien que l’on sache que l’hémoglobine extra‑érythrocytaire agit comme antioxydant et régule le fer, les mécanismes précis de ces fonctions dans les différents tissus restent à préciser.  \n- **Variabilité fonctionnelle chez les invertébrés** : La portée exacte des fonctions de l’hémoglobine (par ex. transport de NO, sulfure d’hydrogène) chez les invertébrés, champignons et plantes nécessite davantage d’études comparatives.  \n- **Interaction avec le NO** : Le processus de libération du NO transporté par l’hémoglobine et son impact physiologique complet sont encore l’objet de recherches.  \n\n## Limites et controverses éventuelles\n\n- **Classification des formes mineures** : La présence d’autres formes d’hémoglobine (HbA2, HbF) est bien établie, mais leur contribution relative au transport d’O₂ chez les adultes et les enfants fait encore l’objet de discussions quant à leur rôle physiologique exact.  \n\n## Conclusion\n\nL’hémoglobine est une protéine essentielle au transport de l’oxygène et de plusieurs autres gaz dans le sang des vertébrés, avec une capacité de liaison et de transport largement supérieure à celle de l’O₂ dissous. Sa structure tétraédrique, ses sous‑unités identiques deux à deux et son groupe hème contenant du fer sont à la base de ses propriétés fonctionnelles. Au‑delà des globules rouges, l’hémoglobine joue des rôles supplémentaires dans divers tissus et chez de nombreux organismes non vertébrés, bien que certains aspects de ces fonctions restent à élucider. Les connaissances actuelles reposent sur des mesures précises de capacité de transport et sur la description détaillée de sa structure, tandis que les incertitudes portent principalement sur les mécanismes d’action extra‑érythrocytaire et sur la diversité fonctionnelle chez les espèces non humaines.\n\n## Sources\n- Wikipédia (fr) — Hémoglobine — https://fr.wikipedia.org/wiki/H%C3%A9moglobine\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 3,
+      "nb_mots": 1330,
+      "matiere_source": "fine",
+      "textes_sources_audit": [
+        {
+          "source": "Le Monde Sciences",
+          "titre": "Les mystères de Mercure, l’étrange planète du Système solaire, que la mission BepiColombo devrait lever",
+          "resume": "Après huit ans de transit, les deux sondes de la mission européano-japonaise se sont mises en orbite autour de Mercure. Elles devraient aider les scientifiques à résoudre les nombreuses énigmes qui entourent cette petite planète pas comme les autres."
+        },
+        {
+          "source": "Nature News",
+          "titre": "BepiColombo finally reaches Mercury after eight-year odyssey",
+          "resume": "Nature, Published online: 21 November 2026; doi:10.1038/d41586-026-03803-8 European and Japanese probes will trace different paths around the planet to study its surface and its surroundings."
+        },
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Hémoglobine",
+          "resume": "L'hémoglobine, couramment symbolisée Hb, parfois Hgb, est un pigment respiratoire (de la famille moléculaire des métalloprotéines, ici contenant du fer) présent essentiellement dans le sang des vertébrés, au sein de leurs globules rouges, ainsi que dans les tissus de certains invertébrés. Elle a pour fonction de transporter l'oxygène O2 depuis l'appareil respiratoire (poumons, branchies) vers le reste de l'organisme. La quantité d'hémoglobine est un paramètre mesuré lors d'un hémogramme.\n\nRôle\nL'hémoglobine libère l'oxygène dans les tissus et permet la respiration cellulaire aérobie, laquelle, à travers le métabolisme, fournit l'énergie des processus biologiques essentiels à la vie.\nChez l'humain, l'hémoglobine est une protéine hétérotétramérique formée de chaînes peptidiques identiques deux à deux. L'hémoglobine A (HbA) représente environ 95 % des molécules d'hémoglobines chez l'adulte, constituée de deux chaînes α et de deux chaînes β ; il existe également une hémoglobine A2 (HbA2) de formule α2δ2, et une hémoglobine F (HbF, fœtale) de formule α2γ2. Chacune des quatre chaînes est associée à un groupe prosthétique appelé hème et constitué d'un cation de fer complexé avec une porphyrine. L'hémoglobine est donc une hémoprotéine.\nChez les mammifères, l'hémoglobine constitue près de 96 % de la masse de matière sèche des globules rouges, et environ 35 % de leur contenu total en incluant l'eau. Chaque molécule d'hémoglobine peut fixer jusqu'à quatre molécules d'oxygène O2, et l'hémoglobine du sang peut transporter 1,34 mL d'O2 par gramme de protéine, ce qui lui permet de transporter 70 fois plus d'oxygène que la quantité d'O2 dissoute dans le sang. L'hémoglobine intervient aussi dans le transport d'autres gaz que l'oxygène. Elle assure notamment le transport d'une partie du dioxyde de carbone CO2 produit par la respiration cellulaire, et transporte également du monoxyde d'azote NO, qui joue un rôle significatif dans la signalisation cellulaire de certains processus physiologiques, et qui est libéré en même temps que l'oxygène après avoir été transporté sur un groupe thiol de l'apoprotéine.\nLa majeure partie de l'hémoglobine se trouve dans les globules rouges, eux-mêmes produits par la moelle osseuse. Cependant, toute l'hémoglobine n'est pas concentrée dans les globules rouges. On en trouve ainsi par exemple dans les neurones dopaminergiques du groupe A9 de la substantia nigra, dans les macrophages, dans les cellules alvéolaires et, au niveau des reins, dans les cellules du mésangium. Dans ces tissus, l'hémoglobine joue un rôle d'antioxydant et de régulateur du métabolisme du fer.\nL'hémoglobine et diverses molécules apparentées sont également présentes chez un grand nombre d'invertébrés, de champignons et de plantes. Chez ces organismes, l'hémoglobine peut avoir pour fonction de transporter l'oxygène O2, mais peut aussi intervenir comme transporteur et régulateur d'autres espèces chimiques telles que le dioxyde de carbone CO2, le monoxyde d'azote NO, le sulfure d'hydrogène HS et l'anion sulfure S2−. Une variante de l'hémoglobine, appelée léghémoglobine, assure l'élimination de l'oxygène des systèmes anaérobies, par exemple des nodules de Rhizobium chez les fabacées, avant que celui-ci ne les inactive.\n\nStructure et fonctionnement\n\nSous-unités\nL'hémoglobine possède une structure quaternaire caractéristique de nombreuses protéines à sous-unités globulaires. La plupart de ses résidus d'acides aminés sont engagés dans des hélices α reliées entre elles par des segments non hélicoïdaux. Les sections hélicoïdales sont stabilisées par des liaisons hydrogène qui confèrent à la protéine sa structure tridimensionnelle caractéristique, appelée repliement globine car on le retrouve également dans d'autres globines à groupe prosthétique héminique telles que la myoglobine. Ce repliement caractéristique présente une cavité dans laquelle est étroitement insérée une molécule d'hème constituant le groupe prosthétique de la protéine. L'hémoglobine contient donc une molécule d'hème par sous-unité.\n\nChez la plupart des vertébrés, la molécule d'hémoglobine est un assemblage de quatre sous-unités globulaires selon un arrangement grossièrement tétraédrique. Ces sous-unités sont maintenues ensemble par des liaisons hydrogène, par des liaisons ioniques et par effet hydrophobe. Chez l'Homme adulte, le type d'hémoglobine le plus courant est l'hémoglobine A, constituée de deux sous-unités α et deux sous-unités β, formées chacune de 141 et 146 résidus d'acides aminés respectivement. Cette structure est symbolisée par α2β2. Ces sous-unités sont structurellement très semblables et ont sensiblement la même taille. Chacune a une masse moléculaire d'environ 16 kDa, soit 64 kDa (64 458 g·mol-1) pour la protéine complète. Chez l'enfant, l'hémoglobine principale est dite hémoglobine F (fœtale), de formule α2γ2, les chaînes γ étant progressivement remplacée par des chaînes β au cours de la croissance."
+        }
+      ],
+      "nb_mots_decouverte": 313,
+      "nb_mots_approfondi": 1010,
+      "sujet_id": "hemoglobine",
+      "origine": "encyclopedie"
+    },
+    "citation": {
+      "texte": "Ce qui se conçoit bien s'énonce clairement, et les mots pour le dire arrivent aisément.",
+      "auteur": "Nicolas Boileau",
+      "source": "L'Art poétique, chant I",
+      "annee": 1674
+    },
+    "meteo": {
+      "villes_detail": [
+        {
+          "ville": "Antibes",
+          "temperature_actuelle": 16.0,
+          "temperature_max": 19.1,
+          "temperature_min": 12.2,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 13.2,
+          "vent_max_kmh": 30.0,
+          "rafales_max_kmh": 58.3,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 15.1,
+              "temperature_max": 18.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 19,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 16.2,
+              "temperature_max": 19.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 12,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 12.2,
+              "temperature_max": 15.1,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 11,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Cannes",
+          "temperature_actuelle": 15.8,
+          "temperature_max": 18.6,
+          "temperature_min": 11.9,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 38.7,
+          "vent_max_kmh": 43.9,
+          "rafales_max_kmh": 70.2,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 15.1,
+              "temperature_max": 17.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 39,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 16.4,
+              "temperature_max": 18.6,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 19,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 11.9,
+              "temperature_max": 15.3,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 13,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": [
+            "Rafales jusqu'à 70 km/h"
+          ]
+        },
+        {
+          "ville": "Valbonne",
+          "temperature_actuelle": 11.0,
+          "temperature_max": 18.2,
+          "temperature_min": 9.7,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 10.4,
+          "vent_max_kmh": 23.8,
+          "rafales_max_kmh": 43.6,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 10.8,
+              "temperature_max": 15.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 12,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 13.7,
+              "temperature_max": 18.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 10.1,
+              "temperature_max": 12.2,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 9,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        },
+        {
+          "ville": "Grasse",
+          "temperature_actuelle": 10.3,
+          "temperature_max": 17.4,
+          "temperature_min": 8.8,
+          "precipitation_mm": 0.0,
+          "probabilite_pluie_pct": 0,
+          "vent_kmh": 5.5,
+          "vent_max_kmh": 30.4,
+          "rafales_max_kmh": 57.2,
+          "weather_code": 0,
+          "description": "ciel dégagé",
+          "periodes": [
+            {
+              "label": "Matin",
+              "temperature_min": 10.3,
+              "temperature_max": 15.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Après-midi",
+              "temperature_min": 13.9,
+              "temperature_max": 17.4,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 8,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            },
+            {
+              "label": "Soir",
+              "temperature_min": 9.4,
+              "temperature_max": 11.9,
+              "probabilite_pluie_pct": 0,
+              "precipitation_mm": 0.0,
+              "vent_max_kmh": 10,
+              "weather_code": 0,
+              "description": "ciel dégagé"
+            }
+          ],
+          "alertes": []
+        }
+      ],
+      "temperature_max_zone": 19.1,
+      "temperature_min_zone": 8.8,
+      "probabilite_pluie_max_pct": 0,
+      "vent_max_kmh": 43.9,
+      "description_dominante": "ciel dégagé",
+      "periodes": [
+        {
+          "label": "Matin",
+          "temperature_min": 10.3,
+          "temperature_max": 18.1,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 39,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        },
+        {
+          "label": "Après-midi",
+          "temperature_min": 13.7,
+          "temperature_max": 19.1,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 19,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        },
+        {
+          "label": "Soir",
+          "temperature_min": 9.4,
+          "temperature_max": 15.3,
+          "probabilite_pluie_pct": 0,
+          "precipitation_mm": 0.0,
+          "vent_max_kmh": 13,
+          "weather_code": 0,
+          "description": "ciel dégagé"
+        }
+      ],
+      "alertes": [
+        "Rafales jusqu'à 70 km/h"
+      ],
+      "resume": "Ciel dégagé toute la journée, de 9° à 19°."
+    },
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "A Christmas Carol",
+      "auteur": "Charles Dickens",
+      "annee": 1843,
+      "segments": [
+        {
+          "t": "Marley was dead: to begin with",
+          "g": "pour commencer"
+        },
+        {
+          "t": ". There is no doubt whatever about that. The register of his burial",
+          "g": "l'enterrement"
+        },
+        {
+          "t": " was signed by the clergyman",
+          "g": "le pasteur"
+        },
+        {
+          "t": ", the clerk, the undertaker",
+          "g": "le croque-mort"
+        },
+        {
+          "t": ", and the chief mourner",
+          "g": "le principal parent en deuil"
+        },
+        {
+          "t": ". Scrooge signed it: and Scrooge's name was good upon 'Change",
+          "g": "la Bourse"
+        },
+        {
+          "t": ", for anything he chose to put his hand to",
+          "g": "apposer sa signature à"
+        },
+        {
+          "t": ". Old Marley was as dead as a door-nail",
+          "g": "bel et bien mort"
+        },
+        {
+          "t": ". Mind! I don't mean to say that I know, of my own knowledge, what there is particularly dead about a door-nail. I might have been inclined, myself, to regard a coffin-nail as the deadest piece of ironmongery",
+          "g": "la quincaillerie"
+        },
+        {
+          "t": " in the trade. But the wisdom of our ancestors is in the simile",
+          "g": "la comparaison"
+        },
+        {
+          "t": "; and my unhallowed",
+          "g": "profanes"
+        },
+        {
+          "t": " hands shall not disturb it, or the Country's done for",
+          "g": "fichu"
+        },
+        {
+          "t": ".",
+          "g": null
+        }
+      ],
+      "texte_glose": "Marley was dead: to begin with (= pour commencer). There is no doubt whatever about that. The register of his burial (= l'enterrement) was signed by the clergyman (= le pasteur), the clerk, the undertaker (= le croque-mort), and the chief mourner (= le principal parent en deuil). Scrooge signed it: and Scrooge's name was good upon 'Change (= la Bourse), for anything he chose to put his hand to (= apposer sa signature à). Old Marley was as dead as a door-nail (= bel et bien mort). Mind! I don't mean to say that I know, of my own knowledge, what there is particularly dead about a door-nail. I might have been inclined, myself, to regard a coffin-nail as the deadest piece of ironmongery (= la quincaillerie) in the trade. But the wisdom of our ancestors is in the simile (= la comparaison); and my unhallowed (= profanes) hands shall not disturb it, or the Country's done for (= fichu)."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Présidentielle 2027 : Marine Le Pen couperait les subventions du Planning familial s'il continue « à faire de la politique »."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_d": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 1
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-11-23T06:10:47.407512+01:00"
+}
