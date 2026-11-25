@@ -1,76 +1,92 @@
 {
-  "date": "2026-11-24",
-  "derniere_mise_a_jour": "2026-11-24T06:13:52.144120+01:00",
+  "date": "2026-11-25",
+  "derniere_mise_a_jour": "2026-11-25T06:14:41.776834+01:00",
   "briefing": {
     "actualite": {
       "france": [
         {
-          "titre": "Après des résultats d’audience en berne, Cyril Hanouna arrête sa quotidienne sur Fun Radio : «Pourquoi me payer aussi cher pour faire si peu ?»",
-          "resume": "Citant des divergences éditoriales, l’animateur et la station ont annoncé conjointement ce lundi 23 novembre la fin de «Ça va secouer», en proie, aussi, à une fuite d’auditeurs depuis un an.",
-          "pourquoi_important": null,
+          "titre": "Présidentielle 2027 : Edouard Philippe souhaite un débat télévisé avec David Lisnard, qu’il soupçonne de ne pas être « étanche » vis-à-vis de l’extrême droite",
+          "resume": "Le candidat Horizons a rapproché au maire de Cannes de vouloir travailler avec la droite et la « droite extrême ». De son côté, le candidat Nouvelle Energie s’est engagé à continuer « à défendre les mairies » s’il était élu à l’Elysée.",
+          "pourquoi_important": "Le débat télévisé et les positions vis‑à‑vis de l’extrême droite peuvent influencer la dynamique de la campagne présidentielle de 2027.",
           "consequences": null,
-          "statut": "information_rapportee",
+          "statut": "fait_confirme",
           "sources": [
-            "Libération"
-          ]
-        },
-        {
-          "titre": "Présidentielle 2027 : La candidature de David Lisnard va agiter le congrès des maires de France",
-          "resume": "",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
+            "Le Monde",
+            "France Info",
             "20 Minutes"
           ]
         },
         {
-          "titre": "Retraites, droits de succession, niches fiscales... Dominique de Villepin présente les premières mesures de son programme pour la présidentielle",
-          "resume": "Interrogé sur franceinfo et France 2 lundi, l'ancien Premier ministre a expliqué prévoir, s'il parvient à être élu, de réunir les parlementaires pour leur demander \"de s'entendre et d'être capable de déterminer la formation d'un gouvernement de mission\".",
+          "titre": "Projet de loi logement adopté à l’Assemblée nationale : «J’aurais bien aimé qu’on examine ce texte en pleine canicule»",
+          "resume": "Le ministre du logement, Vincent Jeanbrun, mise sur la suppression, lors de la commission mixte paritaire de décembre, de l’amendement du RN qui met fin à l’interdiction de louer les passoires thermiques.",
           "pourquoi_important": null,
           "consequences": null,
-          "statut": "information_rapportee",
+          "statut": "fait_confirme",
           "sources": [
-            "France Info"
-          ]
-        },
-        {
-          "titre": "Présidentielle : la date du 2 mai 2027 ne passe (toujours) pas",
-          "resume": "Le gouvernement prévoit d’organiser le scrutin les 18 avril et 2 mai 2027. Mais certains, comme la numéro 1 de la CFDT, Marylise Léon, et le président du Sénat, Gérard Larcher, demandent un changement du calendrier électoral. Dans les partis aussi, l’option retenue fait aussi débat.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
+            "Le Monde",
+            "France Info",
             "Libération"
           ]
         },
         {
-          "titre": "Faut-il changer les dates de l'élection présidentielle ? On fait le point sur ce débat qui agite la classe politique",
-          "resume": "Les dates entérinées par l'exécutif prévoient un premier tour le 18 avril, et un second tour le 2 mai. Or, cela pose différents casse-tête à la classe politique, aux syndicats... et aux médias.",
-          "pourquoi_important": null,
+          "titre": "On vous explique pourquoi les créateurs de contenus contestent les règles de pluralisme que l'Arcom veut leur imposer pour la présidentielle de 2027",
+          "resume": "Le gendarme de l'audiovisuel souhaite que les principaux créateurs de contenus en ligne, comme HugoDécrypte ou Guillaume Pley, respectent des règles de temps de parole et de déontologie durant la campagne présidentielle.",
+          "pourquoi_important": "Les règles de pluralisme de l’Arcom peuvent affecter la visibilité et la liberté d’expression des créateurs en ligne pendant la campagne présidentielle.",
           "consequences": null,
           "statut": "information_rapportee",
           "sources": [
             "France Info"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : LFI, force d’attraction à gauche",
+          "resume": "Après la majorité du groupe communiste à l’Assemblée nationale, puis la secrétaire nationale des Ecologistes, Marine Tondelier, le parti Génération.s apporte, à son tour, son soutien à Jean-Luc Mélenchon, en vue du scrutin d’avril 2027. La France insoumise lorgne désormais sur la candidature de Fabien Roussel.",
+          "pourquoi_important": "Le soutien de LFI à Mélenchon et la possible candidature de Fabien Roussel renforcent l’unité et la stratégie de la gauche pour l’élection de 2027.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Violences économiques : «Les sanctions doivent être accompagnées d’une réelle politique d’éducation»",
+          "resume": "L’avocate Violaine De Filippis-Abate dénonce l’insuffisance des dispositifs juridiques existants en matière de violences économiques, qui souvent s’accompagnent d’autres formes de violences.",
+          "pourquoi_important": "L’appel à une politique d’éducation vise à renforcer l’efficacité des sanctions contre les violences économiques.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
           ]
         }
       ],
       "monde": [
         {
-          "titre": "Guerre en Ukraine : la Libye réclame des explications à Kiev après les attaques contre des navires russes près de Benghazi",
-          "resume": "Volodymyr Zelensky a confirmé que des drones sous-marins ukrainiens ont coulé une corvette russe près de Benghazi et poursuivent des opérations dans la zone. Tripoli condamne ces attaques et exige des explications.",
+          "titre": "En Colombie, le président et l’armée à Carthagènes pour une prise d’otages en cours dans un supermarché",
+          "resume": "Le président Abelardo de la Espriella a affirmé que cette prise d’otages relevait de la criminalité de droit commun, excluant toute implication des groupes armés ayant commis des attentats ces derniers mois.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "Libération",
+            "Le Monde",
+            "20 Minutes",
             "Le Monde International",
             "France 24 International"
           ]
         },
         {
-          "titre": "Les États-Unis annoncent de nouvelles sanctions pour priver l’Iran de rentrées d’argent",
-          "resume": "Le Trésor américain a identifié des milliards de dollars de transactions suspectes liées à l’Iran entre 2025 et 2026, justifiant de nouvelles sanctions ciblées.",
+          "titre": "Guerre en Ukraine : deux militaires libyens succombent à leurs blessures après les frappes revendiquées par Kiev contre des navires russes à Benghazi",
+          "resume": "Saddam Haftar a dénoncé une « attaque criminelle » contre la base navale de Benghazi, où une corvette russe a été coulée et un cargo touché lors d’une opération revendiquée par l’Ukraine.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Relancer ou non la guerre : l’alliance israélo-américaine au défi du réarmement iranien",
+          "resume": "Benyamin Nétanyahou plaide pour une reprise rapide des frappes sur l’Iran, mais Donald Trump, marqué par la défaite électorale de son camp, a reporté sa décision jusqu’à janvier.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
@@ -80,18 +96,8 @@
           ]
         },
         {
-          "titre": "Au Yémen, les Houthis déplorent 25 morts ou disparus dans des frappes saoudiennes",
-          "resume": "Une agence houthie signale 25 morts ou disparus après des frappes saoudiennes contre des autocars et des camions dans le sud du Yémen, en plus de 17 morts dans la province de Hodeïda.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "France 24 International"
-          ]
-        },
-        {
-          "titre": "Guerre en Ukraine : L’Otan met un avion de reconnaissance AWACS à la disposition de la Pologne",
-          "resume": "L’Alliance atlantique a déployé un avion de surveillance AWACS pour renforcer la capacité de surveillance aérienne de la Pologne dans le cadre de la guerre en Ukraine.",
+          "titre": "Guerre en Ukraine : Le président biélorusse prêt à accompagner Zelensky à Moscou pour discuter",
+          "resume": null,
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
@@ -100,43 +106,41 @@
           ]
         },
         {
-          "titre": "Présidentielle 2027 : « Tintin au Congo »… Teddy Riner aurait déposé plainte contre l’ex-directrice de cabinet de Sarkozy",
-          "resume": "Récent candidat à la présidentielle 2027, Teddy Riner aurait déposé plainte contre Emmanuelle Mignon, ex-directrice de cabinet de Nicolas Sarkozy, après sa comparaison de la première visite de campagne du judoka avec « Tintin au Congo »",
+          "titre": "Israël : le parti de gauche Les Démocrates suspend les négociations de coalition avec Gadi Eisenkot",
+          "resume": "Le parti de Yaïr Golan bloque les discussions avec Gadi Eisenkot en raison de désaccords sur l’inclusion de listes à majorité arabe dans une coalition.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "20 Minutes",
-            "Libération"
-          ],
-          "complete_par_code": true
+            "Le Monde",
+            "Le Monde International"
+          ]
         },
         {
-          "titre": "Selon Le Monde, Deux navires russes attaqués dans les eaux libyennes, une extension inédite de la guerre russo-ukrainienne",
-          "resume": "Le président ukrainien, Volodymyr Zelensky, a revendiqué, lundi 23 novembre, le double assaut mené la veille par « sept drones navals » dans la zone maritime de Benghazi. Une telle attaque contre des bateaux russes transportant de l’armement permet à Kiev de montrer que ses forces sont en mesure de frapper les intérêts de Moscou où qu’ils se trouvent.",
-          "pourquoi_important": null,
-          "consequences": null,
-          "statut": "information_rapportee",
-          "sources": [
-            "Le Monde"
-          ],
-          "complete_par_code": true
-        },
-        {
-          "titre": "Nvidia : Jensen Huang retrouve ses fonctions de directeur général",
-          "resume": "Nvidia a annoncé ⁠lundi que Jensen Huang ​reprenait avec effet immédiat son poste de directeur général de l'entreprise, spécialisée dans les puces pour intelligence artificielle, 11 jours après sa démission suite à la révélation de relations extraconjugales, dont l'une avec ​une espionne chinoise présumée.",
+          "titre": "Au Brésil, le gouvernement Lula fait voter un plan de rigueur budgétaire controversé",
+          "resume": "Le plan modifie la loi pour allouer une partie des recettes pétrolières à la santé et à l’éducation, suscitant des critiques au sein de la gauche.",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "fait_confirme",
           "sources": [
-            "France 24 International",
-            "20 Minutes"
-          ],
-          "complete_par_code": true
+            "Le Monde",
+            "Le Monde International"
+          ]
         },
         {
-          "titre": "Selon France 24 International, L'attaque ukrainienne à Benghazi attise les tensions en Libye et en Méditerranée",
-          "resume": "À la suite de l'attaque ukrainienne contre un navire de guerre russe à Benghazi, des publications sur les réseaux sociaux détournent d'anciennes vidéos pour illustrer les événements. Elles ont été prises en Grèce il y a plusieurs mois. Par ailleurs, une question revient sur les réseaux sociaux : d'où sont partis les drones marins utilisés pour l'attaque ? Les accusations fusent et ravivent les tensions entre les rivaux de l'ouest et de l'est de la Libye. Jules BOITEAU dans Info Intox.",
+          "titre": "En Allemagne, Die Linke exclut une de ses élues, accusée d’antisémitisme, pour diriger la mairie de Berlin",
+          "resume": "Vanessa Emde a été exclue du parti pour antisémitisme, facilitant potentiellement un accord avec le SPD et les Verts pour gouverner Berlin avant 2027.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Selon France 24 International, Louis Giscard d'Estaing (UDI) : \"Il ne faut pas associer l'AMF à un projet politique personnel\"",
+          "resume": "Le congrès des maires de France s'est ouvert. David Lisnard est candidat à sa réélection à la tête de l'association mais aussi candidat à la présidentielle. Pour Louis Giscard d'Estaing, maire UDI de Chamalières, \"le calendrier de la candidature de David Lisnard n'est pas opportun\". Sur la primaire de la droite et du centre, il se pose la question des \"mérites d'une primaire si celui qui la gagne n'est pas soutenu par ses concurrents\".",
           "pourquoi_important": null,
           "consequences": null,
           "statut": "information_rapportee",
@@ -151,33 +155,23 @@
       "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
       "mouvements_notables": [
         {
-          "nom": "CAC 40",
-          "variation_pct": 1.48,
-          "explication": null
-        },
-        {
-          "nom": "S&P 500",
-          "variation_pct": 4.73,
-          "explication": null
-        },
-        {
           "nom": "Nasdaq",
-          "variation_pct": 6.51,
+          "variation_pct": -1.48,
           "explication": null
         },
         {
           "nom": "DAX",
-          "variation_pct": 2.15,
+          "variation_pct": -1.26,
           "explication": null
         },
         {
           "nom": "Euro Stoxx 50",
-          "variation_pct": 2.23,
+          "variation_pct": -1.16,
           "explication": null
         },
         {
           "nom": "Pétrole (Brent)",
-          "variation_pct": -3.63,
+          "variation_pct": -2.1,
           "explication": null
         }
       ]
@@ -186,44 +180,44 @@
       "items": [
         {
           "sport": "football",
-          "texte": "Diego Simeone a enregistré sa 345e victoire en Liga, établissant un nouveau record pour le manager de l'Atletico Madrid."
+          "texte": "Le RC Lens a perdu 1-3 contre Leipzig après avoir encaissé deux buts avant la 10e minute, ce qui constitue sa quatrième défaite en Ligue des champions."
         },
         {
           "sport": "football",
-          "texte": "Endrick, attaquant du Real Madrid, est blessé à l'adducteur gauche et devrait être absent du match de Ligue des champions contre le PSV Eindhoven."
+          "texte": "Le RC Lens, entraîné par Didier Digard, affrontera Leipzig avec Florian Sotoca en attaque et Ismaëlo Ganiou de retour de blessure."
         },
         {
           "sport": "football",
-          "texte": "Lamine Yamal du FC Barcelone ne se rendra pas en Azerbaïdjan pour le match de Ligue des champions contre Sabah en raison d'une gêne à la cheville droite."
-        },
-        {
-          "sport": "rugby",
-          "texte": "Karl Dickson, arbitre anglais, dirigera la finale du Championnat des nations entre la France et l'Afrique du Sud à Twickenham, assisté d'Andrew Brace et de James Doleman."
-        },
-        {
-          "sport": "rugby",
-          "texte": "Pour la finale du Championnat des nations, le sélectionneur des Springboks a placé Sacha Feinberg-Mngomezulu à l'arrière et Manie Libbok au poste d'ouvreur."
+          "texte": "Après une défaite 3-1 contre Leipzig, le RC Lens voit la qualification pour les barrages devenir quasi impossible."
         },
         {
           "sport": "basketball",
-          "texte": "Zacharie Perrin, après sa signature avec Baskonia, sera absent de la préparation aux qualifications pour la Coupe du monde 2027 avec l'équipe de France et ne sera pas remplacé."
+          "texte": "L'ASVEL a perdu à domicile 91-95 contre Milan lors de la 14e journée de l'Euroligue, portant son bilan à 4 victoires pour 10 défaites."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Guerschon Yabusele, joueur du Panathinaïkos, estime devoir recevoir une bague de champion NBA de la part des New York Knicks."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Cameron Boozer, ailier des Memphis Grizzlies, est absent au moins un mois à cause d’une entorse de la cheville droite, ce qui retardera son évaluation pour le titre de Rookie de l'année."
         },
         {
           "sport": "tennis",
-          "texte": "Arthur Fils a atteint la sixième place mondiale au classement ATP, son meilleur classement à ce jour."
+          "texte": "Alexander Zverev, vainqueur de Roland Garros et de l'US Open, est devenu numéro 1 mondial en terminant l'année avec le moins de titres sur le circuit ATP."
         },
         {
-          "sport": "tennis",
-          "texte": "Alexander Zverev a accru son avance sur Jannik Sinner après avoir été finaliste du Masters."
+          "sport": "rugby",
+          "texte": "Tommy Freeman revient dans le groupe du XV de la Rose pour le match de troisième place contre les All Blacks, alors que Will Jordan est forfait et le capitaine Codie Taylor est incertain."
         }
       ],
       "rien_a_signaler": false,
       "prochains_matchs": [
         {
-          "affiche": "Arsenal – Borussia Dortmund",
+          "affiche": "Barcelona – Manchester City",
           "competition": "Ligue des champions",
-          "date_iso": "2026-11-24T20:00:00+00:00",
-          "date_texte": "mardi 24 novembre à 21h00",
+          "date_iso": "2026-12-08T20:00:00+00:00",
+          "date_texte": "mardi 8 décembre à 21h00",
           "sport": "football"
         },
         {
@@ -237,308 +231,86 @@
     },
     "science": {
       "mode": "decouverte",
-      "titre": "La COP31 s'est achevée sans accord : un signal fort sur les tensions autour des énergies fossiles",
-      "contenu_markdown": "Ce blocage historique illustre les profondes divisions persistantes entre les pays sur la réduction des énergies fossiles, un enjeu central pour limiter le réchauffement climatique.\n\nCertains États, notamment producteurs de combustibles fossiles, ont refusé de s’engager sur des objectifs contraignants de réduction, tandis que d’autres, soutenus par des organisations scientifiques et environnementales, ont insisté sur l’urgence d’agir. La COP31 a ainsi révélé l’ampleur des obstacles politiques et économiques à une transition énergétique mondiale harmonisée.\n\nSi cet échec n’a pas abouti à un texte final, il envoie un message clair : les pressions pour une action climatique renforcée ne faiblissent pas. Les détails des positions en présence et des propositions rejetées sont à consulter dans les comptes-rendus officiels de la COP31.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03827-0\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Effet de serre\n\n## Introduction\nL’effet de serre est un phénomène naturel essentiel pour comprendre les températures observées à la surface des planètes dotées d’une atmosphère, comme la Terre, Vénus ou Titan. Ce mécanisme, souvent évoqué dans le débat sur le réchauffement climatique, repose sur des principes physiques simples mais complexes à décrire précisément. Son nom fait référence à l’analogie avec les serres agricoles, où une enveloppe transparente piège la chaleur, mais le processus atmosphérique fonctionne selon des règles différentes.\n\n## Pourquoi ce sujet est-il important ?\nL’effet de serre est un pilier de la climatologie. Sur Terre, il maintient des conditions propices à la vie en réchauffant la surface, mais son intensification par les activités humaines (émissions de gaz comme le dioxyde de carbone) perturbe cet équilibre. Comprendre ce mécanisme permet d’anticiper les conséquences du changement climatique et d’évaluer les stratégies pour limiter son impact.\n\n## Explication du phénomène\nL’effet de serre repose sur l’interaction entre le rayonnement solaire, la surface terrestre et l’atmosphère. Voici les étapes clés :\n1. Une partie de cette énergie est réfléchie vers l’espace (albédo), tandis que le reste est absorbé par les sols, les océans et l’atmosphère.\n2. **Réémission sous forme de chaleur** : Les surfaces chauffées réémettent cette énergie, mais sous forme de rayonnement infrarouge (longues ondes, invisibles), correspondant à la chaleur.\n3. **Rôle de l’atmosphère** : Certains gaz présents dans l’atmosphère, appelés *gaz à effet de serre* (comme la vapeur d’eau ou le dioxyde de carbone), absorbent une partie de ce rayonnement infrarouge et le réémettent dans toutes les directions, dont vers la surface. Cela crée un effet de \"piège\" thermique, augmentant la température moyenne.\n\nContrairement à une idée reçue, ce n’est pas le verre des serres qui retient la chaleur (comme l’a démontré l’expérience de Robert Wood en 1909), mais bien la composition gazeuse de l’atmosphère qui modifie le bilan radiatif.\n\n## Fonctionnement et mécanismes\nLe mécanisme repose sur deux principes physiques :\n- **Sélectivité spectrale** : Les gaz à effet de serre n’absorbent pas également toutes les longueurs d’onde. Cette asymétrie est cruciale : sans elle, l’atmosphère ne modifierait pas significativement la température.\n- **Équilibre radiatif** : En réémettant une partie du rayonnement vers le sol, les gaz à effet de serre augmentent la température de surface jusqu’à ce qu’un nouvel équilibre s’installe entre l’énergie reçue du Soleil et celle réémise vers l’espace. Plus leur concentration est élevée, plus cet équilibre se déplace vers des températures plus hautes.\n\nLes principaux gaz impliqués sont :\n- La **vapeur d’eau** (responsable de l’essentiel de l’effet de serre naturel, mais dont la durée de vie dans l’atmosphère est courte).\n- D’autres gaz en moindre quantité, comme le méthane (CH₄) ou l’ozone (O₃), qui ont un pouvoir réchauffant bien plus élevé.\n\nL’atmosphère agit aussi comme un régulateur dynamique : les courants de convection, les nuages ou les cycles de l’eau (évaporation, condensation) redistribuent la chaleur et influencent localement l’effet de serre. Sans ces mécanismes, les contrastes thermiques entre les régions équatoriales et polaires seraient bien plus marqués.\n\n## Données et résultats scientifiques\n\nLes premières quantifications de l’impact des gaz à effet de serre remontent à la fin du XIXᵉ siècle. Svante Arrhenius, en 1896, a estimé qu’un doublement de la concentration de dioxyde de carbone dans l’atmosphère entraînerait une hausse d’environ **4 °C** de la température moyenne terrestre. Cette valeur, obtenue à partir de calculs thermodynamiques rudimentaires, constitue l’une des premières tentatives chiffrées de relier la composition atmosphérique au climat.  \n\nLes travaux de John Tyndall (1861) ont identifié la vapeur d’eau et le dioxyde de carbone comme les principaux gaz capables d’absorber le rayonnement infrarouge. Les expériences de Eunice Foote (1856) avaient déjà montré que le dioxyde de carbone retient la chaleur plus efficacement que l’air pur.  \n\nLes observations modernes, bien que non détaillées dans le texte source, confirment que la température moyenne de la surface terrestre est supérieure à ce qu’elle serait sans atmosphère, et qu’elle augmente avec la concentration croissante de ces gaz. Le bilan radiatif, tel que défini par le GIEC, décrit quantitativement cet excès de chaleur réémis vers le sol.  \n\n## Ce que les scientifiques savent\n\n- **Principe fondamental** : l’atmosphère absorbe une partie du rayonnement infrarouge émis par la surface terrestre et le réémet dans les deux sens, augmentant ainsi la température du sol par rapport à une situation sans atmosphère.  \n- **Gaz à effet de serre majeurs** : la vapeur d’eau et le dioxyde de carbone sont les principaux contributeurs à l’absorption infrarouge, comme le démontrent les expériences de Tyndall.  \n- **Bilan radiatif** : le réchauffement de la surface résulte de l’ajout du rayonnement réémis vers le bas au rayonnement solaire direct. Le GIEC utilise le terme de *forçage radiatif* pour quantifier l’influence d’une variation de la concentration de ces gaz.  \n- **Historique solide** : depuis les mesures de Saussure (1780) jusqu’aux calculs d’Arrhenius (1896), le phénomène a été étudié de façon continue, consolidant la compréhension actuelle de l’effet de serre comme processus naturel indispensable à la température des planètes à atmosphère dense (Terre, Vénus, Titan).  \n\n## Ce qui reste incertain\n\n- **Quantification précise du forçage radiatif** : bien que le principe soit établi, la valeur exacte du forçage associé à chaque gaz, ainsi que les interactions complexes avec les nuages, l’albédo et les courants océaniques, demeurent sujettes à des recherches actives.  \n- **Contribution relative des différents gaz** : la part exacte de la vapeur d’eau versus le dioxyde de carbone dans le réchauffement actuel n’est pas entièrement résolue, en raison de la variabilité naturelle de la vapeur d’eau.  \n- **Évolution future** : les scénarios climatiques dépendent de projections incertaines concernant les émissions anthropiques, les rétroactions climatiques et les changements d’albédo planétaire.  \n\n## Limites et controverses éventuelles\n\n- **Terminologie** : le terme « effet de serre » a été popularisé dans les années 1980 pour simplifier la communication du réchauffement climatique, alors que le GIEC préfère le terme « bilan radiatif » pour éviter les confusions avec le fonctionnement d’une serre horticole. Cette différence de vocabulaire peut entraîner des malentendus, mais ne remet pas en cause le mécanisme physique sous‑jacent.  \n- **Interprétation historique** : certaines contributions, comme celles d’Eunice Foote, ont été longtemps négligées dans la littérature scientifique traditionnelle, soulevant des débats sur la reconnaissance des pionnières.  \n\n## Conclusion\n\nL’effet de serre est un phénomène naturel bien documenté depuis le XVIIIᵉ siècle, reposant sur l’interaction entre le rayonnement solaire, l’atmosphère et la surface d’un corps céleste. Les expériences historiques et les calculs d’Arrhenius ont posé les bases d’une compréhension quantitative, tandis que les travaux modernes affinent le bilan radiatif et les contributions spécifiques des différents gaz. Malgré une connaissance solide du mécanisme, des incertitudes subsistent quant aux quantifications précises du forçage radiatif, aux rétroactions climatiques et aux projections futures. La recherche continue d’améliorer les modèles et de réduire les marges d’erreur, afin d’éclairer les décisions politiques et sociétales liées au climat.\n\n## Sources\n- Wikipédia (fr) — Effet de serre — https://fr.wikipedia.org/wiki/Effet_de_serre\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
-      "phrases_retirees_garde_fou": 9,
-      "nb_mots": 1341,
+      "titre": "Comment distinguer les résultats scientifiques valides des productions générées par l'intelligence artificielle ?",
+      "contenu_markdown": "Les chercheurs et les revues scientifiques font face à un défi croissant : identifier les travaux issus d’outils d’intelligence artificielle (IA) sans pénaliser les recherches légitimes qui les utilisent de manière appropriée. Cette question, abordée dans *Nature* le 24 novembre 2026, souligne l’urgence de développer des méthodes pour détecter les contenus générés par l’IA dans les soumissions scientifiques, tout en préservant l’innovation et l’intégrité de la recherche.\n\nL’enjeu principal réside dans la prolifération de ce que les experts appellent le *« AI slop »* (littéralement, *« déchets d’IA »*), c’est-à-dire des textes, données ou analyses produites automatiquement par des modèles d’IA, souvent de faible qualité ou inexactes, mais qui peuvent être soumis à des revues scientifiques par des auteurs peu scrupuleux. Ces productions, bien que non originales, peuvent brouiller la ligne entre plagiat et utilisation légitime de l’IA comme outil d’assistance (par exemple, pour la rédaction ou l’analyse de données).\n\nPour l’instant, aucune solution technique ou éthique universellement adoptée n’existe. Les revues scientifiques explorent différentes pistes :\n- Leur efficacité reste limitée, car les modèles d’IA utilisés en recherche sont souvent plus spécialisés et moins faciles à identifier.\n- **Des lignes directrices claires** pour les auteurs, exigeant une transparence sur l’usage de l’IA (par exemple, en déclarant quels outils ont été employés et à quelle étape du processus). Certaines revues commencent à intégrer ces règles, mais leur application varie.\n- **Un renforcement des pairs évaluateurs**, avec une formation accrue pour repérer les incohérences ou les faiblesses méthodologiques typiques des productions automatisées.\n\nD’une part, les outils de détection actuels peuvent fausser positivement (accuser à tort un travail légitime d’être généré par l’IA) ou négativement (laisser passer des contenus douteux). D’autre part, la frontière entre une aide légitime de l’IA et une utilisation abusive reste floue : par exemple, utiliser un modèle pour générer des hypothèses de recherche peut être considéré comme acceptable, tandis que lui confier l’analyse complète d’un jeu de données soulève des questions éthiques.\n\nPour les chercheurs et les institutions, la priorité est de trouver un équilibre : éviter que les *« déchets d’IA »* ne polluent la littérature scientifique, sans pour autant décourager l’innovation que ces technologies pourraient apporter. Les détails sur les méthodes de détection en développement, ainsi que les retours d’expérience des revues pionnières, sont à consulter dans les articles sources de *Nature*.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03824-3\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Intelligence artificielle\n\nL’intelligence artificielle (IA) désigne à la fois un ensemble de technologies informatiques capables de reproduire des comportements associés à l’intelligence humaine — comme l’apprentissage, la résolution de problèmes ou la prise de décision — et un domaine scientifique dédié à leur conception. Contrairement à une idée reçue, elle ne se limite pas à imiter le cerveau humain, mais vise plutôt à résoudre des problèmes complexes par des méthodes algorithmiques, statistiques ou inspirées des sciences cognitives.\n\n## Pourquoi l’intelligence artificielle est-elle un sujet majeur ?\n\nL’IA transforme profondément des secteurs aussi variés que la médecine (aide au diagnostic), les transports (voitures autonomes), la communication (chatbots, traduction automatique) ou encore la création artistique (génération d’images, musique). Son impact économique et social est tel qu’elle soulève des questions cruciales : quels sont ses avantages pour la société ? Quels risques — éthiques, environnementaux ou liés à la désinformation — doit-on anticiper ? Son développement rapide, marqué par des avancées comme les réseaux de neurones artificiels (à partir de 2012) ou les grands modèles de langage (depuis 2017), en fait un sujet incontournable pour comprendre les mutations technologiques du XXIᵉ siècle.\n\n## Qu’est-ce que l’intelligence artificielle ?\n\nL’IA repose sur une définition technique proposée dès 1955 par le chercheur John McCarthy : *« la science et l’ingénierie de la fabrication de machines intelligentes »*. Cette définition souligne deux aspects clés :\n1. **L’aspect artificiel** : l’IA utilise des programmes informatiques et des algorithmes pour traiter des données.\n2. **L’aspect intelligent** : elle vise à reproduire des capacités cognitives, comme le raisonnement, la perception (visuelle ou auditive) ou l’adaptation à des situations nouvelles.\n\nContrairement aux systèmes traditionnels basés sur des règles prédéfinies, l’IA moderne s’appuie souvent sur des méthodes d’**apprentissage automatique** (*machine learning*), où les machines améliorent leurs performances en analysant de grandes quantités de données. Par exemple, un système capable de reconnaître des images (comme un filtre de réseau social) n’est pas programmé pour identifier chaque objet individuellement, mais apprend à partir d’exemples étiquetés.\n\n## Comment fonctionne l’intelligence artificielle ?\n\nLes mécanismes de l’IA varient selon les approches, mais plusieurs principes fondamentaux reviennent.\n\n## L’apprentissage à partir de données\nLa plupart des systèmes d’IA modernes utilisent des **algorithmes d’apprentissage** qui analysent des données pour détecter des motifs.\n- **Apprentissage supervisé** : le système est entraîné avec des données déjà classées (ex. : distinguer des chats et des chiens dans des photos).\n- **Apprentissage non supervisé** : il identifie des structures dans des données non étiquetées (ex. : regrouper des clients selon leurs habitudes d’achat).\n- **Apprentissage par renforcement** : le système apprend en interagissant avec son environnement (ex. : un robot qui optimise ses mouvements pour éviter des obstacles).\n\n## Les réseaux de neurones artificiels\nInspirés du fonctionnement du cerveau, ces modèles mathématiques simulent des réseaux de « neurones » connectés. Ils sont particulièrement efficaces pour traiter des données complexes comme :\n- Le **langage naturel** (compréhension ou génération de texte, comme dans les chatbots).\n- La **perception visuelle** (reconnaissance d’objets, génération d’images).\n- Les **jeux stratégiques** (comme les programmes capables de battre des champions humains aux échecs ou au Go).\n\n## La prise de décision automatisée\nL’IA peut aussi intégrer des règles logiques pour prendre des décisions, par exemple :\n- Dans la **logistique** (optimisation de trajets pour des livraisons).\n- En **médecine** (analyse d’imagerie médicale pour détecter des anomalies).\n- Dans les **systèmes de recommandation** (suggestions de films ou de produits en ligne).\n\n## Les limites des approches actuelles\nBien que puissants, ces systèmes ont des contraintes :\n- Ils dépendent fortement de la **qualité et de la représentativité des données** utilisées pour les entraîner.\n- Leur fonctionnement interne reste souvent **opaque** (on parle de « boîte noire »), ce qui pose des défis pour expliquer leurs décisions.\n- Ils ne possèdent pas de **conscience** ni de compréhension profonde du monde : ils excellent dans des tâches spécifiques, mais sans intention ni créativité au sens humain.\n\nCes mécanismes, combinés à des outils mathématiques comme les **statistiques** ou l’**algèbre linéaire**, permettent à l’IA de progresser dans des domaines où les méthodes traditionnelles seraient inefficaces. Leur évolution continue de redéfinir les possibilités technologiques, tout en soulevant des questions sur leur régulation et leur impact sociétal.\n\n## Données et résultats scientifiques\n\nLes connaissances consolidées sur l’intelligence artificielle proviennent d’une longue série d’études et de développements décrits dans la littérature encyclopédique. Les faits établis incluent :\n\n- L’IA regroupe des systèmes capables d’accomplir des tâches associées à l’intelligence humaine : apprentissage, raisonnement, résolution de problèmes, perception et prise de décision.  \n- Le domaine s’appuie sur des fondements mathématiques (statistiques, algèbre linéaire, probabilités) et sur des concepts issus des sciences cognitives.  \n- Depuis les débuts du champ en 1956, plusieurs vagues d’optimisme et de déception ont été observées, reflétant les progrès technologiques et les limites rencontrées.  \n- À partir de 2012, l’utilisation de processeurs graphiques a fortement accéléré les réseaux de neurones, favorisant l’apprentissage automatique par rapport aux approches basées sur des règles explicites.  \n- L’émergence de l’architecture dite « transformeur » en 2017 a permis le développement de grands modèles de langage entraînés sur d’immenses corpus textuels.  \n- En 2022, les modèles génératifs, illustrés par le lancement de ChatGPT, ont popularisé l’IA générative auprès du grand public.  \n\nCes points sont documentés dans les articles de référence de Wikipédia sur l’intelligence artificielle. Les données chiffrées détaillées (par exemple, nombre de paramètres de modèles, performances sur des jeux de données spécifiques) sont disponibles dans les publications scientifiques citées dans ces articles et doivent être consultées directement pour des informations précises.\n\n## Ce que les scientifiques savent\n\nLes chercheurs s’accordent sur plusieurs aspects fondamentaux de l’IA :\n\n1. **Définition et portée** – L’IA désigne l’ensemble des systèmes informatiques capables d’exécuter des fonctions cognitives typiquement humaines. Elle englobe l’apprentissage automatique, qui à son tour comprend l’apprentissage profond.  \n2. **Fondements théoriques** – Les algorithmes d’IA reposent sur des principes mathématiques rigoureux (statistiques, algèbre linéaire, probabilités) et sur des modèles inspirés de la cognition.  \n3. **Applications concrètes** – Les systèmes d’IA sont déjà déployés dans de nombreux domaines : moteurs de recherche, systèmes de recommandation, aide au diagnostic médical, compréhension du langage naturel, véhicules autonomes, chatbots, génération d’images, prise de décision automatisée, jeux de stratégie et personnages non‑joueurs.  \n4. L’architecture transformeur a introduit une nouvelle façon de traiter les séquences de données, conduisant à des modèles de langage très performants.  \n5. **Enjeux sociétaux** – La communauté scientifique reconnaît que l’IA soulève des questions importantes concernant l’emploi, la désinformation, l’impact environnemental et la protection des données personnelles. Certains experts évoquent même la possibilité d’un risque existentiel lié à des avancées très rapides.\n\n## Ce qui reste incertain\n\nMalgré ces acquis, plusieurs incertitudes subsistent :\n\n- **Gestion de la désinformation** – La capacité des systèmes génératifs à produire du texte ou des images réalistes pose la question de leur utilisation malveillante, mais les mécanismes précis de prévention et de détection restent en cours de recherche.  \n- **Empreinte environnementale** – Bien que l’on sache que l’entraînement de grands modèles consomme de l’énergie, les estimations exactes de l’impact carbone global de l’ensemble du cycle de vie des systèmes d’IA sont encore débattues.  \n- **Risques existentiels** – L’idée que l’IA pourrait représenter un danger existentiel est avancée par certains penseurs, mais il n’existe pas de preuve empirique ou de modèle consensuel permettant d’évaluer la probabilité ou les scénarios de tels risques.  \n- **Définition précise** – Malgré de nombreuses tentatives de formalisation, aucune définition unique de l’IA n’est universellement acceptée ; les débats portent sur la portée (imitation de l’intelligence humaine vs rationalité abstraite) et sur les critères de « véritable intelligence ».\n\n## Limites et controverses éventuelles\n\nLes limites techniques et les controverses autour de l’IA peuvent être résumées ainsi :\n\n- **Biais et équité** – Les systèmes d’apprentissage automatique reproduisent souvent les biais présents dans les données d’entraînement, ce qui soulève des controverses éthiques quant à l’équité des décisions automatisées.  \n- **Transparence et explicabilité** – Les modèles les plus performants (notamment les réseaux de neurones profonds) fonctionnent comme des boîtes noires, rendant difficile l’interprétation de leurs décisions. Cette opacité est source de débats sur la responsabilité et la confiance.  \n- **Déploiement dans des contextes critiques** – L’utilisation de l’IA dans la santé, la conduite autonome ou la justice soulève des questions de fiabilité et de responsabilité en cas d’erreur, sans consensus clair sur les standards à appliquer.  \n- **Définition du champ** – Le chevauchement entre IA, apprentissage automatique et apprentissage profond crée parfois des malentendus dans le discours public et scientifique, ce qui peut compliquer la formulation de politiques cohérentes.\n\n## Conclusion\n\nL’intelligence artificielle représente aujourd’hui un ensemble de technologies matures, largement déployées et soutenues par des bases mathématiques solides. Les limites techniques (biais, opacité) et les débats éthiques et réglementaires constituent des axes de recherche et de discussion essentiels pour guider le développement responsable de l’IA.\n\n## Sources\n- Wikipédia (fr) — Intelligence artificielle — https://fr.wikipedia.org/wiki/Intelligence_artificielle\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 8,
+      "nb_mots": 1936,
       "matiere_source": "fine",
       "textes_sources_audit": [
         {
           "source": "Nature News",
-          "titre": "COP31 went down in flames over fossil fuels — it sends an important message",
-          "resume": "Nature, Published online: 23 November 2026; doi:10.1038/d41586-026-03827-0 Nature reporter James Dinneen reflects on the first international climate summit to collapse since 2009."
+          "titre": "Fight AI slop without punishing legitimate researchers",
+          "resume": "Nature, Published online: 24 November 2026; doi:10.1038/d41586-026-03824-3 Fight AI slop without punishing legitimate researchers"
         },
         {
           "source": "Wikipédia (fr)",
-          "titre": "Effet de serre",
-          "resume": "L'effet de serre est un processus naturel résultant de l'influence de l'atmosphère sur les différents flux thermiques contribuant aux températures au sol d'un objet céleste. La prise en compte de ce processus est nécessaire pour comprendre les températures observées à la surface des planètes ou satellites recouverts d'une atmosphère épaisse comme la Terre, Vénus et Titan, et le processus doit se produire aussi pour certaines exoplanètes. Le terme fait référence à l'effet analogue qu'une serre a sur la température des plantations qu'elle abrite.\nDans un système stellaire, l'essentiel de l'énergie thermique reçue par une planète ou un satellite provient du rayonnement stellaire. En l'absence d'atmosphère, cet objet en réfléchit une partie, absorbe le reste et rayonne essentiellement comme un corps noir, ce qui conduit à une certaine température au sol. Une atmosphère réfléchit, absorbe et réémet une partie du rayonnement reçu de l'étoile, et réfléchit, absorbe et réémet également une partie du rayonnement reçu de la surface de l'objet. Ces différents processus modifient l'équilibre thermique à la surface de l'objet, notamment parce que l'atmosphère ne réfléchit et n'absorbe pas également les différentes composantes spectrales d'un rayonnement incident alors que la répartition spectrale du rayonnement stellaire et celle du rayonnement reçu de la surface sont très différentes.\nL'expression effet de serre s'est popularisée dans le cadre de la vulgarisation du réchauffement climatique, dû aux gaz « à effet de serre » qui se sont accumulés dans l'atmosphère terrestre en raison des activités humaines. Ces gaz absorbent le rayonnement infrarouge émis par la surface plus que le rayonnement solaire, et réémettent ce rayonnement vers le haut comme vers le bas : le rayonnement réémis vers le bas s'ajoute au rayonnement solaire direct. Le bilan global est que la température au sol est supérieure à ce qu'elle serait en l'absence d'une atmosphère, et qu'elle augmente au fur et à mesure qu'augmente la concentration de l'atmosphère en gaz à effet de serre. Le bilan radiatif décrit les mécanismes de l'effet de serre. Le GIEC utilise le terme de forçage radiatif pour décrire la modification du bilan radiatif induite par une modification de la concentration d'un gaz à effet de serre ou d'un autre forçage climatique.\nLes températures terrestres résultent d'interactions complexes, notamment entre les apports solaires perturbés par les cycles de l'orbite terrestre, l'effet de l'albédo, les courants de convection dans l'atmosphère et les océans, le cycle de l'eau et le forçage radiatif de l'atmosphère.\n\nHistoire\nLa question de l'équilibre entre l'énergie reçue du Soleil (par rayonnement visibles) et celle réémise par la Terre (par rayonnements thermiques) et celle du rapport entre cet équilibre et la température terrestre remontent à la fin du XVIIIe siècle.\nDans les années 1780, Horace-Bénédict de Saussure mesure les effets thermiques du rayonnement solaire à l'aide de boîtes transparentes qu'il dispose dans la vallée et au sommet d'une montagne.\nEn 1824, Joseph Fourier publie Remarques générales sur les températures du globe terrestre et des espaces planétaires, dans lesquelles il affine l'analyse des expériences de Horace-Bénédict de Saussure, en concluant « la température du sol est augmentée par l'interposition de l'atmosphère, parce que la chaleur solaire trouve moins d'obstacles pour pénétrer l'air, étant à l'état de lumière, qu'elle n'en trouve pour repasser dans l'air lorsqu'elle est convertie en chaleur obscure».\nEn novembre 1856, Eunice Newton Foote publie Circumstances affecting the Heat of the Sun's Rays dans la revue American Journal of Science. Elle décrit une expérience où elle mesure la température interne de cylindres de verre, exposés au Soleil et remplis de différents mélanges gazeux. Elle découvre que le dioxyde de carbone retient particulièrement bien la chaleur et conclut que « une atmosphère constituée de ce gaz donnerait à notre Terre une haute température ». Oubliée, sa contribution scientifique est redécouverte en 2011.\nEn 1861, John Tyndall identifie à son tour les principaux responsables de ce mécanisme : la vapeur d'eau et le dioxyde de carbone. Il suggère alors qu'une modification de la composition de l'atmosphère peut avoir une influence sur l'évolution du climat.\nEn 1896, Svante August Arrhenius propose la première estimation de l'impact du niveau de dioxyde de carbone sur les températures terrestres. Il estime qu'un doublement de la quantité de dioxyde de carbone devrait augmenter de 4 °C la température moyenne. Il espère ainsi que l'exploitation du charbon permettra de surmonter la prochaine ère glaciaire due à l'orbite terrestre. Le géologue américain Thomas Chrowder Chamberlin arrivera indépendamment aux mêmes conclusions.\nEn 1909, Robert Williams Wood montre que contrairement à une idée reçue, le blocage du rayonnement infrarouge par le verre n'est pas le principal mécanisme qui explique le fonctionnement d'une serre. De ce fait, le terme scientifique adopté par le GIEC, utilisé pour décrire l’influence des composants de l'atmosphère bloquant le rayonnement infrarouge sur le bilan thermique de la Terre, est « bilan radiatif » et non « effet de serre »[réf. souhaitée].\nL'expression synthétique effet de serre provient de la vulgarisation au début des années 1980 des résultats alarmants des recherches climatologiques. Alors que les climatologues analysent l'impact du dioxyde de carbone sur le climat sans parler d'effet de serre, les premières alertes pour infléchir les décisions politiques sont lancées au début des années 1980 en utilisant cette expression, reprise par la suite dans des rapports de plus en plus médiatisés, comme le rapport Brundtland (1987). En France, Jean-Marc Jancovici et Hervé Le Treut ont vulgarisé les risques liés à l'effet de serre depuis les années 1980.\n\nMécanisme\n\nRayonnement solaire sur terre"
+          "titre": "Intelligence artificielle",
+          "resume": "L'intelligence artificielle (IA) est l'ensemble des systèmes informatiques capables d'effectuer des tâches typiquement associées à l'intelligence, telles que l'apprentissage, le raisonnement, la résolution de problèmes, la perception ou la prise de décision. L'intelligence artificielle est également le champ de recherche visant à développer de tels systèmes.\nL'IA est un domaine de l'informatique qui s'appuie sur des fondements mathématiques (statistiques, algèbre linéaire, probabilités) et des concepts issus des sciences cognitives. Elle vise à résoudre des problèmes à forte complexité logique ou algorithmique. Par extension, dans le langage courant, l'IA inclut les dispositifs imitant, simulant ou remplaçant l'homme dans certaines mises en œuvre de ses fonctions cognitives.\nLes applications de l'IA couvrent de nombreux domaines, notamment les moteurs de recherche, les systèmes de recommandation, l'aide au diagnostic médical, la compréhension du langage naturel, les voitures autonomes, les chatbots, les outils de génération d'images, les outils de prise de décision automatisée, les programmes compétitifs dans des jeux de stratégie et certains personnages non-joueurs de jeu vidéo.\nLe champ de recherche, établi en 1956, a connu des périodes d'optimisme et de déception au cours du XXe siècle. Dès 2012, l'utilisation de processeurs graphiques a permis de largement accélérer les réseaux de neurones artificiels, favorisant l'adoption de l'apprentissage automatique au détriment d’approches reposant sur des règles explicitement programmées. Cette tendance s'est renforcée en 2017 avec l'apparition de l'architecture transformeur et des grands modèles de langage, qui sont entraînés sur de grandes quantités de texte issu d'internet. En 2022, l'IA générative a été largement popularisée avec la sortie de ChatGPT. Des modèles de génération de musique, d'images ou de vidéos ont également vu le jour.\nL'IA suscite des inquiétudes concernant l'emploi, la désinformation, son impact environnemental et la protection des données personnelles. Certains estiment que les progrès en intelligence artificielle pourraient représenter un risque existentiel.\n\nDéfinition\n\nL’expression « intelligence artificielle », souvent abrégée par le sigle « IA » (ou « AI » en anglais, pour artificial intelligence) a été proposée en 1955 par John McCarthy, qui en donne la définition suivante : « la science et l'ingénierie de la fabrication de machines intelligentes, en particulier de programmes informatiques intelligents. Elle est liée à la tâche similaire qui consiste à utiliser des ordinateurs pour comprendre l'intelligence humaine, mais l'IA ne doit pas se limiter aux méthodes qui sont biologiquement observables ».\nPour Marvin Lee Minsky, l'un de ses créateurs, l'IA est « la construction de programmes informatiques qui s'adonnent à des tâches qui sont, pour l'instant, accomplies de façon plus satisfaisante par des êtres humains car elles demandent des processus mentaux de haut niveau tels que : l'apprentissage perceptuel, l'organisation de la mémoire et le raisonnement critique ». Cette définition associe l'aspect « artificiel » des ordinateurs et des processus informatiques à l'aspect « intelligent » de l'imitation de comportements humains, notamment le raisonnement et l'apprentissage. Ces capacités interviennent dans les jeux, la pratique des mathématiques, la compréhension du langage naturel, la perception visuelle (interprétation des images et des scènes), auditive (compréhension du langage parlé) ou par d'autres capteurs, ainsi que dans la commande d'un robot dans un milieu inconnu ou hostile.\nAvant les années 2000, d'autres définitions, proches de celle de Minsky, se distinguent principalement sur deux points fondamentaux :\n\nles définitions qui associent l'IA à une forme humaine de l'intelligence et celles qui la rattachent à un modèle idéal d'intelligence, non forcément humaine, nommée rationalité ;\nles définitions qui insistent sur le fait que l'IA a pour but d'avoir toutes les apparences de l'intelligence (humaine ou rationnelle), et celles qui insistent sur le fait que le fonctionnement interne du système d'IA doit ressembler également à celui de l'être humain et être au moins aussi rationnel.\nEn 2019, Andreas Kaplan et Michael Haenlein ont proposé une définition de l'intelligence artificielle fondée sur la capacité d'un système à interpréter correctement des données externes, à en tirer des enseignements et à les exploiter pour atteindre des objectifs et accomplir des tâches spécifiques grâce à une adaptation flexible. Cette définition a été reprise et discutée dans plusieurs publications scientifiques ultérieures. Certaines la présentent comme plus large que les approches centrées sur l'imitation des fonctions cognitives humaines, tandis que d'autres la citent parmi les définitions couramment utilisées. Elle figure également parmi les définitions examinées dans le rapport AI Watch: Defining Artificial Intelligence 2.0, publié en 2021 par le Centre commun de recherche de la Commission européenne.\n\nLe grand public confond souvent l'intelligence artificielle avec l'apprentissage automatique (machine learning) et l'apprentissage profond (deep learning). Ces trois notions sont toutefois distinctes et imbriquées : l'intelligence artificielle englobe l'apprentissage automatique, qui lui-même englobe l'apprentissage profond.\nLes définitions font généralement intervenir plusieurs éléments :"
         }
       ],
-      "nb_mots_decouverte": 154,
-      "nb_mots_approfondi": 1178,
-      "sujet_id": "effet-de-serre",
+      "nb_mots_decouverte": 421,
+      "nb_mots_approfondi": 1507,
+      "sujet_id": "ia",
       "origine": "encyclopedie"
     },
     "citation": {
-      "texte": "L'homme est né libre, et partout il est dans les fers.",
-      "auteur": "Jean-Jacques Rousseau",
-      "source": "Du contrat social, livre I, chapitre 1",
-      "annee": 1762
+      "texte": "Pour qu'on ne puisse abuser du pouvoir, il faut que, par la disposition des choses, le pouvoir arrête le pouvoir.",
+      "auteur": "Montesquieu",
+      "source": "De l'esprit des lois, livre XI, chapitre 4",
+      "annee": 1748
     },
-    "meteo": {
-      "villes_detail": [
-        {
-          "ville": "Antibes",
-          "temperature_actuelle": 12.2,
-          "temperature_max": 16.4,
-          "temperature_min": 11.3,
-          "precipitation_mm": 4.3,
-          "probabilite_pluie_pct": 93,
-          "vent_kmh": 4.8,
-          "vent_max_kmh": 15.0,
-          "rafales_max_kmh": 27.7,
-          "weather_code": 3,
-          "description": "couvert",
-          "periodes": [
-            {
-              "label": "Matin",
-              "temperature_min": 12.2,
-              "temperature_max": 15.9,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 7,
-              "weather_code": 3,
-              "description": "couvert"
-            },
-            {
-              "label": "Après-midi",
-              "temperature_min": 15.5,
-              "temperature_max": 16.4,
-              "probabilite_pluie_pct": 14,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 5,
-              "weather_code": 3,
-              "description": "couvert"
-            },
-            {
-              "label": "Soir",
-              "temperature_min": 13.9,
-              "temperature_max": 15.6,
-              "probabilite_pluie_pct": 93,
-              "precipitation_mm": 4.3,
-              "vent_max_kmh": 15,
-              "weather_code": 61,
-              "description": "pluie légère"
-            }
-          ],
-          "alertes": []
-        },
-        {
-          "ville": "Cannes",
-          "temperature_actuelle": 11.1,
-          "temperature_max": 16.0,
-          "temperature_min": 11.0,
-          "precipitation_mm": 3.1,
-          "probabilite_pluie_pct": 100,
-          "vent_kmh": 8.2,
-          "vent_max_kmh": 16.5,
-          "rafales_max_kmh": 32.0,
-          "weather_code": 3,
-          "description": "couvert",
-          "periodes": [
-            {
-              "label": "Matin",
-              "temperature_min": 11.1,
-              "temperature_max": 15.8,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 11,
-              "weather_code": 3,
-              "description": "couvert"
-            },
-            {
-              "label": "Après-midi",
-              "temperature_min": 15.4,
-              "temperature_max": 16.0,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 7,
-              "weather_code": 3,
-              "description": "couvert"
-            },
-            {
-              "label": "Soir",
-              "temperature_min": 13.5,
-              "temperature_max": 15.3,
-              "probabilite_pluie_pct": 100,
-              "precipitation_mm": 3.1,
-              "vent_max_kmh": 16,
-              "weather_code": 61,
-              "description": "pluie légère"
-            }
-          ],
-          "alertes": []
-        },
-        {
-          "ville": "Valbonne",
-          "temperature_actuelle": 8.0,
-          "temperature_max": 14.4,
-          "temperature_min": 7.1,
-          "precipitation_mm": 3.1,
-          "probabilite_pluie_pct": 93,
-          "vent_kmh": 7.1,
-          "vent_max_kmh": 7.4,
-          "rafales_max_kmh": 13.0,
-          "weather_code": 3,
-          "description": "couvert",
-          "periodes": [
-            {
-              "label": "Matin",
-              "temperature_min": 7.2,
-              "temperature_max": 13.8,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 7,
-              "weather_code": 2,
-              "description": "partiellement nuageux"
-            },
-            {
-              "label": "Après-midi",
-              "temperature_min": 12.1,
-              "temperature_max": 14.3,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 7,
-              "weather_code": 3,
-              "description": "couvert"
-            },
-            {
-              "label": "Soir",
-              "temperature_min": 11.0,
-              "temperature_max": 11.4,
-              "probabilite_pluie_pct": 93,
-              "precipitation_mm": 3.1,
-              "vent_max_kmh": 7,
-              "weather_code": 61,
-              "description": "pluie légère"
-            }
-          ],
-          "alertes": []
-        },
-        {
-          "ville": "Grasse",
-          "temperature_actuelle": 7.9,
-          "temperature_max": 13.5,
-          "temperature_min": 7.0,
-          "precipitation_mm": 3.3,
-          "probabilite_pluie_pct": 98,
-          "vent_kmh": 9.2,
-          "vent_max_kmh": 9.8,
-          "rafales_max_kmh": 16.6,
-          "weather_code": 3,
-          "description": "couvert",
-          "periodes": [
-            {
-              "label": "Matin",
-              "temperature_min": 7.1,
-              "temperature_max": 13.0,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 10,
-              "weather_code": 1,
-              "description": "plutôt dégagé"
-            },
-            {
-              "label": "Après-midi",
-              "temperature_min": 11.1,
-              "temperature_max": 13.5,
-              "probabilite_pluie_pct": 0,
-              "precipitation_mm": 0.0,
-              "vent_max_kmh": 6,
-              "weather_code": 3,
-              "description": "couvert"
-            },
-            {
-              "label": "Soir",
-              "temperature_min": 9.8,
-              "temperature_max": 10.4,
-              "probabilite_pluie_pct": 98,
-              "precipitation_mm": 3.3,
-              "vent_max_kmh": 7,
-              "weather_code": 61,
-              "description": "pluie légère"
-            }
-          ],
-          "alertes": []
-        }
-      ],
-      "temperature_max_zone": 16.4,
-      "temperature_min_zone": 7.0,
-      "probabilite_pluie_max_pct": 100,
-      "vent_max_kmh": 16.5,
-      "description_dominante": "couvert",
-      "periodes": [
-        {
-          "label": "Matin",
-          "temperature_min": 7.1,
-          "temperature_max": 15.9,
-          "probabilite_pluie_pct": 0,
-          "precipitation_mm": 0.0,
-          "vent_max_kmh": 11,
-          "weather_code": 3,
-          "description": "couvert"
-        },
-        {
-          "label": "Après-midi",
-          "temperature_min": 11.1,
-          "temperature_max": 16.4,
-          "probabilite_pluie_pct": 14,
-          "precipitation_mm": 0.0,
-          "vent_max_kmh": 7,
-          "weather_code": 3,
-          "description": "couvert"
-        },
-        {
-          "label": "Soir",
-          "temperature_min": 9.8,
-          "temperature_max": 15.6,
-          "probabilite_pluie_pct": 100,
-          "precipitation_mm": 4.3,
-          "vent_max_kmh": 16,
-          "weather_code": 61,
-          "description": "pluie légère"
-        }
-      ],
-      "alertes": [],
-      "resume": "Couvert le matin, couvert l'après-midi, pluie légère le soir, de 7° à 16°."
-    },
+    "meteo": null,
     "anglais": {
       "mode": "litterature",
-      "oeuvre": "A Tale of Two Cities",
-      "auteur": "Charles Dickens",
-      "annee": 1859,
+      "oeuvre": "Pride and Prejudice",
+      "auteur": "Jane Austen",
+      "annee": 1813,
       "segments": [
         {
-          "t": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness",
-          "g": "la sottise"
+          "t": "It is a truth universally acknowledged",
+          "g": "reconnue de tous"
         },
         {
-          "t": ", it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct",
-          "g": "tout droit"
+          "t": ", that a single man in possession of a good fortune, must be in want of",
+          "g": "qui a besoin de"
         },
         {
-          "t": " to Heaven, we were all going direct the other way – in short",
-          "g": "bref"
+          "t": " a wife. However little known",
+          "g": "Si peu connus soient"
         },
         {
-          "t": ", the period was so far like",
-          "g": "si semblable à"
+          "t": " the feelings or views of such a man may be on his first entering a neighbourhood",
+          "g": "le voisinage"
         },
         {
-          "t": " the present period, that some of its noisiest",
-          "g": "les plus bruyants"
+          "t": ", this truth is so well fixed",
+          "g": "solidement ancrée"
         },
         {
-          "t": " authorities insisted on",
-          "g": "exigeaient que"
+          "t": " in the minds of the surrounding families, that he is considered the rightful property",
+          "g": "propriété légitime"
         },
         {
-          "t": " its being received",
-          "g": "accueillie, admise"
+          "t": " of some one or other of their daughters. \"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last",
+          "g": "enfin louée"
         },
         {
-          "t": ", for good or for evil",
-          "g": "pour le meilleur ou pour le pire"
+          "t": "?\" Mr. Bennet replied that he had not. \"But it is,\" returned she",
+          "g": "répliqua-t-elle"
         },
         {
-          "t": ", in the superlative degree of comparison only.",
+          "t": "; \"for Mrs. Long has just been here, and she told me all about it.\" Mr. Bennet made no answer",
+          "g": "ne répondit rien"
+        },
+        {
+          "t": ".",
           "g": null
         }
       ],
-      "texte_glose": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness (= la sottise), it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct (= tout droit) to Heaven, we were all going direct the other way – in short (= bref), the period was so far like (= si semblable à) the present period, that some of its noisiest (= les plus bruyants) authorities insisted on (= exigeaient que) its being received (= accueillie, admise), for good or for evil (= pour le meilleur ou pour le pire), in the superlative degree of comparison only."
+      "texte_glose": "It is a truth universally acknowledged (= reconnue de tous), that a single man in possession of a good fortune, must be in want of (= qui a besoin de) a wife. However little known (= Si peu connus soient) the feelings or views of such a man may be on his first entering a neighbourhood (= le voisinage), this truth is so well fixed (= solidement ancrée) in the minds of the surrounding families, that he is considered the rightful property (= propriété légitime) of some one or other of their daughters. \"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last (= enfin louée)?\" Mr. Bennet replied that he had not. \"But it is,\" returned she (= répliqua-t-elle); \"for Mrs. Long has just been here, and she told me all about it.\" Mr. Bennet made no answer (= ne répondit rien)."
     },
     "meta": {
-      "resume_1_phrase": "À la une : Après des résultats d’audience en berne, Cyril Hanouna arrête sa quotidienne sur Fun Radio : «Pourquoi me payer aussi cher pour faire si peu ?»."
+      "resume_1_phrase": "À la une : Présidentielle 2027 : Edouard Philippe souhaite un débat télévisé avec David Lisnard, qu’il soupçonne de ne pas être « étanche » vis-à-vis de l’extrême droite."
     },
     "_genere_par_llm": true,
     "_provider": "groq+mistral",
@@ -603,5 +375,5 @@
       "erreur": null
     }
   },
-  "debut_run": "2026-11-24T06:10:38.651676+01:00"
+  "debut_run": "2026-11-25T06:10:42.731942+01:00"
 }

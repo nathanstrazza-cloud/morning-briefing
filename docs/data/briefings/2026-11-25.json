@@ -1,0 +1,379 @@
+{
+  "date": "2026-11-25",
+  "derniere_mise_a_jour": "2026-11-25T06:14:41.776834+01:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "Présidentielle 2027 : Edouard Philippe souhaite un débat télévisé avec David Lisnard, qu’il soupçonne de ne pas être « étanche » vis-à-vis de l’extrême droite",
+          "resume": "Le candidat Horizons a rapproché au maire de Cannes de vouloir travailler avec la droite et la « droite extrême ». De son côté, le candidat Nouvelle Energie s’est engagé à continuer « à défendre les mairies » s’il était élu à l’Elysée.",
+          "pourquoi_important": "Le débat télévisé et les positions vis‑à‑vis de l’extrême droite peuvent influencer la dynamique de la campagne présidentielle de 2027.",
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France Info",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Projet de loi logement adopté à l’Assemblée nationale : «J’aurais bien aimé qu’on examine ce texte en pleine canicule»",
+          "resume": "Le ministre du logement, Vincent Jeanbrun, mise sur la suppression, lors de la commission mixte paritaire de décembre, de l’amendement du RN qui met fin à l’interdiction de louer les passoires thermiques.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "France Info",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "On vous explique pourquoi les créateurs de contenus contestent les règles de pluralisme que l'Arcom veut leur imposer pour la présidentielle de 2027",
+          "resume": "Le gendarme de l'audiovisuel souhaite que les principaux créateurs de contenus en ligne, comme HugoDécrypte ou Guillaume Pley, respectent des règles de temps de parole et de déontologie durant la campagne présidentielle.",
+          "pourquoi_important": "Les règles de pluralisme de l’Arcom peuvent affecter la visibilité et la liberté d’expression des créateurs en ligne pendant la campagne présidentielle.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France Info"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : LFI, force d’attraction à gauche",
+          "resume": "Après la majorité du groupe communiste à l’Assemblée nationale, puis la secrétaire nationale des Ecologistes, Marine Tondelier, le parti Génération.s apporte, à son tour, son soutien à Jean-Luc Mélenchon, en vue du scrutin d’avril 2027. La France insoumise lorgne désormais sur la candidature de Fabien Roussel.",
+          "pourquoi_important": "Le soutien de LFI à Mélenchon et la possible candidature de Fabien Roussel renforcent l’unité et la stratégie de la gauche pour l’élection de 2027.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Le Monde"
+          ]
+        },
+        {
+          "titre": "Violences économiques : «Les sanctions doivent être accompagnées d’une réelle politique d’éducation»",
+          "resume": "L’avocate Violaine De Filippis-Abate dénonce l’insuffisance des dispositifs juridiques existants en matière de violences économiques, qui souvent s’accompagnent d’autres formes de violences.",
+          "pourquoi_important": "L’appel à une politique d’éducation vise à renforcer l’efficacité des sanctions contre les violences économiques.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "En Colombie, le président et l’armée à Carthagènes pour une prise d’otages en cours dans un supermarché",
+          "resume": "Le président Abelardo de la Espriella a affirmé que cette prise d’otages relevait de la criminalité de droit commun, excluant toute implication des groupes armés ayant commis des attentats ces derniers mois.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "20 Minutes",
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : deux militaires libyens succombent à leurs blessures après les frappes revendiquées par Kiev contre des navires russes à Benghazi",
+          "resume": "Saddam Haftar a dénoncé une « attaque criminelle » contre la base navale de Benghazi, où une corvette russe a été coulée et un cargo touché lors d’une opération revendiquée par l’Ukraine.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Relancer ou non la guerre : l’alliance israélo-américaine au défi du réarmement iranien",
+          "resume": "Benyamin Nétanyahou plaide pour une reprise rapide des frappes sur l’Iran, mais Donald Trump, marqué par la défaite électorale de son camp, a reporté sa décision jusqu’à janvier.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : Le président biélorusse prêt à accompagner Zelensky à Moscou pour discuter",
+          "resume": null,
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Israël : le parti de gauche Les Démocrates suspend les négociations de coalition avec Gadi Eisenkot",
+          "resume": "Le parti de Yaïr Golan bloque les discussions avec Gadi Eisenkot en raison de désaccords sur l’inclusion de listes à majorité arabe dans une coalition.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Au Brésil, le gouvernement Lula fait voter un plan de rigueur budgétaire controversé",
+          "resume": "Le plan modifie la loi pour allouer une partie des recettes pétrolières à la santé et à l’éducation, suscitant des critiques au sein de la gauche.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "En Allemagne, Die Linke exclut une de ses élues, accusée d’antisémitisme, pour diriger la mairie de Berlin",
+          "resume": "Vanessa Emde a été exclue du parti pour antisémitisme, facilitant potentiellement un accord avec le SPD et les Verts pour gouverner Berlin avant 2027.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "Le Monde",
+            "Le Monde International"
+          ]
+        },
+        {
+          "titre": "Selon France 24 International, Louis Giscard d'Estaing (UDI) : \"Il ne faut pas associer l'AMF à un projet politique personnel\"",
+          "resume": "Le congrès des maires de France s'est ouvert. David Lisnard est candidat à sa réélection à la tête de l'association mais aussi candidat à la présidentielle. Pour Louis Giscard d'Estaing, maire UDI de Chamalières, \"le calendrier de la candidature de David Lisnard n'est pas opportun\". Sur la primaire de la droite et du centre, il se pose la question des \"mérites d'une primaire si celui qui la gagne n'est pas soutenu par ses concurrents\".",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ],
+          "complete_par_code": true
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Aucune cause fiable n'a pu être établie à partir des articles collectés ce matin.",
+      "mouvements_notables": [
+        {
+          "nom": "Nasdaq",
+          "variation_pct": -1.48,
+          "explication": null
+        },
+        {
+          "nom": "DAX",
+          "variation_pct": -1.26,
+          "explication": null
+        },
+        {
+          "nom": "Euro Stoxx 50",
+          "variation_pct": -1.16,
+          "explication": null
+        },
+        {
+          "nom": "Pétrole (Brent)",
+          "variation_pct": -2.1,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "football",
+          "texte": "Le RC Lens a perdu 1-3 contre Leipzig après avoir encaissé deux buts avant la 10e minute, ce qui constitue sa quatrième défaite en Ligue des champions."
+        },
+        {
+          "sport": "football",
+          "texte": "Le RC Lens, entraîné par Didier Digard, affrontera Leipzig avec Florian Sotoca en attaque et Ismaëlo Ganiou de retour de blessure."
+        },
+        {
+          "sport": "football",
+          "texte": "Après une défaite 3-1 contre Leipzig, le RC Lens voit la qualification pour les barrages devenir quasi impossible."
+        },
+        {
+          "sport": "basketball",
+          "texte": "L'ASVEL a perdu à domicile 91-95 contre Milan lors de la 14e journée de l'Euroligue, portant son bilan à 4 victoires pour 10 défaites."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Guerschon Yabusele, joueur du Panathinaïkos, estime devoir recevoir une bague de champion NBA de la part des New York Knicks."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Cameron Boozer, ailier des Memphis Grizzlies, est absent au moins un mois à cause d’une entorse de la cheville droite, ce qui retardera son évaluation pour le titre de Rookie de l'année."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Alexander Zverev, vainqueur de Roland Garros et de l'US Open, est devenu numéro 1 mondial en terminant l'année avec le moins de titres sur le circuit ATP."
+        },
+        {
+          "sport": "rugby",
+          "texte": "Tommy Freeman revient dans le groupe du XV de la Rose pour le match de troisième place contre les All Blacks, alors que Will Jordan est forfait et le capitaine Codie Taylor est incertain."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "Barcelona – Manchester City",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-12-08T20:00:00+00:00",
+          "date_texte": "mardi 8 décembre à 21h00",
+          "sport": "football"
+        },
+        {
+          "affiche": "New York Knicks – Miami Heat",
+          "competition": "NBA",
+          "date_iso": "2026-11-28T00:00:00+00:00",
+          "date_texte": "samedi 28 novembre à 1h00",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "decouverte",
+      "titre": "Comment distinguer les résultats scientifiques valides des productions générées par l'intelligence artificielle ?",
+      "contenu_markdown": "Les chercheurs et les revues scientifiques font face à un défi croissant : identifier les travaux issus d’outils d’intelligence artificielle (IA) sans pénaliser les recherches légitimes qui les utilisent de manière appropriée. Cette question, abordée dans *Nature* le 24 novembre 2026, souligne l’urgence de développer des méthodes pour détecter les contenus générés par l’IA dans les soumissions scientifiques, tout en préservant l’innovation et l’intégrité de la recherche.\n\nL’enjeu principal réside dans la prolifération de ce que les experts appellent le *« AI slop »* (littéralement, *« déchets d’IA »*), c’est-à-dire des textes, données ou analyses produites automatiquement par des modèles d’IA, souvent de faible qualité ou inexactes, mais qui peuvent être soumis à des revues scientifiques par des auteurs peu scrupuleux. Ces productions, bien que non originales, peuvent brouiller la ligne entre plagiat et utilisation légitime de l’IA comme outil d’assistance (par exemple, pour la rédaction ou l’analyse de données).\n\nPour l’instant, aucune solution technique ou éthique universellement adoptée n’existe. Les revues scientifiques explorent différentes pistes :\n- Leur efficacité reste limitée, car les modèles d’IA utilisés en recherche sont souvent plus spécialisés et moins faciles à identifier.\n- **Des lignes directrices claires** pour les auteurs, exigeant une transparence sur l’usage de l’IA (par exemple, en déclarant quels outils ont été employés et à quelle étape du processus). Certaines revues commencent à intégrer ces règles, mais leur application varie.\n- **Un renforcement des pairs évaluateurs**, avec une formation accrue pour repérer les incohérences ou les faiblesses méthodologiques typiques des productions automatisées.\n\nD’une part, les outils de détection actuels peuvent fausser positivement (accuser à tort un travail légitime d’être généré par l’IA) ou négativement (laisser passer des contenus douteux). D’autre part, la frontière entre une aide légitime de l’IA et une utilisation abusive reste floue : par exemple, utiliser un modèle pour générer des hypothèses de recherche peut être considéré comme acceptable, tandis que lui confier l’analyse complète d’un jeu de données soulève des questions éthiques.\n\nPour les chercheurs et les institutions, la priorité est de trouver un équilibre : éviter que les *« déchets d’IA »* ne polluent la littérature scientifique, sans pour autant décourager l’innovation que ces technologies pourraient apporter. Les détails sur les méthodes de détection en développement, ainsi que les retours d’expérience des revues pionnières, sont à consulter dans les articles sources de *Nature*.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03824-3\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.\n\n## Pour aller plus loin : Intelligence artificielle\n\nL’intelligence artificielle (IA) désigne à la fois un ensemble de technologies informatiques capables de reproduire des comportements associés à l’intelligence humaine — comme l’apprentissage, la résolution de problèmes ou la prise de décision — et un domaine scientifique dédié à leur conception. Contrairement à une idée reçue, elle ne se limite pas à imiter le cerveau humain, mais vise plutôt à résoudre des problèmes complexes par des méthodes algorithmiques, statistiques ou inspirées des sciences cognitives.\n\n## Pourquoi l’intelligence artificielle est-elle un sujet majeur ?\n\nL’IA transforme profondément des secteurs aussi variés que la médecine (aide au diagnostic), les transports (voitures autonomes), la communication (chatbots, traduction automatique) ou encore la création artistique (génération d’images, musique). Son impact économique et social est tel qu’elle soulève des questions cruciales : quels sont ses avantages pour la société ? Quels risques — éthiques, environnementaux ou liés à la désinformation — doit-on anticiper ? Son développement rapide, marqué par des avancées comme les réseaux de neurones artificiels (à partir de 2012) ou les grands modèles de langage (depuis 2017), en fait un sujet incontournable pour comprendre les mutations technologiques du XXIᵉ siècle.\n\n## Qu’est-ce que l’intelligence artificielle ?\n\nL’IA repose sur une définition technique proposée dès 1955 par le chercheur John McCarthy : *« la science et l’ingénierie de la fabrication de machines intelligentes »*. Cette définition souligne deux aspects clés :\n1. **L’aspect artificiel** : l’IA utilise des programmes informatiques et des algorithmes pour traiter des données.\n2. **L’aspect intelligent** : elle vise à reproduire des capacités cognitives, comme le raisonnement, la perception (visuelle ou auditive) ou l’adaptation à des situations nouvelles.\n\nContrairement aux systèmes traditionnels basés sur des règles prédéfinies, l’IA moderne s’appuie souvent sur des méthodes d’**apprentissage automatique** (*machine learning*), où les machines améliorent leurs performances en analysant de grandes quantités de données. Par exemple, un système capable de reconnaître des images (comme un filtre de réseau social) n’est pas programmé pour identifier chaque objet individuellement, mais apprend à partir d’exemples étiquetés.\n\n## Comment fonctionne l’intelligence artificielle ?\n\nLes mécanismes de l’IA varient selon les approches, mais plusieurs principes fondamentaux reviennent.\n\n## L’apprentissage à partir de données\nLa plupart des systèmes d’IA modernes utilisent des **algorithmes d’apprentissage** qui analysent des données pour détecter des motifs.\n- **Apprentissage supervisé** : le système est entraîné avec des données déjà classées (ex. : distinguer des chats et des chiens dans des photos).\n- **Apprentissage non supervisé** : il identifie des structures dans des données non étiquetées (ex. : regrouper des clients selon leurs habitudes d’achat).\n- **Apprentissage par renforcement** : le système apprend en interagissant avec son environnement (ex. : un robot qui optimise ses mouvements pour éviter des obstacles).\n\n## Les réseaux de neurones artificiels\nInspirés du fonctionnement du cerveau, ces modèles mathématiques simulent des réseaux de « neurones » connectés. Ils sont particulièrement efficaces pour traiter des données complexes comme :\n- Le **langage naturel** (compréhension ou génération de texte, comme dans les chatbots).\n- La **perception visuelle** (reconnaissance d’objets, génération d’images).\n- Les **jeux stratégiques** (comme les programmes capables de battre des champions humains aux échecs ou au Go).\n\n## La prise de décision automatisée\nL’IA peut aussi intégrer des règles logiques pour prendre des décisions, par exemple :\n- Dans la **logistique** (optimisation de trajets pour des livraisons).\n- En **médecine** (analyse d’imagerie médicale pour détecter des anomalies).\n- Dans les **systèmes de recommandation** (suggestions de films ou de produits en ligne).\n\n## Les limites des approches actuelles\nBien que puissants, ces systèmes ont des contraintes :\n- Ils dépendent fortement de la **qualité et de la représentativité des données** utilisées pour les entraîner.\n- Leur fonctionnement interne reste souvent **opaque** (on parle de « boîte noire »), ce qui pose des défis pour expliquer leurs décisions.\n- Ils ne possèdent pas de **conscience** ni de compréhension profonde du monde : ils excellent dans des tâches spécifiques, mais sans intention ni créativité au sens humain.\n\nCes mécanismes, combinés à des outils mathématiques comme les **statistiques** ou l’**algèbre linéaire**, permettent à l’IA de progresser dans des domaines où les méthodes traditionnelles seraient inefficaces. Leur évolution continue de redéfinir les possibilités technologiques, tout en soulevant des questions sur leur régulation et leur impact sociétal.\n\n## Données et résultats scientifiques\n\nLes connaissances consolidées sur l’intelligence artificielle proviennent d’une longue série d’études et de développements décrits dans la littérature encyclopédique. Les faits établis incluent :\n\n- L’IA regroupe des systèmes capables d’accomplir des tâches associées à l’intelligence humaine : apprentissage, raisonnement, résolution de problèmes, perception et prise de décision.  \n- Le domaine s’appuie sur des fondements mathématiques (statistiques, algèbre linéaire, probabilités) et sur des concepts issus des sciences cognitives.  \n- Depuis les débuts du champ en 1956, plusieurs vagues d’optimisme et de déception ont été observées, reflétant les progrès technologiques et les limites rencontrées.  \n- À partir de 2012, l’utilisation de processeurs graphiques a fortement accéléré les réseaux de neurones, favorisant l’apprentissage automatique par rapport aux approches basées sur des règles explicites.  \n- L’émergence de l’architecture dite « transformeur » en 2017 a permis le développement de grands modèles de langage entraînés sur d’immenses corpus textuels.  \n- En 2022, les modèles génératifs, illustrés par le lancement de ChatGPT, ont popularisé l’IA générative auprès du grand public.  \n\nCes points sont documentés dans les articles de référence de Wikipédia sur l’intelligence artificielle. Les données chiffrées détaillées (par exemple, nombre de paramètres de modèles, performances sur des jeux de données spécifiques) sont disponibles dans les publications scientifiques citées dans ces articles et doivent être consultées directement pour des informations précises.\n\n## Ce que les scientifiques savent\n\nLes chercheurs s’accordent sur plusieurs aspects fondamentaux de l’IA :\n\n1. **Définition et portée** – L’IA désigne l’ensemble des systèmes informatiques capables d’exécuter des fonctions cognitives typiquement humaines. Elle englobe l’apprentissage automatique, qui à son tour comprend l’apprentissage profond.  \n2. **Fondements théoriques** – Les algorithmes d’IA reposent sur des principes mathématiques rigoureux (statistiques, algèbre linéaire, probabilités) et sur des modèles inspirés de la cognition.  \n3. **Applications concrètes** – Les systèmes d’IA sont déjà déployés dans de nombreux domaines : moteurs de recherche, systèmes de recommandation, aide au diagnostic médical, compréhension du langage naturel, véhicules autonomes, chatbots, génération d’images, prise de décision automatisée, jeux de stratégie et personnages non‑joueurs.  \n4. L’architecture transformeur a introduit une nouvelle façon de traiter les séquences de données, conduisant à des modèles de langage très performants.  \n5. **Enjeux sociétaux** – La communauté scientifique reconnaît que l’IA soulève des questions importantes concernant l’emploi, la désinformation, l’impact environnemental et la protection des données personnelles. Certains experts évoquent même la possibilité d’un risque existentiel lié à des avancées très rapides.\n\n## Ce qui reste incertain\n\nMalgré ces acquis, plusieurs incertitudes subsistent :\n\n- **Gestion de la désinformation** – La capacité des systèmes génératifs à produire du texte ou des images réalistes pose la question de leur utilisation malveillante, mais les mécanismes précis de prévention et de détection restent en cours de recherche.  \n- **Empreinte environnementale** – Bien que l’on sache que l’entraînement de grands modèles consomme de l’énergie, les estimations exactes de l’impact carbone global de l’ensemble du cycle de vie des systèmes d’IA sont encore débattues.  \n- **Risques existentiels** – L’idée que l’IA pourrait représenter un danger existentiel est avancée par certains penseurs, mais il n’existe pas de preuve empirique ou de modèle consensuel permettant d’évaluer la probabilité ou les scénarios de tels risques.  \n- **Définition précise** – Malgré de nombreuses tentatives de formalisation, aucune définition unique de l’IA n’est universellement acceptée ; les débats portent sur la portée (imitation de l’intelligence humaine vs rationalité abstraite) et sur les critères de « véritable intelligence ».\n\n## Limites et controverses éventuelles\n\nLes limites techniques et les controverses autour de l’IA peuvent être résumées ainsi :\n\n- **Biais et équité** – Les systèmes d’apprentissage automatique reproduisent souvent les biais présents dans les données d’entraînement, ce qui soulève des controverses éthiques quant à l’équité des décisions automatisées.  \n- **Transparence et explicabilité** – Les modèles les plus performants (notamment les réseaux de neurones profonds) fonctionnent comme des boîtes noires, rendant difficile l’interprétation de leurs décisions. Cette opacité est source de débats sur la responsabilité et la confiance.  \n- **Déploiement dans des contextes critiques** – L’utilisation de l’IA dans la santé, la conduite autonome ou la justice soulève des questions de fiabilité et de responsabilité en cas d’erreur, sans consensus clair sur les standards à appliquer.  \n- **Définition du champ** – Le chevauchement entre IA, apprentissage automatique et apprentissage profond crée parfois des malentendus dans le discours public et scientifique, ce qui peut compliquer la formulation de politiques cohérentes.\n\n## Conclusion\n\nL’intelligence artificielle représente aujourd’hui un ensemble de technologies matures, largement déployées et soutenues par des bases mathématiques solides. Les limites techniques (biais, opacité) et les débats éthiques et réglementaires constituent des axes de recherche et de discussion essentiels pour guider le développement responsable de l’IA.\n\n## Sources\n- Wikipédia (fr) — Intelligence artificielle — https://fr.wikipedia.org/wiki/Intelligence_artificielle\n- Source encyclopédique (non primaire) : les chiffres et affirmations se limitent à cet article ; à recouper avec les publications scientifiques pour aller plus loin.",
+      "phrases_retirees_garde_fou": 8,
+      "nb_mots": 1936,
+      "matiere_source": "fine",
+      "textes_sources_audit": [
+        {
+          "source": "Nature News",
+          "titre": "Fight AI slop without punishing legitimate researchers",
+          "resume": "Nature, Published online: 24 November 2026; doi:10.1038/d41586-026-03824-3 Fight AI slop without punishing legitimate researchers"
+        },
+        {
+          "source": "Wikipédia (fr)",
+          "titre": "Intelligence artificielle",
+          "resume": "L'intelligence artificielle (IA) est l'ensemble des systèmes informatiques capables d'effectuer des tâches typiquement associées à l'intelligence, telles que l'apprentissage, le raisonnement, la résolution de problèmes, la perception ou la prise de décision. L'intelligence artificielle est également le champ de recherche visant à développer de tels systèmes.\nL'IA est un domaine de l'informatique qui s'appuie sur des fondements mathématiques (statistiques, algèbre linéaire, probabilités) et des concepts issus des sciences cognitives. Elle vise à résoudre des problèmes à forte complexité logique ou algorithmique. Par extension, dans le langage courant, l'IA inclut les dispositifs imitant, simulant ou remplaçant l'homme dans certaines mises en œuvre de ses fonctions cognitives.\nLes applications de l'IA couvrent de nombreux domaines, notamment les moteurs de recherche, les systèmes de recommandation, l'aide au diagnostic médical, la compréhension du langage naturel, les voitures autonomes, les chatbots, les outils de génération d'images, les outils de prise de décision automatisée, les programmes compétitifs dans des jeux de stratégie et certains personnages non-joueurs de jeu vidéo.\nLe champ de recherche, établi en 1956, a connu des périodes d'optimisme et de déception au cours du XXe siècle. Dès 2012, l'utilisation de processeurs graphiques a permis de largement accélérer les réseaux de neurones artificiels, favorisant l'adoption de l'apprentissage automatique au détriment d’approches reposant sur des règles explicitement programmées. Cette tendance s'est renforcée en 2017 avec l'apparition de l'architecture transformeur et des grands modèles de langage, qui sont entraînés sur de grandes quantités de texte issu d'internet. En 2022, l'IA générative a été largement popularisée avec la sortie de ChatGPT. Des modèles de génération de musique, d'images ou de vidéos ont également vu le jour.\nL'IA suscite des inquiétudes concernant l'emploi, la désinformation, son impact environnemental et la protection des données personnelles. Certains estiment que les progrès en intelligence artificielle pourraient représenter un risque existentiel.\n\nDéfinition\n\nL’expression « intelligence artificielle », souvent abrégée par le sigle « IA » (ou « AI » en anglais, pour artificial intelligence) a été proposée en 1955 par John McCarthy, qui en donne la définition suivante : « la science et l'ingénierie de la fabrication de machines intelligentes, en particulier de programmes informatiques intelligents. Elle est liée à la tâche similaire qui consiste à utiliser des ordinateurs pour comprendre l'intelligence humaine, mais l'IA ne doit pas se limiter aux méthodes qui sont biologiquement observables ».\nPour Marvin Lee Minsky, l'un de ses créateurs, l'IA est « la construction de programmes informatiques qui s'adonnent à des tâches qui sont, pour l'instant, accomplies de façon plus satisfaisante par des êtres humains car elles demandent des processus mentaux de haut niveau tels que : l'apprentissage perceptuel, l'organisation de la mémoire et le raisonnement critique ». Cette définition associe l'aspect « artificiel » des ordinateurs et des processus informatiques à l'aspect « intelligent » de l'imitation de comportements humains, notamment le raisonnement et l'apprentissage. Ces capacités interviennent dans les jeux, la pratique des mathématiques, la compréhension du langage naturel, la perception visuelle (interprétation des images et des scènes), auditive (compréhension du langage parlé) ou par d'autres capteurs, ainsi que dans la commande d'un robot dans un milieu inconnu ou hostile.\nAvant les années 2000, d'autres définitions, proches de celle de Minsky, se distinguent principalement sur deux points fondamentaux :\n\nles définitions qui associent l'IA à une forme humaine de l'intelligence et celles qui la rattachent à un modèle idéal d'intelligence, non forcément humaine, nommée rationalité ;\nles définitions qui insistent sur le fait que l'IA a pour but d'avoir toutes les apparences de l'intelligence (humaine ou rationnelle), et celles qui insistent sur le fait que le fonctionnement interne du système d'IA doit ressembler également à celui de l'être humain et être au moins aussi rationnel.\nEn 2019, Andreas Kaplan et Michael Haenlein ont proposé une définition de l'intelligence artificielle fondée sur la capacité d'un système à interpréter correctement des données externes, à en tirer des enseignements et à les exploiter pour atteindre des objectifs et accomplir des tâches spécifiques grâce à une adaptation flexible. Cette définition a été reprise et discutée dans plusieurs publications scientifiques ultérieures. Certaines la présentent comme plus large que les approches centrées sur l'imitation des fonctions cognitives humaines, tandis que d'autres la citent parmi les définitions couramment utilisées. Elle figure également parmi les définitions examinées dans le rapport AI Watch: Defining Artificial Intelligence 2.0, publié en 2021 par le Centre commun de recherche de la Commission européenne.\n\nLe grand public confond souvent l'intelligence artificielle avec l'apprentissage automatique (machine learning) et l'apprentissage profond (deep learning). Ces trois notions sont toutefois distinctes et imbriquées : l'intelligence artificielle englobe l'apprentissage automatique, qui lui-même englobe l'apprentissage profond.\nLes définitions font généralement intervenir plusieurs éléments :"
+        }
+      ],
+      "nb_mots_decouverte": 421,
+      "nb_mots_approfondi": 1507,
+      "sujet_id": "ia",
+      "origine": "encyclopedie"
+    },
+    "citation": {
+      "texte": "Pour qu'on ne puisse abuser du pouvoir, il faut que, par la disposition des choses, le pouvoir arrête le pouvoir.",
+      "auteur": "Montesquieu",
+      "source": "De l'esprit des lois, livre XI, chapitre 4",
+      "annee": 1748
+    },
+    "meteo": null,
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "Pride and Prejudice",
+      "auteur": "Jane Austen",
+      "annee": 1813,
+      "segments": [
+        {
+          "t": "It is a truth universally acknowledged",
+          "g": "reconnue de tous"
+        },
+        {
+          "t": ", that a single man in possession of a good fortune, must be in want of",
+          "g": "qui a besoin de"
+        },
+        {
+          "t": " a wife. However little known",
+          "g": "Si peu connus soient"
+        },
+        {
+          "t": " the feelings or views of such a man may be on his first entering a neighbourhood",
+          "g": "le voisinage"
+        },
+        {
+          "t": ", this truth is so well fixed",
+          "g": "solidement ancrée"
+        },
+        {
+          "t": " in the minds of the surrounding families, that he is considered the rightful property",
+          "g": "propriété légitime"
+        },
+        {
+          "t": " of some one or other of their daughters. \"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last",
+          "g": "enfin louée"
+        },
+        {
+          "t": "?\" Mr. Bennet replied that he had not. \"But it is,\" returned she",
+          "g": "répliqua-t-elle"
+        },
+        {
+          "t": "; \"for Mrs. Long has just been here, and she told me all about it.\" Mr. Bennet made no answer",
+          "g": "ne répondit rien"
+        },
+        {
+          "t": ".",
+          "g": null
+        }
+      ],
+      "texte_glose": "It is a truth universally acknowledged (= reconnue de tous), that a single man in possession of a good fortune, must be in want of (= qui a besoin de) a wife. However little known (= Si peu connus soient) the feelings or views of such a man may be on his first entering a neighbourhood (= le voisinage), this truth is so well fixed (= solidement ancrée) in the minds of the surrounding families, that he is considered the rightful property (= propriété légitime) of some one or other of their daughters. \"My dear Mr. Bennet,\" said his lady to him one day, \"have you heard that Netherfield Park is let at last (= enfin louée)?\" Mr. Bennet replied that he had not. \"But it is,\" returned she (= répliqua-t-elle); \"for Mrs. Long has just been here, and she told me all about it.\" Mr. Bennet made no answer (= ne répondit rien)."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : Présidentielle 2027 : Edouard Philippe souhaite un débat télévisé avec David Lisnard, qu’il soupçonne de ne pas être « étanche » vis-à-vis de l’extrême droite."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq+mistral",
+    "_erreur_llm": null,
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "marches": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_a": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_d": {
+        "genere_par_llm": true,
+        "provider": "mistral",
+        "erreur": null,
+        "essais_echoues": 1
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq+mistral",
+      "erreur": null
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-11-25T06:10:42.731942+01:00"
+}
