@@ -1,0 +1,378 @@
+{
+  "date": "2026-11-26",
+  "derniere_mise_a_jour": "2026-11-26T06:14:28.583584+01:00",
+  "briefing": {
+    "actualite": {
+      "france": [
+        {
+          "titre": "\"C'est le fruit de la mobilisation d'une France de terrain\" : David Lisnard, candidat à la présidentielle, est réélu à la tête de l'Association des maires de France",
+          "resume": "Le candidat du parti libéral Nouvelle Energie, qui a récolté 72% des voix, est élu pour un troisième mandat.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "LFI refuse de rencontrer les anciens insoumis de L’Après en vue «d’une éventuelle coalition»",
+          "resume": "Après un vote de leurs militants, les ex-Insoumis qui ont créé L'Après après les \"purges\" de 2024 devraient quant à eux soutenir la candidature de Jean-Luc Mélenchon pour la présidentielle.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : Lisnard veut convaincre des électeurs de « tous horizons y compris le RN »",
+          "resume": "",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "Présidentielle : à cinq mois du scrutin, le déclassement d’un bloc central en pleine «primaire sauvage»",
+          "resume": "Primaire, décantation, candidat providentiel : dans un espace central toujours plus morcelé entre Philippe, Attal, Retailleau, Lisnard ou encore Riner, chacun s’accroche à ses fétiches pour espérer passer l’hiver.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Présidentielle 2027 : « Je suis fan et je vais le parrainer »… Comment les candidats tentent de séduire les maires",
+          "resume": "De nombreux candidats à la présidentielle ont défilé au Congrès et au Salon des maires ce mercredi, dans l’espoir de glaner les 500 parrainages nécessaires pour se présenter à l’élection",
+          "pourquoi_important": "La mobilisation des candidats auprès des maires vise à obtenir les parrainages obligatoires pour se présenter à l'élection présidentielle.",
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "20 Minutes"
+          ]
+        }
+      ],
+      "monde": [
+        {
+          "titre": "Teddy Riner affirme, à propos de la guerre en Ukraine, que la France doit « arrêter de donner de l’argent » qu’elle n’a pas",
+          "resume": "Au salon des maires, Teddy Riner, candidat à la présidentielle 2027, a fustigé l’envoi de soldats en Ukraine dans le cadre de la mission Volia. Gabriel Attal, lui, a défendu le soutien à Kiev",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "20 Minutes",
+            "Le Monde International",
+            "France 24 International",
+            "Libération"
+          ]
+        },
+        {
+          "titre": "Guerre en Ukraine : Donald Trump et le secrétaire général de l’OTAN exhortent Moscou à ne pas « étendre la guerre » avec Kiev",
+          "resume": "Le président américain et Mark Rutte ont « discuté de l’importance pour la Russie d’éviter toute action qui étendrait délibérément, ou involontairement, la guerre, ainsi que de l’importance d’obtenir une résolution pacifique du conflit dans les plus brefs délais », a fait savoir la Maison Blanche à l’issue d’une rencontre entre les deux hommes.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "20 Minutes",
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Andy Taylor, ex-guitariste du groupe britannique Duran Duran, est mort à 65 ans",
+          "resume": "\"Andy Taylor, époux, père et grand-père bien-aimé, est décédé des suites d'un long et courageux combat contre un cancer de la prostate\", écrivent mercredi sa famille et le groupe dans un communiqué.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "France 24 International",
+            "Le Monde",
+            "20 Minutes"
+          ]
+        },
+        {
+          "titre": "En Egypte, un incendie meurtrier sur une autoroute de l’agglomération du Caire fait une trentaine de victimes",
+          "resume": "Le feu s'est déclaré lorsqu'un camion chargé de carburant s'est renversé sur une autoroute très fréquentée, selon les médias d'État.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "fait_confirme",
+          "sources": [
+            "France Info",
+            "Le Monde International",
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Africa C.D.C. Chief Faces Turmoil Over Management Amid Ebola Crisis",
+          "resume": "Jean Kaseya, the director general of the Africa Centers for Disease Control and Prevention, after reports of staff intimidation and mismanagement of funds.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "New York Times World"
+          ]
+        },
+        {
+          "titre": "Mali : le JNIM lance un ultimatum aux habitants de Tonka",
+          "resume": "Dans cette édition, direction le Mali, où le JNIM donne jusqu’à vendredi aux habitants de Tonka, dans la région de Tombouctou, pour quitter la ville avant la mise en place d’un blocus. Pourquoi cet ultimatum et quelles conséquences pour la population ? En RDC, la reprise des combats en Ituri entre l’armée congolaise et les rebelles de la CRP complique la riposte face à l’épidémie d’Ebola, faisant craindre sa propagation. Enfin, cap sur Madagascar, où des milliers de femmes recourent chaque…",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Ebola en RDC : la méfiance des populations entrave la riposte dans l'Est du pays",
+          "resume": "🇨🇩 En RDC, la méfiance des populations complique la lutte contre Ebola, qui sévit depuis six mois. Dans l’Est du pays, les humanitaires font face à des agressions et à des résistances, notamment lors des enterrements.",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ]
+        },
+        {
+          "titre": "Élection présidentielle : Philippe propose un débat à Lisnard et tente de se relancer",
+          "resume": "Édouard Philippe acte un duel avec David Lisnard, maire de Cannes et candidat à la présidentielle, et lui propose un débat au cours duquel il veut mettre en avant leurs points de désaccord, notamment sur l'extrême droite. Le maire du Havre espère ainsi relancer sa campagne qui patine : il est désormais au coude à coude avec son concurrent de Nouvelle Énergie. Une confrontation avec David Lisnard peut-elle relancer le candidat Horizons ?",
+          "pourquoi_important": null,
+          "consequences": null,
+          "statut": "information_rapportee",
+          "sources": [
+            "France 24 International"
+          ]
+        }
+      ]
+    },
+    "marches": {
+      "resume_court": "Synthèse rédigée indisponible (LLM hors service) — voir chiffres bruts.",
+      "mouvements_notables": [
+        {
+          "nom": "DAX",
+          "variation_pct": -1.26,
+          "explication": null
+        },
+        {
+          "nom": "Euro Stoxx 50",
+          "variation_pct": -1.82,
+          "explication": null
+        },
+        {
+          "nom": "Pétrole (Brent)",
+          "variation_pct": -3.69,
+          "explication": null
+        },
+        {
+          "nom": "Or",
+          "variation_pct": 2.47,
+          "explication": null
+        }
+      ]
+    },
+    "sport": {
+      "items": [
+        {
+          "sport": "football",
+          "texte": "Le LOSC a renversé le Bayern 2-1 en seconde période, obtenant ainsi sa première victoire de la saison en Ligue des champions et conservant un espoir de qualification."
+        },
+        {
+          "sport": "football",
+          "texte": "Le Real Madrid a battu le PSV Eindhoven après être revenu au score, Jude Bellingham marquant un but décisif, maintenant ainsi son record de 100 % de victoires en Ligue des champions."
+        },
+        {
+          "sport": "football",
+          "texte": "Le PSG a été tenu en échec 2-2 par l’AS Roma, l'absence de Doué et de Kvara étant soulignée, le club devant trancher la question d’une éventuelle recrue."
+        },
+        {
+          "sport": "tennis",
+          "texte": "Théo Arribagé et Albano Olivetti ont perdu contre le TC Boulogne‑Billancourt en deux manches (6‑3, 6‑4) aux Championnats de France par équipes, trois jours après leurs succès aux Finales ATP."
+        },
+        {
+          "sport": "rugby",
+          "texte": "Pieter‑Steph du Toit est forfait pour la finale du Championnat des nations contre la France, annoncée par Rassie Erasmus."
+        },
+        {
+          "sport": "rugby",
+          "texte": "Le Championnat des nations se termine ce week‑end avec six rencontres à Twickenham, la finale opposant la France à l’Afrique du Sud dimanche à 17h40."
+        },
+        {
+          "sport": "basketball",
+          "texte": "Villeneuve‑d'Ascq, Charnay et Landerneau ont remporté leurs matchs, tandis que Chartres a perdu en fin de rencontre ; les deux premiers sont assurés de participer aux seizièmes de finale."
+        },
+        {
+          "sport": "autres",
+          "texte": "Andy Farrell estime que le Championnat des nations peut constituer une bonne préparation pour la Coupe du monde de l’an prochain."
+        }
+      ],
+      "rien_a_signaler": false,
+      "prochains_matchs": [
+        {
+          "affiche": "Barcelona – Manchester City",
+          "competition": "Ligue des champions",
+          "date_iso": "2026-12-08T20:00:00+00:00",
+          "date_texte": "mardi 8 décembre à 21h00",
+          "sport": "football"
+        },
+        {
+          "affiche": "New York Knicks – Miami Heat",
+          "competition": "NBA",
+          "date_iso": "2026-11-28T00:00:00+00:00",
+          "date_texte": "samedi 28 novembre à 1h00",
+          "sport": "basketball"
+        }
+      ]
+    },
+    "science": {
+      "mode": "decouverte",
+      "titre": "Huit universités concentrent les prix Nobel et autres grands prix d'économie",
+      "contenu_markdown": "Une analyse publiée dans *Nature* le 25 novembre 2026 montre que, dans le domaine de l’économie, les prix les plus prestigieux – Nobel et autres distinctions majeures – sont attribués de façon très concentrée à des chercheurs affiliés à seulement huit établissements universitaires. Cette concentration contraste avec les sciences, l’ingénierie et d’autres disciplines sociales, où les lauréats proviennent d’un éventail plus large d’institutions.\n\nCette observation suggère que le réseau académique et les ressources disponibles dans ces quelques universités jouent un rôle important dans la reconnaissance internationale des économistes. Toutefois, les raisons exactes de cette concentration restent à préciser, et les travaux futurs devront explorer les mécanismes – tels que les collaborations, le financement ou les traditions de recherche – qui favorisent ces établissements. Les données détaillées et les méthodologies employées sont disponibles dans l’article original de *Nature*.\n\n## Sources\n- Nature News — https://www.nature.com/articles/d41586-026-03333-3\n- Les chiffres et affirmations de cet article se limitent à ceux de ces sources ; les détails de l'étude sont à consulter sur les liens ci-dessus.",
+      "phrases_retirees_garde_fou": 0,
+      "nb_mots": 171,
+      "matiere_source": "fine",
+      "textes_sources_audit": [
+        {
+          "source": "Nature News",
+          "titre": "Just eight universities dominate Nobel and other top economics prizes",
+          "resume": "Nature, Published online: 25 November 2026; doi:10.1038/d41586-026-03333-3 Economics is the outlier — top prizes in science, engineering and other social sciences go to researchers at a greater variety of institutions."
+        }
+      ]
+    },
+    "citation": {
+      "texte": "Dans les champs de l'observation, le hasard ne favorise que les esprits préparés.",
+      "auteur": "Louis Pasteur",
+      "source": "Discours d'inauguration de la faculté des sciences de Lille, 7 décembre 1854",
+      "annee": 1854
+    },
+    "meteo": null,
+    "anglais": {
+      "mode": "litterature",
+      "oeuvre": "Moby-Dick",
+      "auteur": "Herman Melville",
+      "annee": 1851,
+      "segments": [
+        {
+          "t": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse",
+          "g": "la bourse, le porte-monnaie"
+        },
+        {
+          "t": ", and nothing particular to interest me on shore",
+          "g": "à terre"
+        },
+        {
+          "t": ", I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen",
+          "g": "la mauvaise humeur, le spleen"
+        },
+        {
+          "t": " and regulating the circulation. Whenever I find myself growing grim",
+          "g": "sombre, renfrogné"
+        },
+        {
+          "t": " about the mouth; whenever it is a damp, drizzly",
+          "g": "bruineux"
+        },
+        {
+          "t": " November in my soul; whenever I find myself involuntarily pausing before coffin warehouses",
+          "g": "entrepôts de cercueils"
+        },
+        {
+          "t": ", and bringing up the rear",
+          "g": "fermer la marche"
+        },
+        {
+          "t": " of every funeral I meet; and especially whenever my hypos",
+          "g": "idées noires"
+        },
+        {
+          "t": " get such an upper hand",
+          "g": "le dessus"
+        },
+        {
+          "t": " of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off",
+          "g": "faire voler le chapeau des passants"
+        },
+        {
+          "t": "—then, I account it high time",
+          "g": "juge qu'il est grand temps"
+        },
+        {
+          "t": " to get to sea as soon as I can.",
+          "g": null
+        }
+      ],
+      "texte_glose": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse (= la bourse, le porte-monnaie), and nothing particular to interest me on shore (= à terre), I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen (= la mauvaise humeur, le spleen) and regulating the circulation. Whenever I find myself growing grim (= sombre, renfrogné) about the mouth; whenever it is a damp, drizzly (= bruineux) November in my soul; whenever I find myself involuntarily pausing before coffin warehouses (= entrepôts de cercueils), and bringing up the rear (= fermer la marche) of every funeral I meet; and especially whenever my hypos (= idées noires) get such an upper hand (= le dessus) of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off (= faire voler le chapeau des passants)—then, I account it high time (= juge qu'il est grand temps) to get to sea as soon as I can."
+    },
+    "meta": {
+      "resume_1_phrase": "À la une : \"C'est le fruit de la mobilisation d'une France de terrain\" : David Lisnard, candidat à la présidentielle, est réélu à la tête de l'Association des maires de France."
+    },
+    "_genere_par_llm": true,
+    "_provider": "groq",
+    "_erreur_llm": "marches[nvidia: 410 Gone (provider=nvidia): {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'openai/gpt-oss-20b' has reached its end of life on 2026-11-18 | groq: 429 Too Many Requests (provider=groq): {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1vh8sjfe61sn0e59wqaes1t`  | mistral: 402 Payment Required (provider=mistral): {\"object\":] | science_a[mistral: 402 Payment Required (provider=mistral): {\"object\":\"error\",\"message\":\"You need a subscription to access this API.\",\"type\":\"billing_no_api_budget_configured\",\"pa | nvidia: 410 Gone (provider=nvidia): {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'openai/gpt-oss-20b' has reached its end of life on 2026-11-18 | groq: 429 Too Many Requests (provider=groq): {\"error\":{\"m]",
+    "_parts": {
+      "actu_france": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "actu_monde": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 2
+      },
+      "marches": {
+        "genere_par_llm": false,
+        "provider": null,
+        "erreur": "nvidia: 410 Gone (provider=nvidia): {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'openai/gpt-oss-20b' has reached its end of life on 2026-11-18 | groq: 429 Too Many Requests (provider=groq): {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1vh8sjfe61sn0e59wqaes1t`  | mistral: 402 Payment Required (provider=mistral): {\"object\":",
+        "essais_echoues": 4
+      },
+      "science_a": {
+        "genere_par_llm": false,
+        "provider": null,
+        "erreur": "mistral: 402 Payment Required (provider=mistral): {\"object\":\"error\",\"message\":\"You need a subscription to access this API.\",\"type\":\"billing_no_api_budget_configured\",\"pa | nvidia: 410 Gone (provider=nvidia): {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'openai/gpt-oss-20b' has reached its end of life on 2026-11-18 | groq: 429 Too Many Requests (provider=groq): {\"error\":{\"m",
+        "essais_echoues": 4
+      },
+      "science_b": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 0
+      },
+      "sport": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 1
+      },
+      "science_d": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": null,
+        "essais_echoues": 2
+      }
+    },
+    "_bloc": {
+      "genere_par_llm": true,
+      "provider": "groq",
+      "erreur": "marches[nvidia: 410 Gone (provider=nvidia): {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'openai/gpt-oss-20b' has reached its end of life on 2026-11-18 | groq: 429 Too Many Requests (provider=groq): {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1vh8sjfe61sn0e59wqaes1t`  | mistral: 402 Payment Required (provider=mistral): {\""
+    },
+    "_science": {
+      "genere_par_llm": true,
+      "provider": "groq",
+      "erreur": "science_a[mistral: 402 Payment Required (provider=mistral): {\"object\":\"error\",\"message\":\"You need a subscription to access this API.\",\"type\":\"billing_no_api_budget_configured\",\"pa | nvidia: 410 Gone (provider=nvidia): {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'openai/gpt-oss-20b' has reached its end of life on 2026-11-18 | groq: 429 Too Many Requests (provider=groq): {\""
+    },
+    "_anglais": {
+      "genere_par_llm": false,
+      "provider": null,
+      "erreur": null
+    }
+  },
+  "debut_run": "2026-11-26T06:10:41.163219+01:00"
+}

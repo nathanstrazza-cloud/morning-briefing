@@ -1,19 +1,19 @@
 {
-  "derniere_execution": "2026-11-25T06:14:41.776834+01:00",
-  "date_visee": "2026-11-25",
+  "derniere_execution": "2026-11-26T06:14:28.583584+01:00",
+  "date_visee": "2026-11-26",
   "succes": true,
   "erreur": null,
   "synthese_llm": true,
-  "erreur_llm": null,
+  "erreur_llm": "marches[nvidia: 410 Gone (provider=nvidia): {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'openai/gpt-oss-20b' has reached its end of life on 2026-11-18 | groq: 429 Too Many Requests (provider=groq): {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1vh8sjfe61sn0e59wqaes1t`  | mistral: 402 Payment Required (provider=mistral): {\"object\":] | science_a[mistral: 402 Payment Required (provider=mistral): {\"object\":\"error\",\"message\":\"You need a subscription to access this API.\",\"type\":\"billing_no_api_budget_configured\",\"pa | nvidia: 410 Gone (provider=nvidia): {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'openai/gpt-oss-20b' has reached its end of life on 2026-11-18 | groq: 429 Too Many Requests (provider=groq): {\"error\":{\"m]",
   "llm_bloc": {
     "genere_par_llm": true,
-    "provider": "groq+mistral",
-    "erreur": null
+    "provider": "groq",
+    "erreur": "marches[nvidia: 410 Gone (provider=nvidia): {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'openai/gpt-oss-20b' has reached its end of life on 2026-11-18 | groq: 429 Too Many Requests (provider=groq): {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1vh8sjfe61sn0e59wqaes1t`  | mistral: 402 Payment Required (provider=mistral): {\""
   },
   "llm_science": {
     "genere_par_llm": true,
-    "provider": "groq+mistral",
-    "erreur": null
+    "provider": "groq",
+    "erreur": "science_a[mistral: 402 Payment Required (provider=mistral): {\"object\":\"error\",\"message\":\"You need a subscription to access this API.\",\"type\":\"billing_no_api_budget_configured\",\"pa | nvidia: 410 Gone (provider=nvidia): {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'openai/gpt-oss-20b' has reached its end of life on 2026-11-18 | groq: 429 Too Many Requests (provider=groq): {\""
   },
   "llm_anglais": {
     "genere_par_llm": false,
@@ -49,14 +49,14 @@
   "sources_marches_en_erreur": [],
   "funnel_actualite": {
     "france": {
-      "bruts": 85,
-      "evenements_uniques": 69,
-      "retenus_apres_seuil": 23
+      "bruts": 97,
+      "evenements_uniques": 76,
+      "retenus_apres_seuil": 36
     },
     "monde": {
-      "bruts": 98,
-      "evenements_uniques": 78,
-      "retenus_apres_seuil": 32
+      "bruts": 95,
+      "evenements_uniques": 82,
+      "retenus_apres_seuil": 33
     }
   }
 }

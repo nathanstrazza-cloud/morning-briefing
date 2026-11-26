@@ -1,6 +1,68 @@
 {
   "entries": [
     {
+      "derniere_execution": "2026-11-26T06:14:28.583584+01:00",
+      "date_visee": "2026-11-26",
+      "succes": true,
+      "erreur": null,
+      "synthese_llm": true,
+      "erreur_llm": "marches[nvidia: 410 Gone (provider=nvidia): {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'openai/gpt-oss-20b' has reached its end of life on 2026-11-18 | groq: 429 Too Many Requests (provider=groq): {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1vh8sjfe61sn0e59wqaes1t`  | mistral: 402 Payment Required (provider=mistral): {\"object\":] | science_a[mistral: 402 Payment Required (provider=mistral): {\"object\":\"error\",\"message\":\"You need a subscription to access this API.\",\"type\":\"billing_no_api_budget_configured\",\"pa | nvidia: 410 Gone (provider=nvidia): {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'openai/gpt-oss-20b' has reached its end of life on 2026-11-18 | groq: 429 Too Many Requests (provider=groq): {\"error\":{\"m]",
+      "llm_bloc": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": "marches[nvidia: 410 Gone (provider=nvidia): {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'openai/gpt-oss-20b' has reached its end of life on 2026-11-18 | groq: 429 Too Many Requests (provider=groq): {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m1vh8sjfe61sn0e59wqaes1t`  | mistral: 402 Payment Required (provider=mistral): {\""
+      },
+      "llm_science": {
+        "genere_par_llm": true,
+        "provider": "groq",
+        "erreur": "science_a[mistral: 402 Payment Required (provider=mistral): {\"object\":\"error\",\"message\":\"You need a subscription to access this API.\",\"type\":\"billing_no_api_budget_configured\",\"pa | nvidia: 410 Gone (provider=nvidia): {\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'openai/gpt-oss-20b' has reached its end of life on 2026-11-18 | groq: 429 Too Many Requests (provider=groq): {\""
+      },
+      "llm_anglais": {
+        "genere_par_llm": false,
+        "provider": null,
+        "erreur": null
+      },
+      "sources_rss_en_erreur": [
+        {
+          "source": "L'Équipe Hand",
+          "categorie": "sport",
+          "statut": "vide",
+          "detail": null
+        },
+        {
+          "source": "L'Équipe Volley",
+          "categorie": "sport",
+          "statut": "vide",
+          "detail": null
+        },
+        {
+          "source": "ESPN NBA News",
+          "categorie": "sport",
+          "statut": "vide",
+          "detail": null
+        },
+        {
+          "source": "ESPN Top Headlines",
+          "categorie": "sport",
+          "statut": "vide",
+          "detail": null
+        }
+      ],
+      "sources_marches_en_erreur": [],
+      "funnel_actualite": {
+        "france": {
+          "bruts": 97,
+          "evenements_uniques": 76,
+          "retenus_apres_seuil": 36
+        },
+        "monde": {
+          "bruts": 95,
+          "evenements_uniques": 82,
+          "retenus_apres_seuil": 33
+        }
+      }
+    },
+    {
       "derniere_execution": "2026-11-25T06:14:41.776834+01:00",
       "date_visee": "2026-11-25",
       "succes": true,
@@ -3077,41 +3139,6 @@
           "bruts": 83,
           "evenements_uniques": 78,
           "retenus_apres_seuil": 21
-        }
-      }
-    },
-    {
-      "derniere_execution": "2026-09-25T06:10:43.068667+02:00",
-      "date_visee": "2026-09-25",
-      "succes": true,
-      "erreur": null,
-      "synthese_llm": false,
-      "erreur_llm": "cerebras: 402 Payment Required (provider=cerebras): {\"message\":\"Payment required to access this resource. Visit your billing tab.\",\"type\":\"payment_required_error\",\"param\":\"quota\",\"code\":\"payment_required\"}",
-      "sources_rss_en_erreur": [
-        {
-          "source": "CNRS Actualités",
-          "categorie": "sciences",
-          "statut": "erreur",
-          "detail": "<unknown>:14:418: not well-formed (invalid token)"
-        },
-        {
-          "source": "L'Équipe Tous Sports",
-          "categorie": "sport_autres",
-          "statut": "vide",
-          "detail": null
-        }
-      ],
-      "sources_marches_en_erreur": [],
-      "funnel_actualite": {
-        "france": {
-          "bruts": 121,
-          "evenements_uniques": 106,
-          "retenus_apres_seuil": 62
-        },
-        "monde": {
-          "bruts": 87,
-          "evenements_uniques": 81,
-          "retenus_apres_seuil": 29
         }
       }
     }
